@@ -1,0 +1,19 @@
+# preiseberechnen.de
+preiseberechnen.de {
+	handle_path /api/* {
+		reverse_proxy preise_api:8000
+	}
+	handle {
+		reverse_proxy preise_frontend:80
+	}
+}
+
+# admin.preiseberechnen.de
+admin.preiseberechnen.de {
+	handle_path /api/* {
+		reverse_proxy preise_api:8000
+	}
+	handle {
+		reverse_proxy preise_admin_frontend:80
+	}
+}
