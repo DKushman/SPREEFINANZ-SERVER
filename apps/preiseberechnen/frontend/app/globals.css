@@ -1,0 +1,28 @@
+@import "tailwindcss";
+
+:root {
+  --background: #251914;
+  --foreground: #ffffe3;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-clash-display);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  padding-left: 2vh;
+  padding-right: 2vh;
+  font-family: var(--font-clash-display);
+}
+
+/* Burger-Menü: cubic-bezier Animation */
+.menu-overlay {
+  transition: opacity 0.3s cubic-bezier(0.32, 0.72, 0, 1);
+}
+.menu-panel {
+  transition: transform 0.35s cubic-bezier(0.32, 0.72, 0, 1);
+}
