@@ -1,4 +1,8 @@
-import type { ButtonHTMLAttributes, ReactNode } from "react";
+import type {
+  AnchorHTMLAttributes,
+  ButtonHTMLAttributes,
+  ReactNode,
+} from "react";
 
 type ButtonVariant = "primary" | "ghost";
 type ButtonSize = "md" | "lg";
@@ -8,7 +12,10 @@ type ButtonProps = {
   variant?: ButtonVariant;
   size?: ButtonSize;
   className?: string;
-} & ButtonHTMLAttributes<HTMLButtonElement>;
+  /** Wenn gesetzt, wird ein `<a>` mit denselben Styles wie der Primary-Button gerendert. */
+  href?: string;
+  type?: "button" | "submit" | "reset";
+} & Omit<ButtonHTMLAttributes<HTMLButtonElement>, "type">;
 
 const baseClasses =
   "inline-flex items-center justify-center rounded-full font-medium transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--background)] focus-visible:ring-[var(--foreground)]";
@@ -30,6 +37,8 @@ export function Button({
   variant = "primary",
   size = "lg",
   className = "",
+  href,
+  type = "button",
   ...props
 }: ButtonProps) {
   const classes = [
@@ -42,8 +51,25 @@ export function Button({
     .filter(Boolean)
     .join(" ");
 
+  if (href != null && href !== "") {
+    const { disabled, ...anchorRest } = props;
+    return (
+      <a
+        href={href}
+        className={classes}
+        aria-disabled={disabled ? true : undefined}
+        {...(anchorRest as Omit<
+          AnchorHTMLAttributes<HTMLAnchorElement>,
+          "href" | "className" | "children"
+        >)}
+      >
+        {children}
+      </a>
+    );
+  }
+
   return (
-    <button type="button" className={classes} {...props}>
+    <button type={type} className={classes} {...props}>
       {children}
     </button>
   );

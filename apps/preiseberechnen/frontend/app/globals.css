@@ -1,14 +1,26 @@
 @import "tailwindcss";
 
 :root {
-  --background: #251914;
+  --background: #030F03;
   --foreground: #ffffe3;
+  /** Einheitlicher vertikaler Abstand zwischen Homepage-Sections */
+  --preiseberechnen-section-padding-block: clamp(3.5rem, 9vw, 6.5rem);
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-sans: var(--font-clash-display);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
 }
 
 body {
@@ -19,10 +31,334 @@ body {
   font-family: var(--font-clash-display);
 }
 
+/*
+ * Globale, sehr leichte Seiten-Transition:
+ * Automatisch auf allen <main>-Bereichen, nur opacity (GPU-freundlich).
+ */
+@media (prefers-reduced-motion: no-preference) {
+  main {
+    opacity: 1;
+    transition: opacity 220ms ease-out;
+  }
+  @starting-style {
+    main {
+      opacity: 0.001;
+    }
+  }
+}
+
+.preiseberechnen-header-blend {
+  mix-blend-mode: difference;
+  -webkit-mix-blend-mode: difference;
+}
+
+/* Hero-Startanimationen entfernt: statischer First Paint für bessere Stabilität */
+
 /* Burger-Menü: cubic-bezier Animation */
 .menu-overlay {
   transition: opacity 0.3s cubic-bezier(0.32, 0.72, 0, 1);
 }
 .menu-panel {
   transition: transform 0.35s cubic-bezier(0.32, 0.72, 0, 1);
+}
+
+/*
+ * Header: Slide-in-Panel + Overlay (Bezier).
+ * Reine transform/opacity + :has(#nav-toggle:checked), damit die Animation nicht
+ * an Tailwinds separater `translate`-Property scheitert (sonst oft kein Lauf).
+ */
+@media (prefers-reduced-motion: no-preference) {
+  #preiseberechnen-site-header-mobile-panel {
+    transform: translate3d(100%, 0, 0);
+    transition: transform 0.42s cubic-bezier(0.32, 0.72, 0, 1);
+  }
+  #preiseberechnen-site-header:has(#preiseberechnen-nav-toggle:checked)
+    #preiseberechnen-site-header-mobile-panel {
+    transform: translate3d(0, 0, 0);
+  }
+
+  #preiseberechnen-site-header-mobile-overlay {
+    opacity: 0;
+    transition: opacity 0.36s cubic-bezier(0.32, 0.72, 0, 1);
+  }
+  #preiseberechnen-site-header:has(#preiseberechnen-nav-toggle:checked)
+    #preiseberechnen-site-header-mobile-overlay {
+    opacity: 1;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  #preiseberechnen-site-header-mobile-panel,
+  #preiseberechnen-site-header-mobile-overlay {
+    transition-duration: 0.01ms !important;
+  }
+  #preiseberechnen-site-header-mobile-panel {
+    transform: translate3d(100%, 0, 0);
+  }
+  #preiseberechnen-site-header-mobile-overlay {
+    opacity: 0;
+  }
+  #preiseberechnen-site-header:has(#preiseberechnen-nav-toggle:checked)
+    #preiseberechnen-site-header-mobile-panel {
+    transform: translate3d(0, 0, 0);
+  }
+  #preiseberechnen-site-header:has(#preiseberechnen-nav-toggle:checked)
+    #preiseberechnen-site-header-mobile-overlay {
+    opacity: 1;
+  }
+}
+
+/* FAQ: Kreis in <summary> – Outline geschlossen, gefüllt wenn <details open> */
+#preiseberechnen-faq-section summary .preiseberechnen-faq-dot {
+  background-color: transparent;
+}
+#preiseberechnen-faq-section details[open] summary .preiseberechnen-faq-dot {
+  background-color: #ffffe3;
+}
+
+/* Price Calculator: Custom Range Slider (tall track = große Klickfläche, Thumb zentriert) */
+.price-calculator-range-input::-webkit-slider-runnable-track {
+  height: 10px;
+  background: transparent;
+  border-radius: 5px;
+}
+.price-calculator-range-input::-moz-range-track {
+  height: 10px;
+  background: transparent;
+  border: none;
+  border-radius: 5px;
+}
+.price-calculator-range-input::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: clamp(0.9rem, 1.6vw, 1.15rem);
+  height: clamp(0.9rem, 1.6vw, 1.15rem);
+  border-radius: 50%;
+  background: #ffffe3;
+  border: 2px solid #ffffe3;
+  margin-top: calc((10px - clamp(0.9rem, 1.6vw, 1.15rem)) / 2);
+  cursor: pointer;
+  box-shadow: 0 0 0 3px rgba(3, 15, 3, 0.6);
+}
+.price-calculator-range-input::-moz-range-thumb {
+  width: clamp(0.9rem, 1.6vw, 1.15rem);
+  height: clamp(0.9rem, 1.6vw, 1.15rem);
+  border-radius: 50%;
+  background: #ffffe3;
+  border: 2px solid #ffffe3;
+  cursor: pointer;
+  box-shadow: 0 0 0 3px rgba(3, 15, 3, 0.6);
+}
+.price-calculator-range-input:focus-visible::-webkit-slider-thumb {
+  outline: 2px solid #ffffe3;
+  outline-offset: 3px;
+}
+.price-calculator-range-input:focus-visible::-moz-range-thumb {
+  outline: 2px solid #ffffe3;
+  outline-offset: 3px;
+}
+
+/* Price Calculator: Preis-Bounce-Animation */
+.price-calc-bounce {
+  animation: priceBounce 0.46s cubic-bezier(0.2, 0.8, 0.25, 1);
+  transform-origin: center bottom;
+  text-align: center;
+}
+@keyframes priceBounce {
+  0% {
+    transform: scale(0.94);
+  }
+  35% {
+    transform: scale(1.08);
+  }
+  62% {
+    transform: scale(0.98);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Price Calculator: Step-Übergang */
+.price-calc-step-enter {
+  animation: stepFadeIn 0.38s cubic-bezier(0.16, 1, 0.3, 1);
+}
+@keyframes stepFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(14px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Results Overlay fade-in */
+#price-calculator-results-overlay {
+  animation: overlayFadeIn 0.32s ease-out;
+}
+#price-calculator-results-overlay > div {
+  animation: overlaySlideUp 0.38s cubic-bezier(0.16, 1, 0.3, 1);
+}
+@keyframes overlayFadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+@keyframes overlaySlideUp {
+  from { opacity: 0; transform: translateY(24px) scale(0.97); }
+  to { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+/* Launcher Overlay open animation */
+#price-calculator-launcher-overlay {
+  animation: launcherFadeIn 0.28s ease-out;
+  backdrop-filter: blur(6px);
+}
+#price-calculator-launcher-overlay > div {
+  animation: launcherScaleIn 0.34s cubic-bezier(0.16, 1, 0.3, 1);
+}
+@keyframes launcherFadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+@keyframes launcherScaleIn {
+  from { opacity: 0; transform: scale(0.95) translateY(16px); }
+  to { opacity: 1; transform: scale(1) translateY(0); }
+}
+
+/* Card selection pop */
+.price-calc-card-pop {
+  animation: cardPop 0.32s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+@keyframes cardPop {
+  0% { transform: scale(1); }
+  40% { transform: scale(1.04); }
+  100% { transform: scale(1); }
+}
+
+/*
+ * Handy: keine Bounce-/Pop-Animation bei Karten & Pills.
+ * Zwei Bedingungen: echte Touch-Geräte ODER schmale Viewports (manche
+ * Phones melden pointer:fine und würden sonst weiter animieren).
+ */
+@media (hover: none) and (pointer: coarse), (max-width: 639px) {
+  .price-calc-card-pop {
+    animation: none !important;
+  }
+
+  #price-calculator fieldset label,
+  #price-calculator button {
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  #price-calculator-nav-next:not(:disabled):active {
+    transform: none;
+  }
+}
+
+/* Progress bar glow */
+.price-calc-progress-fill {
+  transition: width 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: 0 0 8px rgba(255, 255, 227, 0.25);
+}
+
+/* Price info panel slide-in */
+.price-calc-info-panel {
+  animation: infoPanelIn 0.28s cubic-bezier(0.16, 1, 0.3, 1);
+}
+@keyframes infoPanelIn {
+  from {
+    opacity: 0;
+    transform: scale(0.96) translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+/* Homepage Hero: rotierendes Wort (nur transform + opacity, kein scale → kein Flattern) */
+@keyframes preiseberechnenHeroWordOut {
+  to {
+    transform: translate3d(0, -100%, 0);
+    opacity: 0;
+  }
+}
+@keyframes preiseberechnenHeroWordIn {
+  from {
+    transform: translate3d(0, 100%, 0);
+    opacity: 0;
+  }
+  to {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
+.preiseberechnen-hero-word-out {
+  animation: preiseberechnenHeroWordOut 560ms cubic-bezier(0.32, 0.72, 0, 1)
+    forwards;
+  transform-origin: 50% 50%;
+}
+.preiseberechnen-hero-word-in {
+  animation: preiseberechnenHeroWordIn 560ms cubic-bezier(0.16, 1, 0.3, 1)
+    forwards;
+  transform-origin: 50% 50%;
+}
+
+/* Reduced motion: disable all custom animations */
+@media (prefers-reduced-motion: reduce) {
+  .price-calc-bounce,
+  .price-calc-step-enter,
+  .price-calc-card-pop,
+  .price-calc-info-panel,
+  #price-calculator-results-overlay,
+  #price-calculator-results-overlay > div,
+  #price-calculator-launcher-overlay,
+  #price-calculator-launcher-overlay > div,
+  .preiseberechnen-hero-word-out,
+  .preiseberechnen-hero-word-in {
+    animation: none !important;
+  }
+  .price-calc-progress-fill {
+    transition: none !important;
+  }
+}
+
+/* Spinner animation for loading states */
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+/* Tuev Hero: announcement dot heartbeat (GPU-friendly) */
+.tuev-heartbeat-dot {
+  animation: tuevHeartbeat 1.35s cubic-bezier(0.2, 0.75, 0.28, 1) infinite;
+  transform-origin: center;
+  will-change: transform, opacity;
+}
+@keyframes tuevHeartbeat {
+  0% {
+    transform: scale(1);
+    opacity: 0.72;
+  }
+  18% {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+  34% {
+    transform: scale(1);
+    opacity: 0.78;
+  }
+  52% {
+    transform: scale(1.12);
+    opacity: 0.94;
+  }
+  74% {
+    transform: scale(1);
+    opacity: 0.8;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0.72;
+  }
 }
