@@ -20,7 +20,7 @@ export default function UeberUnsPage() {
       <section
         id="ueber-uns-hero"
         aria-labelledby="ueber-uns-heading"
-        className="relative left-1/2 flex w-screen max-w-[100vw] -translate-x-1/2 min-h-[93svh] items-center bg-[var(--background)] py-[clamp(1.25rem,4vh,2.5rem)] text-[var(--foreground)]"
+        className="preiseberechnen-page-hero relative left-1/2 flex w-screen max-w-[100vw] -translate-x-1/2 min-h-[93svh] items-center bg-[var(--background)] py-[clamp(1.25rem,4vh,2.5rem)] text-[var(--foreground)]"
       >
         <div
           id="ueber-uns-hero-inner"
@@ -37,7 +37,7 @@ export default function UeberUnsPage() {
             >
               <span
                 id="ueber-uns-heading-line-1"
-                className="preiseberechnen-hero-line-motion block w-fit font-semibold"
+                className="preiseberechnen-hero-line-motion preiseberechnen-hero-line-motion--stagger-1 block w-fit font-semibold"
               >
                 kostenlose preisrechner&nbsp;—
               </span>
@@ -48,7 +48,7 @@ export default function UeberUnsPage() {
             >
               <span
                 id="ueber-uns-heading-line-2"
-                className="preiseberechnen-hero-line-motion preiseberechnen-hero-line-motion--delayed block w-fit font-light"
+                className="preiseberechnen-hero-line-motion preiseberechnen-hero-line-motion--stagger-2 preiseberechnen-hero-line-motion--delayed block w-fit font-light"
               >
                 warum machen wir das?
               </span>

@@ -37,14 +37,14 @@ function HeaderDesktopPillInner() {
     <div
       ref={shellRef}
       id="preiseberechnen-site-header-pill"
-      className="relative z-10 flex w-full min-w-0 flex-col text-[#ffffe3] md:rounded-[clamp(1.15rem,2.2vw,1.75rem)] md:bg-transparent md:px-8 md:pb-3.5 md:pt-3.5"
+      className="relative z-10 flex w-full min-w-0 flex-col text-[#ffffe3] md:rounded-[clamp(1rem,min(1.75rem,3.2svh),1.75rem)] md:bg-transparent md:px-[clamp(1rem,min(2rem,3.5svh),2rem)] md:py-[clamp(0.45rem,min(0.875rem,2.2svh),0.875rem)]"
     >
-      <div className="flex w-full min-w-0 items-center justify-between gap-3 py-2 md:py-0 md:preiseberechnen-header-blend md:text-white">
-        <div className="flex min-w-0 shrink-0 items-center gap-2 md:gap-3">
+      <div className="flex w-full min-w-0 items-center justify-between gap-3 py-2 md:gap-[clamp(0.5rem,min(0.75rem,2svh),0.75rem)] md:py-0 md:preiseberechnen-header-blend md:text-white">
+        <div className="flex min-w-0 shrink-0 items-center gap-2 md:gap-[clamp(0.4rem,min(0.75rem,1.8svh),0.75rem)]">
           <Link
             href="/"
             id="preiseberechnen-site-header-logo"
-            className="inline-flex min-w-0 max-w-[min(100%,70vw)] items-center truncate text-[1.02rem] font-semibold tracking-[0.04em] text-inherit hover:opacity-80"
+            className="inline-flex min-w-0 max-w-[min(100%,70vw)] items-center truncate text-[1.02rem] font-semibold tracking-[0.04em] text-inherit hover:opacity-80 md:text-[clamp(0.88rem,min(1.02rem,2.6svh),1.02rem)]"
           >
             Preiseberechnen.
           </Link>
@@ -55,7 +55,7 @@ function HeaderDesktopPillInner() {
           className="hidden min-w-0 md:block md:flex-1"
           aria-label="Hauptnavigation"
         >
-          <ul className="m-0 flex list-none items-center justify-end gap-6 p-0 text-sm font-medium lg:gap-8 lg:text-[0.9375rem]">
+          <ul className="m-0 flex list-none items-center justify-end p-0 text-sm font-medium md:gap-[clamp(1rem,min(1.5rem,2.8svh),2rem)] lg:gap-[clamp(1.15rem,min(2rem,3.2svh),2rem)] md:text-[clamp(0.78rem,min(0.875rem,2.25svh),0.875rem)] lg:text-[clamp(0.8125rem,min(0.9375rem,2.4svh),0.9375rem)]">
             <li className="relative">
               <button
                 type="button"
@@ -124,7 +124,7 @@ function HeaderDesktopPillInner() {
         aria-label="Preisrechner"
         className={`hidden text-[#ffffe3] md:block ${
           open
-            ? "pointer-events-auto max-h-52 opacity-100"
+            ? "pointer-events-auto max-h-[min(13rem,42svh)] opacity-100"
             : "pointer-events-none max-h-0 opacity-0"
         } overflow-hidden transition-[max-height,opacity] duration-[300ms] ease-[cubic-bezier(0.16,1,0.3,1)] motion-reduce:transition-none motion-reduce:duration-0`}
         aria-hidden={!open}

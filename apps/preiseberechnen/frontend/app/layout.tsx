@@ -34,7 +34,7 @@ export default function RootLayout({
         >
           <div
             id="preiseberechnen-header-flow-spacer"
-            className="h-[4.75rem] w-full shrink-0 md:h-[5.5rem]"
+            className="h-[4.75rem] w-full shrink-0 md:h-[var(--preiseberechnen-header-desktop-offset)]"
             aria-hidden="true"
           />
           <div

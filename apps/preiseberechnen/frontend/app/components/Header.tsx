@@ -5,7 +5,7 @@ export function Header() {
   return (
     <header
       id="preiseberechnen-site-header"
-      className="pointer-events-none fixed inset-x-0 top-0 z-[220] w-full px-[2vh] pt-[clamp(0.65rem,2vw,1rem)] pb-2"
+      className="pointer-events-none fixed inset-x-0 top-0 z-[220] w-full px-[2vh] pt-[clamp(0.45rem,min(1rem,2.4svh),1rem)] pb-[clamp(0.35rem,min(0.5rem,1.2svh),0.5rem)]"
     >
       <input
         type="checkbox"
@@ -18,7 +18,7 @@ export function Header() {
       */}
       <div className="pointer-events-auto relative mx-auto w-full max-w-[min(72rem,calc(100vw-4vh))]">
         <div
-          className="pointer-events-none absolute inset-0 hidden rounded-[clamp(1.15rem,2.2vw,1.75rem)] border border-white/35 bg-[#030F03]/22 shadow-[0_6px_28px_rgba(0,0,0,0.08)] backdrop-blur-md md:block"
+          className="pointer-events-none absolute inset-0 hidden rounded-[clamp(1rem,min(1.75rem,3.2svh),1.75rem)] border border-white/35 bg-[#030F03]/22 shadow-[0_6px_28px_rgba(0,0,0,0.08)] backdrop-blur-md md:block"
           aria-hidden
         />
         <HeaderDesktopPill />

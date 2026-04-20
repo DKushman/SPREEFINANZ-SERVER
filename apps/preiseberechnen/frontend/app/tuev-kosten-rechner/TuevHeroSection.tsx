@@ -25,32 +25,14 @@ export function TuevHeroSection() {
   return (
     <section
       id="tuev-hero"
-      className="relative flex min-h-[95vh] flex-col items-center text-center"
+      className="preiseberechnen-page-hero relative flex min-h-[95vh] flex-col items-center text-center"
       aria-labelledby="tuev-hero-heading"
     >
-      <div
-        id="tuev-hero-announcement"
-        className="w-[calc(100%+4vh)] mx-[-2vh] absolute top-0 left-0 right-0 flex flex-col items-center justify-center gap-1.5 border-b border-t border-[rgba(232,168,74,0.32)] bg-[rgba(232,168,74,0.09)] py-[clamp(0.65rem,1.4vw,0.9rem)] px-[clamp(0.75rem,2vw,1.25rem)] sm:flex-row sm:gap-[clamp(0.4rem,0.8vw,0.6rem)] sm:py-[clamp(0.6rem,1.2vw,0.85rem)]"
-      >
-        <span
-          id="tuev-hero-announcement-dot"
-          className="size-[clamp(0.55rem,0.9vw,0.7rem)] shrink-0 rounded-full bg-[#e8a84a] tuev-heartbeat-dot motion-reduce:animate-none"
-          aria-hidden="true"
-        />
-        <p
-          id="tuev-hero-announcement-text"
-          className="text-[clamp(0.68rem,1.3vw,0.92rem)] font-light text-[#e8a84a]"
-        >
-          Erhalte sofort ein Angebot zum Downloaden, um maximales Geld bei
-          deinem Dienstleister zu sparen
-        </p>
-      </div>
-
       <div
         id="tuev-hero-trust-block"
         role="group"
         aria-label="Community: 4 von 5 Sternen, 75 Bewertungen"
-        className="absolute left-1/2 top-20 z-10 w-[min(calc(100%_-_1.5rem),17rem)] -translate-x-1/2 rounded-2xl bg-[#030F03]/38 px-4 py-3 text-center shadow-lg backdrop-blur-sm"
+        className="preiseberechnen-hero-line-motion preiseberechnen-hero-line-motion--stagger-2 absolute left-1/2 top-[clamp(5.25rem,14svh,8rem)] z-10 w-[min(calc(100%_-_1.5rem),17rem)] -translate-x-1/2 px-4 py-3 text-center"
       >
         <div className="flex flex-col items-center gap-1.5 opacity-[0.62]">
           <p
@@ -73,14 +55,14 @@ export function TuevHeroSection() {
               <span
                 key={i}
                 id={`tuev-hero-avatar-${i + 1}`}
-                className="-ml-1.5 flex size-7 items-center justify-center rounded-full border-2 border-[#030F03] bg-white/[0.07] text-[0.5rem] font-semibold text-[rgba(255,255,227,0.62)] first:ml-0"
+                className="-ml-1.5 flex size-7 items-center justify-center rounded-full border-0 bg-transparent text-[0.5rem] font-semibold text-[rgba(255,255,227,0.62)] first:ml-0"
               >
                 {initials}
               </span>
             ))}
             <span
               id="tuev-hero-avatar-count"
-              className="-ml-1.5 flex size-7 items-center justify-center rounded-full border-2 border-[#030F03] bg-white/[0.05] text-[0.5rem] font-semibold text-white/32"
+              className="-ml-1.5 flex size-7 items-center justify-center rounded-full border-0 bg-transparent text-[0.5rem] font-semibold text-white/32"
             >
               +70
             </span>
@@ -96,82 +78,107 @@ export function TuevHeroSection() {
 
       <div
         id="tuev-hero-main"
-        className="flex w-full flex-1 flex-col items-center justify-center gap-[clamp(1.25rem,3vw,2rem)] pt-[clamp(2rem,1vh,7.5rem)]"
+        className="flex w-full min-h-0 flex-1 flex-col items-center"
       >
-        <p
-          id="tuev-hero-kicker"
-          className="text-[clamp(0.85rem,1.5vw,1.1rem)] font-light text-[#ffffe3] tracking-wide"
-        >
-          kostenloser Preisrechner für TÜV-Kosten
-        </p>
-
-        <h1
-          id="tuev-hero-heading"
-          className="max-w-[52rem] text-[clamp(2.6rem,7vw,3.8rem)] leading-[1.04] font-normal tracking-[-0.02em]"
-        >
-          Was kostet{" "}
-          <strong className="font-semibold">dein</strong> TÜV wirklich?
-        </h1>
-
-        <p
-          id="tuev-hero-subtitle"
-          className="max-w-[clamp(28rem,58vw,42rem)] text-[clamp(0.95rem,1.8vw,1.35rem)] leading-[1.45] text-[rgba(255,255,227,0.41)]"
-        >
-        Kein Formular, kein Spam. Beantworte kurze Fragen zu Fahrzeug, Frist
-        und Prüfumfeld – und sieh deinen Preis live entstehen
-        </p>
-
         <div
-          id="tuev-hero-trust-indicators"
-          className="flex flex-wrap items-center justify-center gap-x-[clamp(0.75rem,2vw,1.5rem)] gap-y-[clamp(0.35rem,0.8vw,0.5rem)] text-[clamp(0.72rem,1.1vw,0.85rem)] font-light text-[#ffffe3]"
+          id="tuev-hero-announcement"
+          className="preiseberechnen-hero-line-motion preiseberechnen-hero-line-motion--stagger-1 fixed left-0 right-0 z-[100] flex w-full flex-col items-center justify-center gap-1.5 border-b border-t border-[rgba(232,168,74,0.32)] bg-[rgba(232,168,74,0.09)] py-[clamp(0.65rem,1.4vw,0.9rem)] px-[clamp(0.75rem,2vw,1.25rem)] max-md:top-[var(--preiseberechnen-header-under)] md:top-[var(--preiseberechnen-header-desktop-offset)] sm:flex-row sm:gap-[clamp(0.4rem,0.8vw,0.6rem)] sm:py-[clamp(0.6rem,1.2vw,0.85rem)]"
         >
-          <span id="tuev-hero-indicator-unverbindlich" className="flex items-center gap-[clamp(0.25rem,0.5vw,0.35rem)]">
-            <span className="size-[clamp(0.28rem,0.45vw,0.35rem)] rounded-full bg-[#ffffe3]" aria-hidden="true" />
-            <span>unverbindlich</span>
-          </span>
-          <span className="h-[clamp(0.85rem,1.6vw,1.2rem)] w-px bg-[rgba(255,255,227,0.2)]" aria-hidden="true" />
-          <span id="tuev-hero-indicator-speed" className="flex items-center gap-[clamp(0.25rem,0.5vw,0.35rem)]">
-            <span className="size-[clamp(0.28rem,0.45vw,0.35rem)] rounded-full bg-[#ffffe3]" aria-hidden="true" />
-            <span>
-              Ergebnis in <strong className="font-semibold">60</strong> Sekunden
-            </span>
-          </span>
-          <span className="h-[clamp(0.85rem,1.6vw,1.2rem)] w-px bg-[rgba(255,255,227,0.2)]" aria-hidden="true" />
-          <span id="tuev-hero-indicator-kostenlos" className="flex items-center gap-[clamp(0.25rem,0.5vw,0.35rem)]">
-            <span className="size-[clamp(0.28rem,0.45vw,0.35rem)] rounded-full bg-[#ffffe3]" aria-hidden="true" />
-            <span>kostenlos</span>
-          </span>
+          <span
+            id="tuev-hero-announcement-dot"
+            className="size-[clamp(0.55rem,0.9vw,0.7rem)] shrink-0 rounded-full bg-[#e8a84a] tuev-heartbeat-dot motion-reduce:animate-none"
+            aria-hidden="true"
+          />
+          <p
+            id="tuev-hero-announcement-text"
+            className="text-[clamp(0.68rem,1.3vw,0.92rem)] font-light text-[#e8a84a]"
+          >
+            Erhalte sofort ein Angebot zum Downloaden, um maximales Geld bei
+            deinem Dienstleister zu sparen
+          </p>
         </div>
 
-        <button
-          id="tuev-hero-cta"
-          type="button"
-          onClick={openPreisrechner}
-          className="mt-[clamp(0.5rem,1.5vw,1rem)] inline-flex cursor-pointer items-center gap-[clamp(0.5rem,1vw,0.75rem)] rounded-[clamp(0.7rem,1.2vw,0.9rem)] bg-[#ffffe3] px-[clamp(1.5rem,3vw,2.25rem)] py-[clamp(0.75rem,1.4vw,1rem)] text-[clamp(0.95rem,1.6vw,1.25rem)] font-normal text-[#251914] transition-[filter] duration-200 hover:brightness-95 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#ffffe3] focus-visible:ring-offset-2 focus-visible:ring-offset-[#030F03]"
-        >
-          <svg
-            id="tuev-hero-cta-icon"
-            width="20"
-            height="20"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            strokeWidth="1.5"
-            aria-hidden="true"
-            className="size-[clamp(1.1rem,1.8vw,1.35rem)]"
+        <div
+          aria-hidden
+          className="min-h-[clamp(2.65rem,6.5svh,3.85rem)] w-full shrink-0"
+        />
+
+        <div className="flex w-full min-h-0 flex-1 flex-col items-center justify-center gap-[clamp(1.25rem,3vw,2rem)] pt-[clamp(1rem,3.5svh,2.75rem)] md:gap-[clamp(0.55rem,min(2.75vw,2.25svh),1.65rem)] md:pt-[clamp(0.35rem,min(2.5svh,1.65svh),2rem)] md:pb-[clamp(0.25rem,1.25svh,1rem)]">
+          <p
+            id="tuev-hero-kicker"
+            className="preiseberechnen-hero-line-motion preiseberechnen-hero-line-motion--stagger-3 text-[clamp(0.85rem,1.5vw,1.1rem)] font-light text-[#ffffe3] tracking-wide"
           >
-            <circle cx="12" cy="12" r="10" />
-            <polygon points="10,8 16,12 10,16" fill="currentColor" stroke="none" />
-          </svg>
-          <span id="tuev-hero-cta-label">
-            Jetzt Preis berechnen
-          </span>
-        </button>
+            kostenloser Preisrechner für TÜV-Kosten
+          </p>
+
+          <h1
+            id="tuev-hero-heading"
+            className="preiseberechnen-hero-line-motion preiseberechnen-hero-line-motion--stagger-4 max-w-[52rem] text-[clamp(2.6rem,7vw,3.8rem)] leading-[1.04] font-normal tracking-[-0.02em]"
+          >
+            Was kostet{" "}
+            <strong className="font-semibold">dein</strong> TÜV wirklich?
+          </h1>
+
+          <p
+            id="tuev-hero-subtitle"
+            className="preiseberechnen-hero-line-motion preiseberechnen-hero-line-motion--stagger-5 max-w-[clamp(28rem,58vw,42rem)] text-[clamp(0.95rem,1.8vw,1.35rem)] leading-[1.45] text-[rgba(255,255,227,0.41)]"
+          >
+            Kein Formular, kein Spam. Beantworte kurze Fragen zu Fahrzeug, Frist
+            und Prüfumfeld – und sieh deinen Preis live entstehen
+          </p>
+
+          <div
+            id="tuev-hero-trust-indicators"
+            className="preiseberechnen-hero-line-motion preiseberechnen-hero-line-motion--stagger-6 flex flex-wrap items-center justify-center gap-x-[clamp(0.75rem,2vw,1.5rem)] gap-y-[clamp(0.35rem,0.8vw,0.5rem)] text-[clamp(0.72rem,1.1vw,0.85rem)] font-light text-[#ffffe3]"
+          >
+            <span id="tuev-hero-indicator-unverbindlich" className="flex items-center gap-[clamp(0.25rem,0.5vw,0.35rem)]">
+              <span className="size-[clamp(0.28rem,0.45vw,0.35rem)] rounded-full bg-[#ffffe3]" aria-hidden="true" />
+              <span>unverbindlich</span>
+            </span>
+            <span className="h-[clamp(0.85rem,1.6vw,1.2rem)] w-px bg-[rgba(255,255,227,0.2)]" aria-hidden="true" />
+            <span id="tuev-hero-indicator-speed" className="flex items-center gap-[clamp(0.25rem,0.5vw,0.35rem)]">
+              <span className="size-[clamp(0.28rem,0.45vw,0.35rem)] rounded-full bg-[#ffffe3]" aria-hidden="true" />
+              <span>
+                Ergebnis in <strong className="font-semibold">60</strong> Sekunden
+              </span>
+            </span>
+            <span className="h-[clamp(0.85rem,1.6vw,1.2rem)] w-px bg-[rgba(255,255,227,0.2)]" aria-hidden="true" />
+            <span id="tuev-hero-indicator-kostenlos" className="flex items-center gap-[clamp(0.25rem,0.5vw,0.35rem)]">
+              <span className="size-[clamp(0.28rem,0.45vw,0.35rem)] rounded-full bg-[#ffffe3]" aria-hidden="true" />
+              <span>kostenlos</span>
+            </span>
+          </div>
+
+          <button
+            id="tuev-hero-cta"
+            type="button"
+            onClick={openPreisrechner}
+            className="preiseberechnen-hero-line-motion preiseberechnen-hero-line-motion--stagger-7 mt-[clamp(0.5rem,1.5vw,1rem)] inline-flex cursor-pointer items-center gap-[clamp(0.5rem,1vw,0.75rem)] rounded-[clamp(0.7rem,1.2vw,0.9rem)] bg-[#ffffe3] px-[clamp(1.5rem,3vw,2.25rem)] py-[clamp(0.75rem,1.4vw,1rem)] text-[clamp(0.95rem,1.6vw,1.25rem)] font-normal text-[#251914] transition-[filter] duration-200 hover:brightness-95 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#ffffe3] focus-visible:ring-offset-2 focus-visible:ring-offset-[#030F03]"
+          >
+            <svg
+              id="tuev-hero-cta-icon"
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="1.5"
+              aria-hidden="true"
+              className="size-[clamp(1.1rem,1.8vw,1.35rem)]"
+            >
+              <circle cx="12" cy="12" r="10" />
+              <polygon points="10,8 16,12 10,16" fill="currentColor" stroke="none" />
+            </svg>
+            <span id="tuev-hero-cta-label">
+              Jetzt Preis berechnen
+            </span>
+          </button>
+        </div>
       </div>
 
       <div
         id="tuev-hero-scroll-indicator"
-        className="absolute bottom-[calc(env(safe-area-inset-bottom,0px)+clamp(2.25rem,5.5vh,3rem))] left-1/2 -translate-x-1/2"
+        className="preiseberechnen-hero-line-motion preiseberechnen-hero-line-motion--stagger-8 absolute bottom-[calc(env(safe-area-inset-bottom,0px)+clamp(2.25rem,5.5vh,3rem))] left-1/2 -translate-x-1/2"
         aria-hidden="true"
       >
         <svg

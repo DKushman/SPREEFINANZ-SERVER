@@ -187,12 +187,12 @@ export default function Home() {
         />
         <section
           id="preiseberechnen-hero"
-          className="relative z-0 flex min-h-[88vh] flex-col overflow-hidden text-center max-md:items-center max-md:justify-center md:fixed md:inset-x-0 md:top-0 md:z-0 md:h-[100svh] md:min-h-0 md:w-full md:items-stretch"
+          className="preiseberechnen-page-hero relative z-0 flex min-h-[88vh] flex-col overflow-hidden text-center max-md:items-center max-md:justify-center md:fixed md:inset-x-0 md:top-0 md:z-0 md:h-[100svh] md:min-h-0 md:w-full md:items-stretch"
         >
         <div
           ref={heroTransformShellRef}
           id="preiseberechnen-hero-transform-shell"
-          className="relative flex h-full min-h-[88vh] w-full max-w-full flex-col items-center justify-center gap-[clamp(1.5rem,3vw,2.4rem)] overflow-hidden max-md:min-h-[88vh] md:min-h-0 md:will-change-transform"
+          className="relative box-border flex h-full min-h-[88vh] w-full max-w-full flex-col items-center justify-center gap-[clamp(1.5rem,3vw,2.4rem)] overflow-hidden max-md:min-h-[88vh] md:min-h-0 md:gap-[clamp(0.55rem,min(2.75vw,3svh),1.75rem)] md:px-[clamp(0.5rem,min(2vw,1.5svh),1.25rem)] md:pt-[calc(var(--preiseberechnen-header-desktop-offset)+clamp(0.2rem,0.8svh,0.65rem))] md:pb-[max(0.5rem,calc(0.35rem+env(safe-area-inset-bottom,0px)))] md:will-change-transform"
         >
         <div
           className={`pointer-events-none absolute inset-0 z-0 transition-opacity duration-700 ease-out ${
@@ -207,7 +207,7 @@ export default function Home() {
         <div id="preiseberechnen-hero-heading-wrapper">
           <h1
             id="preiseberechnen-hero-heading"
-            className="relative z-10 flex flex-col items-center text-center text-[clamp(2.9rem,10vw,6.8rem)] leading-[0.98] tracking-[-0.03em] font-light text-[#ffffe3]"
+            className="relative z-10 flex flex-col items-center text-center text-[clamp(2.9rem,10vw,6.8rem)] leading-[0.98] tracking-[-0.03em] font-light text-[#ffffe3] md:text-[clamp(1.9rem,min(10vw,11svh),6.8rem)] md:leading-[0.96]"
           >
             <span
               id="preiseberechnen-hero-heading-line-1-wrap"
@@ -233,7 +233,7 @@ export default function Home() {
             </span>
             <span
               id="preiseberechnen-hero-heading-line-3-wrap"
-              className="-mt-[clamp(0.06em,0.9vw,0.14em)] flex w-full max-w-[min(100%,92vw)] justify-center overflow-hidden px-[clamp(0.15rem,1vw,0.5rem)]"
+              className="-mt-[clamp(0.06em,0.9vw,0.14em)] flex w-full max-w-[min(100%,92vw)] justify-center overflow-hidden px-[clamp(0.15rem,1vw,0.5rem)] md:-mt-[clamp(0.02em,min(0.9vw,0.35svh),0.12em)]"
             >
               <span
                 id="preiseberechnen-hero-heading-line-3"
@@ -296,7 +296,7 @@ export default function Home() {
         >
           <p
             id="preiseberechnen-hero-subtitle"
-            className="preiseberechnen-hero-line-motion preiseberechnen-hero-line-motion--stagger-4 m-0 max-w-none text-center text-[clamp(0.95rem,1.9vw,1.75rem)] leading-[1.4] text-[rgba(255,255,227,0.72)]"
+            className="preiseberechnen-hero-line-motion preiseberechnen-hero-line-motion--stagger-4 m-0 max-w-none text-center text-[clamp(0.95rem,1.9vw,1.75rem)] leading-[1.4] text-[rgba(255,255,227,0.72)] md:text-[clamp(0.78rem,min(1.85vw,2.4svh),1.55rem)] md:leading-[1.32]"
           >
             Anwaltsgebühren, Notarkosten, Websitepreise – wir bringen Transparenz
             in die Themen, bei denen die meisten einfach zu viel bezahlen.

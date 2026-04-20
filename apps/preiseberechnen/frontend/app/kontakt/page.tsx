@@ -27,17 +27,17 @@ export default function KontaktPage() {
       >
         <header
           id="preiseberechnen-kontakt-header"
-          className="mb-[clamp(1.5rem,3.5vw,2.25rem)] max-w-[min(42rem,100%)]"
+          className="preiseberechnen-page-hero mb-[clamp(1.5rem,3.5vw,2.25rem)] max-w-[min(42rem,100%)]"
         >
           <h1
             id="preiseberechnen-kontakt-heading"
-            className="m-0 text-[clamp(1.65rem,4.2vw,2.35rem)] font-semibold tracking-[-0.02em] text-[#ffffe3]"
+            className="preiseberechnen-hero-line-motion preiseberechnen-hero-line-motion--stagger-1 m-0 text-[clamp(1.65rem,4.2vw,2.35rem)] font-semibold tracking-[-0.02em] text-[#ffffe3]"
           >
             Kontakt
           </h1>
           <p
             id="preiseberechnen-kontakt-lead"
-            className="mt-[clamp(0.65rem,1.5vw,0.9rem)] text-[clamp(0.92rem,1.65vw,1.05rem)] leading-[1.65] text-[rgba(255,255,227,0.78)]"
+            className="preiseberechnen-hero-line-motion preiseberechnen-hero-line-motion--stagger-2 mt-[clamp(0.65rem,1.5vw,0.9rem)] text-[clamp(0.92rem,1.65vw,1.05rem)] leading-[1.65] text-[rgba(255,255,227,0.78)]"
           >
             Schreib uns über das Formular oder direkt per E-Mail an{" "}
             <a

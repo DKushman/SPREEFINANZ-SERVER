@@ -18,7 +18,7 @@ const articleClass =
   "mx-auto w-full max-w-[min(72rem,calc(100vw-4vh))] px-[clamp(1rem,2vh,1.75rem)] py-[clamp(2rem,5vh,3.5rem)]";
 
 const h1Class =
-  "m-0 text-[clamp(1.65rem,4.2vw,2.35rem)] font-semibold tracking-[-0.02em] text-[#ffffe3]";
+  "preiseberechnen-hero-line-motion preiseberechnen-hero-line-motion--stagger-1 m-0 text-[clamp(1.65rem,4.2vw,2.35rem)] font-semibold tracking-[-0.02em] text-[#ffffe3]";
 
 const h2Class =
   "mt-0 text-[clamp(1.05rem,2.2vw,1.22rem)] font-semibold tracking-[-0.02em] text-[#ffffe3]";
@@ -33,11 +33,11 @@ export default function ImpressumPage() {
   return (
     <main id="impressum-main" className="pb-[clamp(2.5rem,6vh,4rem)] text-[#ffffe3]">
       <article id="impressum-article" className={articleClass}>
-        <header id="impressum-header" className="mb-[clamp(1.25rem,3vw,1.75rem)]">
+        <header id="impressum-header" className="preiseberechnen-page-hero mb-[clamp(1.25rem,3vw,1.75rem)]">
           <h1 id="impressum-heading" className={h1Class}>
             Impressum
           </h1>
-          <p id="impressum-intro" className={`${bodyClass} mt-[clamp(0.65rem,1.5vw,0.9rem)] max-w-[min(42rem,100%)]`}>
+          <p id="impressum-intro" className={`preiseberechnen-hero-line-motion preiseberechnen-hero-line-motion--stagger-2 ${bodyClass} mt-[clamp(0.65rem,1.5vw,0.9rem)] max-w-[min(42rem,100%)]`}>
             Angaben gemäß den gesetzlichen Vorgaben zur Anbieterkennzeichnung.
             Rechtlich verbindliche Prüfung durch Fachanwalt oder Steuerberater
             wird empfohlen.

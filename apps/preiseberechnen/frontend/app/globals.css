@@ -5,6 +5,40 @@
   --foreground: #ffffe3;
   /** Einheitlicher vertikaler Abstand zwischen Homepage-Sections */
   --preiseberechnen-section-padding-block: clamp(3.5rem, 9vw, 6.5rem);
+  /**
+   * Fixierter Desktop-Header (äußeres Padding + Pille): wächst mit normaler Höhe,
+   * wird bei niedriger Viewport-Höhe kompakter — Layout-Spacer und Hero-Toppadding
+   * nutzen dieselbe Basis.
+   */
+  --preiseberechnen-header-desktop-offset: calc(
+    env(safe-area-inset-top, 0px) +
+      clamp(4.45rem, calc(2.75rem + 5.5svh), 5.75rem)
+  );
+  /**
+   * Unterkante fixierter Header inkl. Safe-Area (mobil etwas höher als der
+   * Flow-Spacer, damit volle Breiten-Leisten bündig unter der Pille sitzen).
+   */
+  --preiseberechnen-header-under: calc(
+    env(safe-area-inset-top, 0px) +
+      clamp(4.85rem, calc(3.4rem + 5.25svh), 5.9rem)
+  );
+
+  /**
+   * Einheitliche Hero-Einblendung (alle Seiten): hier einmal Dauer, Easing,
+   * Versatz und Staffel anpassen — gilt für `.preiseberechnen-page-hero` und
+   * `.preiseberechnen-hero-line-motion` / Modifikatoren.
+   */
+  --preiseberechnen-hero-reveal-duration: 0.78s;
+  --preiseberechnen-hero-reveal-ease: cubic-bezier(0.16, 1, 0.3, 1);
+  --preiseberechnen-hero-reveal-y: 1.125rem;
+  --preiseberechnen-hero-reveal-stagger: 0.085s;
+  /** Mindest-Verzögerung vor dem ersten Kind (nach Shell-Einblend). */
+  --preiseberechnen-hero-reveal-content-delay: 0.07s;
+  /** Extra-Pause für `.preiseberechnen-hero-line-motion--delayed` (z. B. zweite Zeile). */
+  --preiseberechnen-hero-reveal-delayed-bump: 0.14s;
+  /** Leichte Shell-Einblendung des gesamten Hero-Blocks */
+  --preiseberechnen-hero-section-duration: 0.52s;
+  --preiseberechnen-hero-section-blur: 0px;
 }
 
 @theme inline {
@@ -52,7 +86,102 @@ body {
   -webkit-mix-blend-mode: difference;
 }
 
-/* Hero-Startanimationen entfernt: statischer First Paint für bessere Stabilität */
+/* ——— Seitenübergreifende Hero-Einblendung (eine Konfiguration via :root-Variablen) ——— */
+@keyframes preiseberechnenHeroReveal {
+  from {
+    opacity: 0;
+    transform: translate3d(0, var(--preiseberechnen-hero-reveal-y), 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes preiseberechnenHeroRevealYOnly {
+  from {
+    transform: translate3d(0, var(--preiseberechnen-hero-reveal-y), 0);
+  }
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes preiseberechnenHeroSectionShell {
+  from {
+    opacity: 0;
+    filter: blur(var(--preiseberechnen-hero-section-blur));
+  }
+  to {
+    opacity: 1;
+    filter: blur(0);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .preiseberechnen-page-hero {
+    animation: preiseberechnenHeroSectionShell
+      var(--preiseberechnen-hero-section-duration)
+      var(--preiseberechnen-hero-reveal-ease) both;
+  }
+
+  .preiseberechnen-hero-line-motion {
+    opacity: 0;
+    animation: preiseberechnenHeroReveal var(--preiseberechnen-hero-reveal-duration)
+      var(--preiseberechnen-hero-reveal-ease) forwards;
+    animation-delay: calc(
+      var(--preiseberechnen-hero-reveal-content-delay) +
+        var(--preiseberechnen-hero-reveal-stagger) *
+          var(--preiseberechnen-hero-stagger-index, 0)
+    );
+  }
+
+  .preiseberechnen-hero-line-motion--stagger-1 {
+    --preiseberechnen-hero-stagger-index: 0;
+  }
+  .preiseberechnen-hero-line-motion--stagger-2 {
+    --preiseberechnen-hero-stagger-index: 1;
+  }
+  .preiseberechnen-hero-line-motion--stagger-3 {
+    --preiseberechnen-hero-stagger-index: 2;
+  }
+  .preiseberechnen-hero-line-motion--stagger-4 {
+    --preiseberechnen-hero-stagger-index: 3;
+  }
+  .preiseberechnen-hero-line-motion--stagger-5 {
+    --preiseberechnen-hero-stagger-index: 4;
+  }
+  .preiseberechnen-hero-line-motion--stagger-6 {
+    --preiseberechnen-hero-stagger-index: 5;
+  }
+  .preiseberechnen-hero-line-motion--stagger-7 {
+    --preiseberechnen-hero-stagger-index: 6;
+  }
+  .preiseberechnen-hero-line-motion--stagger-8 {
+    --preiseberechnen-hero-stagger-index: 7;
+  }
+  .preiseberechnen-hero-line-motion--stagger-9 {
+    --preiseberechnen-hero-stagger-index: 8;
+  }
+  .preiseberechnen-hero-line-motion--stagger-10 {
+    --preiseberechnen-hero-stagger-index: 9;
+  }
+
+  .preiseberechnen-hero-line-motion--delayed {
+    animation-delay: calc(
+      var(--preiseberechnen-hero-reveal-content-delay) +
+        var(--preiseberechnen-hero-reveal-stagger) *
+          var(--preiseberechnen-hero-stagger-index, 0) +
+        var(--preiseberechnen-hero-reveal-delayed-bump)
+    );
+  }
+
+  /** Nur vertikale Bewegung, keine Opacity-Keyframes (z. B. halbtransparente Karten). */
+  .preiseberechnen-hero-line-motion.preiseberechnen-hero-line-motion--from-y-only {
+    opacity: 1;
+    animation-name: preiseberechnenHeroRevealYOnly;
+  }
+}
 
 /* Burger-Menü: cubic-bezier Animation */
 .menu-overlay {
@@ -319,6 +448,15 @@ body {
   .preiseberechnen-hero-word-out,
   .preiseberechnen-hero-word-in {
     animation: none !important;
+  }
+  .preiseberechnen-page-hero,
+  .preiseberechnen-hero-line-motion,
+  .preiseberechnen-hero-line-motion--from-y-only {
+    animation: none !important;
+    opacity: 1 !important;
+    filter: none !important;
+    transform: none !important;
+    will-change: auto !important;
   }
   .price-calc-progress-fill {
     transition: none !important;
