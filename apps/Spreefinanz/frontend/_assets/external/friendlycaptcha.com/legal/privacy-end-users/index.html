@@ -1,0 +1,1180 @@
+<!doctype html>
+<html lang="en-US" prefix="og: https://ogp.me/ns#">
+<head><meta charset="UTF-8"><script>if(navigator.userAgent.match(/MSIE|Internet Explorer/i)||navigator.userAgent.match(/Trident\/7\..*?rv:11/i)){var href=document.location.href;if(!href.match(/[?&]nowprocket/)){if(href.indexOf("?")==-1){if(href.indexOf("#")==-1){document.location.href=href+"?nowprocket=1"}else{document.location.href=href.replace("#","?nowprocket=1#")}}else{if(href.indexOf("#")==-1){document.location.href=href+"&nowprocket=1"}else{document.location.href=href.replace("#","&nowprocket=1#")}}}}</script><script>(()=>{class RocketLazyLoadScripts{constructor(){this.v="2.0.5",this.userEvents=["keydown","keyup","mousedown","mouseup","mousemove","mouseover","mouseout","touchmove","touchstart","touchend","touchcancel","wheel","click","dblclick","input"],this.attributeEvents=["onblur","onclick","oncontextmenu","ondblclick","onfocus","onmousedown","onmouseenter","onmouseleave","onmousemove","onmouseout","onmouseover","onmouseup","onmousewheel","onscroll","onsubmit"]}async t(){this.i(),this.o(),/iP(ad|hone)/.test(navigator.userAgent)&&this.h(),this.u(),this.l(this),this.m(),this.k(this),this.p(this),this._(),await Promise.all([this.R(),this.L()]),this.lastBreath=Date.now(),this.S(this),this.P(),this.D(),this.O(),this.M(),await this.C(this.delayedScripts.normal),await this.C(this.delayedScripts.defer),await this.C(this.delayedScripts.async),await this.T(),await this.F(),await this.j(),await this.A(),window.dispatchEvent(new Event("rocket-allScriptsLoaded")),this.everythingLoaded=!0,this.lastTouchEnd&&await new Promise(t=>setTimeout(t,500-Date.now()+this.lastTouchEnd)),this.I(),this.H(),this.U(),this.W()}i(){this.CSPIssue=sessionStorage.getItem("rocketCSPIssue"),document.addEventListener("securitypolicyviolation",t=>{this.CSPIssue||"script-src-elem"!==t.violatedDirective||"data"!==t.blockedURI||(this.CSPIssue=!0,sessionStorage.setItem("rocketCSPIssue",!0))},{isRocket:!0})}o(){window.addEventListener("pageshow",t=>{this.persisted=t.persisted,this.realWindowLoadedFired=!0},{isRocket:!0}),window.addEventListener("pagehide",()=>{this.onFirstUserAction=null},{isRocket:!0})}h(){let t;function e(e){t=e}window.addEventListener("touchstart",e,{isRocket:!0}),window.addEventListener("touchend",function i(o){o.changedTouches[0]&&t.changedTouches[0]&&Math.abs(o.changedTouches[0].pageX-t.changedTouches[0].pageX)<10&&Math.abs(o.changedTouches[0].pageY-t.changedTouches[0].pageY)<10&&o.timeStamp-t.timeStamp<200&&(window.removeEventListener("touchstart",e,{isRocket:!0}),window.removeEventListener("touchend",i,{isRocket:!0}),"INPUT"===o.target.tagName&&"text"===o.target.type||(o.target.dispatchEvent(new TouchEvent("touchend",{target:o.target,bubbles:!0})),o.target.dispatchEvent(new MouseEvent("mouseover",{target:o.target,bubbles:!0})),o.target.dispatchEvent(new PointerEvent("click",{target:o.target,bubbles:!0,cancelable:!0,detail:1,clientX:o.changedTouches[0].clientX,clientY:o.changedTouches[0].clientY})),event.preventDefault()))},{isRocket:!0})}q(t){this.userActionTriggered||("mousemove"!==t.type||this.firstMousemoveIgnored?"keyup"===t.type||"mouseover"===t.type||"mouseout"===t.type||(this.userActionTriggered=!0,this.onFirstUserAction&&this.onFirstUserAction()):this.firstMousemoveIgnored=!0),"click"===t.type&&t.preventDefault(),t.stopPropagation(),t.stopImmediatePropagation(),"touchstart"===this.lastEvent&&"touchend"===t.type&&(this.lastTouchEnd=Date.now()),"click"===t.type&&(this.lastTouchEnd=0),this.lastEvent=t.type,t.composedPath&&t.composedPath()[0].getRootNode()instanceof ShadowRoot&&(t.rocketTarget=t.composedPath()[0]),this.savedUserEvents.push(t)}u(){this.savedUserEvents=[],this.userEventHandler=this.q.bind(this),this.userEvents.forEach(t=>window.addEventListener(t,this.userEventHandler,{passive:!1,isRocket:!0})),document.addEventListener("visibilitychange",this.userEventHandler,{isRocket:!0})}U(){this.userEvents.forEach(t=>window.removeEventListener(t,this.userEventHandler,{passive:!1,isRocket:!0})),document.removeEventListener("visibilitychange",this.userEventHandler,{isRocket:!0}),this.savedUserEvents.forEach(t=>{(t.rocketTarget||t.target).dispatchEvent(new window[t.constructor.name](t.type,t))})}m(){const t="return false",e=Array.from(this.attributeEvents,t=>"data-rocket-"+t),i="["+this.attributeEvents.join("],[")+"]",o="[data-rocket-"+this.attributeEvents.join("],[data-rocket-")+"]",s=(e,i,o)=>{o&&o!==t&&(e.setAttribute("data-rocket-"+i,o),e["rocket"+i]=new Function("event",o),e.setAttribute(i,t))};new MutationObserver(t=>{for(const n of t)"attributes"===n.type&&(n.attributeName.startsWith("data-rocket-")||this.everythingLoaded?n.attributeName.startsWith("data-rocket-")&&this.everythingLoaded&&this.N(n.target,n.attributeName.substring(12)):s(n.target,n.attributeName,n.target.getAttribute(n.attributeName))),"childList"===n.type&&n.addedNodes.forEach(t=>{if(t.nodeType===Node.ELEMENT_NODE)if(this.everythingLoaded)for(const i of[t,...t.querySelectorAll(o)])for(const t of i.getAttributeNames())e.includes(t)&&this.N(i,t.substring(12));else for(const e of[t,...t.querySelectorAll(i)])for(const t of e.getAttributeNames())this.attributeEvents.includes(t)&&s(e,t,e.getAttribute(t))})}).observe(document,{subtree:!0,childList:!0,attributeFilter:[...this.attributeEvents,...e]})}I(){this.attributeEvents.forEach(t=>{document.querySelectorAll("[data-rocket-"+t+"]").forEach(e=>{this.N(e,t)})})}N(t,e){const i=t.getAttribute("data-rocket-"+e);i&&(t.setAttribute(e,i),t.removeAttribute("data-rocket-"+e))}k(t){Object.defineProperty(HTMLElement.prototype,"onclick",{get(){return this.rocketonclick||null},set(e){this.rocketonclick=e,this.setAttribute(t.everythingLoaded?"onclick":"data-rocket-onclick","this.rocketonclick(event)")}})}S(t){function e(e,i){let o=e[i];e[i]=null,Object.defineProperty(e,i,{get:()=>o,set(s){t.everythingLoaded?o=s:e["rocket"+i]=o=s}})}e(document,"onreadystatechange"),e(window,"onload"),e(window,"onpageshow");try{Object.defineProperty(document,"readyState",{get:()=>t.rocketReadyState,set(e){t.rocketReadyState=e},configurable:!0}),document.readyState="loading"}catch(t){console.log("WPRocket DJE readyState conflict, bypassing")}}l(t){this.originalAddEventListener=EventTarget.prototype.addEventListener,this.originalRemoveEventListener=EventTarget.prototype.removeEventListener,this.savedEventListeners=[],EventTarget.prototype.addEventListener=function(e,i,o){o&&o.isRocket||!t.B(e,this)&&!t.userEvents.includes(e)||t.B(e,this)&&!t.userActionTriggered||e.startsWith("rocket-")||t.everythingLoaded?t.originalAddEventListener.call(this,e,i,o):(t.savedEventListeners.push({target:this,remove:!1,type:e,func:i,options:o}),"mouseenter"!==e&&"mouseleave"!==e||t.originalAddEventListener.call(this,e,t.savedUserEvents.push,o))},EventTarget.prototype.removeEventListener=function(e,i,o){o&&o.isRocket||!t.B(e,this)&&!t.userEvents.includes(e)||t.B(e,this)&&!t.userActionTriggered||e.startsWith("rocket-")||t.everythingLoaded?t.originalRemoveEventListener.call(this,e,i,o):t.savedEventListeners.push({target:this,remove:!0,type:e,func:i,options:o})}}J(t,e){this.savedEventListeners=this.savedEventListeners.filter(i=>{let o=i.type,s=i.target||window;return e!==o||t!==s||(this.B(o,s)&&(i.type="rocket-"+o),this.$(i),!1)})}H(){EventTarget.prototype.addEventListener=this.originalAddEventListener,EventTarget.prototype.removeEventListener=this.originalRemoveEventListener,this.savedEventListeners.forEach(t=>this.$(t))}$(t){t.remove?this.originalRemoveEventListener.call(t.target,t.type,t.func,t.options):this.originalAddEventListener.call(t.target,t.type,t.func,t.options)}p(t){let e;function i(e){return t.everythingLoaded?e:e.split(" ").map(t=>"load"===t||t.startsWith("load.")?"rocket-jquery-load":t).join(" ")}function o(o){function s(e){const s=o.fn[e];o.fn[e]=o.fn.init.prototype[e]=function(){return this[0]===window&&t.userActionTriggered&&("string"==typeof arguments[0]||arguments[0]instanceof String?arguments[0]=i(arguments[0]):"object"==typeof arguments[0]&&Object.keys(arguments[0]).forEach(t=>{const e=arguments[0][t];delete arguments[0][t],arguments[0][i(t)]=e})),s.apply(this,arguments),this}}if(o&&o.fn&&!t.allJQueries.includes(o)){const e={DOMContentLoaded:[],"rocket-DOMContentLoaded":[]};for(const t in e)document.addEventListener(t,()=>{e[t].forEach(t=>t())},{isRocket:!0});o.fn.ready=o.fn.init.prototype.ready=function(i){function s(){parseInt(o.fn.jquery)>2?setTimeout(()=>i.bind(document)(o)):i.bind(document)(o)}return"function"==typeof i&&(t.realDomReadyFired?!t.userActionTriggered||t.fauxDomReadyFired?s():e["rocket-DOMContentLoaded"].push(s):e.DOMContentLoaded.push(s)),this},s("on"),s("one"),s("off"),t.allJQueries.push(o)}e=o}t.allJQueries=[],o(window.jQuery),Object.defineProperty(window,"jQuery",{get:()=>e,set(t){o(t)}})}P(){const t=new Map;document.write=document.writeln=function(e){const i=document.currentScript,o=document.createRange(),s=i.parentElement;let n=t.get(i);void 0===n&&(n=i.nextSibling,t.set(i,n));const c=document.createDocumentFragment();o.setStart(c,0),c.appendChild(o.createContextualFragment(e)),s.insertBefore(c,n)}}async R(){return new Promise(t=>{this.userActionTriggered?t():this.onFirstUserAction=t})}async L(){return new Promise(t=>{document.addEventListener("DOMContentLoaded",()=>{this.realDomReadyFired=!0,t()},{isRocket:!0})})}async j(){return this.realWindowLoadedFired?Promise.resolve():new Promise(t=>{window.addEventListener("load",t,{isRocket:!0})})}M(){this.pendingScripts=[];this.scriptsMutationObserver=new MutationObserver(t=>{for(const e of t)e.addedNodes.forEach(t=>{"SCRIPT"!==t.tagName||!t.src||t.noModule||t.isWPRocket||this.pendingScripts.push({script:t,promise:new Promise(e=>{const i=()=>{const i=this.pendingScripts.findIndex(e=>e.script===t);i>=0&&this.pendingScripts.splice(i,1),e()};t.addEventListener("load",i,{isRocket:!0}),t.addEventListener("error",i,{isRocket:!0}),setTimeout(i,1e3)})})})}),this.scriptsMutationObserver.observe(document,{childList:!0,subtree:!0})}async F(){await this.X(),this.pendingScripts.length?(await this.pendingScripts[0].promise,await this.F()):this.scriptsMutationObserver.disconnect()}D(){this.delayedScripts={normal:[],async:[],defer:[]},document.querySelectorAll("script[type$=rocketlazyloadscript]").forEach(t=>{t.hasAttribute("data-rocket-src")?t.hasAttribute("async")&&!1!==t.async?this.delayedScripts.async.push(t):t.hasAttribute("defer")&&!1!==t.defer||"module"===t.getAttribute("data-rocket-type")?this.delayedScripts.defer.push(t):this.delayedScripts.normal.push(t):this.delayedScripts.normal.push(t)})}async _(){await this.L();let t=[];document.querySelectorAll("script[type$=rocketlazyloadscript][data-rocket-src]").forEach(e=>{let i=e.getAttribute("data-rocket-src");if(i&&!i.startsWith("data:")){i.startsWith("//")&&(i=location.protocol+i);try{const o=new URL(i).origin;o!==location.origin&&t.push({src:o,crossOrigin:e.crossOrigin||"module"===e.getAttribute("data-rocket-type")})}catch(t){}}}),t=[...new Map(t.map(t=>[JSON.stringify(t),t])).values()],this.Y(t,"preconnect")}async G(t){if(await this.K(),!0!==t.noModule||!("noModule"in HTMLScriptElement.prototype))return new Promise(e=>{let i;function o(){(i||t).setAttribute("data-rocket-status","executed"),e()}try{if(navigator.userAgent.includes("Firefox/")||""===navigator.vendor||this.CSPIssue)i=document.createElement("script"),[...t.attributes].forEach(t=>{let e=t.nodeName;"type"!==e&&("data-rocket-type"===e&&(e="type"),"data-rocket-src"===e&&(e="src"),i.setAttribute(e,t.nodeValue))}),t.text&&(i.text=t.text),t.nonce&&(i.nonce=t.nonce),i.hasAttribute("src")?(i.addEventListener("load",o,{isRocket:!0}),i.addEventListener("error",()=>{i.setAttribute("data-rocket-status","failed-network"),e()},{isRocket:!0}),setTimeout(()=>{i.isConnected||e()},1)):(i.text=t.text,o()),i.isWPRocket=!0,t.parentNode.replaceChild(i,t);else{const i=t.getAttribute("data-rocket-type"),s=t.getAttribute("data-rocket-src");i?(t.type=i,t.removeAttribute("data-rocket-type")):t.removeAttribute("type"),t.addEventListener("load",o,{isRocket:!0}),t.addEventListener("error",i=>{this.CSPIssue&&i.target.src.startsWith("data:")?(console.log("WPRocket: CSP fallback activated"),t.removeAttribute("src"),this.G(t).then(e)):(t.setAttribute("data-rocket-status","failed-network"),e())},{isRocket:!0}),s?(t.fetchPriority="high",t.removeAttribute("data-rocket-src"),t.src=s):t.src="data:text/javascript;base64,"+window.btoa(unescape(encodeURIComponent(t.text)))}}catch(i){t.setAttribute("data-rocket-status","failed-transform"),e()}});t.setAttribute("data-rocket-status","skipped")}async C(t){const e=t.shift();return e?(e.isConnected&&await this.G(e),this.C(t)):Promise.resolve()}O(){this.Y([...this.delayedScripts.normal,...this.delayedScripts.defer,...this.delayedScripts.async],"preload")}Y(t,e){this.trash=this.trash||[];let i=!0;var o=document.createDocumentFragment();t.forEach(t=>{const s=t.getAttribute&&t.getAttribute("data-rocket-src")||t.src;if(s&&!s.startsWith("data:")){const n=document.createElement("link");n.href=s,n.rel=e,"preconnect"!==e&&(n.as="script",n.fetchPriority=i?"high":"low"),t.getAttribute&&"module"===t.getAttribute("data-rocket-type")&&(n.crossOrigin=!0),t.crossOrigin&&(n.crossOrigin=t.crossOrigin),t.integrity&&(n.integrity=t.integrity),t.nonce&&(n.nonce=t.nonce),o.appendChild(n),this.trash.push(n),i=!1}}),document.head.appendChild(o)}W(){this.trash.forEach(t=>t.remove())}async T(){try{document.readyState="interactive"}catch(t){}this.fauxDomReadyFired=!0;try{await this.K(),this.J(document,"readystatechange"),document.dispatchEvent(new Event("rocket-readystatechange")),await this.K(),document.rocketonreadystatechange&&document.rocketonreadystatechange(),await this.K(),this.J(document,"DOMContentLoaded"),document.dispatchEvent(new Event("rocket-DOMContentLoaded")),await this.K(),this.J(window,"DOMContentLoaded"),window.dispatchEvent(new Event("rocket-DOMContentLoaded"))}catch(t){console.error(t)}}async A(){try{document.readyState="complete"}catch(t){}try{await this.K(),this.J(document,"readystatechange"),document.dispatchEvent(new Event("rocket-readystatechange")),await this.K(),document.rocketonreadystatechange&&document.rocketonreadystatechange(),await this.K(),this.J(window,"load"),window.dispatchEvent(new Event("rocket-load")),await this.K(),window.rocketonload&&window.rocketonload(),await this.K(),this.allJQueries.forEach(t=>t(window).trigger("rocket-jquery-load")),await this.K(),this.J(window,"pageshow");const t=new Event("rocket-pageshow");t.persisted=this.persisted,window.dispatchEvent(t),await this.K(),window.rocketonpageshow&&window.rocketonpageshow({persisted:this.persisted})}catch(t){console.error(t)}}async K(){Date.now()-this.lastBreath>45&&(await this.X(),this.lastBreath=Date.now())}async X(){return document.hidden?new Promise(t=>setTimeout(t)):new Promise(t=>requestAnimationFrame(t))}B(t,e=window){return e===document&&"readystatechange"===t||(e===document&&"DOMContentLoaded"===t||(e===window&&"DOMContentLoaded"===t||(e===window&&"load"===t||e===window&&"pageshow"===t)))}static run(){(new RocketLazyLoadScripts).t()}}RocketLazyLoadScripts.run()})();
+</script>
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="profile" href="https://gmpg.org/xfn/11">
+	
+<!-- Search Engine Optimization by Rank Math PRO - https://rankmath.com/ -->
+<title>Privacy Policy for End Users - Friendly Captcha</title>
+<link data-rocket-prefetch href="https://plausible.io" rel="dns-prefetch">
+<link crossorigin data-rocket-preload as="font" href="https://friendlycaptcha.com/wp-content/uploads/2020/12/inter-v3-latin-regular.woff2" rel="preload"><link rel="preload" data-rocket-preload as="image" href="https://friendlycaptcha.com/wp-content/uploads/2020/12/FriendlyCaptcha-Logo.svg" fetchpriority="high">
+<meta name="description" content="Friendly Captcha protects websites and online services from spam and abuse. Using proof-of-work, our solution employs a fundamentally new approach to spam"/>
+<meta name="robots" content="follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large"/>
+<link rel="canonical" href="https://friendlycaptcha.com/legal/privacy-end-users/" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Privacy Policy for End Users - Friendly Captcha" />
+<meta property="og:description" content="Friendly Captcha protects websites and online services from spam and abuse. Using proof-of-work, our solution employs a fundamentally new approach to spam" />
+<meta property="og:url" content="https://friendlycaptcha.com/legal/privacy-end-users/" />
+<meta property="og:site_name" content="Friendly Captcha" />
+<meta property="og:updated_time" content="2024-07-08T16:49:48+02:00" />
+<meta property="og:image" content="https://2bcef964.delivery.rocketcdn.me/wp-content/uploads/2021/12/IL_FriendlyCaptcha_WidgetScreenshot_WW_v1.png" />
+<meta property="og:image:secure_url" content="https://2bcef964.delivery.rocketcdn.me/wp-content/uploads/2021/12/IL_FriendlyCaptcha_WidgetScreenshot_WW_v1.png" />
+<meta property="og:image:width" content="1084" />
+<meta property="og:image:height" content="750" />
+<meta property="og:image:alt" content="Privacy Policy for End Users" />
+<meta property="og:image:type" content="image/png" />
+<meta property="article:published_time" content="2021-02-15T16:49:25+01:00" />
+<meta property="article:modified_time" content="2024-07-08T16:49:48+02:00" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Privacy Policy for End Users - Friendly Captcha" />
+<meta name="twitter:description" content="Friendly Captcha protects websites and online services from spam and abuse. Using proof-of-work, our solution employs a fundamentally new approach to spam" />
+<meta name="twitter:image" content="https://2bcef964.delivery.rocketcdn.me/wp-content/uploads/2021/12/IL_FriendlyCaptcha_WidgetScreenshot_WW_v1.png" />
+<meta name="twitter:label1" content="Time to read" />
+<meta name="twitter:data1" content="3 minutes" />
+<script type="application/ld+json" class="rank-math-schema-pro">{"@context":"https://schema.org","@graph":[{"@type":"Place","@id":"https://friendlycaptcha.com/#place","address":{"@type":"PostalAddress","streetAddress":"Am Anger 3-5","addressLocality":"Woerthsee","addressRegion":"Bavaria","postalCode":"82237","addressCountry":"Germany"}},{"@type":"Organization","@id":"https://friendlycaptcha.com/#organization","name":"Friendly Captcha","url":"https://friendlycaptcha.com","address":{"@type":"PostalAddress","streetAddress":"Am Anger 3-5","addressLocality":"Woerthsee","addressRegion":"Bavaria","postalCode":"82237","addressCountry":"Germany"},"logo":{"@type":"ImageObject","@id":"https://friendlycaptcha.com/#logo","url":"https://friendlycaptcha.com/wp-content/uploads/2020/12/FriendlyCaptcha-AppIcon.svg","contentUrl":"https://friendlycaptcha.com/wp-content/uploads/2020/12/FriendlyCaptcha-AppIcon.svg","caption":"Friendly Captcha","inLanguage":"en-US","width":"100","height":"100"},"description":"Friendly Captcha offers privacy-first, invisible bot protection for\nenterprises. The world\u2019s leading organizations trust Friendly Captcha to protect\ntheir websites and apps from bots and abuse. Friendly Captcha replaces frustrating image puzzles with truly invisible proof-of-work challenges\nthat run automatically in the background.","location":{"@id":"https://friendlycaptcha.com/#place"}},{"@type":"WebSite","@id":"https://friendlycaptcha.com/#website","url":"https://friendlycaptcha.com","name":"Friendly Captcha","publisher":{"@id":"https://friendlycaptcha.com/#organization"},"inLanguage":"en-US"},{"@type":"ImageObject","@id":"https://2bcef964.delivery.rocketcdn.me/wp-content/uploads/2021/12/IL_FriendlyCaptcha_WidgetScreenshot_WW_v1.png","url":"https://2bcef964.delivery.rocketcdn.me/wp-content/uploads/2021/12/IL_FriendlyCaptcha_WidgetScreenshot_WW_v1.png","width":"1084","height":"750","inLanguage":"en-US"},{"@type":"WebPage","@id":"https://friendlycaptcha.com/legal/privacy-end-users/#webpage","url":"https://friendlycaptcha.com/legal/privacy-end-users/","name":"Privacy Policy for End Users - Friendly Captcha","datePublished":"2021-02-15T16:49:25+01:00","dateModified":"2024-07-08T16:49:48+02:00","isPartOf":{"@id":"https://friendlycaptcha.com/#website"},"primaryImageOfPage":{"@id":"https://2bcef964.delivery.rocketcdn.me/wp-content/uploads/2021/12/IL_FriendlyCaptcha_WidgetScreenshot_WW_v1.png"},"inLanguage":"en-US"},{"@type":"Person","@id":"https://friendlycaptcha.com/legal/privacy-end-users/#author","name":"Benedict Padberg","image":{"@type":"ImageObject","@id":"https://secure.gravatar.com/avatar/f0b3d71f94ee1465997692b350e5f2564ebe341779e5f78c93b0913685f031fc?s=96&amp;d=mm&amp;r=g","url":"https://secure.gravatar.com/avatar/f0b3d71f94ee1465997692b350e5f2564ebe341779e5f78c93b0913685f031fc?s=96&amp;d=mm&amp;r=g","caption":"Benedict Padberg","inLanguage":"en-US"},"sameAs":["https://friendlycaptcha.com"],"worksFor":{"@id":"https://friendlycaptcha.com/#organization"}},{"@type":"Article","headline":"Privacy Policy for End Users - Friendly Captcha","datePublished":"2021-02-15T16:49:25+01:00","dateModified":"2024-07-08T16:49:48+02:00","author":{"@id":"https://friendlycaptcha.com/legal/privacy-end-users/#author","name":"Benedict Padberg"},"publisher":{"@id":"https://friendlycaptcha.com/#organization"},"description":"Friendly Captcha protects websites and online services from spam and abuse. Using proof-of-work, our solution employs a fundamentally new approach to spam","name":"Privacy Policy for End Users - Friendly Captcha","@id":"https://friendlycaptcha.com/legal/privacy-end-users/#richSnippet","isPartOf":{"@id":"https://friendlycaptcha.com/legal/privacy-end-users/#webpage"},"image":{"@id":"https://2bcef964.delivery.rocketcdn.me/wp-content/uploads/2021/12/IL_FriendlyCaptcha_WidgetScreenshot_WW_v1.png"},"inLanguage":"en-US","mainEntityOfPage":{"@id":"https://friendlycaptcha.com/legal/privacy-end-users/#webpage"}}]}</script>
+<!-- /Rank Math WordPress SEO plugin -->
+
+<link rel='dns-prefetch' href='//plausible.io' />
+
+<link rel="alternate" type="application/rss+xml" title="Friendly Captcha &raquo; Feed" href="https://friendlycaptcha.com/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Friendly Captcha &raquo; Comments Feed" href="https://friendlycaptcha.com/comments/feed/" />
+<link rel="alternate" title="oEmbed (JSON)" type="application/json+oembed" href="https://friendlycaptcha.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Ffriendlycaptcha.com%2Flegal%2Fprivacy-end-users%2F" />
+<link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed" href="https://friendlycaptcha.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Ffriendlycaptcha.com%2Flegal%2Fprivacy-end-users%2F&#038;format=xml" />
+<style id='wp-img-auto-sizes-contain-inline-css'>
+img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
+/*# sourceURL=wp-img-auto-sizes-contain-inline-css */
+</style>
+<style id='wp-emoji-styles-inline-css'>
+
+	img.wp-smiley, img.emoji {
+		display: inline !important;
+		border: none !important;
+		box-shadow: none !important;
+		height: 1em !important;
+		width: 1em !important;
+		margin: 0 0.07em !important;
+		vertical-align: -0.1em !important;
+		background: none !important;
+		padding: 0 !important;
+	}
+/*# sourceURL=wp-emoji-styles-inline-css */
+</style>
+<link rel='stylesheet' id='wp-block-library-css' href='https://2bcef964.delivery.rocketcdn.me/wp-includes/css/dist/block-library/style.min.css?ver=6.9.4' media='all' />
+<style id='rank-math-related-posts-style-inline-css'>
+.wp-block-rank-math-related-posts{--rm-related-gap: 1rem;--rm-related-border-radius: 6px;--rm-related-card-padding: 16px;--rm-related-hover-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);--rm-related-transition: 0.2s ease}.wp-block-rank-math-related-posts.rank-math-related-posts{display:block}.wp-block-rank-math-related-posts.rank-math-related-posts .rank-math-related-wrap{display:grid;gap:var(--rm-related-gap)}.wp-block-rank-math-related-posts.rank-math-related-posts.is-style-grid-vertical .rank-math-related-wrap,.wp-block-rank-math-related-posts.rank-math-related-posts.rank-math-related-grid-vertical .rank-math-related-wrap{grid-template-columns:repeat(auto-fill, minmax(220px, 1fr))}.wp-block-rank-math-related-posts.rank-math-related-posts.is-style-grid-horizontal .rank-math-related-wrap,.wp-block-rank-math-related-posts.rank-math-related-posts.rank-math-related-grid-horizontal .rank-math-related-wrap{grid-template-columns:repeat(auto-fill, minmax(400px, 1fr))}.wp-block-rank-math-related-posts.rank-math-related-posts.is-style-grid-horizontal .rank-math-related-item,.wp-block-rank-math-related-posts.rank-math-related-posts.rank-math-related-grid-horizontal .rank-math-related-item{display:flex;gap:16px;align-items:flex-start}.wp-block-rank-math-related-posts.rank-math-related-posts.is-style-grid-horizontal .rank-math-related-thumb,.wp-block-rank-math-related-posts.rank-math-related-posts.rank-math-related-grid-horizontal .rank-math-related-thumb{flex:0 0 140px;overflow:hidden}.wp-block-rank-math-related-posts.rank-math-related-posts.is-style-grid-horizontal .rank-math-related-thumb img,.wp-block-rank-math-related-posts.rank-math-related-posts.rank-math-related-grid-horizontal .rank-math-related-thumb img{width:140px;height:140px;-o-object-fit:cover;object-fit:cover}.wp-block-rank-math-related-posts.rank-math-related-posts.is-style-grid-horizontal .rank-math-related-content,.wp-block-rank-math-related-posts.rank-math-related-posts.rank-math-related-grid-horizontal .rank-math-related-content{flex:1;min-width:0;display:flex;flex-direction:column}.wp-block-rank-math-related-posts.rank-math-related-posts.is-style-grid-horizontal .rank-math-related-title,.wp-block-rank-math-related-posts.rank-math-related-posts.rank-math-related-grid-horizontal .rank-math-related-title{margin-top:0}@media (max-width: 640px){.wp-block-rank-math-related-posts.rank-math-related-posts.is-style-grid-horizontal .rank-math-related-wrap,.wp-block-rank-math-related-posts.rank-math-related-posts.rank-math-related-grid-horizontal .rank-math-related-wrap{grid-template-columns:1fr}.wp-block-rank-math-related-posts.rank-math-related-posts.is-style-grid-horizontal .rank-math-related-thumb,.wp-block-rank-math-related-posts.rank-math-related-posts.rank-math-related-grid-horizontal .rank-math-related-thumb{flex:0 0 100px}.wp-block-rank-math-related-posts.rank-math-related-posts.is-style-grid-horizontal .rank-math-related-thumb img,.wp-block-rank-math-related-posts.rank-math-related-posts.rank-math-related-grid-horizontal .rank-math-related-thumb img{width:100px;height:100px}}.wp-block-rank-math-related-posts.rank-math-related-posts.is-style-list-vertical .rank-math-related-wrap,.wp-block-rank-math-related-posts.rank-math-related-posts.rank-math-related-list-vertical .rank-math-related-wrap{grid-template-columns:1fr}.wp-block-rank-math-related-posts.rank-math-related-posts.is-style-list-horizontal .rank-math-related-wrap,.wp-block-rank-math-related-posts.rank-math-related-posts.rank-math-related-list-horizontal .rank-math-related-wrap{grid-template-columns:1fr}.wp-block-rank-math-related-posts.rank-math-related-posts.is-style-list-horizontal .rank-math-related-item,.wp-block-rank-math-related-posts.rank-math-related-posts.rank-math-related-list-horizontal .rank-math-related-item{display:flex;gap:20px;align-items:flex-start}.wp-block-rank-math-related-posts.rank-math-related-posts.is-style-list-horizontal .rank-math-related-thumb,.wp-block-rank-math-related-posts.rank-math-related-posts.rank-math-related-list-horizontal .rank-math-related-thumb{flex:0 0 180px;overflow:hidden}.wp-block-rank-math-related-posts.rank-math-related-posts.is-style-list-horizontal .rank-math-related-thumb img,.wp-block-rank-math-related-posts.rank-math-related-posts.rank-math-related-list-horizontal .rank-math-related-thumb img{width:180px;height:180px;-o-object-fit:cover;object-fit:cover}.wp-block-rank-math-related-posts.rank-math-related-posts.is-style-list-horizontal .rank-math-related-content,.wp-block-rank-math-related-posts.rank-math-related-posts.rank-math-related-list-horizontal .rank-math-related-content{flex:1;min-width:0;display:flex;flex-direction:column}.wp-block-rank-math-related-posts.rank-math-related-posts.is-style-list-horizontal .rank-math-related-title,.wp-block-rank-math-related-posts.rank-math-related-posts.rank-math-related-list-horizontal .rank-math-related-title{margin-top:0}@media (max-width: 640px){.wp-block-rank-math-related-posts.rank-math-related-posts.is-style-list-horizontal .rank-math-related-item,.wp-block-rank-math-related-posts.rank-math-related-posts.rank-math-related-list-horizontal .rank-math-related-item{gap:16px}.wp-block-rank-math-related-posts.rank-math-related-posts.is-style-list-horizontal .rank-math-related-thumb,.wp-block-rank-math-related-posts.rank-math-related-posts.rank-math-related-list-horizontal .rank-math-related-thumb{flex:0 0 120px}.wp-block-rank-math-related-posts.rank-math-related-posts.is-style-list-horizontal .rank-math-related-thumb img,.wp-block-rank-math-related-posts.rank-math-related-posts.rank-math-related-list-horizontal .rank-math-related-thumb img{width:120px;height:120px}}@media (max-width: 480px){.wp-block-rank-math-related-posts.rank-math-related-posts.is-style-list-horizontal .rank-math-related-item,.wp-block-rank-math-related-posts.rank-math-related-posts.rank-math-related-list-horizontal .rank-math-related-item{flex-direction:column}.wp-block-rank-math-related-posts.rank-math-related-posts.is-style-list-horizontal .rank-math-related-thumb,.wp-block-rank-math-related-posts.rank-math-related-posts.rank-math-related-list-horizontal .rank-math-related-thumb{flex:0 0 auto;width:100%}.wp-block-rank-math-related-posts.rank-math-related-posts.is-style-list-horizontal .rank-math-related-thumb img,.wp-block-rank-math-related-posts.rank-math-related-posts.rank-math-related-list-horizontal .rank-math-related-thumb img{width:100%;height:auto;max-height:200px}}.wp-block-rank-math-related-posts.rank-math-related-posts .rank-math-related-item{border-radius:var(--rm-related-border-radius);padding:var(--rm-related-card-padding);background:inherit;transition:transform var(--rm-related-transition),box-shadow var(--rm-related-transition)}.wp-block-rank-math-related-posts.rank-math-related-posts .rank-math-related-item:hover{transform:translateY(-2px);box-shadow:var(--rm-related-hover-shadow)}.wp-block-rank-math-related-posts.rank-math-related-posts .rank-math-related-title{margin:0.5rem 0;font-size:inherit;line-height:inherit}.wp-block-rank-math-related-posts.rank-math-related-posts .rank-math-related-title a{color:inherit;text-decoration:none;transition:color 0.2s ease}.wp-block-rank-math-related-posts.rank-math-related-posts .rank-math-related-title a:hover{color:#2563eb;text-decoration:underline}.wp-block-rank-math-related-posts.rank-math-related-posts .rank-math-related-title:not(:has(a)){cursor:default}.wp-block-rank-math-related-posts.rank-math-related-posts .rank-math-related-thumb{position:relative;overflow:hidden;border-radius:4px;display:block}.wp-block-rank-math-related-posts.rank-math-related-posts .rank-math-related-thumb img{display:block;width:100%;height:auto;border-radius:4px;transition:transform 0.3s ease}.wp-block-rank-math-related-posts.rank-math-related-posts .rank-math-related-thumb:hover img{transform:scale(1.05)}.wp-block-rank-math-related-posts.rank-math-related-posts .rank-math-related-thumb:not(a){cursor:default}.wp-block-rank-math-related-posts.rank-math-related-posts .rank-math-related-thumb:not(a):hover img{transform:none}.wp-block-rank-math-related-posts.rank-math-related-posts .rank-math-related-date{margin-top:0.25rem;font-size:0.85em;opacity:0.7}.wp-block-rank-math-related-posts.rank-math-related-posts .rank-math-related-terms{margin-top:0.5rem}.wp-block-rank-math-related-posts.rank-math-related-posts .rank-math-related-chip{display:inline-block;background:#f3f4f6;border:1px solid #e5e7eb;border-radius:999px;padding:0.15rem 0.5rem;margin-right:0.35rem;font-size:0.8em}.wp-block-rank-math-related-posts.rank-math-related-posts .rank-math-related-excerpt{margin-top:0.5rem;color:inherit;opacity:0.8;font-size:0.9em;line-height:1.6;display:-webkit-box;-webkit-line-clamp:3;line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}.wp-block-rank-math-related-posts.rank-math-related-posts .rank-math-related-more{margin-top:1rem}.wp-block-rank-math-related-posts.rank-math-related-posts .rank-math-related-button{display:inline-block;background:#111827;color:#fff;border-radius:6px;padding:0.625rem 1.25rem;text-decoration:none;font-weight:500;transition:background 0.2s ease, transform 0.2s ease}.wp-block-rank-math-related-posts.rank-math-related-posts .rank-math-related-button:hover{background:#1f2937;transform:translateY(-1px)}.wp-block-rank-math-related-posts.has-border-color .rank-math-related-item{border-color:inherit}.wp-block-rank-math-related-posts.has-border-width .rank-math-related-item{border-width:inherit}.wp-block-rank-math-related-posts.has-border-style .rank-math-related-item{border-style:inherit}.wp-block-rank-math-related-posts.has-border-radius .rank-math-related-item{border-radius:inherit}.wp-block-rank-math-related-posts:not(.has-border-color):not(.has-border-width):not(.has-border-style) .rank-math-related-item{border:1px solid #e5e7eb}
+
+/*# sourceURL=https://friendlycaptcha.com/wp-content/plugins/seo-by-rank-math-pro/includes/modules/link-genius/blocks/related/assets/css/styles.css */
+</style>
+<style id='global-styles-inline-css'>
+:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgb(6,147,227) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgb(252,185,0) 0%,rgb(255,105,0) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgb(255,105,0) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgb(255, 255, 255), 6px 6px rgb(0, 0, 0);--wp--preset--shadow--crisp: 6px 6px 0px rgb(0, 0, 0);}:root { --wp--style--global--content-size: 800px;--wp--style--global--wide-size: 1200px; }:where(body) { margin: 0; }.wp-site-blocks > .alignleft { float: left; margin-right: 2em; }.wp-site-blocks > .alignright { float: right; margin-left: 2em; }.wp-site-blocks > .aligncenter { justify-content: center; margin-left: auto; margin-right: auto; }:where(.wp-site-blocks) > * { margin-block-start: 24px; margin-block-end: 0; }:where(.wp-site-blocks) > :first-child { margin-block-start: 0; }:where(.wp-site-blocks) > :last-child { margin-block-end: 0; }:root { --wp--style--block-gap: 24px; }:root :where(.is-layout-flow) > :first-child{margin-block-start: 0;}:root :where(.is-layout-flow) > :last-child{margin-block-end: 0;}:root :where(.is-layout-flow) > *{margin-block-start: 24px;margin-block-end: 0;}:root :where(.is-layout-constrained) > :first-child{margin-block-start: 0;}:root :where(.is-layout-constrained) > :last-child{margin-block-end: 0;}:root :where(.is-layout-constrained) > *{margin-block-start: 24px;margin-block-end: 0;}:root :where(.is-layout-flex){gap: 24px;}:root :where(.is-layout-grid){gap: 24px;}.is-layout-flow > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}.is-layout-flow > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}.is-layout-flow > .aligncenter{margin-left: auto !important;margin-right: auto !important;}.is-layout-constrained > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}.is-layout-constrained > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}.is-layout-constrained > .aligncenter{margin-left: auto !important;margin-right: auto !important;}.is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)){max-width: var(--wp--style--global--content-size);margin-left: auto !important;margin-right: auto !important;}.is-layout-constrained > .alignwide{max-width: var(--wp--style--global--wide-size);}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}body{padding-top: 0px;padding-right: 0px;padding-bottom: 0px;padding-left: 0px;}a:where(:not(.wp-element-button)){text-decoration: underline;}:root :where(.wp-element-button, .wp-block-button__link){background-color: #32373c;border-width: 0;color: #fff;font-family: inherit;font-size: inherit;font-style: inherit;font-weight: inherit;letter-spacing: inherit;line-height: inherit;padding-top: calc(0.667em + 2px);padding-right: calc(1.333em + 2px);padding-bottom: calc(0.667em + 2px);padding-left: calc(1.333em + 2px);text-decoration: none;text-transform: inherit;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+:root :where(.wp-block-pullquote){font-size: 1.5em;line-height: 1.6;}
+/*# sourceURL=global-styles-inline-css */
+</style>
+<link data-minify="1" rel='stylesheet' id='trp-popup-style-css' href='https://2bcef964.delivery.rocketcdn.me/wp-content/cache/min/1/wp-content/plugins/translatepress-developer/add-ons-pro/automatic-language-detection/assets/css/trp-popup.css?ver=1777029361' media='all' />
+<link data-minify="1" rel='stylesheet' id='hello-elementor-theme-style-css' href='https://2bcef964.delivery.rocketcdn.me/wp-content/cache/min/1/wp-content/themes/hello-elementor/assets/css/theme.css?ver=1777029361' media='all' />
+<link rel='stylesheet' id='interlink-framework-style-css' href='https://2bcef964.delivery.rocketcdn.me/wp-content/themes/interlink-framework/style.css?ver=1.0.0' media='all' />
+<link data-minify="1" rel='stylesheet' id='hello-elementor-css' href='https://2bcef964.delivery.rocketcdn.me/wp-content/cache/min/1/wp-content/themes/hello-elementor/assets/css/reset.css?ver=1777029361' media='all' />
+<link data-minify="1" rel='stylesheet' id='hello-elementor-header-footer-css' href='https://2bcef964.delivery.rocketcdn.me/wp-content/cache/min/1/wp-content/themes/hello-elementor/assets/css/header-footer.css?ver=1777029361' media='all' />
+<link rel='stylesheet' id='elementor-frontend-css' href='https://2bcef964.delivery.rocketcdn.me/wp-content/plugins/elementor/assets/css/frontend.min.css?ver=4.0.1' media='all' />
+<link rel='stylesheet' id='eael-general-css' href='https://2bcef964.delivery.rocketcdn.me/wp-content/plugins/essential-addons-for-elementor-lite/assets/front-end/css/view/general.min.css?ver=6.6.0' media='all' />
+<link data-minify="1" rel='stylesheet' id='eael-218-css' href='https://2bcef964.delivery.rocketcdn.me/wp-content/cache/min/1/wp-content/uploads/essential-addons-elementor/eael-218.css?ver=1777029361' media='all' />
+<link rel='stylesheet' id='widget-image-css' href='https://2bcef964.delivery.rocketcdn.me/wp-content/plugins/elementor/assets/css/widget-image.min.css?ver=4.0.1' media='all' />
+<link rel='stylesheet' id='widget-nav-menu-css' href='https://2bcef964.delivery.rocketcdn.me/wp-content/plugins/elementor-pro/assets/css/widget-nav-menu.min.css?ver=4.0.1' media='all' />
+<link rel='stylesheet' id='e-sticky-css' href='https://2bcef964.delivery.rocketcdn.me/wp-content/plugins/elementor-pro/assets/css/modules/sticky.min.css?ver=4.0.1' media='all' />
+<link rel='stylesheet' id='widget-heading-css' href='https://2bcef964.delivery.rocketcdn.me/wp-content/plugins/elementor/assets/css/widget-heading.min.css?ver=4.0.1' media='all' />
+<link rel='stylesheet' id='widget-icon-list-css' href='https://2bcef964.delivery.rocketcdn.me/wp-content/plugins/elementor/assets/css/widget-icon-list.min.css?ver=4.0.1' media='all' />
+<link rel='stylesheet' id='widget-spacer-css' href='https://2bcef964.delivery.rocketcdn.me/wp-content/plugins/elementor/assets/css/widget-spacer.min.css?ver=4.0.1' media='all' />
+<link rel='stylesheet' id='widget-icon-box-css' href='https://2bcef964.delivery.rocketcdn.me/wp-content/plugins/elementor/assets/css/widget-icon-box.min.css?ver=4.0.1' media='all' />
+<link rel='stylesheet' id='elementor-post-4-css' href='https://2bcef964.delivery.rocketcdn.me/wp-content/uploads/elementor/css/post-4.css?ver=1777029349' media='all' />
+<link rel='stylesheet' id='elementor-post-218-css' href='https://2bcef964.delivery.rocketcdn.me/wp-content/uploads/elementor/css/post-218.css?ver=1777029350' media='all' />
+<link rel='stylesheet' id='elementor-post-1559-css' href='https://2bcef964.delivery.rocketcdn.me/wp-content/uploads/elementor/css/post-1559.css?ver=1777029350' media='all' />
+<link rel='stylesheet' id='elementor-post-1895-css' href='https://2bcef964.delivery.rocketcdn.me/wp-content/uploads/elementor/css/post-1895.css?ver=1777029444' media='all' />
+<link data-minify="1" rel='stylesheet' id='trp-language-switcher-v2-css' href='https://2bcef964.delivery.rocketcdn.me/wp-content/cache/min/1/wp-content/plugins/translatepress-multilingual/assets/css/trp-language-switcher-v2.css?ver=1777029361' media='all' />
+<style id='elementor-pro-custom-fonts-inline-css'>
+@font-face {
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: normal;
+	font-display: auto;
+	src: url('https://2bcef964.delivery.rocketcdn.me/wp-content/uploads/2020/12/inter-v3-latin-regular.eot');
+	src: url('https://2bcef964.delivery.rocketcdn.me/wp-content/uploads/2020/12/inter-v3-latin-regular.eot?#iefix') format('embedded-opentype'),
+		url('https://2bcef964.delivery.rocketcdn.me/wp-content/uploads/2020/12/inter-v3-latin-regular.woff2') format('woff2'),
+		url('https://2bcef964.delivery.rocketcdn.me/wp-content/uploads/2020/12/inter-v3-latin-regular.woff') format('woff'),
+		url('https://2bcef964.delivery.rocketcdn.me/wp-content/uploads/2020/12/inter-v3-latin-regular.ttf') format('truetype'),
+		url('https://2bcef964.delivery.rocketcdn.me/wp-content/uploads/2020/12/inter-v3-latin-regular.svg#Inter') format('svg');
+}
+@font-face {
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: bold;
+	font-display: auto;
+	src: url('https://2bcef964.delivery.rocketcdn.me/wp-content/uploads/2020/12/inter-v3-latin-700.eot');
+	src: url('https://2bcef964.delivery.rocketcdn.me/wp-content/uploads/2020/12/inter-v3-latin-700.eot?#iefix') format('embedded-opentype'),
+		url('https://2bcef964.delivery.rocketcdn.me/wp-content/uploads/2020/12/inter-v3-latin-700.woff2') format('woff2'),
+		url('https://2bcef964.delivery.rocketcdn.me/wp-content/uploads/2020/12/inter-v3-latin-700.woff') format('woff'),
+		url('https://2bcef964.delivery.rocketcdn.me/wp-content/uploads/2020/12/inter-v3-latin-700.ttf') format('truetype'),
+		url('https://2bcef964.delivery.rocketcdn.me/wp-content/uploads/2020/12/inter-v3-latin-700.svg#Inter') format('svg');
+}
+
+/*# sourceURL=elementor-pro-custom-fonts-inline-css */
+</style>
+<style id='rocket-lazyload-inline-css'>
+.rll-youtube-player{position:relative;padding-bottom:56.23%;height:0;overflow:hidden;max-width:100%;}.rll-youtube-player:focus-within{outline: 2px solid currentColor;outline-offset: 5px;}.rll-youtube-player iframe{position:absolute;top:0;left:0;width:100%;height:100%;z-index:100;background:0 0}.rll-youtube-player img{bottom:0;display:block;left:0;margin:auto;max-width:100%;width:100%;position:absolute;right:0;top:0;border:none;height:auto;-webkit-transition:.4s all;-moz-transition:.4s all;transition:.4s all}.rll-youtube-player img:hover{-webkit-filter:brightness(75%)}.rll-youtube-player .play{height:100%;width:100%;left:0;top:0;position:absolute;background:var(--wpr-bg-fc5d7ae7-08cb-4438-8db1-60d9c76fa8e8) no-repeat center;background-color: transparent !important;cursor:pointer;border:none;}.wp-embed-responsive .wp-has-aspect-ratio .rll-youtube-player{position:absolute;padding-bottom:0;width:100%;height:100%;top:0;bottom:0;left:0;right:0}
+/*# sourceURL=rocket-lazyload-inline-css */
+</style>
+<script type="text/rocketlazyloadscript" defer data-cfasync='false' data-no-minify="true" data-no-optimize="1" data-noptimize="1" data-rocket-src="https://plausible.io/js/pa-fm5-L7vzZGSdc6PZqnv-q.js" id="plausible-analytics-js"></script>
+<script id="plausible-analytics-js-after">
+window.plausible=window.plausible||function(){(plausible.q=plausible.q||[]).push(arguments)},plausible.init=plausible.init||function(i){plausible.o=i||{}};
+plausible.init([]);
+//# sourceURL=plausible-analytics-js-after
+</script>
+<script id="plausible-form-submit-integration-js-extra">
+var plausible_analytics_i18n = {"form_completions":"WP Form Completions"};
+//# sourceURL=plausible-form-submit-integration-js-extra
+</script>
+<script type="text/rocketlazyloadscript" data-minify="1" data-rocket-src="https://2bcef964.delivery.rocketcdn.me/wp-content/cache/min/1/wp-content/plugins/plausible-analytics/assets/dist/js/plausible-form-submit-integration.js?ver=1775571867" id="plausible-form-submit-integration-js" data-rocket-defer defer></script>
+<script src="https://2bcef964.delivery.rocketcdn.me/wp-includes/js/jquery/jquery.min.js?ver=3.7.1" id="jquery-core-js" data-rocket-defer defer></script>
+<script src="https://2bcef964.delivery.rocketcdn.me/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1" id="jquery-migrate-js" data-rocket-defer defer></script>
+<script id="trp-language-cookie-js-extra">
+var trp_language_cookie_data = {"abs_home":"https://friendlycaptcha.com","url_slugs":{"en_US":"en","de_DE":"de","fr_FR":"fr","es_ES":"es","it_IT":"it","nl_NL":"nl","pt_PT":"pt"},"cookie_name":"trp_language","cookie_age":"30","cookie_path":"/","default_language":"en_US","publish_languages":["en_US","de_DE","fr_FR","es_ES","it_IT","pt_PT"],"trp_ald_ajax_url":"https://friendlycaptcha.com/wp-content/plugins/translatepress-developer/add-ons-pro/automatic-language-detection/includes/trp-ald-ajax.php","detection_method":"browser-ip","popup_option":"popup","popup_type":"hello_bar","popup_textarea":"We've detected you might be speaking a different language. Do you want to change to:","popup_textarea_change_button":"Change Language","popup_textarea_close_button":"Close","iso_codes":{"en_US":"en","de_DE":"de","fr_FR":"fr","es_ES":"es","it_IT":"it","pt_PT":"pt"},"language_urls":{"en_US":"https://friendlycaptcha.com/legal/privacy-end-users/","de_DE":"https://friendlycaptcha.com/de/legal/privacy-end-users/","fr_FR":"https://friendlycaptcha.com/fr/legal/privacy-end-users/","es_ES":"https://friendlycaptcha.com/es/legal/privacy-end-users/","it_IT":"https://friendlycaptcha.com/it/legal/privacy-end-users/","pt_PT":"https://friendlycaptcha.com/pt/legal/privacy-end-users/"},"english_name":{"en_US":"English","de_DE":"German","fr_FR":"French","es_ES":"Spanish","it_IT":"Italian","pt_PT":"Portuguese"},"is_iphone_user_check":""};
+//# sourceURL=trp-language-cookie-js-extra
+</script>
+<script type="text/rocketlazyloadscript" data-minify="1" data-rocket-src="https://2bcef964.delivery.rocketcdn.me/wp-content/cache/min/1/wp-content/plugins/translatepress-developer/add-ons-pro/automatic-language-detection/assets/js/trp-language-cookie.js?ver=1775571867" id="trp-language-cookie-js" data-rocket-defer defer></script>
+<script type="text/rocketlazyloadscript" data-minify="1" data-rocket-src="https://2bcef964.delivery.rocketcdn.me/wp-content/cache/min/1/wp-content/plugins/translatepress-multilingual/assets/js/trp-frontend-language-switcher.js?ver=1775571867" id="trp-language-switcher-js-v2-js" data-rocket-defer defer></script>
+<link rel="https://api.w.org/" href="https://friendlycaptcha.com/wp-json/" /><link rel="alternate" title="JSON" type="application/json" href="https://friendlycaptcha.com/wp-json/wp/v2/pages/1881" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://friendlycaptcha.com/xmlrpc.php?rsd" />
+<meta name="generator" content="WordPress 6.9.4" />
+<link rel='shortlink' href='https://friendlycaptcha.com/?p=1881' />
+<link rel="alternate" hreflang="en-US" href="https://friendlycaptcha.com/legal/privacy-end-users/"/>
+<link rel="alternate" hreflang="de-DE" href="https://friendlycaptcha.com/de/legal/privacy-end-users/"/>
+<link rel="alternate" hreflang="fr-FR" href="https://friendlycaptcha.com/fr/legal/privacy-end-users/"/>
+<link rel="alternate" hreflang="es-ES" href="https://friendlycaptcha.com/es/legal/privacy-end-users/"/>
+<link rel="alternate" hreflang="it-IT" href="https://friendlycaptcha.com/it/legal/privacy-end-users/"/>
+<link rel="alternate" hreflang="pt-PT" href="https://friendlycaptcha.com/pt/legal/privacy-end-users/"/>
+<link rel="alternate" hreflang="en" href="https://friendlycaptcha.com/legal/privacy-end-users/"/>
+<link rel="alternate" hreflang="de" href="https://friendlycaptcha.com/de/legal/privacy-end-users/"/>
+<link rel="alternate" hreflang="fr" href="https://friendlycaptcha.com/fr/legal/privacy-end-users/"/>
+<link rel="alternate" hreflang="es" href="https://friendlycaptcha.com/es/legal/privacy-end-users/"/>
+<link rel="alternate" hreflang="it" href="https://friendlycaptcha.com/it/legal/privacy-end-users/"/>
+<link rel="alternate" hreflang="pt" href="https://friendlycaptcha.com/pt/legal/privacy-end-users/"/>
+			<style>
+				.e-con.e-parent:nth-of-type(n+4):not(.e-lazyloaded):not(.e-no-lazyload),
+				.e-con.e-parent:nth-of-type(n+4):not(.e-lazyloaded):not(.e-no-lazyload) * {
+					background-image: none !important;
+				}
+				@media screen and (max-height: 1024px) {
+					.e-con.e-parent:nth-of-type(n+3):not(.e-lazyloaded):not(.e-no-lazyload),
+					.e-con.e-parent:nth-of-type(n+3):not(.e-lazyloaded):not(.e-no-lazyload) * {
+						background-image: none !important;
+					}
+				}
+				@media screen and (max-height: 640px) {
+					.e-con.e-parent:nth-of-type(n+2):not(.e-lazyloaded):not(.e-no-lazyload),
+					.e-con.e-parent:nth-of-type(n+2):not(.e-lazyloaded):not(.e-no-lazyload) * {
+						background-image: none !important;
+					}
+				}
+			</style>
+			<link rel="icon" href="https://2bcef964.delivery.rocketcdn.me/wp-content/uploads/2021/02/cropped-FriendlyCaptcha-AppIcon-32x32.png" sizes="32x32" />
+<link rel="icon" href="https://2bcef964.delivery.rocketcdn.me/wp-content/uploads/2021/02/cropped-FriendlyCaptcha-AppIcon-192x192.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://2bcef964.delivery.rocketcdn.me/wp-content/uploads/2021/02/cropped-FriendlyCaptcha-AppIcon-180x180.png" />
+<meta name="msapplication-TileImage" content="https://2bcef964.delivery.rocketcdn.me/wp-content/uploads/2021/02/cropped-FriendlyCaptcha-AppIcon-270x270.png" />
+<noscript><style id="rocket-lazyload-nojs-css">.rll-youtube-player, [data-lazy-src]{display:none !important;}</style></noscript><style id="wpr-lazyload-bg-container"></style><style id="wpr-lazyload-bg-exclusion"></style>
+<noscript>
+<style id="wpr-lazyload-bg-nostyle">.rll-youtube-player .play{--wpr-bg-fc5d7ae7-08cb-4438-8db1-60d9c76fa8e8: url('https://2bcef964.delivery.rocketcdn.me/wp-content/plugins/wp-rocket/assets/img/youtube.png');}</style>
+</noscript>
+<script type="application/javascript">const rocket_pairs = [{"selector":".rll-youtube-player .play","style":".rll-youtube-player .play{--wpr-bg-fc5d7ae7-08cb-4438-8db1-60d9c76fa8e8: url('https:\/\/2bcef964.delivery.rocketcdn.me\/wp-content\/plugins\/wp-rocket\/assets\/img\/youtube.png');}","hash":"fc5d7ae7-08cb-4438-8db1-60d9c76fa8e8","url":"https:\/\/2bcef964.delivery.rocketcdn.me\/wp-content\/plugins\/wp-rocket\/assets\/img\/youtube.png"}]; const rocket_excluded_pairs = [];</script><meta name="generator" content="WP Rocket 3.21.0.1" data-wpr-features="wpr_lazyload_css_bg_img wpr_delay_js wpr_defer_js wpr_minify_js wpr_lazyload_images wpr_lazyload_iframes wpr_preconnect_external_domains wpr_auto_preload_fonts wpr_oci wpr_image_dimensions wpr_minify_css wpr_cdn wpr_preload_links wpr_desktop" /></head>
+<body class="wp-singular page-template-default page page-id-1881 page-child parent-pageid-1877 wp-embed-responsive wp-theme-hello-elementor wp-child-theme-interlink-framework translatepress-en_US hello-elementor-default elementor-default elementor-kit-4 elementor-page-1895">
+
+
+<a class="skip-link screen-reader-text" href="#content">Skip to content</a>
+
+		<header  data-elementor-type="header" data-elementor-id="218" class="elementor elementor-218 elementor-location-header" data-elementor-post-type="elementor_library">
+					<section class="elementor-section elementor-top-section elementor-element elementor-element-80983df elementor-section-content-middle elementor-section-boxed elementor-section-height-default elementor-section-height-default eael_liquid_glass-effect1" data-id="80983df" data-element_type="section" data-e-type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;sticky&quot;:&quot;top&quot;,&quot;sticky_anchor_link_offset&quot;:78,&quot;sticky_anchor_link_offset_mobile&quot;:66,&quot;sticky_on&quot;:[&quot;desktop&quot;,&quot;tablet&quot;,&quot;mobile&quot;],&quot;sticky_offset&quot;:0,&quot;sticky_effects_offset&quot;:0}">
+						<div  class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-ddfa05f" data-id="ddfa05f" data-element_type="column" data-e-type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-5ad04c2 elementor-widget__width-auto elementor-widget elementor-widget-image" data-id="5ad04c2" data-element_type="widget" data-e-type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+																<a href="/">
+							<img fetchpriority="high" width="100" height="100" src="https://2bcef964.delivery.rocketcdn.me/wp-content/uploads/2020/12/FriendlyCaptcha-Logo.svg" class="attachment-full size-full wp-image-251" alt="Friendly Captcha" />								</a>
+															</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-f773d97" data-id="f773d97" data-element_type="column" data-e-type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-cf2a09f elementor-nav-menu__align-center elementor-nav-menu--stretch elementor-widget__width-auto elementor-nav-menu__text-align-center elementor-nav-menu--dropdown-tablet elementor-nav-menu--toggle elementor-nav-menu--burger elementor-widget elementor-widget-nav-menu" data-id="cf2a09f" data-element_type="widget" data-e-type="widget" data-settings="{&quot;full_width&quot;:&quot;stretch&quot;,&quot;layout&quot;:&quot;horizontal&quot;,&quot;submenu_icon&quot;:{&quot;value&quot;:&quot;&lt;svg aria-hidden=\&quot;true\&quot; class=\&quot;e-font-icon-svg e-fas-caret-down\&quot; viewBox=\&quot;0 0 320 512\&quot; xmlns=\&quot;http:\/\/www.w3.org\/2000\/svg\&quot;&gt;&lt;path d=\&quot;M31.3 192h257.3c17.8 0 26.7 21.5 14.1 34.1L174.1 354.8c-7.8 7.8-20.5 7.8-28.3 0L17.2 226.1C4.6 213.5 13.5 192 31.3 192z\&quot;&gt;&lt;\/path&gt;&lt;\/svg&gt;&quot;,&quot;library&quot;:&quot;fa-solid&quot;},&quot;toggle&quot;:&quot;burger&quot;}" data-widget_type="nav-menu.default">
+				<div class="elementor-widget-container">
+								<nav aria-label="Menu" class="elementor-nav-menu--main elementor-nav-menu__container elementor-nav-menu--layout-horizontal e--pointer-none">
+				<ul id="menu-1-cf2a09f" class="elementor-nav-menu"><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1500"><a href="/#overview" class="elementor-item elementor-item-anchor">Overview</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-346"><a href="/#demo" class="elementor-item elementor-item-anchor">Demo</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-345"><a href="/#features" class="elementor-item elementor-item-anchor">Features</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-347"><a href="/#developers" class="elementor-item elementor-item-anchor">Developers</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-348"><a href="/#pricing" class="elementor-item elementor-item-anchor">Pricing</a></li>
+<li class="hideondesktop hideontablet link-bold link-accent menu-item menu-item-type-custom menu-item-object-custom menu-item-411"><a href="/signup/" class="elementor-item">Create Account ›</a></li>
+<li class="hideondesktop hideontablet link-bold link-accent menu-item menu-item-type-custom menu-item-object-custom menu-item-412"><a href="/login/" class="elementor-item">Sign in ›</a></li>
+</ul>			</nav>
+					<div class="elementor-menu-toggle" role="button" tabindex="0" aria-label="Menu Toggle" aria-expanded="false">
+			<svg aria-hidden="true" role="presentation" class="elementor-menu-toggle__icon--open e-font-icon-svg e-eicon-menu-bar" viewBox="0 0 1000 1000" xmlns="http://www.w3.org/2000/svg"><path d="M104 333H896C929 333 958 304 958 271S929 208 896 208H104C71 208 42 237 42 271S71 333 104 333ZM104 583H896C929 583 958 554 958 521S929 458 896 458H104C71 458 42 487 42 521S71 583 104 583ZM104 833H896C929 833 958 804 958 771S929 708 896 708H104C71 708 42 737 42 771S71 833 104 833Z"></path></svg><svg aria-hidden="true" role="presentation" class="elementor-menu-toggle__icon--close e-font-icon-svg e-eicon-close" viewBox="0 0 1000 1000" xmlns="http://www.w3.org/2000/svg"><path d="M742 167L500 408 258 167C246 154 233 150 217 150 196 150 179 158 167 167 154 179 150 196 150 212 150 229 154 242 171 254L408 500 167 742C138 771 138 800 167 829 196 858 225 858 254 829L496 587 738 829C750 842 767 846 783 846 800 846 817 842 829 829 842 817 846 804 846 783 846 767 842 750 829 737L588 500 833 258C863 229 863 200 833 171 804 137 775 137 742 167Z"></path></svg>		</div>
+					<nav class="elementor-nav-menu--dropdown elementor-nav-menu__container" aria-hidden="true">
+				<ul id="menu-2-cf2a09f" class="elementor-nav-menu"><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1500"><a href="/#overview" class="elementor-item elementor-item-anchor" tabindex="-1">Overview</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-346"><a href="/#demo" class="elementor-item elementor-item-anchor" tabindex="-1">Demo</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-345"><a href="/#features" class="elementor-item elementor-item-anchor" tabindex="-1">Features</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-347"><a href="/#developers" class="elementor-item elementor-item-anchor" tabindex="-1">Developers</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-348"><a href="/#pricing" class="elementor-item elementor-item-anchor" tabindex="-1">Pricing</a></li>
+<li class="hideondesktop hideontablet link-bold link-accent menu-item menu-item-type-custom menu-item-object-custom menu-item-411"><a href="/signup/" class="elementor-item" tabindex="-1">Create Account ›</a></li>
+<li class="hideondesktop hideontablet link-bold link-accent menu-item menu-item-type-custom menu-item-object-custom menu-item-412"><a href="/login/" class="elementor-item" tabindex="-1">Sign in ›</a></li>
+</ul>			</nav>
+						</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-e7c4d17 elementor-hidden-mobile" data-id="e7c4d17" data-element_type="column" data-e-type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-83ab79b elementor-align-right elementor-widget__width-auto elementor-widget elementor-widget-button" data-id="83ab79b" data-element_type="widget" data-e-type="widget" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+									<div class="elementor-button-wrapper">
+					<a class="elementor-button elementor-button-link elementor-size-sm" href="/signup/">
+						<span class="elementor-button-content-wrapper">
+						<span class="elementor-button-icon">
+				<svg aria-hidden="true" class="e-font-icon-svg e-fas-chevron-right" viewBox="0 0 320 512" xmlns="http://www.w3.org/2000/svg"><path d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"></path></svg>			</span>
+									<span class="elementor-button-text">Create Account</span>
+					</span>
+					</a>
+				</div>
+								</div>
+				</div>
+				<div class="elementor-element elementor-element-f66a53d elementor-align-right elementor-widget__width-auto elementor-widget elementor-widget-button" data-id="f66a53d" data-element_type="widget" data-e-type="widget" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+									<div class="elementor-button-wrapper">
+					<a class="elementor-button elementor-button-link elementor-size-sm" href="/login/">
+						<span class="elementor-button-content-wrapper">
+						<span class="elementor-button-icon">
+				<svg aria-hidden="true" class="e-font-icon-svg e-fas-chevron-right" viewBox="0 0 320 512" xmlns="http://www.w3.org/2000/svg"><path d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"></path></svg>			</span>
+									<span class="elementor-button-text">Sign in</span>
+					</span>
+					</a>
+				</div>
+								</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				</header>
+				<div  data-elementor-type="single-page" data-elementor-id="1895" class="elementor elementor-1895 elementor-location-single post-1881 page type-page status-publish hentry" data-elementor-post-type="elementor_library">
+					<section class="elementor-section elementor-top-section elementor-element elementor-element-72c080d elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="72c080d" data-element_type="section" data-e-type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+						<div  class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-fc61c06" data-id="fc61c06" data-element_type="column" data-e-type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<section class="elementor-section elementor-inner-section elementor-element elementor-element-c717a31 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="c717a31" data-element_type="section" data-e-type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-3659e34" data-id="3659e34" data-element_type="column" data-e-type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-78d3aae elementor-widget elementor-widget-theme-post-title elementor-page-title elementor-widget-heading" data-id="78d3aae" data-element_type="widget" data-e-type="widget" data-widget_type="theme-post-title.default">
+				<div class="elementor-widget-container">
+					<h2 class="elementor-heading-title elementor-size-default">Privacy Policy for End Users</h2>				</div>
+				</div>
+				<div class="elementor-element elementor-element-1175c4c elementor-widget elementor-widget-theme-post-content" data-id="1175c4c" data-element_type="widget" data-e-type="widget" data-widget_type="theme-post-content.default">
+				<div class="elementor-widget-container">
+					
+<p>Friendly Captcha protects websites and online services from spam and abuse. Using proof-of-work, our solution employs a fundamentally new approach to spam prevention and therefore does not depend on tracking users and exploiting personal data.</p>
+
+
+
+<p>Your privacy is critically important to us. At Friendly Captcha, we have a few fundamental principles:</p>
+
+
+
+<ul class="wp-block-list">
+<li>We are thoughtful about the information that we collect through the operation of our services.</li>
+
+
+
+<li>We store information for only as long as we have a reason to keep it.</li>
+
+
+
+<li>We aim to make it as simple as possible for you to keep control over your data.</li>
+
+
+
+<li>We help protect you from overreaching government demands for your information.</li>
+
+
+
+<li>We aim for full transparency on how we gather, use, and share information.</li>
+</ul>
+
+
+
+<p></p>
+
+
+
+<p>Below you will find privacy information for end users, which incorporates these principles.</p>
+
+
+
+<p>Service Users are those who incorporate our service into their website.<br>End Users are individuals who interact with our service through the websites of our Service Users.</p>
+
+
+
+<p>Friendly Captcha acts as a data processor when providing protection features. The Service User, as the data controller, is responsible for complying with the privacy obligations for its website.</p>
+
+
+
+<p>The Service User provides the applicable privacy policy for end users for its specific use of Friendly Captcha on its website.</p>
+
+
+
+<h3 class="wp-block-heading">Privacy Information for End Users</h3>
+
+
+
+<p><a href="https://friendlycaptcha.com" data-type="link" data-id="https://friendlycaptcha.com" target="_blank" rel="noreferrer noopener">Friendly Captcha</a> is an innovative, privacy-friendly protection solution designed to make it more difficult for automated programs and scripts (“bots”) to use websites. Friendly Captcha thus protects websites from abuse.&nbsp;</p>
+
+
+
+<p>The Service User integrates program code from Friendly Captcha into certain areas of its website (e.g. in a contact form). This means that the visitor&#8217;s device connects to Friendly Captcha&#8217;s servers in the context of the protected area (e.g. when sending a contact form).</p>
+
+
+
+<p>The visitor&#8217;s browser is sent a puzzle from Friendly Captcha. The complexity of the puzzle depends on various risk factors. The visitor&#8217;s device solves the puzzle using certain system resources and sends the solution to the Service User&#8217;s web server. The Service User&#8217;s server contacts the Friendly Captcha server via an interface and receives a response stating whether the puzzle has been solved correctly by the end device.</p>
+
+
+
+<p>The visitor&#8217;s browser transfers connection data, environment data, interaction data and functional data to Friendly Captcha. Friendly Captcha analyzes this data and determines how probable it is that the visitor is a human user or a bot; it then transmits the result to the Service User.</p>
+
+
+
+<p>Depending on this outcome, the Service User can deal with the access to its website or individual functions as human or potentially non-human.</p>
+
+
+
+<p>For more information on data protection when using Friendly Captcha and on information processed in the end device, please visit the privacy policy of the Service User that implemented Friendly Captcha in their website.</p>
+
+
+
+<p>✅ <strong>All data will only be used to identify and deal with potential bots and risks as described above. The purpose of the processing is therefore to ensure the security and functionality of websites.</strong></p>
+
+
+
+<p>✅ <strong>Friendly Captcha does not use the data to identify a natural person or for marketing purposes.</strong></p>
+
+
+
+<p>✅ <strong>Friendly Captcha does not store personal data from the visitor. Data that may identify the visitor, such as IP addresses, are anonymized via one-way hashing.</strong></p>
+
+
+
+<p>✅ <strong>Friendly Captcha does&nbsp;not&nbsp;use HTTP cookies and does not store any data in the browser’s persistent&nbsp;storage.</strong></p>
+
+
+
+<div style="height:30px" aria-hidden="true" class="wp-block-spacer"></div>
+
+
+
+<p>Data Controller: Service User that integrated Friendly Captcha<br>Data Processor: Friendly Captcha GmbH<br>Data Protection Officer: Dr. Sebastian Kraska, IITR Datenschutz GmbH<br>Technical Contact: Guido Zuidhof<br>Business Contact: Benedict Padberg<br>Address: Am Anger 3-5, 82237 Woerthsee, Germany<br>Email: privacy＠friendlycaptcha.com</p>
+
+
+
+<p>This policy is effective as of May 1, 2024.</p>
+				</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-0e2bfe2 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="0e2bfe2" data-element_type="section" data-e-type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+						<div  class="elementor-container elementor-column-gap-no">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-98880f5" data-id="98880f5" data-element_type="column" data-e-type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<section class="elementor-section elementor-inner-section elementor-element elementor-element-9921693 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="9921693" data-element_type="section" data-e-type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-6397394" data-id="6397394" data-element_type="column" data-e-type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-8643087 elementor-widget elementor-widget-heading" data-id="8643087" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h2 class="elementor-heading-title elementor-size-default">Ready to get started?</h2>				</div>
+				</div>
+				<div class="elementor-element elementor-element-81506f0 elementor-widget elementor-widget-text-editor" data-id="81506f0" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p>Join thousands of organizations in switching to a privacy-first anti-bot solution. We protect your websites and online services with the highest German quality and data protection standards.</p>								</div>
+				</div>
+				<div class="elementor-element elementor-element-bee87ce elementor-widget__width-auto elementor-widget elementor-widget-button" data-id="bee87ce" data-element_type="widget" data-e-type="widget" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+									<div class="elementor-button-wrapper">
+					<a class="elementor-button elementor-button-link elementor-size-sm" href="/signup/">
+						<span class="elementor-button-content-wrapper">
+						<span class="elementor-button-icon">
+				<svg aria-hidden="true" class="e-font-icon-svg e-fas-chevron-right" viewBox="0 0 320 512" xmlns="http://www.w3.org/2000/svg"><path d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"></path></svg>			</span>
+									<span class="elementor-button-text">Start now</span>
+					</span>
+					</a>
+				</div>
+								</div>
+				</div>
+				<div class="elementor-element elementor-element-bd36c1e elementor-widget__width-auto elementor-widget elementor-widget-button" data-id="bd36c1e" data-element_type="widget" data-e-type="widget" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+									<div class="elementor-button-wrapper">
+					<a class="elementor-button elementor-button-link elementor-size-sm" href="/contact/">
+						<span class="elementor-button-content-wrapper">
+						<span class="elementor-button-icon">
+				<svg aria-hidden="true" class="e-font-icon-svg e-fas-chevron-right" viewBox="0 0 320 512" xmlns="http://www.w3.org/2000/svg"><path d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"></path></svg>			</span>
+									<span class="elementor-button-text">Contact us</span>
+					</span>
+					</a>
+				</div>
+								</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-25 elementor-inner-column elementor-element elementor-element-10dd718" data-id="10dd718" data-element_type="column" data-e-type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-5e43e18 elementor-view-default elementor-position-block-start elementor-mobile-position-block-start elementor-widget elementor-widget-icon-box" data-id="5e43e18" data-element_type="widget" data-e-type="widget" data-widget_type="icon-box.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-icon-box-wrapper">
+
+						<div class="elementor-icon-box-icon">
+				<span  class="elementor-icon">
+				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" width="30px" height="30px"><path d="M 15 2 C 11.145666 2 8 5.1456661 8 9 L 8 11 L 6 11 C 4.895 11 4 11.895 4 13 L 4 25 C 4 26.105 4.895 27 6 27 L 24 27 C 25.105 27 26 26.105 26 25 L 26 13 C 26 11.895 25.105 11 24 11 L 10 11 L 10 9 C 10 6.2263339 12.226334 4 15 4 C 17.184344 4 19.022854 5.3946656 19.708984 7.3339844 A 1.0001 1.0001 0 1 0 21.59375 6.6660156 C 20.631881 3.9473344 18.037656 2 15 2 z"></path></svg>				</span>
+			</div>
+			
+						<div class="elementor-icon-box-content">
+
+									<h3 class="elementor-icon-box-title">
+						<span  >
+							Privacy matters						</span>
+					</h3>
+				
+									<p class="elementor-icon-box-description">
+						Learn more about our commitment to protect your users' privacy.					</p>
+				
+			</div>
+			
+		</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-10754ab elementor-widget__width-auto elementor-widget elementor-widget-button" data-id="10754ab" data-element_type="widget" data-e-type="widget" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+									<div class="elementor-button-wrapper">
+					<a class="elementor-button elementor-button-link elementor-size-sm" href="/legal/gdpr/">
+						<span class="elementor-button-content-wrapper">
+						<span class="elementor-button-icon">
+				<svg aria-hidden="true" class="e-font-icon-svg e-fas-chevron-right" viewBox="0 0 320 512" xmlns="http://www.w3.org/2000/svg"><path d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"></path></svg>			</span>
+									<span class="elementor-button-text">View privacy pledge</span>
+					</span>
+					</a>
+				</div>
+								</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-25 elementor-inner-column elementor-element elementor-element-751f311" data-id="751f311" data-element_type="column" data-e-type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-055713c elementor-view-default elementor-position-block-start elementor-mobile-position-block-start elementor-widget elementor-widget-icon-box" data-id="055713c" data-element_type="widget" data-e-type="widget" data-widget_type="icon-box.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-icon-box-wrapper">
+
+						<div class="elementor-icon-box-icon">
+				<span  class="elementor-icon">
+				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" width="30px" height="30px"><path d="M 4 4 C 2.895 4 2 4.895 2 6 L 2 10 L 2 26 L 28 26 L 28 8 L 28 6 C 28 4.895 27.105 4 26 4 L 4 4 z M 4 10 L 26 10 L 26 24 L 4 24 L 4 10 z M 16.033203 11.986328 A 1.0001 1.0001 0 0 0 15.029297 12.757812 L 13.029297 20.757812 A 1.0004596 1.0004596 0 1 0 14.970703 21.242188 L 16.970703 13.242188 A 1.0001 1.0001 0 0 0 16.033203 11.986328 z M 9.9804688 12.988281 A 1.0001 1.0001 0 0 0 9.1679688 13.445312 L 6.7988281 17 L 9.1679688 20.554688 A 1.0001 1.0001 0 1 0 10.832031 19.445312 L 9.2011719 17 L 10.832031 14.554688 A 1.0001 1.0001 0 0 0 9.9804688 12.988281 z M 19.988281 12.988281 A 1.0001 1.0001 0 0 0 19.167969 14.554688 L 20.798828 17 L 19.167969 19.445312 A 1.0001 1.0001 0 1 0 20.832031 20.554688 L 23.201172 17 L 20.832031 13.445312 A 1.0001 1.0001 0 0 0 19.988281 12.988281 z"></path></svg>				</span>
+			</div>
+			
+						<div class="elementor-icon-box-content">
+
+									<h3 class="elementor-icon-box-title">
+						<span  >
+							Start your integration						</span>
+					</h3>
+				
+									<p class="elementor-icon-box-description">
+						Adding Friendly Captcha takes only minutes and just a few lines of code.					</p>
+				
+			</div>
+			
+		</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-e193158 elementor-widget__width-auto elementor-widget elementor-widget-button" data-id="e193158" data-element_type="widget" data-e-type="widget" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+									<div class="elementor-button-wrapper">
+					<a class="elementor-button elementor-button-link elementor-size-sm" href="/docs/" target="_blank">
+						<span class="elementor-button-content-wrapper">
+						<span class="elementor-button-icon">
+				<svg aria-hidden="true" class="e-font-icon-svg e-fas-chevron-right" viewBox="0 0 320 512" xmlns="http://www.w3.org/2000/svg"><path d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"></path></svg>			</span>
+									<span class="elementor-button-text">Read the docs</span>
+					</span>
+					</a>
+				</div>
+								</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+					</div>
+		</div>
+					</div>
+		</section>
+				</div>
+				<footer data-elementor-type="footer" data-elementor-id="1559" class="elementor elementor-1559 elementor-location-footer" data-elementor-post-type="elementor_library">
+					<section class="elementor-section elementor-top-section elementor-element elementor-element-299145b elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="299145b" data-element_type="section" data-e-type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-ad6b364" data-id="ad6b364" data-element_type="column" data-e-type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-e7a0bd5 elementor-widget__width-auto elementor-widget elementor-widget-image" data-id="e7a0bd5" data-element_type="widget" data-e-type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+																<a href="/">
+							<img fetchpriority="high" width="800" height="800" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20800%20800'%3E%3C/svg%3E" class="attachment-large size-large wp-image-236" alt="Friendly Captcha" data-lazy-src="https://2bcef964.delivery.rocketcdn.me/wp-content/uploads/2020/12/FriendlyCaptcha-Symbol.svg" /><noscript><img fetchpriority="high" width="800" height="800" src="https://2bcef964.delivery.rocketcdn.me/wp-content/uploads/2020/12/FriendlyCaptcha-Symbol.svg" class="attachment-large size-large wp-image-236" alt="Friendly Captcha" /></noscript>								</a>
+															</div>
+				</div>
+				<div class="elementor-element elementor-element-5a015f2 elementor-widget__width-auto elementor-hidden-tablet elementor-widget elementor-widget-heading" data-id="5a015f2" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h4 class="elementor-heading-title elementor-size-default"><a href="/">Friendly Captcha</a></h4>				</div>
+				</div>
+				<div class="elementor-element elementor-element-34b880c elementor-widget elementor-widget-heading" data-id="34b880c" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h4 class="elementor-heading-title elementor-size-default">Prevent bots.<br>Ensure privacy.</h4>				</div>
+				</div>
+				<div class="elementor-element elementor-element-1100d25 language-switcher-shortcode elementor-widget elementor-widget-shortcode" data-id="1100d25" data-element_type="widget" data-e-type="widget" data-widget_type="shortcode.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-shortcode"><div class="trp-shortcode-switcher__wrapper"
+     style="--bg:#ffffff;--bg-hover:#0000000d;--text:#212121;--text-hover:#212121;--border:1px solid #1438521a;--border-width:1px;--border-color:#1438521a;--border-radius:4px;--flag-radius:2px;--flag-size:18px;--aspect-ratio:4/3;--font-size:14px;--transition-duration:0.2s"
+     role="group"
+     data-open-mode="hover">
+
+    
+        <!-- ANCHOR (in-flow only; sizing/borders; inert) -->
+        <div class="trp-language-switcher trp-ls-dropdown trp-shortcode-switcher trp-shortcode-anchor trp-open-on-hover"
+             aria-hidden="true"
+             inert
+             data-no-translation>
+                <div class="trp-current-language-item__wrapper">
+        <a class="trp-language-item trp-language-item__default trp-language-item__current" data-no-translation href="https://friendlycaptcha.com/legal/privacy-end-users/" title="English"><img width="640" height="480" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20640%20480'%3E%3C/svg%3E" class="trp-flag-image" alt="" role="presentation" data-lazy-src="https://2bcef964.delivery.rocketcdn.me/wp-content/plugins/translatepress-multilingual/assets/flags/4x3/en_US.svg" /><noscript><img width="640" height="480" src="https://2bcef964.delivery.rocketcdn.me/wp-content/plugins/translatepress-multilingual/assets/flags/4x3/en_US.svg" class="trp-flag-image" alt="" role="presentation" loading="lazy" /></noscript><span class="trp-language-item-name">English</span></a>                    <svg class="trp-shortcode-arrow" width="20" height="20" viewBox="0 0 20 21" fill="none" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+                <path d="M5 8L10 13L15 8" stroke="var(--text)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            </div>
+            </div>
+
+        <!-- OVERLAY (positioned; interactive surface) -->
+        <div class="trp-language-switcher trp-ls-dropdown trp-shortcode-switcher trp-shortcode-overlay trp-open-on-hover"
+             role="navigation"
+             aria-label="Website language selector"
+             data-no-translation
+        >
+                <div class="trp-current-language-item__wrapper">
+        <div class="trp-language-item trp-language-item__default trp-language-item__current" data-no-translation role="button" aria-expanded="false" tabindex="0" aria-label="Change language" aria-controls="trp-shortcode-dropdown-69eb5144d4ccf"><img width="640" height="480" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20640%20480'%3E%3C/svg%3E" class="trp-flag-image" alt="" role="presentation" data-lazy-src="https://2bcef964.delivery.rocketcdn.me/wp-content/plugins/translatepress-multilingual/assets/flags/4x3/en_US.svg" /><noscript><img width="640" height="480" src="https://2bcef964.delivery.rocketcdn.me/wp-content/plugins/translatepress-multilingual/assets/flags/4x3/en_US.svg" class="trp-flag-image" alt="" role="presentation" loading="lazy" /></noscript><span class="trp-language-item-name">English</span></div>                    <svg class="trp-shortcode-arrow" width="20" height="20" viewBox="0 0 20 21" fill="none" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+                <path d="M5 8L10 13L15 8" stroke="var(--text)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            </div>
+    
+            <div class="trp-switcher-dropdown-list"
+                 id="trp-shortcode-dropdown-69eb5144d4ccf"
+                 role="group"
+                 aria-label="Available languages"
+                 hidden
+                 inert
+            >
+                                                            <a class="trp-language-item" href="https://friendlycaptcha.com/de/legal/privacy-end-users/" title="German">
+                            <img width="640" height="480" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20640%20480'%3E%3C/svg%3E" class="trp-flag-image" alt="" role="presentation" data-lazy-src="https://2bcef964.delivery.rocketcdn.me/wp-content/plugins/translatepress-multilingual/assets/flags/4x3/de_DE.svg" /><noscript><img width="640" height="480" src="https://2bcef964.delivery.rocketcdn.me/wp-content/plugins/translatepress-multilingual/assets/flags/4x3/de_DE.svg" class="trp-flag-image" alt="" role="presentation" loading="lazy" /></noscript>                                                            <span class="trp-language-item-name" data-no-translation>German</span>
+                                                                                </a>
+                                            <a class="trp-language-item" href="https://friendlycaptcha.com/fr/legal/privacy-end-users/" title="French">
+                            <img width="640" height="480" src="https://2bcef964.delivery.rocketcdn.me/wp-content/plugins/translatepress-multilingual/assets/flags/4x3/fr_FR.svg" class="trp-flag-image" alt="" role="presentation"  />                                                            <span class="trp-language-item-name" data-no-translation>French</span>
+                                                                                </a>
+                                            <a class="trp-language-item" href="https://friendlycaptcha.com/es/legal/privacy-end-users/" title="Spanish">
+                            <img width="640" height="480" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20640%20480'%3E%3C/svg%3E" class="trp-flag-image" alt="" role="presentation" data-lazy-src="https://2bcef964.delivery.rocketcdn.me/wp-content/plugins/translatepress-multilingual/assets/flags/4x3/es_ES.svg" /><noscript><img width="640" height="480" src="https://2bcef964.delivery.rocketcdn.me/wp-content/plugins/translatepress-multilingual/assets/flags/4x3/es_ES.svg" class="trp-flag-image" alt="" role="presentation" loading="lazy" /></noscript>                                                            <span class="trp-language-item-name" data-no-translation>Spanish</span>
+                                                                                </a>
+                                            <a class="trp-language-item" href="https://friendlycaptcha.com/it/legal/privacy-end-users/" title="Italian">
+                            <img width="640" height="480" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20640%20480'%3E%3C/svg%3E" class="trp-flag-image" alt="" role="presentation" data-lazy-src="https://2bcef964.delivery.rocketcdn.me/wp-content/plugins/translatepress-multilingual/assets/flags/4x3/it_IT.svg" /><noscript><img width="640" height="480" src="https://2bcef964.delivery.rocketcdn.me/wp-content/plugins/translatepress-multilingual/assets/flags/4x3/it_IT.svg" class="trp-flag-image" alt="" role="presentation" loading="lazy" /></noscript>                                                            <span class="trp-language-item-name" data-no-translation>Italian</span>
+                                                                                </a>
+                                            <a class="trp-language-item" href="https://friendlycaptcha.com/pt/legal/privacy-end-users/" title="Portuguese">
+                            <img width="640" height="480" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20640%20480'%3E%3C/svg%3E" class="trp-flag-image" alt="" role="presentation" data-lazy-src="https://2bcef964.delivery.rocketcdn.me/wp-content/plugins/translatepress-multilingual/assets/flags/4x3/pt_PT.svg" /><noscript><img width="640" height="480" src="https://2bcef964.delivery.rocketcdn.me/wp-content/plugins/translatepress-multilingual/assets/flags/4x3/pt_PT.svg" class="trp-flag-image" alt="" role="presentation" loading="lazy" /></noscript>                                                            <span class="trp-language-item-name" data-no-translation>Portuguese</span>
+                                                                                </a>
+                                                </div>
+        </div>
+
+    </div>
+</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-fa00d98 elementor-widget elementor-widget-text-editor" data-id="fa00d98" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p>Global protection. <br />Made in Europe.</p>								</div>
+				</div>
+				<div class="elementor-element elementor-element-8c3ec84 elementor-widget__width-auto elementor-widget elementor-widget-image" data-id="8c3ec84" data-element_type="widget" data-e-type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+					<style>.elementor-element-8c3ec84{display:none !important}</style>				</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-b400682" data-id="b400682" data-element_type="column" data-e-type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-1ddfba4 elementor-widget elementor-widget-heading" data-id="1ddfba4" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h4 class="elementor-heading-title elementor-size-default"><a href="https://friendlycaptcha.com">Solution</a></h4>				</div>
+				</div>
+				<div class="elementor-element elementor-element-1972daa elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="1972daa" data-element_type="widget" data-e-type="widget" data-widget_type="icon-list.default">
+				<div class="elementor-widget-container">
+							<ul class="elementor-icon-list-items">
+							<li class="elementor-icon-list-item">
+											<a href="/#overview">
+
+											<span class="elementor-icon-list-text">Overview</span>
+											</a>
+									</li>
+								<li class="elementor-icon-list-item">
+											<a href="/#demo">
+
+											<span class="elementor-icon-list-text">Demo</span>
+											</a>
+									</li>
+								<li class="elementor-icon-list-item">
+											<a href="/#features">
+
+											<span class="elementor-icon-list-text">Features</span>
+											</a>
+									</li>
+								<li class="elementor-icon-list-item">
+											<a href="/#pricing">
+
+											<span class="elementor-icon-list-text">Pricing</span>
+											</a>
+									</li>
+						</ul>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-9e2f81e elementor-widget elementor-widget-heading" data-id="9e2f81e" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h4 class="elementor-heading-title elementor-size-default"><a href="/signup/">Account</a></h4>				</div>
+				</div>
+				<div class="elementor-element elementor-element-f01a74b elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="f01a74b" data-element_type="widget" data-e-type="widget" data-widget_type="icon-list.default">
+				<div class="elementor-widget-container">
+							<ul class="elementor-icon-list-items">
+							<li class="elementor-icon-list-item">
+											<a href="/signup/">
+
+											<span class="elementor-icon-list-text">Create Account</span>
+											</a>
+									</li>
+								<li class="elementor-icon-list-item">
+											<a href="/login/">
+
+											<span class="elementor-icon-list-text">Sign in</span>
+											</a>
+									</li>
+						</ul>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-c55281b elementor-widget elementor-widget-heading" data-id="c55281b" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h4 class="elementor-heading-title elementor-size-default"><a href="/company/about/">Company</a></h4>				</div>
+				</div>
+				<div class="elementor-element elementor-element-1e29f01 elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="1e29f01" data-element_type="widget" data-e-type="widget" data-widget_type="icon-list.default">
+				<div class="elementor-widget-container">
+							<ul class="elementor-icon-list-items">
+							<li class="elementor-icon-list-item">
+											<a href="/company/about/">
+
+											<span class="elementor-icon-list-text">About</span>
+											</a>
+									</li>
+								<li class="elementor-icon-list-item">
+											<a href="/company/jobs/">
+
+											<span class="elementor-icon-list-text">Jobs</span>
+											</a>
+									</li>
+								<li class="elementor-icon-list-item">
+											<a href="/contact/">
+
+											<span class="elementor-icon-list-text">Contact</span>
+											</a>
+									</li>
+						</ul>
+						</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-5be1c79" data-id="5be1c79" data-element_type="column" data-e-type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-75f57e3 elementor-widget elementor-widget-heading" data-id="75f57e3" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h4 class="elementor-heading-title elementor-size-default"><a href="/learn/">Resources</a></h4>				</div>
+				</div>
+				<div class="elementor-element elementor-element-fc6cb99 elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="fc6cb99" data-element_type="widget" data-e-type="widget" data-widget_type="icon-list.default">
+				<div class="elementor-widget-container">
+							<ul class="elementor-icon-list-items">
+							<li class="elementor-icon-list-item">
+											<a href="/learn/">
+
+											<span class="elementor-icon-list-text">Learning</span>
+											</a>
+									</li>
+								<li class="elementor-icon-list-item">
+											<a href="/wiki/">
+
+											<span class="elementor-icon-list-text">Wiki</span>
+											</a>
+									</li>
+								<li class="elementor-icon-list-item">
+											<a href="/support/" target="_blank">
+
+											<span class="elementor-icon-list-text">Support</span>
+											</a>
+									</li>
+						</ul>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-39ae045 elementor-widget elementor-widget-heading" data-id="39ae045" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h4 class="elementor-heading-title elementor-size-default"><a href="https://developer.friendlycaptcha.com" target="_blank">Developers</a></h4>				</div>
+				</div>
+				<div class="elementor-element elementor-element-0956b40 elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="0956b40" data-element_type="widget" data-e-type="widget" data-widget_type="icon-list.default">
+				<div class="elementor-widget-container">
+							<ul class="elementor-icon-list-items">
+							<li class="elementor-icon-list-item">
+											<a href="/docs/" target="_blank">
+
+											<span class="elementor-icon-list-text">Documentation</span>
+											</a>
+									</li>
+								<li class="elementor-icon-list-item">
+											<a href="/integrations/">
+
+											<span class="elementor-icon-list-text">Integrations</span>
+											</a>
+									</li>
+								<li class="elementor-icon-list-item">
+											<a href="https://github.com/FriendlyCaptcha" target="_blank">
+
+											<span class="elementor-icon-list-text">Open Source</span>
+											</a>
+									</li>
+								<li class="elementor-icon-list-item">
+											<a href="/status/" target="_blank">
+
+											<span class="elementor-icon-list-text">Status</span>
+											</a>
+									</li>
+						</ul>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-b78576f elementor-widget elementor-widget-heading" data-id="b78576f" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h4 class="elementor-heading-title elementor-size-default"><a href="/tools/">Tools</a></h4>				</div>
+				</div>
+				<div class="elementor-element elementor-element-172e924 elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="172e924" data-element_type="widget" data-e-type="widget" data-widget_type="icon-list.default">
+				<div class="elementor-widget-container">
+							<ul class="elementor-icon-list-items">
+							<li class="elementor-icon-list-item">
+											<a href="/wcag-checker/">
+
+											<span class="elementor-icon-list-text">WCAG Checker</span>
+											</a>
+									</li>
+						</ul>
+						</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-7b820e0" data-id="7b820e0" data-element_type="column" data-e-type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-30babea elementor-widget elementor-widget-heading" data-id="30babea" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h4 class="elementor-heading-title elementor-size-default"><a href="/compliance/">Compliance</a></h4>				</div>
+				</div>
+				<div class="elementor-element elementor-element-6ea95c1 elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="6ea95c1" data-element_type="widget" data-e-type="widget" data-widget_type="icon-list.default">
+				<div class="elementor-widget-container">
+							<ul class="elementor-icon-list-items">
+							<li class="elementor-icon-list-item">
+											<a href="/privacy/">
+
+											<span class="elementor-icon-list-text">Privacy</span>
+											</a>
+									</li>
+								<li class="elementor-icon-list-item">
+											<a href="/accessibility/">
+
+											<span class="elementor-icon-list-text">Accessibility</span>
+											</a>
+									</li>
+								<li class="elementor-icon-list-item">
+											<a href="/security/">
+
+											<span class="elementor-icon-list-text">Security</span>
+											</a>
+									</li>
+								<li class="elementor-icon-list-item">
+											<a href="/privacy/gdpr/">
+
+											<span class="elementor-icon-list-text">GDPR</span>
+											</a>
+									</li>
+								<li class="elementor-icon-list-item">
+											<a href="/accessibility/wcag/">
+
+											<span class="elementor-icon-list-text">WCAG</span>
+											</a>
+									</li>
+						</ul>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-b15e1ad elementor-widget elementor-widget-heading" data-id="b15e1ad" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h4 class="elementor-heading-title elementor-size-default"><a href="/legal/">Legal</a></h4>				</div>
+				</div>
+				<div class="elementor-element elementor-element-c07f056 elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="c07f056" data-element_type="widget" data-e-type="widget" data-widget_type="icon-list.default">
+				<div class="elementor-widget-container">
+							<ul class="elementor-icon-list-items">
+							<li class="elementor-icon-list-item">
+											<a href="/legal/privacy/">
+
+											<span class="elementor-icon-list-text">Privacy Policies</span>
+											</a>
+									</li>
+								<li class="elementor-icon-list-item">
+											<a href="/legal/terms/">
+
+											<span class="elementor-icon-list-text">Terms of Use</span>
+											</a>
+									</li>
+						</ul>
+						</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-5d4dd29 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="5d4dd29" data-element_type="section" data-e-type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-7a57973" data-id="7a57973" data-element_type="column" data-e-type="column">
+			<div class="elementor-widget-wrap">
+							</div>
+		</div>
+				<div class="elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-c79fcdd" data-id="c79fcdd" data-element_type="column" data-e-type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-f23824b elementor-widget elementor-widget-heading" data-id="f23824b" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h4 class="elementor-heading-title elementor-size-default"><a href="/category/insights/">Insights</a></h4>				</div>
+				</div>
+				<div class="elementor-element elementor-element-1d608a0 elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="1d608a0" data-element_type="widget" data-e-type="widget" data-widget_type="icon-list.default">
+				<div class="elementor-widget-container">
+							<ul class="elementor-icon-list-items">
+							<li class="elementor-icon-list-item">
+											<a href="/insights/hcaptcha-vs-recaptcha/">
+
+											<span class="elementor-icon-list-text">Captcha comparison</span>
+											</a>
+									</li>
+								<li class="elementor-icon-list-item">
+											<a href="/insights/captcha-alternative/">
+
+											<span class="elementor-icon-list-text">Captcha alternative</span>
+											</a>
+									</li>
+								<li class="elementor-icon-list-item">
+											<a href="/insights/open-source-captcha/">
+
+											<span class="elementor-icon-list-text">Open Source Captcha</span>
+											</a>
+									</li>
+								<li class="elementor-icon-list-item">
+											<a href="/insights/invisible-captcha/">
+
+											<span class="elementor-icon-list-text">Invisible Captcha</span>
+											</a>
+									</li>
+						</ul>
+						</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-875a526" data-id="875a526" data-element_type="column" data-e-type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-77dcfe7 elementor-hidden-mobile elementor-widget elementor-widget-spacer" data-id="77dcfe7" data-element_type="widget" data-e-type="widget" data-widget_type="spacer.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-spacer">
+			<div class="elementor-spacer-inner"></div>
+		</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-1dfaeab elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="1dfaeab" data-element_type="widget" data-e-type="widget" data-widget_type="icon-list.default">
+				<div class="elementor-widget-container">
+							<ul class="elementor-icon-list-items">
+							<li class="elementor-icon-list-item">
+											<a href="/insights/recaptcha-alternative/">
+
+											<span class="elementor-icon-list-text">reCaptcha alternative</span>
+											</a>
+									</li>
+								<li class="elementor-icon-list-item">
+											<a href="/insights/recaptcha-gdpr/">
+
+											<span class="elementor-icon-list-text">reCaptcha GDPR</span>
+											</a>
+									</li>
+								<li class="elementor-icon-list-item">
+											<a href="/insights/recaptcha-v3/">
+
+											<span class="elementor-icon-list-text">reCaptcha v3</span>
+											</a>
+									</li>
+						</ul>
+						</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-6f404ed" data-id="6f404ed" data-element_type="column" data-e-type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-f0ca651 elementor-hidden-mobile elementor-widget elementor-widget-spacer" data-id="f0ca651" data-element_type="widget" data-e-type="widget" data-widget_type="spacer.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-spacer">
+			<div class="elementor-spacer-inner"></div>
+		</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-11a9c0c elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="11a9c0c" data-element_type="widget" data-e-type="widget" data-widget_type="icon-list.default">
+				<div class="elementor-widget-container">
+							<ul class="elementor-icon-list-items">
+							<li class="elementor-icon-list-item">
+											<a href="/insights/bot-protection/">
+
+											<span class="elementor-icon-list-text">Bot protection</span>
+											</a>
+									</li>
+								<li class="elementor-icon-list-item">
+											<a href="/insights/account-takeover-prevention/">
+
+											<span class="elementor-icon-list-text">Account takeover prevention</span>
+											</a>
+									</li>
+								<li class="elementor-icon-list-item">
+											<a href="/insights/brute-force-attack-prevention/">
+
+											<span class="elementor-icon-list-text">Brute force attack prevention</span>
+											</a>
+									</li>
+						</ul>
+						</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-3f3a026 elementor-reverse-mobile elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="3f3a026" data-element_type="section" data-e-type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-33aafa2" data-id="33aafa2" data-element_type="column" data-e-type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-2b3f753 elementor-widget elementor-widget-text-editor" data-id="2b3f753" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p>© Friendly Captcha</p>								</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-af85aba" data-id="af85aba" data-element_type="column" data-e-type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-899fd30 elementor-widget elementor-widget-text-editor" data-id="899fd30" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p>A safe internet, accessible for everyone.</p>								</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				</footer>
+		
+<template id="tp-language" data-tp-language="en_US"></template><script type="speculationrules">
+{"prefetch":[{"source":"document","where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":["/wp-*.php","/wp-admin/*","/wp-content/uploads/*","/wp-content/*","/wp-content/plugins/*","/wp-content/themes/interlink-framework/*","/wp-content/themes/hello-elementor/*","/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}
+</script>
+<div  class="trp_model_container" id="trp_ald_modal_container" style="display: none" data-no-dynamic-translation data-no-translation>
+        <div  class="trp_ald_modal" id="trp_ald_modal_popup">
+        <div  id="trp_ald_popup_text">
+            We've detected you might be speaking a different language. Do you want to change to:        </div>
+
+        <div  class="trp_ald_select_and_button">
+            <div class="trp_ald_ls_container">
+            <div class="trp-language-switcher trp-language-switcher-container"  id="trp_ald_popup_select_container" data-no-translation >
+                
+                <div class="trp-ls-shortcode-current-language" id="en_US" special-selector="trp_ald_popup_current_language" data-trp-ald-selected-language= "en_US">
+                    <img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2018%2014'%3E%3C/svg%3E" class="trp-flag-image" alt="" role="presentation" decoding="async" width="18" height="14" data-lazy-src="https://2bcef964.delivery.rocketcdn.me/wp-content/plugins/translatepress-multilingual/assets/flags/4x3/en_US.svg" /><noscript><img loading="lazy" src="https://2bcef964.delivery.rocketcdn.me/wp-content/plugins/translatepress-multilingual/assets/flags/4x3/en_US.svg" class="trp-flag-image" alt="" role="presentation" loading="lazy" decoding="async" width="18" height="14" /></noscript> English                </div>
+                <div class="trp-ls-shortcode-language">
+                    <div class="trp-ald-popup-select" id="en_US" data-trp-ald-selected-language = "en_US">
+                        <img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2018%2014'%3E%3C/svg%3E" class="trp-flag-image" alt="" role="presentation" decoding="async" width="18" height="14" data-lazy-src="https://2bcef964.delivery.rocketcdn.me/wp-content/plugins/translatepress-multilingual/assets/flags/4x3/en_US.svg" /><noscript><img loading="lazy" src="https://2bcef964.delivery.rocketcdn.me/wp-content/plugins/translatepress-multilingual/assets/flags/4x3/en_US.svg" class="trp-flag-image" alt="" role="presentation" loading="lazy" decoding="async" width="18" height="14" /></noscript> English                    </div>
+                                                                    <div class="trp-ald-popup-select" id="de_DE" data-trp-ald-selected-language = "de_DE">
+                                <img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2018%2014'%3E%3C/svg%3E" class="trp-flag-image" alt="Change language to German" decoding="async" width="18" height="14" data-lazy-src="https://2bcef964.delivery.rocketcdn.me/wp-content/plugins/translatepress-multilingual/assets/flags/4x3/de_DE.svg" /><noscript><img loading="lazy" src="https://2bcef964.delivery.rocketcdn.me/wp-content/plugins/translatepress-multilingual/assets/flags/4x3/de_DE.svg" class="trp-flag-image" alt="Change language to German" loading="lazy" decoding="async" width="18" height="14" /></noscript> German                            </div>
+                                                                        <div class="trp-ald-popup-select" id="fr_FR" data-trp-ald-selected-language = "fr_FR">
+                                <img  src="https://2bcef964.delivery.rocketcdn.me/wp-content/plugins/translatepress-multilingual/assets/flags/4x3/fr_FR.svg" class="trp-flag-image" alt="Change language to French"  decoding="async" width="18" height="14" /> French                            </div>
+                                                                        <div class="trp-ald-popup-select" id="es_ES" data-trp-ald-selected-language = "es_ES">
+                                <img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2018%2014'%3E%3C/svg%3E" class="trp-flag-image" alt="Change language to Spanish" decoding="async" width="18" height="14" data-lazy-src="https://2bcef964.delivery.rocketcdn.me/wp-content/plugins/translatepress-multilingual/assets/flags/4x3/es_ES.svg" /><noscript><img loading="lazy" src="https://2bcef964.delivery.rocketcdn.me/wp-content/plugins/translatepress-multilingual/assets/flags/4x3/es_ES.svg" class="trp-flag-image" alt="Change language to Spanish" loading="lazy" decoding="async" width="18" height="14" /></noscript> Spanish                            </div>
+                                                                        <div class="trp-ald-popup-select" id="it_IT" data-trp-ald-selected-language = "it_IT">
+                                <img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2018%2014'%3E%3C/svg%3E" class="trp-flag-image" alt="Change language to Italian" decoding="async" width="18" height="14" data-lazy-src="https://2bcef964.delivery.rocketcdn.me/wp-content/plugins/translatepress-multilingual/assets/flags/4x3/it_IT.svg" /><noscript><img loading="lazy" src="https://2bcef964.delivery.rocketcdn.me/wp-content/plugins/translatepress-multilingual/assets/flags/4x3/it_IT.svg" class="trp-flag-image" alt="Change language to Italian" loading="lazy" decoding="async" width="18" height="14" /></noscript> Italian                            </div>
+                                                                        <div class="trp-ald-popup-select" id="pt_PT" data-trp-ald-selected-language = "pt_PT">
+                                <img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2018%2014'%3E%3C/svg%3E" class="trp-flag-image" alt="Change language to Portuguese" decoding="async" width="18" height="14" data-lazy-src="https://2bcef964.delivery.rocketcdn.me/wp-content/plugins/translatepress-multilingual/assets/flags/4x3/pt_PT.svg" /><noscript><img loading="lazy" src="https://2bcef964.delivery.rocketcdn.me/wp-content/plugins/translatepress-multilingual/assets/flags/4x3/pt_PT.svg" class="trp-flag-image" alt="Change language to Portuguese" loading="lazy" decoding="async" width="18" height="14" /></noscript> Portuguese                            </div>
+                                                            </div>
+            </div>
+            </div>
+
+
+            <div class="trp_ald_button">
+                <a href="https://friendlycaptcha.com"
+                   id="trp_ald_popup_change_language">
+                    Change Language                </a>
+            </div>
+         </div>
+        <a id="trp_ald_x_button_and_textarea" href="#">
+            <span id="trp_ald_x_button" title="Close"></span>
+            <span id="trp_ald_x_button_textarea" title="Close">
+                Close            </span>
+        </a>
+    </div>
+</div>
+<template id="trp_ald_no_text_popup_template">
+    <div id="trp_no_text_popup_wrap">
+        <div id="trp_no_text_popup" class="trp_ald_no_text_popup" data-no-dynamic-translation data-no-translation>
+            
+            <div id="trp_ald_not_text_popup_ls_and_button">
+                <div id="trp_ald_no_text_popup_div">
+                    <span id="trp_ald_no_text_popup_text">
+                        We've detected you might be speaking a different language. Do you want to change to:                    </span>
+                </div>
+                <div class="trp_ald_ls_container">
+                    <div class="trp-language-switcher trp-language-switcher-container" id="trp_ald_no_text_select"
+                         data-no-translation >
+                        
+                        <div class="trp-ls-shortcode-current-language" id="en_US"
+                             special-selector="trp_ald_popup_current_language" data-trp-ald-selected-language="en_US">
+                            <img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2018%2014'%3E%3C/svg%3E" class="trp-flag-image" alt="" role="presentation" decoding="async" width="18" height="14" data-lazy-src="https://2bcef964.delivery.rocketcdn.me/wp-content/plugins/translatepress-multilingual/assets/flags/4x3/en_US.svg" /><noscript><img loading="lazy" src="https://2bcef964.delivery.rocketcdn.me/wp-content/plugins/translatepress-multilingual/assets/flags/4x3/en_US.svg" class="trp-flag-image" alt="" role="presentation" loading="lazy" decoding="async" width="18" height="14" /></noscript> English                        </div>
+                        <div class="trp-ls-shortcode-language" id="trp_ald_no_text_popup_select_container">
+                            <div class="trp-ald-popup-select" id="en_US"
+                                 data-trp-ald-selected-language= en_US>
+                                <img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2018%2014'%3E%3C/svg%3E" class="trp-flag-image" alt="" role="presentation" decoding="async" width="18" height="14" data-lazy-src="https://2bcef964.delivery.rocketcdn.me/wp-content/plugins/translatepress-multilingual/assets/flags/4x3/en_US.svg" /><noscript><img loading="lazy" src="https://2bcef964.delivery.rocketcdn.me/wp-content/plugins/translatepress-multilingual/assets/flags/4x3/en_US.svg" class="trp-flag-image" alt="" role="presentation" loading="lazy" decoding="async" width="18" height="14" /></noscript> English                            </div>
+                                                                                            <div class="trp-ald-popup-select" id="de_DE"
+                                         data-trp-ald-selected-language="de_DE">
+                                        <img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2018%2014'%3E%3C/svg%3E" class="trp-flag-image" alt="Change language to German" decoding="async" width="18" height="14" data-lazy-src="https://2bcef964.delivery.rocketcdn.me/wp-content/plugins/translatepress-multilingual/assets/flags/4x3/de_DE.svg" /><noscript><img loading="lazy" src="https://2bcef964.delivery.rocketcdn.me/wp-content/plugins/translatepress-multilingual/assets/flags/4x3/de_DE.svg" class="trp-flag-image" alt="Change language to German" loading="lazy" decoding="async" width="18" height="14" /></noscript> German
+                                    </div>
+                                                                                                <div class="trp-ald-popup-select" id="fr_FR"
+                                         data-trp-ald-selected-language="fr_FR">
+                                        <img  src="https://2bcef964.delivery.rocketcdn.me/wp-content/plugins/translatepress-multilingual/assets/flags/4x3/fr_FR.svg" class="trp-flag-image" alt="Change language to French"  decoding="async" width="18" height="14" /> French
+                                    </div>
+                                                                                                <div class="trp-ald-popup-select" id="es_ES"
+                                         data-trp-ald-selected-language="es_ES">
+                                        <img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2018%2014'%3E%3C/svg%3E" class="trp-flag-image" alt="Change language to Spanish" decoding="async" width="18" height="14" data-lazy-src="https://2bcef964.delivery.rocketcdn.me/wp-content/plugins/translatepress-multilingual/assets/flags/4x3/es_ES.svg" /><noscript><img loading="lazy" src="https://2bcef964.delivery.rocketcdn.me/wp-content/plugins/translatepress-multilingual/assets/flags/4x3/es_ES.svg" class="trp-flag-image" alt="Change language to Spanish" loading="lazy" decoding="async" width="18" height="14" /></noscript> Spanish
+                                    </div>
+                                                                                                <div class="trp-ald-popup-select" id="it_IT"
+                                         data-trp-ald-selected-language="it_IT">
+                                        <img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2018%2014'%3E%3C/svg%3E" class="trp-flag-image" alt="Change language to Italian" decoding="async" width="18" height="14" data-lazy-src="https://2bcef964.delivery.rocketcdn.me/wp-content/plugins/translatepress-multilingual/assets/flags/4x3/it_IT.svg" /><noscript><img loading="lazy" src="https://2bcef964.delivery.rocketcdn.me/wp-content/plugins/translatepress-multilingual/assets/flags/4x3/it_IT.svg" class="trp-flag-image" alt="Change language to Italian" loading="lazy" decoding="async" width="18" height="14" /></noscript> Italian
+                                    </div>
+                                                                                                <div class="trp-ald-popup-select" id="pt_PT"
+                                         data-trp-ald-selected-language="pt_PT">
+                                        <img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2018%2014'%3E%3C/svg%3E" class="trp-flag-image" alt="Change language to Portuguese" decoding="async" width="18" height="14" data-lazy-src="https://2bcef964.delivery.rocketcdn.me/wp-content/plugins/translatepress-multilingual/assets/flags/4x3/pt_PT.svg" /><noscript><img loading="lazy" src="https://2bcef964.delivery.rocketcdn.me/wp-content/plugins/translatepress-multilingual/assets/flags/4x3/pt_PT.svg" class="trp-flag-image" alt="Change language to Portuguese" loading="lazy" decoding="async" width="18" height="14" /></noscript> Portuguese
+                                    </div>
+                                                                                    </div>
+                    </div>
+                </div>
+                <div class="trp_ald_change_language_div">
+                    <a href="https://friendlycaptcha.com" id="trp_ald_no_text_popup_change_language">
+                        Change Language                    </a>
+                </div>
+            </div>
+            <div id="trp_ald_no_text_popup_x">
+                <button id="trp_close"></button>
+            </div>
+        </div>
+    </div>
+</template>			<script type="text/rocketlazyloadscript">
+				const lazyloadRunObserver = () => {
+					const lazyloadBackgrounds = document.querySelectorAll( `.e-con.e-parent:not(.e-lazyloaded)` );
+					const lazyloadBackgroundObserver = new IntersectionObserver( ( entries ) => {
+						entries.forEach( ( entry ) => {
+							if ( entry.isIntersecting ) {
+								let lazyloadBackground = entry.target;
+								if( lazyloadBackground ) {
+									lazyloadBackground.classList.add( 'e-lazyloaded' );
+								}
+								lazyloadBackgroundObserver.unobserve( entry.target );
+							}
+						});
+					}, { rootMargin: '200px 0px 200px 0px' } );
+					lazyloadBackgrounds.forEach( ( lazyloadBackground ) => {
+						lazyloadBackgroundObserver.observe( lazyloadBackground );
+					} );
+				};
+				const events = [
+					'DOMContentLoaded',
+					'elementor/lazyload/observe',
+				];
+				events.forEach( ( event ) => {
+					document.addEventListener( event, lazyloadRunObserver );
+				} );
+			</script>
+			<script type="text/rocketlazyloadscript" id="rocket-browser-checker-js-after">
+"use strict";var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||!1,descriptor.configurable=!0,"value"in descriptor&&(descriptor.writable=!0),Object.defineProperty(target,descriptor.key,descriptor)}}return function(Constructor,protoProps,staticProps){return protoProps&&defineProperties(Constructor.prototype,protoProps),staticProps&&defineProperties(Constructor,staticProps),Constructor}}();function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor))throw new TypeError("Cannot call a class as a function")}var RocketBrowserCompatibilityChecker=function(){function RocketBrowserCompatibilityChecker(options){_classCallCheck(this,RocketBrowserCompatibilityChecker),this.passiveSupported=!1,this._checkPassiveOption(this),this.options=!!this.passiveSupported&&options}return _createClass(RocketBrowserCompatibilityChecker,[{key:"_checkPassiveOption",value:function(self){try{var options={get passive(){return!(self.passiveSupported=!0)}};window.addEventListener("test",null,options),window.removeEventListener("test",null,options)}catch(err){self.passiveSupported=!1}}},{key:"initRequestIdleCallback",value:function(){!1 in window&&(window.requestIdleCallback=function(cb){var start=Date.now();return setTimeout(function(){cb({didTimeout:!1,timeRemaining:function(){return Math.max(0,50-(Date.now()-start))}})},1)}),!1 in window&&(window.cancelIdleCallback=function(id){return clearTimeout(id)})}},{key:"isDataSaverModeOn",value:function(){return"connection"in navigator&&!0===navigator.connection.saveData}},{key:"supportsLinkPrefetch",value:function(){var elem=document.createElement("link");return elem.relList&&elem.relList.supports&&elem.relList.supports("prefetch")&&window.IntersectionObserver&&"isIntersecting"in IntersectionObserverEntry.prototype}},{key:"isSlowConnection",value:function(){return"connection"in navigator&&"effectiveType"in navigator.connection&&("2g"===navigator.connection.effectiveType||"slow-2g"===navigator.connection.effectiveType)}}]),RocketBrowserCompatibilityChecker}();
+//# sourceURL=rocket-browser-checker-js-after
+</script>
+<script id="rocket-preload-links-js-extra">
+var RocketPreloadLinksConfig = {"excludeUris":"/(?:.+/)?feed(?:/(?:.+/?)?)?$|/(?:.+/)?embed/|/(index.php/)?(.*)wp-json(/.*|$)|/refer/|/go/|/recommend/|/recommends/","usesTrailingSlash":"1","imageExt":"jpg|jpeg|gif|png|tiff|bmp|webp|avif|pdf|doc|docx|xls|xlsx|php","fileExt":"jpg|jpeg|gif|png|tiff|bmp|webp|avif|pdf|doc|docx|xls|xlsx|php|html|htm","siteUrl":"https://friendlycaptcha.com","onHoverDelay":"100","rateThrottle":"3"};
+//# sourceURL=rocket-preload-links-js-extra
+</script>
+<script type="text/rocketlazyloadscript" id="rocket-preload-links-js-after">
+(function() {
+"use strict";var r="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e},e=function(){function i(e,t){for(var n=0;n<t.length;n++){var i=t[n];i.enumerable=i.enumerable||!1,i.configurable=!0,"value"in i&&(i.writable=!0),Object.defineProperty(e,i.key,i)}}return function(e,t,n){return t&&i(e.prototype,t),n&&i(e,n),e}}();function i(e,t){if(!(e instanceof t))throw new TypeError("Cannot call a class as a function")}var t=function(){function n(e,t){i(this,n),this.browser=e,this.config=t,this.options=this.browser.options,this.prefetched=new Set,this.eventTime=null,this.threshold=1111,this.numOnHover=0}return e(n,[{key:"init",value:function(){!this.browser.supportsLinkPrefetch()||this.browser.isDataSaverModeOn()||this.browser.isSlowConnection()||(this.regex={excludeUris:RegExp(this.config.excludeUris,"i"),images:RegExp(".("+this.config.imageExt+")$","i"),fileExt:RegExp(".("+this.config.fileExt+")$","i")},this._initListeners(this))}},{key:"_initListeners",value:function(e){-1<this.config.onHoverDelay&&document.addEventListener("mouseover",e.listener.bind(e),e.listenerOptions),document.addEventListener("mousedown",e.listener.bind(e),e.listenerOptions),document.addEventListener("touchstart",e.listener.bind(e),e.listenerOptions)}},{key:"listener",value:function(e){var t=e.target.closest("a"),n=this._prepareUrl(t);if(null!==n)switch(e.type){case"mousedown":case"touchstart":this._addPrefetchLink(n);break;case"mouseover":this._earlyPrefetch(t,n,"mouseout")}}},{key:"_earlyPrefetch",value:function(t,e,n){var i=this,r=setTimeout(function(){if(r=null,0===i.numOnHover)setTimeout(function(){return i.numOnHover=0},1e3);else if(i.numOnHover>i.config.rateThrottle)return;i.numOnHover++,i._addPrefetchLink(e)},this.config.onHoverDelay);t.addEventListener(n,function e(){t.removeEventListener(n,e,{passive:!0}),null!==r&&(clearTimeout(r),r=null)},{passive:!0})}},{key:"_addPrefetchLink",value:function(i){return this.prefetched.add(i.href),new Promise(function(e,t){var n=document.createElement("link");n.rel="prefetch",n.href=i.href,n.onload=e,n.onerror=t,document.head.appendChild(n)}).catch(function(){})}},{key:"_prepareUrl",value:function(e){if(null===e||"object"!==(void 0===e?"undefined":r(e))||!1 in e||-1===["http:","https:"].indexOf(e.protocol))return null;var t=e.href.substring(0,this.config.siteUrl.length),n=this._getPathname(e.href,t),i={original:e.href,protocol:e.protocol,origin:t,pathname:n,href:t+n};return this._isLinkOk(i)?i:null}},{key:"_getPathname",value:function(e,t){var n=t?e.substring(this.config.siteUrl.length):e;return n.startsWith("/")||(n="/"+n),this._shouldAddTrailingSlash(n)?n+"/":n}},{key:"_shouldAddTrailingSlash",value:function(e){return this.config.usesTrailingSlash&&!e.endsWith("/")&&!this.regex.fileExt.test(e)}},{key:"_isLinkOk",value:function(e){return null!==e&&"object"===(void 0===e?"undefined":r(e))&&(!this.prefetched.has(e.href)&&e.origin===this.config.siteUrl&&-1===e.href.indexOf("?")&&-1===e.href.indexOf("#")&&!this.regex.excludeUris.test(e.href)&&!this.regex.images.test(e.href))}}],[{key:"run",value:function(){"undefined"!=typeof RocketPreloadLinksConfig&&new n(new RocketBrowserCompatibilityChecker({capture:!0,passive:!0}),RocketPreloadLinksConfig).init()}}]),n}();t.run();
+}());
+
+//# sourceURL=rocket-preload-links-js-after
+</script>
+<script id="rocket_lazyload_css-js-extra">
+var rocket_lazyload_css_data = {"threshold":"300"};
+//# sourceURL=rocket_lazyload_css-js-extra
+</script>
+<script id="rocket_lazyload_css-js-after">
+!function o(n,c,a){function u(t,e){if(!c[t]){if(!n[t]){var r="function"==typeof require&&require;if(!e&&r)return r(t,!0);if(s)return s(t,!0);throw(e=new Error("Cannot find module '"+t+"'")).code="MODULE_NOT_FOUND",e}r=c[t]={exports:{}},n[t][0].call(r.exports,function(e){return u(n[t][1][e]||e)},r,r.exports,o,n,c,a)}return c[t].exports}for(var s="function"==typeof require&&require,e=0;e<a.length;e++)u(a[e]);return u}({1:[function(e,t,r){"use strict";{const c="undefined"==typeof rocket_pairs?[]:rocket_pairs,a=(("undefined"==typeof rocket_excluded_pairs?[]:rocket_excluded_pairs).map(t=>{var e=t.selector;document.querySelectorAll(e).forEach(e=>{e.setAttribute("data-rocket-lazy-bg-"+t.hash,"excluded")})}),document.querySelector("#wpr-lazyload-bg-container"));var o=rocket_lazyload_css_data.threshold||300;const u=new IntersectionObserver(e=>{e.forEach(t=>{t.isIntersecting&&c.filter(e=>t.target.matches(e.selector)).map(t=>{var e;t&&((e=document.createElement("style")).textContent=t.style,a.insertAdjacentElement("afterend",e),t.elements.forEach(e=>{u.unobserve(e),e.setAttribute("data-rocket-lazy-bg-"+t.hash,"loaded")}))})})},{rootMargin:o+"px"});function n(){0<(0<arguments.length&&void 0!==arguments[0]?arguments[0]:[]).length&&c.forEach(t=>{try{document.querySelectorAll(t.selector).forEach(e=>{"loaded"!==e.getAttribute("data-rocket-lazy-bg-"+t.hash)&&"excluded"!==e.getAttribute("data-rocket-lazy-bg-"+t.hash)&&(u.observe(e),(t.elements||=[]).push(e))})}catch(e){console.error(e)}})}n(),function(){const r=window.MutationObserver;return function(e,t){if(e&&1===e.nodeType)return(t=new r(t)).observe(e,{attributes:!0,childList:!0,subtree:!0}),t}}()(document.querySelector("body"),n)}},{}]},{},[1]);
+//# sourceURL=rocket_lazyload_css-js-after
+</script>
+<script id="eael-general-js-extra">
+var localize = {"ajaxurl":"https://friendlycaptcha.com/wp-admin/admin-ajax.php","nonce":"3d57fd1720","i18n":{"added":"Added ","compare":"Compare","loading":"Loading..."},"eael_translate_text":{"required_text":"is a required field","invalid_text":"Invalid","billing_text":"Billing","shipping_text":"Shipping","fg_mfp_counter_text":"of"},"page_permalink":"https://friendlycaptcha.com/legal/privacy-end-users/","cart_redirectition":"","cart_page_url":"","el_breakpoints":{"mobile":{"label":"Mobile Portrait","value":767,"default_value":767,"direction":"max","is_enabled":true},"mobile_extra":{"label":"Mobile Landscape","value":880,"default_value":880,"direction":"max","is_enabled":false},"tablet":{"label":"Tablet Portrait","value":1024,"default_value":1024,"direction":"max","is_enabled":true},"tablet_extra":{"label":"Tablet Landscape","value":1200,"default_value":1200,"direction":"max","is_enabled":false},"laptop":{"label":"Laptop","value":1366,"default_value":1366,"direction":"max","is_enabled":false},"widescreen":{"label":"Widescreen","value":2400,"default_value":2400,"direction":"min","is_enabled":false}},"ParticleThemesData":{"default":"{\"particles\":{\"number\":{\"value\":160,\"density\":{\"enable\":true,\"value_area\":800}},\"color\":{\"value\":\"#ffffff\"},\"shape\":{\"type\":\"circle\",\"stroke\":{\"width\":0,\"color\":\"#000000\"},\"polygon\":{\"nb_sides\":5},\"image\":{\"src\":\"img/github.svg\",\"width\":100,\"height\":100}},\"opacity\":{\"value\":0.5,\"random\":false,\"anim\":{\"enable\":false,\"speed\":1,\"opacity_min\":0.1,\"sync\":false}},\"size\":{\"value\":3,\"random\":true,\"anim\":{\"enable\":false,\"speed\":40,\"size_min\":0.1,\"sync\":false}},\"line_linked\":{\"enable\":true,\"distance\":150,\"color\":\"#ffffff\",\"opacity\":0.4,\"width\":1},\"move\":{\"enable\":true,\"speed\":6,\"direction\":\"none\",\"random\":false,\"straight\":false,\"out_mode\":\"out\",\"bounce\":false,\"attract\":{\"enable\":false,\"rotateX\":600,\"rotateY\":1200}}},\"interactivity\":{\"detect_on\":\"canvas\",\"events\":{\"onhover\":{\"enable\":true,\"mode\":\"repulse\"},\"onclick\":{\"enable\":true,\"mode\":\"push\"},\"resize\":true},\"modes\":{\"grab\":{\"distance\":400,\"line_linked\":{\"opacity\":1}},\"bubble\":{\"distance\":400,\"size\":40,\"duration\":2,\"opacity\":8,\"speed\":3},\"repulse\":{\"distance\":200,\"duration\":0.4},\"push\":{\"particles_nb\":4},\"remove\":{\"particles_nb\":2}}},\"retina_detect\":true}","nasa":"{\"particles\":{\"number\":{\"value\":250,\"density\":{\"enable\":true,\"value_area\":800}},\"color\":{\"value\":\"#ffffff\"},\"shape\":{\"type\":\"circle\",\"stroke\":{\"width\":0,\"color\":\"#000000\"},\"polygon\":{\"nb_sides\":5},\"image\":{\"src\":\"img/github.svg\",\"width\":100,\"height\":100}},\"opacity\":{\"value\":1,\"random\":true,\"anim\":{\"enable\":true,\"speed\":1,\"opacity_min\":0,\"sync\":false}},\"size\":{\"value\":3,\"random\":true,\"anim\":{\"enable\":false,\"speed\":4,\"size_min\":0.3,\"sync\":false}},\"line_linked\":{\"enable\":false,\"distance\":150,\"color\":\"#ffffff\",\"opacity\":0.4,\"width\":1},\"move\":{\"enable\":true,\"speed\":1,\"direction\":\"none\",\"random\":true,\"straight\":false,\"out_mode\":\"out\",\"bounce\":false,\"attract\":{\"enable\":false,\"rotateX\":600,\"rotateY\":600}}},\"interactivity\":{\"detect_on\":\"canvas\",\"events\":{\"onhover\":{\"enable\":true,\"mode\":\"bubble\"},\"onclick\":{\"enable\":true,\"mode\":\"repulse\"},\"resize\":true},\"modes\":{\"grab\":{\"distance\":400,\"line_linked\":{\"opacity\":1}},\"bubble\":{\"distance\":250,\"size\":0,\"duration\":2,\"opacity\":0,\"speed\":3},\"repulse\":{\"distance\":400,\"duration\":0.4},\"push\":{\"particles_nb\":4},\"remove\":{\"particles_nb\":2}}},\"retina_detect\":true}","bubble":"{\"particles\":{\"number\":{\"value\":15,\"density\":{\"enable\":true,\"value_area\":800}},\"color\":{\"value\":\"#1b1e34\"},\"shape\":{\"type\":\"polygon\",\"stroke\":{\"width\":0,\"color\":\"#000\"},\"polygon\":{\"nb_sides\":6},\"image\":{\"src\":\"img/github.svg\",\"width\":100,\"height\":100}},\"opacity\":{\"value\":0.3,\"random\":true,\"anim\":{\"enable\":false,\"speed\":1,\"opacity_min\":0.1,\"sync\":false}},\"size\":{\"value\":50,\"random\":false,\"anim\":{\"enable\":true,\"speed\":10,\"size_min\":40,\"sync\":false}},\"line_linked\":{\"enable\":false,\"distance\":200,\"color\":\"#ffffff\",\"opacity\":1,\"width\":2},\"move\":{\"enable\":true,\"speed\":8,\"direction\":\"none\",\"random\":false,\"straight\":false,\"out_mode\":\"out\",\"bounce\":false,\"attract\":{\"enable\":false,\"rotateX\":600,\"rotateY\":1200}}},\"interactivity\":{\"detect_on\":\"canvas\",\"events\":{\"onhover\":{\"enable\":false,\"mode\":\"grab\"},\"onclick\":{\"enable\":false,\"mode\":\"push\"},\"resize\":true},\"modes\":{\"grab\":{\"distance\":400,\"line_linked\":{\"opacity\":1}},\"bubble\":{\"distance\":400,\"size\":40,\"duration\":2,\"opacity\":8,\"speed\":3},\"repulse\":{\"distance\":200,\"duration\":0.4},\"push\":{\"particles_nb\":4},\"remove\":{\"particles_nb\":2}}},\"retina_detect\":true}","snow":"{\"particles\":{\"number\":{\"value\":450,\"density\":{\"enable\":true,\"value_area\":800}},\"color\":{\"value\":\"#fff\"},\"shape\":{\"type\":\"circle\",\"stroke\":{\"width\":0,\"color\":\"#000000\"},\"polygon\":{\"nb_sides\":5},\"image\":{\"src\":\"img/github.svg\",\"width\":100,\"height\":100}},\"opacity\":{\"value\":0.5,\"random\":true,\"anim\":{\"enable\":false,\"speed\":1,\"opacity_min\":0.1,\"sync\":false}},\"size\":{\"value\":5,\"random\":true,\"anim\":{\"enable\":false,\"speed\":40,\"size_min\":0.1,\"sync\":false}},\"line_linked\":{\"enable\":false,\"distance\":500,\"color\":\"#ffffff\",\"opacity\":0.4,\"width\":2},\"move\":{\"enable\":true,\"speed\":6,\"direction\":\"bottom\",\"random\":false,\"straight\":false,\"out_mode\":\"out\",\"bounce\":false,\"attract\":{\"enable\":false,\"rotateX\":600,\"rotateY\":1200}}},\"interactivity\":{\"detect_on\":\"canvas\",\"events\":{\"onhover\":{\"enable\":true,\"mode\":\"bubble\"},\"onclick\":{\"enable\":true,\"mode\":\"repulse\"},\"resize\":true},\"modes\":{\"grab\":{\"distance\":400,\"line_linked\":{\"opacity\":0.5}},\"bubble\":{\"distance\":400,\"size\":4,\"duration\":0.3,\"opacity\":1,\"speed\":3},\"repulse\":{\"distance\":200,\"duration\":0.4},\"push\":{\"particles_nb\":4},\"remove\":{\"particles_nb\":2}}},\"retina_detect\":true}","nyan_cat":"{\"particles\":{\"number\":{\"value\":150,\"density\":{\"enable\":false,\"value_area\":800}},\"color\":{\"value\":\"#ffffff\"},\"shape\":{\"type\":\"star\",\"stroke\":{\"width\":0,\"color\":\"#000000\"},\"polygon\":{\"nb_sides\":5},\"image\":{\"src\":\"http://wiki.lexisnexis.com/academic/images/f/fb/Itunes_podcast_icon_300.jpg\",\"width\":100,\"height\":100}},\"opacity\":{\"value\":0.5,\"random\":false,\"anim\":{\"enable\":false,\"speed\":1,\"opacity_min\":0.1,\"sync\":false}},\"size\":{\"value\":4,\"random\":true,\"anim\":{\"enable\":false,\"speed\":40,\"size_min\":0.1,\"sync\":false}},\"line_linked\":{\"enable\":false,\"distance\":150,\"color\":\"#ffffff\",\"opacity\":0.4,\"width\":1},\"move\":{\"enable\":true,\"speed\":14,\"direction\":\"left\",\"random\":false,\"straight\":true,\"out_mode\":\"out\",\"bounce\":false,\"attract\":{\"enable\":false,\"rotateX\":600,\"rotateY\":1200}}},\"interactivity\":{\"detect_on\":\"canvas\",\"events\":{\"onhover\":{\"enable\":false,\"mode\":\"grab\"},\"onclick\":{\"enable\":true,\"mode\":\"repulse\"},\"resize\":true},\"modes\":{\"grab\":{\"distance\":200,\"line_linked\":{\"opacity\":1}},\"bubble\":{\"distance\":400,\"size\":40,\"duration\":2,\"opacity\":8,\"speed\":3},\"repulse\":{\"distance\":200,\"duration\":0.4},\"push\":{\"particles_nb\":4},\"remove\":{\"particles_nb\":2}}},\"retina_detect\":true}"},"eael_login_nonce":"df98041afa","eael_register_nonce":"c40e8010fe","eael_lostpassword_nonce":"5588eafbee","eael_resetpassword_nonce":"1770d7671d"};
+//# sourceURL=eael-general-js-extra
+</script>
+<script type="text/rocketlazyloadscript" data-rocket-src="https://2bcef964.delivery.rocketcdn.me/wp-content/plugins/essential-addons-for-elementor-lite/assets/front-end/js/view/general.min.js?ver=6.6.0" id="eael-general-js" data-rocket-defer defer></script>
+<script type="text/rocketlazyloadscript" data-rocket-src="https://2bcef964.delivery.rocketcdn.me/wp-content/uploads/essential-addons-elementor/eael-218.js?ver=1720457388" id="eael-218-js" data-rocket-defer defer></script>
+<script src="https://2bcef964.delivery.rocketcdn.me/wp-content/plugins/elementor/assets/js/webpack.runtime.min.js?ver=4.0.1" id="elementor-webpack-runtime-js" data-rocket-defer defer></script>
+<script src="https://2bcef964.delivery.rocketcdn.me/wp-content/plugins/elementor/assets/js/frontend-modules.min.js?ver=4.0.1" id="elementor-frontend-modules-js" data-rocket-defer defer></script>
+<script type="text/rocketlazyloadscript" data-rocket-src="https://2bcef964.delivery.rocketcdn.me/wp-includes/js/jquery/ui/core.min.js?ver=1.13.3" id="jquery-ui-core-js" data-rocket-defer defer></script>
+<script id="elementor-frontend-js-before">
+var elementorFrontendConfig = {"environmentMode":{"edit":false,"wpPreview":false,"isScriptDebug":false},"i18n":{"shareOnFacebook":"Share on Facebook","shareOnTwitter":"Share on Twitter","pinIt":"Pin it","download":"Download","downloadImage":"Download image","fullscreen":"Fullscreen","zoom":"Zoom","share":"Share","playVideo":"Play Video","previous":"Previous","next":"Next","close":"Close","a11yCarouselPrevSlideMessage":"Previous slide","a11yCarouselNextSlideMessage":"Next slide","a11yCarouselFirstSlideMessage":"This is the first slide","a11yCarouselLastSlideMessage":"This is the last slide","a11yCarouselPaginationBulletMessage":"Go to slide"},"is_rtl":false,"breakpoints":{"xs":0,"sm":480,"md":768,"lg":1025,"xl":1440,"xxl":1600},"responsive":{"breakpoints":{"mobile":{"label":"Mobile Portrait","value":767,"default_value":767,"direction":"max","is_enabled":true},"mobile_extra":{"label":"Mobile Landscape","value":880,"default_value":880,"direction":"max","is_enabled":false},"tablet":{"label":"Tablet Portrait","value":1024,"default_value":1024,"direction":"max","is_enabled":true},"tablet_extra":{"label":"Tablet Landscape","value":1200,"default_value":1200,"direction":"max","is_enabled":false},"laptop":{"label":"Laptop","value":1366,"default_value":1366,"direction":"max","is_enabled":false},"widescreen":{"label":"Widescreen","value":2400,"default_value":2400,"direction":"min","is_enabled":false}},"hasCustomBreakpoints":false},"version":"4.0.1","is_static":false,"experimentalFeatures":{"e_font_icon_svg":true,"additional_custom_breakpoints":true,"theme_builder_v2":true,"global_classes_should_enforce_capabilities":true,"e_opt_in_v4_page":true,"e_interactions":true,"e_widget_creation":true,"import-export-customization":true,"e_pro_atomic_form":true,"e_pro_variables":true,"e_pro_interactions":true},"urls":{"assets":"https:\/\/friendlycaptcha.com\/wp-content\/plugins\/elementor\/assets\/","ajaxurl":"https:\/\/friendlycaptcha.com\/wp-admin\/admin-ajax.php","uploadUrl":"https:\/\/friendlycaptcha.com\/wp-content\/uploads"},"nonces":{"floatingButtonsClickTracking":"71c2accab3","atomicFormsSendForm":"1101216a7c"},"swiperClass":"swiper","settings":{"page":[],"editorPreferences":[]},"kit":{"active_breakpoints":["viewport_mobile","viewport_tablet"],"global_image_lightbox":"yes","lightbox_enable_counter":"yes","lightbox_enable_fullscreen":"yes","lightbox_enable_zoom":"yes","lightbox_enable_share":"yes","lightbox_title_src":"title","lightbox_description_src":"description"},"post":{"id":1881,"title":"Privacy%20Policy%20for%20End%20Users%20-%20Friendly%20Captcha","excerpt":"","featuredImage":false}};
+//# sourceURL=elementor-frontend-js-before
+</script>
+<script src="https://2bcef964.delivery.rocketcdn.me/wp-content/plugins/elementor/assets/js/frontend.min.js?ver=4.0.1" id="elementor-frontend-js" data-rocket-defer defer></script>
+<script src="https://2bcef964.delivery.rocketcdn.me/wp-content/plugins/elementor-pro/assets/lib/smartmenus/jquery.smartmenus.min.js?ver=1.2.1" id="smartmenus-js" data-rocket-defer defer></script>
+<script src="https://2bcef964.delivery.rocketcdn.me/wp-content/plugins/elementor-pro/assets/lib/sticky/jquery.sticky.min.js?ver=4.0.1" id="e-sticky-js" data-rocket-defer defer></script>
+<script type="text/rocketlazyloadscript" data-rocket-src="https://2bcef964.delivery.rocketcdn.me/wp-content/plugins/wp-rocket/assets/js/heartbeat.js?ver=3.21.0.1" id="heartbeat-js" data-rocket-defer defer></script>
+<script src="https://2bcef964.delivery.rocketcdn.me/wp-content/plugins/elementor-pro/assets/js/webpack-pro.runtime.min.js?ver=4.0.1" id="elementor-pro-webpack-runtime-js" data-rocket-defer defer></script>
+<script type="text/rocketlazyloadscript" data-rocket-src="https://2bcef964.delivery.rocketcdn.me/wp-includes/js/dist/hooks.min.js?ver=dd5603f07f9220ed27f1" id="wp-hooks-js"></script>
+<script type="text/rocketlazyloadscript" data-rocket-src="https://2bcef964.delivery.rocketcdn.me/wp-includes/js/dist/i18n.min.js?ver=c26c3dc7bed366793375" id="wp-i18n-js"></script>
+<script type="text/rocketlazyloadscript" id="wp-i18n-js-after">
+wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
+//# sourceURL=wp-i18n-js-after
+</script>
+<script id="elementor-pro-frontend-js-before">
+var ElementorProFrontendConfig = {"ajaxurl":"https:\/\/friendlycaptcha.com\/wp-admin\/admin-ajax.php","nonce":"c0b7409d40","urls":{"assets":"https:\/\/friendlycaptcha.com\/wp-content\/plugins\/elementor-pro\/assets\/","rest":"https:\/\/friendlycaptcha.com\/wp-json\/"},"settings":{"lazy_load_background_images":true},"popup":{"hasPopUps":false},"shareButtonsNetworks":{"facebook":{"title":"Facebook","has_counter":true},"twitter":{"title":"Twitter"},"linkedin":{"title":"LinkedIn","has_counter":true},"pinterest":{"title":"Pinterest","has_counter":true},"reddit":{"title":"Reddit","has_counter":true},"vk":{"title":"VK","has_counter":true},"odnoklassniki":{"title":"OK","has_counter":true},"tumblr":{"title":"Tumblr"},"digg":{"title":"Digg"},"skype":{"title":"Skype"},"stumbleupon":{"title":"StumbleUpon","has_counter":true},"mix":{"title":"Mix"},"telegram":{"title":"Telegram"},"pocket":{"title":"Pocket","has_counter":true},"xing":{"title":"XING","has_counter":true},"whatsapp":{"title":"WhatsApp"},"email":{"title":"Email"},"print":{"title":"Print"},"x-twitter":{"title":"X"},"threads":{"title":"Threads"}},"facebook_sdk":{"lang":"en_US","app_id":""},"lottie":{"defaultAnimationUrl":"https:\/\/friendlycaptcha.com\/wp-content\/plugins\/elementor-pro\/modules\/lottie\/assets\/animations\/default.json"}};
+//# sourceURL=elementor-pro-frontend-js-before
+</script>
+<script src="https://2bcef964.delivery.rocketcdn.me/wp-content/plugins/elementor-pro/assets/js/frontend.min.js?ver=4.0.1" id="elementor-pro-frontend-js" data-rocket-defer defer></script>
+<script src="https://2bcef964.delivery.rocketcdn.me/wp-content/plugins/elementor-pro/assets/js/elements-handlers.min.js?ver=4.0.1" id="pro-elements-handlers-js" data-rocket-defer defer></script>
+<script>window.lazyLoadOptions=[{elements_selector:"img[data-lazy-src],.rocket-lazyload,iframe[data-lazy-src]",data_src:"lazy-src",data_srcset:"lazy-srcset",data_sizes:"lazy-sizes",class_loading:"lazyloading",class_loaded:"lazyloaded",threshold:300,callback_loaded:function(element){if(element.tagName==="IFRAME"&&element.dataset.rocketLazyload=="fitvidscompatible"){if(element.classList.contains("lazyloaded")){if(typeof window.jQuery!="undefined"){if(jQuery.fn.fitVids){jQuery(element).parent().fitVids()}}}}}},{elements_selector:".rocket-lazyload",data_src:"lazy-src",data_srcset:"lazy-srcset",data_sizes:"lazy-sizes",class_loading:"lazyloading",class_loaded:"lazyloaded",threshold:300,}];window.addEventListener('LazyLoad::Initialized',function(e){var lazyLoadInstance=e.detail.instance;if(window.MutationObserver){var observer=new MutationObserver(function(mutations){var image_count=0;var iframe_count=0;var rocketlazy_count=0;mutations.forEach(function(mutation){for(var i=0;i<mutation.addedNodes.length;i++){if(typeof mutation.addedNodes[i].getElementsByTagName!=='function'){continue}
+if(typeof mutation.addedNodes[i].getElementsByClassName!=='function'){continue}
+images=mutation.addedNodes[i].getElementsByTagName('img');is_image=mutation.addedNodes[i].tagName=="IMG";iframes=mutation.addedNodes[i].getElementsByTagName('iframe');is_iframe=mutation.addedNodes[i].tagName=="IFRAME";rocket_lazy=mutation.addedNodes[i].getElementsByClassName('rocket-lazyload');image_count+=images.length;iframe_count+=iframes.length;rocketlazy_count+=rocket_lazy.length;if(is_image){image_count+=1}
+if(is_iframe){iframe_count+=1}}});if(image_count>0||iframe_count>0||rocketlazy_count>0){lazyLoadInstance.update()}});var b=document.getElementsByTagName("body")[0];var config={childList:!0,subtree:!0};observer.observe(b,config)}},!1)</script><script data-no-minify="1" async src="https://2bcef964.delivery.rocketcdn.me/wp-content/plugins/wp-rocket/assets/js/lazyload/17.8.3/lazyload.min.js"></script><script>function lazyLoadThumb(e,alt,l){var t='<img data-lazy-src="https://i.ytimg.com/vi/ID/hqdefault.jpg" alt="" width="480" height="360"><noscript><img loading="lazy" src="https://i.ytimg.com/vi/ID/hqdefault.jpg" alt="" width="480" height="360"></noscript>',a='<button class="play" aria-label="Play Youtube video"></button>';if(l){t=t.replace('data-lazy-','');t=t.replace('loading="lazy"','');t=t.replace(/<noscript>.*?<\/noscript>/g,'');}t=t.replace('alt=""','alt="'+alt+'"');return t.replace("ID",e)+a}function lazyLoadYoutubeIframe(){var e=document.createElement("iframe"),t="ID?autoplay=1";t+=0===this.parentNode.dataset.query.length?"":"&"+this.parentNode.dataset.query;e.setAttribute("src",t.replace("ID",this.parentNode.dataset.src)),e.setAttribute("frameborder","0"),e.setAttribute("allowfullscreen","1"),e.setAttribute("allow","accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"),this.parentNode.parentNode.replaceChild(e,this.parentNode)}document.addEventListener("DOMContentLoaded",function(){var exclusions=[];var e,t,p,u,l,a=document.getElementsByClassName("rll-youtube-player");for(t=0;t<a.length;t++)(e=document.createElement("div")),(u='https://i.ytimg.com/vi/ID/hqdefault.jpg'),(u=u.replace('ID',a[t].dataset.id)),(l=exclusions.some(exclusion=>u.includes(exclusion))),e.setAttribute("data-id",a[t].dataset.id),e.setAttribute("data-query",a[t].dataset.query),e.setAttribute("data-src",a[t].dataset.src),(e.innerHTML=lazyLoadThumb(a[t].dataset.id,a[t].dataset.alt,l)),a[t].appendChild(e),(p=e.querySelector(".play")),(p.onclick=lazyLoadYoutubeIframe)});</script>
+<script>(()=>{class RocketElementorPreload{constructor(){this.deviceMode=document.createElement("span"),this.deviceMode.id="elementor-device-mode-wpr",this.deviceMode.setAttribute("class","elementor-screen-only"),document.body.appendChild(this.deviceMode)}t(){let t=getComputedStyle(this.deviceMode,":after").content.replace(/"/g,"");this.animationSettingKeys=this.i(t),document.querySelectorAll(".elementor-invisible[data-settings]").forEach(t=>{const e=t.getBoundingClientRect();if(e.bottom>=0&&e.top<=window.innerHeight)try{this.o(t)}catch(t){}})}o(t){const e=JSON.parse(t.dataset.settings),i=e.m||e.animation_delay||0,n=e[this.animationSettingKeys.find(t=>e[t])];if("none"===n)return void t.classList.remove("elementor-invisible");t.classList.remove(n),this.currentAnimation&&t.classList.remove(this.currentAnimation),this.currentAnimation=n;let o=setTimeout(()=>{t.classList.remove("elementor-invisible"),t.classList.add("animated",n),this.l(t,e)},i);window.addEventListener("rocket-startLoading",function(){clearTimeout(o)})}i(t="mobile"){const e=[""];switch(t){case"mobile":e.unshift("_mobile");case"tablet":e.unshift("_tablet");case"desktop":e.unshift("_desktop")}const i=[];return["animation","_animation"].forEach(t=>{e.forEach(e=>{i.push(t+e)})}),i}l(t,e){this.i().forEach(t=>delete e[t]),t.dataset.settings=JSON.stringify(e)}static run(){const t=new RocketElementorPreload;requestAnimationFrame(t.t.bind(t))}}document.addEventListener("DOMContentLoaded",RocketElementorPreload.run)})();</script></body>
+</html>
+
+<!-- This website is like a Rocket, isn't it? Performance optimized by WP Rocket. Learn more: https://wp-rocket.me - Debug: cached@1777029444 -->

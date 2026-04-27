@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html lang="de" >
+    <head>
+        <!-- Matomo Tag Manager -->
+        <script>
+            var _mtm = window._mtm = window._mtm || [];
+            _mtm.push({'mtm.startTime': (new Date().getTime()), 'event': 'mtm.Start'});
+            (function() {
+                var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+                g.async=true; g.src='https://stats.versicherungsmaklersoftware.de/js/container_oohuKxTF.js'; s.parentNode.insertBefore(g,s);
+            })();
+        </script>
+        <!-- End Matomo Tag Manager -->
+        <meta charset="ISO-8859-15">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>Mr-Money Kundenlogin</title>
+        <!--<link rel="icon" href="https://www.mr-money.de/favicon.ico" sizes="16x16" type="image/png">-->
+        <link rel="icon" href="https://www.mr-money.de/mrmo_favicon_96.png" sizes="any">
+        <link rel="icon" href="https://www.mr-money.de/mrmo_favicon.svg" type="image/svg+xml">
+        <link rel="apple-touch-icon" href="https://www.mr-money.de/apple-touch-icon.png">
+        <!--<link rel="manifest" href="https://getbootstrap.com/docs/5.0/assets/img/favicons/manifest.json">
+        <link rel="mask-icon" href="https://getbootstrap.com/docs/5.0/assets/img/favicons/safari-pinned-tab.svg" color="#7952b3">-->
+        <!--<link rel="icon" href="https://www.mr-money.de/favicon.ico">-->
+        <link href="frameworks/bootstrap.min.css" rel="stylesheet"
+               crossorigin="anonymous"> <!--integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"-->
+        <!--<link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>-->
+        <!--<link href="frameworks/fonts.css"
+              rel="stylesheet">-->
+        <link rel="stylesheet" href="/frameworks/css/all.min.css"><!--https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css-->
+        <!--<script src="./js/control.js"></script>-->
+        <script src="frameworks/jquery.min.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="frameworks/bootstrap.min.css" rel="stylesheet">
+        <script src="frameworks/bootstrap.bundle.min.js"></script>
+        <link rel="stylesheet" href="/style.css">
+        <style>
+
+
+
+            /* roboto-100 - latin */
+            @font-face {
+                font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+                font-family: 'Roboto';
+                font-style: normal;
+                font-weight: 100;
+                src: url('/frameworks/roboto-v30-latin/roboto-v30-latin-100.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+            }
+            /* roboto-300 - latin */
+            @font-face {
+                font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+                font-family: 'Roboto';
+                font-style: normal;
+                font-weight: 300;
+                src: url('/frameworks/roboto-v30-latin/roboto-v30-latin-300.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+            }
+            /* roboto-regular - latin */
+            @font-face {
+                font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+                font-family: 'Roboto';
+                font-style: normal;
+                font-weight: 400;
+                src: url('/frameworks/roboto-v30-latin/roboto-v30-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+            }
+            /* roboto-500 - latin */
+            @font-face {
+                font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+                font-family: 'Roboto';
+                font-style: normal;
+                font-weight: 500;
+                src: url('/frameworks/roboto-v30-latin/roboto-v30-latin-500.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+            }
+            /* roboto-700 - latin */
+            @font-face {
+                font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+                font-family: 'Roboto';
+                font-style: normal;
+                font-weight: 700;
+                src: url('/frameworks/roboto-v30-latin/roboto-v30-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+            }
+            /* roboto-900 - latin */
+            @font-face {
+                font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+                font-family: 'Roboto';
+                font-style: normal;
+                font-weight: 900;
+                src: url('/frameworks/roboto-v30-latin/roboto-v30-latin-900.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+            }
+
+
+            body {
+                min-height: 100vh;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: #f0f2f5;
+                font-family: 'Roboto', sans-serif !important;
+
+            }
+            .login-container {
+                max-width: 800px;
+                border-radius: 10px;
+                background-color: #fff;
+                box-shadow: 0 0 10px rgba(0,0,0,0.1);
+                overflow: hidden;
+            }
+            .login-form {
+                padding: 40px;
+            }
+            .company-info {
+                background-color: #fff;
+                color: #191919;
+                padding: 40px;
+                display: grid;
+            }
+            .company-logo {
+                max-width: 300px;
+                min-width: 150px;
+
+                margin: 0 auto;
+            }
+            .form-control {
+                /*border-radius: 25px;*/
+                padding: 15px;
+                font-size: 16px;
+            }
+
+            /*.btn-primary {*/
+            /*    !*border-radius: 25px;*!*/
+            /*    padding: 15px;*/
+            /*    !*font-size: 16px;*!*/
+            /*    font-weight: bold;*/
+            /*}*/
+            /*.btn-primary:hover {*/
+            /*    background-color: #1a73e8;*/
+            /*    border-color: #1a73e8;*/
+            /*}*/
+            /*.form-check-label {
+                font-size: 16px;
+            }
+            .form-check-input {
+                margin-top: 8px;
+            }*/
+
+            ::placeholder {
+                color: #bababa !important;
+            }
+
+            button:disabled {
+                background-color: grey !important;
+                border: 1px solid grey !important;
+                cursor: not-allowed !important;
+            }
+
+            button:disabled:hover {
+                cursor: not-allowed !important;
+            }
+        </style>
+
+
+    </head>
+    <body style=""> <!--rgba(0, 132, 200, 1);-->
+    <div style=" background-image: url('./Assets/kundenlogin.webp');  background-size: cover; background-repeat: no-repeat; filter: blur(8px); -webkit-filter: blur(8px); height: 100%; background-position: center; z-index: 101; width: 100%; position: absolute; top: 0; left: 0;"></div>
+    <div style="width: 100%; height: 100%; background: linear-gradient(to bottom, rgba(0,0,0,0.5), rgba(0,0,0,0.5)); position: absolute; left: 0; top: 0; z-index: 102"></div>
+    <div class="container-fluid login-container shadow-lg" style="z-index: 103; ">
+                <div id="loginView" class="row">
+            <div  id="loginInputFields" class="col-md-6 px-0" >
+                <div  class="login-form mt-2 mb-2">
+                    <h1 class="mb-4 mt-3" style="line-height: 1.1; letter-spacing: 1.1px;">Mr-Money <br><span style="font-weight: bold; ">Kundenlogin</span></h1>
+
+                                        <form action="" method="POST" class="signin-form">
+                        <div class="mb-3">
+
+                            <input type="email" name="email" class="form-control loginFields mailInputs" id="emailLogin" placeholder="E-Mail Adresse" value="">
+                        </div>
+                        <div class="mb-3" style="position: relative;">
+                            <input type="password" name="pass" class="form-control loginFields" id="passLogin" placeholder="Passwort" value="">
+                            <i role="button" id="showPass" class="fa fa-eye" style="position: absolute; right: 15px; top: 50%; transform: translateY(-50%); "></i>
+                        </div>
+                        <div class="form-check mb-4">
+                            <input class="form-check-input" type="checkbox" value="" name="remember" id="remember"  >
+                            <label class="form-check-label" for="remember">
+                                Angemeldet bleiben
+                            </label>
+                        </div>
+                                                <button disabled type="submit" id="subLogin" class="btn btn-primary btn-block" style="width: 100%;">Anmelden</button>
+                        <div class="text-center mt-3">
+                            <a id="registrieren" style="color: #011b9a; cursor: pointer;">Erstanmeldung</a>
+                        </div>
+                        <hr class="mt-2 mb-2">
+                        <div class="text-center mt-3">
+                            <a id="forgotPassword" style="color: #011b9a; cursor: pointer;">Passwort vergessen?</a>
+                        </div>
+
+                    </form>
+                                    </div>
+            </div>
+            <!--<div style="display: none;" id="loginCaptchaFields" class="col-md-6 px-0" >
+                <div  class="login-form mt-2 mb-2">
+                    <h1 class="mb-4 mt-3" style="line-height: 1.1; letter-spacing: 1.1px;">Mr-Money <br><span style="font-weight: bold; ">Kundenlogin</span></h1>
+                    <form action="login.php" method="POST" class="signin-form">
+                        <div class="mb-3">
+                            <span>reCAPTCHA</span><br>
+                            <img src="captcha4/" id="captcha" style="width: 224px; height: 100px;"/>
+                        </div>
+                        <div class="mb-3">
+                            <input type="text" maxlength="4" name="captchaFields" class="form-control loginFields" id="captchaText" placeholder="Code" >-->
+                        <!--</div>
+
+                        <button type="button" id="captchaSubLogin" class="btn btn-primary btn-block" style="width: 100%;">Überprüfen</button>
+
+                    </form>
+                </div>
+            </div>-->
+
+            <div class="col-md-6 px-0 " >
+                <div class="company-info text-center justify-content-center align-content-center" style="height: 100%; width: 100%;">
+                    <img src="https://static.versicherungsmaklersoftware.de/logos/mrmo/allgemein/MM_Logo.svg" alt="Mr-Money" class="company-logo">
+
+                    <p style="font-size: 1.1rem; margin-top: 30px;">Willkommen beim Kundenlogin von <br>Mr-Money! Als Versicherungsmakler bieten wir vielfältige Leistungen an. Nutzen Sie unser Portal, um einfach und sicher auf Ihre Versicherungsdaten zuzugreifen und Verträge zu verwalten.</p>
+                </div>
+            </div>
+        </div>
+        <div style="display: none;" id="PasswordView" class=" row">
+                            <div class="col-md-6 px-0 ">
+                    <div class="company-info text-center justify-content-center align-content-center " style="height: 100%;">
+                        <img src="https://static.versicherungsmaklersoftware.de/logos/mrmo/allgemein/MM_Logo.svg" alt="Mr-Money" class="company-logo">
+                        <p style="font-size: 1.1rem; margin-top: 30px;" id="setBeschreibung">Herzlich Willkommen im Kundenlogin von Mr-Money! Wenn Sie bereits Kunde sind, melden Sie sich einfach mit Ihren Anmeldedaten an. Neukunden können sich hier registrieren, indem sie ihre E-Mail-Adresse und ihr Geburtsdatum eingeben. Wir senden Ihnen dann eine E-Mail, mit der Sie ein neues Passwort erstellen können.</p>
+                    </div>
+                </div>
+                <div id="resetSide" class="col-md-6 px-0">
+                    <div class="login-form " style="width: 100%;">
+                        <h2 class="mb-4 " style="letter-spacing: 1.1px; line-height: 1.1;"><span style="font-weight: bold;" id="setName">Account Erstanmeldung</span></h2>
+                        <form id="password-form">
+                            <div class="mb-3">
+                                <div class="form-floating ">
+                                    <input type="email" class="form-control resetPass mailInputs" id="resetVSNR1" placeholder="" >
+                                    <label for="resetVSNR1">Ihre E-Mail Adresse</label>
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <div class="form-floating">
+                                    <input type="date" class="form-control resetPass" id="resetVSNR2" placeholder="Ihr Geburtsdatum">
+                                    <label for="resetVSNR2">Ihr Geburtsdatum</label>
+                                </div>
+                            </div>
+                            <button type="button" disabled class="btn btn-primary" id="subResetPass" style="width: 100%;">E-Mail anfordern</button>
+                        </form>
+                        <div class="text-center mt-4">
+                            <a href="" id="back-to-forgotten" style="text-decoration: none; cursor: pointer;">Zurück</a>
+                        </div>
+                    </div>
+                </div>
+
+            
+        </div>
+        <div style="display: none;" id="thankYouView" class=" row">
+            <div class="col-md-6 px-0 ">
+                <div class="company-info text-center justify-content-center align-content-center " style="height: 100%;">
+                    <img src="https://static.versicherungsmaklersoftware.de/logos/mrmo/allgemein/MM_Logo.svg" alt="Mr-Money" class="company-logo">
+                </div>
+            </div>
+            <div id="" class="col-md-6 px-0" style="">
+                <div class="login-form " id="resetSuccess" style="width: 100%;">
+                    <h2 class="mb-4 " style="letter-spacing: 1.1px; line-height: 1.1;"><span style="font-weight: bold;" id="resetHeader"></span></h2>
+                    <h6 id="resetText"></h6>
+                    <div style="display: none;">
+                        <h6 id="">Ihr neues Passwort muss mindestens 8 Zeichen lang sein, einen Großbuchstaben, sowie ein Sonderzeichen beinhalten. <br>Erlaubte: $#?!-_()={}+*</h6><!--Ihnen wurde eine Mail zugeschickt, in welcher die folgenden Schritte beschrieben werden, um ihr Passwort vollständig zurückzusetzen.-->
+                        <div class="mb-3">
+                            <div class="form-floating " id="resetTokenDiv">
+                                <input type="text" readonly style="display: none;" id="__SECURITY_TOKEN__" value="">
+                                <input type="text" readonly style="display: none;" id="__RP_TOKEN__" value="">
+                                <input type="text" class="form-control passResetField" id="resetToken" name="" placeholder="" maxlength="6">
+                                <label for="resetToken">Sicherheitstoken</label>
+                            </div>
+                        </div>
+                        <div class="form-floating mb-3" style="position: relative;">
+                            <input type="password" class="form-control passResetField" id="newPass" name="" placeholder="" >
+                            <i role="button" id="showPassNew" class="fa fa-eye" style="position: absolute; right: 20px; top: 50%; transform: translateY(-50%); "></i>
+                            <label for="newPass">Neues Passwort</label>
+                        </div>
+                        <div class="mb-3 form-floating" style="position: relative;">
+                            <input type="password" class="form-control passResetField" id="newPassRepeat" name="" placeholder="" >
+                            <i role="button" id="showPassNewRepeat" class="fa fa-eye" style="position: absolute; right: 15px; top: 50%; transform: translateY(-50%); "></i>
+                            <label for="newPassRepeat">Neues Passwort Wiederholen</label>
+                        </div>
+                        <div class="mb-4">
+                            <button type="button" disabled class="btn btn-primary btn-sm w-100" id="resetTokenBtn" name="" >Senden</button>
+                        </div>
+                    </div>
+                    <div class="text-center mt-4">
+                        <a href="?reload" style="text-decoration: none; cursor: pointer;">Zurück</a>
+                    </div>
+                </div>
+                <div hidden class="login-form " id="resetThankYou" style="width: 100%;">
+                    <h2 class="mb-4 " style="letter-spacing: 1.1px; line-height: 1.1;"><span style="font-weight: bold;">Vielen Dank</span></h2>
+                    <h4>Ihr neues Passwort wurde erfolgreich gesetzt.</h4>
+
+                    <div class="text-center mt-4">
+                        <a href="" id="back-to-forgotten4" style="text-decoration: none; cursor: pointer;">Zurück</a>
+                    </div>
+                </div>
+                <div hidden class="login-form " id="resetFail" style="width: 100%;">
+                    <h2 class="mb-4 " style="letter-spacing: 1.1px; line-height: 1.1;"><span style="font-weight: bold;">Überprüfung fehlgeschlagen</span></h2>
+                    <h4 id="errorMessage"></h4>
+
+                    <div class="text-center mt-4">
+                        <a href="" id="back-to-forgotten3" style="text-decoration: none; cursor: pointer;">Zurück</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    </body>
+    <script>
+
+        document.addEventListener("DOMContentLoaded", (event) => {
+            
+
+        });
+
+
+
+
+        $("#showPass").click(function(){
+            if (document.getElementById("passLogin").type === "text"){
+                document.getElementById("passLogin").type = "password";
+            } else {
+                document.getElementById("passLogin").type = "text";
+            }
+        });
+
+        $("#showPassNew").click(function(){
+            if (document.getElementById("newPass").type === "text"){
+                document.getElementById("newPass").type = "password";
+            } else {
+                document.getElementById("newPass").type = "text";
+            }
+        });
+
+        $("#showPassNewRepeat").click(function(){
+            if (document.getElementById("newPassRepeat").type === "text"){
+                document.getElementById("newPassRepeat").type = "password";
+            } else {
+                document.getElementById("newPassRepeat").type = "text";
+            }
+        });
+
+    
+        $(document).ready(function() {
+            // Show password forgotten form
+
+            function createBootstrapAlert(text, type) {
+                // Erstelle das Div für den Alert
+                let alertDiv = document.createElement("div");
+
+                // Setze die Klassen für den Alert basierend auf dem Typ
+                alertDiv.className = `alert alert-${type} alert-dismissible fade show`;
+                alertDiv.setAttribute("role", "alert");
+
+                // Finde alle vorhandenen Alerts, um die Position des neuen Alerts festzulegen
+                const existingAlerts = document.querySelectorAll(".alert");
+                const offset = existingAlerts.length * 60; // Abstand zwischen den Alerts (z.B. 60px)
+
+                // Berechne die Breite und Position basierend auf der Bildschirmbreite
+                const isMobile = window.innerWidth <= 576; // Bootstrap-Breakpoint für mobile Geräte
+                const style = isMobile
+                    ? `position:fixed; bottom: ${10 + offset}px; left: 10%; width: 80%; z-index: 9999;`
+                    : `position:absolute; bottom: ${10 + offset}px; right: 40px; z-index: 9999;`;
+
+                // Setze die Position und Breite des neuen Alerts
+                alertDiv.setAttribute("style", style);
+
+                const currentTime = new Date().toLocaleTimeString('de-DE', { hour: '2-digit', minute: '2-digit', second: '2-digit' });
+
+                // Füge den Inhalt des Alerts hinzu
+                alertDiv.innerHTML = `
+        <strong>Meldung</strong> - ${currentTime}<br> ${text}
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    `;
+
+                // Füge das Alert-Div zum Body hinzu
+                document.body.appendChild(alertDiv);
+
+                // Entferne den Alert nach einer bestimmten Zeit
+                setTimeout(() => {
+                    alertDiv.classList.remove("show");  // Verstecke den Alert mit der Fade-Out-Transition
+                    setTimeout(() => {
+                        alertDiv.remove();  // Entferne das Element komplett aus dem DOM
+                    }, 150);  // Warte auf das Ende der Transition
+                }, 2000);
+            }
+
+            
+
+            function validateEmailAdress(email) {
+                let regex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+
+                return regex.test(email);
+            }
+
+            $(".mailInputs").on("change", function() {
+
+
+                let mail = document.getElementById(this.id).value;
+
+                if (validateEmailAdress(mail) === false) {
+                    createBootstrapAlert("Bitte geben Sie eine gültige E-Mail-Adresse ein.", "danger");
+                }
+            });
+
+
+
+            $("#forgotPassword").click(function(e) {
+
+                document.getElementById("setName").innerHTML = "Passwort<br> vergessen?";
+                document.getElementById("setBeschreibung").innerHTML = "Falls Sie Ihr Passwort vergessen haben, können Sie hier mühelos ein neues hinterlegen. Geben Sie dazu einfach Ihre E-Mail-Adresse und Ihr Geburtsdatum ein. Anschließend erhalten Sie eine Bestätigungs-E-Mail mit einem Link. Mit diesem Link können Sie Ihr neues Passwort festlegen.";
+
+                e.preventDefault();
+                $("#loginView").fadeOut(function(){
+                    $("#PasswordView").fadeIn();
+                });
+
+            });
+
+            $("#registrieren").click(function(e) {
+
+                document.getElementById("setName").innerHTML = "Account Erstanmeldung";
+                document.getElementById("setBeschreibung").innerHTML = "Herzlich Willkommen im Kundenlogin von Mr-Money! Wenn Sie bereits Kunde sind, melden Sie sich einfach mit Ihren Anmeldedaten an. Neukunden können sich hier registrieren, indem sie ihre E-Mail-Adresse und ihr Geburtsdatum eingeben. Wir senden Ihnen dann eine E-Mail, mit der Sie ein neues Passwort erstellen können.";
+
+                e.preventDefault();
+                $("#loginView").fadeOut(function(){
+                    $("#PasswordView").fadeIn();
+                });
+
+            });
+
+            // Show login form
+            $("#back-to-forgotten").click(function(e) {
+                e.preventDefault();
+                $("#PasswordView").fadeOut(function (){
+                    $("#loginView").fadeIn();
+                });
+
+            });
+
+            $("#back-to-forgotten2").click(function(e) {
+
+                document.getElementById("newPass").value = "";
+                document.getElementById("newPassRepeat").value = "";
+                document.getElementById("resetToken").value = "";
+
+                e.preventDefault();
+                $("#thankYouView").fadeOut(function (){
+                    document.getElementById("resetTokenDiv").style.display = "block";
+                    $("#loginView").fadeIn();
+                });
+
+
+
+            });
+            $("#back-to-forgotten3").click(function(e) {
+
+                e.preventDefault();
+                $("#thankYouView").fadeOut(function (){
+                    document.getElementById("resetTokenDiv").style.display = "block";
+                    $("#loginView").fadeIn(function (){
+                        document.getElementById("resetFail").hidden = true;
+                        document.getElementById("resetSuccess").hidden = false;
+                    });
+                });
+
+
+            });
+            $("#back-to-forgotten4").click(function(e) {
+
+                e.preventDefault();
+                $("#thankYouView").fadeOut(function (){
+                    document.getElementById("resetTokenDiv").style.display = "block";
+                    $("#loginView").fadeIn(function (){
+                        document.getElementById("resetFail").hidden = true;
+                        document.getElementById("resetSuccess").hidden = false;
+                    });
+                });
+
+
+            });
+
+
+            $("#newPass").on("change", function(){
+
+                var numberRegex = /\d/;
+
+                console.log(/[$#&?!_\-§%/()={}+*€]/.test(this.value) );
+                if (/[$#?!_\-()={}+*]/.test(this.value) && this.value.length >= 8 && numberRegex.test(this.value) && /[A-Z]/.test(this.value)){
+                    document.getElementById("newPass").classList.remove("is-invalid");
+                    createBootstrapAlert("Das Passwort entspricht den Anforderungen.", "success");
+
+                    if (document.getElementById("newPassRepeat").value !== ""){
+                        if (document.getElementById("newPassRepeat").value === document.getElementById("newPass").value) {
+                            document.getElementById("newPassRepeat").classList.remove("is-invalid");
+                            createBootstrapAlert("Passwörter stimmen überein", "success");
+                        } else {
+                            document.getElementById("newPassRepeat").classList.add("is-invalid");
+                            createBootstrapAlert("Passwörter stimmen nicht überein.", "danger");
+                        }
+                    }
+                } else {
+                    document.getElementById("newPass").classList.add("is-invalid");
+                    createBootstrapAlert("Passwort entspricht nicht den Anforderungen. <br>Bitte überprüfen Sie es erneut und nehmen Sie Änderungen vor.", "danger");
+                }
+            });
+
+            $("#newPassRepeat").on("change", function(){
+
+                var numberRegex = /\d/;
+
+                if (/[$#?!_\-()={}+*]/.test(document.getElementById("newPass").value) && document.getElementById("newPass").value.length >= 8 && numberRegex.test(document.getElementById("newPass").value) && /[A-Z]/.test(document.getElementById("newPass").value)) {
+                    if (this.value === document.getElementById("newPass").value) {
+                        document.getElementById(this.id).classList.remove("is-invalid");
+                        createBootstrapAlert("Passwörter stimmen überein", "success");
+                    } else {
+                        document.getElementById(this.id).classList.add("is-invalid");
+                        createBootstrapAlert("Passwörter stimmen nicht überein.", "danger");
+                    }
+                } else {
+                    createBootstrapAlert("Bitte überprüfen Sie Ihr Passwort. Es entspricht nicht den vorgegebenen Anforderungen", "danger");
+                }
+            });
+
+            $(".passResetField").on("input", function(){
+                var numberRegex = /\d/;
+
+                let newPass = document.getElementById("newPass").value;
+                let newPassRepeat = document.getElementById("newPassRepeat").value;
+                if (/[$#?!_\-()={}+*]/.test(newPass) && newPass.length >= 8 && numberRegex.test(newPass) && /[A-Z]/.test(newPass) && newPass === newPassRepeat && (document.getElementById("resetToken").value.length === 6 || document.getElementById("__SECURITY_TOKEN__").value.length > 0)) {
+                    document.getElementById("resetTokenBtn").disabled = false;
+                } else {
+                    document.getElementById("resetTokenBtn").disabled = true;
+                    /*document.getElementById("newPass").classList.add("is-valid");
+                    document.getElementById("newPass").classList.add("is-valid");
+                    document.getElementById("newPass").classList.add("is-valid");
+                    document.getElementById("newPass").classList.add("is-valid");*/
+                }
+                });
+
+            // Geburtsdatum-Feld konfigurieren
+            const today = new Date();
+            const maxDate = new Date(today.getFullYear() - 18, today.getMonth(), today.getDate());
+            const minDate = new Date(today.getFullYear() - 120, today.getMonth(), today.getDate());
+
+            document.getElementById("resetVSNR2").setAttribute("max", maxDate.toISOString().split('T')[0]);
+            document.getElementById("resetVSNR2").setAttribute("min", minDate.toISOString().split('T')[0]);
+            document.getElementById("resetVSNR2").setAttribute("value", "1970-01-01");
+
+            $("#resetTokenBtn").click(function (){
+
+                var numberRegex = /\d/;
+
+                let newPass = document.getElementById("newPass").value;
+                let newPassRepeat = document.getElementById("newPassRepeat").value;
+
+                if (/[$#?!_\-()={}+*]/.test(newPass) && newPass.length >= 8 && numberRegex.test(newPass) && /[A-Z]/.test(newPass) && newPass === newPassRepeat && (document.getElementById("resetToken").value.length === 6 || document.getElementById("__SECURITY_TOKEN__").value.length > 0)) {
+                    let sectoken = "";
+                    let resetToken = "";
+
+                    if (document.getElementById("__SECURITY_TOKEN__").value !== ""){
+                        sectoken = document.getElementById("__SECURITY_TOKEN__").value;
+                    } else {
+                        resetToken = document.getElementById("resetToken").value;
+                    }
+                    $.ajax({
+                        url: "resetPassword.php",
+                        type: "POST",
+                        dataType: "json",
+                        data: JSON.stringify({
+                            resetToken: resetToken,
+                            passNew: document.getElementById("newPass").value,
+                            passNewRepeat: document.getElementById("newPassRepeat").value,
+                            __SECURITY_TOKEN__: sectoken,
+                            __RP_TOKEN__: document.getElementById("__RP_TOKEN__").value,
+                        }),
+                        success: function (result) {
+                            console.log(result);
+                            if (result["status"] === "fail") {
+                                if (result.more && result["more"] !== ""){
+                                    document.getElementById("errorMessage").innerHTML = result["more"];
+                                    createBootstrapAlert(result["more"], "danger");
+                                } else {
+                                    document.getElementById("errorMessage").innerHTML = "Scheinbar ist etwas schiefgelaufen, bitte laden Sie die Seite neu und versuchen Sie es erneut.";
+                                }
+
+                                document.getElementById("resetSuccess").hidden = true;
+                                document.getElementById("resetFail").hidden = false;
+                                document.getElementById("__SECURITY_TOKEN__").value = "";
+                            } /*else if(result["status"] === "hinweis") {
+                            document.getElementById("resetHeader").innerHTML = "Hinweis";
+                            document.getElementById("resetText").innerHTML = result["more"];
+                        } */ else {
+                                /*document.getElementById("resetText").innerHTML = "Ihnen wurde eine E-Mail mit einem Bestätigungstoken zugesendet";
+                                document.getElementById("resetHeader").innerHTML = "Token & Passwort eingabe";*/
+                                document.getElementById("resetSuccess").hidden = true;
+                                document.getElementById("resetThankYou").hidden = false;
+                                document.getElementById("__SECURITY_TOKEN__").value = "";
+                            }
+                        }, error: function (err) {
+                            if (result.more && result["more"] !== ""){
+                                document.getElementById("errorMessage").innerHTML = result["more"];
+                                createBootstrapAlert(result["more"], "danger");
+                            } else {
+                                document.getElementById("errorMessage").innerHTML = "Scheinbar ist etwas schiefgelaufen, bitte laden Sie die Seite neu und versuchen Sie es erneut.";
+                            }
+
+                            document.getElementById("__SECURITY_TOKEN__").value = "";
+                            document.getElementById("resetSuccess").hidden = true;
+                            document.getElementById("resetFail").hidden = false;
+                            /*document.getElementById("resetSuccess").hidden = true;
+                            document.getElementById("resetFail").hidden = false;*/
+                        }
+                    });
+                } else {
+                    alert("Anforderungen nicht erfüllt");
+                }
+            });
+
+            $("#subResetPass").click(function(e){
+                $.ajax({
+                    url: "resetPassword.php",
+                    type: "POST",
+                    dataType: "json",
+                    data: JSON.stringify({
+                        vsnr1: document.getElementById("resetVSNR1").value, vsnr2: document.getElementById("resetVSNR2").value,
+                    }),
+                    success: function (result) {
+                        if (result["status"] === "fail"){
+
+                            if (result.more && result["more"] !== ""){
+                                document.getElementById("errorMessage").innerHTML = result["more"];
+                                createBootstrapAlert(result["more"], "danger");
+                            } else {
+                                document.getElementById("errorMessage").innerHTML = "Scheinbar ist etwas schiefgelaufen, bitte laden Sie die Seite neu und versuchen Sie es erneut.";
+                            }
+
+                            document.getElementById("resetSuccess").hidden = true;
+                            document.getElementById("resetFail").hidden = false;
+
+                        } /*else if(result["status"] === "hinweis") {
+                            document.getElementById("resetHeader").innerHTML = "Hinweis";
+                            document.getElementById("resetText").innerHTML = result["more"];
+                        } */else {
+                            document.getElementById("resetText").innerHTML = "Wir haben Ihnen eine E-Mail mit einem sicheren Link geschickt. Bitte klicken Sie darauf, um fortzufahren.";
+                            document.getElementById("resetHeader").innerHTML = "Passwort ändern";
+                        }
+                    }, error: function (err){
+
+                        if (result.more && result["more"] !== ""){
+                            document.getElementById("errorMessage").innerHTML = result["more"];
+                            createBootstrapAlert(result["more"], "danger");
+                        } else {
+                            document.getElementById("errorMessage").innerHTML = "Scheinbar ist etwas schiefgelaufen, bitte laden Sie die Seite neu und versuchen Sie es erneut.";
+                        }
+
+                        document.getElementById("resetSuccess").hidden = true;
+                        document.getElementById("resetFail").hidden = false;
+
+                    }
+                });
+
+                document.getElementById("resetVSNR1").value = "";
+
+                // Geburtsdatum-Feld konfigurieren
+                const today = new Date();
+                const maxDate = new Date(today.getFullYear() - 18, today.getMonth(), today.getDate());
+                const minDate = new Date(today.getFullYear() - 120, today.getMonth(), today.getDate());
+
+                document.getElementById("resetVSNR2").setAttribute("max", maxDate.toISOString().split('T')[0]);
+                document.getElementById("resetVSNR2").setAttribute("min", minDate.toISOString().split('T')[0]);
+                document.getElementById("resetVSNR2").setAttribute("value", "1970-01-01");
+
+                e.preventDefault();
+                $("#PasswordView").fadeOut(function (){
+                    $("#thankYouView").fadeIn();
+                });
+            });
+        });
+
+        $("#newCaptcha").on("click", function(){
+            let random = getRandomInt(1, 79);
+            document.getElementById("captcha").src = "./captcha/" + random + ".jpg";
+            document.getElementById("captchaName").value = + random + ".jpg";
+        });
+
+        function getRandomInt(min, max) {
+            return Math.floor(Math.random() * (max - min + 1)) + min;
+        }
+
+        $(".loginFields").on("input", function(){
+            if (document.getElementById("emailLogin").value.length > 0 && document.getElementById("passLogin").value.length > 0){
+                document.getElementById('subLogin').disabled = false;
+
+            } else {
+
+                document.getElementById("subLogin").disabled = true;
+            }
+        });
+
+        $(".resetPass").on("input", function(){
+            if (document.getElementById("resetVSNR1").value.length > 0 && document.getElementById("resetVSNR2").value.length > 0 ){
+                document.getElementById("subResetPass").disabled = false;
+            } else {
+                document.getElementById("subResetPass").disabled = true;
+            }
+        });
+
+
+
+
+    </script>
+
+
+
+</html>
+

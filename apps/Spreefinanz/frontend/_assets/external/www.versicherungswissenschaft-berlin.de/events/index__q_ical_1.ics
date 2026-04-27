@@ -1,0 +1,49 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Verein zur Förderung der Versicherungswissenschaft in Berlin - ECPv6.15.20//NONSGML v1.0//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Verein zur Förderung der Versicherungswissenschaft in Berlin
+X-ORIGINAL-URL:https://www.versicherungswissenschaft-berlin.de
+X-WR-CALDESC:Veranstaltungen für Verein zur Förderung der Versicherungswissenschaft in Berlin
+REFRESH-INTERVAL;VALUE=DURATION:PT1H
+X-Robots-Tag:noindex
+X-PUBLISHED-TTL:PT1H
+BEGIN:VTIMEZONE
+TZID:UTC
+BEGIN:STANDARD
+TZOFFSETFROM:+0000
+TZOFFSETTO:+0000
+TZNAME:UTC
+DTSTART:20250101T000000
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTSTART;TZID=UTC:20260604T180000
+DTEND;TZID=UTC:20260604T230000
+DTSTAMP:20260424T122602
+CREATED:20251127T151040Z
+LAST-MODIFIED:20260416T082004Z
+UID:5032-1780596000-1780614000@www.versicherungswissenschaft-berlin.de
+SUMMARY:"KI und Versicherungen" am 04.06.2026
+DESCRIPTION:61. Wissenschaftliches Fachgespräch – Dr. Jonathan Prill stellt die wesentlichen Ergebnisse seiner mit dem „Berliner Preis für Versicherungswissenschaft 2025“ ausgezeichneten Dissertation vor und stellt sich im Rahmen einer Podiumsdiskussion Fragen und Anmerkungen von Expertinnen\, Experten und einem interessierten Fachpublikum. \n\n\n\nPodium: \n\n\n\nDr. Jonathan Prill\, (Bach\, Langheid & Dallmayr Rechtsanwälte PrtG mbB)\, \n\n\n\nDr. Julia Holzapfel (HUK Coburg)\, \n\n\n\nDr. Laila Neuthor (we4impact)\, \n\n\n\nDr. Ulrike Wehling-Mauntel (Gesamtverband der Deutschen Versicherungswirtschaft/GDV e. V.)\, \n\n\n\nDr. Patrick Schneider (KPMG AG Wirtschaftsprüfungsgesellschaft) \n\n\n\nProf. Dr. Christian Armbrüster (Freie Universität Berlin – Moderator). \n\n\n\nDas Fachgespräch endet mit einem Empfang in der SkyLounge (21. Etage) im Einz-Tower der KPMG Niederlassung am Berliner Hauptbahnhof.
+URL:https://www.versicherungswissenschaft-berlin.de/event/ki-und-versicherungen-am-04-06-2026/
+LOCATION:KPMG AG Wirtschaftsberatung\, Heidestraße 58\, 10557 Berlin
+ATTACH;FMTTYPE=image/png:https://www.versicherungswissenschaft-berlin.de/wp-content/uploads/2025/11/KPMG-Berlin.png
+ORGANIZER;CN="Verein zur F%C3%B6rderung der Versicherungswissenschaft in Berlin e. V.":MAILTO:info@versnetzb.de
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=UTC:20261001T180000
+DTEND;TZID=UTC:20261001T230000
+DTSTAMP:20260424T122602
+CREATED:20251219T133116Z
+LAST-MODIFIED:20260302T175012Z
+UID:5051-1790877600-1790895600@www.versicherungswissenschaft-berlin.de
+SUMMARY:"Die Versicherbarkeit selbstlernender Systeme im Straßenverkehr: Haftungs- und versicherungsrechtliche Herausforderungen autonomer Fahrsysteme ..." am 01.10.2026
+DESCRIPTION:62. Wissenschaftliches Fachgespräch – Lennart Zentara\, Doktorand der Humboldt Universität zu Berlin stellt die wesentlichen Ergebnisse seiner vom Verein zur Förderung der Versicherungswissenschaft in Berlin e. V. geförderten Dissertation vor und stellt sich im Rahmen einer Podiumsdiskussion Fragen und Anmerkungen von Expertinnen\, Experten und einem interessierten Fachpublikum. Moderation: Prof. Dr. Hans-Peter Schwintowski (HU) Das Fachgespräch endet mit einem Empfang.
+URL:https://www.versicherungswissenschaft-berlin.de/event/die-versicherbarkeit-selbstlernender-systeme-im-strassenverkehr-haftungs-und-versicherungsrechtliche-herausforderungen-autonomer-fahrsysteme-am-01-10-2026/
+LOCATION:Gesamtverband der Deutschen Versicherungswirtschaft/GDV e. V.\, Wilhelmstraße 43/43G\, 10117 Berlin
+ATTACH;FMTTYPE=image/jpeg:https://www.versicherungswissenschaft-berlin.de/wp-content/uploads/2025/12/GDV.jpg
+ORGANIZER;CN="Verein zur F%C3%B6rderung der Versicherungswissenschaft in Berlin e. V.":MAILTO:info@versnetzb.de
+END:VEVENT
+END:VCALENDAR

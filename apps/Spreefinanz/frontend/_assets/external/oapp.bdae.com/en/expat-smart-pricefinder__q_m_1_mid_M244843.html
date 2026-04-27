@@ -1,0 +1,2267 @@
+
+<!doctype html>
+<html lang="en" class="">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+
+    
+            <title>Expat Smart - Online application and price calculation</title>
+        
+
+
+    
+                                                    
+                                    <!-- UserCentrics Script -->
+            <script>window.UC_UI_DOMAINS = {crossDomainConsentSharingIFrame: 'https://bdae.com/cross-domain-bridge.html'};</script><script id="usercentrics-cmp" src="https://app.usercentrics.eu/browser-ui/latest/loader.js" data-settings-id="0ysgLqgsJ" async></script>
+            <!-- End UserCentrics Script -->
+
+            <!-- Matomo Tag Manager -->
+            <script>
+                var _mtm = window._mtm = window._mtm || [];
+                _mtm.push({
+                    'oapp.page': "Basispreisermittlung",
+                    'oapp.product': "Expat Smart",
+                    'mtm.startTime': (new Date().getTime()),
+                    'event': 'mtm.Start',
+                });
+                var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+                g.async=true; g.src='https://matomo.bdae.com/js/container_DMCmkjzl.js'; s.parentNode.insertBefore(g,s);
+            </script>
+            <!-- End Matomo Tag Manager -->
+        
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <meta name="author" content="LEANATIC GmbH & Co. KG; https://www.leanatic.com/">
+
+    <!-- Favicons -->
+    <link rel="icon" type="image/png" sizes="114x114" href="/apple_touch_icon.png">
+    <link rel="icon" type="image/x-icon" sizes="16x16" href="/favicon.ico">
+
+    <!-- Styles -->
+            <link rel="stylesheet" href="/assets/app.ff701537.css">
+    
+</head>
+<body class="preload catgory-code-G031 ">
+    
+    <header>
+    <nav class="navbar is-transparent" role="navigation" aria-label="main navigation">
+        <div class="container">
+
+            <div class="navbar-brand">
+                <a class="" onclick="openDialog('leave-form', event)">
+                    <img src="/assets/img/logo-bdae@2x.8c83dbc6.png" width="150" height="40">
+                </a>
+
+                <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false"  onclick="openDialog('mobile-menu', event)">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </a>
+            </div>
+
+            <div id="navbarBasicExample" class="navbar-menu">
+
+                
+            </div>
+
+            
+        </div>
+    </nav>
+</header>
+
+    
+<div class="modal" id="dialog-leave-form">
+    <div class="modal-background"></div>
+    <div class="modal-content">
+        <div class="box">
+            <p class="mb-4">Are you sure you want to exit the online application?<br>Completed fields will not be saved if you choose to exit the application process.</p>
+            <div class="is-flex is-justify-content-space-around">
+                <button type="button" class="button is-primary" onclick="closeDialog()">
+                    <span>
+                        Remain in online application
+                    </span>
+                </button>
+
+                <a href="https://www.bdae.com/en" class="button is-light">
+                    <span>
+                        Exit online application
+                    </span>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal" id="dialog-mobile-menu">
+    <div class="modal-background"></div>
+    <div class="modal-content">
+        <div class="box">
+            <ul>
+                
+                
+                                    <li><a role="button" onclick="openDialog('questions-form', event)"><i class="icon chat"></i><span>Contact customer service</span></a></li>
+                            </ul>
+        </div>
+    </div>
+</div>
+
+    <main class="container">
+            
+        <script>window.preventAlpineStart = true;</script>
+
+        
+                
+    
+            <form name="base_price_direct" method="post" data-form="base-price" novalidate="novalidate">
+
+        <div x-data="window.basePriceFinder" class="base-price-finder G031" id="basepricefinder">
+
+            <h1 class="base-price-finder-title">
+                
+            </h1>
+
+                        <div class="l-card block">
+            <header class="l-card-header">
+                        <div class="l-card-header-image">
+                <img class="l-card-header-icon" src="/assets/img/icons/circles/circle-globe.3556c6f3.svg" width="42" height="42">
+            </div>
+            <div>
+                                <h2 class="l-card-header-title" data-cy="country-select-title">
+                    Scope of Application                </h2>
+            </div>
+        </header>
+        
+    <div class="l-card-body">
+        <div class="columns mb-0 is-gapless is-valign-bottom">
+
+              <div class="column">
+    <div class="section">
+      <div class="field select-country">
+        <label class="label label-with-info">
+          Planned country of stay
+
+          <div class="tooltip tooltip-select-country">
+            Each country has been allocated to a country zone. Zone 1 is the most favourable, zone 4 the most expensive region. Full insurance coverage is valid in countries in the same or cheaper country zones. (In an emergency, you are covered in a more expensive country zone for a maximum of six weeks in a one year period.)
+            <div class="tooltip__arrow" data-popper-arrow></div>
+          </div>
+
+          <span class="icon tooltip-trigger" data-tooltip="select-country" data-tooltip-placement="right" aria-describedby="tooltip"><img src="/assets/img/icons/dots/dot-attention-blue.22d459f0.svg" width="20" height="20" /></span>
+        </label>
+            <div class="control"><input type="text" id="base_price_direct_countries" name="base_price_direct[countries]" required="required" :value="countries" x-ref="countrySelect" x-on:change="onCountryInput" class="input hidden-input input input-countries" tabindex="-1" data-cy="select-country-tag" /></div><script>
+    if(!window.tagifyInputsHolder) {
+        window.tagifyInputsHolder = []
+    }
+    window.tagifyInputsHolder['base_price_direct_countries'] = {
+        tagInput: null,
+        init() {
+            let input    = document.getElementById('base_price_direct_countries');
+            let tagInput = new Tagify(input, {
+                dropdown: {
+                    // Minimum characters input for showing a suggestions list. false will not render a suggestions
+                    // list.
+                    enabled: 'ontouchstart' in document.documentElement ? 2 : 0,
+                    // highlightFirst: true,
+                    // Maximum items to show in the suggestions list
+                    maxItems: Infinity,
+                    // If defined, will force the placement of the dropdown in respect to the Boolean value: `true`
+                    // will always show the suggestions dropdown above the input field and `false` will always show
+                    // it below.
+                    placeAbove: false,
+                    // Close the dropdown after selecting an item.
+                    closeOnSelect: 'ontouchstart' in document.documentElement,
+                },
+
+                hooks: {
+                    //
+                    // Hooking into the suggestion click, to prevent adding disabled items.
+                    suggestionClick: (e, { tagData }) => {
+                        // Prevent adding disabled tags
+                        if(tagData?.isDisabled) {
+                            return Promise.reject();
+                        }
+
+                        return Promise.resolve();
+                    }
+                },
+
+                //
+                // Mark disabled tags as invalid. This way tagify highlights them and throws them out automatically
+                // for us.
+                validate: (tagData) => {
+                    return !tagData?.isDisabled;
+                },
+
+                // Disable manually typing/pasting/editing tags (tags may only be added from the whitelist)
+                userInput: true,
+                // Should ONLY use tags allowed in whitelist.
+                enforceWhitelist : true,
+                // An array of allowed tags (Strings or Objects). When using Objects in the whitelist array a `value`
+                // property is a must & should be unique.
+                whitelist : [
+                                        {
+                code: 'AB',
+                value: 'Abkhazia',
+                isDisabled: false,
+                            },
+                    {
+                code: 'AF',
+                value: 'Afghanistan',
+                isDisabled: false,
+                            },
+                    {
+                code: 'AL',
+                value: 'Albania',
+                isDisabled: false,
+                            },
+                    {
+                code: 'DZ',
+                value: 'Algeria',
+                isDisabled: false,
+                            },
+                    {
+                code: 'AS',
+                value: 'American Samoa (restrictions on ins. eligibility)',
+                isDisabled: true,
+                                    class: 'tagify__dropdown__item--disabled',
+                            },
+                    {
+                code: 'AD',
+                value: 'Andorra',
+                isDisabled: false,
+                            },
+                    {
+                code: 'AO',
+                value: 'Angola',
+                isDisabled: false,
+                            },
+                    {
+                code: 'AI',
+                value: 'Anguilla',
+                isDisabled: false,
+                            },
+                    {
+                code: 'AQ',
+                value: 'Antarctica',
+                isDisabled: false,
+                            },
+                    {
+                code: 'AG',
+                value: 'Antigua and Barbuda',
+                isDisabled: false,
+                            },
+                    {
+                code: 'AR',
+                value: 'Argentina',
+                isDisabled: false,
+                            },
+                    {
+                code: 'AM',
+                value: 'Armenia',
+                isDisabled: false,
+                            },
+                    {
+                code: 'AW',
+                value: 'Aruba',
+                isDisabled: false,
+                            },
+                    {
+                code: 'AU',
+                value: 'Australia',
+                isDisabled: false,
+                            },
+                    {
+                code: 'AT',
+                value: 'Austria',
+                isDisabled: false,
+                            },
+                    {
+                code: 'AZ',
+                value: 'Azerbaijan',
+                isDisabled: false,
+                            },
+                    {
+                code: 'BS',
+                value: 'Bahamas',
+                isDisabled: false,
+                            },
+                    {
+                code: 'BH',
+                value: 'Bahrain',
+                isDisabled: false,
+                            },
+                    {
+                code: 'BD',
+                value: 'Bangladesh',
+                isDisabled: false,
+                            },
+                    {
+                code: 'BB',
+                value: 'Barbados',
+                isDisabled: false,
+                            },
+                    {
+                code: 'BY',
+                value: 'Belarus',
+                isDisabled: false,
+                            },
+                    {
+                code: 'BE',
+                value: 'Belgium',
+                isDisabled: false,
+                            },
+                    {
+                code: 'BZ',
+                value: 'Belize',
+                isDisabled: false,
+                            },
+                    {
+                code: 'BJ',
+                value: 'Benin',
+                isDisabled: false,
+                            },
+                    {
+                code: 'BM',
+                value: 'Bermuda',
+                isDisabled: false,
+                            },
+                    {
+                code: 'BT',
+                value: 'Bhutan',
+                isDisabled: false,
+                            },
+                    {
+                code: 'BO',
+                value: 'Bolivia',
+                isDisabled: false,
+                            },
+                    {
+                code: 'BQ',
+                value: 'Bonaire, Saint Eustatius and Saba',
+                isDisabled: false,
+                            },
+                    {
+                code: 'BA',
+                value: 'Bosnia and Herzegovina',
+                isDisabled: false,
+                            },
+                    {
+                code: 'BW',
+                value: 'Botswana',
+                isDisabled: false,
+                            },
+                    {
+                code: 'BV',
+                value: 'Bouvet Island (restrictions on ins. eligibility)',
+                isDisabled: true,
+                                    class: 'tagify__dropdown__item--disabled',
+                            },
+                    {
+                code: 'BR',
+                value: 'Brazil',
+                isDisabled: false,
+                            },
+                    {
+                code: 'IO',
+                value: 'British Indian Ocean Territory (restrictions on ins. eligibility)',
+                isDisabled: true,
+                                    class: 'tagify__dropdown__item--disabled',
+                            },
+                    {
+                code: 'BN',
+                value: 'Brunei Darussalam',
+                isDisabled: false,
+                            },
+                    {
+                code: 'BG',
+                value: 'Bulgaria',
+                isDisabled: false,
+                            },
+                    {
+                code: 'BF',
+                value: 'Burkina-Faso',
+                isDisabled: false,
+                            },
+                    {
+                code: 'BI',
+                value: 'Burundi',
+                isDisabled: false,
+                            },
+                    {
+                code: 'KH',
+                value: 'Cambodia',
+                isDisabled: false,
+                            },
+                    {
+                code: 'CM',
+                value: 'Cameroon',
+                isDisabled: false,
+                            },
+                    {
+                code: 'CA',
+                value: 'Canada',
+                isDisabled: false,
+                            },
+                    {
+                code: 'CV',
+                value: 'Cape Verde',
+                isDisabled: false,
+                            },
+                    {
+                code: 'KY',
+                value: 'Cayman Islands',
+                isDisabled: false,
+                            },
+                    {
+                code: 'CF',
+                value: 'Central African Republic',
+                isDisabled: false,
+                            },
+                    {
+                code: 'TD',
+                value: 'Chad',
+                isDisabled: false,
+                            },
+                    {
+                code: 'CL',
+                value: 'Chile',
+                isDisabled: false,
+                            },
+                    {
+                code: 'CN',
+                value: 'China',
+                isDisabled: false,
+                            },
+                    {
+                code: 'CX',
+                value: 'Christmas Island',
+                isDisabled: false,
+                            },
+                    {
+                code: 'CC',
+                value: 'Coconut Islands',
+                isDisabled: false,
+                            },
+                    {
+                code: 'CO',
+                value: 'Colombia',
+                isDisabled: false,
+                            },
+                    {
+                code: 'KM',
+                value: 'Comoros',
+                isDisabled: false,
+                            },
+                    {
+                code: 'CD',
+                value: 'Congo (Democratic Republic)',
+                isDisabled: false,
+                            },
+                    {
+                code: 'CG',
+                value: 'Congo (Republic)',
+                isDisabled: false,
+                            },
+                    {
+                code: 'CK',
+                value: 'Cook Islands',
+                isDisabled: false,
+                            },
+                    {
+                code: 'CR',
+                value: 'Costa Rica',
+                isDisabled: false,
+                            },
+                    {
+                code: 'HR',
+                value: 'Croatia',
+                isDisabled: false,
+                            },
+                    {
+                code: 'CU',
+                value: 'Cuba',
+                isDisabled: false,
+                            },
+                    {
+                code: 'CW',
+                value: 'Curaçao',
+                isDisabled: false,
+                            },
+                    {
+                code: 'CY',
+                value: 'Cyprus',
+                isDisabled: false,
+                            },
+                    {
+                code: 'CZ',
+                value: 'Czech Republic',
+                isDisabled: false,
+                            },
+                    {
+                code: 'DK',
+                value: 'Denmark',
+                isDisabled: false,
+                            },
+                    {
+                code: 'DJ',
+                value: 'Djibouti',
+                isDisabled: false,
+                            },
+                    {
+                code: 'DM',
+                value: 'Dominica',
+                isDisabled: false,
+                            },
+                    {
+                code: 'DO',
+                value: 'Dominican Republic',
+                isDisabled: false,
+                            },
+                    {
+                code: 'TL',
+                value: 'East Timor',
+                isDisabled: false,
+                            },
+                    {
+                code: 'EC',
+                value: 'Ecuador',
+                isDisabled: false,
+                            },
+                    {
+                code: 'EG',
+                value: 'Egypt',
+                isDisabled: false,
+                            },
+                    {
+                code: 'SV',
+                value: 'El Salvador',
+                isDisabled: false,
+                            },
+                    {
+                code: 'GQ',
+                value: 'Equatorial Guinea',
+                isDisabled: false,
+                            },
+                    {
+                code: 'ER',
+                value: 'Eritrea',
+                isDisabled: false,
+                            },
+                    {
+                code: 'EE',
+                value: 'Estonia',
+                isDisabled: false,
+                            },
+                    {
+                code: 'ET',
+                value: 'Ethiopia',
+                isDisabled: false,
+                            },
+                    {
+                code: 'FK',
+                value: 'Falkland Islands',
+                isDisabled: false,
+                            },
+                    {
+                code: 'FO',
+                value: 'Faroe Islands',
+                isDisabled: false,
+                            },
+                    {
+                code: 'FJ',
+                value: 'Fiji',
+                isDisabled: false,
+                            },
+                    {
+                code: 'FI',
+                value: 'Finland',
+                isDisabled: false,
+                            },
+                    {
+                code: 'FR',
+                value: 'France',
+                isDisabled: false,
+                            },
+                    {
+                code: 'GF',
+                value: 'French Guayana',
+                isDisabled: false,
+                            },
+                    {
+                code: 'PF',
+                value: 'French Polynesia',
+                isDisabled: false,
+                            },
+                    {
+                code: 'TF',
+                value: 'French Southern and Antarctic Territories (restrictions on ins. eligibility)',
+                isDisabled: true,
+                                    class: 'tagify__dropdown__item--disabled',
+                            },
+                    {
+                code: 'GA',
+                value: 'Gabon',
+                isDisabled: false,
+                            },
+                    {
+                code: 'GM',
+                value: 'Gambia',
+                isDisabled: false,
+                            },
+                    {
+                code: 'GE',
+                value: 'Georgia',
+                isDisabled: false,
+                            },
+                    {
+                code: 'DE',
+                value: 'Germany (restrictions on ins. eligibility)',
+                isDisabled: true,
+                                    class: 'tagify__dropdown__item--disabled',
+                            },
+                    {
+                code: 'GH',
+                value: 'Ghana',
+                isDisabled: false,
+                            },
+                    {
+                code: 'GI',
+                value: 'Gibraltar',
+                isDisabled: false,
+                            },
+                    {
+                code: 'GR',
+                value: 'Greece',
+                isDisabled: false,
+                            },
+                    {
+                code: 'GL',
+                value: 'Greenland',
+                isDisabled: false,
+                            },
+                    {
+                code: 'GD',
+                value: 'Grenada',
+                isDisabled: false,
+                            },
+                    {
+                code: 'GP',
+                value: 'Guadeloupe',
+                isDisabled: false,
+                            },
+                    {
+                code: 'GU',
+                value: 'Guam (restrictions on ins. eligibility)',
+                isDisabled: true,
+                                    class: 'tagify__dropdown__item--disabled',
+                            },
+                    {
+                code: 'GT',
+                value: 'Guatemala',
+                isDisabled: false,
+                            },
+                    {
+                code: 'GG',
+                value: 'Guernsey',
+                isDisabled: false,
+                            },
+                    {
+                code: 'GN',
+                value: 'Guinea',
+                isDisabled: false,
+                            },
+                    {
+                code: 'GW',
+                value: 'Guinea-Bissau',
+                isDisabled: false,
+                            },
+                    {
+                code: 'GY',
+                value: 'Guyana',
+                isDisabled: false,
+                            },
+                    {
+                code: 'HT',
+                value: 'Haiti',
+                isDisabled: false,
+                            },
+                    {
+                code: 'HM',
+                value: 'Heard and McDonald Islands (restrictions on ins. eligibility)',
+                isDisabled: true,
+                                    class: 'tagify__dropdown__item--disabled',
+                            },
+                    {
+                code: 'HN',
+                value: 'Honduras',
+                isDisabled: false,
+                            },
+                    {
+                code: 'HK',
+                value: 'Hong Kong',
+                isDisabled: false,
+                            },
+                    {
+                code: 'HU',
+                value: 'Hungary',
+                isDisabled: false,
+                            },
+                    {
+                code: 'IS',
+                value: 'Iceland',
+                isDisabled: false,
+                            },
+                    {
+                code: 'IN',
+                value: 'India',
+                isDisabled: false,
+                            },
+                    {
+                code: 'ID',
+                value: 'Indonesia',
+                isDisabled: false,
+                            },
+                    {
+                code: 'IR',
+                value: 'Iran',
+                isDisabled: false,
+                            },
+                    {
+                code: 'IQ',
+                value: 'Iraq',
+                isDisabled: false,
+                            },
+                    {
+                code: 'IE',
+                value: 'Ireland',
+                isDisabled: false,
+                            },
+                    {
+                code: 'IM',
+                value: 'Isle of Man',
+                isDisabled: false,
+                            },
+                    {
+                code: 'IL',
+                value: 'Israel',
+                isDisabled: false,
+                            },
+                    {
+                code: 'IT',
+                value: 'Italy',
+                isDisabled: false,
+                            },
+                    {
+                code: 'CI',
+                value: 'Ivory Coast',
+                isDisabled: false,
+                            },
+                    {
+                code: 'JM',
+                value: 'Jamaica',
+                isDisabled: false,
+                            },
+                    {
+                code: 'JP',
+                value: 'Japan',
+                isDisabled: false,
+                            },
+                    {
+                code: 'JE',
+                value: 'Jersey',
+                isDisabled: false,
+                            },
+                    {
+                code: 'JO',
+                value: 'Jordan',
+                isDisabled: false,
+                            },
+                    {
+                code: 'KZ',
+                value: 'Kazakhstan',
+                isDisabled: false,
+                            },
+                    {
+                code: 'KE',
+                value: 'Kenya',
+                isDisabled: false,
+                            },
+                    {
+                code: 'KI',
+                value: 'Kiribati',
+                isDisabled: false,
+                            },
+                    {
+                code: 'XK',
+                value: 'Kosovo',
+                isDisabled: false,
+                            },
+                    {
+                code: 'KW',
+                value: 'Kuwait',
+                isDisabled: false,
+                            },
+                    {
+                code: 'KG',
+                value: 'Kyrgyzstan',
+                isDisabled: false,
+                            },
+                    {
+                code: 'LA',
+                value: 'Laos',
+                isDisabled: false,
+                            },
+                    {
+                code: 'LV',
+                value: 'Latvia',
+                isDisabled: false,
+                            },
+                    {
+                code: 'LB',
+                value: 'Lebanon',
+                isDisabled: false,
+                            },
+                    {
+                code: 'LS',
+                value: 'Lesotho',
+                isDisabled: false,
+                            },
+                    {
+                code: 'LR',
+                value: 'Liberia',
+                isDisabled: false,
+                            },
+                    {
+                code: 'LY',
+                value: 'Libya',
+                isDisabled: false,
+                            },
+                    {
+                code: 'LI',
+                value: 'Liechtenstein',
+                isDisabled: false,
+                            },
+                    {
+                code: 'LT',
+                value: 'Lithuania',
+                isDisabled: false,
+                            },
+                    {
+                code: 'LU',
+                value: 'Luxembourg',
+                isDisabled: false,
+                            },
+                    {
+                code: 'MO',
+                value: 'Macau',
+                isDisabled: false,
+                            },
+                    {
+                code: 'MG',
+                value: 'Madagascar',
+                isDisabled: false,
+                            },
+                    {
+                code: 'MW',
+                value: 'Malawi',
+                isDisabled: false,
+                            },
+                    {
+                code: 'MY',
+                value: 'Malaysia',
+                isDisabled: false,
+                            },
+                    {
+                code: 'MV',
+                value: 'Maldives',
+                isDisabled: false,
+                            },
+                    {
+                code: 'ML',
+                value: 'Mali',
+                isDisabled: false,
+                            },
+                    {
+                code: 'MT',
+                value: 'Malta',
+                isDisabled: false,
+                            },
+                    {
+                code: 'MH',
+                value: 'Marshall Islands',
+                isDisabled: false,
+                            },
+                    {
+                code: 'MQ',
+                value: 'Martinique',
+                isDisabled: false,
+                            },
+                    {
+                code: 'MR',
+                value: 'Mauritania',
+                isDisabled: false,
+                            },
+                    {
+                code: 'MU',
+                value: 'Mauritius',
+                isDisabled: false,
+                            },
+                    {
+                code: 'YT',
+                value: 'Mayotte',
+                isDisabled: false,
+                            },
+                    {
+                code: 'MX',
+                value: 'Mexico',
+                isDisabled: false,
+                            },
+                    {
+                code: 'FM',
+                value: 'Micronesia',
+                isDisabled: false,
+                            },
+                    {
+                code: 'MD',
+                value: 'Moldova',
+                isDisabled: false,
+                            },
+                    {
+                code: 'MC',
+                value: 'Monaco',
+                isDisabled: false,
+                            },
+                    {
+                code: 'MN',
+                value: 'Mongolia',
+                isDisabled: false,
+                            },
+                    {
+                code: 'ME',
+                value: 'Montenegro',
+                isDisabled: false,
+                            },
+                    {
+                code: 'MS',
+                value: 'Montserrat',
+                isDisabled: false,
+                            },
+                    {
+                code: 'MA',
+                value: 'Morocco',
+                isDisabled: false,
+                            },
+                    {
+                code: 'MZ',
+                value: 'Mozambique',
+                isDisabled: false,
+                            },
+                    {
+                code: 'MM',
+                value: 'Myanmar',
+                isDisabled: false,
+                            },
+                    {
+                code: 'NA',
+                value: 'Namibia',
+                isDisabled: false,
+                            },
+                    {
+                code: 'NR',
+                value: 'Nauru',
+                isDisabled: false,
+                            },
+                    {
+                code: 'NP',
+                value: 'Nepal',
+                isDisabled: false,
+                            },
+                    {
+                code: 'NL',
+                value: 'Netherlands',
+                isDisabled: false,
+                            },
+                    {
+                code: 'AN',
+                value: 'Netherlands Antilles',
+                isDisabled: false,
+                            },
+                    {
+                code: 'NC',
+                value: 'New Caledonia',
+                isDisabled: false,
+                            },
+                    {
+                code: 'NZ',
+                value: 'New Zealand',
+                isDisabled: false,
+                            },
+                    {
+                code: 'NI',
+                value: 'Nicaragua',
+                isDisabled: false,
+                            },
+                    {
+                code: 'NE',
+                value: 'Niger',
+                isDisabled: false,
+                            },
+                    {
+                code: 'NG',
+                value: 'Nigeria',
+                isDisabled: false,
+                            },
+                    {
+                code: 'NU',
+                value: 'Niue',
+                isDisabled: false,
+                            },
+                    {
+                code: 'NF',
+                value: 'Norfolk Island',
+                isDisabled: false,
+                            },
+                    {
+                code: 'MP',
+                value: 'Northern Mariana Islands (restrictions on ins. eligibility)',
+                isDisabled: true,
+                                    class: 'tagify__dropdown__item--disabled',
+                            },
+                    {
+                code: 'KP',
+                value: 'North Korea',
+                isDisabled: false,
+                            },
+                    {
+                code: 'MK',
+                value: 'North Macedonia',
+                isDisabled: false,
+                            },
+                    {
+                code: 'NO',
+                value: 'Norway',
+                isDisabled: false,
+                            },
+                    {
+                code: 'OM',
+                value: 'Oman',
+                isDisabled: false,
+                            },
+                    {
+                code: 'PK',
+                value: 'Pakistan',
+                isDisabled: false,
+                            },
+                    {
+                code: 'PW',
+                value: 'Palau',
+                isDisabled: false,
+                            },
+                    {
+                code: 'PS',
+                value: 'Palestine',
+                isDisabled: false,
+                            },
+                    {
+                code: 'PA',
+                value: 'Panama',
+                isDisabled: false,
+                            },
+                    {
+                code: 'PG',
+                value: 'Papua New Guinea',
+                isDisabled: false,
+                            },
+                    {
+                code: 'PY',
+                value: 'Paraguay',
+                isDisabled: false,
+                            },
+                    {
+                code: 'PE',
+                value: 'Peru',
+                isDisabled: false,
+                            },
+                    {
+                code: 'PH',
+                value: 'Philippines',
+                isDisabled: false,
+                            },
+                    {
+                code: 'PN',
+                value: 'Pitcairn Islands',
+                isDisabled: false,
+                            },
+                    {
+                code: 'PL',
+                value: 'Poland',
+                isDisabled: false,
+                            },
+                    {
+                code: 'PT',
+                value: 'Portugal',
+                isDisabled: false,
+                            },
+                    {
+                code: 'PR',
+                value: 'Puerto Rico (restrictions on ins. eligibility)',
+                isDisabled: true,
+                                    class: 'tagify__dropdown__item--disabled',
+                            },
+                    {
+                code: 'QA',
+                value: 'Qatar',
+                isDisabled: false,
+                            },
+                    {
+                code: 'RE',
+                value: 'Reunion',
+                isDisabled: false,
+                            },
+                    {
+                code: 'RO',
+                value: 'Romania',
+                isDisabled: false,
+                            },
+                    {
+                code: 'RU',
+                value: 'Russia',
+                isDisabled: false,
+                            },
+                    {
+                code: 'RW',
+                value: 'Rwanda',
+                isDisabled: false,
+                            },
+                    {
+                code: 'BL',
+                value: 'Saint Barthelemy',
+                isDisabled: false,
+                            },
+                    {
+                code: 'SH',
+                value: 'Saint Helena',
+                isDisabled: false,
+                            },
+                    {
+                code: 'KN',
+                value: 'Saint Kitts and Nevis',
+                isDisabled: false,
+                            },
+                    {
+                code: 'LC',
+                value: 'Saint Lucia',
+                isDisabled: false,
+                            },
+                    {
+                code: 'MF',
+                value: 'Saint Martin',
+                isDisabled: false,
+                            },
+                    {
+                code: 'PM',
+                value: 'Saint Pierre and Miquelon',
+                isDisabled: false,
+                            },
+                    {
+                code: 'VC',
+                value: 'Saint Vincent and the Grenadines',
+                isDisabled: false,
+                            },
+                    {
+                code: 'WS',
+                value: 'Samoa',
+                isDisabled: false,
+                            },
+                    {
+                code: 'SM',
+                value: 'San Marino',
+                isDisabled: false,
+                            },
+                    {
+                code: 'ST',
+                value: 'Sao Tome and Principe',
+                isDisabled: false,
+                            },
+                    {
+                code: 'SA',
+                value: 'Saudi Arabia',
+                isDisabled: false,
+                            },
+                    {
+                code: 'SN',
+                value: 'Senegal',
+                isDisabled: false,
+                            },
+                    {
+                code: 'RS',
+                value: 'Serbia',
+                isDisabled: false,
+                            },
+                    {
+                code: 'SC',
+                value: 'Seychelles',
+                isDisabled: false,
+                            },
+                    {
+                code: 'SL',
+                value: 'Sierra Leone',
+                isDisabled: false,
+                            },
+                    {
+                code: 'SG',
+                value: 'Singapore',
+                isDisabled: false,
+                            },
+                    {
+                code: 'SX',
+                value: 'Sint Maarten',
+                isDisabled: false,
+                            },
+                    {
+                code: 'SK',
+                value: 'Slovakia',
+                isDisabled: false,
+                            },
+                    {
+                code: 'SI',
+                value: 'Slovenia',
+                isDisabled: false,
+                            },
+                    {
+                code: 'SB',
+                value: 'Solomon Islands',
+                isDisabled: false,
+                            },
+                    {
+                code: 'SO',
+                value: 'Somalia',
+                isDisabled: false,
+                            },
+                    {
+                code: 'ZA',
+                value: 'South Africa',
+                isDisabled: false,
+                            },
+                    {
+                code: 'GS',
+                value: 'South Georgia and the South Sandwich Islands (restrictions on ins. eligibility)',
+                isDisabled: true,
+                                    class: 'tagify__dropdown__item--disabled',
+                            },
+                    {
+                code: 'KR',
+                value: 'South Korea',
+                isDisabled: false,
+                            },
+                    {
+                code: 'OS',
+                value: 'South Ossetia',
+                isDisabled: false,
+                            },
+                    {
+                code: 'SS',
+                value: 'South Sudan',
+                isDisabled: false,
+                            },
+                    {
+                code: 'ES',
+                value: 'Spain',
+                isDisabled: false,
+                            },
+                    {
+                code: 'LK',
+                value: 'Sri Lanka',
+                isDisabled: false,
+                            },
+                    {
+                code: 'SD',
+                value: 'Sudan',
+                isDisabled: false,
+                            },
+                    {
+                code: 'SR',
+                value: 'Suriname',
+                isDisabled: false,
+                            },
+                    {
+                code: 'SJ',
+                value: 'Svalbard and Jan Mayen',
+                isDisabled: false,
+                            },
+                    {
+                code: 'SZ',
+                value: 'Swaziland',
+                isDisabled: false,
+                            },
+                    {
+                code: 'SE',
+                value: 'Sweden',
+                isDisabled: false,
+                            },
+                    {
+                code: 'CH',
+                value: 'Switzerland',
+                isDisabled: false,
+                            },
+                    {
+                code: 'SY',
+                value: 'Syria',
+                isDisabled: false,
+                            },
+                    {
+                code: 'TW',
+                value: 'Taiwan',
+                isDisabled: false,
+                            },
+                    {
+                code: 'TJ',
+                value: 'Tajikstan',
+                isDisabled: false,
+                            },
+                    {
+                code: 'TZ',
+                value: 'Tanzania',
+                isDisabled: false,
+                            },
+                    {
+                code: 'TH',
+                value: 'Thailand',
+                isDisabled: false,
+                            },
+                    {
+                code: 'TG',
+                value: 'Togo',
+                isDisabled: false,
+                            },
+                    {
+                code: 'TK',
+                value: 'Tokelau Islands',
+                isDisabled: false,
+                            },
+                    {
+                code: 'TO',
+                value: 'Tonga',
+                isDisabled: false,
+                            },
+                    {
+                code: 'TT',
+                value: 'Trinidad and Tobago',
+                isDisabled: false,
+                            },
+                    {
+                code: 'TN',
+                value: 'Tunisia',
+                isDisabled: false,
+                            },
+                    {
+                code: 'TR',
+                value: 'Turkey',
+                isDisabled: false,
+                            },
+                    {
+                code: 'TM',
+                value: 'Turkmenistan',
+                isDisabled: false,
+                            },
+                    {
+                code: 'TC',
+                value: 'Turks and Caicos Islands',
+                isDisabled: false,
+                            },
+                    {
+                code: 'TV',
+                value: 'Tuvalu',
+                isDisabled: false,
+                            },
+                    {
+                code: 'UG',
+                value: 'Uganda',
+                isDisabled: false,
+                            },
+                    {
+                code: 'UA',
+                value: 'Ukraine',
+                isDisabled: false,
+                            },
+                    {
+                code: 'AE',
+                value: 'United Arab Emirates',
+                isDisabled: false,
+                            },
+                    {
+                code: 'GB',
+                value: 'United Kingdom',
+                isDisabled: false,
+                            },
+                    {
+                code: 'UM',
+                value: 'United States Minor Outlying Islands (restrictions on ins. eligibility)',
+                isDisabled: true,
+                                    class: 'tagify__dropdown__item--disabled',
+                            },
+                    {
+                code: 'UY',
+                value: 'Uruguay',
+                isDisabled: false,
+                            },
+                    {
+                code: 'US',
+                value: 'USA (restrictions on ins. eligibility)',
+                isDisabled: true,
+                                    class: 'tagify__dropdown__item--disabled',
+                            },
+                    {
+                code: 'UZ',
+                value: 'Uzbekistan',
+                isDisabled: false,
+                            },
+                    {
+                code: 'VU',
+                value: 'Vanuatu',
+                isDisabled: false,
+                            },
+                    {
+                code: 'VA',
+                value: 'Vatican City',
+                isDisabled: false,
+                            },
+                    {
+                code: 'VE',
+                value: 'Venezuela',
+                isDisabled: false,
+                            },
+                    {
+                code: 'VN',
+                value: 'Vietnam',
+                isDisabled: false,
+                            },
+                    {
+                code: 'VG',
+                value: 'Virgin Islands (UK)',
+                isDisabled: false,
+                            },
+                    {
+                code: 'VI',
+                value: 'Virgin Islands (USA) (restrictions on ins. eligibility)',
+                isDisabled: true,
+                                    class: 'tagify__dropdown__item--disabled',
+                            },
+                    {
+                code: 'WF',
+                value: 'Wallis and Futuna',
+                isDisabled: false,
+                            },
+                    {
+                code: 'EH',
+                value: 'Western Sahara',
+                isDisabled: false,
+                            },
+                    {
+                code: 'YE',
+                value: 'Yemen',
+                isDisabled: false,
+                            },
+                    {
+                code: 'ZM',
+                value: 'Zambia',
+                isDisabled: false,
+                            },
+                    {
+                code: 'ZW',
+                value: 'Zimbabwe',
+                isDisabled: false,
+                            },
+                    {
+                code: 'AX',
+                value: 'Åland Islands',
+                isDisabled: false,
+                            },
+            
+                ],
+
+                            });
+
+            // Remove leftover text on blur. That is text, that the user typed in, but didn't select a country for or
+            // made it a tag through other means.
+            tagInput?.on('blur', e => {
+                e.detail.tagify.DOM.input.innerHTML = '';
+            })
+
+            this.tagInput = tagInput
+        }
+    }
+
+    if('ontouchstart' in document.documentElement) {
+        document.querySelector('body').classList.add('tagify-touch')
+    }
+
+    </script>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <template x-if="regionCode">
+      <div class="section">
+        <div class="field">
+          <label class="label label-with-info">
+            Determined scope of application
+
+            <div class="tooltip tooltip-select-region">
+              The scope of validity is determined from your details in the ‘Planned country of stay’ field. Your insurance cover applies to countries in the same or a lower zone. In non-insurable countries or countries in a higher zone, there is limited insurance cover for 42 days in the insurance year in the event of an acute need for treatment.
+              <div class="tooltip__arrow" data-popper-arrow></div>
+            </div>
+
+            <span class="icon tooltip-trigger select-region-tooltip" data-tooltip="select-region" data-tooltip-placement="right" aria-describedby="tooltip"><img src="/assets/img/icons/dots/dot-attention-blue.22d459f0.svg" width="20" height="20" /></span>
+          </label>
+
+          <div class="control">
+            <input type="text" class="input" :value="regionCodeLabel" x-ref="regionCodeSelect" disabled data-cy="region-code" />
+          </div>
+        </div>
+      </div>
+    </template>
+  </div>
+
+        </div>
+
+                    <div class="feedback-box is-info">
+        <div class="feedback-box__messages">
+            <p>In non-insurable countries or countries in a higher-level zone, there is limited insurance cover for 42 days in the insurance year limited insurance cover in the event of an acute need for treatment. For further details, please refer to the <a href="https://oapp.bdae.com/pdf/products/expat-smart/en/Smart_Insurance_Terms_And_Conditions.pdf" target="_blank" rel="noopener">insurance terms and conditions</a>.</p>
+        </div>
+    </div>
+
+
+    </div>
+</div>
+            
+                        <template x-if="showPersonsRow()">
+    <div class="persons">
+
+        <template x-for="(person, index) in persons">
+            <div class="person block" :data-cy="`person-${index + 1}`">
+                <div class="is-relative">
+                    <div x-bind:class="`tooltip tooltip-person-${index}-start`">
+    If the start of insurance is not on the first day of a month or if the end is not on the last day of the month, the premium for the corresponding month will be calculated pro rata.
+    <div class="tooltip__arrow" data-popper-arrow></div>
+</div>
+
+<div x-bind:class="`tooltip tooltip-person-${index}-birth`">
+    Please note that the maximum age at the start of insurance in this product is 74 years.
+    <div class="tooltip__arrow" data-popper-arrow></div>
+</div>
+
+<div x-bind:class="`tooltip tooltip-person-${index}-end-contract-duration`">
+    As EXPAT SMART is a time-limited product, the contract will expire on the specified date at the latest, unless you cancel it beforehand. If you do not want the contract to be limited in time, we recommend our EXPAT INFINITY product.
+    <div class="tooltip__arrow" data-popper-arrow></div>
+</div>
+                </div>
+
+                <div class="l-card">
+
+                    <div class="l-card-header-wrapper">
+    <header class="l-card-header">
+        
+        <div class="l-card-header-image">
+
+            <img class="l-card-header-icon" src="/assets/img/icons/circles/circle-avatar.0700cf2d.svg" width="42" height="42">
+
+            <template x-if="person.selectedInsurance">
+                <img class="l-card-header-status" src="/assets/img/icons/dots/dot-success.79229f14.svg" width="24" height="24">
+            </template> <template x-if="!person.selectedInsurance">
+                <img class="l-card-header-status" src="/assets/img/icons/dots/dot-pending-blue.0fcf2c25.svg" width="24" height="24">
+            </template>
+
+        </div>
+
+        <div>
+            
+                        <h2 class="l-card-header-title" x-text="`Person to be Insured ${index + 1}`"></h2>
+
+        </div>
+    </header>
+
+    <template x-if="index > 0">
+        <button  type="button" class="button person-remove" x-on:click="onRemovePerson(index)" >
+
+            <span class="icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="-1.5 -1.5 16 16">
+    <path d="M0 5h13v3H0z" fill="currentColor"/>
+</svg>
+        </span>
+    
+    <span>
+        Remove person
+    </span>
+
+</button>
+
+    </template>
+</div>
+
+                    <div class="l-card-body">
+
+                                            <div class="columns l-card-body__person-select">
+    <div class="column">
+    <div class="field">
+        <label class="label label-with-info">
+                            Date of birth
+            
+            <span class="icon person-tooltip tooltip-trigger" x-bind:data-tooltip="`person-${index}-birth`" aria-describedby="tooltip">
+                <img src="/assets/img/icons/dots/dot-attention-blue.22d459f0.svg" width="20" height="20">
+            </span>
+        </label>
+
+        
+                                                <div class="control"><input type="date" id="base_price_direct_birth" name="base_price_direct[birth]" required="required" x-model="person.birth" x-on:input.debounce="onPersonInput(person, index)" :class="{ &#039;is-danger&#039;: feedback.persons[person.id]?.status === &#039;error&#039; &amp;&amp;  feedback.persons[person.id]?.messages.filter(m =&gt; m.formField === &#039;birth&#039;).length &gt;= 1 }" data-cy="person-birth-input" max="2026-04-24" min="1905-04-25" class="input input input-birth" /></div>
+    </div>
+
+    <template x-if="feedback.persons[person.id]?.status !== 'success' && feedback.persons[person.id]?.messages?.filter(m => m.formField === 'birth').length >= 1">
+        <div class="feedback-box is-hidden-tablet mt-6" :class="`is-${feedback.persons[person.id]?.status}`">
+            <div class="feedback-box__icon"></div>
+            <div class="feedback-box__messages">
+                <template x-for="(message, index) in feedback.persons[person.id]?.messages.filter(m => m.formField === 'birth')">
+                    <p x-html="message.text"></p>
+                </template>
+            </div>
+        </div>
+    </template>
+</div>
+
+    <div class="column">
+    <div class="field">
+        <label class="label label-with-info">
+            Desired commencement of insurance coverage
+
+            <span class="icon person-tooltip tooltip-trigger" x-bind:data-tooltip="`person-${index}-start`" aria-describedby="tooltip">
+                <img src="/assets/img/icons/dots/dot-attention-blue.22d459f0.svg" width="20" height="20">
+            </span>
+        </label>
+
+        
+                                        <div class="control"><input type="date" id="base_price_direct_start" name="base_price_direct[start]" x-model="person.start" x-on:input.debounce="onPersonInput(person, index)" max="2026-07-23" min="2026-04-24" class="input input input-start" /></div>
+
+    </div>
+</div>
+
+    <div class="column is-flex is-flex-direction-column">
+    <div class="field">
+        <label class="label label-with-info">
+            Desired end of insurance
+
+            <span class="icon person-tooltip tooltip-trigger" x-bind:data-tooltip="`person-${index}-end-contract-duration`" aria-describedby="tooltip">
+                <img src="/assets/img/icons/dots/dot-attention-blue.22d459f0.svg" width="20" height="20">
+            </span>
+        </label>
+
+        
+    <div class="control"><input type="date" id="base_price_direct_end" name="base_price_direct[end]" x-model="person.end" x-on:input="onPersonInput(person, index)" class="input input-end-contract-duration input input input-end" :class="{ &#039;is-warning&#039;: feedback.persons[person.id]?.status === &#039;warning&#039; &amp;&amp;  feedback.persons[person.id]?.messages.filter(m =&gt; m.formField === &#039;maxContractDuration&#039;).length &gt;= 1 }" :min="person.start || window.formatDate(Date.now(), ({ year, month, day }) =&gt; `${year}-${month}-${day}`)" :max="person.basePrices.data?.maxContractDuration" /></div>
+    </div>
+
+    <template x-if="person.basePrices.data?.maxContractDuration && getFormatedMaxContractionLabel && !feedback.persons[person.id]?.messages?.some(m => m.formField === 'birth')">
+        <div class="is-hidden-tablet">
+            <button
+                x-on:click="fillOutEndContractionDate(person, event)"
+                class="button button--end-contraction is-rounded"
+                :class="{ 'is-warning' : feedback.persons[person.id]?.messages?.some(m => m.formField === 'maxContractDuration') }"
+                x-text="getFormatedMaxContractionLabel(person.basePrices.data.maxContractDuration)">
+            </button>
+        </div>
+    </template>
+
+    <template x-if="feedback.persons[person.id]?.status !== 'success' && feedback.persons[person.id]?.messages?.filter(m => m.formField === 'maxContractDuration').length >= 1">
+        <div class="feedback-box is-hidden-tablet mt-6" :class="`is-${feedback.persons[person.id]?.status}`">
+            <div class="feedback-box__icon"></div>
+            <div class="feedback-box__messages">
+                <template x-for="(message, index) in feedback.persons[person.id]?.messages.filter(m => m.formField === 'maxContractDuration')">
+                    <p x-html="message.text"></p>
+                </template>
+            </div>
+        </div>
+    </template>
+</div>
+</div>
+                
+                        <div class="l-card-body__additional-information is-hidden-mobile columns mb-0">
+    <div class="column"></div>
+    <div class="column"></div>
+    <div class="column">
+        <template x-if="person.basePrices.data?.maxContractDuration && getFormatedMaxContractionLabel && !feedback.persons[person.id]?.messages?.some(m => m.formField === 'birth')">
+            <button
+                x-on:click="fillOutEndContractionDate(person, event)"
+                class="button button--end-contraction is-rounded"
+                :class="{ 'is-warning' : feedback.persons[person.id]?.messages?.some(m => m.formField === 'maxContractDuration') }"
+                x-text="getFormatedMaxContractionLabel(person.basePrices.data.maxContractDuration)">
+            </button>
+        </template>
+    </div>
+</div>
+
+                        <template x-if="feedback.persons[person.id]?.status !== 'success' && feedback.persons[person.id]?.messages?.length >= 1">
+                            <div class="feedback-box is-hidden-mobile" :class="`is-${feedback.persons[person.id].status}`">
+                                <div class="feedback-box__icon"></div>
+                                <div class="feedback-box__messages">
+                                    <template x-for="(message, index) in feedback.persons[person.id].messages">
+                                        <p x-html="message.text"></p>
+                                    </template>
+                                </div>
+                            </div>
+                        </template>
+
+                                            <template
+    x-if="!person.basePrices.isLoading && !person.basePrices.hasError && person.basePrices.data && feedback.persons[person.id]?.status !== 'error'"
+>
+    <div
+        class="tier-comparison"
+        x-bind:class="{ 'is-collapsed': person.basePrices.areCollapsed, 'has-selection': !!person.selectedInsurance }"
+    >
+        <div class="field is-hidden-tablet">
+            <label class="label">
+                Gewünschte Produktvariante
+            </label>
+        </div>
+
+        <table
+            class="tier-comparison-tiers tiers"
+            x-bind:class="`tiers--${person.basePrices.data.insurances.length}-cols`"
+        >
+            <tr class="tiers-names">
+                <td class="tiers-spacer"></td>
+
+                <template
+                    x-for="insurance in person.basePrices.data.insurances"
+                    :key="insurance.uuid || window.uuidv4()"
+                >
+                    <th class="tier-name">
+                        <strong class="tier-name-category is-extra" x-text="insurance.categoryName"> </strong>
+
+                        <strong class="tier-name-sub-category is-extra" x-text="insurance.subCategoryName"> </strong>
+                    </th>
+                </template>
+            </tr>
+
+            <tr class="tiers-prices">
+                <td class="tiers-spacer"></td>
+
+                <template
+                    x-for="insurance in person.basePrices.data.insurances"
+                    :key="insurance.uuid || window.uuidv4()"
+                >
+                    <th
+                        class="tier-price"
+                        :class="!insurance?.available && 'tier-price--not-available'"
+                        data-cy="tier-price"
+                    >
+                        <template x-if="insurance?.available">
+                            <div>
+                                <div class="tier-price-label">
+                                    <strong
+                                        class="tier-price-amount"
+                                        data-cy="tier-price-amount"
+                                        x-text="insurance.premiumExpFormatted"
+                                    ></strong>
+                                    <span class="tier-price-unit">
+                                        Euro
+                                    </span>
+                                </div>
+
+                                                                    <div class="tier-price-interval">
+                                        monthly base price
+                                    </div>
+                                
+                                <div class="tier-price-toggle">
+                                    <input
+                                        type="radio"
+                                        class="tier-price-toggle-input"
+                                        x-bind:checked="person.selectedInsurance?.uuid === insurance.uuid"
+                                        x-bind:name="`person_${index}_selectedInsurance`"
+                                        x-bind:id="`person_${index}_select_insurance_${insurance.subCategoryName.toLowerCase()}`"
+                                    />
+                                    <label
+                                        class="button is-border-light tier-price-toggle-label"
+                                        :class="{'is-info': person.selectedInsurance?.uuid === insurance.uuid}"
+                                        x-on:click="onSelectInsurance($event, person, index, insurance)"
+                                        x-bind:for="`person_${index}_select_insurance_${insurance.subCategoryName.toLowerCase()}`"
+                                        data-cy="tier-price-toggle-label"
+                                    >
+                                        <template x-if="person.selectedInsurance?.uuid === insurance.uuid">
+                                            <span>Selected</span>
+                                        </template>
+                                        <template x-if="person.selectedInsurance?.uuid !== insurance.uuid">
+                                            <span>Select</span>
+                                        </template>
+                                    </label>
+                                </div>
+                            </div>
+                        </template>
+                        <template x-if="!insurance?.available">
+                            <div>
+                                <i class="cross-icon"></i>
+                                <p>
+                                    Unfortunately, this product variant is not available if you select a country from country zone 3.
+                                </p>
+                            </div>
+                        </template>
+                    </th>
+                </template>
+            </tr>
+
+            <template x-if="!person.selectedInsurance">
+                <tbody class="tiers-benefits">
+                    <template x-for="(benefit, index_row) in person.basePrices.data?.benefits" :key="benefit.name">
+                        <tr class="tier-benefit">
+                            <th class="tier-benefit-name" x-text="benefit.name"></th>
+
+                            <template
+                                x-for="(supportedInsurance, index_col) in benefit.supported"
+                                :key="`${benefit.name}-${index_col}`"
+                            >
+                                <td class="tier-benefit-indicator">
+                                    <template x-if="supportedInsurance.supported">
+                                        <div
+                                            x-bind:class="{'has-tooltip': supportedInsurance.description && !person.basePrices.showDetails}"
+                                        >
+                                            <span class="placeholder"></span>
+                                            <img
+                                                class="tier-benefit-indicator-checkmark"
+                                                src="/assets/img/icons/checkmark-orange.56e049be.svg"
+                                                width="17"
+                                                height="13"
+                                            />
+                                            <template x-if="supportedInsurance.description">
+                                                <div>
+                                                    <div
+                                                        x-bind:class="`tooltip tooltip-supported-insurance-${index}-${index_row}-${index_col}`"
+                                                    >
+                                                        <span x-html="supportedInsurance.description"></span>
+                                                        <div class="tooltip__arrow" data-popper-arrow></div>
+                                                    </div>
+
+                                                    <span
+                                                        class="icon supported-insurance-tooltip tooltip-trigger"
+                                                        x-bind:data-tooltip="`supported-insurance-${index}-${index_row}-${index_col}`"
+                                                        aria-describedby="tooltip"
+                                                    >
+                                                        <img
+                                                            src="/assets/img/icons/dots/dot-info-grey.8e675636.svg"
+                                                            width="20"
+                                                            height="20"
+                                                        />
+                                                    </span>
+                                                </div>
+                                            </template>
+                                            <template
+                                                x-if="supportedInsurance.description && person.basePrices.showDetails"
+                                            >
+                                                <div x-html="supportedInsurance.description"></div>
+                                            </template>
+                                        </div>
+                                    </template>
+
+                                    <template
+                                        x-if="!supportedInsurance.supported && supportedInsurance.description !== ''"
+                                    >
+                                        <div class="has-text-centered">
+                                            <div x-html="supportedInsurance.description"></div>
+                                        </div>
+                                    </template>
+                                </td>
+                            </template>
+                        </tr>
+                    </template>
+                </tbody>
+            </template>
+        </table>
+
+        <template x-if="!person.selectedInsurance && !person.basePrices.areCollapsed">
+            <div class="tier-comparison-detail-toggle text-center">
+                <label class="checkbox">
+                    Show more details
+                    <label class="switch">
+                        <input type="checkbox" class="switch-input" @click="onShowDetails(person.basePrices)" />
+                        <div class="switch-toggle"></div>
+                    </label>
+                </label>
+            </div>
+        </template>
+
+        <template x-if="!person.selectedInsurance">
+            <div class="tier-comparison-hint message is-info">
+                <div class="message-body">
+                    The comparison table provides you with a general overview regarding the volume of insurance benefits. It does not replace the insurance terms and conditions of individual products. The scope of benefits as well as the benefits covered vary from product to product and are dependent on the product variant selected. For more information, hover over any of the information icons or select the more detailed view. Complete information can be found in parts I and II of the Terms and Conditions of Insurance.
+                </div>
+            </div>
+        </template>
+
+        <template x-if="!person.selectedInsurance">
+            <div class="tier-comparison-collapse-toggle">
+                <button
+                    class="button is-light"
+                    x-bind:class="{ 'has-icon-vertically-flipped': !person.basePrices.areCollapsed}"
+                    type="button"
+                    x-on:click="onToggleInsuranceBenefits($event, person, index)"
+                >
+                    <span class="icon"> <svg xmlns="http://www.w3.org/2000/svg" width="12" height="6" viewBox="0 0 12 6">
+  <path id="Polygon_15" data-name="Polygon 15" d="M6,0l6,6H0Z" transform="translate(12 6) rotate(180)" fill="#707274"/>
+</svg>
+ </span>
+
+                    <template x-if="person.basePrices.areCollapsed">
+                        <span>show benefits</span>
+                    </template>
+                    <template x-if="!person.basePrices.areCollapsed">
+                        <span>hide benefits</span>
+                    </template>
+                </button>
+            </div>
+        </template>
+    </div>
+</template>
+<template x-if="!person.basePrices.isLoading && person.basePrices.hasError">
+    <p class="p-4 pt-0">
+        <span>Fehler beim Laden der Versicherungspolicen.</span>
+    </p>
+</template>
+<template x-if="person.basePrices.isLoading">
+    <span style="display: none">Loading...</span>
+</template>
+                                    </div>
+                </div>
+            </div>
+        </template>
+
+                    <div class="columns is-mobile is-centered">
+        <div class="column is-narrow">
+            <button  type="button" class="button is-medium turns-white" x-on:click="onAddNewPerson($event)" data-cy="add-new-person-button" >
+
+            <span class="icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="-1.5 -1.5 16 16">
+    <path d="M0 5h13v3H0z" fill="currentColor"/>
+    <path d="M5 0h3v13H5z" fill="currentColor"/>
+</svg>
+        </span>
+    
+    <span>
+        add person to be Co-Insured
+    </span>
+
+</button>
+
+        </div>
+    </div>
+
+    </div>
+</template>
+            
+                            <div
+        class="base-price-finder-summary summary"
+        x-bind:class="{
+            'has-total-price': total,
+            'has-one-person': persons.length === 1,
+            'has-multiple-persons': persons.length > 1,
+        }"
+    >
+
+                    <div class="summary-header">
+
+                <h2 class="summary-title" x-text="summaryPriceTitle"></h2>
+
+                <template x-if="total">
+                    <div class="summary-total">
+                        <strong x-text="total" class="summary-header-total-amount" data-cy="summary-header-total-amount"></strong>
+                        Euro
+                    </div>
+                </template>
+
+                <template x-if="total && persons.length > 1">
+                    <div class="summary-details-toggle-wrapper">
+                        <button
+                            class="button summary-details-toggle"
+                            x-bind:class="{ 'has-icon-vertically-flipped': !showTotalDetails }"
+                            type="button"
+                            @click="onShowTotalDetails">
+                            <span class="icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="6" viewBox="0 0 12 6">
+  <path id="Polygon_15" data-name="Polygon 15" d="M6,0l6,6H0Z" transform="translate(12 6) rotate(180)" fill="#707274"/>
+</svg>
+                            </span>
+
+                            <span>Details</span>
+                        </button>
+                    </div>
+                </template>
+
+                <template x-if="!total">
+                    <div class="summary-no-total">
+
+                        <img class="summary-no-total-icon" src="/assets/img/icons/dots/dot-attention-blue.22d459f0.svg" width="24" height="24">
+
+                        not yet calculated
+
+                    </div>
+                </template>
+
+            </div>
+
+                        <template x-if="total && showTotalDetails">
+                <ul class="summary-details">
+                    <template x-for="(person, index) in persons">
+                        <li class="summary-details-person">
+                            <span x-text="`Person ${index + 1}`" data-matomo-mask></span>
+                            <strong x-text="`${person.selectedInsurance?.premiumExpFormatted} Euro`"></strong>
+                        </li>
+                    </template>
+                </ul>
+            </template>
+        
+        
+        <template x-if="showSubmitError">
+            <p class="p-3 has-text-light has-background-danger">
+                Please enter date of birth for all persons to be insured and select a product!
+            </p>
+        </template>
+
+        <template x-if="errorMessage">
+            <p class="p-3 has-text-light has-background-danger error-message-fixed" x-text="errorMessage"></p>
+        </template>
+
+        
+                    <div class="base-price-finder__page-footer page-footer">
+
+                <ul class="section page-footer__navigation navigation">
+                    <li class="navigation__item navigation__item--next">
+                        <a @click="submitUsers" data-cy="submit-users">
+                            <div class="button is-primary is-large is-directional" :disabled="pendingSubmit">
+
+                            <span class="icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 54 54">
+                                    <path fill="#fff" d="M27 54a27 27 0 1127-27 27 27 0 01-27 27z"></path>
+                                    <path fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="2.893" d="M10.607 27h27.964M26.518 13.982L39.536 27 26.518 40.018"></path>
+                                </svg>
+                            </span>
+
+                            <span>
+                                Next step
+                            </span>
+
+                            </div>
+                        </a>
+
+                    </li>
+                </ul>
+
+                <ul class="section page-footer__help-links help-links">
+
+                                                                <li class="help-links__item">
+                            <a onclick="openDialog('questions-form', event)">
+                                Contact customer service
+                            </a>
+                        </li>
+                    
+                </ul>
+
+            </div>
+            </div>
+
+                    </div>
+
+        <script type="application/javascript">
+            window.basePriceFinderConfig = {}
+            window.basePriceFinderConfig.categoryCode = 'G031';
+            window.basePriceFinderConfig.initPersons = [];
+            window.basePriceFinderConfig.locale = "en";
+            window.basePriceFinderConfig.iframeMode = false;
+            window.basePriceFinderConfig.linkToFormProcess = "https://oapp.bdae.com/en/expat-smart/insured-persons";
+
+            window.basePriceFinderConfig.urlParams = {
+                affiliateId: "M244843",
+                subAffiliateId: "",
+                utm_campaign: "",
+                utm_content: "",
+                utm_medium: "",
+                utm_source: "",
+                utm_term: "",
+            }
+
+            window.basePriceFinderConfig.translations = {
+                title: {
+                    summaryPrice: 'Your monthly price',
+                    summaryPriceMultipleUsers: 'Your monthly base price for PERSONS_LENGTH persons',
+                },
+                buttons: {
+                    maxContractDuration: 'maximum term:',
+                }
+            };
+        </script>
+
+        </form>
+
+                    
+    
+    
+    
+    
+    
+    <div class="modal " id="dialog-how-it-works">
+        <div class="modal-background"></div>
+        <div class="modal-content">
+            <span onclick="closeDialog()" class="close-button"></span>
+            <div class="box-wrapper">
+                <div class="box">
+                    <div class="has-text-centered">
+                        <picture >
+	<source srcset="/images/69/image-thumb__69__modal/antragsteller_in~-~media--5abec06c--query.2adc6ce1.webp 1x, /images/69/image-thumb__69__modal/antragsteller_in~-~media--5abec06c--query@2x.2adc6ce1.webp 2x" media="(max-width: 576px)" width="250" height="158" type="image/webp" />
+	<source srcset="/images/69/image-thumb__69__modal/antragsteller_in~-~media--5abec06c--query.2adc6ce1.png 1x, /images/69/image-thumb__69__modal/antragsteller_in~-~media--5abec06c--query@2x.2adc6ce1.png 2x" media="(max-width: 576px)" width="250" height="158" type="image/png" />
+	<source srcset="/images/69/image-thumb__69__modal/antragsteller_in.05d5a90c.webp 1x, /images/69/image-thumb__69__modal/antragsteller_in@2x.05d5a90c.webp 2x" width="397" height="250" type="image/webp" />
+	<source srcset="/images/69/image-thumb__69__modal/antragsteller_in.05d5a90c.png 1x, /images/69/image-thumb__69__modal/antragsteller_in@2x.05d5a90c.png 2x" width="397" height="250" type="image/png" />
+	<img src="/images/69/image-thumb__69__modal/antragsteller_in.05d5a90c.png" width="397" height="250" alt="" loading="lazy" srcset="/images/69/image-thumb__69__modal/antragsteller_in.05d5a90c.png 1x, /images/69/image-thumb__69__modal/antragsteller_in@2x.05d5a90c.png 2x" />
+</picture>
+
+                    </div>
+
+                    <h2>How the application procedure works</h2>
+
+<ol>
+	<li><span><b>Use our online application service</b> to take out insurance cover. Sending the application does not mean that insurance cover has automatically been taken out. That means that there is not yet any insurance cover and no contributions need to be paid yet.</span></li>
+	<li><span>Should you be&nbsp;unable to provide all details straight away, or if further documents are required to be filled out by your doctor, this can be done <strong>within 14 days following the date of application</strong>. To upload these details you can use our web-upload (<a href="https://webupload.bdae.com/?lang=en" target="_blank">https://webupload.bdae.com/</a>) or get in touch with our customer service team (<a href="mailto:info@bdae.com">info@bdae.com</a>). Your application can only be processed once all documents have been received.</span></li>
+	<li><span>Once we have received all the necessary documents, <b>your application will be reviewed by our team</b>. Should BDAE have any questions, our application team will get in touch with you. For products with risk markups, you will be informed of the calculated additional charges/surcharges. Only in very few cases are we unable to offer potential customers insurance cover.</span></li>
+	<li><span>Once all documents relevant to your application have been <b>received and approved</b> by our application team, we will send you confirmation of cover with the date of commencement and notes regarding premium payments.<br />
+	<b>If your application is rejected</b>, the transmitted data will be deleted within the statutory periods.</span></li>
+	<li><span>In the case that a <b>risk markup</b> has been calculated, you will receive an<strong> insurance quote which will require your signature</strong>. If you would like to take out the insurance policy, please&nbsp;<strong>submit the signed quote</strong>&nbsp;to BDAE. Following confirmation, we will send you&nbsp;<strong>confirmation of cover</strong>&nbsp;which will state the commencement date and payment instructions.</span></li>
+	<li><span><b>That’s it! You’ve successfully taken out your international health insurance.</b></span></li>
+</ol>
+
+
+                    
+                                    </div>
+            </div>
+        </div>
+    </div>
+
+
+        
+                    
+    
+    
+    
+    
+    
+    <div class="modal " id="dialog-questions-form">
+        <div class="modal-background"></div>
+        <div class="modal-content">
+            <span onclick="closeDialog()" class="close-button"></span>
+            <div class="box-wrapper">
+                <div class="box">
+                    <div class="has-text-centered">
+                        <picture >
+	<source srcset="/images/691/image-thumb__691__modal/illustration_contact~-~media--5abec06c--query.39f0c984.webp 1x, /images/691/image-thumb__691__modal/illustration_contact~-~media--5abec06c--query@2x.39f0c984.webp 2x" media="(max-width: 576px)" width="165" height="165" type="image/webp" />
+	<source srcset="/images/691/image-thumb__691__modal/illustration_contact~-~media--5abec06c--query.39f0c984.png 1x, /images/691/image-thumb__691__modal/illustration_contact~-~media--5abec06c--query@2x.39f0c984.png 2x" media="(max-width: 576px)" width="165" height="165" type="image/png" />
+	<source srcset="/images/691/image-thumb__691__modal/illustration_contact.bd856504.webp 1x, /images/691/image-thumb__691__modal/illustration_contact@2x.bd856504.webp 2x" width="262" height="262" type="image/webp" />
+	<source srcset="/images/691/image-thumb__691__modal/illustration_contact.bd856504.png 1x, /images/691/image-thumb__691__modal/illustration_contact@2x.bd856504.png 2x" width="262" height="262" type="image/png" />
+	<img src="/images/691/image-thumb__691__modal/illustration_contact.bd856504.png" width="262" height="262" alt="" loading="lazy" srcset="/images/691/image-thumb__691__modal/illustration_contact.bd856504.png 1x, /images/691/image-thumb__691__modal/illustration_contact@2x.bd856504.png 2x" />
+</picture>
+
+                    </div>
+
+                    <h2>Questions about our online application?<br />
+We’re here to help!</h2>
+
+
+                                            
+
+<div class="columns contact-section">
+    <div class="column">
+        <img src="/assets/img/icons/chat.84acac17.svg" width="28px" height="auto" class="is-block mx-auto">
+        <p><a href="https://www.bdae.com/en/service/chat" rel="noopener" target="_blank">Customer advice service<br /> in our </a></p>
+    </div>
+
+    <div class="column">
+        <img src="/assets/img/icons/phone.db813cdd.svg" width="22px" height="auto" class="is-block mx-auto">
+        <p><a href="tel:&#43;49403068740"><br />&#43;49-40-30 68 74-0</a></p>
+    </div>
+</div>
+                    
+                                    </div>
+            </div>
+        </div>
+    </div>
+
+
+        
+    
+
+    </main>
+
+            <div class="mt-5">
+            <div class="footer-links has-text-centered  ">
+    <p><a href="https://www.bdae.com/en/imprint" target="_blank">Imprint</a> | <a href="https://www.bdae.com/en/data-protection" target="_blank">Data protection</a> | <a href="#" onclick="UC_UI.showSecondLayer();">Manage Cookies</a></p>
+
+</div>
+        </div>
+    
+
+
+                <div id="contact-modal" class="contact-modal modal">
+    <div class="modal-background"></div>
+    <div class="modal-card">
+        <section class="modal-card-body has-background-white has-text-centered">
+            <div class="contact-modal__header-img">
+                <img src="/assets/img/icons/circles/circle-support.797c6923.svg" width="128px" height="auto" class="is-block mx-auto">
+            </div>
+            <h1 class="is-size-4 has-text-primary has-text-weight-bold mb-6 has-text-centered	">
+                Sie haben Fragen zu unserem Onlineantrag? Wir unterstützen Sie gerne!
+            </h1>
+            <div class="contact-modal__links">
+                <div>
+                    <img src="/assets/img/icons/chat.84acac17.svg" width="28px" height="auto" class="is-block mx-auto">
+                    <p><a href="https://www.bdae.com/en/service/chat" rel="noopener" target="_blank">Customer advice service<br /> in our </a></p>
+                </div>
+                <div>
+                    <img src="/assets/img/icons/phone.db813cdd.svg" width="28px" height="auto" class="is-block mx-auto">
+                    <p><a href="tel:&#43;49403068740"><br />&#43;49-40-30 68 74-0</a></p>
+                </div>
+            </div>
+            <button class="contact-modal__close-btn">
+                <img src="/assets/img/icons/dots/dot-close.7e299fd5.svg" width="32px" height="auto" class="close is-block mx-auto">
+            </button>
+        </section>
+    </div>
+</div>
+
+<button class="contact-button js-modal-trigger" data-target="contact-modal">
+    <img src="/assets/img/icons/dots/dot_support_mobile.f1896285.svg" width="64px" height="auto" class="is-block mx-auto">
+</button>
+
+<div class="contact-sidebar">
+    <div class="contact-sidebar__body has-background-white has-text-centered">
+        <div>
+            <img src="/assets/img/icons/circles/circle-support.797c6923.svg" width="95px" height="auto" class="is-block mx-auto">
+        </div>
+        <div class="is-size-7">
+            <img src="/assets/img/icons/chat.84acac17.svg" width="28px" height="auto" class="icon is-block mx-auto">
+            <p><a href="https://www.bdae.com/en/service/chat" rel="noopener" target="_blank">Customer<br /> service<br /> in <b>live chat</b></a></p>
+        </div>
+
+        <div class="is-size-7">
+            <img src="/assets/img/icons/phone.db813cdd.svg" width="22px" height="auto" class="icon is-block mx-auto">
+            <p><a href="tel:&#43;49403068740"><br />&#43;49-40-30 68 74-0</a></p>
+        </div>
+    </div>
+</div>
+        
+    <!-- Scripts -->
+                <script src="/assets/runtime.d7020dce.js" defer></script><script src="/assets/628.b6f4709c.js" defer></script><script src="/assets/18.5ac72458.js" defer></script><script src="/assets/app.671e510f.js" defer></script>
+    
+    <script src="/assets/935.f0650cab.js" defer></script><script src="/assets/basepricefinder.3542af3b.js" defer></script>
+
+        
+        
+            <div id="pristineErrorMessages"
+         style="display: none;"
+         data-form-locale="en"
+         data-form-error-messages="{&quot;defaultMessage&quot;:&quot;This field is invalid.&quot;,&quot;required&quot;:&quot;Please provide information.&quot;,&quot;email&quot;:&quot;Please enter a valid email address.&quot;,&quot;number&quot;:&quot;Please enter a valid number.&quot;,&quot;integer&quot;:&quot;Please enter a whole number.&quot;,&quot;url&quot;:&quot;Please enter a valid URL.&quot;,&quot;tel&quot;:&quot;Please enter a valid telephone number.&quot;,&quot;maxlength&quot;:&quot;This field must not be longer than {1} characters.&quot;,&quot;minlength&quot;:&quot;This field must contain at least {1} characters.&quot;,&quot;min&quot;:&quot;The value must be at least {1}.&quot;,&quot;max&quot;:&quot;The value must not exceed {1}.&quot;,&quot;pattern&quot;:&quot;Invalid format.&quot;,&quot;equals&quot;:&quot;The fields do not match.&quot;}">
+    </div>
+</body>

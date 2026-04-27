@@ -1,0 +1,910 @@
+@charset "UTF-8";#cmod_1641086.designstage_in_viewport .cmod_wrapper .designstage_type_image .designstage_background,#cmod_1641086.designstage_in_viewport .cmod_wrapper .designstage_type_color .designstage_background,#cmod_1641086.designstage_in_viewport .cmod_wrapper .designstage_type_composeimage .designstage_composeimagecontainer,#cmod_1641086.designstage_in_viewport .cmod_wrapper .designstage_type_video .designstage_videocontainer,#cmod_1642139.designstage_in_viewport .cmod_wrapper .designstage_type_image .designstage_background,#cmod_1642139.designstage_in_viewport .cmod_wrapper .designstage_type_color .designstage_background,#cmod_1642139.designstage_in_viewport .cmod_wrapper .designstage_type_composeimage .designstage_composeimagecontainer,#cmod_1642139.designstage_in_viewport .cmod_wrapper .designstage_type_video .designstage_videocontainer {
+    opacity: 0;
+    z-index: 0;
+    -webkit-backface-visibility: hidden;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-name: imageAnimation73113;
+    -webkit-animation-duration: 12s;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: linear;
+    -moz-animation-name: imageAnimation73113;
+    -moz-animation-duration: 12s;
+    -o-animation-iteration-count: infinite;
+    -o-animation-timing-function: linear;
+    -o-animation-name: imageAnimation73113;
+    -o-animation-duration: 12s;
+    -ms-animation-iteration-count: infinite;
+    -ms-animation-timing-function: linear;
+    -ms-animation-name: imageAnimation73113;
+    -ms-animation-duration: 12s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-name: imageAnimation73113;
+    animation-duration: 12s
+}
+
+#cmod_1641086.designstage_in_viewport .cmod_wrapper .designstage_text,#cmod_1642139.designstage_in_viewport .cmod_wrapper .designstage_text {
+    opacity: 0;
+    z-index: 0;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-name: titleAnimation73113;
+    -webkit-animation-duration: 12s;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: linear;
+    -moz-animation-name: titleAnimation73113;
+    -moz-animation-duration: 12s;
+    -o-animation-iteration-count: infinite;
+    -o-animation-timing-function: linear;
+    -o-animation-name: titleAnimation73113;
+    -o-animation-duration: 12s;
+    -ms-animation-iteration-count: infinite;
+    -ms-animation-timing-function: linear;
+    -ms-animation-name: titleAnimation73113;
+    -ms-animation-duration: 12s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-name: titleAnimation73113;
+    animation-duration: 12s
+}
+
+#designstage_element_99562.with_bold_text_shadow div,#designstage_element_99562.with_bold_text_shadow a:not(.submitbutton,.bigsubmitbutton),#designstage_element_99562.with_bold_text_shadow a:not(.submitbutton,.bigsubmitbutton):hover,#designstage_element_99562.with_bold_text_shadow p,#designstage_element_99562.with_bold_text_shadow span:not(.mceNonEditable):not(a.submitbutton span):not(a.bigsubmitbutton span),#designstage_element_99562.with_bold_text_shadow h1,#designstage_element_99562.with_bold_text_shadow h2,#designstage_element_99562.with_bold_text_shadow h3,#designstage_element_99562.with_bold_text_shadow h4,#designstage_element_99562.with_bold_text_shadow h5,#designstage_element_99562.with_bold_text_shadow li,#designstage_element_99562.with_light_text_shadow div,#designstage_element_99562.with_light_text_shadow a:not(.submitbutton,.bigsubmitbutton),#designstage_element_99562.with_light_text_shadow a:not(.submitbutton,.bigsubmitbutton):hover,#designstage_element_99562.with_light_text_shadow p,#designstage_element_99562.with_light_text_shadow span:not(.mceNonEditable):not(a.submitbutton span):not(a.bigsubmitbutton span),#designstage_element_99562.with_light_text_shadow h1,#designstage_element_99562.with_light_text_shadow h2,#designstage_element_99562.with_light_text_shadow h3,#designstage_element_99562.with_light_text_shadow h4,#designstage_element_99562.with_light_text_shadow h5,#designstage_element_99562.with_light_text_shadow li {
+    color: #fff
+}
+
+#designstage_element_99562 .designstage_milkyglass div,#designstage_element_99562 .designstage_milkyglass a:not(.submitbutton,.bigsubmitbutton),#designstage_element_99562 .designstage_milkyglass a:not(.submitbutton,.bigsubmitbutton):hover,#designstage_element_99562 .designstage_milkyglass p,#designstage_element_99562 .designstage_milkyglass span:not(.mceNonEditable):not(a.submitbutton span):not(a.bigsubmitbutton span),#designstage_element_99562 .designstage_milkyglass h1,#designstage_element_99562 .designstage_milkyglass h2,#designstage_element_99562 .designstage_milkyglass h3,#designstage_element_99562 .designstage_milkyglass h4,#designstage_element_99562 .designstage_milkyglass h5,#designstage_element_99562 .designstage_milkyglass li,#designstage_element_99562 .designstage_milkyglass li:before {
+    color: #333
+}
+
+#designstage_element_99562 .rating_seal .rating_summary .rating_entry {
+    color: #333
+}
+
+#designstage_element_99562 .rating_seal .rating_summary .rating_text * {
+    color: #777!important
+}
+
+#designstage_element_99562 .designstage_text,#designstage_element_99562 .designstage_background,#designstage_element_99562 .designstage_composeimagecontainer,#designstage_element_99562 .designstage_videocontainer {
+    -webkit-animation-delay: 0s;
+    -moz-animation-delay: 0s;
+    -o-animation-delay: 0s;
+    -ms-animation-delay: 0s;
+    animation-delay: 0s
+}
+
+#designstage_element_99562:not(.designstage_type_composeimage) .designstage_background:after,#designstage_element_99562 .designstage_composeimagecontainer:after,#designstage_element_99562 .designstage_videocontainer:after {
+    box-sizing: border-box;
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 3;
+    background-color: rgba(0,0,0,.25)!important
+}
+
+#designstage_element_99562 .designstage_background {
+    background-position: 75% center
+}
+
+.modernizr-no-webp #designstage_element_99562 .designstage_background {
+    background-image: url('../assets/local-cdn/content/pages/19259/designstages/99562_2000_background__q_save_time_1774596309.jpg')
+}
+
+.modernizr-webp #designstage_element_99562 .designstage_background {
+    background-image: url('../assets/local-cdn/content/pages/19259/designstages/99562_2000_background__q_save_time_1774596309.webp')
+}
+
+@media only screen and (max-width: 1500px) and (max-height:999px) {
+    .modernizr-no-webp #designstage_element_99562 .designstage_background {
+        background-image:url('../assets/local-cdn/content/pages/19259/designstages/99562_1500_background__q_save_time_1774596309.jpg')
+    }
+
+    .modernizr-webp #designstage_element_99562 .designstage_background {
+        background-image: url('../assets/local-cdn/content/pages/19259/designstages/99562_1500_background__q_save_time_1774596309.webp')
+    }
+}
+
+@media only screen and (max-width: 1000px) and (max-height:666px) {
+    .modernizr-no-webp #designstage_element_99562 .designstage_background {
+        background-image:url('../assets/local-cdn/content/pages/19259/designstages/99562_1000_background__q_save_time_1774596309.jpg')
+    }
+
+    .modernizr-webp #designstage_element_99562 .designstage_background {
+        background-image: url('../assets/local-cdn/content/pages/19259/designstages/99562_1000_background__q_save_time_1774596309.webp')
+    }
+}
+
+@media only screen and (max-width: 500px) and (max-height:333px) {
+    .modernizr-no-webp #designstage_element_99562 .designstage_background {
+        background-image:url('../assets/local-cdn/content/pages/19259/designstages/99562_500_background__q_save_time_1774596309.jpg')
+    }
+
+    .modernizr-webp #designstage_element_99562 .designstage_background {
+        background-image: url('../assets/local-cdn/content/pages/19259/designstages/99562_500_background__q_save_time_1774596309.webp')
+    }
+}
+
+#designstage_element_99563.with_bold_text_shadow div,#designstage_element_99563.with_bold_text_shadow a:not(.submitbutton,.bigsubmitbutton),#designstage_element_99563.with_bold_text_shadow a:not(.submitbutton,.bigsubmitbutton):hover,#designstage_element_99563.with_bold_text_shadow p,#designstage_element_99563.with_bold_text_shadow span:not(.mceNonEditable):not(a.submitbutton span):not(a.bigsubmitbutton span),#designstage_element_99563.with_bold_text_shadow h1,#designstage_element_99563.with_bold_text_shadow h2,#designstage_element_99563.with_bold_text_shadow h3,#designstage_element_99563.with_bold_text_shadow h4,#designstage_element_99563.with_bold_text_shadow h5,#designstage_element_99563.with_bold_text_shadow li,#designstage_element_99563.with_light_text_shadow div,#designstage_element_99563.with_light_text_shadow a:not(.submitbutton,.bigsubmitbutton),#designstage_element_99563.with_light_text_shadow a:not(.submitbutton,.bigsubmitbutton):hover,#designstage_element_99563.with_light_text_shadow p,#designstage_element_99563.with_light_text_shadow span:not(.mceNonEditable):not(a.submitbutton span):not(a.bigsubmitbutton span),#designstage_element_99563.with_light_text_shadow h1,#designstage_element_99563.with_light_text_shadow h2,#designstage_element_99563.with_light_text_shadow h3,#designstage_element_99563.with_light_text_shadow h4,#designstage_element_99563.with_light_text_shadow h5,#designstage_element_99563.with_light_text_shadow li {
+    color: #fff
+}
+
+#designstage_element_99563 .designstage_milkyglass div,#designstage_element_99563 .designstage_milkyglass a:not(.submitbutton,.bigsubmitbutton),#designstage_element_99563 .designstage_milkyglass a:not(.submitbutton,.bigsubmitbutton):hover,#designstage_element_99563 .designstage_milkyglass p,#designstage_element_99563 .designstage_milkyglass span:not(.mceNonEditable):not(a.submitbutton span):not(a.bigsubmitbutton span),#designstage_element_99563 .designstage_milkyglass h1,#designstage_element_99563 .designstage_milkyglass h2,#designstage_element_99563 .designstage_milkyglass h3,#designstage_element_99563 .designstage_milkyglass h4,#designstage_element_99563 .designstage_milkyglass h5,#designstage_element_99563 .designstage_milkyglass li,#designstage_element_99563 .designstage_milkyglass li:before {
+    color: #333
+}
+
+#designstage_element_99563 .rating_seal .rating_summary .rating_entry {
+    color: #333
+}
+
+#designstage_element_99563 .rating_seal .rating_summary .rating_text * {
+    color: #777!important
+}
+
+#designstage_element_99563 .designstage_text,#designstage_element_99563 .designstage_background,#designstage_element_99563 .designstage_composeimagecontainer,#designstage_element_99563 .designstage_videocontainer {
+    -webkit-animation-delay: 6s;
+    -moz-animation-delay: 6s;
+    -o-animation-delay: 6s;
+    -ms-animation-delay: 6s;
+    animation-delay: 6s
+}
+
+#designstage_element_99563:not(.designstage_type_composeimage) .designstage_background:after,#designstage_element_99563 .designstage_composeimagecontainer:after,#designstage_element_99563 .designstage_videocontainer:after {
+    box-sizing: border-box;
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 3;
+    background-color: rgba(0,0,0,.25)!important
+}
+
+#designstage_element_99563 .designstage_background {
+    background-position: 75% center
+}
+
+.modernizr-no-webp #designstage_element_99563 .designstage_background {
+    background-image: url('../assets/local-cdn/content/pages/19259/designstages/99563_2000_background__q_save_time_1774596309.jpg')
+}
+
+.modernizr-webp #designstage_element_99563 .designstage_background {
+    background-image: url('../assets/local-cdn/content/pages/19259/designstages/99563_2000_background__q_save_time_1774596309.webp')
+}
+
+@media only screen and (max-width: 1500px) and (max-height:999px) {
+    .modernizr-no-webp #designstage_element_99563 .designstage_background {
+        background-image:url('../assets/local-cdn/content/pages/19259/designstages/99563_1500_background__q_save_time_1774596309.jpg')
+    }
+
+    .modernizr-webp #designstage_element_99563 .designstage_background {
+        background-image: url('../assets/local-cdn/content/pages/19259/designstages/99563_1500_background__q_save_time_1774596309.webp')
+    }
+}
+
+@media only screen and (max-width: 1000px) and (max-height:666px) {
+    .modernizr-no-webp #designstage_element_99563 .designstage_background {
+        background-image:url('../assets/local-cdn/content/pages/19259/designstages/99563_1000_background__q_save_time_1774596309.jpg')
+    }
+
+    .modernizr-webp #designstage_element_99563 .designstage_background {
+        background-image: url('../assets/local-cdn/content/pages/19259/designstages/99563_1000_background__q_save_time_1774596309.webp')
+    }
+}
+
+@media only screen and (max-width: 500px) and (max-height:333px) {
+    .modernizr-no-webp #designstage_element_99563 .designstage_background {
+        background-image:url('../assets/local-cdn/content/pages/19259/designstages/99563_500_background__q_save_time_1774596309.jpg')
+    }
+
+    .modernizr-webp #designstage_element_99563 .designstage_background {
+        background-image: url('../assets/local-cdn/content/pages/19259/designstages/99563_500_background__q_save_time_1774596309.webp')
+    }
+}
+
+@-webkit-keyframes imageAnimation73113 {
+    0% {
+        opacity: 0
+    }
+
+    17% {
+        opacity: 1
+    }
+
+    50% {
+        opacity: 1
+    }
+
+    67% {
+        opacity: 0
+    }
+
+    100% {
+        opacity: 0
+    }
+}
+
+@-webkit-keyframes titleAnimation73113 {
+    0% {
+        opacity: 1;
+        z-index: 1
+    }
+
+    50% {
+        opacity: 1;
+        z-index: 1
+    }
+
+    51% {
+        opacity: 0;
+        z-index: 0
+    }
+
+    100% {
+        opacity: 0;
+        z-index: 0
+    }
+}
+
+@-moz-keyframes imageAnimation73113 {
+    0% {
+        opacity: 0
+    }
+
+    17% {
+        opacity: 1
+    }
+
+    50% {
+        opacity: 1
+    }
+
+    67% {
+        opacity: 0
+    }
+
+    100% {
+        opacity: 0
+    }
+}
+
+@-moz-keyframes titleAnimation73113 {
+    0% {
+        opacity: 1;
+        z-index: 1
+    }
+
+    50% {
+        opacity: 1;
+        z-index: 1
+    }
+
+    51% {
+        opacity: 0;
+        z-index: 0
+    }
+
+    100% {
+        opacity: 0;
+        z-index: 0
+    }
+}
+
+@-o-keyframes imageAnimation73113 {
+    0% {
+        opacity: 0
+    }
+
+    17% {
+        opacity: 1
+    }
+
+    50% {
+        opacity: 1
+    }
+
+    67% {
+        opacity: 0
+    }
+
+    100% {
+        opacity: 0
+    }
+}
+
+@-o-keyframes titleAnimation73113 {
+    0% {
+        opacity: 1;
+        z-index: 1
+    }
+
+    50% {
+        opacity: 1;
+        z-index: 1
+    }
+
+    51% {
+        opacity: 0;
+        z-index: 0
+    }
+
+    100% {
+        opacity: 0;
+        z-index: 0
+    }
+}
+
+@-ms-keyframes imageAnimation73113 {
+    0% {
+        opacity: 0
+    }
+
+    17% {
+        opacity: 1
+    }
+
+    50% {
+        opacity: 1
+    }
+
+    67% {
+        opacity: 0
+    }
+
+    100% {
+        opacity: 0
+    }
+}
+
+@-ms-keyframes titleAnimation73113 {
+    0% {
+        opacity: 1;
+        z-index: 1
+    }
+
+    50% {
+        opacity: 1;
+        z-index: 1
+    }
+
+    51% {
+        opacity: 0;
+        z-index: 0
+    }
+
+    100% {
+        opacity: 0;
+        z-index: 0
+    }
+}
+
+@keyframes imageAnimation73113 {
+    0% {
+        opacity: 0
+    }
+
+    17% {
+        opacity: 1
+    }
+
+    50% {
+        opacity: 1
+    }
+
+    67% {
+        opacity: 0
+    }
+
+    100% {
+        opacity: 0
+    }
+}
+
+@keyframes titleAnimation73113 {
+    0% {
+        opacity: 1;
+        z-index: 1
+    }
+
+    50% {
+        opacity: 1;
+        z-index: 1
+    }
+
+    51% {
+        opacity: 0;
+        z-index: 0
+    }
+
+    100% {
+        opacity: 0;
+        z-index: 0
+    }
+}
+
+#designstage_element_99564.with_bold_text_shadow div,#designstage_element_99564.with_bold_text_shadow a:not(.submitbutton,.bigsubmitbutton),#designstage_element_99564.with_bold_text_shadow a:not(.submitbutton,.bigsubmitbutton):hover,#designstage_element_99564.with_bold_text_shadow p,#designstage_element_99564.with_bold_text_shadow span:not(.mceNonEditable):not(a.submitbutton span):not(a.bigsubmitbutton span),#designstage_element_99564.with_bold_text_shadow h1,#designstage_element_99564.with_bold_text_shadow h2,#designstage_element_99564.with_bold_text_shadow h3,#designstage_element_99564.with_bold_text_shadow h4,#designstage_element_99564.with_bold_text_shadow h5,#designstage_element_99564.with_bold_text_shadow li,#designstage_element_99564.with_light_text_shadow div,#designstage_element_99564.with_light_text_shadow a:not(.submitbutton,.bigsubmitbutton),#designstage_element_99564.with_light_text_shadow a:not(.submitbutton,.bigsubmitbutton):hover,#designstage_element_99564.with_light_text_shadow p,#designstage_element_99564.with_light_text_shadow span:not(.mceNonEditable):not(a.submitbutton span):not(a.bigsubmitbutton span),#designstage_element_99564.with_light_text_shadow h1,#designstage_element_99564.with_light_text_shadow h2,#designstage_element_99564.with_light_text_shadow h3,#designstage_element_99564.with_light_text_shadow h4,#designstage_element_99564.with_light_text_shadow h5,#designstage_element_99564.with_light_text_shadow li {
+    color: #fff
+}
+
+#designstage_element_99564 .designstage_milkyglass div,#designstage_element_99564 .designstage_milkyglass a:not(.submitbutton,.bigsubmitbutton),#designstage_element_99564 .designstage_milkyglass a:not(.submitbutton,.bigsubmitbutton):hover,#designstage_element_99564 .designstage_milkyglass p,#designstage_element_99564 .designstage_milkyglass span:not(.mceNonEditable):not(a.submitbutton span):not(a.bigsubmitbutton span),#designstage_element_99564 .designstage_milkyglass h1,#designstage_element_99564 .designstage_milkyglass h2,#designstage_element_99564 .designstage_milkyglass h3,#designstage_element_99564 .designstage_milkyglass h4,#designstage_element_99564 .designstage_milkyglass h5,#designstage_element_99564 .designstage_milkyglass li,#designstage_element_99564 .designstage_milkyglass li:before {
+    color: #333
+}
+
+#designstage_element_99564 .rating_seal .rating_summary .rating_entry {
+    color: #333
+}
+
+#designstage_element_99564 .rating_seal .rating_summary .rating_text * {
+    color: #777!important
+}
+
+#designstage_element_99564 .designstage_background,#designstage_element_99564 .designstage_text {
+    background-color: #fff
+}
+
+@media only screen and (min-width: 801px) {
+    .cmod.designstagestyle_5050_with_gradient.only5050 #designstage_element_99564.with_textright_text_shadow .designstage_background:before,.cmod.designstagestyle_5050_with_gradient.only5050 #designstage_element_99564.with_textright_text_shadow .designstage_videocontainer:before {
+        content:'';
+        position: absolute;
+        display: block;
+        width: 100%;
+        height: 100%;
+        z-index: 4;
+        background: linear-gradient(90deg,rgba(255,255,255,0) 50%,rgba(255,255,255,1) 100%)
+    }
+
+    .cmod.designstagestyle_5050_with_gradient.only5050 #designstage_element_99564.with_textleft_text_shadow .designstage_background:before,.cmod.designstagestyle_5050_with_gradient.only5050 #designstage_element_99564.with_textleft_text_shadow .designstage_videocontainer:before {
+        content: '';
+        position: absolute;
+        display: block;
+        width: 100%;
+        height: 100%;
+        z-index: 4;
+        background: linear-gradient(90deg,rgba(255,255,255,1) 0%,rgba(255,255,255,0) 50%)
+    }
+}
+
+.cmod.designstagestyle_5050_with_roundedcorners.only5050 #designstage_element_99564.designstage_type_image.with_textright_text_shadow .designstage_background,.cmod.designstagestyle_5050_with_roundedcorners.only5050 #designstage_element_99564.designstage_type_image.with_textleft_text_shadow .designstage_background,.cmod.designstagestyle_5050_with_roundedcorners-l.only5050 #designstage_element_99564.designstage_type_image.with_textright_text_shadow .designstage_background,.cmod.designstagestyle_5050_with_roundedcorners-l.only5050 #designstage_element_99564.designstage_type_image.with_textleft_text_shadow .designstage_background {
+    background-image: none
+}
+
+.cmod.designstagestyle_5050_with_roundedcorners.only5050 #designstage_element_99564.designstage_type_image.with_textright_text_shadow .designstage_background:before,.cmod.designstagestyle_5050_with_roundedcorners.only5050 #designstage_element_99564.designstage_type_image.with_textleft_text_shadow .designstage_background:before,.cmod.designstagestyle_5050_with_roundedcorners-l.only5050 #designstage_element_99564.designstage_type_image.with_textright_text_shadow .designstage_background:before,.cmod.designstagestyle_5050_with_roundedcorners-l.only5050 #designstage_element_99564.designstage_type_image.with_textleft_text_shadow .designstage_background:before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    margin: auto;
+    margin: auto 15px;
+    width: calc(100% - 30px);
+    height: calc(100% - 30px);
+    max-height: 100%;
+    border-radius: 12px;
+    background-size: 100%;
+    background: url('../assets/local-cdn/content/pages/19259/designstages/99564_1000_background__q_save_time_1774596324.jpg') 75% center / cover no-repeat
+}
+
+.cmod.designstagestyle_5050_with_roundedcorners.only5050.photo #designstage_element_99564.designstage_type_image.with_textright_text_shadow .designstage_background:before,.cmod.designstagestyle_5050_with_roundedcorners.only5050.photo #designstage_element_99564.designstage_type_image.with_textleft_text_shadow .designstage_background:before,.cmod.designstagestyle_5050_with_roundedcorners-l.only5050.photo #designstage_element_99564.designstage_type_image.with_textright_text_shadow .designstage_background:before,.cmod.designstagestyle_5050_with_roundedcorners-l.only5050.photo #designstage_element_99564.designstage_type_image.with_textleft_text_shadow .designstage_background:before {
+    aspect-ratio: 3 / 2;
+    height: auto;
+    background-size: 100% auto
+}
+
+.cmod.designstagestyle_5050_with_roundedcorners-l.only5050 #designstage_element_99564.designstage_type_image.with_textright_text_shadow .designstage_background:before,.cmod.designstagestyle_5050_with_roundedcorners-l.only5050 #designstage_element_99564.designstage_type_image.with_textleft_text_shadow .designstage_background:before {
+    border-radius: 28px
+}
+
+@media only screen and (max-width: 800px) {
+    .cmod.designstagestyle_5050_with_roundedcorners.only5050 #designstage_element_99564.designstage_type_image.with_textright_text_shadow .designstage_background,.cmod.designstagestyle_5050_with_roundedcorners.only5050 #designstage_element_99564.designstage_type_image.with_textleft_text_shadow .designstage_background,.cmod.designstagestyle_5050_with_roundedcorners-l.only5050 #designstage_element_99564.designstage_type_image.with_textright_text_shadow .designstage_background,.cmod.designstagestyle_5050_with_roundedcorners-l.only5050 #designstage_element_99564.designstage_type_image.with_textleft_text_shadow .designstage_background {
+        position:relative!important
+    }
+}
+
+#designstage_element_99564:not(.designstage_type_composeimage) .designstage_background:after,#designstage_element_99564 .designstage_composeimagecontainer:after,#designstage_element_99564 .designstage_videocontainer:after {
+    box-sizing: border-box;
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 3;
+    background-color: rgba(0,0,0,.25)!important
+}
+
+#designstage_element_99564 .designstage_background {
+    background-position: 75% center
+}
+
+.modernizr-no-webp .lazy_load_images #designstage_element_99564 .designstage_background {
+    background-image: url('../assets/local-cdn/content/pages/19259/designstages/99564_2000_background__q_save_time_1774596324.jpg')
+}
+
+.modernizr-webp .lazy_load_images #designstage_element_99564 .designstage_background {
+    background-image: url('../assets/local-cdn/content/pages/19259/designstages/99564_2000_background__q_save_time_1774596324.webp')
+}
+
+@media only screen and (max-width: 1500px) and (max-height:999px) {
+    .modernizr-no-webp .lazy_load_images #designstage_element_99564 .designstage_background {
+        background-image:url('../assets/local-cdn/content/pages/19259/designstages/99564_1500_background__q_save_time_1774596324.jpg')
+    }
+
+    .modernizr-webp .lazy_load_images #designstage_element_99564 .designstage_background {
+        background-image: url('../assets/local-cdn/content/pages/19259/designstages/99564_1500_background__q_save_time_1774596324.webp')
+    }
+}
+
+@media only screen and (max-width: 1000px) and (max-height:666px) {
+    .modernizr-no-webp .lazy_load_images #designstage_element_99564 .designstage_background {
+        background-image:url('../assets/local-cdn/content/pages/19259/designstages/99564_1000_background__q_save_time_1774596324.jpg')
+    }
+
+    .modernizr-webp .lazy_load_images #designstage_element_99564 .designstage_background {
+        background-image: url('../assets/local-cdn/content/pages/19259/designstages/99564_1000_background__q_save_time_1774596324.webp')
+    }
+}
+
+@media only screen and (max-width: 500px) and (max-height:333px) {
+    .modernizr-no-webp .lazy_load_images #designstage_element_99564 .designstage_background {
+        background-image:url('../assets/local-cdn/content/pages/19259/designstages/99564_500_background__q_save_time_1774596324.jpg')
+    }
+
+    .modernizr-webp .lazy_load_images #designstage_element_99564 .designstage_background {
+        background-image: url('../assets/local-cdn/content/pages/19259/designstages/99564_500_background__q_save_time_1774596324.webp')
+    }
+}
+
+#designstage_element_99565.with_bold_text_shadow div,#designstage_element_99565.with_bold_text_shadow a:not(.submitbutton,.bigsubmitbutton),#designstage_element_99565.with_bold_text_shadow a:not(.submitbutton,.bigsubmitbutton):hover,#designstage_element_99565.with_bold_text_shadow p,#designstage_element_99565.with_bold_text_shadow span:not(.mceNonEditable):not(a.submitbutton span):not(a.bigsubmitbutton span),#designstage_element_99565.with_bold_text_shadow h1,#designstage_element_99565.with_bold_text_shadow h2,#designstage_element_99565.with_bold_text_shadow h3,#designstage_element_99565.with_bold_text_shadow h4,#designstage_element_99565.with_bold_text_shadow h5,#designstage_element_99565.with_bold_text_shadow li,#designstage_element_99565.with_light_text_shadow div,#designstage_element_99565.with_light_text_shadow a:not(.submitbutton,.bigsubmitbutton),#designstage_element_99565.with_light_text_shadow a:not(.submitbutton,.bigsubmitbutton):hover,#designstage_element_99565.with_light_text_shadow p,#designstage_element_99565.with_light_text_shadow span:not(.mceNonEditable):not(a.submitbutton span):not(a.bigsubmitbutton span),#designstage_element_99565.with_light_text_shadow h1,#designstage_element_99565.with_light_text_shadow h2,#designstage_element_99565.with_light_text_shadow h3,#designstage_element_99565.with_light_text_shadow h4,#designstage_element_99565.with_light_text_shadow h5,#designstage_element_99565.with_light_text_shadow li {
+    color: #fff
+}
+
+#designstage_element_99565 .designstage_milkyglass div,#designstage_element_99565 .designstage_milkyglass a:not(.submitbutton,.bigsubmitbutton),#designstage_element_99565 .designstage_milkyglass a:not(.submitbutton,.bigsubmitbutton):hover,#designstage_element_99565 .designstage_milkyglass p,#designstage_element_99565 .designstage_milkyglass span:not(.mceNonEditable):not(a.submitbutton span):not(a.bigsubmitbutton span),#designstage_element_99565 .designstage_milkyglass h1,#designstage_element_99565 .designstage_milkyglass h2,#designstage_element_99565 .designstage_milkyglass h3,#designstage_element_99565 .designstage_milkyglass h4,#designstage_element_99565 .designstage_milkyglass h5,#designstage_element_99565 .designstage_milkyglass li,#designstage_element_99565 .designstage_milkyglass li:before {
+    color: #333
+}
+
+#designstage_element_99565 .rating_seal .rating_summary .rating_entry {
+    color: #333
+}
+
+#designstage_element_99565 .rating_seal .rating_summary .rating_text * {
+    color: #777!important
+}
+
+#designstage_element_99565 .designstage_background,#designstage_element_99565 .designstage_text {
+    background-color: #fff
+}
+
+@media only screen and (min-width: 801px) {
+    .cmod.designstagestyle_5050_with_gradient.only5050 #designstage_element_99565.with_textright_text_shadow .designstage_background:before,.cmod.designstagestyle_5050_with_gradient.only5050 #designstage_element_99565.with_textright_text_shadow .designstage_videocontainer:before {
+        content:'';
+        position: absolute;
+        display: block;
+        width: 100%;
+        height: 100%;
+        z-index: 4;
+        background: linear-gradient(90deg,rgba(255,255,255,0) 50%,rgba(255,255,255,1) 100%)
+    }
+
+    .cmod.designstagestyle_5050_with_gradient.only5050 #designstage_element_99565.with_textleft_text_shadow .designstage_background:before,.cmod.designstagestyle_5050_with_gradient.only5050 #designstage_element_99565.with_textleft_text_shadow .designstage_videocontainer:before {
+        content: '';
+        position: absolute;
+        display: block;
+        width: 100%;
+        height: 100%;
+        z-index: 4;
+        background: linear-gradient(90deg,rgba(255,255,255,1) 0%,rgba(255,255,255,0) 50%)
+    }
+}
+
+.cmod.designstagestyle_5050_with_roundedcorners.only5050 #designstage_element_99565.designstage_type_image.with_textright_text_shadow .designstage_background,.cmod.designstagestyle_5050_with_roundedcorners.only5050 #designstage_element_99565.designstage_type_image.with_textleft_text_shadow .designstage_background,.cmod.designstagestyle_5050_with_roundedcorners-l.only5050 #designstage_element_99565.designstage_type_image.with_textright_text_shadow .designstage_background,.cmod.designstagestyle_5050_with_roundedcorners-l.only5050 #designstage_element_99565.designstage_type_image.with_textleft_text_shadow .designstage_background {
+    background-image: none
+}
+
+.cmod.designstagestyle_5050_with_roundedcorners.only5050 #designstage_element_99565.designstage_type_image.with_textright_text_shadow .designstage_background:before,.cmod.designstagestyle_5050_with_roundedcorners.only5050 #designstage_element_99565.designstage_type_image.with_textleft_text_shadow .designstage_background:before,.cmod.designstagestyle_5050_with_roundedcorners-l.only5050 #designstage_element_99565.designstage_type_image.with_textright_text_shadow .designstage_background:before,.cmod.designstagestyle_5050_with_roundedcorners-l.only5050 #designstage_element_99565.designstage_type_image.with_textleft_text_shadow .designstage_background:before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    margin: auto;
+    margin: auto 15px;
+    width: calc(100% - 30px);
+    height: calc(100% - 30px);
+    max-height: 100%;
+    border-radius: 12px;
+    background-size: 100%;
+    background: url('../assets/local-cdn/content/pages/19259/designstages/99565_1000_background__q_save_time_1774596337.jpg') center top / cover no-repeat
+}
+
+.cmod.designstagestyle_5050_with_roundedcorners.only5050.photo #designstage_element_99565.designstage_type_image.with_textright_text_shadow .designstage_background:before,.cmod.designstagestyle_5050_with_roundedcorners.only5050.photo #designstage_element_99565.designstage_type_image.with_textleft_text_shadow .designstage_background:before,.cmod.designstagestyle_5050_with_roundedcorners-l.only5050.photo #designstage_element_99565.designstage_type_image.with_textright_text_shadow .designstage_background:before,.cmod.designstagestyle_5050_with_roundedcorners-l.only5050.photo #designstage_element_99565.designstage_type_image.with_textleft_text_shadow .designstage_background:before {
+    aspect-ratio: 3 / 2;
+    height: auto;
+    background-size: 100% auto
+}
+
+.cmod.designstagestyle_5050_with_roundedcorners-l.only5050 #designstage_element_99565.designstage_type_image.with_textright_text_shadow .designstage_background:before,.cmod.designstagestyle_5050_with_roundedcorners-l.only5050 #designstage_element_99565.designstage_type_image.with_textleft_text_shadow .designstage_background:before {
+    border-radius: 28px
+}
+
+@media only screen and (max-width: 800px) {
+    .cmod.designstagestyle_5050_with_roundedcorners.only5050 #designstage_element_99565.designstage_type_image.with_textright_text_shadow .designstage_background,.cmod.designstagestyle_5050_with_roundedcorners.only5050 #designstage_element_99565.designstage_type_image.with_textleft_text_shadow .designstage_background,.cmod.designstagestyle_5050_with_roundedcorners-l.only5050 #designstage_element_99565.designstage_type_image.with_textright_text_shadow .designstage_background,.cmod.designstagestyle_5050_with_roundedcorners-l.only5050 #designstage_element_99565.designstage_type_image.with_textleft_text_shadow .designstage_background {
+        position:relative!important
+    }
+}
+
+#designstage_element_99565 .designstage_background {
+    background-position: center top
+}
+
+.modernizr-no-webp .lazy_load_images #designstage_element_99565 .designstage_background {
+    background-image: url('../assets/local-cdn/content/pages/19259/designstages/99565_2000_background__q_save_time_1774596337.jpg')
+}
+
+.modernizr-webp .lazy_load_images #designstage_element_99565 .designstage_background {
+    background-image: url('../assets/local-cdn/content/pages/19259/designstages/99565_2000_background__q_save_time_1774596337.webp')
+}
+
+@media only screen and (max-width: 1500px) and (max-height:999px) {
+    .modernizr-no-webp .lazy_load_images #designstage_element_99565 .designstage_background {
+        background-image:url('../assets/local-cdn/content/pages/19259/designstages/99565_1500_background__q_save_time_1774596337.jpg')
+    }
+
+    .modernizr-webp .lazy_load_images #designstage_element_99565 .designstage_background {
+        background-image: url('../assets/local-cdn/content/pages/19259/designstages/99565_1500_background__q_save_time_1774596337.webp')
+    }
+}
+
+@media only screen and (max-width: 1000px) and (max-height:666px) {
+    .modernizr-no-webp .lazy_load_images #designstage_element_99565 .designstage_background {
+        background-image:url('../assets/local-cdn/content/pages/19259/designstages/99565_1000_background__q_save_time_1774596337.jpg')
+    }
+
+    .modernizr-webp .lazy_load_images #designstage_element_99565 .designstage_background {
+        background-image: url('../assets/local-cdn/content/pages/19259/designstages/99565_1000_background__q_save_time_1774596337.webp')
+    }
+}
+
+@media only screen and (max-width: 500px) and (max-height:333px) {
+    .modernizr-no-webp .lazy_load_images #designstage_element_99565 .designstage_background {
+        background-image:url('../assets/local-cdn/content/pages/19259/designstages/99565_500_background__q_save_time_1774596337.jpg')
+    }
+
+    .modernizr-webp .lazy_load_images #designstage_element_99565 .designstage_background {
+        background-image: url('../assets/local-cdn/content/pages/19259/designstages/99565_500_background__q_save_time_1774596337.webp')
+    }
+}
+
+#designstage_element_99566.with_bold_text_shadow div,#designstage_element_99566.with_bold_text_shadow a:not(.submitbutton,.bigsubmitbutton),#designstage_element_99566.with_bold_text_shadow a:not(.submitbutton,.bigsubmitbutton):hover,#designstage_element_99566.with_bold_text_shadow p,#designstage_element_99566.with_bold_text_shadow span:not(.mceNonEditable):not(a.submitbutton span):not(a.bigsubmitbutton span),#designstage_element_99566.with_bold_text_shadow h1,#designstage_element_99566.with_bold_text_shadow h2,#designstage_element_99566.with_bold_text_shadow h3,#designstage_element_99566.with_bold_text_shadow h4,#designstage_element_99566.with_bold_text_shadow h5,#designstage_element_99566.with_bold_text_shadow li,#designstage_element_99566.with_light_text_shadow div,#designstage_element_99566.with_light_text_shadow a:not(.submitbutton,.bigsubmitbutton),#designstage_element_99566.with_light_text_shadow a:not(.submitbutton,.bigsubmitbutton):hover,#designstage_element_99566.with_light_text_shadow p,#designstage_element_99566.with_light_text_shadow span:not(.mceNonEditable):not(a.submitbutton span):not(a.bigsubmitbutton span),#designstage_element_99566.with_light_text_shadow h1,#designstage_element_99566.with_light_text_shadow h2,#designstage_element_99566.with_light_text_shadow h3,#designstage_element_99566.with_light_text_shadow h4,#designstage_element_99566.with_light_text_shadow h5,#designstage_element_99566.with_light_text_shadow li {
+    color: #fff
+}
+
+#designstage_element_99566 .designstage_milkyglass div,#designstage_element_99566 .designstage_milkyglass a:not(.submitbutton,.bigsubmitbutton),#designstage_element_99566 .designstage_milkyglass a:not(.submitbutton,.bigsubmitbutton):hover,#designstage_element_99566 .designstage_milkyglass p,#designstage_element_99566 .designstage_milkyglass span:not(.mceNonEditable):not(a.submitbutton span):not(a.bigsubmitbutton span),#designstage_element_99566 .designstage_milkyglass h1,#designstage_element_99566 .designstage_milkyglass h2,#designstage_element_99566 .designstage_milkyglass h3,#designstage_element_99566 .designstage_milkyglass h4,#designstage_element_99566 .designstage_milkyglass h5,#designstage_element_99566 .designstage_milkyglass li,#designstage_element_99566 .designstage_milkyglass li:before {
+    color: #333
+}
+
+#designstage_element_99566 .rating_seal .rating_summary .rating_entry {
+    color: #333
+}
+
+#designstage_element_99566 .rating_seal .rating_summary .rating_text * {
+    color: #777!important
+}
+
+#designstage_element_99566 .designstage_background,#designstage_element_99566 .designstage_text {
+    background-color: #fff
+}
+
+@media only screen and (min-width: 801px) {
+    .cmod.designstagestyle_5050_with_gradient.only5050 #designstage_element_99566.with_textright_text_shadow .designstage_background:before,.cmod.designstagestyle_5050_with_gradient.only5050 #designstage_element_99566.with_textright_text_shadow .designstage_videocontainer:before {
+        content:'';
+        position: absolute;
+        display: block;
+        width: 100%;
+        height: 100%;
+        z-index: 4;
+        background: linear-gradient(90deg,rgba(255,255,255,0) 50%,rgba(255,255,255,1) 100%)
+    }
+
+    .cmod.designstagestyle_5050_with_gradient.only5050 #designstage_element_99566.with_textleft_text_shadow .designstage_background:before,.cmod.designstagestyle_5050_with_gradient.only5050 #designstage_element_99566.with_textleft_text_shadow .designstage_videocontainer:before {
+        content: '';
+        position: absolute;
+        display: block;
+        width: 100%;
+        height: 100%;
+        z-index: 4;
+        background: linear-gradient(90deg,rgba(255,255,255,1) 0%,rgba(255,255,255,0) 50%)
+    }
+}
+
+.cmod.designstagestyle_5050_with_roundedcorners.only5050 #designstage_element_99566.designstage_type_image.with_textright_text_shadow .designstage_background,.cmod.designstagestyle_5050_with_roundedcorners.only5050 #designstage_element_99566.designstage_type_image.with_textleft_text_shadow .designstage_background,.cmod.designstagestyle_5050_with_roundedcorners-l.only5050 #designstage_element_99566.designstage_type_image.with_textright_text_shadow .designstage_background,.cmod.designstagestyle_5050_with_roundedcorners-l.only5050 #designstage_element_99566.designstage_type_image.with_textleft_text_shadow .designstage_background {
+    background-image: none
+}
+
+.cmod.designstagestyle_5050_with_roundedcorners.only5050 #designstage_element_99566.designstage_type_image.with_textright_text_shadow .designstage_background:before,.cmod.designstagestyle_5050_with_roundedcorners.only5050 #designstage_element_99566.designstage_type_image.with_textleft_text_shadow .designstage_background:before,.cmod.designstagestyle_5050_with_roundedcorners-l.only5050 #designstage_element_99566.designstage_type_image.with_textright_text_shadow .designstage_background:before,.cmod.designstagestyle_5050_with_roundedcorners-l.only5050 #designstage_element_99566.designstage_type_image.with_textleft_text_shadow .designstage_background:before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    margin: auto;
+    margin: auto 15px;
+    width: calc(100% - 30px);
+    height: calc(100% - 30px);
+    max-height: 100%;
+    border-radius: 12px;
+    background-size: 100%;
+    background: url('../assets/local-cdn/content/pages/19259/designstages/99566_1000_background__q_save_time_1774596355.jpg') right center / cover no-repeat
+}
+
+.cmod.designstagestyle_5050_with_roundedcorners.only5050.photo #designstage_element_99566.designstage_type_image.with_textright_text_shadow .designstage_background:before,.cmod.designstagestyle_5050_with_roundedcorners.only5050.photo #designstage_element_99566.designstage_type_image.with_textleft_text_shadow .designstage_background:before,.cmod.designstagestyle_5050_with_roundedcorners-l.only5050.photo #designstage_element_99566.designstage_type_image.with_textright_text_shadow .designstage_background:before,.cmod.designstagestyle_5050_with_roundedcorners-l.only5050.photo #designstage_element_99566.designstage_type_image.with_textleft_text_shadow .designstage_background:before {
+    aspect-ratio: 3 / 2;
+    height: auto;
+    background-size: 100% auto
+}
+
+.cmod.designstagestyle_5050_with_roundedcorners-l.only5050 #designstage_element_99566.designstage_type_image.with_textright_text_shadow .designstage_background:before,.cmod.designstagestyle_5050_with_roundedcorners-l.only5050 #designstage_element_99566.designstage_type_image.with_textleft_text_shadow .designstage_background:before {
+    border-radius: 28px
+}
+
+@media only screen and (max-width: 800px) {
+    .cmod.designstagestyle_5050_with_roundedcorners.only5050 #designstage_element_99566.designstage_type_image.with_textright_text_shadow .designstage_background,.cmod.designstagestyle_5050_with_roundedcorners.only5050 #designstage_element_99566.designstage_type_image.with_textleft_text_shadow .designstage_background,.cmod.designstagestyle_5050_with_roundedcorners-l.only5050 #designstage_element_99566.designstage_type_image.with_textright_text_shadow .designstage_background,.cmod.designstagestyle_5050_with_roundedcorners-l.only5050 #designstage_element_99566.designstage_type_image.with_textleft_text_shadow .designstage_background {
+        position:relative!important
+    }
+}
+
+#designstage_element_99566 .designstage_background {
+    background-position: right center
+}
+
+.modernizr-no-webp .lazy_load_images #designstage_element_99566 .designstage_background {
+    background-image: url('../assets/local-cdn/content/pages/19259/designstages/99566_2000_background__q_save_time_1774596355.jpg')
+}
+
+.modernizr-webp .lazy_load_images #designstage_element_99566 .designstage_background {
+    background-image: url('../assets/local-cdn/content/pages/19259/designstages/99566_2000_background__q_save_time_1774596355.webp')
+}
+
+@media only screen and (max-width: 1500px) and (max-height:999px) {
+    .modernizr-no-webp .lazy_load_images #designstage_element_99566 .designstage_background {
+        background-image:url('../assets/local-cdn/content/pages/19259/designstages/99566_1500_background__q_save_time_1774596355.jpg')
+    }
+
+    .modernizr-webp .lazy_load_images #designstage_element_99566 .designstage_background {
+        background-image: url('../assets/local-cdn/content/pages/19259/designstages/99566_1500_background__q_save_time_1774596355.webp')
+    }
+}
+
+@media only screen and (max-width: 1000px) and (max-height:666px) {
+    .modernizr-no-webp .lazy_load_images #designstage_element_99566 .designstage_background {
+        background-image:url('../assets/local-cdn/content/pages/19259/designstages/99566_1000_background__q_save_time_1774596355.jpg')
+    }
+
+    .modernizr-webp .lazy_load_images #designstage_element_99566 .designstage_background {
+        background-image: url('../assets/local-cdn/content/pages/19259/designstages/99566_1000_background__q_save_time_1774596355.webp')
+    }
+}
+
+@media only screen and (max-width: 500px) and (max-height:333px) {
+    .modernizr-no-webp .lazy_load_images #designstage_element_99566 .designstage_background {
+        background-image:url('../assets/local-cdn/content/pages/19259/designstages/99566_500_background__q_save_time_1774596355.jpg')
+    }
+
+    .modernizr-webp .lazy_load_images #designstage_element_99566 .designstage_background {
+        background-image: url('../assets/local-cdn/content/pages/19259/designstages/99566_500_background__q_save_time_1774596355.webp')
+    }
+}
+
+#designstage_element_99567.with_bold_text_shadow div,#designstage_element_99567.with_bold_text_shadow a:not(.submitbutton,.bigsubmitbutton),#designstage_element_99567.with_bold_text_shadow a:not(.submitbutton,.bigsubmitbutton):hover,#designstage_element_99567.with_bold_text_shadow p,#designstage_element_99567.with_bold_text_shadow span:not(.mceNonEditable):not(a.submitbutton span):not(a.bigsubmitbutton span),#designstage_element_99567.with_bold_text_shadow h1,#designstage_element_99567.with_bold_text_shadow h2,#designstage_element_99567.with_bold_text_shadow h3,#designstage_element_99567.with_bold_text_shadow h4,#designstage_element_99567.with_bold_text_shadow h5,#designstage_element_99567.with_bold_text_shadow li,#designstage_element_99567.with_light_text_shadow div,#designstage_element_99567.with_light_text_shadow a:not(.submitbutton,.bigsubmitbutton),#designstage_element_99567.with_light_text_shadow a:not(.submitbutton,.bigsubmitbutton):hover,#designstage_element_99567.with_light_text_shadow p,#designstage_element_99567.with_light_text_shadow span:not(.mceNonEditable):not(a.submitbutton span):not(a.bigsubmitbutton span),#designstage_element_99567.with_light_text_shadow h1,#designstage_element_99567.with_light_text_shadow h2,#designstage_element_99567.with_light_text_shadow h3,#designstage_element_99567.with_light_text_shadow h4,#designstage_element_99567.with_light_text_shadow h5,#designstage_element_99567.with_light_text_shadow li {
+    color: #fff
+}
+
+#designstage_element_99567 .designstage_milkyglass div,#designstage_element_99567 .designstage_milkyglass a:not(.submitbutton,.bigsubmitbutton),#designstage_element_99567 .designstage_milkyglass a:not(.submitbutton,.bigsubmitbutton):hover,#designstage_element_99567 .designstage_milkyglass p,#designstage_element_99567 .designstage_milkyglass span:not(.mceNonEditable):not(a.submitbutton span):not(a.bigsubmitbutton span),#designstage_element_99567 .designstage_milkyglass h1,#designstage_element_99567 .designstage_milkyglass h2,#designstage_element_99567 .designstage_milkyglass h3,#designstage_element_99567 .designstage_milkyglass h4,#designstage_element_99567 .designstage_milkyglass h5,#designstage_element_99567 .designstage_milkyglass li,#designstage_element_99567 .designstage_milkyglass li:before {
+    color: #333
+}
+
+#designstage_element_99567 .rating_seal .rating_summary .rating_entry {
+    color: #333
+}
+
+#designstage_element_99567 .rating_seal .rating_summary .rating_text * {
+    color: #777!important
+}
+
+#designstage_element_99567 .designstage_background,#designstage_element_99567 .designstage_text {
+    background-color: #fff
+}
+
+@media only screen and (min-width: 801px) {
+    .cmod.designstagestyle_5050_with_gradient.only5050 #designstage_element_99567.with_textright_text_shadow .designstage_background:before,.cmod.designstagestyle_5050_with_gradient.only5050 #designstage_element_99567.with_textright_text_shadow .designstage_videocontainer:before {
+        content:'';
+        position: absolute;
+        display: block;
+        width: 100%;
+        height: 100%;
+        z-index: 4;
+        background: linear-gradient(90deg,rgba(255,255,255,0) 50%,rgba(255,255,255,1) 100%)
+    }
+
+    .cmod.designstagestyle_5050_with_gradient.only5050 #designstage_element_99567.with_textleft_text_shadow .designstage_background:before,.cmod.designstagestyle_5050_with_gradient.only5050 #designstage_element_99567.with_textleft_text_shadow .designstage_videocontainer:before {
+        content: '';
+        position: absolute;
+        display: block;
+        width: 100%;
+        height: 100%;
+        z-index: 4;
+        background: linear-gradient(90deg,rgba(255,255,255,1) 0%,rgba(255,255,255,0) 50%)
+    }
+}
+
+.cmod.designstagestyle_5050_with_roundedcorners.only5050 #designstage_element_99567.designstage_type_image.with_textright_text_shadow .designstage_background,.cmod.designstagestyle_5050_with_roundedcorners.only5050 #designstage_element_99567.designstage_type_image.with_textleft_text_shadow .designstage_background,.cmod.designstagestyle_5050_with_roundedcorners-l.only5050 #designstage_element_99567.designstage_type_image.with_textright_text_shadow .designstage_background,.cmod.designstagestyle_5050_with_roundedcorners-l.only5050 #designstage_element_99567.designstage_type_image.with_textleft_text_shadow .designstage_background {
+    background-image: none
+}
+
+.cmod.designstagestyle_5050_with_roundedcorners.only5050 #designstage_element_99567.designstage_type_image.with_textright_text_shadow .designstage_background:before,.cmod.designstagestyle_5050_with_roundedcorners.only5050 #designstage_element_99567.designstage_type_image.with_textleft_text_shadow .designstage_background:before,.cmod.designstagestyle_5050_with_roundedcorners-l.only5050 #designstage_element_99567.designstage_type_image.with_textright_text_shadow .designstage_background:before,.cmod.designstagestyle_5050_with_roundedcorners-l.only5050 #designstage_element_99567.designstage_type_image.with_textleft_text_shadow .designstage_background:before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    margin: auto;
+    margin: auto 15px;
+    width: calc(100% - 30px);
+    height: calc(100% - 30px);
+    max-height: 100%;
+    border-radius: 12px;
+    background-size: 100%;
+    background: url('../assets/local-cdn/content/pages/19259/designstages/99567_1000_background__q_save_time_1774596391.jpg') right center / cover no-repeat
+}
+
+.cmod.designstagestyle_5050_with_roundedcorners.only5050.photo #designstage_element_99567.designstage_type_image.with_textright_text_shadow .designstage_background:before,.cmod.designstagestyle_5050_with_roundedcorners.only5050.photo #designstage_element_99567.designstage_type_image.with_textleft_text_shadow .designstage_background:before,.cmod.designstagestyle_5050_with_roundedcorners-l.only5050.photo #designstage_element_99567.designstage_type_image.with_textright_text_shadow .designstage_background:before,.cmod.designstagestyle_5050_with_roundedcorners-l.only5050.photo #designstage_element_99567.designstage_type_image.with_textleft_text_shadow .designstage_background:before {
+    aspect-ratio: 3 / 2;
+    height: auto;
+    background-size: 100% auto
+}
+
+.cmod.designstagestyle_5050_with_roundedcorners-l.only5050 #designstage_element_99567.designstage_type_image.with_textright_text_shadow .designstage_background:before,.cmod.designstagestyle_5050_with_roundedcorners-l.only5050 #designstage_element_99567.designstage_type_image.with_textleft_text_shadow .designstage_background:before {
+    border-radius: 28px
+}
+
+@media only screen and (max-width: 800px) {
+    .cmod.designstagestyle_5050_with_roundedcorners.only5050 #designstage_element_99567.designstage_type_image.with_textright_text_shadow .designstage_background,.cmod.designstagestyle_5050_with_roundedcorners.only5050 #designstage_element_99567.designstage_type_image.with_textleft_text_shadow .designstage_background,.cmod.designstagestyle_5050_with_roundedcorners-l.only5050 #designstage_element_99567.designstage_type_image.with_textright_text_shadow .designstage_background,.cmod.designstagestyle_5050_with_roundedcorners-l.only5050 #designstage_element_99567.designstage_type_image.with_textleft_text_shadow .designstage_background {
+        position:relative!important
+    }
+}
+
+#designstage_element_99567 .designstage_background {
+    background-position: right center
+}
+
+.modernizr-no-webp .lazy_load_images #designstage_element_99567 .designstage_background {
+    background-image: url('../assets/local-cdn/content/pages/19259/designstages/99567_2000_background__q_save_time_1774596391.jpg')
+}
+
+.modernizr-webp .lazy_load_images #designstage_element_99567 .designstage_background {
+    background-image: url('../assets/local-cdn/content/pages/19259/designstages/99567_2000_background__q_save_time_1774596391.webp')
+}
+
+@media only screen and (max-width: 1500px) and (max-height:1079px) {
+    .modernizr-no-webp .lazy_load_images #designstage_element_99567 .designstage_background {
+        background-image:url('../assets/local-cdn/content/pages/19259/designstages/99567_1500_background__q_save_time_1774596391.jpg')
+    }
+
+    .modernizr-webp .lazy_load_images #designstage_element_99567 .designstage_background {
+        background-image: url('../assets/local-cdn/content/pages/19259/designstages/99567_1500_background__q_save_time_1774596391.webp')
+    }
+}
+
+@media only screen and (max-width: 1000px) and (max-height:719px) {
+    .modernizr-no-webp .lazy_load_images #designstage_element_99567 .designstage_background {
+        background-image:url('../assets/local-cdn/content/pages/19259/designstages/99567_1000_background__q_save_time_1774596391.jpg')
+    }
+
+    .modernizr-webp .lazy_load_images #designstage_element_99567 .designstage_background {
+        background-image: url('../assets/local-cdn/content/pages/19259/designstages/99567_1000_background__q_save_time_1774596391.webp')
+    }
+}
+
+@media only screen and (max-width: 500px) and (max-height:359px) {
+    .modernizr-no-webp .lazy_load_images #designstage_element_99567 .designstage_background {
+        background-image:url('../assets/local-cdn/content/pages/19259/designstages/99567_500_background__q_save_time_1774596391.jpg')
+    }
+
+    .modernizr-webp .lazy_load_images #designstage_element_99567 .designstage_background {
+        background-image: url('../assets/local-cdn/content/pages/19259/designstages/99567_500_background__q_save_time_1774596391.webp')
+    }
+}

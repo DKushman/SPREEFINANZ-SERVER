@@ -1,0 +1,161 @@
+@charset "utf-8";
+
+/* CSS Document */
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+.tooltip {
+	width: 200px;
+	position: relative;
+	left: 20px;
+	top: 0px;
+	display: none;
+	z-index: 101;
+	text-align: left;
+}
+
+.tooltipSelect {
+	width: 200px;
+	position: relative;
+	left: 492px;
+	top: 0px;
+	*top: -27px; /* IE7 and below */  
+	display: none;
+	z-index: 101;
+	text-align: left;
+}
+
+.tooltipAnchorDisabled {
+	position: absolute;
+	z-index:1000;
+	top:740px;
+	top : 730px\9; /* IE8 and below */ 
+	*top: 765px; /* IE7 and below */  
+	_top : 775px; /* IE6 */
+	margin-left:244px;
+	height:24px;
+	width:268px;
+	background-color:#FFFFFF;
+}
+
+.tooltipDisabled {
+	width: 200px;
+	position: relative;
+	left: 502px;
+	top: 0px;
+	*top: -25px; /* IE7 and below */  
+	display: none;
+	z-index: 101;
+	text-align: left;
+}
+
+.tooltipTop {
+	background-image: url(../images/tooltip-box-top.gif);
+	background-repeat: no-repeat;
+	width: 146px;
+	z-index: 101;
+}
+
+.tooltipMiddle {
+	width: 142px;
+	background-color: #fbfbf9;
+	border-left: 2px solid #e1ded8;
+	border-right: 2px solid #e1ded8;
+	z-index: 101;
+}
+
+.tooltipBottom {
+	background-image: url(../images/tooltip-box-bottom.gif);
+	background-repeat: no-repeat;
+	width: 146px;
+	height: 5px;
+	z-index: 101;
+}
+
+.tooltipInner {
+	background-color: #e1f4fe;
+	border: 1px solid #3CB6FB;
+	font-size: 1em;
+	color: #333;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+	z-index: 101;
+}
+
+.tooltip p {
+	padding: 5px;
+	margin-top: 0;
+	font-weight: normal;
+}
+
+.tooltipBoxCard {
+	background-color: #e1f4fe;
+	border: 1px solid #999999;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+	font-size: 1em;
+	padding: 5px;
+	color: #999;
+	position: absolute;
+	z-index: 1000;
+	margin-top: 10px;
+	margin-top: -60px;
+}
+
+.tooltipBox {
+	background-color: #e1f4fe;
+	border: 1px solid #999999;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+	font-size: 1em;
+	font-weight: normal;
+	padding: 10px;
+	width: 120px;
+	color: #999;
+	position: absolute;
+	z-index: 1000;
+	margin-top: -20px;
+	min-height: 80px;
+	word-wrap: break-word;
+}
+
+.tooltipArrow {
+	float: left;
+	background-image: url(../../images/toolTipArrowTrans.gif);
+	background-repeat: no-repeat;
+	background-position: left center;
+	width: 19px;
+	height: 29px;
+	position: absolute;
+	z-index: 1001;
+	margin-left: -15px;
+}
+
+.tooltipArrowOnGrey {
+	float: left;
+	background-image: url(../../images/toolTipArrowTrans.gif);
+	background-repeat: no-repeat;
+	background-position: left center;
+	width: 19px;
+	height: 29px;
+	position: absolute;
+	z-index: 1001;
+	margin-left: -15px;
+}
+
+.tooltipArrowOnWhite {
+	float: left;
+	background-image: url(../images/toolTipArrow7.gif);
+	background-repeat: no-repeat;
+	background-position: left center;
+	width: 19px;
+	height: 29px;
+	position: absolute;
+	z-index: 1001;
+	margin-left: -15px;
+}

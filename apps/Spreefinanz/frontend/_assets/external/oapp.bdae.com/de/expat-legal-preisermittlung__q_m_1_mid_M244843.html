@@ -1,0 +1,632 @@
+
+<!doctype html>
+<html lang="de" class="">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+
+    
+            <title>Expat Legal Onlineantrag und Preisermittlung</title>
+        
+
+
+    
+                                                    
+                                    <!-- UserCentrics Script -->
+            <script>window.UC_UI_DOMAINS = {crossDomainConsentSharingIFrame: 'https://bdae.com/cross-domain-bridge.html'};</script><script id="usercentrics-cmp" src="https://app.usercentrics.eu/browser-ui/latest/loader.js" data-settings-id="0ysgLqgsJ" async></script>
+            <!-- End UserCentrics Script -->
+
+            <!-- Matomo Tag Manager -->
+            <script>
+                var _mtm = window._mtm = window._mtm || [];
+                _mtm.push({
+                    'oapp.page': "Basispreisermittlung",
+                    'oapp.product': "Expat Legal",
+                    'mtm.startTime': (new Date().getTime()),
+                    'event': 'mtm.Start',
+                });
+                var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+                g.async=true; g.src='https://matomo.bdae.com/js/container_DMCmkjzl.js'; s.parentNode.insertBefore(g,s);
+            </script>
+            <!-- End Matomo Tag Manager -->
+        
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <meta name="author" content="LEANATIC GmbH & Co. KG; https://www.leanatic.com/">
+
+    <!-- Favicons -->
+    <link rel="icon" type="image/png" sizes="114x114" href="/apple_touch_icon.png">
+    <link rel="icon" type="image/x-icon" sizes="16x16" href="/favicon.ico">
+
+    <!-- Styles -->
+            <link rel="stylesheet" href="/assets/app.ff701537.css">
+    
+</head>
+<body class="preload catgory-code-G016 ">
+    
+    <header>
+    <nav class="navbar is-transparent" role="navigation" aria-label="main navigation">
+        <div class="container">
+
+            <div class="navbar-brand">
+                <a class="" onclick="openDialog('leave-form', event)">
+                    <img src="/assets/img/logo-bdae@2x.8c83dbc6.png" width="150" height="40">
+                </a>
+
+                <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false"  onclick="openDialog('mobile-menu', event)">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </a>
+            </div>
+
+            <div id="navbarBasicExample" class="navbar-menu">
+
+                
+            </div>
+
+            
+        </div>
+    </nav>
+</header>
+
+    
+<div class="modal" id="dialog-leave-form">
+    <div class="modal-background"></div>
+    <div class="modal-content">
+        <div class="box">
+            <p class="mb-4">Sind Sie sicher, dass Sie den Onlineantrag verlassen möchten? <br>Bereits gemachte Angaben gehen beim Verlassen verloren.</p>
+            <div class="is-flex is-justify-content-space-around">
+                <button type="button" class="button is-primary" onclick="closeDialog()">
+                    <span>
+                        im Onlineantrag bleiben
+                    </span>
+                </button>
+
+                <a href="https://www.bdae.com/" class="button is-light">
+                    <span>
+                        Onlineantrag verlassen
+                    </span>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal" id="dialog-mobile-menu">
+    <div class="modal-background"></div>
+    <div class="modal-content">
+        <div class="box">
+            <ul>
+                
+                
+                                    <li><a role="button" onclick="openDialog('questions-form', event)"><i class="icon chat"></i><span>Kundenservice kontaktieren</span></a></li>
+                            </ul>
+        </div>
+    </div>
+</div>
+
+    <main class="container">
+            
+        <script>window.preventAlpineStart = true;</script>
+
+        
+                
+    
+            <form name="base_price" method="post" data-form="base-price" novalidate="novalidate">
+
+        <div x-data="window.basePriceFinder" class="base-price-finder G016" id="basepricefinder">
+
+            <h1 class="base-price-finder-title">
+                
+            </h1>
+
+                                    
+                        <template x-if="showPersonsRow()">
+    <div class="persons">
+
+        <template x-for="(person, index) in persons">
+            <div class="person block" :data-cy="`person-${index + 1}`">
+                <div class="is-relative">
+                    <div x-bind:class="`tooltip tooltip-person-${index}-deductible`">
+    Gewünschter Selbstbehalt Tooltip G016
+    <div class="tooltip__arrow" data-popper-arrow></div>
+</div>
+
+<div x-bind:class="`tooltip tooltip-person-${index}-start`">
+    Start Date Tooltip G016
+    <div class="tooltip__arrow" data-popper-arrow></div>
+</div>
+
+    <div x-bind:class="`tooltip tooltip-person-${index}-birth`">
+        Geburtsdatum Tooltip G016
+        <div class="tooltip__arrow" data-popper-arrow></div>
+    </div>
+                </div>
+
+                <div class="l-card">
+
+                    <div class="l-card-header-wrapper">
+    <header class="l-card-header">
+        
+        <div class="l-card-header-image">
+
+            <img class="l-card-header-icon" src="/assets/img/icons/circles/circle-avatar.0700cf2d.svg" width="42" height="42">
+
+            <template x-if="person.selectedInsurance">
+                <img class="l-card-header-status" src="/assets/img/icons/dots/dot-success.79229f14.svg" width="24" height="24">
+            </template> <template x-if="!person.selectedInsurance">
+                <img class="l-card-header-status" src="/assets/img/icons/dots/dot-pending-blue.0fcf2c25.svg" width="24" height="24">
+            </template>
+
+        </div>
+
+        <div>
+            
+                        <h2 class="l-card-header-title">
+    Bitte Produktvariante wählen
+</h2>
+
+        </div>
+    </header>
+
+    <template x-if="index > 0">
+        <button  type="button" class="button person-remove" x-on:click="onRemovePerson(index)" >
+
+            <span class="icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="-1.5 -1.5 16 16">
+    <path d="M0 5h13v3H0z" fill="currentColor"/>
+</svg>
+        </span>
+    
+    <span>
+        Person entfernen
+    </span>
+
+</button>
+
+    </template>
+</div>
+
+                    <div class="l-card-body">
+
+                                                            
+                        
+                        <template x-if="feedback.persons[person.id]?.status !== 'success' && feedback.persons[person.id]?.messages?.length >= 1">
+                            <div class="feedback-box is-hidden-mobile" :class="`is-${feedback.persons[person.id].status}`">
+                                <div class="feedback-box__icon"></div>
+                                <div class="feedback-box__messages">
+                                    <template x-for="(message, index) in feedback.persons[person.id].messages">
+                                        <p x-html="message.text"></p>
+                                    </template>
+                                </div>
+                            </div>
+                        </template>
+
+                                            <template
+    x-if="!person.basePrices.isLoading && !person.basePrices.hasError && person.basePrices.data && feedback.persons[person.id]?.status !== 'error'"
+>
+    <div
+        class="tier-comparison"
+        x-bind:class="{ 'is-collapsed': person.basePrices.areCollapsed, 'has-selection': !!person.selectedInsurance }"
+    >
+        <div class="field is-hidden-tablet">
+            <label class="label">
+                Gewünschte Produktvariante
+            </label>
+        </div>
+
+        <table
+            class="tier-comparison-tiers tiers"
+            x-bind:class="`tiers--${person.basePrices.data.insurances.length}-cols`"
+        >
+            <tr class="tiers-names">
+                <td class="tiers-spacer tiers-spacer--title"> Verfügbare Produktvarianten </td>
+
+                <template
+                    x-for="insurance in person.basePrices.data.insurances"
+                    :key="insurance.uuid || window.uuidv4()"
+                >
+                    <th class="tier-name">
+                        <strong class="tier-name-category is-extra" x-text="insurance.categoryName"> </strong>
+
+                        <strong class="tier-name-sub-category is-extra" x-text="insurance.subCategoryName"> </strong>
+                    </th>
+                </template>
+            </tr>
+
+            <tr class="tiers-prices">
+                <td class="tiers-spacer"></td>
+
+                <template
+                    x-for="insurance in person.basePrices.data.insurances"
+                    :key="insurance.uuid || window.uuidv4()"
+                >
+                    <th
+                        class="tier-price"
+                        :class="!insurance?.available && 'tier-price--not-available'"
+                        data-cy="tier-price"
+                    >
+                        <template x-if="insurance?.available">
+                            <div>
+                                <div class="tier-price-label">
+                                    <strong
+                                        class="tier-price-amount"
+                                        data-cy="tier-price-amount"
+                                        x-text="insurance.premiumExpFormatted"
+                                    ></strong>
+                                    <span class="tier-price-unit">
+                                        Euro
+                                    </span>
+                                </div>
+
+                                <div class="tier-price-interval">
+                                    pro Jahr
+                                </div>
+
+                                <div class="tier-price-toggle">
+                                    <input
+                                        type="radio"
+                                        class="tier-price-toggle-input"
+                                        x-bind:checked="person.selectedInsurance?.uuid === insurance.uuid"
+                                        x-bind:name="`person_${index}_selectedInsurance`"
+                                        x-bind:id="`person_${index}_select_insurance_${insurance.subCategoryName.toLowerCase()}`"
+                                    />
+                                    <label
+                                        class="button is-border-light tier-price-toggle-label"
+                                        :class="{'is-info': person.selectedInsurance?.uuid === insurance.uuid}"
+                                        x-on:click="onSelectInsurance($event, person, index, insurance)"
+                                        x-bind:for="`person_${index}_select_insurance_${insurance.subCategoryName.toLowerCase()}`"
+                                        data-cy="tier-price-toggle-label"
+                                    >
+                                        <template x-if="person.selectedInsurance?.uuid === insurance.uuid">
+                                            <span>Ausgewählt</span>
+                                        </template>
+                                        <template x-if="person.selectedInsurance?.uuid !== insurance.uuid">
+                                            <span>Auswählen</span>
+                                        </template>
+                                    </label>
+                                </div>
+                            </div>
+                        </template>
+                        <template x-if="!insurance?.available">
+                            <div>
+                                <i class="cross-icon"></i>
+                                <p>
+                                    Produktvariante steht für gewählten Selbstbehalt leider nicht zur Verfügung.
+                                </p>
+                            </div>
+                        </template>
+                    </th>
+                </template>
+            </tr>
+
+                <tbody class="tiers-benefits">
+                    <tr class="tier-benefit">
+                        <td class="tiers-spacer"></td>
+                        <td class="tier-benefit-indicator hr-bottom">
+                            <div class="has-text-centered p-4">
+                                <p>Umfangreicher internationaler und nationaler Rechtsschutz.</p> <p style="margin-top: 15px;"><a href="https://www.bdae.com/auslands-rechtsschutz/expat-legal#leistungen" target="_blank" rel="noopener"><span class="has-text-primary" style="text-decoration: underline;">Leistungsübersicht anzeigen</span></a></p>
+                            </div>
+                        </td>
+                        <td class="tier-benefit-indicator hr-bottom">
+                            <div class="has-text-centered p-4">
+                                <p>Umfangreicher internationaler und nationaler Rechtsschutz <strong>&#43; Arbeitsrechtsschutz.</strong></p> <p style="margin-top: 15px;"><a href="https://www.bdae.com/auslands-rechtsschutz/expat-legal#leistungen" target="_blank" rel="noopener"><span class="has-text-primary" style="text-decoration: underline;">Leistungsübersicht anzeigen</span></a></p>
+                            </div>
+                        </td>
+                    <tr>
+                </tbody>
+                <tbody class="tiers-benefits">
+                    <tr class="tier-benefit">
+                        <td class="tiers-spacer"></td>
+                        <td class="tier-benefit-indicator">
+                            <div class="has-text-left p-4 is-flex">
+                                &nbsp;
+                            </div>
+                        </td>
+                        <td class="tier-benefit-indicator">
+                            <div class="has-text-left p-4 is-flex">
+                                <img alt="Icon Info" class="mr-3" height="20" src="https://docs.bdae.com/general/images/icons/icon_info.svg" width="20" /> Arbeitsrechtsschutz gilt nur für Angestellte
+                            </div>
+                        </td>
+                    <tr>
+                </tbody>
+        </table>
+
+        <template x-if="!person.selectedInsurance && !person.basePrices.areCollapsed">
+            <div class="tier-comparison-detail-toggle text-center">
+                <label class="checkbox">
+                    Mehr Details anzeigen
+                    <label class="switch">
+                        <input type="checkbox" class="switch-input" @click="onShowDetails(person.basePrices)" />
+                        <div class="switch-toggle"></div>
+                    </label>
+                </label>
+            </div>
+        </template>
+
+        <template x-if="!person.selectedInsurance">
+            <div class="tier-comparison-hint message is-info">
+                <div class="message-body">
+                    
+                </div>
+            </div>
+        </template>
+
+    </div>
+</template>
+<template x-if="!person.basePrices.isLoading && person.basePrices.hasError">
+    <p class="p-4 pt-0">
+        <span>Fehler beim Laden der Versicherungspolicen.</span>
+    </p>
+</template>
+<template x-if="person.basePrices.isLoading">
+    <span style="display: none">Loading...</span>
+</template>
+                                    </div>
+                </div>
+            </div>
+        </template>
+
+                
+    </div>
+</template>
+            
+                            <div
+        class="base-price-finder-summary summary"
+        x-bind:class="{
+            'has-total-price': total,
+            'has-one-person': persons.length === 1,
+            'has-multiple-persons': persons.length > 1,
+        }"
+    >
+
+        
+                    <div class="summary-info">
+                Umfangreichere Informationen zum Leistungsumfang der Produktvarianten finden sie in den <a href="https://www.bdae.com/images/products/legal_legal-plus/docs/de/Legal_Versicherungsunterlagen_Privatkunden.pdf" target="_blank" rel="noreferrer noopener">Versicherungsbedingungen Teil I und II</a>.
+            </div>
+        
+        <template x-if="showSubmitError">
+            <p class="p-3 has-text-light has-background-danger">
+                Bitte wählen Sie ein Produkt.
+            </p>
+        </template>
+
+        <template x-if="errorMessage">
+            <p class="p-3 has-text-light has-background-danger error-message-fixed" x-text="errorMessage"></p>
+        </template>
+
+        
+                    <div class="base-price-finder__page-footer page-footer">
+
+                <ul class="section page-footer__navigation navigation">
+                    <li class="navigation__item navigation__item--next">
+                        <a @click="submitUsers" data-cy="submit-users">
+                            <div class="button is-primary is-large is-directional" :disabled="pendingSubmit">
+
+                            <span class="icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 54 54">
+                                    <path fill="#fff" d="M27 54a27 27 0 1127-27 27 27 0 01-27 27z"></path>
+                                    <path fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="2.893" d="M10.607 27h27.964M26.518 13.982L39.536 27 26.518 40.018"></path>
+                                </svg>
+                            </span>
+
+                            <span>
+                                Nächster Schritt
+                            </span>
+
+                            </div>
+                        </a>
+
+                    </li>
+                </ul>
+
+                <ul class="section page-footer__help-links help-links">
+
+                                                                <li class="help-links__item">
+                            <a onclick="openDialog('questions-form', event)">
+                                Kundenservice kontaktieren
+                            </a>
+                        </li>
+                    
+                </ul>
+
+            </div>
+            </div>
+
+                    </div>
+
+        <script type="application/javascript">
+            window.basePriceFinderConfig = {}
+            window.basePriceFinderConfig.categoryCode = 'G016';
+            window.basePriceFinderConfig.initPersons = [];
+            window.basePriceFinderConfig.locale = "de";
+            window.basePriceFinderConfig.iframeMode = false;
+            window.basePriceFinderConfig.linkToFormProcess = "https://oapp.bdae.com/de/expat-legal/versicherte";
+
+            window.basePriceFinderConfig.urlParams = {
+                affiliateId: "M244843",
+                subAffiliateId: "",
+                utm_campaign: "",
+                utm_content: "",
+                utm_medium: "",
+                utm_source: "",
+                utm_term: "",
+            }
+
+            window.basePriceFinderConfig.translations = {
+                title: {
+                    summaryPrice: 'Ihr jährliches Preis',
+                    summaryPriceMultipleUsers: 'Ihr monatlicher Basispreis für PERSONS_LENGTH Personen G016',
+                },
+                buttons: {
+                    maxContractDuration: 'maximale Laufzeit:G016',
+                }
+            };
+        </script>
+
+        </form>
+
+                    
+    
+    
+    
+    
+    
+    <div class="modal " id="dialog-how-it-works">
+        <div class="modal-background"></div>
+        <div class="modal-content">
+            <span onclick="closeDialog()" class="close-button"></span>
+            <div class="box-wrapper">
+                <div class="box">
+                    <div class="has-text-centered">
+                        <picture >
+	<source srcset="/images/692/image-thumb__692__modal/illustration_application_info~-~media--5abec06c--query.0559e43c.webp 1x, /images/692/image-thumb__692__modal/illustration_application_info~-~media--5abec06c--query@2x.0559e43c.webp 2x" media="(max-width: 576px)" width="214" height="165" type="image/webp" />
+	<source srcset="/images/692/image-thumb__692__modal/illustration_application_info~-~media--5abec06c--query.0559e43c.png 1x, /images/692/image-thumb__692__modal/illustration_application_info~-~media--5abec06c--query@2x.0559e43c.png 2x" media="(max-width: 576px)" width="214" height="165" type="image/png" />
+	<source srcset="/images/692/image-thumb__692__modal/illustration_application_info.dabbfcb6.webp 1x, /images/692/image-thumb__692__modal/illustration_application_info@2x.dabbfcb6.webp 2x" width="340" height="262" type="image/webp" />
+	<source srcset="/images/692/image-thumb__692__modal/illustration_application_info.dabbfcb6.png 1x, /images/692/image-thumb__692__modal/illustration_application_info@2x.dabbfcb6.png 2x" width="340" height="262" type="image/png" />
+	<img src="/images/692/image-thumb__692__modal/illustration_application_info.dabbfcb6.png" width="340" height="262" alt="" loading="lazy" srcset="/images/692/image-thumb__692__modal/illustration_application_info.dabbfcb6.png 1x, /images/692/image-thumb__692__modal/illustration_application_info@2x.dabbfcb6.png 2x" />
+</picture>
+
+                    </div>
+
+                    <h2>So funktioniert das Antragsverfahren</h2>
+<ol>
+<li><strong>Nutzen Sie unseren Onlineantrag</strong>, um eine Versicherung zu beantragen. Nach dem Absenden des Antrags ist noch keine Versicherung abgeschlossen. Das heißt, es besteht kein Versicherungsschutz und es müssen noch keine Beiträge bezahlt werden.</li>
+<li>Nach dem Absendes des Antrags <strong>erhalten Sie eine E-Mail</strong> von uns, in der wir den Eingang Ihres Antrags bestätigen.</li>
+<li><strong>Ihr Antrag wird von uns geprüft. </strong>Sollten wir weitere Informationen benötigen,<br />werden wir Sie umgehend kontaktieren. In seltenen Fällen können wir keinen Versicherungsschutz gewähren.</li>
+<li>Nach Prüfen aller Antragsangaben auf Versicherbarkeit erhalten Sie von uns die <strong>Versicherungsbestätigung </strong>mit dem Beginndatum und den Hinweisen zur Beitragszahlung.</li>
+<li><strong>Sie haben es geschafft und haben Ihre Rechtsschutzversicherung abgeschlossen.</strong></li>
+</ol>
+
+                    
+                                    </div>
+            </div>
+        </div>
+    </div>
+
+
+        
+                    
+    
+    
+    
+    
+    
+    <div class="modal " id="dialog-questions-form">
+        <div class="modal-background"></div>
+        <div class="modal-content">
+            <span onclick="closeDialog()" class="close-button"></span>
+            <div class="box-wrapper">
+                <div class="box">
+                    <div class="has-text-centered">
+                        <picture >
+	<source srcset="/images/691/image-thumb__691__modal/illustration_contact~-~media--5abec06c--query.39f0c984.webp 1x, /images/691/image-thumb__691__modal/illustration_contact~-~media--5abec06c--query@2x.39f0c984.webp 2x" media="(max-width: 576px)" width="165" height="165" type="image/webp" />
+	<source srcset="/images/691/image-thumb__691__modal/illustration_contact~-~media--5abec06c--query.39f0c984.png 1x, /images/691/image-thumb__691__modal/illustration_contact~-~media--5abec06c--query@2x.39f0c984.png 2x" media="(max-width: 576px)" width="165" height="165" type="image/png" />
+	<source srcset="/images/691/image-thumb__691__modal/illustration_contact.bd856504.webp 1x, /images/691/image-thumb__691__modal/illustration_contact@2x.bd856504.webp 2x" width="262" height="262" type="image/webp" />
+	<source srcset="/images/691/image-thumb__691__modal/illustration_contact.bd856504.png 1x, /images/691/image-thumb__691__modal/illustration_contact@2x.bd856504.png 2x" width="262" height="262" type="image/png" />
+	<img src="/images/691/image-thumb__691__modal/illustration_contact.bd856504.png" width="262" height="262" alt="" loading="lazy" srcset="/images/691/image-thumb__691__modal/illustration_contact.bd856504.png 1x, /images/691/image-thumb__691__modal/illustration_contact@2x.bd856504.png 2x" />
+</picture>
+
+                    </div>
+
+                    <h2>Sie haben Fragen zu unserem Onlineantrag?<br />
+Wir unterstützen Sie gerne!</h2>
+
+
+                                            
+
+<div class="columns contact-section">
+    <div class="column">
+        <img src="/assets/img/icons/chat.84acac17.svg" width="28px" height="auto" class="is-block mx-auto">
+        <p><a href="https://www.bdae.com/service/chat" rel="noopener" target="_blank">Kundenberatung im<br /> </a></p>
+    </div>
+
+    <div class="column">
+        <img src="/assets/img/icons/phone.db813cdd.svg" width="22px" height="auto" class="is-block mx-auto">
+        <p><a href="tel:&#43;49403068740">Telefonische Beratung:<br /></a></p>
+    </div>
+</div>
+                    
+                                    </div>
+            </div>
+        </div>
+    </div>
+
+
+        
+    
+
+    </main>
+
+            <div class="mt-5">
+            <div class="footer-links has-text-centered  ">
+    <p><a href="https://www.bdae.com/impressum" target="_blank">Impressum</a> | <a href="https://www.bdae.com/datenschutzerklaerung" target="_blank">Datenschutz</a> | <a href="#" onclick="UC_UI.showSecondLayer();">Cookie-Einstellungen</a></p>
+
+</div>
+        </div>
+    
+
+
+                <div id="contact-modal" class="contact-modal modal">
+    <div class="modal-background"></div>
+    <div class="modal-card">
+        <section class="modal-card-body has-background-white has-text-centered">
+            <div class="contact-modal__header-img">
+                <img src="/assets/img/icons/circles/circle-support.797c6923.svg" width="128px" height="auto" class="is-block mx-auto">
+            </div>
+            <h1 class="is-size-4 has-text-primary has-text-weight-bold mb-6 has-text-centered	">
+                Sie haben Fragen zu unserem Onlineantrag? Wir unterstützen Sie gerne!
+            </h1>
+            <div class="contact-modal__links">
+                <div>
+                    <img src="/assets/img/icons/chat.84acac17.svg" width="28px" height="auto" class="is-block mx-auto">
+                    <p><a href="https://www.bdae.com/service/chat" rel="noopener" target="_blank">Kundenberatung im<br /> </a></p>
+                </div>
+                <div>
+                    <img src="/assets/img/icons/phone.db813cdd.svg" width="28px" height="auto" class="is-block mx-auto">
+                    <p><a href="tel:&#43;49403068740">Telefonische Beratung:<br /></a></p>
+                </div>
+            </div>
+            <button class="contact-modal__close-btn">
+                <img src="/assets/img/icons/dots/dot-close.7e299fd5.svg" width="32px" height="auto" class="close is-block mx-auto">
+            </button>
+        </section>
+    </div>
+</div>
+
+<button class="contact-button js-modal-trigger" data-target="contact-modal">
+    <img src="/assets/img/icons/dots/dot_support_mobile.f1896285.svg" width="64px" height="auto" class="is-block mx-auto">
+</button>
+
+<div class="contact-sidebar">
+    <div class="contact-sidebar__body has-background-white has-text-centered">
+        <div>
+            <img src="/assets/img/icons/circles/circle-support.797c6923.svg" width="95px" height="auto" class="is-block mx-auto">
+        </div>
+        <div class="is-size-7">
+            <img src="/assets/img/icons/chat.84acac17.svg" width="28px" height="auto" class="icon is-block mx-auto">
+            <p><a href="https://www.bdae.com/service/chat" target="_blank">Beratung im<br /> <b>Live-Chat</b></a></p>
+        </div>
+
+        <div class="is-size-7">
+            <img src="/assets/img/icons/phone.db813cdd.svg" width="22px" height="auto" class="icon is-block mx-auto">
+            <p><a href="tel:&#43;49403068740">Telefonische Beratung:<br /></a></p>
+        </div>
+    </div>
+</div>
+        
+    <!-- Scripts -->
+                <script src="/assets/runtime.d7020dce.js" defer></script><script src="/assets/628.b6f4709c.js" defer></script><script src="/assets/18.5ac72458.js" defer></script><script src="/assets/app.671e510f.js" defer></script>
+    
+    <script src="/assets/935.f0650cab.js" defer></script><script src="/assets/basepricefinder.3542af3b.js" defer></script>
+
+        
+        
+            <div id="pristineErrorMessages"
+         style="display: none;"
+         data-form-locale="de"
+         data-form-error-messages="{&quot;defaultMessage&quot;:&quot;Dieses Feld ist ung\u00fcltig.&quot;,&quot;required&quot;:&quot;Bitte machen Sie eine Angabe.&quot;,&quot;email&quot;:&quot;Bitte geben Sie eine g\u00fcltige E-Mail-Adresse ein.&quot;,&quot;number&quot;:&quot;Bitte geben Sie eine g\u00fcltige Zahl ein.&quot;,&quot;integer&quot;:&quot;Bitte geben Sie eine ganze Zahl ein.&quot;,&quot;url&quot;:&quot;Bitte geben Sie eine g\u00fcltige URL ein.&quot;,&quot;tel&quot;:&quot;Bitte geben Sie eine g\u00fcltige Telefonnummer ein.&quot;,&quot;maxlength&quot;:&quot;Dieses Feld darf nicht l\u00e4nger als {1} Zeichen sein.&quot;,&quot;minlength&quot;:&quot;Dieses Feld muss mindestens {1} Zeichen enthalten.&quot;,&quot;min&quot;:&quot;Der Wert muss mindestens {1} sein.&quot;,&quot;max&quot;:&quot;Der Wert darf h\u00f6chstens {1} sein.&quot;,&quot;pattern&quot;:&quot;Ung\u00fcltiges Format.&quot;,&quot;equals&quot;:&quot;Die Felder stimmen nicht \u00fcberein.&quot;}">
+    </div>
+</body>

@@ -1,0 +1,143 @@
+.step1On, .step1Off, .step1Off2, .step2On, .step2Off, .step2Off2, .step3On, .step3Off, .step3Off2, .step4On, .step4Off{
+	background: url(../../images/progress-bar-sprites-new.png) no-repeat;
+	float:left;
+}
+
+.step1On{
+	background-position: 0px 0px ;
+	width: 237px;
+	height: 55px;
+}
+
+.step1Off{
+	background-position: -238px 0px ;
+	width: 237px;
+	height: 55px;
+}
+
+.step1Off2{
+	background-position: -476px 0px ;
+	width: 237px;
+	height: 55px;
+}
+
+.step2On{
+	background-position: 0px -57px ;
+	width: 241px;
+	height: 55px;
+}
+
+.step2Off{
+	background-position: -242px -57px ;
+	width: 241px;
+	height: 55px;
+}
+
+.step2Off2{
+	background-position: -484px -57px ;
+	width: 241px;
+	height: 55px;
+}
+
+.step3On{
+	background-position: 0px -113px ;
+	width: 240px;
+	height: 55px;
+}
+
+.step3Off{
+	background-position: -241px -113px ;
+	width: 240px;
+	height: 55px;
+}
+
+.step3Off2{
+	background-position: -482px -113px ;
+	width: 240px;
+	height: 55px;
+}
+
+.step4On{
+	background-position: 0px -169px ;
+	width: 212px;
+	height: 55px;
+}
+
+.step4Off{
+	background-position: -213px -169px ;
+	width: 212px;
+	height: 55px;
+}
+
+.step1On3Steps, .step1Off3Steps, .step1Off23Steps, .step2On3Steps, .step2Off3Steps, .step2Off23Steps, .step3On3Steps, .step3Off3Steps {
+	background: url(../../images/progress-bar-3tabs-sprites.png) no-repeat;
+	float:left;
+}
+
+.step1On3Steps{
+	background-position: 0px 0px ;
+	width: 327px;
+	height: 55px;
+}
+
+.step1Off3Steps{
+	background-position: -336px 0px ;
+	width: 327px;
+	height: 55px;
+}
+
+.step1Off23Steps{
+	background-position: -673px 0px ;
+	width: 327px;
+	height: 55px;
+}
+
+.step2On3Steps{
+	background-position: 0px -57px ;
+	width: 301px;
+	height: 55px;
+}
+
+.step2Off3Steps{
+	background-position: -308px -57px ;
+	width: 301px;
+	height: 55px;
+}
+
+.step2Off23Steps{
+	background-position: -613px -57px ;
+	width: 301px;
+	height: 55px;
+}
+
+.step3On3Steps{
+	background-position: 0px -115px ;
+	width: 302px;
+	height: 55px;
+}
+
+.step3Off3Steps{
+	background-position: -310px -115px ;
+	width: 302px;
+	height: 55px;
+}
+
+.step1OnForThai{
+	background: url(../../images/progress-bar-sprites-About_You.png) no-repeat;
+	float:left;
+}
+
+.step2OnForThai{
+	background: url(../../images/progress-bar-sprites-Your_quote.png) no-repeat;
+	float:left;
+}
+
+.step3OnForThai{
+	background: url(../../images/progress-bar-sprites-Adapt_quote.png) no-repeat;
+	float:left;
+}
+
+.step1OnForThai, .step2OnForThai, .step3OnForThai{
+    width: 635px;
+    height: 63px;
+}

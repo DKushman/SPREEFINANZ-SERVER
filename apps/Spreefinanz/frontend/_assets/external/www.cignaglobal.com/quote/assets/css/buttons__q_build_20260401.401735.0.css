@@ -1,0 +1,193 @@
+.emailUsButton,.reqestCallButton,.removeButton,.productSummaryButton,.viewBenefitsButton,.selectButtonOff,.selectButton,.addButton,.addPlusButton,.continueButton,.buyButton,.backButton,.nextButton,.saveButton,.buyButtonBig,.fullQuoteButton,.buyButtonProduct1,.buyButtonProduct2,.buyButtonProduct3,.customerRetrievalButton,.yesButton,.noButton,.proceedButton,.proceedButtonDisabled,.challengeButton
+	{
+	background: url(../../images/button-sprites1.png) no-repeat;
+}
+
+.paperAppButton{
+    height: 30px;
+    width: 130px;
+}
+
+.emailUsButton {
+	background-position: 0px 0px;
+	width: 77px;
+	height: 24px;
+}
+
+.reqestCallButton {
+	background-position: -78px 0px;
+	width: 113px;
+	height: 24px;
+}
+
+.removeButton {
+	background-position: -192px 0px;
+	width: 72px;
+	height: 24px;
+}
+
+.productSummaryButton {
+	background-position: 0px -26px;
+	width: 150px;
+	height: 24px;
+}
+
+.viewBenefitsButton {
+	background-position: -151px -26px;
+	width: 113px;
+	height: 24px;
+}
+
+.selectButtonOff {
+	background-position: 0px -52px;
+	width: 68px;
+	height: 24px;
+}
+
+.selectButton {
+	background-position: -69px -52px;
+	width: 68px;
+	height: 24px;
+}
+
+.addButton {
+	background-position: -139px -52px;
+	width: 47px;
+	height: 24px;
+}
+
+.addPlusButton {
+	background-position: -188px -52px;
+	width: 52px;
+	height: 24px;
+}
+
+.continueButton {
+	background-position: 0px -78px;
+	width: 120px;
+	height: 30px;
+}
+
+.buyButton {
+	background-position: -122px -78px;
+	width: 70px;
+	height: 30px;
+}
+
+.backButton {
+	background-position: -77px -110px;
+	width: 78px;
+	height: 30px;
+}
+
+.nextButton {
+	background-position: 0px -110px;
+	width: 75px;
+	height: 30px;
+}
+
+.saveButton {
+	background-position: -159px -110px;
+	width: 86px;
+	height: 30px;
+}
+
+.buyButtonBig {
+	background-position: 0px -143px;
+	width: 100px;
+	height: 40px;
+}
+
+.fullQuoteButton {
+	background-position: -190px -189px;
+	width: 120px;
+	height: 30px;
+}
+
+.buyButtonProduct1 {
+	background-position: -104px -143px;
+	width: 188px;
+	height: 40px;
+}
+
+.buyButtonProduct2 {
+	background-position: 0px -189px;
+	width: 188px;
+	height: 40px;
+}
+
+.buyButtonProduct3 {
+	background-position: 0px -233px;
+	width: 188px;
+	height: 40px;
+}
+
+.customerRetrievalButton {
+	background-position: 0 -277px;
+	height: 30px;
+	width: 200px;
+	margin-right:-15px;
+}
+
+.noButton {
+	background-position: -213px -277px;
+	height: 30px;
+	width: 50px;
+}
+
+.yesButton {
+	background-position: -280px -277px;
+	height: 30px;
+	width: 56px;
+}
+
+.proceedButton {
+	background-position: 0px -312px;
+	width: 112px;
+	height: 30px;
+}
+
+.proceedButtonDisabled {
+	background-position: -125px -312px;
+	width: 112px;
+	height: 30px;
+}
+
+.challengeButton {
+	background-position: 0px -347px;
+	width: 121px;
+	height: 30px;
+}
+
+.brightOrangeButton, .cancelOrangeButton {
+	background:linear-gradient(to bottom, #f6a235 5%, #b45105 100%);
+	background-color:#f6a235;
+	border-radius:6px;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family: 'ValueSans', Verdana, Geneva, Tahoma, sans-serif;
+	font-size:15px;
+	font-weight:bold;
+	padding:6px 12px;
+	text-decoration:none;
+	white-space: nowrap;
+}
+
+.cancelOrangeButton{
+    border: 2px solid black;
+}
+
+.brightOrangeButton:after {
+	content: '';
+	display: inline-block;
+	border-style: solid;
+	border-width: 6px;
+	border-color: #ffffff;
+	width: 0;
+	height: 0;
+	border-top-color: transparent;
+	border-right-color: transparent;
+	border-bottom-color: transparent;
+	margin-left: 8px;
+}

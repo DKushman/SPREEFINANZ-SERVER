@@ -1,0 +1,43 @@
+@charset "utf-8";
+
+/* CSS Document */
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+
+.quoteLine310 {
+	width: 500px;
+	float: left;
+	margin-top: 10px;
+}
+
+@media(max-width: 768px) {
+	.quoteLine310 {
+		width: 100%;
+	}
+}
+
+
+.labelLeftAligned {
+	float:left;
+	width:200px;
+}
+
+@media(max-width: 768px) {
+	.labelLeftAligned {
+		float: none;
+	}
+}
+
+
+
+
+.brokerSeparator {
+    color:#e338ca;
+    margin-left:3px;
+    margin-right:3px;
+}
+
+

@@ -1,0 +1,88 @@
+.orangeCircleArrow, .whiteCircleArrow, .plusIcon, .minusIcon, .plusIcon2, .minusIcon2, .informationIcon, .bluePlusIcon {
+	background: url(../../images/circular-button-sprites.png) no-repeat;
+}
+
+.orangeCircleArrow {
+	background-position: 0px 0px ;
+	width: 60px;
+	height: 20px;
+	padding-left:25px;
+	color:#d4791d;
+	font-weight:bold;
+	font-size:1.4em;
+	margin-top:10px;
+}
+
+.whiteCircleArrow {
+	background-position: 0px -23px ;
+	width: 60px;
+	height: 20px;
+	padding-left:25px;
+	color:#d4791d;
+	font-weight:bold;
+	font-size:1.4em;
+	margin-top:10px;
+}
+
+.plusIcon, .plusIcon2{
+	background-position: 0px -46px ;
+	width: 60px;
+	height: 20px;
+	padding-left:25px;
+	color:#d4791d;
+	font-weight:bold;
+	font-size:1.4em;
+	margin-top:10px;
+}
+
+.minusIcon, .minusIcon2{
+	background-position: 0px -68px ;
+	width: 60px;
+	height: 20px;
+	padding-left:25px;
+	color:#d4791d;
+	font-weight:bold;
+	font-size:1.4em;
+	margin-top:10px;
+}
+
+.plusIcon2, .minusIcon2 {
+	padding-top:2px;
+}
+
+.informationIcon {
+	background-position: 0px -90px ;
+	width: 60px;
+	height: 20px;
+	padding-left:25px;
+	color:#3cb6fb;
+	font-weight:bold;
+	font-size:1em;
+	padding-bottom:5px;
+	padding-top:2px;
+}
+
+.bluePlusIcon {
+	background-position: 0px -114px ;
+	width: 60px;
+	height: 20px;
+	padding-left:25px;
+	color:#3cb6fb;
+	font-weight:bold;
+	font-size:1em;
+	padding-bottom:5px;
+	padding-top:2px;
+}
+
+.plusIcon:hover, .minusIcon:hover, .plusIcon2:hover, .minusIcon2:hover, .orangeCircleArrow:hover, .whiteCircleArrow:hover{
+	text-decoration:none;
+	color:#d4791d;
+}
+
+.informationIcon:hover, .bluePlusIcon:hover {
+	text-decoration:none;
+	color:#3cb6fb;
+}
+
+
+

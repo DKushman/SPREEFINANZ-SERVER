@@ -1,0 +1,362 @@
+.pageTurn, .productSummaryButton, .requestCallButton, .emailUsButton, .phoneIcon, .speechBubbleIcon, .emailIcon, 
+
+.pageTurnBlue, .priceCorner, .addDependentButton{
+	background: url(../../images/box-sprites.png) no-repeat;
+}
+
+.pageTurn{
+	background-position: 0px 0px ;
+	width: 20px;
+	height: 20px;
+}
+
+.productSummaryButton{
+	background-position: -71px 0px ;
+	width: 150px;
+	height: 24px;
+}
+
+.requestCallButton{
+	background-position: -230px 0px ;
+	width: 114px;
+	height: 24px;
+}
+
+.emailUsButton{
+	background-position: 0px -31px ;
+	width: 77px;
+	height: 24px;
+}
+
+.phoneIcon{
+	background-position: -88px -31px ;
+	width: 40px;
+	height: 41px;
+}
+
+.speechBubbleIcon{
+	background-position: -138px -32px ;
+	width: 40px;
+	height: 38px;
+}
+
+.emailIcon{
+	background-position: -190px -32px ;
+	width: 40px;
+	height: 39px;
+}
+
+.pageTurnBlue{
+	background-position: -239px -30px ;
+	width: 20px;
+	height: 20px;
+}
+
+.priceCorner{
+	background-position: -268px -39px ;
+	width: 9px;
+	height: 8px;
+}
+
+.pageTurn, .productSummaryButton, .requestCallButton, .emailUsButton, .phoneIcon, .speechBubbleIcon, .emailIcon, 
+
+.pageTurnBlue, .priceCorner, .addDependentButton{
+	background: url(../../images/box-sprites.png) no-repeat;
+}
+
+.pageTurn{
+	background-position: 0px 0px ;
+	width: 20px;
+	height: 20px;
+}
+
+.productSummaryButton{
+	background-position: -71px 0px ;
+	width: 150px;
+	height: 24px;
+}
+
+.requestCallButton{
+	background-position: -230px 0px ;
+	width: 114px;
+	height: 24px;
+}
+
+.emailUsButton{
+	background-position: 0px -31px ;
+	width: 77px;
+	height: 24px;
+}
+
+.phoneIcon{
+	background-position: -88px -31px ;
+	width: 40px;
+	height: 41px;
+}
+
+.speechBubbleIcon{
+	background-position: -138px -32px ;
+	width: 40px;
+	height: 38px;
+}
+
+.emailIcon{
+	background-position: -190px -32px ;
+	width: 40px;
+	height: 39px;
+}
+
+.pageTurnBlue{
+	background-position: -239px -30px ;
+	width: 20px;
+	height: 20px;
+}
+
+.priceCorner{
+	background-position: -268px -39px ;
+	width: 9px;
+	height: 8px;
+}
+
+.blueLine, .contentBack, .contentBackBottom, .logo, .product, .toolArrow, .questionMark, .questionMarkHover, .blueTick, .creditCard, 
+
+.closeIcon, .tooltipSprite {
+	background: url(../../images/general-page-sprites.png) no-repeat;
+}
+
+.blueLine{
+	background-position: 0px 0px ;
+	width: 960px;
+	height: 4px;
+}
+
+.contentBack{
+	background-position: 0px -8px ;
+	width: 970px;
+	height: 49px;
+}
+
+.contentBackBottom{
+	background-position: 0px -63px ;
+	width: 970px;
+	height: 34px;
+}
+
+.logo{
+	background-position: -5px -104px ;
+	width: 130px;
+	height: 60px;
+}
+
+.product{
+	background-position: -142px -104px ;
+	width: 300px;
+	height: 60px;
+}
+
+.toolArrow{
+	background-position: -480px -104px ;
+	width: 16px;
+	height: 28px;
+}
+
+.questionMark{
+	background-position: -502px -104px ;
+	width: 15px;
+	height: 15px;
+}
+
+.questionMarkHover{
+	background-position: -524px -104px ;
+	width: 15px;
+	height: 15px;
+}
+
+.blueTick{
+	background-position: -550px -104px ;
+	width: 16px;
+	height: 16px;
+}
+
+.creditCard{
+	background-position: -584px -104px ;
+	width: 183px;
+	height: 23px;
+}
+
+.closeIcon{
+	background-position: -782px -104px ;
+	width: 17px;
+	height: 16px;
+}
+
+.tooltipSprite{
+	background-position: -502px -104px;
+	width: 15px;
+	height: 15px;	
+}
+
+.tooltipSprite:hover{
+	background-position: -524px -104px;
+	width: 15px;
+	height: 15px;	
+}
+
+.loginButton2, .registerButton2, .nextButtonOrangeGradient2, .backButton2, .removeButton, .saveButton, .okButton, .addButton, 
+
+.addPlusButton, .addConditionButton, .saveButtonBlue, .saveButtonOrange, .cancelButton{
+	background: url(../../images/button-sprites.png) no-repeat;
+}
+
+.loginButton2{
+	background-position: 0px 0px ;
+	width: 72px;
+	height: 30px;
+}
+
+.registerButton2{
+	background-position: -79px 0px ;
+	width: 102px;
+	height: 30px;
+}
+
+.nextButtonOrangeGradient2{
+	background-position: -189px 0px ;
+	width: 75px;
+	height: 30px;
+}
+
+.backButton2{
+	background-position: -273px 0px ;
+	width: 78px;
+	height: 30px;
+}
+
+.saveButton{
+	background-position: -360px 0px ;
+	width: 67px;
+	height: 30px;
+}
+
+.saveButtonOrange{
+	background-position: -455px -35px ;
+	width: 53px;
+	height: 24px;
+}
+.okButton{
+	background-position: -435px 0px ;
+	width: 39px;
+	height: 24px;
+}
+
+.addButton{
+	background-position: 0px -35px ;
+	width: 47px;
+	height: 24px;
+}
+
+.addPlusButton{
+	background-position: -53px -35px ;
+	width: 52px;
+	height: 24px;
+}
+
+.addConditionButton{
+	background-position: -111px -35px ;
+	width: 117px;
+	height: 24px;
+}
+
+.saveButtonBlue{
+	background-position: -237px -35px ;
+	width: 53px;
+	height: 24px;
+}
+
+.cancelButton{
+	background-position: -298px -35px ;
+	width: 71px;
+	height: 24px;
+}
+
+.removeButton{
+	background-position: -375px -35px ;
+	width: 75px;
+	height: 24px;
+}
+
+.step1Current, .step1Visited, .step2Future, .step2Current, .step2Visited, .step3Future, .step3Current, .step3Visited, .step4Future, 
+
+.step4Current{
+	background: url(../../images/progress-sprites.png) no-repeat;
+}
+
+.step1Current{
+	background-position: 0px 0px ;
+	width: 36px;
+	height: 36px;
+}
+
+.step1Visited{
+	background-position: -40px 0px ;
+	width: 36px;
+	height: 36px;
+}
+
+.step2Future{
+	background-position: -80px 0px ;
+	width: 36px;
+	height: 36px;
+}
+
+.step2Current{
+	background-position: -121px 0px ;
+	width: 36px;
+	height: 36px;
+}
+
+.step2Visited{
+	background-position: -162px 0px ;
+	width: 36px;
+	height: 36px;
+}
+
+.step3Future{
+	background-position: -203px 0px ;
+	width: 36px;
+	height: 36px;
+}
+
+.step3Current{
+	background-position: -244px 0px ;
+	width: 36px;
+	height: 36px;
+}
+
+.step3Visited{
+	background-position: -285px 0px ;
+	width: 36px;
+	height: 36px;
+}
+
+.step4Future{
+	background-position: -326px 0px ;
+	width: 36px;
+	height: 36px;
+}
+
+.step4Current{
+	background-position: -364px 0px ;
+	width: 36px;
+	height: 36px;
+}
+
+.addDependentButton{
+	background-position: -287px -30px ;
+	width: 125px;
+	height: 24px;
+}
+
+.buttonLink{
+	text-decoration: none !important;
+}

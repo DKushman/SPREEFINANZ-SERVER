@@ -1,0 +1,2047 @@
+<!DOCTYPE html>
+<html lang="de-de" dir="ltr">
+    <head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" href="/favicon.png" sizes="any">
+                <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+        <meta charset="utf-8">
+	<meta name="author" content="Jens Weck">
+	<meta name="description" content="Mit unseren Vergleichsrechnern kannst du verschiedene Angebote für Sachversicherungen gegenüberstellen, für einen umfassenden Überblick.">
+	<title>Versicherungsrechner und Vergleichsrechner 2026</title>
+<link href="/media/vendor/joomla-custom-elements/css/joomla-alert.min.css?0.4.1" rel="stylesheet">
+	<link href="/templates/yootheme/css/theme.12.css?1768203454" rel="stylesheet">
+<script type="application/json" class="joomla-script-options new">{"joomla.jtext":{"ERROR":"Fehler","MESSAGE":"Nachricht","NOTICE":"Hinweis","WARNING":"Warnung","JCLOSE":"Schließen","JOK":"OK","JOPEN":"Öffnen"},"system.paths":{"root":"","rootFull":"https:\/\/www.mr-money.de\/","base":"","baseFull":"https:\/\/www.mr-money.de\/"},"csrf.token":"0905130e3a815c02e546bd0419d8a317"}</script>
+	<script src="/media/system/js/core.min.js?a3d8f8"></script>
+	<script src="/media/system/js/messages.min.js?9a4811" type="module"></script>
+	<script src="/templates/yootheme/vendor/assets/uikit/dist/js/uikit.min.js?4.5.32"></script>
+	<script src="/templates/yootheme/vendor/assets/uikit/dist/js/uikit-icons.min.js?4.5.32"></script>
+	<script src="/templates/yootheme/js/theme.js?4.5.32"></script>
+	<script>window.yootheme ||= {}; var $theme = yootheme.theme = {"i18n":{"close":{"label":"Schlie\u00dfen"},"totop":{"label":"Zur\u00fcck nach oben"},"marker":{"label":"\u00d6ffnen"},"navbarToggleIcon":{"label":"Men\u00fc \u00f6ffnen"},"paginationPrevious":{"label":"Vorherige Seite"},"paginationNext":{"label":"N\u00e4chste Seite"},"searchIcon":{"toggle":"Suche \u00f6ffnen","submit":"Suche ausf\u00fchren"},"slider":{"next":"N\u00e4chste Folie","previous":"Vorherige Folie","slideX":"Folie %s","slideLabel":"%s von %s"},"slideshow":{"next":"N\u00e4chste Folie","previous":"Vorherige Folie","slideX":"Folie %s","slideLabel":"%s von %s"},"lightboxPanel":{"next":"N\u00e4chste Folie","previous":"Vorherige Folie","slideLabel":"%s von %s","close":"Schlie\u00dfen"}}};</script>
+	<script>addEventListener('DOMContentLoaded', (event) => {
+
+    const stickyPlaceholder = document.querySelector('header.tm-header .uk-sticky-placeholder');
+    const navbarContainer = document.querySelector('header.tm-header .uk-sticky');
+    window.addEventListener('scroll', function() {
+        const scrollPosition = window.scrollY;
+        if( scrollPosition > 120 ){
+            stickyPlaceholder.style.height = navbarContainer.offsetHeight+'px';
+        }
+    });
+});
+
+/* - - - - - - - - - - */
+
+addEventListener('DOMContentLoaded', (event) => {
+    setTimeout(()=>{
+        UIkit.scrollspyNav('.spyBar', {closest: 'li',offset:100});
+        UIkit.util.$$('.nofollow a').forEach(function(el) {
+            el.setAttribute('rel', 'nofollow');
+        });
+        document.addEventListener('scroll', function() {
+            var scrollPosition = window.scrollY;
+            var backToTopButton = document.getElementById('sticky-to-top');
+
+            if (scrollPosition > 100) {
+                backToTopButton.classList.add('show');
+            } else {
+                backToTopButton.classList.remove('show');
+            }
+        });
+        window.addEventListener("message", (event) => {
+            //console.log('message',event);
+        }, false);
+    },550);
+
+    /* - - - - - - - - - - */
+
+    var _mtm = window._mtm = window._mtm || [];
+    _mtm.push({'mtm.startTime': (new Date().getTime()), 'event': 'mtm.Start'});
+    setTimeout(()=>{
+        var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+        g.async=true; g.src='https://stats.mr-money.de/js/container_jwhMeBgg.js'; s.parentNode.insertBefore(g,s);
+    },500);
+
+    /* - - - - - - - - - - */
+
+    let foundElements = {};
+    if( document.querySelector('.PV-Uebersicht') ){
+        try{
+            function checkServer()
+            {
+                let url = '/pvstats.php';
+                fetch(url)
+                    .then(res => res.json())
+                    .then(data => {
+                        let zusatz = '';
+                        for( let dindex in data )
+                        {
+                            if( data.hasOwnProperty(dindex) )
+                            {
+                                if( !foundElements[dindex] ){
+                                    foundElements[dindex] = document.getElementById(dindex);
+                                }
+                                if( foundElements[dindex] ){
+                                    if( data[dindex] !== null ){
+                                        zusatz = 'Watt: ';
+
+                                        if( /PVGWattSum/.test(dindex) ){
+                                            zusatz = 'KWh PV heute: ';
+                                            data[dindex] = (data[dindex]/1).toFixed(2);
+                                        }
+                                        else if( /WattSum|HVGtoday|zStandToday/.test(dindex) ){
+                                            zusatz = 'KWh: ';
+                                            data[dindex] = data[dindex].toFixed(2);
+                                            if( /PV\d+WattSum/.test(dindex) ){
+                                                data[dindex] = (data[dindex]/1).toFixed(2);
+                                            }
+                                        }
+                                        else if( /AkkuStand/.test(dindex) ){
+                                            zusatz = 'Stand: ';
+                                            data[dindex]+= '%';
+                                        }
+                                        else if( /AkkuAmp/.test(dindex) ){
+                                            zusatz = 'Ampere: ';
+                                        }
+                                        else if( /PVG/.test(dindex) ){
+                                            zusatz = 'Momentan PV Watt: ';
+                                        }
+                                        else{
+                                            if(dindex == 'PV12'){
+                                                data[dindex]*= 3;
+                                            }
+                                            data[dindex] = data[dindex].toFixed(0)
+                                        }
+
+                                        if( /./.test(data[dindex]) ){
+                                            data[dindex] = String(data[dindex]).replace('.',',');
+                                        }
+
+                                        foundElements[dindex].innerHTML = ( zusatz + data[dindex] );
+                                    }else if( dindex === 'Hausverbrauch' ){
+                                        foundElements[dindex].innerHTML = ( 'Hausverbrauch' );
+                                    }else{
+                                        foundElements[dindex].innerHTML = ( '' );
+                                    }
+                                }
+                            }
+                        }
+                        setTimeout(function () {
+                            checkServer();
+                        },1000);
+                    })
+                    .catch(err => { throw err });
+            }
+
+            setTimeout(function () {
+                checkServer();
+            },1000)
+
+        } catch (e) {
+            console.error(e);
+        }
+    }
+
+    function vxcp_optimizeIframeSize(iframe) {
+        function vxcp_framemessage(ev) {
+            if (
+                ev.origin !== "http://partner.vxcp.de" && ev.origin !== "https://partner.vxcp.de" &&
+                ev.origin !== "http://www.verivox.de" && ev.origin !== "https://www.verivox.de" &&
+                ev.origin !== "http://benzinpreise.verivox.de" && ev.origin !== "https://benzinpreise.verivox.de" &&
+                ev.origin !== "http://www.toptarif.de" && ev.origin !== "https://www.toptarif.de" &&
+                ev.origin !== "http://partner.toptarif.de" && ev.origin !== "https://partner.toptarif.de" &&
+                ev.origin !== "http://antrag.toptarif.de" && ev.origin !== "https://antrag.toptarif.de"
+            ) {
+                return;
+            }
+            if (typeof ev.data == 'string') {
+                var data = JSON.parse(ev.data);
+                switch (data.type) {
+                    case "HeightChange":
+                        if (data.height >= 100) {
+                            iframe.style.height = data.height + 'px';
+                            iframe.scrolling = 'no';
+                            if (typeof iframe.style.transition != 'undefined') {
+                                iframe.style.transition = 'all 200ms';
+                            }
+                        }
+                        break;
+                }
+            }
+        }
+
+        // eventListener einrichten
+        if (iframe && window.postMessage) {
+            if (window.addEventListener) {
+                // firefox, chrome, ...
+                window.addEventListener('message', vxcp_framemessage, false);
+            } else if (window.attachEvent) {
+                // ie
+                window.attachEvent('onmessage', vxcp_framemessage);
+            }
+        }
+    }
+    var iframe = document.getElementById('vxcp_frame');
+    if (iframe) {
+        vxcp_optimizeIframeSize(iframe);
+    }
+});</script>
+	<script data-preview="diff">UIkit.icon.add({"fa6-solid--phone":"<svg xmlns=\"http:\/\/www.w3.org\/2000\/svg\" viewBox=\"0 0 512 512\" width=\"20\" height=\"20\"><path d=\"M511.2 387l-23.25 100.8c-3.266 14.25-15.79 24.22-30.46 24.22C205.2 512 0 306.8 0 54.5c0-14.66 9.969-27.2 24.22-30.45L125.02.8c14.68-3.402 29.68 4.218 35.78 18.12l46.52 108.5c5.438 12.78 1.77 27.67-8.98 36.45L144.5 207.1c33.98 69.22 90.26 125.5 159.5 159.5l44.08-53.8c8.688-10.78 23.69-14.51 36.47-8.975l108.5 46.51C506.1 357.2 514.6 372.4 511.2 387z\"\/><\/svg>","fa6-regular--user":"<svg xmlns=\"http:\/\/www.w3.org\/2000\/svg\" viewBox=\"0 0 448 512\" width=\"20\" height=\"20\"><path d=\"M272 304h-96C78.8 304 0 382.8 0 480c0 17.67 14.33 32 32 32h384c17.67 0 32-14.33 32-32 0-97.2-78.8-176-176-176zM48.99 464c7.9-63.1 61.81-112 127.01-112h96c65.16 0 119.1 48.95 127 112H48.99zM224 256c70.69 0 128-57.31 128-128S294.69 0 224 0 96 57.31 96 128c0 70.7 57.3 128 128 128zm0-208c44.11 0 80 35.89 80 80s-35.89 80-80 80-80-35.9-80-80c0-44.11 35.9-80 80-80z\"\/><\/svg>","bootstrap--search":"<svg xmlns=\"http:\/\/www.w3.org\/2000\/svg\" fill=\"currentColor\" viewBox=\"0 0 16 16\" width=\"20\" height=\"20\"><path d=\"M11.742 10.344a6.5 6.5 0 10-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 001.415-1.414l-3.85-3.85a1.007 1.007 0 00-.115-.1zM12 6.5a5.5 5.5 0 11-11 0 5.5 5.5 0 0111 0z\"\/><\/svg>"})</script>
+	<meta property="og:locale" content="de_DE" class="4SEO_ogp_tag">
+	<meta property="og:url" content="https://www.mr-money.de/vergleichsrechner" class="4SEO_ogp_tag">
+	<meta property="og:site_name" content="Mr-Money.de" class="4SEO_ogp_tag">
+	<meta property="og:type" content="article" class="4SEO_ogp_tag">
+	<meta property="og:title" content="Versicherungsrechner und Vergleichsrechner 2026" class="4SEO_ogp_tag">
+	<meta property="og:description" content="Mit unseren Vergleichsrechnern kannst du verschiedene Angebote für Sachversicherungen gegenüberstellen, für einen umfassenden Überblick." class="4SEO_ogp_tag">
+	<meta property="fb:app_id" content="966242223397117" class="4SEO_ogp_tag">
+	<meta property="og:image" content="https://static.versicherungsmaklersoftware.de/logos/mrmo/allgemein/MM_Logo_v7.svg" class="4SEO_ogp_tag">
+	<meta property="og:image:width" content="305" class="4SEO_ogp_tag">
+	<meta property="og:image:height" content="100" class="4SEO_ogp_tag">
+	<meta property="og:image:alt" content="Mr-Money Versicherungs Vergleichsportal" class="4SEO_ogp_tag">
+	<meta property="og:image:secure_url" content="https://static.versicherungsmaklersoftware.de/logos/mrmo/allgemein/MM_Logo_v7.svg" class="4SEO_ogp_tag">
+	<meta name="twitter:card" content="summary" class="4SEO_tcards_tag">
+	<meta name="twitter:url" content="https://www.mr-money.de/vergleichsrechner" class="4SEO_tcards_tag">
+	<meta name="twitter:title" content="Versicherungsrechner und Vergleichsrechner 2026" class="4SEO_tcards_tag">
+	<meta name="twitter:description" content="Mit unseren Vergleichsrechnern kannst du verschiedene Angebote für Sachversicherungen gegenüberstellen, für einen umfassenden Überblick." class="4SEO_tcards_tag">
+	<meta name="twitter:image" content="https://static.versicherungsmaklersoftware.de/logos/mrmo/allgemein/MM_Logo_v7.svg" class="4SEO_tcards_tag">
+<link rel="canonical" href="https://www.mr-money.de/vergleichsrechner" />
+	<meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1" class="4SEO_robots_tag">
+	<script type="application/ld+json" class="4SEO_structured_data_breadcrumb">{
+    "@context": "http://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+        {
+            "@type": "listItem",
+            "position": 1,
+            "name": "Startseite",
+            "item": "https://www.mr-money.de/"
+        },
+        {
+            "@type": "listItem",
+            "position": 2,
+            "name": "Vergleichsrechner",
+            "item": "https://www.mr-money.de/vergleichsrechner"
+        }
+    ]
+}</script></head>
+
+    <body class="">
+
+        <div class="uk-hidden-visually uk-notification uk-notification-top-left uk-width-auto">
+            <div class="uk-notification-message">
+                <a href="#tm-main" class="uk-link-reset">Zum Hauptinhalt springen</a>
+            </div>
+        </div>
+
+        
+        
+        <div class="tm-page">
+
+                        
+
+
+<header class="tm-header-mobile uk-hidden@m">
+
+
+        <div uk-sticky show-on-up animation="uk-animation-slide-top" cls-active="uk-navbar-sticky" sel-target=".uk-navbar-container">
+    
+        <div class="uk-navbar-container">
+
+            <div class="uk-container uk-container-expand">
+                <nav class="uk-navbar" uk-navbar="{&quot;align&quot;:&quot;left&quot;,&quot;container&quot;:&quot;.tm-header-mobile &gt; [uk-sticky]&quot;,&quot;boundary&quot;:&quot;.tm-header-mobile .uk-navbar-container&quot;}">
+
+                    
+                                        <div class="uk-navbar-center">
+
+                                                    <a href="https://www.mr-money.de/" aria-label="Zurück zur Startseite" class="uk-logo uk-navbar-item">
+    <img alt="Mr-Money Versicherungs Vergleichsportal" loading="eager" src="https://static.versicherungsmaklersoftware.de/logos/mrmo/allgemein/MM_Logo_v7.svg"></a>
+                        
+                        
+                    </div>
+                    
+                                        <div class="uk-navbar-right">
+
+                        
+                                                    <a uk-toggle href="#tm-dialog-mobile" class="uk-navbar-toggle">
+
+        
+        <div uk-navbar-toggle-icon></div>
+
+        
+    </a>
+                        
+                    </div>
+                    
+                </nav>
+            </div>
+
+        </div>
+
+        </div>
+    
+
+
+
+        <div id="tm-dialog-mobile" uk-offcanvas="container: true; overlay: true" mode="push" flip>
+        <div class="uk-offcanvas-bar uk-flex uk-flex-column">
+
+                        <button class="uk-offcanvas-close uk-close-large" type="button" uk-close uk-toggle="cls: uk-close-large; mode: media; media: @s"></button>
+            
+                        <div class="uk-margin-auto-bottom">
+                
+<div class="uk-grid uk-child-width-1-1" uk-grid>    <div>
+<div class="uk-panel" id="module-173">
+
+    
+    
+<ul class="uk-nav uk-nav-default">
+    
+	<li class="item-154"><a href="https://kundenlogin.mr-money.de">Kundenlogin</a></li></ul>
+
+</div>
+</div>    <div>
+<div class="uk-panel" id="module-172">
+
+    
+    
+<ul class="uk-nav uk-nav-default uk-nav-accordion" uk-nav="targets: &gt; .js-accordion">
+    
+	<li class="item-102 js-accordion uk-parent"><a href>Recht &amp; Pflicht <span uk-nav-parent-icon></span></a>
+	<ul class="uk-nav-sub">
+
+		<li class="item-178"><a href="/recht-pflicht/privathaftpflichtversicherung">Privathaftpflicht</a></li>
+		<li class="item-591"><a href="/recht-pflicht/hundehaftpflichtversicherung">Hundehaftpflichtversicherung</a></li>
+		<li class="item-105"><a href="/recht-pflicht/rechtsschutzversicherung">Rechtsschutzversicherung</a></li>
+		<li class="item-182"><a href="/technik/drohnenversicherung">Drohnenversicherung</a></li>
+		<li class="item-179"><a href="/recht-pflicht/haus-grundbesitzerhaftversicherung">Haus-Grundbesitzerhaft</a></li></ul></li>
+	<li class="item-103 js-accordion uk-parent"><a href>Heim &amp; Bau <span uk-nav-parent-icon></span></a>
+	<ul class="uk-nav-sub">
+
+		<li class="item-218"><a href="/heim-bau/wohngebaeudeversicherung">Wohngebäude</a></li>
+		<li class="item-769"><a href="/heim-bau/hausrat">Hausrat</a></li>
+		<li class="item-219"><a href="/heim-bau/bauherrenhaftpflicht">Bauherrenhaftpflicht</a></li>
+		<li class="item-783"><a href="/heim-bau/bauherrenhaftpflicht">Bauleistung</a></li>
+		<li class="item-220"><a href="/heim-bau/feuerrohbauversicherung">Feuerrohbau</a></li>
+		<li class="item-346"><a href="/heim-bau/neubauversicherung">Neubau</a></li>
+		<li class="item-221"><a href="/heim-bau/photovoltaikversicherung">Photovoltaikversicherung</a></li>
+		<li class="item-180"><a href="/heim-bau/oeltankversicherung">Öltankversicherung</a></li></ul></li>
+	<li class="item-104 js-accordion uk-parent"><a href>Unfall &amp; Vorsorge <span uk-nav-parent-icon></span></a>
+	<ul class="uk-nav-sub">
+
+		<li class="item-107"><a href="/unfall-vorsorge/unfallversicherung">Unfallversicherung</a></li>
+		<li class="item-171"><a href="/unfall-vorsorge/reiseversicherung">Reiseversicherung</a></li>
+		<li class="item-172"><a href="/unfall-vorsorge/private-krankenversicherung">Private Krankenvers.</a></li>
+		<li class="item-174"><a href="/unfall-vorsorge/gesetzliche-krankenversicherung">Gesetzliche Krankenvers.</a></li>
+		<li class="item-175"><a href="/unfall-vorsorge/berufsunfaehigkeitversicherung">Berufsunfähigkeit</a></li>
+		<li class="item-176"><a href="/unfall-vorsorge/lebensversicherung">Lebensversicherung</a></li>
+		<li class="item-177"><a href="/unfall-vorsorge/rentenversicherung">Rentenversicherung</a></li></ul></li>
+	<li class="item-108 js-accordion uk-parent"><a href>Tier <span uk-nav-parent-icon></span></a>
+	<ul class="uk-nav-sub">
+
+		<li class="item-113"><a href="/recht-pflicht/hundehaftpflichtversicherung">Hundehaftpflichtversicherung</a></li>
+		<li class="item-223"><a href="/tier/hundekrankenversicherung">Hundekrankenversicherung</a></li>
+		<li class="item-224"><a href="/tier/katzenkrankenversicherung">Katzenkrankenversicherung</a></li>
+		<li class="item-225"><a href="/tier/pferdekrankenversicherung">Pferdekrankenversicherung</a></li></ul></li>
+	<li class="item-109 js-accordion uk-parent"><a href>Technik <span uk-nav-parent-icon></span></a>
+	<ul class="uk-nav-sub">
+
+		<li class="item-114"><a href="/technik/ebike-versicherung">eBike Versicherung</a></li>
+		<li class="item-181"><a href="/technik/drohnenversicherung">Drohnenversicherung</a></li>
+		<li class="item-222"><a href="/technik/cyber-versicherung">Cyber­versicherung</a></li>
+		<li class="item-813"><a href="https://www.mr-money.de/heim-bau/photovoltaikversicherung">Photovoltaikversicherung</a></li></ul></li>
+	<li class="item-110 js-accordion uk-parent"><a href>KFZ <span uk-nav-parent-icon></span></a>
+	<ul class="uk-nav-sub">
+
+		<li class="item-115"><a href="/kfz/pkw-versicherung">PKW</a></li>
+		<li class="item-280"><a href="/kfz/autokredit-rechner">Autokredit Rechner</a></li></ul></li>
+	<li class="item-111 js-accordion uk-parent"><a href>Geld | Energie <span uk-nav-parent-icon></span></a>
+	<ul class="uk-nav-sub">
+
+		<li class="item-281"><a href="/geld-energie/kredit">Kredit</a></li>
+		<li class="item-287"><a href="/geld-energie/girokonto">Girokonto</a></li>
+		<li class="item-288"><a href="/geld-energie/tagesgeld">Tagesgeld</a></li>
+		<li class="item-290"><a href="/geld-energie/festgeld">Festgeld</a></li>
+		<li class="item-291"><a href="/geld-energie/strom">Strom</a></li>
+		<li class="item-292"><a href="/geld-energie/gas">Gas</a></li>
+		<li class="item-294"><a href="/geld-energie/wertpapier-vergleich">Wertpapier-Vergleich</a></li>
+		<li class="item-295"><a href="/geld-energie/kreditkarten">Kreditkarten</a></li></ul></li></ul>
+
+</div>
+</div>    <div>
+<div class="uk-panel" id="module-192">
+
+    
+    
+<div class="uk-margin-remove-last-child custom" ><div class="sp-contact-info"><span class="sp-contact-phone"><a href="tel:+4937296927396" style="text-decoration: underline;">03 72 96 / 92 73 96</a></span><br><span class="sp-contact-email"><a href="mailto:post@mr-money.de" style="text-decoration: underline;">post@mr-money.de</a></span><br><span class="sp-contact-time">Mo - Do: 9-12 &amp; 13-17 Uhr</span><br><span class="sp-contact-time">Fr: 9-12 &amp; 13-16:30 Uhr</span><br><a href="https://wa.me/4915510522810" target="_blank" style="display: inline-block; background-color: #25d366; color: white; padding: 8px; border-radius: 6px; text-decoration: none; font-weight: 500; margin-top: 8px; transition: background-color 0.2s; box-shadow: 0 2px 4px rgba(0,0,0,0.1); width: 93%;" rel="noopener"> WhatsApp: 015510522810 </a></div></div>
+
+</div>
+</div></div>
+            </div>
+            
+            
+        </div>
+    </div>
+    
+    
+    
+
+</header>
+
+
+
+
+<header class="tm-header uk-visible@m">
+
+
+
+        <div uk-sticky media="@m" cls-active="uk-navbar-sticky" sel-target=".uk-navbar-container">
+    
+        <div class="uk-navbar-container">
+
+            <div class="uk-container uk-container-expand">
+                <nav class="uk-navbar" uk-navbar="{&quot;align&quot;:&quot;left&quot;,&quot;container&quot;:&quot;.tm-header &gt; [uk-sticky]&quot;,&quot;boundary&quot;:&quot;.tm-header .uk-navbar-container&quot;}">
+
+                                        <div class="uk-navbar-left ">
+
+                                                    <a href="https://www.mr-money.de/" aria-label="Zurück zur Startseite" class="uk-logo uk-navbar-item">
+    <img alt="Mr-Money Versicherungs Vergleichsportal" loading="eager" height="70" src="https://static.versicherungsmaklersoftware.de/logos/mrmo/allgemein/MM_Logo_v7.svg"></a>
+                        
+                        
+                        
+                    </div>
+                    
+                    
+                                        <div class="uk-navbar-right">
+
+                                                    
+<ul class="uk-navbar-nav" id="module-1">
+    
+	<li class="item-102 uk-parent"><a role="button">Recht &amp; Pflicht</a>
+	<div class="uk-drop uk-navbar-dropdown" mode="hover" pos="bottom-left"><div><ul class="uk-nav uk-navbar-dropdown-nav">
+
+		<li class="item-178"><a href="/recht-pflicht/privathaftpflichtversicherung">Privathaftpflicht</a></li>
+		<li class="item-591"><a href="/recht-pflicht/hundehaftpflichtversicherung">Hundehaftpflichtversicherung</a></li>
+		<li class="item-105"><a href="/recht-pflicht/rechtsschutzversicherung">Rechtsschutzversicherung</a></li>
+		<li class="item-182"><a href="/technik/drohnenversicherung">Drohnenversicherung</a></li>
+		<li class="item-179"><a href="/recht-pflicht/haus-grundbesitzerhaftversicherung">Haus-Grundbesitzerhaft</a></li></ul></div></div></li>
+	<li class="item-103 uk-parent"><a role="button">Heim &amp; Bau</a>
+	<div class="uk-drop uk-navbar-dropdown" mode="hover" pos="bottom-left"><div><ul class="uk-nav uk-navbar-dropdown-nav">
+
+		<li class="item-218"><a href="/heim-bau/wohngebaeudeversicherung">Wohngebäude</a></li>
+		<li class="item-769"><a href="/heim-bau/hausrat">Hausrat</a></li>
+		<li class="item-219"><a href="/heim-bau/bauherrenhaftpflicht">Bauherrenhaftpflicht</a></li>
+		<li class="item-783"><a href="/heim-bau/bauherrenhaftpflicht">Bauleistung</a></li>
+		<li class="item-220"><a href="/heim-bau/feuerrohbauversicherung">Feuerrohbau</a></li>
+		<li class="item-346"><a href="/heim-bau/neubauversicherung">Neubau</a></li>
+		<li class="item-221"><a href="/heim-bau/photovoltaikversicherung">Photovoltaikversicherung</a></li>
+		<li class="item-180"><a href="/heim-bau/oeltankversicherung">Öltankversicherung</a></li></ul></div></div></li>
+	<li class="item-104 uk-parent"><a role="button">Unfall &amp; Vorsorge</a>
+	<div class="uk-drop uk-navbar-dropdown" mode="hover" pos="bottom-left"><div><ul class="uk-nav uk-navbar-dropdown-nav">
+
+		<li class="item-107"><a href="/unfall-vorsorge/unfallversicherung">Unfallversicherung</a></li>
+		<li class="item-171"><a href="/unfall-vorsorge/reiseversicherung">Reiseversicherung</a></li>
+		<li class="item-172"><a href="/unfall-vorsorge/private-krankenversicherung">Private Krankenvers.</a></li>
+		<li class="item-174"><a href="/unfall-vorsorge/gesetzliche-krankenversicherung">Gesetzliche Krankenvers.</a></li>
+		<li class="item-175"><a href="/unfall-vorsorge/berufsunfaehigkeitversicherung">Berufsunfähigkeit</a></li>
+		<li class="item-176"><a href="/unfall-vorsorge/lebensversicherung">Lebensversicherung</a></li>
+		<li class="item-177"><a href="/unfall-vorsorge/rentenversicherung">Rentenversicherung</a></li></ul></div></div></li>
+	<li class="item-108 uk-parent"><a role="button">Tier</a>
+	<div class="uk-drop uk-navbar-dropdown" mode="hover" pos="bottom-left"><div><ul class="uk-nav uk-navbar-dropdown-nav">
+
+		<li class="item-113"><a href="/recht-pflicht/hundehaftpflichtversicherung">Hundehaftpflichtversicherung</a></li>
+		<li class="item-223"><a href="/tier/hundekrankenversicherung">Hundekrankenversicherung</a></li>
+		<li class="item-224"><a href="/tier/katzenkrankenversicherung">Katzenkrankenversicherung</a></li>
+		<li class="item-225"><a href="/tier/pferdekrankenversicherung">Pferdekrankenversicherung</a></li></ul></div></div></li>
+	<li class="item-109 uk-parent"><a role="button">Technik</a>
+	<div class="uk-drop uk-navbar-dropdown" mode="hover" pos="bottom-left"><div><ul class="uk-nav uk-navbar-dropdown-nav">
+
+		<li class="item-114"><a href="/technik/ebike-versicherung">eBike Versicherung</a></li>
+		<li class="item-181"><a href="/technik/drohnenversicherung">Drohnenversicherung</a></li>
+		<li class="item-222"><a href="/technik/cyber-versicherung">Cyber­versicherung</a></li>
+		<li class="item-813"><a href="https://www.mr-money.de/heim-bau/photovoltaikversicherung">Photovoltaikversicherung</a></li></ul></div></div></li>
+	<li class="item-110 uk-parent"><a role="button">KFZ</a>
+	<div class="uk-drop uk-navbar-dropdown" mode="hover" pos="bottom-left"><div><ul class="uk-nav uk-navbar-dropdown-nav">
+
+		<li class="item-115"><a href="/kfz/pkw-versicherung">PKW</a></li>
+		<li class="item-280"><a href="/kfz/autokredit-rechner">Autokredit Rechner</a></li></ul></div></div></li>
+	<li class="item-111 uk-parent"><a role="button">Geld | Energie</a>
+	<div class="uk-drop uk-navbar-dropdown" mode="hover" pos="bottom-left"><div><ul class="uk-nav uk-navbar-dropdown-nav">
+
+		<li class="item-281"><a href="/geld-energie/kredit">Kredit</a></li>
+		<li class="item-287"><a href="/geld-energie/girokonto">Girokonto</a></li>
+		<li class="item-288"><a href="/geld-energie/tagesgeld">Tagesgeld</a></li>
+		<li class="item-290"><a href="/geld-energie/festgeld">Festgeld</a></li>
+		<li class="item-291"><a href="/geld-energie/strom">Strom</a></li>
+		<li class="item-292"><a href="/geld-energie/gas">Gas</a></li>
+		<li class="item-294"><a href="/geld-energie/wertpapier-vergleich">Wertpapier-Vergleich</a></li>
+		<li class="item-295"><a href="/geld-energie/kreditkarten">Kreditkarten</a></li></ul></div></div></li></ul>
+
+<div class="uk-navbar-item" id="module-191">
+
+    
+    <div class="tm-grid-expand uk-child-width-1-1 uk-grid-margin" uk-grid>
+<div class="uk-width-1-1">
+    
+        
+            
+            
+            
+                
+                    <div><div id="top-right-contact-modal"  uk-modal>
+    <div class="uk-modal-dialog" style="width:480px;">
+        <button class="uk-modal-close-default" type="button" uk-close></button>
+        <div class="uk-modal-body" style="display: flex;gap: 30px;">
+            <img src="/images/fa/phone-solid.svg" width="80" height="80" alt="Ein Telefon das die Beratung per Rückruf representiert." loading="lazy" class="el-image">
+            <div class="sp-contact-info">
+                <span class="sp-contact-phone"><a href="tel:+4937296927396" style="text-decoration: underline;">03 72 96 / 92 73 96</a></span><br>
+                <span class="sp-contact-email"><a href="mailto:post@mr-money.de" style="text-decoration: underline;">post@mr-money.de</a></span><br>
+                <span class="sp-contact-time">Mo - Do: 9-12 & 13-17 Uhr</span><br><span class="sp-contact-time">Fr: 9-12 & 13-16:30 Uhr</span><br>
+                <a href="https://wa.me/4915510522810" target="_blank" style="display: inline-block; background-color: #25D366; color: white; padding: 8px 16px; border-radius: 6px; text-decoration: none; font-weight: 500; margin-top: 8px; transition: background-color 0.2s; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+                    <span style="margin-right: 8px;">💬</span> WhatsApp: 015510522810
+                </a><br>
+                <hr>
+                <div id="staffBox">
+                    <span>Folgende Ansprechpartner stehen Ihnen heute zur Verfügung:</span><br><br>
+                    <div style="display: flex;flex-direction: column;flex-wrap: wrap;align-items: flex-start;">
+                        <a class="ma24 el-content uk-flex-inline uk-flex-center uk-flex-middle" href="tel:+4937296927396" uk-scroll="" role="button">
+                            <span class="uk-margin-small-right uk-icon" uk-icon="fa6-solid--phone"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="20" height="20" aria-hidden="true"><path d="M511.2 387l-23.25 100.8c-3.266 14.25-15.79 24.22-30.46 24.22C205.2 512 0 306.8 0 54.5c0-14.66 9.969-27.2 24.22-30.45L125.02.8c14.68-3.402 29.68 4.218 35.78 18.12l46.52 108.5c5.438 12.78 1.77 27.67-8.98 36.45L144.5 207.1c33.98 69.22 90.26 125.5 159.5 159.5l44.08-53.8c8.688-10.78 23.69-14.51 36.47-8.975l108.5 46.51C506.1 357.2 514.6 372.4 511.2 387z"></path></svg></span>
+                            Frank Hofmann
+                        </a>
+                        <a class="ma15 el-content uk-flex-inline uk-flex-center uk-flex-middle" href="tel:+4937296927396" uk-scroll="" role="button">
+                            <span class="uk-margin-small-right uk-icon" uk-icon="fa6-solid--phone"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="20" height="20" aria-hidden="true"><path d="M511.2 387l-23.25 100.8c-3.266 14.25-15.79 24.22-30.46 24.22C205.2 512 0 306.8 0 54.5c0-14.66 9.969-27.2 24.22-30.45L125.02.8c14.68-3.402 29.68 4.218 35.78 18.12l46.52 108.5c5.438 12.78 1.77 27.67-8.98 36.45L144.5 207.1c33.98 69.22 90.26 125.5 159.5 159.5l44.08-53.8c8.688-10.78 23.69-14.51 36.47-8.975l108.5 46.51C506.1 357.2 514.6 372.4 511.2 387z"></path></svg></span>
+                            Christof Tittel
+                        </a>
+                        <a hidden class="ma27 el-content uk-flex-inline uk-flex-center uk-flex-middle" href="tel:+4937296927396" uk-scroll="" role="button">
+                            <span class="uk-margin-small-right uk-icon" uk-icon="fa6-solid--phone"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="20" height="20" aria-hidden="true"><path d="M511.2 387l-23.25 100.8c-3.266 14.25-15.79 24.22-30.46 24.22C205.2 512 0 306.8 0 54.5c0-14.66 9.969-27.2 24.22-30.45L125.02.8c14.68-3.402 29.68 4.218 35.78 18.12l46.52 108.5c5.438 12.78 1.77 27.67-8.98 36.45L144.5 207.1c33.98 69.22 90.26 125.5 159.5 159.5l44.08-53.8c8.688-10.78 23.69-14.51 36.47-8.975l108.5 46.51C506.1 357.2 514.6 372.4 511.2 387z"></path></svg></span>
+                            Damaris Klemm
+                        </a>
+                        <a hidden class="ma11 el-content uk-flex-inline uk-flex-center uk-flex-middle" href="tel:+4937296927396" uk-scroll="" role="button">
+                            <span class="uk-margin-small-right uk-icon" uk-icon="fa6-solid--phone"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="20" height="20" aria-hidden="true"><path d="M511.2 387l-23.25 100.8c-3.266 14.25-15.79 24.22-30.46 24.22C205.2 512 0 306.8 0 54.5c0-14.66 9.969-27.2 24.22-30.45L125.02.8c14.68-3.402 29.68 4.218 35.78 18.12l46.52 108.5c5.438 12.78 1.77 27.67-8.98 36.45L144.5 207.1c33.98 69.22 90.26 125.5 159.5 159.5l44.08-53.8c8.688-10.78 23.69-14.51 36.47-8.975l108.5 46.51C506.1 357.2 514.6 372.4 511.2 387z"></path></svg></span>
+                            Mario Richter
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    addEventListener('DOMContentLoaded', () => {
+        // Den zweiten Button im Element mit der ID "top-right-btn-bar" auswählen
+        const buttonContainer = UIkit.util.$("#top-right-btn-bar");
+        console.log(buttonContainer);
+        if (buttonContainer) {
+            const buttons = buttonContainer.querySelectorAll('a.el-content');
+            console.log(buttons);
+            if (buttons.length >= 2) {
+                // Variante 1: UIkit-Attribute zum zweiten Button hinzufügen
+                UIkit.util.attr(buttons[1], 'uk-toggle', 'target: #top-right-contact-modal');
+                console.log('UIkit-Modal-Attribut zum zweiten Button hinzugefügt');
+
+                // ODER Variante 2: Event mit UIkit API
+                /*
+                UIkit.util.on(buttons[1], 'click', function(e) {
+                    e.preventDefault();
+                    UIkit.modal('#top-right-contact-modal').show();
+                });
+                console.log('UIkit-Modal-Event zum zweiten Button hinzugefügt');
+                */
+            } else {
+                console.error('Nicht genügend Buttons im Container gefunden');
+            }
+        } else {
+            console.error('Container-Element #top-right-btn-bar nicht gefunden');
+        }
+    });
+</script>
+
+<!-- ============================ -->
+
+<script>
+    addEventListener('DOMContentLoaded', (event) => {
+
+        if (typeof window.refreshMaStatus === 'undefined' || window.refreshMaStatus === false) {
+
+            const querySelector = document.querySelector.bind(document);
+
+            function refreshMaStatus() {
+                fetch("/telaStatus.php")
+                    .then((response) => response.json())
+                    .then((json) => {
+                        let contactBox = querySelector('#top-right-btn-bar > div');
+                        let staffBox = querySelector('#staffBox div');
+                        let icon = '<span class="uk-margin-small-right uk-icon" uk-icon="fa6-solid--phone"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="20" height="20" aria-hidden="true"><path d="M511.2 387l-23.25 100.8c-3.266 14.25-15.79 24.22-30.46 24.22C205.2 512 0 306.8 0 54.5c0-14.66 9.969-27.2 24.22-30.45L125.02.8c14.68-3.402 29.68 4.218 35.78 18.12l46.52 108.5c5.438 12.78 1.77 27.67-8.98 36.45L144.5 207.1c33.98 69.22 90.26 125.5 159.5 159.5l44.08-53.8c8.688-10.78 23.69-14.51 36.47-8.975l108.5 46.51C506.1 357.2 514.6 372.4 511.2 387z"></path></svg></span>';
+                        let staffMembers = {
+                            MA11: {cls:'ma11', name:'Mario Richter'},
+                            MA15: {cls:'ma15', name:'Christof Tittel'},
+                            MA24: {cls:'ma24', name:'Frank Hofmann'},
+                            MA27: {cls:'ma27', name:'Damaris Klemm'},
+                        };
+                        let order = ['MA15', 'MA24', 'MA27', 'MA11'];
+
+                        if (contactBox) {
+                            let cBox = contactBox.children[1];
+                            if (json.status === 'work') {
+                                cBox.classList.remove('offline', 'hide-ma', 'online');
+
+                                // Mitarbeiter-Elemente
+                                const ma11Element = querySelector('.ma11');
+                                const ma15Element = querySelector('.ma15');
+                                const ma24Element = querySelector('.ma24');
+                                const ma27Element = querySelector('.ma27');
+
+                                // Prüfe Verfügbarkeit der Mitarbeiter
+                                let hasAvailableEmployee = false;
+
+                                // MA24 und MA15 Status prüfen
+                                const ma24Available = json.DND.MA24 === '0' && json.lunch.MA24 === 0;
+                                const ma15Available = json.DND.MA15 === '0' && json.lunch.MA15 === 0;
+                                const ma27Available = json.DND.MA27 === '0' && json.lunch.MA27 === 0;
+                                const ma11Available = json.DND.MA11 === '0' && json.lunch.MA11 === 0;
+
+                                const ma24Free = json.MA.MA24 === '';
+                                const ma15Free = json.MA.MA15 === '';
+                                const ma27Free = json.MA.MA27 === '';
+                                const ma11Free = json.MA.MA11 === '';
+
+                                let maCount = 0;
+
+                                // MA24 anzeigen/ausblenden basierend auf DND-Status
+                                if (json.DND.MA24 === '2') {
+                                    ma24Element.setAttribute('hidden', '');
+                                } else {
+                                    ma24Element.removeAttribute('hidden');
+                                    maCount++;
+                                    if (ma24Free) {
+                                        hasAvailableEmployee = true;
+                                        ma24Element.classList.add('online');
+                                    } else {
+                                        ma24Element.classList.remove('online');
+                                    }
+                                }
+
+                                // MA15 anzeigen/ausblenden basierend auf DND-Status
+                                if (json.DND.MA15 === '2') {
+                                    ma15Element.setAttribute('hidden', '');
+                                } else {
+                                    ma15Element.removeAttribute('hidden');
+                                    maCount++;
+                                    if (ma15Free) {
+                                        hasAvailableEmployee = true;
+                                        ma15Element.classList.add('online');
+                                    } else {
+                                        ma15Element.classList.remove('online');
+                                    }
+                                }
+
+                                // MA27 anzeigen/ausblenden basierend auf DND-Status
+                                if (json.DND.MA27 === '2') {
+                                    ma27Element.setAttribute('hidden', '');
+                                } else {
+                                    if ( maCount === 1 ) {
+                                        ma27Element.removeAttribute('hidden');
+                                        maCount++;
+                                        if (ma27Free) {
+                                            hasAvailableEmployee = true;
+                                            ma27Element.classList.add('online');
+                                        } else {
+                                            ma27Element.classList.remove('online');
+                                        }
+                                    }
+                                }
+
+                                // MA11 anzeigen/ausblenden basierend auf DND-Status
+                                if (json.DND.MA11 === '2') {
+                                    ma11Element.setAttribute('hidden', '');
+                                } else {
+                                    if ( maCount === 1 ) {
+                                        ma11Element.removeAttribute('hidden');
+                                        maCount++;
+                                        if (ma11Free) {
+                                            hasAvailableEmployee = true;
+                                            ma11Element.classList.add('online');
+                                        } else {
+                                            ma11Element.classList.remove('online');
+                                        }
+                                    }
+                                }
+
+                                // Setze die entsprechende Klasse für den Kontakt-Button
+                                if (hasAvailableEmployee) {
+                                    cBox.classList.add('online');
+                                } else {
+                                    cBox.classList.add('offline');
+                                }
+                            } else {
+                                cBox.classList.add('hide-ma');
+                            }
+                        }
+                    });
+            }
+
+            // Add event listener for when the contact modal is opened
+            UIkit.util.on('#top-right-contact-modal', 'show', function() {
+                refreshMaStatus();
+            });
+
+            if( document.querySelectorAll('.pa-search-page').length === 0 ) {
+                setTimeout(function () {
+                    refreshMaStatus();
+                }, 1000);
+                window.refreshMaStatus = true;
+            }
+        }
+    });
+</script>
+<style>
+    .el-item.online > a > span, a.online > span {
+        color: green;
+    }
+    .el-item.offline > a > span, a.offline > span {
+        color: red;
+    }
+</style></div>
+<div id="top-right-btn-bar" class="btn uk-margin-remove-vertical">
+        <div class="uk-flex-middle uk-grid-small uk-child-width-auto" uk-grid>    
+    
+                <div class="el-item">
+        
+        
+<a class="el-content uk-flex-inline uk-flex-center uk-flex-middle" href="https://kundenlogin.mr-money.de/" target="_blank">
+        <span class="uk-margin-small-right" uk-icon="fa6-regular--user"></span>    
+        Login    
+    
+</a>
+
+
+                </div>
+        
+    
+                <div class="el-item">
+        
+        
+<a class="el-content uk-flex-inline uk-flex-center uk-flex-middle" href="#" uk-scroll>
+        <span class="uk-margin-small-right" uk-icon="fa6-solid--phone"></span>    
+        Kontakt    
+    
+</a>
+
+
+                </div>
+        
+    
+                <div class="el-item">
+        
+        
+<a class="el-content uk-flex-inline uk-flex-center uk-flex-middle" title="Suche" href="/suche" target="_blank">
+        <span class="uk-margin-small-right" uk-icon="bootstrap--search"></span>    
+        Suche    
+    
+</a>
+
+
+                </div>
+        
+    
+        </div>    
+</div>
+
+                
+            
+        
+    
+</div></div>
+</div>
+
+                        
+                                                    
+                        
+                    </div>
+                    
+                </nav>
+            </div>
+
+        </div>
+
+        </div>
+    
+
+
+
+
+
+
+
+</header>
+
+            
+            
+
+            <main id="tm-main" >
+
+                
+                <div id="system-message-container" aria-live="polite"></div>
+
+                <!-- Builder #page --><style class="uk-margin-remove-adjacent">/*#page\#0{text-shadow:1px 1px 1px #30476c;}*/</style>
+<div class="uk-section-default uk-section" uk-scrollspy="target: [uk-scrollspy-class]; cls: uk-animation-fade; delay: false;">
+    
+        
+        
+        
+            
+                                <div class="uk-container">                
+                    <div class="uk-margin-medium uk-container uk-container-large"><div class="tm-grid-expand uk-child-width-1-1" uk-grid>
+<div class="uk-width-1-1@m">
+    
+        
+            
+            
+            
+                
+                    
+<h1 class="uk-margin-remove-bottom uk-text-center" id="page#0" uk-scrollspy-class>        Versicherungsrechner und Vergleichsrechner: Ihr umfassender Überblick für private Versicherungen    </h1><hr uk-scrollspy-class>
+<h2 uk-scrollspy-class>        Übersicht unserer Vergleichsrechner    </h2>
+                
+            
+        
+    
+</div></div></div><div class="tm-grid-expand uk-margin-small" uk-grid>
+<div class="uk-width-1-2@s uk-width-1-4@m">
+    
+        
+            
+            
+            
+                
+                    
+<div class="uk-card uk-card-default uk-card-small uk-card-body uk-margin-remove-first-child uk-margin uk-text-center" uk-scrollspy-class>
+    
+        
+            
+                
+            
+            
+                                
+
+    
+                <img src="/images/fa/user-shield.svg" width="60" height="60" alt loading="lazy" uk-svg class="uk-text-primary el-image">        
+        
+    
+                
+                
+                    
+
+        
+                <h3 class="el-title uk-card-title uk-margin-top uk-margin-remove-bottom">                        Privathaftpflicht                    </h3>        
+        
+    
+        
+        
+        
+        
+                <div class="uk-margin-top"><a href="/vergleichen/privathaftpflichtversicherung" class="el-link uk-button uk-button-secondary">Jetzt Vergleichen</a></div>        
+
+                
+                
+            
+        
+    
+</div>
+                
+            
+        
+    
+</div>
+<div class="uk-width-1-2@s uk-width-1-4@m">
+    
+        
+            
+            
+            
+                
+                    
+<div class="uk-card uk-card-default uk-card-small uk-card-body uk-margin-remove-first-child uk-margin uk-text-center" uk-scrollspy-class>
+    
+        
+            
+                
+            
+            
+                                
+
+    
+                <img src="/images/fa/gavel.svg" width="60" height="60" alt loading="lazy" uk-svg class="uk-text-primary el-image">        
+        
+    
+                
+                
+                    
+
+        
+                <h3 class="el-title uk-card-title uk-margin-top uk-margin-remove-bottom">                        Rechtsschutz                    </h3>        
+        
+    
+        
+        
+        
+        
+                <div class="uk-margin-top"><a href="/vergleichen/rechtsschutzversicherung" class="el-link uk-button uk-button-secondary">Jetzt Vergleichen</a></div>        
+
+                
+                
+            
+        
+    
+</div>
+                
+            
+        
+    
+</div>
+<div class="uk-width-1-2@s uk-width-1-4@m">
+    
+        
+            
+            
+            
+                
+                    
+<div class="uk-card uk-card-default uk-card-small uk-card-body uk-margin-remove-first-child uk-margin uk-text-center" uk-scrollspy-class>
+    
+        
+            
+                
+            
+            
+                                
+
+    
+                <img src="/images/fa/user-injured.svg" width="60" height="60" alt loading="lazy" uk-svg class="uk-text-primary el-image">        
+        
+    
+                
+                
+                    
+
+        
+                <h3 class="el-title uk-card-title uk-margin-top uk-margin-remove-bottom">                        Unfall                    </h3>        
+        
+    
+        
+        
+        
+        
+                <div class="uk-margin-top"><a href="/vergleichen/unfallversicherung" class="el-link uk-button uk-button-secondary">Jetzt Vergleichen</a></div>        
+
+                
+                
+            
+        
+    
+</div>
+                
+            
+        
+    
+</div>
+<div class="uk-width-1-2@s uk-width-1-4@m">
+    
+        
+            
+            
+            
+                
+                    
+<div class="uk-card uk-card-default uk-card-small uk-card-body uk-margin-remove-first-child uk-margin uk-text-center" uk-scrollspy-class>
+    
+        
+            
+                
+            
+            
+                                
+
+    
+                <img src="/images/fa/person-digging-solid.svg" width="60" height="60" alt loading="lazy" uk-svg class="uk-text-primary el-image">        
+        
+    
+                
+                
+                    
+
+        
+                <h3 class="el-title uk-card-title uk-margin-top uk-margin-remove-bottom">                        Bauherren                    </h3>        
+        
+    
+        
+        
+        
+        
+                <div class="uk-margin-top"><a href="/vergleichen/bauversicherung" class="el-link uk-button uk-button-secondary">Jetzt Vergleichen</a></div>        
+
+                
+                
+            
+        
+    
+</div>
+                
+            
+        
+    
+</div></div><div class="tm-grid-expand uk-margin-small" uk-grid>
+<div class="uk-width-1-2@s uk-width-1-4@m">
+    
+        
+            
+            
+            
+                
+                    
+<div class="uk-card uk-card-default uk-card-small uk-card-body uk-margin-remove-first-child uk-margin uk-text-center" uk-scrollspy-class>
+    
+        
+            
+                
+            
+            
+                                
+
+    
+                <img src="/images/fa/helmet-safety.svg" width="60" height="60" alt loading="lazy" uk-svg class="uk-text-primary el-image">        
+        
+    
+                
+                
+                    
+
+        
+                <h3 class="el-title uk-card-title uk-margin-top uk-margin-remove-bottom">                        Bauleistung                    </h3>        
+        
+    
+        
+        
+        
+        
+                <div class="uk-margin-top"><a href="/heim-bau/bauherrenhaftpflicht" class="el-link uk-button uk-button-secondary">Jetzt Vergleichen</a></div>        
+
+                
+                
+            
+        
+    
+</div>
+                
+            
+        
+    
+</div>
+<div class="uk-width-1-2@s uk-width-1-4@m">
+    
+        
+            
+            
+            
+                
+                    
+<div class="uk-card uk-card-default uk-card-small uk-card-body uk-margin-remove-first-child uk-margin uk-text-center" uk-scrollspy-class>
+    
+        
+            
+                
+            
+            
+                                
+
+    
+                <img src="/images/fa/building-shield.svg" width="60" height="60" alt loading="lazy" uk-svg class="uk-text-primary el-image">        
+        
+    
+                
+                
+                    
+
+        
+                <h3 class="el-title uk-card-title uk-margin-top uk-margin-remove-bottom">                        Wohngebäude                    </h3>        
+        
+    
+        
+        
+        
+        
+                <div class="uk-margin-top"><a href="/vergleichen/wohngebaeudeversicherung" class="el-link uk-button uk-button-secondary">Jetzt Vergleichen</a></div>        
+
+                
+                
+            
+        
+    
+</div>
+                
+            
+        
+    
+</div>
+<div class="uk-width-1-2@s uk-width-1-4@m">
+    
+        
+            
+            
+            
+                
+                    
+<div class="uk-card uk-card-default uk-card-small uk-card-body uk-margin-remove-first-child uk-margin uk-text-center" uk-scrollspy-class>
+    
+        
+            
+                
+            
+            
+                                
+
+    
+                <img src="/images/fa/house-laptop.svg" width="60" height="60" alt loading="lazy" uk-svg class="uk-text-primary el-image">        
+        
+    
+                
+                
+                    
+
+        
+                <h3 class="el-title uk-card-title uk-margin-top uk-margin-remove-bottom">                        Hausrat                    </h3>        
+        
+    
+        
+        
+        
+        
+                <div class="uk-margin-top"><a href="/hausrat-vergleichsrechner" class="el-link uk-button uk-button-secondary">Jetzt Vergleichen</a></div>        
+
+                
+                
+            
+        
+    
+</div>
+                
+            
+        
+    
+</div>
+<div class="uk-width-1-2@s uk-width-1-4@m">
+    
+        
+            
+            
+            
+                
+                    
+<div class="uk-card uk-card-default uk-card-small uk-card-body uk-margin-remove-first-child uk-margin uk-text-center" uk-scrollspy-class>
+    
+        
+            
+                
+            
+            
+                                
+
+    
+                <img src="/images/fa/house-chimney-user.svg" width="60" height="60" alt loading="lazy" uk-svg class="uk-text-primary el-image">        
+        
+    
+                
+                
+                    
+
+        
+                <h3 class="el-title uk-card-title uk-margin-top uk-margin-remove-bottom">                        Haus & Grundbesitzer                    </h3>        
+        
+    
+        
+        
+        
+        
+                <div class="uk-margin-top"><a href="/vergleichen/haus-grundbesitzerversicherung" class="el-link uk-button uk-button-secondary">Jetzt Vergleichen</a></div>        
+
+                
+                
+            
+        
+    
+</div>
+                
+            
+        
+    
+</div></div><div class="tm-grid-expand uk-margin-small" uk-grid>
+<div class="uk-width-1-2@s uk-width-1-4@m">
+    
+        
+            
+            
+            
+                
+                    
+<div class="uk-card uk-card-default uk-card-small uk-card-body uk-margin-remove-first-child uk-margin uk-text-center" uk-scrollspy-class>
+    
+        
+            
+                
+            
+            
+                                
+
+    
+                <img src="/images/fa/trowel-bricks-solid.svg" width="60" height="60" alt loading="lazy" uk-svg class="uk-text-primary el-image">        
+        
+    
+                
+                
+                    
+
+        
+                <h3 class="el-title uk-card-title uk-margin-top uk-margin-remove-bottom">                        Neubau Feuerrohbau                    </h3>        
+        
+    
+        
+        
+        
+        
+                <div class="uk-margin-top"><a href="/vergleichen/feuerrohbauversicherung" class="el-link uk-button uk-button-secondary">Jetzt Vergleichen</a></div>        
+
+                
+                
+            
+        
+    
+</div>
+                
+            
+        
+    
+</div>
+<div class="uk-width-1-2@s uk-width-1-4@m">
+    
+        
+            
+            
+            
+                
+                    
+<div class="uk-card uk-card-default uk-card-small uk-card-body uk-margin-remove-first-child uk-margin uk-text-center" uk-scrollspy-class>
+    
+        
+            
+                
+            
+            
+                                
+
+    
+                <img src="/images/fa/droplet-solid.svg" width="60" height="60" alt loading="lazy" uk-svg class="uk-text-primary el-image">        
+        
+    
+                
+                
+                    
+
+        
+                <h3 class="el-title uk-card-title uk-margin-top uk-margin-remove-bottom">                        Öltank                    </h3>        
+        
+    
+        
+        
+        
+        
+                <div class="uk-margin-top"><a href="/vergleichen/oeltankversicherung" class="el-link uk-button uk-button-secondary">Jetzt Vergleichen</a></div>        
+
+                
+                
+            
+        
+    
+</div>
+                
+            
+        
+    
+</div>
+<div class="uk-width-1-2@s uk-width-1-4@m">
+    
+        
+            
+            
+            
+                
+                    
+<div class="uk-card uk-card-default uk-card-small uk-card-body uk-margin-remove-first-child uk-margin uk-text-center" uk-scrollspy-class>
+    
+        
+            
+                
+            
+            
+                                
+
+    
+                <img src="/images/fa/paw.svg" width="60" height="60" alt loading="lazy" uk-svg class="uk-text-primary el-image">        
+        
+    
+                
+                
+                    
+
+        
+                <h3 class="el-title uk-card-title uk-margin-top uk-margin-remove-bottom">                        Tierhalter                    </h3>        
+        
+    
+        
+        
+        
+        
+                <div class="uk-margin-top"><a href="/vergleichen/tierhaftpflichtversicherung" class="el-link uk-button uk-button-secondary">Jetzt Vergleichen</a></div>        
+
+                
+                
+            
+        
+    
+</div>
+                
+            
+        
+    
+</div>
+<div class="uk-width-1-2@s uk-width-1-4@m">
+    
+        
+            
+            
+            
+                
+                    
+<div class="uk-card uk-card-default uk-card-small uk-card-body uk-margin-remove-first-child uk-margin uk-text-center" uk-scrollspy-class>
+    
+        
+            
+                
+            
+            
+                                
+
+    
+                <img src="/images/fa/shield-dog-solid.svg" width="60" height="60" alt loading="lazy" uk-svg class="uk-text-primary el-image">        
+        
+    
+                
+                
+                    
+
+        
+                <h3 class="el-title uk-card-title uk-margin-top uk-margin-remove-bottom">                        Hundekranken­                    </h3>        
+        
+    
+        
+        
+        
+        
+                <div class="uk-margin-top"><a href="https://www.mr-money.de/vergleichen/hundekrankenversicherung" class="el-link uk-button uk-button-secondary">Jetzt Vergleichen</a></div>        
+
+                
+                
+            
+        
+    
+</div>
+                
+            
+        
+    
+</div></div><div class="tm-grid-expand uk-margin-small" uk-grid>
+<div class="uk-width-1-2@s uk-width-1-4@m">
+    
+        
+            
+            
+            
+                
+                    
+<div class="uk-card uk-card-default uk-card-small uk-card-body uk-margin-remove-first-child uk-margin uk-text-center" uk-scrollspy-class>
+    
+        
+            
+                
+            
+            
+                                
+
+    
+                <img src="/images/fa/shield-cat-solid.svg" width="60" height="60" alt loading="lazy" uk-svg class="uk-text-primary el-image">        
+        
+    
+                
+                
+                    
+
+        
+                <h3 class="el-title uk-card-title uk-margin-top uk-margin-remove-bottom">                        Katzenkranken­                    </h3>        
+        
+    
+        
+        
+        
+        
+                <div class="uk-margin-top"><a href="https://www.mr-money.de/vergleichen/katzenkrankenversicherung" class="el-link uk-button uk-button-secondary">Jetzt Vergleichen</a></div>        
+
+                
+                
+            
+        
+    
+</div>
+                
+            
+        
+    
+</div>
+<div class="uk-width-1-2@s uk-width-1-4@m">
+    
+        
+            
+            
+            
+                
+                    
+<div class="uk-card uk-card-default uk-card-small uk-card-body uk-margin-remove-first-child uk-margin uk-text-center" uk-scrollspy-class>
+    
+        
+            
+                
+            
+            
+                                
+
+    
+                <img src="/images/fa/horse-solid.svg" width="60" height="60" alt loading="lazy" uk-svg class="uk-text-primary el-image">        
+        
+    
+                
+                
+                    
+
+        
+                <h3 class="el-title uk-card-title uk-margin-top uk-margin-remove-bottom">                        Pferdekranken­                    </h3>        
+        
+    
+        
+        
+        
+        
+                <div class="uk-margin-top"><a href="https://www.mr-money.de/vergleichen/pferdekrankenversicherung" class="el-link uk-button uk-button-secondary">Jetzt Vergleichen</a></div>        
+
+                
+                
+            
+        
+    
+</div>
+                
+            
+        
+    
+</div>
+<div class="uk-width-1-2@s uk-width-1-4@m">
+    
+        
+            
+            
+            
+                
+                    
+<div class="uk-card uk-card-default uk-card-small uk-card-body uk-margin-remove-first-child uk-margin uk-text-center" uk-scrollspy-class>
+    
+        
+            
+                
+            
+            
+                                
+
+    
+                <img src="/images/fa/bicycle-solid.svg" width="60" height="60" alt loading="lazy" uk-svg class="uk-text-primary el-image">        
+        
+    
+                
+                
+                    
+
+        
+                <h3 class="el-title uk-card-title uk-margin-top uk-margin-remove-bottom">                        Fahrrad/E-Bike                    </h3>        
+        
+    
+        
+        
+        
+        
+                <div class="uk-margin-top"><a href="/vergleichen/ebike-versicherung" class="el-link uk-button uk-button-secondary">Jetzt Vergleichen</a></div>        
+
+                
+                
+            
+        
+    
+</div>
+                
+            
+        
+    
+</div>
+<div class="uk-width-1-2@s uk-width-1-4@m">
+    
+        
+            
+            
+            
+                
+                    
+<div class="uk-card uk-card-default uk-card-small uk-card-body uk-margin-remove-first-child uk-margin uk-text-center" uk-scrollspy-class>
+    
+        
+            
+                
+            
+            
+                                
+
+    
+                <img src="/images/fa/solar-panel-solid.svg" width="60" height="60" alt loading="lazy" uk-svg class="uk-text-primary el-image">        
+        
+    
+                
+                
+                    
+
+        
+                <h3 class="el-title uk-card-title uk-margin-top uk-margin-remove-bottom">                        Photovoltaik                    </h3>        
+        
+    
+        
+        
+        
+        
+                <div class="uk-margin-top"><a href="https://www.mr-money.de/vergleichen/photovoltaikversicherung" class="el-link uk-button uk-button-secondary">Jetzt Vergleichen</a></div>        
+
+                
+                
+            
+        
+    
+</div>
+                
+            
+        
+    
+</div></div><div class="tm-grid-expand uk-margin-small" uk-grid>
+<div class="uk-width-1-2@s uk-width-1-4@m">
+    
+        
+            
+            
+            
+                
+                    
+<div class="uk-card uk-card-default uk-card-small uk-card-body uk-margin-remove-first-child uk-margin uk-text-center" uk-scrollspy-class>
+    
+        
+            
+                
+            
+            
+                                
+
+    
+                <img src="/images/fa/jet-fighter-up-solid.svg" width="60" height="60" alt loading="lazy" uk-svg class="uk-text-primary el-image">        
+        
+    
+                
+                
+                    
+
+        
+                <h3 class="el-title uk-card-title uk-margin-top uk-margin-remove-bottom">                        Drohnen                    </h3>        
+        
+    
+        
+        
+        
+        
+                <div class="uk-margin-top"><a href="/vergleichen/drohnenversicherung-vergleich" class="el-link uk-button uk-button-secondary">Jetzt Vergleichen</a></div>        
+
+                
+                
+            
+        
+    
+</div>
+                
+            
+        
+    
+</div>
+<div class="uk-width-1-2@s uk-width-1-4@m">
+    
+        
+            
+            
+            
+                
+                    
+<div class="uk-card uk-card-default uk-card-small uk-card-body uk-margin-remove-first-child uk-margin uk-text-center" uk-scrollspy-class>
+    
+        
+            
+                
+            
+            
+                                
+
+    
+                <img src="/images/fa/network-wired-solid.svg" width="60" height="60" alt loading="lazy" uk-svg class="uk-text-primary el-image">        
+        
+    
+                
+                
+                    
+
+        
+                <h3 class="el-title uk-card-title uk-margin-top uk-margin-remove-bottom">                        Cyber                    </h3>        
+        
+    
+        
+        
+        
+        
+                <div class="uk-margin-top"><a href="https://www.mr-money.de/vergleichen/cyberversicherung" class="el-link uk-button uk-button-secondary">Jetzt Vergleichen</a></div>        
+
+                
+                
+            
+        
+    
+</div>
+                
+            
+        
+    
+</div>
+<div class="uk-width-1-2@s uk-width-1-4@m">
+    
+        
+            
+            
+            
+                
+                    
+                
+            
+        
+    
+</div>
+<div class="uk-width-1-2@s uk-width-1-4@m">
+    
+        
+            
+            
+            
+                
+                    
+                
+            
+        
+    
+</div></div><div class="tm-grid-expand uk-child-width-1-1 uk-grid-margin" uk-grid>
+<div class="uk-width-1-1">
+    
+        
+            
+            
+            
+                
+                    <hr uk-scrollspy-class>
+                
+            
+        
+    
+</div></div>
+                                </div>                
+            
+        
+    
+</div>
+<div class="uk-section-default uk-section uk-padding-remove-top">
+    
+        
+        
+        
+            
+                                <div class="uk-container">                
+                    <div class="tm-grid-expand uk-child-width-1-1 uk-grid-margin" uk-grid>
+<div class="uk-width-1-1">
+    
+        
+            
+            
+            
+                
+                    <div class="uk-panel uk-margin"><p>In der heutigen Zeit ist es wichtiger denn je, den richtigen Versicherungsschutz zu finden. Als unabhängiger Versicherungsmakler möchten wir Ihnen dabei helfen, die beste Auswahl für Ihre individuellen Bedürfnisse zu treffen. Unsere Website nutzt modernste Versicherungsrechner und Vergleichsrechner, um Ihnen einen umfassenden Überblick über die verfügbaren Optionen zu bieten. In diesem Artikel erfahren Sie alles Wissenswerte über die Funktionsweise und Vorteile dieser nützlichen Tools.</p>
+<h2>Wie funktioniert ein Versicherungsvergleichsrechner?</h2>
+<p>Ein Versicherungsvergleichsrechner ist ein leistungsfähiges Online-Tool, das Ihnen dabei hilft, verschiedene Versicherungsangebote schnell und effizient zu vergleichen. Unsere Website verwendet Cookies, um Ihre Erfahrung zu optimieren und Ihnen maßgeschneiderte Ergebnisse zu präsentieren. Besucher, die die Website nutzen, profitieren von einer benutzerfreundlichen Oberfläche und präzisen Vergleichsmöglichkeiten.</p>
+<h3>Welche Daten müssen Sie eingeben?</h3>
+<p>Um einen aussagekräftigen Vergleich zu ermitteln, benötigt der Versicherungsrechner einige grundlegende Informationen von Ihnen. Diese können je nach Versicherungsart variieren, umfassen aber in der Regel persönliche Daten wie Alter, Wohnort und spezifische Anforderungen an die Versicherung. Bitte beachten Sie, dass diese Angaben vertraulich behandelt werden und nur dazu dienen, Ihnen ein möglichst genaues und individuelles Ergebnis zu liefern.</p>
+<h3>Wie werden die Ergebnisse dargestellt?</h3>
+<p>Nach der Eingabe Ihrer Daten präsentiert Ihnen der Vergleichsrechner eine übersichtliche Auflistung der verfügbaren Tarife. Die Ergebnisse werden so aufbereitet, dass Sie auf einen Blick die wichtigsten Informationen wie Preis, Leistungsumfang und Zusatzoptionen erkennen können. Diese Darstellung ermöglicht es Ihnen, verschiedene Angebote einfach gegenüberzustellen und die für Sie günstigste und passendste Versicherung zu finden.</p>
+<h3>Können Sie die Ergebnisse speichern oder exportieren?</h3>
+<p>Selbstverständlich! Viele Versicherungsvergleichsrechner bieten die Möglichkeit, Ihre Ergebnisse zu speichern oder zu exportieren. So können Sie die Informationen in Ruhe durchgehen oder sie mit einem Versicherungsmakler besprechen. Ihre Daten werden in der Regel für 7 Tage gespeichert, sodass Sie jederzeit darauf zurückgreifen können. Einige Rechner bieten sogar die Option "Speicher meinen Namen", damit Sie bei Ihrem nächsten Besuch schnell dort weitermachen können, wo Sie aufgehört haben.</p>
+<h2>Welche Arten von Versicherungen können Sie mit einem Vergleichsrechner finden?</h2>
+<p>Unser Versicherungsvergleichsrechner deckt eine breite Palette von privaten Versicherungen ab. Von essentiellen Absicherungen bis hin zu speziellen Policen – wir bieten Ihnen einen umfassenden Überblick über den Versicherungsmarkt. Lassen Sie uns einen genaueren Blick auf einige der wichtigsten Versicherungsarten werfen, die Sie mit unserem Tool vergleichen können.</p>
+<h3>Krankenversicherungen im Vergleich</h3>
+<p>Gesundheit ist unser wertvollstes Gut, und eine passende Krankenversicherung ist daher unerlässlich. Mit unserem Vergleichsrechner können Sie verschiedene Tarife der privaten Krankenversicherung gegenüberstellen. Sie erhalten detaillierte Informationen zu Leistungen, Selbstbeteiligungen und möglichen Zusatzoptionen. So finden Sie eine Absicherung, die optimal zu Ihren gesundheitlichen Bedürfnissen und finanziellen Möglichkeiten passt.</p>
+<h3>Rechtsschutzversicherungen vergleichen</h3>
+<p>In einer zunehmend komplexen Welt kann eine Rechtsschutzversicherung von unschätzbarem Wert sein. Unser Versicherungsrechner hilft Ihnen dabei, die verschiedenen Angebote zu vergleichen und die für Sie beste Lösung zu finden. Sie können zwischen verschiedenen Leistungspaketen wählen und erhalten einen klaren Überblick über Deckungssummen, Selbstbeteiligungen und spezielle Rechtsbereiche, die abgesichert sind.</p>
+<h3>KFZ-Versicherungen gegenüberstellen</h3>
+<p>Für Autobesitzer ist eine KFZ-Versicherung Pflicht. Doch die Auswahl an Tarifen und Anbietern ist riesig. Unser Vergleichsrechner für KFZ-Versicherungen hilft Ihnen, durch diesen Dschungel zu navigieren. Sie können verschiedene Faktoren wie Schadensfreiheitsklasse, Jahreskilometerleistung und gewünschte Zusatzleistungen eingeben und erhalten maßgeschneiderte Vorschläge für Ihre individuelle Situation.</p>
+<h2>Wie zuverlässig sind die Ergebnisse eines Versicherungsrechners?</h2>
+<p>Die Zuverlässigkeit der Ergebnisse eines Versicherungsrechners ist ein wichtiger Aspekt, den wir sehr ernst nehmen. Als unabhängiger Versicherungsmakler legen wir großen Wert darauf, unseren Besuchern akkurate und aktuelle Informationen zur Verfügung zu stellen. Dennoch ist es wichtig zu verstehen, wie die Ergebnisse zustande kommen und welche Faktoren dabei eine Rolle spielen.</p>
+<h3>Werden alle Versicherungsanbieter berücksichtigt?</h3>
+<p>Unser Versicherungsvergleichsrechner strebt danach, eine möglichst umfassende Übersicht über den Markt zu bieten. Wir arbeiten kontinuierlich daran, unser Netzwerk an Versicherungsanbietern zu erweitern und zu aktualisieren. Dennoch kann es vorkommen, dass nicht jeder Anbieter in unserem System erfasst ist. Wir empfehlen daher, die Ergebnisse als einen sehr guten Ausgangspunkt für Ihre Suche zu betrachten und bei Bedarf weitere Recherchen anzustellen.</p>
+<h3>Wie aktuell sind die angezeigten Tarife?</h3>
+<p>Aktualität ist für uns von höchster Priorität. Unser System wird regelmäßig aktualisiert, um sicherzustellen, dass die angezeigten Tarife und Konditionen dem neuesten Stand entsprechen. Dennoch kann es in der schnelllebigen Versicherungsbranche zu kurzfristigen Änderungen kommen. Wir empfehlen daher, das angezeigte Datum der letzten Aktualisierung zu beachten und im Zweifelsfall direkt beim Versicherungsanbieter nachzufragen.</p>
+<h3>Gibt es versteckte Kosten oder Provisionen?</h3>
+<p>Transparenz ist uns wichtig. Unser Versicherungsrechner zeigt Ihnen die Kosten so detailliert wie möglich an. Dennoch können in einigen Fällen zusätzliche Gebühren oder Provisionen anfallen, die nicht direkt im Vergleich ersichtlich sind. Als unabhängiger Versicherungsmakler sind wir bestrebt, Ihnen eine objektive Beratung zu bieten. Sollten Sie Fragen zu möglichen versteckten Kosten haben, stehen wir Ihnen gerne per E-Mail oder telefonisch zur Verfügung.</p>
+<h2>Welche Vorteile bietet die Nutzung eines Versicherungsvergleichsrechners?</h2>
+<p>Die Verwendung eines Versicherungsvergleichsrechners bringt zahlreiche Vorteile mit sich, die Ihnen bei der Suche nach der optimalen Versicherung helfen können. Lassen Sie uns einen genaueren Blick auf einige der Hauptvorteile werfen, die unsere Website-Besucher schätzen.</p>
+<h3>Zeit- und Kostenersparnis bei der Versicherungssuche</h3>
+<p>Einer der größten Vorteile eines Versicherungsrechners ist die enorme Zeit- und Kostenersparnis. Anstatt mühsam verschiedene Anbieter einzeln zu kontaktieren und Angebote einzuholen, können Sie mit wenigen Klicks eine Vielzahl von Tarifen vergleichen. Dies spart nicht nur wertvolle Zeit, sondern hilft Ihnen auch dabei, den günstigsten Preis für Ihre gewünschte Leistung zu finden. Unser Tool ermöglicht es Ihnen, effizient und bequem von zu Hause aus die beste Versicherung zu ermitteln.</p>
+<h3>Besserer Überblick über verfügbare Tarife</h3>
+<p>Ein weiterer wesentlicher Vorteil ist der umfassende Überblick, den Sie über die verfügbaren Tarife erhalten. Unser Vergleichsrechner präsentiert Ihnen eine breite Palette an Optionen, die Sie möglicherweise bei einer manuellen Suche übersehen hätten. Sie können verschiedene Angebote direkt nebeneinander betrachten und so leichter Unterschiede in Leistungen und Preisen erkennen. Diese Transparenz ermöglicht es Ihnen, eine fundierte Entscheidung zu treffen.</p>
+<h3>Möglichkeit zur individuellen Anpassung der Suchkriterien</h3>
+<p>Jeder Mensch hat individuelle Bedürfnisse und Prioritäten, wenn es um Versicherungen geht. Unser Versicherungsvergleichsrechner bietet Ihnen die Flexibilität, Ihre Suchkriterien genau anzupassen. Sie können spezifische Leistungen priorisieren, Selbstbeteiligungen festlegen oder bestimmte Zusatzoptionen ein- oder ausschließen. Diese Anpassungsmöglichkeiten helfen Ihnen dabei, Ergebnisse zu erhalten, die exakt auf Ihre persönliche Situation zugeschnitten sind.</p>
+<h2>Wie finden Sie die beste private Versicherung für Ihre Bedürfnisse?</h2>
+<p>Die Suche nach der optimalen privaten Versicherung kann durchaus herausfordernd sein. Unser Versicherungsvergleichsrechner ist ein wertvolles Werkzeug, um Sie bei dieser wichtigen Entscheidung zu unterstützen. Doch es gibt weitere Aspekte, die Sie berücksichtigen sollten, um sicherzustellen, dass Sie wirklich die beste Wahl für Ihre individuellen Bedürfnisse treffen.</p>
+<h3>Welche Faktoren sollten Sie bei der Auswahl berücksichtigen?</h3>
+<p>Bei der Auswahl einer privaten Versicherung spielen verschiedene Faktoren eine Rolle. Neben dem Preis sollten Sie auch auf den Leistungsumfang, mögliche Selbstbeteiligungen und die Reputation des Versicherers achten. Überlegen Sie sich, welche Risiken Sie absichern möchten und welche Zusatzleistungen für Sie wichtig sind. Unser Vergleichsrechner hilft Ihnen dabei, diese Faktoren gegeneinander abzuwägen und eine ausgewogene Entscheidung zu treffen.</p>
+<h3>Kann mich ein Versicherungsmakler zusätzlich beraten?</h3>
+<p>Absolut! Während unser Versicherungsvergleichsrechner Ihnen einen hervorragenden Überblick bietet, kann die zusätzliche Beratung durch einen Versicherungsmakler sehr wertvoll sein. Als unabhängiger Versicherungsmakler stehen wir Ihnen gerne zur Verfügung, um Ihre spezifischen Fragen zu beantworten und Ihnen bei der Interpretation der Vergleichsergebnisse zu helfen. Wir können Ihnen auch Einblicke in Aspekte geben, die möglicherweise nicht direkt aus dem Vergleich ersichtlich sind.</p>
+<h3>Wie vergleichen Sie Zusatzleistungen und Sonderbedingungen?</h3>
+<p>Zusatzleistungen und Sonderbedingungen können oft den entscheidenden Unterschied zwischen verschiedenen Versicherungsangeboten ausmachen. Unser Vergleichsrechner bietet Ihnen die Möglichkeit, diese Details genauer unter die Lupe zu nehmen. Achten Sie besonders auf Klauseln, die für Ihre spezifische Situation relevant sein könnten. Bei Unklarheiten können Sie uns jederzeit kontaktieren – wir helfen Ihnen gerne dabei, die Feinheiten der verschiedenen Angebote zu verstehen und die für Sie beste Wahl zu treffen.</p>
+<h2>Welche weiteren Versicherungsarten können Sie online vergleichen?</h2>
+<p>Unser Versicherungsvergleichsrechner beschränkt sich nicht nur auf die gängigsten Versicherungsarten. Wir bieten Ihnen die Möglichkeit, eine breite Palette von Versicherungen online zu vergleichen. Lassen Sie uns einen Blick auf einige weitere wichtige Versicherungsarten werfen, die Sie mit unserem Tool erkunden können.</p>
+<h3>Privathaftpflichtversicherung im Vergleichsrechner</h3>
+<p>Eine Privathaftpflichtversicherung ist für viele Menschen eine der wichtigsten Absicherungen überhaupt. Sie schützt Sie vor finanziellen Folgen, wenn Sie versehentlich anderen Personen oder deren Eigentum Schaden zufügen. Mit unserem Vergleichsrechner können Sie verschiedene Angebote für Privathaftpflichtversicherungen gegenüberstellen. Sie erhalten einen klaren Überblick über Deckungssummen, eventuelle Selbstbeteiligungen und besondere Leistungen wie den Schutz bei Schlüsselverlust oder die Absicherung ehrenamtlicher Tätigkeiten.</p>
+<h3>Hausratversicherung online vergleichen</h3>
+<p>Ihr Zuhause und Ihre persönlichen Gegenstände verdienen den bestmöglichen Schutz. Eine Hausratversicherung bietet genau das. Mit unserem Online-Vergleichsrechner für Hausratversicherungen können Sie verschiedene Tarife und Leistungen einfach gegenüberstellen. Sie geben die Größe Ihrer Wohnung oder Ihres Hauses ein, wählen den gewünschten Versicherungsumfang und erhalten sofort eine Übersicht über passende Angebote. Achten Sie besonders auf Zusatzleistungen wie den Schutz bei Elementarschäden oder die Absicherung von Wertsachen.</p>
+<h3>Vorsorge- und Kapitalversicherungen finden</h3>
+<p>Für Ihre finanzielle Zukunft ist eine gute Vorsorge unerlässlich. Unser Versicherungsrechner hilft Ihnen auch dabei, passende Vorsorge- und Kapitalversicherungen zu finden. Ob Rentenversicherung, Lebensversicherung oder Kapitalanlageprodukte – Sie können verschiedene Angebote vergleichen und die für Sie beste Lösung ermitteln. Beachten Sie dabei Faktoren wie Laufzeit, Beitragsflexibilität und mögliche Renditen. Da diese Produkte oft komplex sind, stehen wir Ihnen gerne für eine persönliche Beratung zur Verfügung, um die optimale Vorsorgestrategie für Sie zu entwickeln.</p></div>
+                
+            
+        
+    
+</div></div>
+                                </div>                
+            
+        
+    
+</div>
+
+                
+            </main>
+
+            
+
+                        <footer>
+                <!-- Builder #footer --><style class="uk-margin-remove-adjacent">#sticky-to-top{position: fixed; bottom: 20px; right: 20px; margin-bottom:0; z-index: 1; display:none; opacity:0; animation: close 2s;}#sticky-to-top.show{display:block; opacity:1; animation: open 2s; border: 1px solid #011B9A; border-radius: 500px; box-shadow: 1px 1px 5px 1px #011B9A53; padding:16px;}@media only screen and (max-width : 600px){#sticky-to-top{bottom: 10px; right: 10px;}#sticky-to-top a{background-color: #ffffff30;}}@media (min-width: 640px) and (max-width: 959px){#footer\#0 .el-item > .uk-grid > div{width: 14vw;}}@media (min-width: 960px) and (max-width: 1599px){#footer\#0 .el-item > .uk-grid > div{width: 8vw;}}#footer\#1 a{color:#fff;}#footer\#2, #footer\#2 .uk-h5, #footer\#2 .uk-h4{background-color:#636363;color:#fff;}</style>
+<div id="footer#2" class="uk-section-default uk-section uk-section-small uk-padding-remove-bottom">
+    
+        
+        
+        
+            
+                                <div class="uk-container uk-container-large">                
+                    <div class="tm-grid-expand uk-grid-margin" uk-grid>
+<div class="uk-width-1-4@m">
+    
+        
+            
+            
+            
+                
+                    
+<div class="uk-h5 uk-text-left">        Information    </div>
+<ul class="uk-list uk-text-left@s uk-text-center">
+    
+    
+                <li class="el-item">            <div class="el-content uk-panel"><a href="/ueber-mr-money" class="el-link uk-link-reset uk-margin-remove-last-child">Über Mr-Money</a></div>        </li>                <li class="el-item">            <div class="el-content uk-panel"><a href="/agb" class="el-link uk-link-reset uk-margin-remove-last-child">AGB</a></div>        </li>                <li class="el-item">            <div class="el-content uk-panel"><a href="/datenschutz" class="el-link uk-link-reset uk-margin-remove-last-child">Datenschutz</a></div>        </li>                <li class="el-item">            <div class="el-content uk-panel"><a href="/impressum" class="el-link uk-link-reset uk-margin-remove-last-child">Impressum</a></div>        </li>                <li class="el-item">            <div class="el-content uk-panel"><a href="/lexikon" class="el-link uk-link-reset uk-margin-remove-last-child">Häufig gestellte Fragen</a></div>        </li>                <li class="el-item">            <div class="el-content uk-panel"><a href="/lexikon-inkl-schadenbeispiele" class="el-link uk-link-reset uk-margin-remove-last-child">Schadenbeispiele und Fachbegriffe</a></div>        </li>                <li class="el-item">            <div class="el-content uk-panel"><a href="/versicherungsratgeber-beitrag-senken" class="el-link uk-link-reset uk-margin-remove-last-child">Versicherungsratgeber</a></div>        </li>                <li class="el-item">            <div class="el-content uk-panel"><a href="https://www.mr-money.de/vergleichsrechner" class="el-link uk-link-reset uk-margin-remove-last-child">Vergleichsrechner</a></div>        </li>        
+    
+    
+</ul>
+                
+            
+        
+    
+</div>
+<div class="uk-width-1-2@m">
+    
+        
+            
+            
+            
+                
+                    
+<h3 class="uk-h4 uk-text-left@s uk-text-center">        Projekte    </h3>
+<ul class="uk-list uk-column-1-2@m uk-text-left@s uk-text-center">
+    
+    
+                <li class="el-item">            <div class="el-content uk-panel"><a href="https://www.makler-bund.de/" target="_blank" class="el-link uk-link-reset uk-margin-remove-last-child">Maklerpool</a></div>        </li>                <li class="el-item">            <div class="el-content uk-panel"><a href="https://www.versicherungsmaklersoftware.de/" target="_blank" class="el-link uk-link-reset uk-margin-remove-last-child">Maklersoftware</a></div>        </li>                <li class="el-item">            <div class="el-content uk-panel"><a href="https://www.bipro-box.de/" target="_blank" class="el-link uk-link-reset uk-margin-remove-last-child"><p>BiPRO///Box</p></a></div>        </li>                <li class="el-item">            <div class="el-content uk-panel"><a href="https://bipro-radar.de/" target="_blank" class="el-link uk-link-reset uk-margin-remove-last-child"><p>BiPRO-Radar</p></a></div>        </li>                <li class="el-item">            <div class="el-content uk-panel"><a href="https://www.pdf-box.de/" target="_blank" class="el-link uk-link-reset uk-margin-remove-last-child"><p>PDF///Box</p></a></div>        </li>                <li class="el-item">            <div class="el-content uk-panel"><a href="https://www.partnerprogramm-versicherung.de/" target="_blank" class="el-link uk-link-reset uk-margin-remove-last-child">Partnerprogramm</a></div>        </li>                <li class="el-item">            <div class="el-content uk-panel"><a href="https://sponsor24.de/" target="_blank" class="el-link uk-link-reset uk-margin-remove-last-child"><p>Sponsor24</p></a></div>        </li>                <li class="el-item">            <div class="el-content uk-panel"><a href="https://newlingu.com/" class="el-link uk-link-reset uk-margin-remove-last-child">NewLingu - Sprachen lernen</a></div>        </li>                <li class="el-item">            <div class="el-content uk-panel"><a href="https://scanpdf.de/" target="_blank" class="el-link uk-link-reset uk-margin-remove-last-child">ScanPDF - Dokumente auslesen</a></div>        </li>                <li class="el-item">            <div class="el-content uk-panel"><a href="https://www.fibu-live.de/" target="_blank" class="el-link uk-link-reset uk-margin-remove-last-child"><p>Fibu///Live</p></a></div>        </li>                <li class="el-item">            <div class="el-content uk-panel"><a href="https://www.kuendigungshilfe.info/" target="_blank" class="el-link uk-link-reset uk-margin-remove-last-child"><p><span>Kündigungshilfe</span></p></a></div>        </li>                <li class="el-item">            <div class="el-content uk-panel"><a href="https://www.maklerhomepage-live.de/" target="_blank" class="el-link uk-link-reset uk-margin-remove-last-child"><p>CMS///Live</p></a></div>        </li>                <li class="el-item">            <div class="el-content uk-panel"><a href="/alt-tarif-vergleich" class="el-link uk-link-reset uk-margin-remove-last-child">Alt-Tarif-Vergleich</a></div>        </li>                <li class="el-item">            <div class="el-content uk-panel"><a href="/fernwartung" class="el-link uk-link-reset uk-margin-remove-last-child">Fernwartung</a></div>        </li>        
+    
+    
+</ul><div><script type="application/ld+json">
+{ 
+"@context": "http://schema.org/",
+"@type": "Product",
+"name": "Mr-Money Vergleichsportal",
+"aggregateRating": {
+"@type": "AggregateRating",
+"ratingValue": "4.8",
+"worstRating": "1",
+"bestRating": "5",
+"itemReviewed":"Mr-Money Vergleichsportal",
+"ratingCount": "85"
+} 
+} 
+</script></div>
+                
+            
+        
+    
+</div>
+<div class="uk-width-1-4@m">
+    
+        
+            
+            
+            
+                
+                    
+<div id="sticky-to-top" class="uk-margin"><a href="#" uk-totop uk-scroll></a></div>
+<div class="uk-h5 uk-visible@l">        Geschäftszeiten    </div>
+<ul class="uk-list uk-list-collapse uk-visible@l" id="footer#0">        <li class="el-item">
+
+    <div class="uk-child-width-expand@s uk-grid-column-small uk-grid-row-collapse" uk-grid>        <div class="uk-width-small@s uk-text-break">
+            
+            
+<div class="el-title uk-margin-remove">Mo - Do</div>
+            
+        </div>        <div>
+
+            
+            <div class="el-content uk-panel"><p><span class="sp-contact-time">09:00-12:00 &amp; 13:00-17:00 Uhr</span></p></div>
+                                    
+        </div>
+    </div>
+</li>
+        <li class="el-item">
+
+    <div class="uk-child-width-expand@s uk-grid-column-small uk-grid-row-collapse" uk-grid>        <div class="uk-width-small@s uk-text-break">
+            
+            
+<div class="el-title uk-margin-remove">Fr</div>
+            
+        </div>        <div>
+
+            
+            <div class="el-content uk-panel"><p><span class="sp-contact-time">09:00-12:00 &amp; 13:00-16:30 Uhr</span></p></div>
+                                    
+        </div>
+    </div>
+</li>
+    </ul>
+<div class="uk-h5">        Kontakt    </div><div class="uk-panel uk-margin"><a class="uk-link-text" href="mailto:post@mr-money.de">post@mr-money.de</a><br>
+<a class="uk-link-text" href="tel:+4937296927396">03 72 96 / 92 73 96</a></div>
+                
+            
+        
+    
+</div></div><div class="tm-grid-expand uk-child-width-1-1 uk-grid-margin" uk-grid>
+<div class="uk-width-1-1">
+    
+        
+            
+            
+            
+                
+                    <div class="uk-panel uk-text-small uk-margin-remove-top uk-margin-remove-bottom uk-text-center@s uk-text-center" id="footer#1"><p>© 2026 <a href="https://www.makler-bund.de/" target="_blank" rel="noopener">Mr-Money Makler-Bund GmbH</a>.</p></div><div><script>
+    addEventListener("DOMContentLoaded", () => {
+        setTimeout(()=>{
+            (function() {
+                let
+                    stopColor = 'rgba(1,27,154,1)',
+                    x = 2,
+                    y = 2,
+                    xOff = 4,
+                    yOff = 4,
+                    borderRadius = 10
+                ;
+                // SVG-Glow-Overlay für alle UIKit-Karten erzeugen (wie gehabt)
+                document.querySelectorAll('.uk-card:not(.no-highlight-border)').forEach(card => {
+                    if (!card.querySelector('svg.card-glow')) {
+                        const svgNS = 'http://www.w3.org/2000/svg';
+                        const svg = document.createElementNS(svgNS, 'svg');
+                        svg.setAttribute('class', 'card-glow');
+                        svg.style.position = 'absolute';
+                        svg.style.top = 0;
+                        svg.style.left = 0;
+                        svg.style.width = '100%';
+                        svg.style.height = '100%';
+                        svg.style.pointerEvents = 'none';
+                        svg.style.zIndex = 2;
+
+                        const gradId = 'glow-gradient-' + Math.random().toString(36).substr(2, 9);
+
+                        const defs = document.createElementNS(svgNS, 'defs');
+                        const radialGradient = document.createElementNS(svgNS, 'radialGradient');
+                        radialGradient.setAttribute('id', gradId);
+                        radialGradient.setAttribute('cx', '50%');
+                        radialGradient.setAttribute('cy', '50%');
+                        radialGradient.setAttribute('r', '50%');
+                        radialGradient.setAttribute('fx', '50%');
+                        radialGradient.setAttribute('fy', '50%');
+
+                        const stop1 = document.createElementNS(svgNS, 'stop');
+                        stop1.setAttribute('offset', '20%');
+                        stop1.setAttribute('stop-color', stopColor);
+                        const stop2 = document.createElementNS(svgNS, 'stop');
+                        stop2.setAttribute('offset', '100%');
+                        stop2.setAttribute('stop-color', 'transparent');
+
+                        radialGradient.appendChild(stop1);
+                        radialGradient.appendChild(stop2);
+                        defs.appendChild(radialGradient);
+                        svg.appendChild(defs);
+
+                        const rect = document.createElementNS(svgNS, 'rect');
+                        rect.setAttribute('fill', 'none');
+                        rect.setAttribute('stroke', `url(#${gradId})`);
+                        rect.setAttribute('stroke-width', '1');
+                        svg.appendChild(rect);
+
+                        card.style.position = 'relative';
+                        card.appendChild(svg);
+
+                        function updateRectAndGradient(event) {
+                            const rectCard = card.getBoundingClientRect();
+                            svg.setAttribute('viewBox', `0 0 ${rectCard.width} ${rectCard.height}`);
+                            svg.setAttribute('width', rectCard.width);
+                            svg.setAttribute('height', rectCard.height);
+                            rect.setAttribute('x', x);
+                            rect.setAttribute('y', y);
+                            rect.setAttribute('width', rectCard.width - xOff);
+                            rect.setAttribute('height', rectCard.height - yOff);
+                            const style = getComputedStyle(card);
+                            if (style.borderRadius && style.borderRadius.endsWith('px')) {
+                                borderRadius = parseFloat(style.borderRadius);
+                            }
+                            rect.setAttribute('rx', borderRadius);
+                            rect.setAttribute('ry', borderRadius);
+                        }
+
+                        // Initiales Setup
+                        updateRectAndGradient();
+                        window.addEventListener('resize', updateRectAndGradient);
+                    }
+                });
+
+                // Glow-Effekt folgt der Maus im gesamten Container
+                document.querySelectorAll('#tm-main').forEach(container => {
+                    container.addEventListener('mousemove', function(event) {
+                        container.querySelectorAll('.uk-card').forEach(card => {
+                            const rectCard = card.getBoundingClientRect();
+                            const margin = 100;
+                            const svg = card.querySelector('svg.card-glow');
+                            if (!svg) return;
+                            const grad = svg.querySelector('radialGradient');
+                            if (
+                                    event.clientX >= rectCard.left - margin &&
+                                    event.clientX <= rectCard.right + margin &&
+                                    event.clientY >= rectCard.top - margin &&
+                                    event.clientY <= rectCard.bottom + margin
+                            ) {
+                                const x = ((event.clientX - rectCard.left) / rectCard.width) * 100;
+                                const y = ((event.clientY - rectCard.top) / rectCard.height) * 100;
+                                grad.setAttribute('cx', x + '%');
+                                grad.setAttribute('cy', y + '%');
+                                grad.setAttribute('fx', x + '%');
+                                grad.setAttribute('fy', y + '%');
+                                svg.style.opacity = 1;
+                            } else {
+                                grad.setAttribute('cx', '50%');
+                                grad.setAttribute('cy', '50%');
+                                grad.setAttribute('fx', '50%');
+                                grad.setAttribute('fy', '50%');
+                                svg.style.opacity = 0.2;
+                            }
+                        });
+                    });
+                    container.addEventListener('mouseleave', function() {
+                        container.querySelectorAll('.uk-card').forEach(card => {
+                            const svg = card.querySelector('svg.card-glow');
+                            if (svg) {
+                                const grad = svg.querySelector('radialGradient');
+                                grad.setAttribute('cx', '50%');
+                                grad.setAttribute('cy', '50%');
+                                grad.setAttribute('fx', '50%');
+                                grad.setAttribute('fy', '50%');
+                                svg.style.opacity = 0.2;
+                            }
+                        });
+                    });
+                });
+            })();
+        },1000);
+    });
+</script>
+<!--script src="https://stat.mr-money.de/api/script.js" data-site-id="4f51a2d989de" defer></script--></div>
+                
+            
+        
+    
+</div></div>
+                                </div>                
+            
+        
+    
+</div>            </footer>
+            
+        </div>
+
+        
+        
+
+    <noscript class="4SEO_cron">
+    <img aria-hidden="true" alt="" style="position:absolute;bottom:0;left:0;z-index:-99999;" src="https://www.mr-money.de/index.php/_wblapi?nolangfilter=1&_wblapi=/forseo/v1/cron/image/" data-pagespeed-no-transform data-speed-no-transform />
+</noscript>
+<script class="4SEO_cron" data-speed-no-transform >setTimeout(function () {
+        var e = document.createElement('img');
+        e.setAttribute('style', 'position:absolute;bottom:0;right:0;z-index:-99999');
+        e.setAttribute('aria-hidden', 'true');
+        e.setAttribute('src', 'https://www.mr-money.de/index.php/_wblapi?nolangfilter=1&_wblapi=/forseo/v1/cron/image/' + Math.random().toString().substring(2) + Math.random().toString().substring(2)  + '.svg');
+        document.body.appendChild(e);
+        setTimeout(function () {
+            document.body.removeChild(e)
+        }, 3000)
+    }, 3000);
+</script>
+<script class="4SEO_performance_probe" data-speed-no-transform >
+    var forseoPerfProbeEndpoint = 'https://www.mr-money.de/index.php/_wblapi?nolangfilter=1&_wblapi=/forseo/v1/perf/data&u=vergleichsrechner&f=vergleichsrechner'
+	!function(){"use strict";var e,n,t,i,r,o=-1,a=function(e){addEventListener("pageshow",function(n){n.persisted&&(o=n.timeStamp,e(n))},!0)},c=function(){return window.performance&&performance.getEntriesByType&&performance.getEntriesByType("navigation")[0]},u=function(){var e=c();return e&&e.activationStart||0},f=function(e,n){var t=c(),i="navigate";return o>=0?i="back-forward-cache":t&&(document.prerendering||u()>0?i="prerender":document.wasDiscarded?i="restore":t.type&&(i=t.type.replace(/_/g,"-"))),{name:e,value:void 0===n?-1:n,rating:"good",delta:0,entries:[],id:"v3-".concat(Date.now(),"-").concat(Math.floor(8999999999999*Math.random())+1e12),navigationType:i}},s=function(e,n,t){try{if(PerformanceObserver.supportedEntryTypes.includes(e)){var i=new PerformanceObserver(function(e){Promise.resolve().then(function(){n(e.getEntries())})});return i.observe(Object.assign({type:e,buffered:!0},t||{})),i}}catch(e){}},d=function(e,n,t,i){var r,o;return function(a){n.value>=0&&(a||i)&&((o=n.value-(r||0))||void 0===r)&&(r=n.value,n.delta=o,n.rating=function(e,n){return e>n[1]?"poor":e>n[0]?"needs-improvement":"good"}(n.value,t),e(n))}},v=function(e){requestAnimationFrame(function(){return requestAnimationFrame(function(){return e()})})},l=function(e){var n=function(n){"pagehide"!==n.type&&"hidden"!==document.visibilityState||e(n)};addEventListener("visibilitychange",n,!0),addEventListener("pagehide",n,!0)},p=function(e){var n=!1;return function(t){n||(e(t),n=!0)}},m=-1,h=function(){return"hidden"!==document.visibilityState||document.prerendering?1/0:0},g=function(e){"hidden"===document.visibilityState&&m>-1&&(m="visibilitychange"===e.type?e.timeStamp:0,T())},y=function(){addEventListener("visibilitychange",g,!0),addEventListener("prerenderingchange",g,!0)},T=function(){removeEventListener("visibilitychange",g,!0),removeEventListener("prerenderingchange",g,!0)},E=function(){return m<0&&(m=h(),y(),a(function(){setTimeout(function(){m=h(),y()},0)})),{get firstHiddenTime(){return m}}},b=function(e){document.prerendering?addEventListener("prerenderingchange",function(){return e()},!0):e()},w=[1800,3e3],L=[.1,.25],C={passive:!0,capture:!0},S=new Date,P=function(i,r){e||(e=r,n=i,t=new Date,M(removeEventListener),A())},A=function(){if(n>=0&&n<t-S){var r={entryType:"first-input",name:e.type,target:e.target,cancelable:e.cancelable,startTime:e.timeStamp,processingStart:e.timeStamp+n};i.forEach(function(e){e(r)}),i=[]}},I=function(e){if(e.cancelable){var n=(e.timeStamp>1e12?new Date:performance.now())-e.timeStamp;"pointerdown"==e.type?function(e,n){var t=function(){P(e,n),r()},i=function(){r()},r=function(){removeEventListener("pointerup",t,C),removeEventListener("pointercancel",i,C)};addEventListener("pointerup",t,C),addEventListener("pointercancel",i,C)}(n,e):P(n,e)}},M=function(e){["mousedown","keydown","touchstart","pointerdown"].forEach(function(n){return e(n,I,C)})},D=[100,300],F=0,k=1/0,B=0,x=function(e){e.forEach(function(e){e.interactionId&&(k=Math.min(k,e.interactionId),B=Math.max(B,e.interactionId),F=B?(B-k)/7+1:0)})},O=function(){return r?F:performance.interactionCount||0},R=function(){"interactionCount"in performance||r||(r=s("event",x,{type:"event",buffered:!0,durationThreshold:0}))},H=[200,500],N=0,q=function(){return O()-N},j=[],J={},_=function(e){var n=j[j.length-1],t=J[e.interactionId];if(t||j.length<10||e.duration>n.latency){if(t)t.entries.push(e),t.latency=Math.max(t.latency,e.duration);else{var i={id:e.interactionId,latency:e.duration,entries:[e]};J[i.id]=i,j.push(i)}j.sort(function(e,n){return n.latency-e.latency}),j.splice(10).forEach(function(e){delete J[e.id]})}},z=[2500,4e3],G={},K=[800,1800],Q=function e(n){document.prerendering?b(function(){return e(n)}):"complete"!==document.readyState?addEventListener("load",function(){return e(n)},!0):setTimeout(n,0)};if(navigator.sendBeacon){let t=!1;const r={CLS:0,device:/Android|webOS|iPhone|iPad|iPod/i.test(navigator.userAgent)?0:1},o=e=>{e.name&&(r[e.name]=e.value)},m=()=>{if(!t)try{if(void 0===r.LCP||void 0===r.FID||void 0===r.INP)return;r.ts=Date.now(),t=!0,navigator.sendBeacon(forseoPerfProbeEndpoint,JSON.stringify(r))}catch(e){console.error(e)}};document.addEventListener("visibilitychange",()=>"hidden"===document.visibilityState&&m()),function(e,n){n=n||{};var t=f("TTFB"),i=d(e,t,K,n.reportAllChanges);Q(function(){var r=c();if(r){var o=r.responseStart;if(o<=0||o>performance.now())return;t.value=Math.max(o-u(),0),t.entries=[r],i(!0),a(function(){t=f("TTFB",0),(i=d(e,t,K,n.reportAllChanges))(!0)})}})}(o),function(e,n){n=n||{},function(e,n){n=n||{},b(function(){var t,i=E(),r=f("FCP"),o=s("paint",function(e){e.forEach(function(e){"first-contentful-paint"===e.name&&(o.disconnect(),e.startTime<i.firstHiddenTime&&(r.value=Math.max(e.startTime-u(),0),r.entries.push(e),t(!0)))})});o&&(t=d(e,r,w,n.reportAllChanges),a(function(i){r=f("FCP"),t=d(e,r,w,n.reportAllChanges),v(function(){r.value=performance.now()-i.timeStamp,t(!0)})}))})}(p(function(){var t,i=f("CLS",0),r=0,o=[],c=function(e){e.forEach(function(e){if(!e.hadRecentInput){var n=o[0],t=o[o.length-1];r&&e.startTime-t.startTime<1e3&&e.startTime-n.startTime<5e3?(r+=e.value,o.push(e)):(r=e.value,o=[e])}}),r>i.value&&(i.value=r,i.entries=o,t())},u=s("layout-shift",c);u&&(t=d(e,i,L,n.reportAllChanges),l(function(){c(u.takeRecords()),t(!0)}),a(function(){r=0,i=f("CLS",0),t=d(e,i,L,n.reportAllChanges),v(function(){return t()})}),setTimeout(t,0))}))}(o),function(t,r){r=r||{},b(function(){var o,c=E(),u=f("FID"),v=function(e){e.startTime<c.firstHiddenTime&&(u.value=e.processingStart-e.startTime,u.entries.push(e),o(!0))},m=function(e){e.forEach(v)},h=s("first-input",m);o=d(t,u,D,r.reportAllChanges),h&&l(p(function(){m(h.takeRecords()),h.disconnect()})),h&&a(function(){var a;u=f("FID"),o=d(t,u,D,r.reportAllChanges),i=[],n=-1,e=null,M(addEventListener),a=v,i.push(a),A()})})}(o),function(e,n){n=n||{},b(function(){var t;R();var i,r=f("INP"),o=function(e){e.forEach(function(e){e.interactionId&&_(e),"first-input"===e.entryType&&!j.some(function(n){return n.entries.some(function(n){return e.duration===n.duration&&e.startTime===n.startTime})})&&_(e)});var n,t=(n=Math.min(j.length-1,Math.floor(q()/50)),j[n]);t&&t.latency!==r.value&&(r.value=t.latency,r.entries=t.entries,i())},c=s("event",o,{durationThreshold:null!==(t=n.durationThreshold)&&void 0!==t?t:40});i=d(e,r,H,n.reportAllChanges),c&&("PerformanceEventTiming"in window&&"interactionId"in PerformanceEventTiming.prototype&&c.observe({type:"first-input",buffered:!0}),l(function(){o(c.takeRecords()),r.value<0&&q()>0&&(r.value=0,r.entries=[]),i(!0)}),a(function(){j=[],N=O(),r=f("INP"),i=d(e,r,H,n.reportAllChanges)}))})}(o),function(e,n){n=n||{},b(function(){var t,i=E(),r=f("LCP"),o=function(e){var n=e[e.length-1];n&&n.startTime<i.firstHiddenTime&&(r.value=Math.max(n.startTime-u(),0),r.entries=[n],t())},c=s("largest-contentful-paint",o);if(c){t=d(e,r,z,n.reportAllChanges);var m=p(function(){G[r.id]||(o(c.takeRecords()),c.disconnect(),G[r.id]=!0,t(!0))});["keydown","click"].forEach(function(e){addEventListener(e,function(){return setTimeout(m,0)},!0)}),l(m),a(function(i){r=f("LCP"),t=d(e,r,z,n.reportAllChanges),v(function(){r.value=performance.now()-i.timeStamp,G[r.id]=!0,t(!0)})})}})}(o)}}();
+</script>
+</body>
+</html>

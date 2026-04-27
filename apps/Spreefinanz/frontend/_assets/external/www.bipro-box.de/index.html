@@ -1,0 +1,2600 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+	<meta charset="utf-8">
+	<style>
+		.la {
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;
+	display: inline-block;
+	font-style: normal;
+	font-variant: normal;
+	text-rendering: auto;
+	line-height: 1
+}
+
+.la-2x {
+	font-size: 2em
+}
+
+.la-calendar:before {
+	content: "\f133"
+}
+
+.sr-only {
+	border: 0;
+	clip: rect(0, 0, 0, 0);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	width: 1px
+}
+
+@font-face {
+	font-family: 'Line Awesome Free';
+	font-style: normal;
+	font-weight: 900;
+	font-display: swap;
+	src: url(/fonts/lineAwesome/icomoon/fonts/icomoon.eot);
+	src: url(/fonts/lineAwesome/icomoon/fonts/icomoon.eot?#iefix) format("embedded-opentype"), 
+	url(/fonts/lineAwesome/icomoon/fonts/icomoon.woff) format("woff"),
+	url(/fonts/lineAwesome/icomoon/fonts/icomoon.ttf) format("truetype"), 
+	url(/fonts/lineAwesome/icomoon/fonts/icomoon.svg#lineawesome) format("svg")
+}
+
+.la {
+	font-family: 'Line Awesome Free';
+	font-weight: 900
+}
+
+.la.la-sign-in:before {
+	content: "\f2f6"
+}
+
+html {
+	font-family: sans-serif;
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%
+}
+
+body {
+	margin: 0
+}
+
+header, nav, section {
+	display: block
+}
+
+a {
+	background-color: transparent
+}
+
+b {
+	font-weight: 700
+}
+
+h1 {
+	margin: .67em 0;
+	font-size: 2em
+}
+
+sup {
+	position: relative;
+	font-size: 75%;
+	line-height: 0;
+	vertical-align: baseline
+}
+
+sup {
+	top: -.5em
+}
+
+img {
+	border: 0
+}
+
+button, input {
+	margin: 0;
+	font: inherit;
+	color: inherit
+}
+
+button {
+	overflow: visible
+}
+
+button {
+	text-transform: none
+}
+
+button {
+	-webkit-appearance: button
+}
+
+button::-moz-focus-inner, input::-moz-focus-inner {
+	padding: 0;
+	border: 0
+}
+
+input {
+	line-height: normal
+}
+
+input[type=radio] {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding: 0
+}
+
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box
+}
+
+:after, :before {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box
+}
+
+html {
+	font-size: 10px
+}
+
+body {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	line-height: 1.42857143;
+	color: #333;
+	background-color: #fff
+}
+
+button, input {
+	font-family: inherit;
+	font-size: inherit;
+	line-height: inherit
+}
+
+a {
+	color: #337ab7;
+	text-decoration: none
+}
+
+img {
+	vertical-align: middle
+}
+
+.sr-only {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	padding: 0;
+	margin: -1px;
+	overflow: hidden;
+	clip: rect(0, 0, 0, 0);
+	border: 0
+}
+
+h1, h2, h3 {
+	font-family: inherit;
+	font-weight: 500;
+	line-height: 1.1;
+	color: inherit
+}
+
+h1, h2, h3 {
+	margin-top: 20px;
+	margin-bottom: 10px
+}
+
+h1 {
+	font-size: 36px
+}
+
+h2 {
+	font-size: 30px
+}
+
+h3 {
+	font-size: 24px
+}
+
+.text-center {
+	text-align: center
+}
+
+.text-primary {
+	color: #337ab7
+}
+
+ul {
+	margin-top: 0;
+	margin-bottom: 10px
+}
+
+.container {
+	padding-right: 15px;
+	padding-left: 15px;
+	margin-right: auto;
+	margin-left: auto
+}
+
+@media (min-width: 768px) {
+	.container {
+		width: 750px
+	}
+}
+
+@media (min-width: 992px) {
+	.container {
+		width: 970px
+	}
+}
+
+@media (min-width: 1200px) {
+	.container {
+		width: 1170px
+	}
+}
+
+.container-fluid {
+	padding-right: 15px;
+	padding-left: 15px;
+	margin-right: auto;
+	margin-left: auto
+}
+
+.row {
+	margin-right: -15px;
+	margin-left: -15px
+}
+
+.col-md-4, .col-md-8, .col-xs-12 {
+	position: relative;
+	min-height: 1px;
+	padding-right: 15px;
+	padding-left: 15px
+}
+
+.col-xs-12 {
+	float: left
+}
+
+.col-xs-12 {
+	width: 100%
+}
+
+@media (min-width: 992px) {
+	.col-md-4, .col-md-8 {
+		float: left
+	}
+
+	.col-md-8 {
+		width: 66.66666667%
+	}
+
+	.col-md-4 {
+		width: 33.33333333%
+	}
+}
+
+label {
+	display: inline-block;
+	max-width: 100%;
+	margin-bottom: 5px;
+	font-weight: 700
+}
+
+input[type=radio] {
+	margin: 4px 0 0;
+	line-height: normal
+}
+
+.form-control {
+	display: block;
+	width: 100%;
+	height: 34px;
+	padding: 6px 12px;
+	font-size: 14px;
+	line-height: 1.42857143;
+	color: #555;
+	background-color: #fff;
+	background-image: none;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+	box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075)
+}
+
+.form-control::-moz-placeholder {
+	color: #999;
+	opacity: 1
+}
+
+.form-control:-ms-input-placeholder {
+	color: #999
+}
+
+.form-control::-webkit-input-placeholder {
+	color: #999
+}
+
+.form-control::-ms-expand {
+	background-color: transparent;
+	border: 0
+}
+
+.form-group {
+	margin-bottom: 15px
+}
+
+.form-horizontal .form-group {
+	margin-right: -15px;
+	margin-left: -15px
+}
+
+.btn {
+	display: inline-block;
+	padding: 6px 12px;
+	margin-bottom: 0;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 1.42857143;
+	text-align: center;
+	white-space: nowrap;
+	vertical-align: middle;
+	-ms-touch-action: manipulation;
+	touch-action: manipulation;
+	background-image: none;
+	border: 1px solid transparent;
+	border-radius: 4px
+}
+
+.btn-block {
+	display: block;
+	width: 100%
+}
+
+.collapse, .modal {
+	display: none
+}
+
+.nav {
+	padding-left: 0;
+	margin-bottom: 0;
+	list-style: none
+}
+
+.nav > li {
+	position: relative;
+	display: block
+}
+
+.nav > li > a {
+	position: relative;
+	display: block;
+	padding: 10px 15px
+}
+
+.navbar {
+	position: relative;
+	min-height: 50px;
+	margin-bottom: 20px;
+	border: 1px solid transparent
+}
+
+@media (min-width: 768px) {
+	.navbar {
+		border-radius: 4px
+	}
+}
+
+@media (min-width: 768px) {
+	.navbar-header {
+		float: left
+	}
+}
+
+.navbar-collapse {
+	padding-right: 15px;
+	padding-left: 15px;
+	overflow-x: visible;
+	-webkit-overflow-scrolling: touch;
+	border-top: 1px solid transparent;
+	-webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, .1);
+	box-shadow: inset 0 1px 0 rgba(255, 255, 255, .1)
+}
+
+@media (min-width: 768px) {
+	.navbar-collapse {
+		width: auto;
+		border-top: 0;
+		-webkit-box-shadow: none;
+		box-shadow: none
+	}
+
+	.navbar-collapse.collapse {
+		display: block !important;
+		height: auto !important;
+		padding-bottom: 0;
+		overflow: visible !important
+	}
+
+	.navbar-fixed-top .navbar-collapse {
+		padding-right: 0;
+		padding-left: 0
+	}
+}
+
+.navbar-fixed-top .navbar-collapse {
+	max-height: 340px
+}
+
+.container > .navbar-collapse, .container > .navbar-header {
+	margin-right: -15px;
+	margin-left: -15px
+}
+
+@media (min-width: 768px) {
+	.container > .navbar-collapse, .container > .navbar-header {
+		margin-right: 0;
+		margin-left: 0
+	}
+}
+
+.navbar-fixed-top {
+	position: fixed;
+	right: 0;
+	left: 0;
+	z-index: 1030
+}
+
+@media (min-width: 768px) {
+	.navbar-fixed-top {
+		border-radius: 0
+	}
+}
+
+.navbar-fixed-top {
+	top: 0;
+	border-width: 0 0 1px
+}
+
+.navbar-brand {
+	float: left;
+	height: 50px;
+	padding: 15px 15px;
+	font-size: 18px;
+	line-height: 20px
+}
+
+.navbar-brand > img {
+	display: block
+}
+
+@media (min-width: 768px) {
+	.navbar > .container .navbar-brand {
+		margin-left: -15px
+	}
+}
+
+.navbar-toggle {
+	position: relative;
+	float: right;
+	padding: 9px 10px;
+	margin-top: 8px;
+	margin-right: 15px;
+	margin-bottom: 8px;
+	background-color: transparent;
+	background-image: none;
+	border: 1px solid transparent;
+	border-radius: 4px
+}
+
+.navbar-toggle .icon-bar {
+	display: block;
+	width: 22px;
+	height: 2px;
+	border-radius: 1px
+}
+
+.navbar-toggle .icon-bar + .icon-bar {
+	margin-top: 4px
+}
+
+@media (min-width: 768px) {
+	.navbar-toggle {
+		display: none
+	}
+}
+
+.navbar-nav {
+	margin: 7.5px -15px
+}
+
+.navbar-nav > li > a {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	line-height: 20px
+}
+
+@media (min-width: 768px) {
+	.navbar-nav {
+		float: left;
+		margin: 0
+	}
+
+	.navbar-nav > li {
+		float: left
+	}
+
+	.navbar-nav > li > a {
+		padding-top: 15px;
+		padding-bottom: 15px
+	}
+}
+
+@media (min-width: 768px) {
+	.navbar-right {
+		float: right !important;
+		margin-right: -15px
+	}
+}
+
+.navbar-default {
+	background-color: #f8f8f8;
+	border-color: #e7e7e7
+}
+
+.navbar-default .navbar-brand {
+	color: #777
+}
+
+.navbar-default .navbar-nav > li > a {
+	color: #777
+}
+
+.navbar-default .navbar-nav > .active > a {
+	color: #555;
+	background-color: #e7e7e7
+}
+
+.navbar-default .navbar-toggle {
+	border-color: #ddd
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+	background-color: #888
+}
+
+.navbar-default .navbar-collapse {
+	border-color: #e7e7e7
+}
+
+.alert {
+	padding: 15px;
+	margin-bottom: 20px;
+	border: 1px solid transparent;
+	border-radius: 4px
+}
+
+.alert-danger {
+	color: #a94442;
+	background-color: #f2dede;
+	border-color: #ebccd1
+}
+
+.embed-responsive {
+	position: relative;
+	display: block;
+	height: 0;
+	padding: 0;
+	overflow: hidden
+}
+
+.embed-responsive iframe {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	border: 0
+}
+
+.embed-responsive-16by9 {
+	padding-bottom: 56.25%
+}
+
+.container-fluid:after, .container-fluid:before, .container:after, .container:before, .form-horizontal .form-group:after, .form-horizontal .form-group:before, .nav:after, .nav:before, .navbar-collapse:after, .navbar-collapse:before, .navbar-header:after, .navbar-header:before, .navbar:after, .navbar:before, .row:after, .row:before {
+	display: table;
+	content: " "
+}
+
+.container-fluid:after, .container:after, .form-horizontal .form-group:after, .nav:after, .navbar-collapse:after, .navbar-header:after, .navbar:after, .row:after {
+	clear: both
+}
+
+.hidden {
+	display: none !important
+}
+
+@-ms-viewport {
+	width: device-width
+}
+
+.visible-sm {
+	display: none !important
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+	.visible-sm {
+		display: block !important
+	}
+}
+
+#header {
+	background: #fa5078;
+	background: -moz-linear-gradient(top, #ff527b 0, #980028 100%);
+	background: -webkit-linear-gradient(top, #ff527b 0, #980028 100%);
+	background: linear-gradient(to bottom, #ff527b 0, #980028 100%);
+	margin-top: 50px
+}
+
+#header {
+	position: relative;
+	padding: 60px 0;
+	overflow: hidden
+}
+
+#header .bg {
+	position: absolute;
+	top: 0;
+	left: 50%;
+	margin-left: -960px;
+	width: 1920px;
+	height: 100%;
+	background: linear-gradient(108deg, rgba(240, 240, 240, .1) 0, rgba(240, 240, 240, .1) 3%, rgba(240, 240, 240, .2) 3%, rgba(240, 240, 240, .2) 14%, rgba(240, 240, 240, .3) 14%, rgba(240, 240, 240, .3) 22%, rgba(240, 240, 240, .2) 22%, rgba(240, 240, 240, .2) 26%, rgba(240, 240, 240, .1) 26%, rgba(240, 240, 240, .1) 36%, rgba(240, 240, 240, 0) 36%, rgba(240, 240, 240, 0) 97%, rgba(240, 240, 240, .1) 97%, rgba(240, 240, 240, .1) 100%)
+}
+
+#header .container {
+	position: relative;
+	z-index: 10
+}
+
+header nav.navbar {
+	border-bottom: 2px solid #d0014f;
+	box-shadow: 0 0 10px #000
+}
+
+.navbar-default .navbar-nav > li > a {
+	font-size: 1.2em;
+	text-transform: uppercase;
+	color: #00171b
+}
+
+header .navbar-default .navbar-nav > .active > a {
+	background: 0 0;
+	color: #d0014f;
+	font-weight: 700
+}
+
+#header h1 {
+	color: #00171b;
+	text-shadow: 1px 1px 3px rgba(0, 0, 0, .2);
+	font-weight: 900;
+	font-size: 40px
+}
+
+#header h2, #header h3 {
+	color: #fff;
+	text-shadow: 1px 1px 3px rgba(0, 0, 0, .2);
+	font-size: 28px
+}
+
+#header h3 {
+	font-weight: 400;
+	font-size: 18px
+}
+
+header .navbar-brand img {
+	margin-top: -5px
+}
+
+* {
+	font-family: "Work Sans", OpenSans, "Helvetica Neue", Helvetica, Arial, sans-serif
+}
+
+section {
+	color: #00171b
+}
+
+.alert-pink {
+	border: 4px solid #980028;
+	border-radius: 0;
+	box-shadow: 0 0 3px #333;
+	background: #fefefe
+}
+
+#termin {
+	text-align: center
+}
+
+#termin > div {
+	width: 32%;
+	display: inline-block
+}
+
+#termin > div:first-child {
+	margin-right: 0
+}
+
+#termin > div:last-child {
+	margin-left: 0
+}
+
+.alert-pink .btn, .btn {
+	white-space: normal;
+	font-size: 12px
+}
+
+.alert-pink h3 {
+	font-weight: 700;
+	color: #00171b;
+	text-decoration: underline
+}
+
+.alert-pink h3 .pink {
+	text-decoration: underline
+}
+
+.alert-pink input {
+	border: 1px solid grey;
+	background: #fefefe;
+	border-radius: 0
+}
+
+.alert-pink .form-group label {
+	padding-left: 1em
+}
+
+.btn {
+	border-radius: 0
+}
+
+.pink {
+	color: #d0014f
+}
+
+#termin label {
+	border: 2px solid grey;
+	padding: 15px 0;
+	box-shadow: 1px 1px 3px rgba(0, 0, 0, .15);
+	display: inline-block;
+	text-align: center;
+	font-weight: 400;
+	font-size: 12px;
+	width: 100%
+}
+
+#termin input:checked + label {
+	border-color: #980028;
+	background-color: #980028;
+	color: #fefefe
+}
+
+#termin label b, #termin label span {
+	display: block
+}
+
+section > .container, section > div > .container {
+	padding-top: 35px;
+	padding-bottom: 35px
+}
+
+.btn-orange {
+	border: 5px solid #ecc909;
+	background: #ffdf2d;
+	background: -moz-linear-gradient(top, #ffdf2d 0, #ffe660 65%, #ffdd23 100%);
+	background: -webkit-linear-gradient(top, #ffdf2d 0, #ffe660 65%, #ffdd23 100%);
+	background: linear-gradient(to bottom, #ffdf2d 0, #ffe660 65%, #ffdd23 100%);
+	color: #203d42;
+	text-shadow: 1px 1px 3px rgba(0, 0, 0, .2);
+	text-align: center
+}
+
+.btn-orange b {
+	font-size: 1.75em;
+	display: block
+}
+
+.kundenmeinung {
+	font-size: 1.2em
+}
+
+.row {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	flex-wrap: wrap
+}
+
+.row > [class*=col-] {
+	display: flex;
+	flex-direction: column
+}
+
+.hdescription{
+	height:1px;
+	overflow: hidden;
+	margin: 0;
+	padding: 0;
+}
+.hdescription label,
+.hdescription textarea
+{
+	tab-index: -1;
+}
+
+@media (min-width: 1024px) {
+	.alert-pink .btn, .btn {
+		font-size: 14px
+	}
+
+	#header {
+		padding-top: 25px
+	}
+
+	.btn {
+		white-space: nowrap
+	}
+
+	.intoHeader > * {
+		margin-top: -75px
+	}
+}	</style>
+    
+		<script>
+			(function (a) {
+				a.className = a.className.replace(/\bno-js\b/, "js")
+			})(document.documentElement);
+			(function (a) {
+				a.loadCSS || (a.loadCSS = function () {
+				});
+				var b = loadCSS.relpreload = {};
+				b.support = function () {
+					try {
+						var d = a.document.createElement("link").relList.supports("preload")
+					} catch (e) {
+						d = !1
+					}
+					return function () {
+						return d
+					}
+				}();
+				b.bindMediaToggle = function (a) {
+					function b() {
+						a.media = c
+					}
+
+					var c = a.media || "all";
+					a.addEventListener ? a.addEventListener("load", b) : a.attachEvent && a.attachEvent("onload", b);
+					setTimeout(function () {
+						a.rel = "stylesheet";
+						a.media = "only x"
+					});
+					setTimeout(b, 3E3)
+				};
+				b.poly = function () {
+					if (!b.support()) for (var d = a.document.getElementsByTagName("link"),
+						                       e = 0; e < d.length; e++) {
+						var c = d[e];
+						"preload" !== c.rel || "style" !== c.getAttribute("as") || c.getAttribute("data-loadcss") || (c.setAttribute("data-loadcss", !0), b.bindMediaToggle(c))
+					}
+				};
+				if (!b.support()) {
+					b.poly();
+					var f = a.setInterval(b.poly, 500);
+					a.addEventListener ? a.addEventListener("load", function () {
+						b.poly();
+						a.clearInterval(f)
+					}) : a.attachEvent && a.attachEvent("onload", function () {
+						b.poly();
+						a.clearInterval(f)
+					})
+				}
+				"undefined" !== typeof exports ? exports.loadCSS = loadCSS : a.loadCSS = loadCSS
+			})("undefined" !== typeof global ? global :
+				this);
+		</script>
+    
+
+	<link rel="preconnect" href="https://www.google.com" crossorigin="anonymous">
+	<link rel="preconnect" href="https://www.gstatic.com" crossorigin="anonymous">
+	<link rel="preconnect" href="https://stats.versicherungsmaklersoftware.de" crossorigin="anonymous">
+	<link rel="preconnect" href="https://www.googletagmanager.com" crossorigin="anonymous">
+
+	<link rel="preload" href="/fonts/WorkSans/work-sans-v7-latin-300.woff2" as="font">
+	<link rel="preload" href="/fonts/WorkSans/work-sans-v7-latin-500.woff2" as="font">
+	<link rel="preload" href="/fonts/WorkSans/work-sans-v7-latin-700.woff2" as="font">
+	<link rel="preload" href="/fonts/WorkSans/work-sans-v7-latin-900.woff2" as="font">
+	<link rel="preload" href="/fonts/WorkSans/work-sans-v7-latin-regular.woff2" as="font">
+	<link rel="preload" href="/fonts/WorkSans/work-sans-v7-latin-italic.woff2" as="font">
+	<link rel="preload" href="/fonts/lineAwesome/icomoon/fonts/icomoon.woff" as="font">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    		<meta name="description" content="JETZT hat die Dokumentenflut ein Ende|Kosten senken|Arbeit verringern|vollautomatische Dokumenten-Abholung über BiPRO 430 - JETZT hier Gratis informieren!">
+    	<meta name="author" content="Mr-Money Software GmbH">
+
+	<meta property="og:type" content="business.business">
+	<meta property="og:title" content="BiPRO-BOX">
+	<meta property="og:url" content="https://www.bipro-box.de/">
+	<meta property="og:image"
+	      content="https://static.versicherungsmaklersoftware.de/logos/mrmo/box/BiPRO-BOX_Logo.svg?export&height=200&webp">
+	<meta property="business:contact_data:street_address" content="Schillerstraße 3">
+	<meta property="business:contact_data:locality" content="Stollberg/Erzg.">
+	<meta property="business:contact_data:region" content="Sachsen">
+	<meta property="business:contact_data:postal_code" content="09366">
+	<meta property="business:contact_data:country_name" content="Deutschland">
+
+    		<title>Die einfache BiPRO Software für BiPRO 430 und BiPRO 440 - Hier Klicken!</title>
+    	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+	<script async src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+	<script async src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+	<![endif]-->
+
+	<link rel="apple-touch-icon" sizes="57x57" href="/img/favicon/apple-touch-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="/img/favicon/apple-touch-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="/img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="/img/favicon/apple-touch-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="/img/favicon/apple-touch-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="/img/favicon/apple-touch-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="/img/favicon/apple-touch-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="/img/favicon/apple-touch-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="/img/favicon/apple-touch-icon-180x180.png">
+	<link rel="icon" type="image/png" href="/img/favicon/favicon-32x32.png" sizes="32x32">
+	<link rel="icon" type="image/png" href="/img/favicon/android-chrome-192x192.png" sizes="192x192">
+	<link rel="icon" type="image/png" href="/img/favicon/favicon-96x96.png" sizes="96x96">
+	<link rel="icon" type="image/png" href="/img/favicon/favicon-16x16.png" sizes="16x16">
+	<link rel="manifest" href="/img/favicon/manifest.json">
+	<link rel="shortcut icon" href="/img/favicon/favicon.ico">
+	<meta name="msapplication-TileColor" content="#d40054">
+	<meta name="msapplication-TileImage" content="/img/favicon/mstile-144x144.png">
+	<meta name="msapplication-config" content="/img/favicon/browserconfig.xml">
+	<meta name="theme-color" content="#ffffff">
+
+	<link href="/fonts/lineAwesome/icomoon/line-awesome.css" rel="preload" as="style"
+	      onload="this.onload=null;this.rel='stylesheet'" type="text/css">
+
+	<!-- Bootstrap Core CSS -->
+	<link href="/css/bootstrap.optimized.min.css" rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'">
+
+	<link href="/css/v2_main.css?ts=1644239822" rel="preload" as="style"
+	      onload="this.onload=null;this.rel='stylesheet'" type="text/css">
+
+    		<link rel="canonical" href="https://www.bipro-box.de/">
+    </head>
+
+<body>
+	<header>
+		<!-- Navigation -->
+		<nav class="navbar navbar-default navbar-fixed-top topnav">
+			<div class="container topnav">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navi">
+						<span class="sr-only">Navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand topnav" href="/" title="Startseite">
+						<img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+						     data-src="https://static.versicherungsmaklersoftware.de/logos/mrmo/box/BiPRO-BOX_Logo.svg?export&height=30&webp"
+						     height="30" alt="BiPRO///BOX">
+					</a>
+				</div>
+                					<!-- Collect the nav links, forms, and other content for toggling -->
+					<div class="collapse navbar-collapse" id="navi">
+						<ul class="nav navbar-nav navbar-right">
+							<li class="active">
+								<a href="/" title="Startseite">Startseite</a>
+							</li>
+							<li>
+								<a href="/kundenerfolge.php" title="Kundenerfolge">Kundenerfolge</a>
+							</li>
+							<li>
+								<a href="/ueber_uns.php" title="Über uns">Über uns</a>
+							</li>
+							<li>
+								<a href="/mvp.php" title="Maklerverwaltungsprogramme">MVP</a>
+							</li>
+							<li>
+								<a href="/gesellschaften.php" title="Gesellschaften">Gesellschaften</a>
+							</li>
+							<li>
+								<a href="/preise.php" title="Preise">Preise</a>
+							</li>
+							<li>
+								<a href="/kontakt.php" title="Kontakt">Kontakt</a>
+							</li>
+							<li>
+								<a href="/app" class="text-primary" target="_blank" title="App Login"
+								   rel="nofollow"> <span class="las la-sign-in"></span> Login</a>
+							</li>
+						</ul>
+					</div>
+                				<!-- /.navbar-collapse -->
+			</div>
+			<!-- /.container -->
+		</nav>
+	</header>
+	<div id="header">
+		<div class="bg"></div>
+		<div class="container">
+            				<h1>Endlich: Nie wieder Briefe und Dokumente manuell verarbeiten!</h1>
+                        				<h2>Die Umstellung auf digitale Kundendokumente dauert <b>nur 15 Minuten,</b> ist kinderleicht und erfordert keine Installation einer Software.</h2>
+                        				<h3>Ihre neue schnellste Sekretärin der Welt sortiert und verarbeitet alle eingehenden Dokumente in Rekordzeit -<br>Die Highlights in unserem praxisnahen Kurz-Video.</h3>
+            		</div>
+	</div>
+<div id="content">
+	<section>
+
+<div class="container">
+	<div class="row">
+		<div class="col-xs-12 col-md-8">
+			<div class="intoHeader">
+				<div class="alert alert-pink menu">
+					<h2>Passende Informationen für:</h2>
+					<a href="/versicherungsmakler.php" class="active">
+						<i class="las la-user"></i>
+						Versicherungsmakler
+					</a>
+					<a href="/mvp-hersteller.php">
+						<i class="las la-user-astronaut"></i>
+						MVP Hersteller
+					</a>
+					<a href="/vertriebe-pools.php">
+						<i class="las la-user-friends"></i>
+						Pools / Vertriebe
+					</a>
+					<a href="/technik-api.php">
+						<i class="las la-server"></i>
+						Technik / API
+					</a>
+					<a href="/bipro-server.php">
+						<i class="las la-building"></i>
+						BiPRO Server
+					</a>
+					<a href="/vertriebspartner.php">
+						<i class="las la-user-tie"></i>
+						Vertriebspartner
+					</a>
+				</div>
+			</div>
+
+			<div class="embed-responsive embed-responsive-16by9">
+				<a href="https://www.youtube.com/watch?v=k2eADwAxuck" rel="noopener noreferrer" target="_blank" class="llyv-v2" data-id="k2eADwAxuck"></a>
+			</div>
+		</div>
+		<div class="col-xs-12 col-md-4 intoHeader">
+            <form method="POST" class="form-horizontal" id="anmeldung" action="webinar.php">
+	<div class="alert alert-pink">
+		<div class="container-fluid">
+			<div class="row">
+				<h3 style="margin: 0 auto 0.5em;font-size: 1.67em;"><span class="pink">Webinar </span>Anmeldung</h3>
+			</div>
+
+			<div class="form-group">
+				<label>Wählen Sie einen Termin aus:</label>
+				<div id="termin">
+                                                                    							<div class="text-center">
+								<input type="radio" name="termin" id="termin_3767640874104772448" value="3767640874104772448"
+                                       checked  style="display: none;">
+								<label for="termin_3767640874104772448">
+									<span class="las la-2x la-calendar"></span>
+									<span>Mittwoch</span>
+									<b>29.04.2026</b>
+									<span>10:00</span>
+								</label>
+							</div>
+                                                    							<div class="text-center">
+								<input type="radio" name="termin" id="termin_6488730942642009691" value="6488730942642009691"
+                                        style="display: none;">
+								<label for="termin_6488730942642009691">
+									<span class="las la-2x la-calendar"></span>
+									<span>Freitag</span>
+									<b>08.05.2026</b>
+									<span>10:00</span>
+								</label>
+							</div>
+                                                    							<div class="text-center">
+								<input type="radio" name="termin" id="termin_6255847782924546651" value="6255847782924546651"
+                                        style="display: none;">
+								<label for="termin_6255847782924546651">
+									<span class="las la-2x la-calendar"></span>
+									<span>Mittwoch</span>
+									<b>13.05.2026</b>
+									<span>10:00</span>
+								</label>
+							</div>
+                                                                        				</div>
+			</div>
+
+			<div>
+				<input id="code" name="code" type="hidden" value="">
+				<input id="webinar_id" name="webinar_id" type="hidden" value="7">
+				<div class="form-group">
+					<label for="vorname">Vorname:<sup>*</sup></label>
+					<input type="text" name="vorname" id="vorname" class="form-control" placeholder="Ihr Vorname">
+				</div>
+				<div class="form-group">
+					<label for="nachname">Nachname:<sup>*</sup></label>
+					<input type="text" name="nachname" id="nachname" class="form-control" placeholder="Ihr Nachname">
+				</div>
+				<div class="form-group">
+					<label for="email">E-Mail Adresse:<sup>*</sup></label>
+					<input type="email" name="email" id="email" class="form-control" placeholder="Ihre E-Mail-Adresse">
+				</div>
+				<div class="form-group hdescription">
+					<label for="details">genauere Details:</label>
+					<textarea autocomplete="off" tabindex="-1" name="details" id="details" class="form-control" placeholder="genauere Details"></textarea>
+				</div>
+			</div>
+
+			<div class="row" style="margin-top: 5px">
+				<button type="submit" class="btn btn-orange btn-block" id="anmelden">
+					<b>Jetzt gratis anmelden</b> (hier klicken!)
+				</button>
+				<div class="alert alert-danger" style="display:none;clear:both;margin-top: 2em"></div>
+			</div>
+			<div class="row" style="margin-top: 2em">
+				<h4 style="font-size: 1em;">
+					Im Webinar werden neben der LIVE-Vorführung der BiPRO///BOX und PDF///BOX folgende Punkte unter
+					anderem vorgestellt:
+				</h4>
+				<ul class="check small">
+					<li><i class="las la-check-square"></i>Kurze Einführung in die BiPRO 430 und BiPRO 440</li>
+					<li><i class="las la-check-square"></i>
+						Vorstellung der angeschlossenen <a href="/gesellschaften.php">Gesellschaften</a> an die
+						BiPRO///BOX
+					</li>
+					<li><i class="las la-check-square"></i>Der Anlernprozess mit künstlicher Intelligenz in der
+						PDF///BOX
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</form>		</div>
+	</div>
+</div>
+<div class="container">
+	<div class="row">
+		<div class="col-xs-12 lead">
+			<h2>BiPRO-BOX - die zentrale Schnittstelle (API) für BiPRO 430 und ExtranNet Auto-Download</h2>
+			<ul class="check small">
+				<li><i class="las la-check-square"></i>automatische elektronische Abholung der Dokumente per BiPRO 430 +
+					ExtraNet - Auto-Download von mehr als 100 Gesellschaften
+				</li>
+				<li><i class="las la-check-square"></i>Abholung von vertragsbezogene Geschäftsvorfälle nach BiPRO 430.4
+				</li>
+				<li><i class="las la-check-square"></i>integrierter ExtraNet-Einstieg – BiPRO 440 - Deep Link - Variante
+				</li>
+				<li><i class="las la-check-square"></i>Vorstellung der umfassenden Statistik</li>
+				<li><i class="las la-check-square"></i>Nutzerverwaltung mit Rechte & Rollen</li>
+				<li><i class="las la-check-square"></i>Filtereinstellungen</li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+    	<div style="background-color: #fcf6f2">
+		<div class="container kundenmeinung">
+			<div class="row">
+                	<div class="col-xs-12 img col-md-3 text-center">
+		<img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="https://static.versicherungsmaklersoftware.de/logos/andere/versoffice.svg?export&width=263&webp" class="img-rounded" alt="VersOffice GmbH" style="width: 100%">
+		<div class="stars fa-2x">
+            				<i class="fa fa-star pink"></i>
+            				<i class="fa fa-star pink"></i>
+            				<i class="fa fa-star pink"></i>
+            				<i class="fa fa-star pink"></i>
+            				<i class="fa fa-star pink"></i>
+            		</div>
+	</div>
+	<div class="col-xs-12 col-md-8 col-lg-push-1">
+		<h3><b>VersOffice GmbH</b> sagt folgendes:</h3>
+		<p>Wir als VersOffice erledigen für viele Maklerbüros Arbeiten im Bereich Backoffice und Vertrieb. Dazu zählt auch die Dokumentenablage. Uns ist es hierbei sehr wichtig, dass wir die verwaltenden Arbeiten so schnell und effektiv wie möglich durchführen können. Seit 2019 setzen einige unserer Maklerkunden die BiPRO-BOX ein. Dadurch entfallen mittlerweile <b>90% der Papierdokumente</b>. Die BiPRO-BOX holt selbstständig mehrmals am Tag die aktuelle Post von über 135 Gesellschaften ab. Man erhält also einen digitalen Briefkasten, der eine Vielzahl von weiteren Funktionen bietet. Dokumente werden automatisch an verschiedene MVPs übergeben. Allein mit dieser Software erspart man sich schätzungsweise 50% bei der Dokumentenverarbeitung über herkömmlicher Briefpost.</p>
+		<div class="images">
+            				<div data-background-src="img/kundenmeinung/Cindy Wright.jpg">
+					<span>Cindy Wright</span>
+				</div>
+            				<div data-background-src="img/kundenmeinung/Kamuran Bildircin.jpg">
+					<span>Kamuran Bildircin</span>
+				</div>
+            				<div data-background-src="img/kundenmeinung/Maria Fledrich.jpg">
+					<span>Maria Fledrich</span>
+				</div>
+            		</div>
+	</div>
+	<div style="clear: both"></div>
+			</div>
+		</div>
+	</div>
+
+
+<div class="container">
+	<div class="row">
+		<div class="col-xs-12 lead">
+			<h2>Wenn die Dokumentenflut kein Ende nimmt…</h2>
+			<p>
+				Als Makler kennen Sie vermutlich den Stress nur allzu gut, welcher durch immer größere Mengen an
+				eingehenden Dokumenten ausgelöst werden kann. Tag für Tag erhalten Sie viele Dokumente per Post, per
+				E-Mail oder müssen diese sogar aufwendig aus dem ExtraNet der jeweiligen Versicherungsgesellschaft
+				herunterladen. Dabei wollen und sollen Sie Ihr Geld doch eigentlich mit dem Verkaufen von Policen
+				verdienen und sich nicht rund um die Uhr mit der Verwaltung Ihres Büros beschäftigen müssen!
+				<br><br><br>
+				Dieses Dilemma ein für alle Mal aufzulösen und der Dokumentenflut endgültig Einhalt zu gebieten, ist
+				daher möglicherweise einer Ihrer größten Wünsche. Dass Sie damit nicht alleine stehen, zeigen uns
+				entsprechende Rückmeldungen von Interessenten unserer Software-Produkte. Immer wieder hören wir davon,
+				welch hohe Belastung sich aus der täglich eintreffenden Dokumentenmenge ergeben kann.
+				<br><br>
+				Eine Situation, die allerorts zu Frustration, Unzufriedenheit und zu viel Ärger führt. Und
+				schlimmstenfalls sogar die Gesundheit gefährdet!
+			</p>
+		</div>
+	</div>
+</div>
+
+<div class="bg-f0f0f0" style="padding-top:50px;padding-bottom: 50px">
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12 col-md-4">
+				<img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="img/shutterstock_1214871877.jpg" width="1"
+				     style="width:100%;margin-right: 1em;margin-top: 1em;margin-bottom: 1em" alt="Rechnungen addieren">
+			</div>
+			<div class="col-xs-12 col-md-8 lead light">
+				<h2>Verwaltung kostet Nerven. Und jede Menge Geld.</h2>
+				<p>
+					Die konventionelle Verwaltung Ihres Makleralltags kostet Ihnen nicht nur wertvolle Zeit und viel
+					Kraft, sie bindet in aller Regel auch Personal. Denn in nicht wenigen Büros sind eine oder gar
+					mehrere Mitarbeiter bzw. Hilfskräfte einzig damit beschäftigt, eintreffende Dokumente zu sichten,
+					den passenden Verträgen zuzuordnen und schließlich noch zu archivieren. Das bedeutet: Viel Arbeit
+					für die Kollegen, höhere Personalkosten und am Ende des Geschäftsjahres ein deutlich geringerer
+					Gewinn.
+				</p>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="bg-203d42" style="padding-top:50px;padding-bottom: 50px">
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12 hidden visible-sm">
+				<img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="img/shutterstock_582569749.jpg" width="1"
+				     style="width:100%;margin-right: 1em;margin-top: 1em;margin-bottom: 1em" alt="Diskussion">
+			</div>
+			<div class="col-xs-12 col-md-8 lead light">
+				<h2 class="light">Muss das wirklich sein?</h2>
+				<p>
+					Hinzu kommt immer wieder Ärger mit Kunden, deren Unterlagen falsch zugeordnet oder gar völlig
+					verschwunden sind. In solchen Fällen müssen meist mit viel Aufwand Zweitschriften angefordert
+					werden, was zu einer Verzögerung des Geschäfts führt und für schlechte Stimmung auf allen Seiten
+					sorgt. Im schlimmsten Fall verlieren Sie dadurch sogar Mandanten und müssen sich auf negative
+					Kommentare bei Google und anderen Bewertungsplattformen einstellen. Ein Zustand, der viel Kummer
+					bereiten kann!
+				</p>
+			</div>
+			<div class="col-md-4 hidden-sm">
+				<img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="img/shutterstock_582569749.jpg" width="1"
+				     style="width:100%;margin-right: 1em;margin-top: 1em;margin-bottom: 1em" alt="Diskussion">
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="bg-f0f0f0" style="padding-top:50px;padding-bottom: 50px">
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12 col-md-4">
+				<img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="img/shutterstock_314053190.jpg" width="1"
+				     style="width:100%;margin-right: 1em;margin-top: 1em;margin-bottom: 1em" alt="Stop!">
+			</div>
+			<div class="col-xs-12 col-md-8 lead light">
+				<h2>Jetzt die Notbremse ziehen!</h2>
+				<p>
+					Erkennen Sie sich in den vorstehend beschriebenen Situationen wieder? Haben auch Sie den Eindruck,
+					viel zu viel Zeit in Routineaufgaben zu investieren und Ihre eigentlichen Kernkompetenzen dabei zu
+					vernachlässigen? Dann sollten Sie jetzt die Notbremse ziehen und sich am besten noch heute zu
+					unserem kostenlosen Webinar über die digitale Dokumentenverarbeitung anmelden. Sie werden überrascht
+					sein, wie nah die Lösung für Ihre beruflichen Alltagsprobleme liegt!
+				</p>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="container">
+	<div class="row">
+		<div class="col-xs-12 lead">
+			<h2 class="underline">Zeitfresser: Womit jeder zweite Versicherungsmakler 40 % seiner Arbeitszeit
+				vergeudet</h2>
+			<p>
+				Es ist immer wieder die gleiche Situation: Die meisten Dokumente erhalten Sie am Jahresende, wo Ihre
+				Zeit ohnehin schon knapp bemessen und - auch im Blick auf private Verpflichtungen in den Adventswochen
+				und die freien Weihnachtsfeiertage - umso wertvoller ist. So passiert es immer wieder, dass Sie Aufgaben
+				liegenlassen und vereinbarte Leistungen verschieben müssen. Doch genau das bringt neue Probleme mit
+				sich: Sie starten vollkommen überlastet in das neue Jahr, haben Berge von Dokumenten abzuarbeiten und
+				blicken voller Sorgen auf einen Terminkalender, in dem bereits die nächsten Gespräche mit Ihren
+				Stammkunden notiert sind. Müssen Sie die auch noch nach hinten verschieben oder gar absagen, ist
+				Verärgerung aufseiten der betreffenden Mandanten vorprogrammiert und letztlich auch verständlich.
+				<br><br>
+				Wie entsprechende Erhebungen zeigen, vergeudet mittlerweile jeder zweite Versicherungsmakler bis zu 40 %
+				seiner Arbeitszeit mit der Erledigung von Datenverwaltungsaufgaben - Tendenz steigend. Ein Zustand, der
+				nicht hinnehmbar ist und unbedingt kurzfristig abgestellt werden sollte. Es ist kaum zu glauben, wie
+				viel Frust und Kummer der mangelhafte Umgang mit der gewaltigen Datenflut hervorrufen kann. Wer hier
+				nicht schnellstmöglich für Abhilfe sorgt und auf eine Automatisierung der zeitaufwendigsten Arbeiten
+				setzt, wird schon bald in den Bergen von immer weiter anwachsenden Unterlagen ersticken.
+			</p>
+		</div>
+	</div>
+</div>
+
+
+    	<div style="background-color: #fcf6f2">
+		<div class="container kundenmeinung">
+			<div class="row">
+                	<div class="col-xs-12 img col-md-3 text-center">
+		<img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="https://static.versicherungsmaklersoftware.de/logos/andere/KAB_logo.svg?export&width=263&webp" class="img-rounded" alt="KAB Maklerservice GmbH" style="width: 100%">
+		<div class="stars fa-2x">
+            				<i class="fa fa-star pink"></i>
+            				<i class="fa fa-star pink"></i>
+            				<i class="fa fa-star pink"></i>
+            				<i class="fa fa-star pink"></i>
+            				<i class="fa fa-star pink"></i>
+            		</div>
+	</div>
+	<div class="col-xs-12 col-md-8 col-lg-push-1">
+		<h3><b>KAB Maklerservice GmbH</b> sagt folgendes:</h3>
+		<p>Mit dem Einsatz der BiPRO-BOX von Mr-Money Software ist das Dokumentenmanagement ein Kinderspiel. 
+            Gerade zum Ende des Jahres, wenn uns tausende Dokumente täglich auf den unterschiedlichsten Wegen (Mail, Post, Downloads) erreichen, ermöglicht uns die pdf-Box das taggenaue Abarbeiten der Dokumente. 
+            Alle Dokumente der Gesellschaften können verarbeitet werden. Die Dokumente werden angelernt, definiert und per Aktions-ID verarbeitet. 
+            Die Dokumente werden damit den Verträgen des Kunden zugeordnet und dem Vertriebspartner im Portal übermittelt. 
+            Unsere Sachbearbeiter pflegen mittlerweile damit zuverlässig die Daten - es werden Vertragsnummern eingetragen, Prämien aktualisiert und auch der Vertragsstatus gesetzt. Ohne die pdf-Box wäre dies alles nicht möglich. 
+            Im Zeitalter der Digitalisierung ist diese Software unverzichtbar und sorgt für schnelles und effektives Arbeiten.</p>
+		<div class="images">
+            				<div data-background-src="img/kundenmeinung/Wusch_Esther.jpg">
+					<span>Esther Wusch</span>
+				</div>
+            		</div>
+	</div>
+	<div style="clear: both"></div>
+			</div>
+		</div>
+	</div>
+
+<div class="container">
+	<div class="row">
+		<div class="col-xs-12 lead">
+			<h2 class="underline">Es gibt eine Lösung!</h2>
+			<p>
+				Genau in den Situationen, in denen Ihre Zeit am knappsten und wertvollsten ist, in Situationen, in denen
+				alles zusammenkommt, hilft Ihnen unsere Lösung am meisten. Sie hält Ihnen den Rücken frei und sorgt
+				dafür, dass Sie sich wieder den wirklich wichtigen Dingen im Makleralltag (und auch im Privatleben!)
+				widmen können. Während Sie den Kontakt zu Ihren Mandanten pflegen, Stammkunden betreuen und
+				Neuabschlüsse generieren, werden bereitstehende Dokumente dank unserer Lösung vollautomatisch aus dem
+				ExtraNet der jeweiligen Versicherungsgesellschaft abgeholt und in Ihrem System bearbeitet. Weder müssen
+				Sie selbst aktiv werden, noch haben Ihre Mitarbeiter damit zu tun. Vielmehr erledigen sich die gängigen
+				Prozesse rund um eintreffende Unterlagen wie von selbst.
+				<br><br>
+				Dass dabei alle technischen wie rechtlichen Vorgaben zur IT- und Datensicherheit eingehalten werden,
+				muss nicht besonders betont werden, sondern ist für uns eine Selbstverständlichkeit. Denn nur, wenn auch
+				in dieser Hinsicht an alles gedacht wird, können Sie sich dauerhaft mit Gelassenheit auf dem Parkett der
+				Branche bewegen. Unterm Strich erhalten Sie mit unserer Lösung also ein innovatives, leicht bedienbares
+				und rechtskonformes Werkzeug für den Alltag im Maklerbüro. Ein Werkzeug, welches Sie zukünftig nicht
+				mehr werden missen wollen!
+			</p>
+		</div>
+	</div>
+</div>
+
+
+<div class="container">
+	<div class="row">
+		<div class="col-xs-12 lead">
+			<h2 class="underline">Entspannte Makler, zufriedene Kunden</h2>
+			<p>
+				Wenn Sie sich für unsere intelligente Softwarelösung zur automatisierten Dokumentenverarbeitung
+				entschieden haben, können Sie sich entspannt zurücklehnen. Sie haben dann eines der größten und
+				stressigsten Probleme im Makleralltag erfolgreich gelöst und der Dokumentenflut endlich Einhalt geboten.
+				Ihre Kunden werden ebenfalls zufrieden sein, denn nun hat deren Berater endlich wieder mehr Zeit für
+				eine intensive Betreuung und kann sich ihren großen und kleinen Kümmernissen in bester Weise annehmen.
+				Dies führt dann wie von selbst zu mehr Abschlüssen, höheren Einnahmen und einem in jeder Hinsicht
+				erfolgreichen Geschäft. Endlich sind Sie wieder Makler, Berater, Fachmann. Und nicht mehr der Verwalter
+				eingehenden Schriftguts.
+				<br><br>
+				Außerdem verschafft Ihnen die Digitalisierung auch mehr Zeit für Ihre Familie, Ihre Freunde und Ihre
+				Hobbys. Sie können endlich wieder durchatmen und die Bearbeitung eingehender Dokumente ganz dem
+				automatischen System überlassen. Was gibt es Schöneres?
+			</p>
+		</div>
+	</div>
+</div>
+
+<div class="bg-f0f0f0">
+	<div class="container">
+		<h2>Die <b>BiPRO-BOX</b> von Mr-Money als Schlüssel zum Erfolg</h2>
+		<div class="row" style="margin-bottom:2em">
+			<div class="col-xs-12 hidden visible-sm" style="margin-bottom: 1em">
+				<img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="img/shutterstock_1006988986.jpg" width="1" style="width:100%" alt="Pfeile">
+			</div>
+			<div class="col-md-6  hidden-sm" style="padding-left: 4.5em">
+				<img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="img/shutterstock_1006988986.jpg" width="1" style="width:100%" alt="Pfeile">
+			</div>
+			<div class="col-xs-12 col-md-6">
+				<ul class="check">
+					<li><i class="las la-check-square"></i> über die BiPRO Norm 430</li>
+					<li><i class="las la-check-square"></i> über andere Zugangswege der Gesellschaften, wie
+						ExtraNet oder FTP Bereichen
+					</li>
+					<li><i class="las la-check-square"></i> von weiteren Anbietern wie easy-Login</li>
+					<li><i class="las la-check-square"></i> Sprung ohne Anmeldung in verschiedene ExtraNets</li>
+					<li><i class="las la-check-square"></i> und vieles mehr…</li>
+				</ul>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-xs-12 lead">
+				<p>
+					Mit der <b>BiPRO-BOX</b> von Mr-Money werden Dokumente von zahlreichen Gesellschaften
+					vollautomatisch über die BiPRO Norm 430 abgeholt. Auch über andere Zugangswege (wie ExtraNet oder
+					FTP-Bereiche) lassen sich die Systeme der Assekuranzen mit dieser BiPRO Schnittstelle ansteuern.
+					Dank der einmaligen Anmeldung per easy-Login ist eine wiederholte Eingabe von Nutzerdaten (Kennung
+					und Passwort) dabei nicht mehr erforderlich. Stattdessen gelangen Sie ohne weitere Anmeldung direkt
+					und unmittelbar in die verschiedenen ExtraNets der beteiligten Gesellschaften. Mit der
+					<b>BiPRO-BOX</b> von Mr-Money lässt sich der Verwaltungsaufwand im Maklerbüro um sagenhafte 70 %
+					senken, wenn es um die Behandlung von eintreffenden Dokumenten geht. Ob Makler oder Makler-Vertrieb,
+					ob Makler-Pool oder Softwarehaus - die <b>BiPRO-BOX</b> macht überall eine gute Figur und sorgt
+					dafür, dass spürbare Freiheit in den Büroalltag Einzug hält. "Es ist, als habe jemand das Fenster
+					geöffnet und man kann endlich wieder durchatmen!" - eine solche Rückmeldung zufriedener
+					<b>BiPRO-BOX</b>-Nutzer ist der beste Beweis, dass dieses System genau auf die Interessen und
+					Belange der Makler und Finanzdienstleister zugeschnitten ist. Dass das große Ziel erreicht werden
+					kann: weniger Aufwand für die Verwaltung, mehr Zeit für die Mandanten.
+				</p>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="container">
+	<div class="row">
+		<div class="col-xs-12 lead">
+			<h2 class="underline">Jetzt zum Webinar anmelden!</h2>
+			<p>
+				Lernen Sie den Schlüssel zum Erfolg und zur Reduzierung lästiger Alltagsaufgaben im Maklerbüro jetzt
+				kennen! Melden Sie sich am besten sofort zu unserem nächsten kostenlosen Webinar an. So erfahren Sie aus
+				erster Hand, welch großartige Möglichkeiten Ihnen die <b>BiPRO-BOX</b> von Mr-Money bietet und wie sehr
+				dieses innovative Tool dazu geeignet ist, Ihnen mehr Zeit für die wirklich wichtigen Dinge im Leben
+				zurückzugeben. Bedenken Sie: Wer jetzt auf eine digitale Dokumentenverarbeitung umstellt, wird sich
+				langfristig am Markt durchsetzen und als Sieger hervorgehen. Seien Sie dabei!
+			</p>
+		</div>
+	</div>
+</div>
+
+<div class="container webinar_button" style="padding-top:50px;padding-bottom: 50px">
+	<div class="row equal">
+		<div class="col-sm-3 hidden-xs">
+			<div class="text-right">
+				<img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="https://static.versicherungsmaklersoftware.de/logos/stock/pfeil_blue.svg?export&width=125&webp"
+				     width="75" alt="Pfeil links" style="transform: scale(-1,1)">
+			</div>
+		</div>
+		<div class="col-sm-6 col-xs-12 text-center p" style="position:relative;padding:0">
+			<button class="btn btn-orange btn-lg btn-block">
+				<b>Jetzt für unser Webinar Anmelden!</b> (Hier klicken!)
+			</button>
+		</div>
+		<div class="col-sm-3 hidden-xs">
+			<img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="https://static.versicherungsmaklersoftware.de/logos/stock/pfeil_blue.svg?export&width=125&webp"
+			     width="75" alt="Pfeil rechts">
+		</div>
+	</div>
+</div>
+
+<div class="container">
+	<div class="row">
+		<div class="col-xs-12 lead">
+			<h2 class="underline">Der Erfolg ist messbar</h2>
+			<p>
+				Der Erfolg einer Nutzung der <b>BiPRO-BOX</b> ist messbar. Die immense Zeitersparnis und die drastische
+				Vereinfachung im Alltag eines Versicherungsmaklers oder Finanzdienstleisters überrascht auch uns immer
+				wieder neu. So erhält die Mr-Money Makler-Bund GmbH pro Tag durchschnittlich rund 1.200 Dokumente auf
+				verschiedene Weise übermittelt, die jeweils dem richtigen Vertrag zugeordnet werden müssen. Da auch wir
+				die <b>BiPRO-BOX</b> als BiPRO Schnittstelle einsetzen, können wir aus erster Hand prüfen, wie positiv
+				sich die Nutzung dieses Tools immer wieder auswirkt. Ein Blick auf unsere Statistik zeigt dabei, dass 86
+				% aller im Zeitraum 01.01.2020 bis 20.01.2020 eingehenden Dokumente komplett vollautomatisch im
+				Hintergrund verarbeitet werden konnten - inklusive sämtlicher notwendiger Zusatzprozesse! Als Makler
+				oder Finanzdienstleister können auch Sie von der Leistungsstärke der <b>BiPRO-BOX</b> profitieren und
+				eine erhebliche Zeit- und Aufwandsreduzierung herbeiführen.
+				<br><br>
+				<b class="pink">Probieren Sie es aus - Sie werden begeistert sein!</b>
+			</p>
+		</div>
+	</div>
+</div>
+
+<div class="container">
+	<div class="row">
+		<div class="col-xs-12 lead">
+			<h2 class="underline">Wenn die Statistik Unglaubliches zutage fördert</h2>
+			<p>
+				Zahlen lügen nicht - zumindest dann nicht, wenn es sich um valide, nachprüfbare Werte handelt. Wie
+				entsprechende statistische Erhebungen gezeigt haben, wurden mittlerweile bereits rund 20 Millionen
+				Dokumente über die <b>BiPRO-BOX</b> abgeholt. Dies entspricht einer Zeitersparnis von knapp 40
+				Arbeitsjahren! Ein unglaublicher Wert, der hier stellvertretend für völlig neue Möglichkeiten und Wege
+				zur Alltagsgestaltung steht. Denn wer den Aufwand für die Verwaltung seines Büros so stark senkt,
+				gewinnt große Kapazitäten für sein Kerngeschäft. Und nicht zuletzt natürlich auch mehr Freiraum für die
+				Familie, für Freunde und Verwandte.
+				<br><br>
+				Die positiven Rückmeldungen unserer zufriedenen Kunden sprechen für sich…
+			</p>
+		</div>
+	</div>
+</div>
+
+    	<div style="background-color: #fcf6f2">
+		<div class="container kundenmeinung">
+			<div class="row">
+                	<div class="col-xs-12 img col-md-3 text-center">
+		<img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="https://static.versicherungsmaklersoftware.de/logos/andere/insurgo_logo.svg?export&width=263&webp" class="img-rounded" alt="Insurgo GmbH" style="width: 100%">
+		<div class="stars fa-2x">
+            				<i class="fa fa-star pink"></i>
+            				<i class="fa fa-star pink"></i>
+            				<i class="fa fa-star pink"></i>
+            				<i class="fa fa-star pink"></i>
+            				<i class="fa fa-star pink"></i>
+            		</div>
+	</div>
+	<div class="col-xs-12 col-md-8 col-lg-push-1">
+		<h3><b>Insurgo GmbH</b> sagt folgendes:</h3>
+		<p>Dass eine Bündelung digitaler Funktionen für die Nutzer vorteilhaft sein würde, hatten wir von Anfang an erwartet. Was uns dann aber sehr überrascht hat, war der immense Zeitvorteil, der sich aus dem Einsatz der BiPRO///BOX im Zusammenspiel mit unserem Maklerverwaltungsprogramm ergibt.
+                <br>Wir sind echt begeistert und können ohne Übertreibung sagen: Hier wird der Arbeitsalltag für Versicherungsvermittler und Finanzdienstleister spürbar vereinfacht!</p>
+		<div class="images">
+            				<div data-background-src="img/kundenmeinung/Yannick Leippold.jpg">
+					<span>Yannick Leippold</span>
+				</div>
+            		</div>
+	</div>
+	<div style="clear: both"></div>
+			</div>
+		</div>
+	</div>
+
+<div class="bg-203d42 bg-verlauf">
+	<div class="bg"></div>
+	<div class="container" style="padding-bottom: 25px;z-index:100;position: relative">
+		<div class="row text-center light">
+			<h2 class="light" style="width:100%">Diese Gesellschaften werden unter Anderem von der <b>BiPRO-BOX</b> unterstützt:</h2>
+		</div>
+		<div id="gesellschaften" class="carousel slide" data-ride="carousel">
+			<!-- Indicators -->
+
+
+			<!-- Wrapper for slides -->
+			<div class="carousel-inner">
+                					<div class="item active">
+						<div class="text-center">
+							<img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="https://static.versicherungsmaklersoftware.de/logos/gesellschaften/Ideal.svg?export&height=60&webp" alt="Gesellschaft">
+						</div>
+						<div class="text-center">
+							<img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="https://static.versicherungsmaklersoftware.de/logos/gesellschaften/axa-logo-freigestellt.svg?export&height=60&webp" alt="Gesellschaft">
+						</div>
+						<div class="text-center">
+							<img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="https://static.versicherungsmaklersoftware.de/logos/gesellschaften/Allianz.svg?export&height=60&webp" alt="Gesellschaft">
+						</div>
+					</div>
+					<!-- End Item -->
+                					<div class="item">
+						<div class="text-center">
+							<img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="https://static.versicherungsmaklersoftware.de/logos/gesellschaften/Alte%20Leipziger.svg?export&height=60&webp" alt="Gesellschaft">
+						</div>
+						<div class="text-center">
+							<img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="https://static.versicherungsmaklersoftware.de/logos/gesellschaften/One.svg?export&height=60&webp" alt="Gesellschaft">
+						</div>
+						<div class="text-center">
+							<img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="https://static.versicherungsmaklersoftware.de/logos/gesellschaften/DEURAG.svg?export&height=60&webp" alt="Gesellschaft">
+						</div>
+					</div>
+					<!-- End Item -->
+                					<div class="item">
+						<div class="text-center">
+							<img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="https://static.versicherungsmaklersoftware.de/logos/gesellschaften/ERGO-Direkt_ohne_text.svg?export&height=60&webp" alt="Gesellschaft">
+						</div>
+						<div class="text-center">
+							<img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="https://static.versicherungsmaklersoftware.de/logos/gesellschaften/GVO.svg?export&height=60&webp" alt="Gesellschaft">
+						</div>
+						<div class="text-center">
+							<img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="https://static.versicherungsmaklersoftware.de/logos/gesellschaften/Gothaer.svg?export&height=60&webp" alt="Gesellschaft">
+						</div>
+					</div>
+					<!-- End Item -->
+                					<div class="item">
+						<div class="text-center">
+							<img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="https://static.versicherungsmaklersoftware.de/logos/gesellschaften/HDI.svg?export&height=60&webp" alt="Gesellschaft">
+						</div>
+						<div class="text-center">
+							<img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="https://static.versicherungsmaklersoftware.de/logos/gesellschaften/Haftpflichtkasse%202018.svg?export&height=60&webp" alt="Gesellschaft">
+						</div>
+						<div class="text-center">
+							<img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="https://static.versicherungsmaklersoftware.de/logos/gesellschaften/Itzehoer.svg?export&height=60&webp" alt="Gesellschaft">
+						</div>
+					</div>
+					<!-- End Item -->
+                					<div class="item">
+						<div class="text-center">
+							<img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="https://static.versicherungsmaklersoftware.de/logos/gesellschaften/KS%20Auxilia.svg?export&height=60&webp" alt="Gesellschaft">
+						</div>
+						<div class="text-center">
+							<img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="https://static.versicherungsmaklersoftware.de/logos/gesellschaften/Ostangler.svg?export&height=60&webp" alt="Gesellschaft">
+						</div>
+						<div class="text-center">
+							<img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="https://static.versicherungsmaklersoftware.de/logos/gesellschaften/R+V.svg?export&height=60&webp" alt="Gesellschaft">
+						</div>
+					</div>
+					<!-- End Item -->
+                					<div class="item">
+						<div class="text-center">
+							<img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="https://static.versicherungsmaklersoftware.de/logos/gesellschaften/rhion.digital.svg?export&height=60&webp" alt="Gesellschaft">
+						</div>
+						<div class="text-center">
+							<img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="https://static.versicherungsmaklersoftware.de/logos/gesellschaften/DOCURA.svg?export&height=60&webp" alt="Gesellschaft">
+						</div>
+						<div class="text-center">
+							<img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="https://static.versicherungsmaklersoftware.de/logos/gesellschaften/LV1871.svg?export&height=60&webp" alt="Gesellschaft">
+						</div>
+					</div>
+					<!-- End Item -->
+                					<div class="item">
+						<div class="text-center">
+							<img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="https://static.versicherungsmaklersoftware.de/logos/gesellschaften/BavariaDirekt.svg?export&height=60&webp" alt="Gesellschaft">
+						</div>
+						<div class="text-center">
+							<img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="https://static.versicherungsmaklersoftware.de/logos/gesellschaften/VHV.svg?export&height=60&webp" alt="Gesellschaft">
+						</div>
+						<div class="text-center">
+							<img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="https://static.versicherungsmaklersoftware.de/logos/gesellschaften/Zurich.svg?export&height=60&webp" alt="Gesellschaft">
+						</div>
+					</div>
+					<!-- End Item -->
+                			</div><!-- End Carousel Inner -->
+
+			<ol class="carousel-indicators dots">
+                					<li data-target="#gesellschaften" data-slide-to="0" class="dot active"></li>
+                					<li data-target="#gesellschaften" data-slide-to="1" class="dot"></li>
+                					<li data-target="#gesellschaften" data-slide-to="2" class="dot"></li>
+                					<li data-target="#gesellschaften" data-slide-to="3" class="dot"></li>
+                					<li data-target="#gesellschaften" data-slide-to="4" class="dot"></li>
+                					<li data-target="#gesellschaften" data-slide-to="5" class="dot"></li>
+                					<li data-target="#gesellschaften" data-slide-to="6" class="dot"></li>
+                			</ol>
+
+			<!-- Controls -->
+			<a class="left carousel-control" href="#gesellschaften" data-slide="prev">
+				<span class="las la-angle-left la-3x"></span>
+			</a>
+			<a class="right carousel-control" href="#gesellschaften" data-slide="next">
+				<span class="las la-angle-right la-3x light"></span>
+			</a>
+
+		</div>
+		<div class="row" style="margin-top:30px">
+			<div class="text-center light" style="width:100%">
+				<a href="./gesellschaften.php" title="Gesellschaftsübersicht">Hier klicken für alle Gesellschaften</a>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="container">
+	<div class="row">
+		<div class="col-xs-12 lead">
+			<h2 class="underline">Ideal für viele Nutzergruppen</h2>
+			<p>
+				Die <b>BiPRO-BOX</b> von Mr-Money eignet sich in ganz besonderer Weise für all jene Versicherungsmakler,
+				die eine tägliche Dokumentenabholung aus unterschiedlichen ExtraNets der einzelnen Gesellschaften
+				künftig nicht mehr manuell durchführen wollen. Bereits wer mehr als 5 Briefe am Tag erhält, kann sich
+				durch den Einsatz der <b>BiPRO-BOX</b> einen messbaren Zeitvorteil verschaffen.
+				<br><br>
+				Makler, die vorrangig mit einem einzigen Pool oder einer einzigen Gesellschaft zusammenarbeiten und dort
+				alle Unterlagen einreichen, sind bei der Dokumentenverarbeitung oft schon ein ganzes Stück im Vorteil.
+				Gleichwohl findet sich hier in vielen Fällen ein schlechteres Preis-Leistungs-Verhältnis, sodass über
+				den Wechsel zu einem Mehr-Gesellschaften-System unter Nutzung der <b>BiPRO-BOX</b> nachgedacht werden
+				könnte.
+				<br><br>
+				Übrigens: Auch ohne Schnittstelle zu einem Maklerverwaltungsprogramm ist die Nutzung der
+				<b>BiPRO-BOX</b> von Mr-Money durch ihre automatische Abholung eine interessante Lösung. Denn Sie
+				gelangen mit einem Klick an sämtliche Dokumente von allen Gesellschaften!
+				<br><br>
+				Über die genannten Anwendungsgebiete hinaus bieten wir für Maklerverwaltungsprogramme (MVP) sowie für
+				andere Softwarehäuser eine Vielzahl besonderer Services rund um die <b>BiPRO-BOX</b> - Services, die
+				letztlich der gesamten Nutzergemeinschaft zugutekommen und die Leistungsstärke des innovativen Tools
+				weiter erhöhen. Hierzu gehören nicht nur eine zentrale Schnittstelle (API) für das Abholen von
+				Dokumenten aus dem Netzwerk unzähliger Versicherungsgesellschaften, einschließlich eines Deep-Link
+				Sprungs in das jeweilige ExtraNet, sondern auch eine hervorragende Anbindung an die "Schwester" der <b>BiPRO-BOX</b>
+				- die <b>PDF-BOX</b> von Mr-Money. Mit ihrer Hilfe lässt sich eine weitere Automatisierung vornehmen und
+				eingegangene Dokumente für eine sichere automatische Weiterverarbeitung fit machen. Hierbei wird der
+				Inhalt der Dokumente mittels Künstlicher Intelligenz eingelesen und ausgewertet.
+			</p>
+		</div>
+	</div>
+</div>
+
+<div class="container webinar_button" style="padding-top:50px;padding-bottom: 50px">
+	<div class="row equal">
+		<div class="col-sm-3 hidden-xs">
+			<div class="text-right">
+				<img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="https://static.versicherungsmaklersoftware.de/logos/stock/pfeil_blue.svg?export&width=125&webp"
+				     width="75" alt="Pfeil links" style="transform: scale(-1,1)">
+			</div>
+		</div>
+		<div class="col-sm-6 col-xs-12 text-center p" style="position:relative;padding:0">
+			<button class="btn btn-orange btn-lg btn-block">
+				<b>Jetzt für unser Webinar Anmelden!</b> (Hier klicken!)
+			</button>
+		</div>
+		<div class="col-sm-3 hidden-xs">
+			<img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="https://static.versicherungsmaklersoftware.de/logos/stock/pfeil_blue.svg?export&width=125&webp"
+			     width="75" alt="Pfeil rechts">
+		</div>
+	</div>
+</div>
+<div class="container" style="padding-bottom: 50px;">
+	<div class="row">
+		<div class="text-center" style="width:100%">
+			<img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="https://static.versicherungsmaklersoftware.de/logos/andere/Top%20Anwender%20BiPRO.svg?export&height=150&webp"
+			     height="150" alt="BiPRO Top Anwender">
+			<img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="https://static.versicherungsmaklersoftware.de/logos/pdf-box.de/Signet_pfade.svg?export&height=150&webp"
+			     height="150" alt="Innovationspreis-IT 2017">
+		</div>
+	</div>
+</div>
+<div style="background: #0fb3cf">
+	<div class="container light">
+		<div class="equal">
+			<div class="hidden-xs col-sm-4 text-right" style="position: relative;overflow: hidden;top: 35px;">
+				<i class="lab la-pagelines leaf"></i>
+			</div>
+			<div class="col-xs-12 col-sm-8 light">
+				<h2 style="font-weight: 300;margin-bottom: 1em;color:#fff" class="text-center light">Die letzten 30 Tage wurden
+					durch die <b>BiPRO-BOX 1.952.754</b> Blätter bedrucktes Papier
+					eingespart.</h2>
+				<b style="margin-left:5em">Wir sparen monatlich unter anderem diese wertvolle Resourcen:</b>
+				<ul class="check" style="margin-left: 4em;margin-top:1em;">
+					<li><i class="las la-check-square"></i> 29.291 kg Holz
+					</li>
+					<li><i class="las la-check-square"></i> 507.716 Liter
+						Wasser
+					</li>
+					<li><i class="las la-check-square"></i> 103.496 kw/h Strom
+					</li>
+					<li><i class="las la-check-square"></i> ca. 651 Drucker
+						Toner
+					</li>
+					<li><i class="las la-check-square"></i> ca. 781.102 €
+						Porto (angenommen 5 Blätter pro Brief)
+					</li>
+				</ul>
+				<small>(Für die Produktion von 1.000 Blatt neuem Papier werden 15 kg Holz, 260 Liter Wasser, 53 kW/h
+					Strom benötigt.)</small>
+			</div>
+		</div>
+	</div>
+</div>
+<br><br>
+<div class="container pakete">
+	<div class="row">
+		<div class="col-xs-12 col-sm-4">
+			<div class="paket">
+				<h3>Basis Paket</h3>
+				<ul>
+					<li class="title">Kosten</li>
+					<li class="text-center">99,00 € Einrichtungsgebühr</li>
+					<li class="text-center">+ mtl. 39,00 €</li>
+					<li class="text-center">
+						<b>10,00 €/ Monat sparen</b>
+						<br> (also 29,00 € pro Monat statt 39,00 €)
+						<br>für GRATIS-Webinar-Teilnahme
+					</li>
+					<li class="title">Leistungen</li>
+					<li class="icon"><i class="las la-check-square"></i> Dokumentenabholung per BiPRO 430</li>
+					<li class="icon"><i class="las la-check-square"></i> Dokumentenabholung per ExtraNet Auto-Download</li>
+					<li class="icon"><i class="las la-check-square"></i> Abholung vertragsbezogene Geschäftsvorfälle nach BiPRO 430.4</li>
+					<li class="icon" style="color:#bfbfbf"><i class="las la-times-circle"></i> ExtraNet-Einstieg nach BiPRO 440</li>
+					<li class="icon" style="color:#bfbfbf"><i class="las la-times-circle"></i> Nutzerverwaltung mit Rechte & Rollen</li>
+					<li class="icon"><i class="las la-check-square"></i> Filtereinstellungen</li>
+					<li class="icon" style="color:#bfbfbf"><i class="las la-times-circle"></i> Deeplink (API)</li>
+					<li class="icon"><i class="las la-check-square"></i> inkl. 4.000 Dokumente im Kalenderjahr</li>
+					<li class="title">Support</li>
+					<li class="text-center">Hotline je angefangene Minute 0,90 €</li>
+					<li class="text-center">E-Mail-Support inklusive</li>
+					<li class="title">API</li>
+					<li class="text-center">
+						Aktivierung der Schnittstelle (API)
+						<br>149,00 €
+					</li>
+				</ul>
+			</div>
+			<button class="btn btn-block btn-blue webinar">JETZT am Webinar teilnehmen</button>
+		</div>
+		<div class="col-xs-12 col-sm-4 empfehlung">
+			<h2>Empfehlung!</h2>
+			<div class="paket">
+				<h3>Premium Paket</h3>
+				<ul>
+					<li class="title">Kosten</li>
+					<li class="text-center">99,00 € Einrichtungsgebühr</li>
+					<li class="text-center">+ mtl. 49,00 €</li>
+					<li class="text-center">
+						<b>10,00 €/ Monat sparen</b>
+						<br> (also 39,00 € pro Monat statt 49,00 €)
+						<br>für GRATIS-Webinar-Teilnahme
+					</li>
+					<li class="title">Leistungen</li>
+					<li class="icon"><i class="las la-check-square"></i> Dokumentenabholung per BiPRO 430</li>
+					<li class="icon"><i class="las la-check-square"></i> Dokumentenabholung per ExtraNet Auto-Download</li>
+					<li class="icon"><i class="las la-check-square"></i> vertragsbezogene Geschäftsvorfälle nach BiPRO 430.4</li>
+					<li class="icon"><i class="las la-check-square"></i> ExtraNet-Einstieg nach BiPRO 440</li>
+					<li class="icon"><i class="las la-check-square"></i> Nutzerverwaltung mit Rechte & Rollen</li>
+					<li class="icon"><i class="las la-check-square"></i> Filtereinstellungen</li>
+					<li class="icon" style="color:#bfbfbf"><i class="las la-times-circle"></i> Deeplink (API)</li>
+					<li class="icon"><i class="las la-check-square"></i> inkl. 12.000 Dokumente im Kalenderjahr</li>
+					<li class="title">Support</li>
+					<li class="text-center">Hotline 15 Minuten im Monat inklusive</li>
+					<li class="text-center">E-Mail-Support inklusive</li>
+					<li class="title">API</li>
+					<li class="text-center">inkl. Aktivierung der Schnittstelle (API)<br><br></li>
+				</ul>
+			</div>
+			<button class="btn btn-block btn-orange webinar">JETZT am Webinar teilnehmen</button>
+		</div>
+		<div class="col-xs-12 col-sm-4">
+			<div class="paket">
+				<h3>Deluxe Paket</h3>
+				<ul>
+					<li class="title">Kosten</li>
+					<li class="text-center">149,00 € Einrichtungsgebühr</li>
+					<li class="text-center">+ mtl. 99,00 €</li>
+					<li class="text-center">
+						<b>10,00 €/ Monat sparen</b>
+						<br> (also 89,00 € pro Monat statt 99,00 €)
+						<br>für GRATIS-Webinar-Teilnahme
+					</li>
+					<li class="title">Leistungen</li>
+					<li class="icon"><i class="las la-check-square"></i> Dokumentenabholung per BiPRO 430</li>
+					<li class="icon"><i class="las la-check-square"></i> Dokumentenabholung per ExtraNet Auto-Download</li>
+					<li class="icon">
+						<i class="las la-check-square"></i> Abholung vertragsbezogene Geschäftsvorfälle nach BiPRO 430.4
+					</li>
+					<li class="icon"><i class="las la-check-square"></i> ExtraNet-Einstieg nach BiPRO 440</li>
+					<li class="icon"><i class="las la-check-square"></i> Nutzerverwaltung mit Rechte & Rollen</li>
+					<li class="icon"><i class="las la-check-square"></i> Filtereinstellungen</li>
+					<li class="icon"><i class="las la-check-square"></i> Deeplink (API)</li>
+					<li class="icon"><i class="las la-check-square"></i> inkl. 30.000 Dokumente im Kalenderjahr</li>
+					<li class="title">Support</li>
+					<li class="text-center">Hotline 30 Minuten im Monat inklusive</li>
+					<li class="text-center">E-Mail-Support inklusive</li>
+					<li class="title">API</li>
+					<li class="text-center">inkl. Aktivierung der Schnittstelle (API)<br><br></li>
+				</ul>
+			</div>
+			<button class="btn btn-block btn-blue webinar">JETZT am Webinar teilnehmen</button>
+		</div>
+	</div>
+</div>
+<div class="bg-203d42 bg-verlauf">
+	<div class="bg"></div>
+	<div class="container" style="padding-bottom: 25px;z-index:100;position: relative">
+		<div class="row text-center light">
+			<h2 class="light" style="width:100%">Diese MVPs werden unter Anderem von der <b>BiPRO-BOX</b> unterstützt:</h2>
+		</div>
+		<div id="mvp" class="carousel slide" data-ride="carousel">
+			<!-- Indicators -->
+
+
+			<!-- Wrapper for slides -->
+			<div class="carousel-inner">
+                					<div class="item active">
+						<div class="text-center">
+							<img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="https://static.versicherungsmaklersoftware.de/logos/mrmo/live/fertige/mvp_live.svg?export&height=60&webp" alt="MVP">
+						</div>
+						<div class="text-center">
+							<img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="https://static.versicherungsmaklersoftware.de/logos/andere/CODie_inkscape.svg?export&height=60&webp" alt="MVP">
+						</div>
+						<div class="text-center">
+							<img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="https://static.versicherungsmaklersoftware.de/logos/andere/abAgenda.svg?export&height=60&webp" alt="MVP">
+						</div>
+					</div>
+                					<div class="item">
+						<div class="text-center">
+							<img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="https://static.versicherungsmaklersoftware.de/logos/andere/vivosystems.svg?export&height=60&webp" alt="MVP">
+						</div>
+						<div class="text-center">
+							<img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="https://static.versicherungsmaklersoftware.de/logos/andere/ASAsoft.svg?export&height=60&webp" alt="MVP">
+						</div>
+						<div class="text-center">
+							<img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="https://static.versicherungsmaklersoftware.de/logos/andere/IWM_Software.svg?export&height=60&webp" alt="MVP">
+						</div>
+					</div>
+                					<div class="item">
+						<div class="text-center">
+							<img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="https://static.versicherungsmaklersoftware.de/logos/andere/ezSoftware.svg?export&height=60&webp" alt="MVP">
+						</div>
+						<div class="text-center">
+							<img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="https://static.versicherungsmaklersoftware.de/logos/andere/SALIA.svg?export&height=60&webp" alt="MVP">
+						</div>
+						<div class="text-center">
+							<img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="https://static.versicherungsmaklersoftware.de/logos/andere/ASSFINET_LOGO_082015_CMYK_Final.svg?export&height=60&webp" alt="MVP">
+						</div>
+					</div>
+                					<div class="item">
+						<div class="text-center">
+							<img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="https://static.versicherungsmaklersoftware.de/logos/andere/insurgo.svg?export&height=60&webp" alt="MVP">
+						</div>
+						<div class="text-center">
+							<img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="https://static.versicherungsmaklersoftware.de/logos/andere/keasy.svg?export&height=60&webp" alt="MVP">
+						</div>
+						<div class="text-center">
+							<img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="https://static.versicherungsmaklersoftware.de/logos/andere/FINASS_neu.svg?export&height=60&webp" alt="MVP">
+						</div>
+					</div>
+                					<div class="item">
+						<div class="text-center">
+							<img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="https://static.versicherungsmaklersoftware.de/logos/andere/versdirekt.svg?export&height=60&webp" alt="MVP">
+						</div>
+						<div class="text-center">
+							<img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="https://static.versicherungsmaklersoftware.de/logos/andere/SALIA.svg?export&height=60&webp" alt="MVP">
+						</div>
+						<div class="text-center">
+							<img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="https://static.versicherungsmaklersoftware.de/logos/andere/abAgenda.svg?export&height=60&webp" alt="MVP">
+						</div>
+					</div>
+                			</div>
+
+			<ol class="carousel-indicators dots">
+                					<li data-target="#mvp" data-slide-to="0" class="dot active"></li>
+                					<li data-target="#mvp" data-slide-to="1" class="dot"></li>
+                					<li data-target="#mvp" data-slide-to="2" class="dot"></li>
+                					<li data-target="#mvp" data-slide-to="3" class="dot"></li>
+                					<li data-target="#mvp" data-slide-to="4" class="dot"></li>
+                			</ol>
+
+			<!-- Controls -->
+			<a class="left carousel-control" href="#mvp" data-slide="prev">
+				<span class="las la-angle-left la-3x"></span>
+			</a>
+			<a class="right carousel-control" href="#mvp" data-slide="next">
+				<span class="las la-angle-right la-3x light"></span>
+			</a>
+
+		</div>
+		<div class="row" style="margin-top:30px">
+			<div class="text-center light" style="width:100%">
+				<a href="./mvp.php" title="Maklerverwaltungsprogramme">Hier klicken für alle Maklerverwaltungsprogramme</a>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="container">
+	<div class="row">
+		<div class="col-xs-12 lead">
+			<h2 class="underline">Schnell den besonderen Willkommens-Bonus sichern!</h2>
+			<p>
+				Wir sind fest davon überzeugt, dass Sie von den vielen Vorteilen unserer <b>BiPRO-BOX</b> begeistert
+				sein werden. Im Webinar erfahren Sie aus erster Hand, wie dieses innovative Tool Sie im Makleralltag
+				wirkungsvoll unterstützen und den Zeit- und Personalaufwand nachhaltig reduzieren kann. Damit Ihnen die
+				Entscheidung für einen persönlichen Test noch leichter fällt, erhalten Sie von uns nach der
+				erfolgreichen Teilnahme am Webinar eine exklusive einmalige Gutschrift und sparen auf diese Weise bei
+				der zukünftigen Nutzung der <b>BiPRO-BOX</b> 120,00 EUR im Jahr gegenüber allen anderen Nutzern!
+			</p>
+		</div>
+	</div>
+</div>
+
+    	<div style="background-color: #fcf6f2">
+		<div class="container kundenmeinung">
+			<div class="row">
+                	<div class="col-xs-12 img col-md-3 text-center">
+		<img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="img/kundenmeinung/vivo.png" class="img-rounded" alt="VivoSystems GmbH" style="width: 100%">
+		<div class="stars fa-2x">
+            				<i class="fa fa-star pink"></i>
+            				<i class="fa fa-star pink"></i>
+            				<i class="fa fa-star pink"></i>
+            				<i class="fa fa-star pink"></i>
+            				<i class="fa fa-star pink"></i>
+            		</div>
+	</div>
+	<div class="col-xs-12 col-md-8 col-lg-push-1">
+		<h3><b>VivoSystems GmbH</b> sagt folgendes:</h3>
+		<p>Endlich kein Dokumentenstress mehr! Dank der Verknüpfung mit der BiPRO///BOX von Mr-Money können die Nutzer unseres MVP VIVOFinanz sämtliche Schriftstücke jetzt auf elektronischem Wege abholen und verarbeiten. Daraus resultiert ein deutlicher Zeitgewinn für die persönliche Betreuung der Kunden.</p>
+		<div class="images">
+            				<div data-background-src="img/kundenmeinung/Peter Steppich.jpg">
+					<span>Peter Steppich</span>
+				</div>
+            		</div>
+	</div>
+	<div style="clear: both"></div>
+			</div>
+		</div>
+	</div>
+
+<div class="bg-203d42 bg-verlauf">
+	<div class="bg"></div>
+	<div class="container light" style="padding-bottom: 25px;z-index:100;position: relative">
+		<div class="col-xs-12 text-center">
+			<img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="https://static.versicherungsmaklersoftware.de/logos/pdf-box.de/label-3054511.svg?export&height=200&webp"
+			     style="max-height:200px;max-width: 100%" alt="Garantierte Zufriedenheit">
+
+			<h2 class="light" style="font-weight: 900;font-size:2.5em;margin-top:1em;margin-bottom: 1em">
+				Absolut zuverlässig:
+			</h2>
+
+			<div class="text-center" style="font-size:2em;">
+				<i class="las la-check-square green"></i> Datenschutz liegt uns am Herzen
+				<br><i class="las la-check-square green"></i> Gesicherte Übertragung durch Verschlüsselung
+				<br><i class="las la-check-square green"></i> Kinderleichte Einrichtung
+			</div>
+		</div>
+	</div>
+</div>
+<div class="container">
+	<div class="row">
+		<div class="col-xs-12 lead">
+			<h2 class="underline">Unser Qualitätsversprechen - Ihre Sicherheit!</h2>
+			<p>
+				Wir möchten, dass Sie rundum zufrieden sind. Daher geben wir Ihnen unser Wort: Sollte Sie die Leistung
+				der <b>BiPRO-BOX</b> nicht überzeugen oder Sie ein anderes Angebot finden, welches besser auf Ihre
+				individuellen Bedürfnisse zugeschnitten ist, verzichten wir auf unsere Kündigungsfrist. Schreiben Sie
+				uns in einem solchen Fall einfach eine kurze Nachricht und die Sache ist erledigt. Ohne Wenn und Aber!
+				<br><br>
+				<span class="pink">Melden Sie sich jetzt zum Webinar an - und starten Sie schon bald in eine erfolgreiche Zukunft!</span>
+				<br><br>Warten Sie nicht zu lange, sondern starten Sie jetzt in eine erfolgreiche Zukunft! Lernen Sie
+				die <b>BiPRO-BOX</b> von Mr-Money in unserem kostenlosen Webinar kennen und reduzieren Sie lästige
+				Alltagsaufgaben in Ihrem Büro. Durch Ihre Anmeldung zum Webinar erfahren Sie aus erster Hand alles über
+				die vielfältigen Möglichkeiten, die Ihnen die <b>BiPRO-BOX</b> von Mr-Money offeriert.
+				<br><br>
+				Übrigens: Mr-Money ist Gewinner des Innovationspreises IT der Initiative Mittelstand!
+			</p>
+		</div>
+	</div>
+</div>
+
+<div class="container webinar_button" style="padding-top:50px;padding-bottom: 50px">
+	<div class="row equal">
+		<div class="col-sm-3 hidden-xs">
+			<div class="text-right">
+				<img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="https://static.versicherungsmaklersoftware.de/logos/stock/pfeil_blue.svg?export&width=125&webp"
+				     width="75" alt="Pfeil links" style="transform: scale(-1,1)">
+			</div>
+		</div>
+		<div class="col-sm-6 col-xs-12 text-center p" style="position:relative;padding:0">
+			<button class="btn btn-orange btn-lg btn-block">
+				<b>Jetzt für unser Webinar Anmelden!</b> (Hier klicken!)
+			</button>
+		</div>
+		<div class="col-sm-3 hidden-xs">
+			<img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="https://static.versicherungsmaklersoftware.de/logos/stock/pfeil_blue.svg?export&width=125&webp"
+			     width="75" alt="Pfeil rechts">
+		</div>
+	</div>
+</div>
+<div class="container" style="padding-bottom: 50px;">
+	<div class="row">
+		<div class="text-center" style="width:100%">
+			<img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="https://static.versicherungsmaklersoftware.de/logos/andere/Top%20Anwender%20BiPRO.svg?export&height=150&webp"
+			     height="150" alt="BiPRO Top Anwender">
+			<img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="https://static.versicherungsmaklersoftware.de/logos/pdf-box.de/Signet_pfade.svg?export&height=150&webp"
+			     height="150" alt="Innovationspreis-IT 2017">
+		</div>
+	</div>
+</div>
+<div class="container">
+	<div class="row">
+		<div class="col-xs-12 lead">
+			<h2 class="underline">Profitieren Sie jetzt von langfristiger Preisstabilität</h2>
+			<p>
+				Das Interesse an unserer <b>BiPRO-BOX</b> und der BiPRO Schnittstelle wächst ständig. Fast jede Woche
+				nehmen wir neue Gesellschaften in unser System auf und erhöhen damit den praktischen Nutzen für die
+				Anwender. Wenn Sie sich jetzt für die <b>BiPRO-BOX</b> entscheiden, garantieren wir Ihnen, dass die
+				monatliche Gebühr in Ihrem gebuchten Paket nicht erhöht wird - trotz der permanent wachsenden
+				Funktionalität.
+				<br><br>
+				Bitte haben Sie Verständnis dafür, dass wir dieses besondere Angebot leider nur für einen begrenzten
+				Zeitraum anbieten und eine Preisgarantie bei späteren Abschlüssen nicht mehr in unseren AGB
+				festschreiben können.
+			</p>
+		</div>
+	</div>
+</div>
+
+<div class="container">
+	<div class="row">
+		<div class="col-xs-12 lead">
+			<h2 class="underline">Keine Zeit verlieren - damit Sie nicht den Anschluss verpassen!</h2>
+			<p>
+				Wenn Sie als Makler oder Finanzdienstleister auch zukünftig erfolgreich sein wollen, kommen Sie um eine
+				Digitalisierung Ihrer Verwaltungsvorgänge nicht herum. Ein immer stärkerer Wettbewerb mit zum Teil
+				bislang unbekannten Akteuren macht es erforderlich, dass Sie sich jetzt ausreichend um eine tragfähige
+				Infrastruktur in Ihrem Büro bemühen. Mit unserer <b>BiPRO-BOX</b> liegen Sie hier genau richtig. Denn
+				die <b>BiPRO-BOX</b> unterstützt Sie maßgeblich rund um die Behandlung eingehender Dokumente. Wenn Sie
+				sich für dieses innovative Tool entscheiden, machen Sie Ihr Maklerbüro fit für die Zukunft. Sie
+				beseitigen Ihre größten Zeitfresser, verschaffen sich mehr Freiräume für die Beratungstätigkeit und
+				steigern somit Neuabschlüsse und Umsatz.
+				<br><br>
+				Ganz nach dem hinlänglich bekannten Zitat "Wer zu spät kommt, den bestraft das Leben" sollten Sie nicht
+				länger warten und darauf hoffen, dass sich die immer stärker aufkommenden Probleme irgendwie von alleine
+				lösen. Viel mehr sollten Sie umgehend handeln und auf leistungsstarke, zukunftssichere und
+				multifunktionale Produkte im Bereich der Digitalisierung setzen. Die <b>BiPRO-BOX</b> von Mr-Money ist
+				ein solches Produkt. Mit ihr können Sie den ersten Schritt in eine erfolgreiche neue Zeit gehen. Gern
+				unterstützen wir Sie dabei!
+			</p>
+		</div>
+	</div>
+</div>
+
+<div class="container webinar_button" style="padding-top:50px;padding-bottom: 50px">
+	<div class="row equal">
+		<div class="col-sm-3 hidden-xs">
+			<div class="text-right">
+				<img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="https://static.versicherungsmaklersoftware.de/logos/stock/pfeil_blue.svg?export&width=125&webp"
+				     width="75" alt="Pfeil links" style="transform: scale(-1,1)">
+			</div>
+		</div>
+		<div class="col-sm-6 col-xs-12 text-center p" style="position:relative;padding:0">
+			<button class="btn btn-orange btn-lg btn-block">
+				<b>Jetzt für unser Webinar Anmelden!</b> (Hier klicken!)
+			</button>
+		</div>
+		<div class="col-sm-3 hidden-xs">
+			<img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="https://static.versicherungsmaklersoftware.de/logos/stock/pfeil_blue.svg?export&width=125&webp"
+			     width="75" alt="Pfeil rechts">
+		</div>
+	</div>
+</div>
+<div id="socialbubble">
+    <div class="thumb"></div><p>
+        <b></b><br><span></span>
+    </p>
+</div>
+
+</section>
+</div>
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <ul class="list-inline">
+                                                    <li>
+                                <a href="./" title="Startseite">Startseite</a>
+                            </li>
+                            <li>
+                                <a href="/kundenerfolge.php" title="Kundenerfolge">Kundenerfolge</a>
+                            </li>
+                            <li>
+                                <a href="/ueber_uns.php" title="Über uns">Über uns</a>
+                            </li>
+                            <li>
+                                <a href="/mvp.php" title="Maklerverwaltungsprogramme">MVP</a>
+                            </li>
+                            <li>
+                                <a href="/gesellschaften.php" title="Gesellschaften">Gesellschaften</a>
+                            </li>
+                            <li>
+                                <a href="/preise.php" title="Preise">Preise</a>
+                            </li>
+                            <li>
+                                <a href="/glossar/" title="Glossar">Glossar</a>
+                            </li>
+                            <li>
+                                <a href="/app" target="_blank" title="App Login">Login</a>
+                            </li>
+                                                <li style="border-left:1px solid #f0f0f0">
+                            <a href="/datenschutz.php" title="Datenschutz" style="color:#808080">Datenschutz</a>
+                        </li>
+                        <li>
+                            <a href="/impressum.php" title="Impressum" style="color:#808080">Impressum</a>
+                        </li>
+                    </ul>
+                    <p class="copyright">Copyright &copy; Mr-Money Software GmbH</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+            <div class="modal exit-modal fade">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><i class="las la-times la-2x pink"></i>
+				</button>
+				<h3 class="modal-title">Nicht verpassen!</h3>
+			</div>
+			<div class="modal-body">
+				<div class="row">
+					<div class="col-xs-6 text-center">
+						<h2>Nicht verpassen!</h2>
+						<p>
+							<b>WICHTIG:</b><br>
+							Bitte melden Sie sich hier rechts in dem Formular <b>GRATIS</b> zum <b>BiPRO-Webinar</b> an, damit Sie erfahren wie wir Ihren Alltag erleichtern!
+						</p>
+						<br><br>
+						<p class="text-center">
+							<span class="las la-sign-in la-10x"></span>
+						</p>
+					</div>
+					<div class="col-xs-6 webinar">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>    <script>
+                                    let teilnehmer = ["Martina B.","Romy A.","Birgit N.","Peter E.","Robert K.","Regina S.","Hagen I.","Michael F.","Silvio E.","Ortwin W.","Burkhard C.","Carmen B.","Ralf S.","Petra C.","Stephanie K.","Nicole N.","Sabine Z.","Marta O.","Gerhard B.","Christine G.","Mirco B.","Denis R.","Julia C.","Nicolas N.","Kristof W.","Ebert F.","Thomas G.","Gudrun K.","Hermann C.","Alexandra K.","Janina A.","Stephan D.","Guido S.","Jens E.","Pavel V.","Bodo C.","Walter V.","Frank B.","Anja J.","Lydia B.","Axel A.","Margrit C.","Melanie N.","Uwe S.","Lina V.","Elke R.","Erich J.","Silke Z.","Markus O.","Stefan V.","Wolfgang C.","Josef L.","Dieter Z.","Katja D.","Felix M.","Winfried F.","Achim D.","Hans W.","Ute P.","Johann L.","Bernd P.","Heidrun P.","Nathalie V.","Volker C.","Carsten N.","Hedwig I.","Sebastian E.","Anna J.","Lars K.","Helga T.","Carolin J.","Claudia I.","Torsten D.","Cornelia L.","Andre V.","Karl O.","Helmut Z.","Maik T.","Rudolf I.","Roman D.","Konrad P.","Johannes T.","Sven E.","Jana V."];
+    let termine =["Mittwoch, 29.04.2026","Freitag, 08.05.2026","Mittwoch, 13.05.2026"];
+    let kontakt;
+    var kontaktSend;
+    var _paq = _paq || [];
+
+    
+    function isElementInViewport(el) {
+        if (typeof jQuery === "function" && el instanceof jQuery) {
+            el = el[0];
+        }
+        let rect = el.getBoundingClientRect();
+        return (
+            rect.top + 200 >= 0 &&
+            rect.left >= 0 &&
+            rect.bottom - 200 <= (window.innerHeight || document.documentElement.clientHeight) &&
+            rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+        );
+    }
+
+    function onVisibilityChange(el, callback) {
+        let shown = false;
+        return function () {
+            if (!shown && isElementInViewport(el)) {
+                shown = true;
+                if (typeof callback == 'function') {
+                    callback(el);
+                }
+            }
+        }
+    }
+
+    window.lazyLoadOptions = {
+        elements_selector: "img[data-src]",
+        callback_enter: function (el) {
+            let src = /(width)=(\d+)|(height)=(\d+)/.exec(el.dataset.src);
+            if (src) {
+                console.log(el.dataset.src, el.width);
+                if (src[1] && el.width > 1) {
+                    el.dataset.src = el.dataset.src.replace(src[0], src[1] + '=' + el.width);
+                } else if (src[3] && el.height > 1) {
+                    el.dataset.src = el.dataset.src.replace(src[0], src[3] + '=' + el.height);
+                }
+            }
+        }
+    };
+    window.addEventListener("LazyLoad::Initialized", function (event) {
+        window.lazyLoadInstance = event.detail.instance;
+    }, false);
+
+
+    function runScripts() {
+
+        $('iframe[data-src]').each(function () {
+            $(this).attr('src', $(this).attr('data-src'));
+        });
+
+        $('[data-background-src]').each(function () {
+            let handler = onVisibilityChange($(this), function (el) {
+                el.css({'background-image': 'url("' + el.attr('data-background-src') + '")'});
+            });
+            $(window).on('DOMContentLoaded load resize scroll', handler);
+        });
+        $(window).trigger('scroll');
+
+        let bubble = $('#socialbubble');
+        if (bubble.length) {
+            bubble.on('click', function () {
+                $('.webinar_button').first().find('button').trigger('click');
+            });
+            bubble.hideBubble = function () {
+                bubble.animate({
+                    width: 50
+                }, function () {
+                    bubble.fadeOut(function () {
+                        bubble.check();
+                    });
+                });
+            };
+            bubble.showBubble = function () {
+                bubble.fadeIn(function () {
+                    bubble.animate({
+                        width: 300
+                    }, 500, function () {
+                        window.setTimeout(function () {
+                            bubble.hideBubble();
+                        }, 20000);
+                    });
+                });
+            };
+            bubble.check = function () {
+                if (teilnehmer.length) {
+                    let l = teilnehmer.length, t = teilnehmer.splice(Math.floor(Math.random() * l), 1);
+                    $('p b', bubble).text(t[0] + ' | ' + termine[Math.floor(Math.random() * termine.length)]);
+                    $('p span', bubble).text('hat sich zum Webinar angemeldet!');
+                    window.setTimeout(function () {
+                        bubble.showBubble();
+                    }, Math.random() * 30000);
+                }
+            };
+            bubble.check();
+        }
+
+        let anmeldung = $('#anmeldung');
+        anmeldung.send = function (me) {
+            let data = {
+                vorname: $('#vorname', me).val(),
+                nachname: $('#nachname', me).val(),
+                code: $('#code', me).val(),
+                email: $('#email', me).val(),
+                webinar_id: $('#webinar_id', me).val(),
+                idWebinar: $('input[name="termin"]:checked').val(),
+                goto: true,
+            };
+
+            $.post('/webinar.php', data, function (response) {
+                if (response.success) {
+                    let ma = "";
+                    if (response.MailAnbieter) {
+                        ma = "&MailAnbieter=" + response.MailAnbieter;
+                    }
+                    window.location.href = "/danke-webinar.php?tid=" + data.idWebinar + ma
+                } else {
+                    if (response.error.length > 0) {
+                        let err_msg = [];
+                        for (let e in response.error) {
+                            if (response.error.hasOwnProperty(e)) {
+                                err_msg.push(response.error[e].err_msg);
+                            }
+                        }
+                        $('div .alert', me).addClass('alert-danger').html(err_msg.join('<br>')).slideDown();
+                    }
+
+                }
+            });
+        };
+
+        anmeldung.on('submit', function (e) {
+            e.preventDefault();
+            anmeldung.send(this);
+        });
+
+
+        kontakt = $('#kontakt');
+
+        kontaktSend = function (me) {
+            let data = $(me).serializeArray();
+            $('.btn', me).prop('disabled', true);
+            $.post(kontakt.attr('action'), data, function (response) {
+                if (response.success) {
+                    $('div .alert', me).removeClass('alert-danger').addClass('alert-success').html(response.message).slideDown();
+                } else {
+                    $('.btn', me).prop('disabled', false);
+                    $('div .alert', me).addClass('alert-danger').html(response.message).slideDown();
+                }
+            });
+        };
+
+        kontakt.on('submit', function (e) {
+            e.preventDefault();
+            kontaktSend(this);
+        });
+
+        $('.webinar_button button, button.webinar').on('click', function () {
+            showWebinarModal();
+            $('header, #header, #content, footer').addClass('blur');
+        });
+
+        function showWebinarModal() {
+            let tmp = anmeldung.clone();
+            tmp.on('submit', function (e) {
+                e.preventDefault();
+                tmp.send(tmp);
+            }).addClass('modal-body');
+
+            let div = $('<div>').addClass('modal').append($('<div>').addClass('modal-dialog').append($('<div>').addClass('modal-header').append(
+                $('<button>')
+                    .addClass('close')
+                    .append($('<span>').addClass('las la-times la-2x pink'))
+                    .on('click', function () {
+                        $('header, #header, #content, footer').removeClass('blur');
+                        div.fadeOut(function () {
+                            div.remove();
+                        });
+                    })
+            )).append(tmp)).hide();
+
+            $('body').append(div);
+
+            tmp.find('label').each(function () {
+                let me = $(this);
+                me.attr('for', 'modal_' + me.attr('for'));
+            });
+            tmp.find('input[type="radio"]').each(function () {
+                let me = $(this);
+                me.attr('id', 'modal_' + me.attr('id'));
+            });
+
+            div.fadeIn();
+        }
+
+        let exit_modal = $('.exit-modal');
+        if (exit_modal.length && window.localStorage && !window.localStorage.getItem('modal')) {
+            window.setTimeout(function () {
+                exit_modal.exitModal({
+                    numberToShown: 5,
+                    callbackOnModalHidden: function () {
+                        $('header, #header, #content, footer').removeClass('blur');
+                        exit_modal.exitModal('destroy');
+                        $(".initialized").hide();
+                    },
+                    callbackOnModalShow: function () {
+                        $('header, #header, #content, footer').addClass('blur');
+                        let tmp;
+                        if (!anmeldung || anmeldung.length === 0) {
+                            tmp = kontakt.clone();
+                            $('h2', exit_modal).text('Noch Fragen?');
+                            $('h2', exit_modal).parent().find('p').first().text('Füllen Sie das Formular auf der rechten Seite aus, ich rufe Sie sehr gerne zurück!');
+                            tmp.on('submit', function (e) {
+                                e.preventDefault();
+                                kontakt = tmp;
+                                kontaktSend(this);
+                            });
+                        } else {
+                            tmp = anmeldung.clone();
+                            tmp.on('submit', function (e) {
+                                e.preventDefault();
+                                anmeldung.send(tmp);
+                            });
+                        }
+                        $('.webinar', exit_modal).append(tmp);
+                    }
+                });
+
+                $('.exit-modal .close').on('click', function (e) {
+                    e.preventDefault();
+                    $('header, #header, #content, footer').removeClass('blur');
+                    exit_modal.exitModal('hideModal');
+                    exit_modal.exitModal('destroy');
+                    $(".initialized").hide();
+                    window.localStorage.setItem('modal', new Date().toISOString())
+                });
+            }, 20000);
+        }
+
+        !function () {
+            "use strict";
+            for (let t = document.querySelectorAll(".llyv-v2"), e = 0; e < t.length; e++) {
+                let l = document.createElement("img");
+                l.src = "img/" + t[e].dataset.id + "_maxresdefault.jpg";
+                t[e].appendChild(l);
+                /**
+                t[e].addEventListener("click", function (e) {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    let t = document.createElement("iframe");
+                    for (
+                        t.setAttribute("src", "https://www.youtube-nocookie.com/embed/" + this.dataset.id + "?theme=light&controls=0&autohide=1&color=white&rel=0&autoplay=1"),
+                            t.setAttribute("frameborder", "0"),
+                            t.setAttribute("allowfullscreen", ""),
+                            t.setAttribute('allow', 'accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture'); this.firstChild;) {
+                        this.removeChild(this.firstChild);
+                    }
+                    this.classList.add('hide-notification');
+                    this.appendChild(t)
+                });
+                /**/
+                let i = document.createElement("div");
+                i.className = "llyv-v2-play-btn las la-4x la-play";
+                t[e].appendChild(i);
+            }
+        }();
+
+        var _mtm = _mtm || [];
+        _mtm.push({'mtm.startTime': (new Date().getTime()), 'event': 'mtm.Start'});
+        var d = document, g = d.createElement('script'), s = d.getElementsByTagName('script')[0];
+        g.type = 'text/javascript';
+        g.async = true;
+        g.defer = true;
+        g.src = 'https://stats.versicherungsmaklersoftware.de/js/container_j9LUOpAb.js';
+        s.parentNode.insertBefore(g, s);
+
+        
+
+            }
+
+    
+    function activateScripts() {
+        const bootstrap_enabled = (typeof $().emulateTransitionEnd == 'function');
+        const modal_enabled = (typeof $().exitModal == 'function');
+        if (modal_enabled && bootstrap_enabled) {
+            runScripts();
+        }
+    }
+    
+</script>
+
+<script defer async src="/js.php" onload="activateScripts()"></script>
+
+
+<noscript>
+    <p><img src="//stats.versicherungsmaklersoftware.de/info.php?idsite=31" style="border:0;" alt="stat"/></p>
+</noscript>
+
+<script type='application/ld+json'>
+    {
+        "@context": "http://www.schema.org",
+        "@type": "LocalBusiness",
+        "name": "Mr-Money",
+        "telephone": "+4937296927390",
+        "url": "https://www.mr-money.de",
+        "logo": "https://www.mr-money.de/resources/img/mrmo_logo.png",
+        "image": "https://www.mr-money.de/resources/img/startseite/startseite_rs.jpg",
+        "description": "BiPRO Client für professionelle Dokumentenverarbeitung über BiPRO 430 und ExtraNet. Dokumente von Versicherungsgesellschaften zuverlässig abholen.",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Schillerstraße 3",
+            "addressLocality": "Stollberg",
+            "addressRegion": "Sachsen",
+            "postalCode": "09366",
+            "addressCountry": "Deutschland"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "50.71183",
+            "longitude": "12.77793"
+        },
+        "hasMap": "https://www.google.com/maps?cid=15912309791077730600",
+        "openingHours": "Mo, Tu, We, Th 08:00-17:30 Fr 08:30-15:30",
+        "contactPoint": [
+            {
+                "@type": "ContactPoint",
+                "telephone": "+4937296927396",
+                "contactType": "customer support",
+                "availableLanguage": "German"
+            },
+            {
+                "@type": "ContactPoint",
+                "telephone": "+4937296927398",
+                "contactType": "technical support",
+                "availableLanguage": "German"
+            }
+        ],
+        "sameAs": [
+            "https://www.youtube.com/channel/UCwIUWb6tRFe8c4iwU00dgnQ",
+            "https://www.facebook.com/Mr-Money-1481007412215302/"
+        ]
+    }
+</script>
+</body>
+
+</html>
