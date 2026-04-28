@@ -3060,7 +3060,7 @@ body.testbadge .overlay_white_480, body.testbadge .overlay_white_800, body.testb
 }
 
 .overlay_white_480 {
-    background-image: url(/assets/local-cdn/content/eh-content/images/overlay-white-480.png);
+    background-image: url(/assets/overlay-white-480.png);
     width:480px
 }
 
@@ -3073,7 +3073,7 @@ body.testbadge .overlay_white_480, body.testbadge .overlay_white_800, body.testb
 }
 
 .overlay_white_800 {
-    background-image: url(/assets/local-cdn/content/eh-content/images/overlay-white-800.png);
+    background-image: url(/assets/overlay-white-800.png);
     width:800px
 }
 
@@ -3086,7 +3086,7 @@ body.testbadge .overlay_white_480, body.testbadge .overlay_white_800, body.testb
 }
 
 .overlay_white_950 {
-    background-image: url(/assets/local-cdn/content/eh-content/images/overlay-white-950.png);
+    background-image: url(/assets/overlay-white-950.png);
     width:950px
 }
 
@@ -3099,7 +3099,7 @@ body.testbadge .overlay_white_480, body.testbadge .overlay_white_800, body.testb
 }
 
 .overlay_white_480 .close, .overlay_white_800 .close, .overlay_white_950 .close, .overlay_resize_800 .close, .overlay_resize_950 .close, .overlay_variable .close {
-    background-image: url(/assets/local-cdn/content/eh-content/images/overlay-close.png);
+    background-image: url(/assets/overlay-close.png);
     position: absolute;
     right: 5px;
     top: 5px;
