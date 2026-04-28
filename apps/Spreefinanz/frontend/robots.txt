@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+
+Disallow: /_assets/internal/
+Disallow: /_assets/external/
+
+Sitemap: https://www.finanz-expat.de/sitemap.xml
