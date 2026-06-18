@@ -187,6 +187,16 @@
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="de" href="https://www.spreefinanz.de/rechtsschutz_expats.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.spreefinanz.de/ENG/expat_legal_protection.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.spreefinanz.de/rechtsschutz_expats.html" />
+  </url>
+  <url>
+    <loc>https://www.spreefinanz.de/ENG/expat_legal_protection.html</loc>
+    <lastmod>2026-06-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.spreefinanz.de/rechtsschutz_expats.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.spreefinanz.de/ENG/expat_legal_protection.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.spreefinanz.de/rechtsschutz_expats.html" />
   </url>
   <url>
@@ -195,6 +205,16 @@
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="de" href="https://www.spreefinanz.de/higermany_pkv_voll_visum.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.spreefinanz.de/ENG/higermany_pkv_full_visa.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.spreefinanz.de/higermany_pkv_voll_visum.html" />
+  </url>
+  <url>
+    <loc>https://www.spreefinanz.de/ENG/higermany_pkv_full_visa.html</loc>
+    <lastmod>2026-06-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.spreefinanz.de/higermany_pkv_voll_visum.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.spreefinanz.de/ENG/higermany_pkv_full_visa.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.spreefinanz.de/higermany_pkv_voll_visum.html" />
   </url>
   <url>
@@ -203,6 +223,16 @@
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="de" href="https://www.spreefinanz.de/hallesche_zusatzversicherungen_gkv.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.spreefinanz.de/ENG/hallesche_supplementary_gkv.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.spreefinanz.de/hallesche_zusatzversicherungen_gkv.html" />
+  </url>
+  <url>
+    <loc>https://www.spreefinanz.de/ENG/hallesche_supplementary_gkv.html</loc>
+    <lastmod>2026-06-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.spreefinanz.de/hallesche_zusatzversicherungen_gkv.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.spreefinanz.de/ENG/hallesche_supplementary_gkv.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.spreefinanz.de/hallesche_zusatzversicherungen_gkv.html" />
   </url>
   <url>
