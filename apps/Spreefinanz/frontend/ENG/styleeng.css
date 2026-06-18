@@ -14,7 +14,7 @@
 
 #productmenu input {
     border: 1px solid #999;
-    background-image: url(/assets/local-cdn/content/eh-content/images/inputback.jpg);
+    background-image: url(https://res.cloudinary.com/dqcdbdt4v/image/upload/spreefinanz/www.spreefinanz.de/eh-content/images/inputback.jpg);
     background-repeat: repeat-x;
     background-color: #fff;
     font-size: 13px;
@@ -76,7 +76,7 @@
 
 .includeform input, .includeform textarea, .includeform select {
     border: 1px solid #999;
-    background-image: url(/assets/local-cdn/content/eh-content/images/inputback.jpg);
+    background-image: url(https://res.cloudinary.com/dqcdbdt4v/image/upload/spreefinanz/www.spreefinanz.de/eh-content/images/inputback.jpg);
     background-repeat: repeat-x;
     background-color: #fff;
     font-size: 13px;
@@ -3060,7 +3060,7 @@ body.testbadge .overlay_white_480, body.testbadge .overlay_white_800, body.testb
 }
 
 .overlay_white_480 {
-    background-image: url(/assets/overlay-white-480.png);
+    background-image: url(https://res.cloudinary.com/dqcdbdt4v/image/upload/spreefinanz/www.spreefinanz.de/eh-content/images/overlay-white-480.png);
     width:480px
 }
 
@@ -3073,7 +3073,7 @@ body.testbadge .overlay_white_480, body.testbadge .overlay_white_800, body.testb
 }
 
 .overlay_white_800 {
-    background-image: url(/assets/overlay-white-800.png);
+    background-image: url(https://res.cloudinary.com/dqcdbdt4v/image/upload/spreefinanz/www.spreefinanz.de/eh-content/images/overlay-white-800.png);
     width:800px
 }
 
@@ -3086,7 +3086,7 @@ body.testbadge .overlay_white_480, body.testbadge .overlay_white_800, body.testb
 }
 
 .overlay_white_950 {
-    background-image: url(/assets/overlay-white-950.png);
+    background-image: url(https://res.cloudinary.com/dqcdbdt4v/image/upload/spreefinanz/www.spreefinanz.de/eh-content/images/overlay-white-950.png);
     width:950px
 }
 
@@ -3099,7 +3099,7 @@ body.testbadge .overlay_white_480, body.testbadge .overlay_white_800, body.testb
 }
 
 .overlay_white_480 .close, .overlay_white_800 .close, .overlay_white_950 .close, .overlay_resize_800 .close, .overlay_resize_950 .close, .overlay_variable .close {
-    background-image: url(/assets/overlay-close.png);
+    background-image: url(https://res.cloudinary.com/dqcdbdt4v/image/upload/spreefinanz/www.spreefinanz.de/eh-content/images/overlay-close.png);
     position: absolute;
     right: 5px;
     top: 5px;
@@ -3292,7 +3292,7 @@ div.rating-cancel.star-rating-hover {
 }
 
 div.star-rating, div.star-rating a {
-    background:url(/assets/local-cdn/content/eh-content/images/star.gif) no-repeat 0 0
+    background:url(https://res.cloudinary.com/dqcdbdt4v/image/upload/spreefinanz/www.spreefinanz.de/eh-content/images/star.gif) no-repeat 0 0
 }
 
 div.star-rating a {
@@ -3406,7 +3406,7 @@ div.star-rating {
     float: right;
     width: 100px;
     height: 20px;
-    background-image: url(/assets/local-cdn/content/eh-content/images/rating-stars.png);
+    background-image: url(https://res.cloudinary.com/dqcdbdt4v/image/upload/spreefinanz/www.spreefinanz.de/eh-content/images/rating-stars.png);
     background-repeat: no-repeat;
     background-color:#E3AD29
 }
@@ -3466,7 +3466,7 @@ h3 .rating_stars {
     border: 1px solid #BDBCB2;
     padding: 5px 5px 3px 5px;
     text-align: center;
-    background-image: url(/assets/local-cdn/content/eh-content/images/rating-bg.jpg);
+    background-image: url(https://res.cloudinary.com/dqcdbdt4v/image/upload/spreefinanz/www.spreefinanz.de/eh-content/images/rating-bg.jpg);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     box-shadow:0 0 3px #888
@@ -3634,7 +3634,7 @@ h3 .rating_stars {
     bottom: 0;
     color: #F2F2F2;
     font-weight: 700;
-    background-image: url(/assets/local-cdn/content/eh-content/images/pixel_gray-trans.png);
+    background-image: url(https://res.cloudinary.com/dqcdbdt4v/image/upload/spreefinanz/www.spreefinanz.de/eh-content/images/pixel_gray-trans.png);
     -ms-user-select: auto;
     -moz-user-select: auto;
     -khtml-user-select: auto;
@@ -3772,7 +3772,7 @@ h3 .rating_stars {
     height: 8px;
     margin: 3px;
     display: inline-block;
-    background-image: url(/assets/local-cdn/content/eh-content/images/navigator.png);
+    background-image: url(https://res.cloudinary.com/dqcdbdt4v/image/upload/spreefinanz/www.spreefinanz.de/eh-content/images/navigator.png);
     background-position:0 0
 }
 
@@ -3835,7 +3835,7 @@ h3 .rating_stars {
 }
 
 #contentcontainer .catcher .header {
-    background-image: url(/assets/local-cdn/content/eh-content/images/catcher-header-trans.png);
+    background-image: url(https://res.cloudinary.com/dqcdbdt4v/image/upload/spreefinanz/www.spreefinanz.de/eh-content/images/catcher-header-trans.png);
     background-repeat: repeat-x;
     background-position: top;
     width: 100%;
@@ -6709,7 +6709,7 @@ body.first_element_designstage .hint_titleimage_replaced_by_designstage {
     justify-content: center;
     align-items: flex-start;
     padding: 20px !important;
-    background-image: url(/assets/local-cdn/content/eh-content/images/ehcookieblocker_covering.png);
+    background-image: url(https://res.cloudinary.com/dqcdbdt4v/image/upload/spreefinanz/www.spreefinanz.de/eh-content/images/ehcookieblocker_covering.png);
     z-index: -1;
     font-size: 16px;
     max-width: 100vw !important;
@@ -6725,7 +6725,7 @@ body.first_element_designstage .hint_titleimage_replaced_by_designstage {
 }
 
 .ehcookieblocker_covering_maps {
-    background-image: url(/assets/local-cdn/content/eh-content/images/ehcookieblocker_covering_maps.png);
+    background-image: url(https://res.cloudinary.com/dqcdbdt4v/image/upload/spreefinanz/www.spreefinanz.de/eh-content/images/ehcookieblocker_covering_maps.png);
     background-size: 90%;
     align-items:center
 }
@@ -9163,7 +9163,7 @@ nav {
     float: right;
     padding-right: 20px;
     z-index: 110;
-    margin-left:200px
+    margin-left:309px
 }
 
 .wrap_menu:after {

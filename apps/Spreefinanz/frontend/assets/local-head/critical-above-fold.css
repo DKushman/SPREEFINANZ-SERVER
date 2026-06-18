@@ -1,0 +1,55 @@
+/* Minimal above-the-fold styles while full stylesheet loads async. */
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    line-height: 1.4;
+}
+
+#centercontainer,
+#pagewrap,
+#pagecontainer {
+    min-height: 0;
+}
+
+header,
+.wrap_header,
+.wrap_menu {
+    position: relative;
+    z-index: 10;
+}
+
+#menu,
+.new_menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.designstage_background {
+    position: relative;
+    overflow: hidden;
+}
+
+.bt_cookie_warning {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 9999;
+}
+
+.spreefinanz-elfsight-feed {
+    min-height: 480px;
+    content-visibility: auto;
+    contain-intrinsic-size: auto 520px;
+}

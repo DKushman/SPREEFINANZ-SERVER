@@ -1,5 +1,11 @@
 /* Scoped styles for SEO subpages */
 
+@media (prefers-reduced-motion: no-preference) {
+    html:has(.new-pages) {
+        scroll-behavior: smooth;
+    }
+}
+
 .new-pages {
     overflow-x: clip;
 }
@@ -13,6 +19,9 @@
 }
 .new-pages section {
     padding-block: clamp(2rem, 5vw, 4rem);
+}
+.new-pages section.main {
+    padding-top: 0;
 }
 .new-pages h2 {
     font-size: clamp(1.75rem, 4vw, 2.5rem);
@@ -100,7 +109,7 @@
     display: flex;
     justify-content: center;
     margin-top: auto;
-
+    padding-top: clamp(1rem, 2.5vw, 1.5rem);
 }
 
 .new-pages .button-container a,
@@ -268,7 +277,6 @@
 }
 .new-pages p {
     color: #4b5563;
-    font-size: clamp(0.9rem, 1.5vw, 1.2rem);
     line-height: 1.5;
     margin-left: 3rem;
     padding-bottom: clamp(1rem, 2vw, 2rem);
@@ -408,7 +416,7 @@
 @media (max-width: 769px) { .new-pages .beispiele-grid { grid-template-columns: 1fr; } }
 
 .new-pages .vorteile { text-align: center; }
-.new-pages .vorteile-grid { display: grid; grid-template-columns: repeat(3, 1fr); grid-template-rows: 1fr 1fr; gap: clamp(0.75rem, 2vw, 1.25rem); min-width: 0; margin: 0; }
+.new-pages .vorteile-grid { display: grid; grid-template-columns: repeat(3, 1fr); padding-top: 2rem; grid-template-rows: 1fr 1fr; gap: clamp(0.75rem, 2vw, 1.25rem); min-width: 0; margin: 0; }
 .new-pages .vorteile-box:nth-child(1) { grid-column: 1; grid-row: 1; }
 .new-pages .vorteile-box:nth-child(2) { grid-column: 1; grid-row: 2; }
 .new-pages .vorteile-box:nth-child(4) { grid-column: 3; grid-row: 1; }
@@ -420,7 +428,8 @@
 .new-pages .vorteile-box .head { display: flex; align-items: center; gap: clamp(0.5rem, 1.5vw, 0.75rem); }
 .new-pages .vorteile-icon { width: clamp(2rem, 4vw, 2.5rem); height: clamp(2rem, 4vw, 2.5rem); border-radius: 20%; background: #3C68ED; color: #fff; display: flex; align-items: center; justify-content: center; flex-shrink: 0; font-size: clamp(0.85rem, 1.5vw, 1rem); }
 .new-pages .vorteile-box h3 { font-weight: 700; color: #1f2937; margin: 0; }
-.new-pages .vorteile-box p { margin: 0; color: #4b5563; line-height: 1.5; margin-top: auto;}
+.new-pages .vorteile-box p { margin: 0; margin-left: 0; color: #4b5563; line-height: 1.5; margin-top: auto; text-align: left; }
+.new-pages .vorteile-grid p { margin-left: 0; text-align: left; }
 .new-pages .vorteile-img { grid-column: 2; grid-row: 1 / -1; border-radius: clamp(8px, 2vw, 12px); overflow: hidden; min-height: 0; }
 .new-pages .vorteile-img img { width: 100%; height: 100%; object-fit: cover; display: block; }
 @media (max-width: 769px) {
@@ -528,4 +537,123 @@
 .new-pages .hero-subline:hover {
     font-weight: 700;
     transition: font-weight 0,1s ease-in-out;
+}
+
+.new-pages .anfrage {
+    width: 100%;
+    padding-top: clamp(2rem, 5vw, 3rem);
+}
+.new-pages .anfrage .element_wrapper.wrap_form,
+.new-pages .anfrage .cmod.cmod_form {
+    width: 100%;
+    max-width: 52rem;
+    margin-inline: auto;
+    box-sizing: border-box;
+}
+.new-pages .anfrage .form_div,
+.new-pages .anfrage .includeform,
+.new-pages .anfrage .includeform form,
+.new-pages .anfrage .formtable,
+.new-pages .anfrage .tablerow {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+.new-pages .anfrage .cmod.cmod_form {
+    display: block;
+}
+.new-pages .anfrage .form_div {
+    width: 100%;
+    max-width: 100%;
+    margin-top: 1.25rem;
+    text-align: left;
+}
+.new-pages .anfrage .includeform .full_cell.text_center {
+    padding-top: clamp(1rem, 2.5vw, 1.5rem);
+}
+.new-pages .anfrage .includeform button.submit {
+    margin-top: 0.25rem;
+}
+.new-pages .anfrage h2 {
+    text-align: center;
+}
+.new-pages .anfrage .intro {
+    text-align: center;
+}
+
+/* Text-only hero (internationale Mitarbeiterversicherung) */
+.mitarbeiter-page .new-pages .main.hero-text {
+    padding-block: clamp(2.5rem, 6vw, 4.5rem);
+}
+.mitarbeiter-page .new-pages .hero-text-panel {
+    padding: clamp(1.75rem, 4vw, 2.75rem) clamp(1.25rem, 4vw, 2.5rem);
+    text-align: center;
+    background: #f0f3f9;
+    border: 1px solid #e5ebf4;
+    border-radius: clamp(12px, 2vw, 20px);
+}
+.mitarbeiter-page .new-pages .hero-eyebrow {
+    margin: 0 0 0.75rem;
+    font-size: clamp(0.75rem, 1.4vw, 0.875rem);
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #4d5f73;
+}
+.mitarbeiter-page .new-pages .hero-text .heading {
+    margin-bottom: clamp(0.75rem, 2vw, 1.25rem);
+}
+.mitarbeiter-page .new-pages .hero-lead {
+    margin: 0 auto clamp(1.25rem, 3vw, 1.75rem);
+    max-width: 38rem;
+    font-size: clamp(1rem, 2.2vw, 1.2rem);
+    font-weight: 500;
+    line-height: 1.45;
+    color: #20242c;
+}
+.mitarbeiter-page .new-pages .hero-audience {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem 0.65rem;
+    margin: 0 0 clamp(1.25rem, 3vw, 1.75rem);
+    padding: 0;
+    list-style: none;
+}
+.mitarbeiter-page .new-pages .hero-audience li {
+    padding: 0.35rem 0.85rem;
+    font-size: clamp(0.8rem, 1.5vw, 0.95rem);
+    font-weight: 500;
+    color: #2d4fb5;
+    background: #e8eefb;
+    border: 1px solid #c5d4f5;
+    border-radius: 999px;
+}
+.mitarbeiter-page .new-pages .hero-text .hero-subline {
+    margin: 0 0 clamp(1.25rem, 2vw, 1.5rem);
+    font-size: clamp(0.85rem, 1.5vw, 0.95rem);
+    color: #6b7280;
+    line-height: 1.4;
+    text-align: center;
+}
+.mitarbeiter-page .new-pages .hero-text .hero-subline:hover {
+    font-weight: inherit;
+}
+.mitarbeiter-page .new-pages .hero-text .hero-subline::before {
+    content: "✓ ";
+    color: #3b68ed;
+}
+.mitarbeiter-page .new-pages .hero-text .button-container.hero {
+    margin-top: 0;
+    padding-top: clamp(1rem, 2.5vw, 1.5rem);
+}
+
+/* Mitarbeiter-Landing: Fließtext zentriert (nur mit Klasse seo-landing-content--center) */
+#seo-landing-content.seo-landing-content--center p,
+#seo-landing-content.seo-landing-content--center li {
+    text-align: center;
+    margin-left: 0;
+}
+#seo-landing-content.seo-landing-content--center .vorteile-grid p {
+    text-align: left;
 }

@@ -1,511 +1,51 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
+<link rel="preconnect" href="https://res.cloudinary.com" crossorigin>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Versicherungs-Check – Finde deine passende Versicherung | finanz-expat.de</title>
+    <title>Versicherungs-Check – Finde deine passende Versicherung | spreefinanz.de</title>
     <meta content="In 4 Schritten zur passenden Auslandskrankenversicherung: Unser Versicherungs-Check ermittelt dein Profil und zeigt dir die besten Optionen." name="description"/>
     <meta name="author" content="Spreefinanz">
     <meta name="referrer" content="strict-origin-when-cross-origin">
-    <link href="https://www.finanz-expat.de/versicherungs-check.html" rel="canonical"/>
+    <link href="https://www.spreefinanz.de/versicherungs-check.html" rel="canonical"/>
+    <link rel="alternate" hreflang="de" href="https://www.spreefinanz.de/versicherungs-check.html"/>
+    <link rel="alternate" hreflang="en" href="https://www.spreefinanz.de/ENG/insurance-check.html"/>
+    <link rel="alternate" hreflang="x-default" href="https://www.spreefinanz.de/versicherungs-check.html"/>
     <meta content="de_DE" property="og:locale"/>
     <meta property="og:type" content="website">
-    <meta content="Versicherungs-Check – Finde deine passende Versicherung | finanz-expat.de" property="og:title"/>
+    <meta content="Versicherungs-Check – Finde deine passende Versicherung | spreefinanz.de" property="og:title"/>
     <meta content="In 4 Schritten zur passenden Auslandskrankenversicherung: Unser Versicherungs-Check ermittelt dein Profil und zeigt dir die besten Optionen." property="og:description"/>
-    <meta content="https://www.finanz-expat.de/versicherungs-check.html" property="og:url"/>
+    <meta content="https://www.spreefinanz.de/versicherungs-check.html" property="og:url"/>
     <meta property="og:site_name" content="Spreefinanz">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="style2.css">
+    <link href="style.20260528.css" rel="stylesheet"/>
+    <link href="seoseiten.7c107321cde1.css" rel="stylesheet"/>
+    <link href="style2.css" media="print" onload="this.media='all'" rel="stylesheet"/>
+    <noscript><link href="style2.css" rel="stylesheet"/></noscript>
     <link href="../assets/local-cdn/storage/f26f73ba7f/favicon.png" rel="icon" sizes="48x48" type="image/png"/>
     <link href="../assets/local-cdn/storage/f26f73ba7f/apple-touch-icon.png" rel="apple-touch-icon"/>
     <script data-ehcookieblocker-obligatory="">
 var googleMapsArray = [];
 	var dontPlaceSubmenu = 1;
     </script>
-    <script charset="UTF-8" data-ehcookieblocker-obligatory="" src="../assets/local-cdn/content/js/minified.js__q_user_19259_landingpage_0_data_W3sidCI6MSwiaSI6LTEsInAiOltdLCJjIjoiY2FlOTIxNTkifSx7InQiOjEsImkiOjM3LCJwIjpbXSwiYyI6Ijc0OTdhZjdhIn0seyJ0IjoxLCJpIjozOCwicCI6W10sImMiOiIwYWMyNGE2MyJ9LHsidCI6MSwiaSI6MTEsInAiOnsiY29kZSI6IjEzNDkyMmU1OSIsInNhdmVfdGltZSI6MTc2OTY4MDM4OH0sImMiOiJhODU5MjRjMCJ9LHsidCI6MSwiaSI6MywicCI6eyJkZXNpZ25fdGVtcGxhdGVfaWQiOjIwN30sImMiOiIwYTA3MDIyNSJ9XQ_3D_3D.php"></script>
-    <script charset="UTF-8" data-ehcookieblocker-obligatory="" src="../assets/local-cdn/content/js/minified.js__q_user_19259_landingpage_0_data_W3sidCI6MSwiaSI6NywicCI6eyJ1c2VyIjoxOTI1OX0sImMiOiIyMWZhMDQwMSJ9XQ_3D_3D.php"></script>
     <meta name="robots" content="index,follow"/>
-    <style>
-/* ============================================================
-   Versicherungs-Check Wizard
-   ============================================================ */
-.wizard-page-wrap {
-    background: #f4f7ff;
-    border-radius: 18px;
-    padding: 28px 24px;
-    width: fit-content;
-    margin-inline: auto;
-    margin-top: 10vh;
-}
-main {
-    align-items: center;
-    padding-block: clamp(2rem, 5vw, 4rem);
-
-}
-
-.wizard-container {
-    display: flex;
-    gap: 48px;
-    max-width: 860px;
-    margin: 0 auto;
-}
-
-/* ---------- Stepper (left) ---------- */
-.wizard-stepper {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 68px;
-    flex-shrink: 0;
-}
-.step-dot {
-    width: 36px;
-    height: 36px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: 700;
-    font-size: 14px;
-    background: #d1d5db;
-    color: #fff;
-    transition: background 0.3s, transform 0.2s;
-    position: relative;
-    z-index: 1;
-    cursor: default;
-}
-.step-dot.active {
-    background: #3b68ed;
-    transform: scale(1.15);
-    box-shadow: 0 0 0 4px rgba(59,104,237,0.18);
-}
-.step-dot.done {
-    background: #3b68ed;
-}
-.step-line {
-    width: 2px;
-    height: 44px;
-    background: #d1d5db;
-    transition: background 0.4s;
-}
-.step-line.done {
-    background: #3b68ed;
-}
-
-/* ---------- Content area ---------- */
-.wizard-content {
-    flex: 1;
-    min-width: 0;
-}
-.wizard-step {
-    display: none;
-}
-.wizard-step.active {
-    display: block;
-    animation: wizardFadeIn 0.35s ease both;
-}
-@keyframes wizardFadeIn {
-    from { opacity: 0; transform: translateX(24px); }
-    to   { opacity: 1; transform: translateX(0); }
-}
-
-.step-label {
-    font-size: 10px;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    color: #6b7280;
-    margin: 0;
-    margin-left: 0;
-    text-align: left;
-}
-.step-question {
-    font-size: 1.65rem;
-    font-weight: 800;
-    color: #111827;
-    line-height: 1.25;
-    margin-bottom: 8px;
-}
-.step-desc {
-    font-size: 0.93rem;
-    color: #6b7280;
-    margin: 0;
-    margin-left: 0;
-    line-height: 1.5;
-    text-align: left;
-    margin-bottom: clamp(1rem, 2vw, 1.5rem);
-}
-.step-question {
-    text-align: left;
-}
-
-/* ---------- Option cards ---------- */
-.cards-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 14px;
-    margin-bottom: 32px;
-}
-.option-card {
-    border: 2px solid #e5e7eb;
-    border-radius: 12px;
-    padding: 22px 14px 18px;
-    cursor: pointer;
-    text-align: left;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    background: #fff;
-    position: relative;
-    transition: border-color 0.2s, box-shadow 0.2s, transform 0.15s;
-    font-family: inherit;
-    outline: none;
-}
-.option-card:hover {
-    border-color: #3b68ed;
-    box-shadow: 0 4px 18px rgba(59,104,237,0.12);
-    transform: translateY(-2px);
-}
-.option-card:focus-visible {
-    outline: 3px solid #3b68ed;
-    outline-offset: 2px;
-}
-.option-card.selected {
-    border-color: #3b68ed;
-    background: #eef2ff;
-    box-shadow: 0 4px 18px rgba(59,104,237,0.15);
-}
-.card-check {
-    position: absolute;
-    top: 8px;
-    right: 8px;
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    background: #3b68ed;
-    display: none;
-    align-items: center;
-    justify-content: center;
-    color: #fff;
-    font-size: 11px;
-    font-weight: 700;
-}
-.option-card.selected .card-check {
-    display: flex;
-}
-.card-icon {
-    width: 24px;
-    height: 24px;
-    margin-bottom: 10px;
-    display: inline-flex;
-    color: #3b68ed;
-}
-.card-label {
-    font-size: 0.85rem;
-    font-weight: 600;
-    color: #1f2937;
-    line-height: 1.35;
-    text-align: left;
-}
-.option-card.selected .card-label {
-    color: #2d4fb5;
-}
-
-/* ---------- Wizard nav buttons ---------- */
-.wizard-nav {
-    display: flex;
-    align-items: center;
-    gap: 16px;
-}
-.btn-wizard-next {
-    background: #3b68ed;
-    color: #fff;
-    border: none;
-    border-radius: 8px;
-    padding: 13px 30px;
-    font-size: 0.97rem;
-    font-weight: 700;
-    cursor: pointer;
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
-    transition: background 0.2s, opacity 0.2s, transform 0.15s;
-    font-family: inherit;
-}
-.btn-wizard-next:disabled {
-    opacity: 0.38;
-    cursor: not-allowed;
-    transform: none;
-}
-.btn-wizard-next:not(:disabled):hover {
-    background: #2d4fb5;
-    transform: translateY(-1px);
-}
-.btn-wizard-next:not(:disabled):focus-visible {
-    outline: 3px solid #3b68ed;
-    outline-offset: 3px;
-}
-.btn-wizard-back {
-    background: none;
-    border: none;
-    color: #6b7280;
-    cursor: pointer;
-    font-size: 0.88rem;
-    font-weight: 500;
-    padding: 8px 4px;
-    font-family: inherit;
-    transition: color 0.2s;
-}
-.btn-wizard-back:hover { color: #111827; }
-
-/* ---------- Result Modal ---------- */
-.wizard-modal-overlay {
-    position: fixed;
-    inset: 0;
-    background: rgba(17,24,39,0.55);
-    z-index: 10000;
-    display: none;
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
-    backdrop-filter: blur(2px);
-}
-.wizard-modal-overlay.open {
-    display: flex;
-}
-.wizard-modal-box {
-    background: #f7f8fa;
-    border-radius: 34px;
-    max-width: 480px;
-    width: 100%;
-    padding: 42px 24px 22px;
-    position: relative;
-    animation: modalPop 0.3s cubic-bezier(0.34, 1.56, 0.64, 1) both;
-    border: 1px solid #eceef2;
-    box-shadow: 0 16px 34px rgba(17, 24, 39, 0.2);
-}
-@keyframes modalPop {
-    from { opacity: 0; transform: scale(0.88); }
-    to   { opacity: 1; transform: scale(1); }
-}
-.modal-close-btn {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    background: none;
-    border: none;
-    font-size: 1.6rem;
-    cursor: pointer;
-    color: #9ca3af;
-    line-height: 1;
-    width: 34px;
-    height: 34px;
-    border-radius: 50%;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0;
-    z-index: 2;
-    transition: color 0.2s;
-    font-family: inherit;
-}
-.modal-close-btn:hover {
-    color: #374151;
-    background: rgba(17, 24, 39, 0.06);
-}
-.modal-heading {
-    display: none;
-}
-.modal-subtext {
-    display: none;
-}
-.provider-grid {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 10px;
-}
-.provider-card {
-    border: none;
-    border-radius: 0;
-    padding: 0;
-    text-align: center;
-    background: transparent;
-    max-width: 100%;
-    width: 100%;
-}
-.provider-hero {
-    background: #dfe4ee;
-    border-radius: 36px 36px 26px 26px;
-    padding: 40px 22px 32px;
-    margin-bottom: 18px;
-    transition: background 0.18s ease;
-}
-.provider-hero-link {
-    display: block;
-    text-decoration: none;
-    color: inherit;
-}
-.provider-hero-link:hover {
-    background: #d9dfea;
-}
-.provider-card img {
-    max-width: 180px;
-    height: 72px;
-    object-fit: contain;
-    margin: 0 auto 26px;
-    display: block;
-}
-.provider-name {
-    font-weight: 700;
-    font-size: clamp(1.25rem, 2vw, 2rem);
-    color: #20242c;
-    margin: 0 0 6px;
-}
-.modal-answer-summary {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 6px;
-    margin: 0 0 14px;
-}
-.modal-answer-item {
-    background: #e9eef7;
-    color: #43506a;
-    border-radius: 999px;
-    padding: 4px 10px;
-    font-size: 0.72rem;
-    font-weight: 600;
-}
-.provider-cta {
-    width: 100%;
-    justify-content: center;
-    text-decoration: none;
-    box-sizing: border-box;
-    margin-bottom: 6px;
-}
-.provider-cta:link,
-.provider-cta:visited,
-.provider-cta:hover,
-.provider-cta:active {
-    color: #fff;
-    text-decoration: none;
-}
-.provider-cta-secondary {
-    width: 100%;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    box-sizing: border-box;
-    border: 1px solid #d1d5db;
-    border-radius: 8px;
-    padding: 12px 16px;
-    background: #e5e7eb;
-    color: #374151;
-    text-decoration: none;
-    font-size: 0.95rem;
-    font-weight: 600;
-    transition: background 0.2s, color 0.2s;
-}
-.provider-cta-secondary:link,
-.provider-cta-secondary:visited,
-.provider-cta-secondary:hover,
-.provider-cta-secondary:active {
-    text-decoration: none;
-}
-.provider-cta-secondary:hover {
-    background: #d1d5db;
-    color: #111827;
-}
-.provider-focus {
-    display: none;
-}
-a {
-    text-decoration: none;
-}
-h1 {
-    font-size: clamp(1.25rem, 2vw, 2rem);
-    font-weight: 800;
-    color: #111827;
-    margin-bottom: 10px;
-}
-p {
-    font-size: clamp(1rem, 2vw, 1.125rem);
-    color: #6b7280;
-    max-width: 540px;
-    margin: 0;
-    text-align: center;
-    margin-inline: auto;
-}
-/* ---------- Responsive ---------- */
-@media (max-width: 640px) {
-    .wizard-container { flex-direction: column; gap: 0; }
-    .wizard-stepper {
-        flex-direction: row;
-        padding-top: 0;
-        padding-bottom: 24px;
-        justify-content: center;
-    }
-    .step-line { width: 36px; height: 2px; }
-    .cards-grid { grid-template-columns: repeat(2, 1fr); }
-    .step-question { font-size: 1.3rem; text-align: center; }
-h1,
- p {
-        padding-left: clamp(1rem, 2vw, 1.5rem);
-        padding-right: clamp(1rem, 2vw, 1.5rem);
-    }
-    .wizard-page-wrap > div:first-child p {
-        text-align: center;
-
-    }
-    .wizard-modal-box {
-        max-width: 360px;
-        padding: 36px 18px 16px;
-    }
-    .modal-close-btn {
-        top: 8px;
-        right: 8px;
-    }
-    .provider-grid { display: flex; }
-    .provider-hero {
-        border-radius: 26px 26px 20px 20px;
-        padding: 26px 16px 22px;
-    }
-    .provider-card img {
-        max-width: 150px;
-        height: 62px;
-        margin-bottom: 18px;
-    }
-    .wizard-nav {
-        justify-content: center;
-    }
-}
-@media (max-width: 380px) {
-    .cards-grid { grid-template-columns: 1fr; }
-}
-    </style>
 </head>
-<body class="designtemplate207 motif0 show_logo resp seo-seiten expats-page">
-<div class="bt_skip_to_contentcontainer" style="position: fixed; top: -1000px;">
+<body class="designtemplate207 motif0 show_logo resp seo-seiten expats-page versicherungs-check-page">
+<div class="bt_skip_to_contentcontainer">
 <a class="submitbutton" href="#seo-landing-content">direkt zum Seiteninhalt</a>
 </div>
 
 <div class="" id="centercontainer">
 <div id="pagewrap">
 <div id="pagecontainer">
-<div class="element_wrapper wrap_header"><div id="menutoggle"></div><header class="element_wrapper wrap_menu"><nav class="new_menu"><ul class="menutype4 responsive_dontslide" id="menu" role="menubar"><li class="menuitem firstitem" id="page-1241193" role="none"><a aria-label="Ausländer in Deutschland" href="krankenversicherungen.html" id="page-1241193-link" onclick="return false" role="menuitem">Ausländer in Deutschland</a><span class="submenutoggle"></span><ul aria-labelledby="page-1241193-link" role="menu"><li class="menusubitem firstitem" id="page-1288743" role="none"><a aria-label="Krankenversicherung" href="krankenversicherungen.html" id="page-1288743-link" role="menuitem">Kranken­ver­si­che­rung</a><span class="submenutoggle"></span><ul aria-labelledby="page-1288743-link" role="menu"><li class="menusubitem firstitem" id="page-1288744" role="none"><a aria-label="April" href="april.html" id="page-1288744-link" role="menuitem">April</a><span class="submenutoggle"></span></li><li class="menusubitem" id="page-1288745" role="none"><a aria-label="BDAE" href="bdae.html" id="page-1288745-link" role="menuitem">BDAE</a><span class="submenutoggle"></span></li><li class="menusubitem" id="page-1288746" role="none"><a aria-label="Care Concept" href="care_concept.html" id="page-1288746-link" role="menuitem">Care Concept</a><span class="submenutoggle"></span></li><li class="menusubitem" id="page-1288747" role="none"><a aria-label="Cigna" href="cigna.html" id="page-1288747-link" role="menuitem">Cigna</a><span class="submenutoggle"></span></li><li class="menusubitem" id="page-1288748" role="none"><a aria-label="Passport" href="passport.html" id="page-1288748-link" role="menuitem">Passport</a><span class="submenutoggle"></span></li><li class="menusubitem lastitem" id="page-1288749" role="none"><a aria-label="Foyer" href="foyer.html" id="page-1288749-link" role="menuitem">Foyer</a><span class="submenutoggle"></span></li></ul></li><li class="menusubitem" id="page-1241289" role="none"><a aria-label="Privathaftpflichtversicherung" href="privathaftpflichtversicherung.html" id="page-1241289-link" role="menuitem">Privathaftpflichtversicherung</a><span class="submenutoggle"></span></li><li class="menusubitem" id="page-1241290" role="none"><a aria-label="Unfallversicherung" href="unfallversicherung.html" id="page-1241290-link" role="menuitem">Unfall­ver­si­che­rung</a><span class="submenutoggle"></span></li><li class="menusubitem" id="page-1241291" role="none"><a aria-label="Reiseversicherung" href="reiseversicherung.html" id="page-1241291-link" role="menuitem">Reiseversicherung</a><span class="submenutoggle"></span></li><li class="menusubitem" id="page-1241292" role="none"><a aria-label="Altersvorsorge &amp; Rücklagenbildung" href="altersvorsorge_ruecklagenbildung.html" id="page-1241292-link" role="menuitem">Alters­vorsorge &amp; Rücklagenbildung</a><span class="submenutoggle"></span></li><li class="menusubitem lastitem" id="page-1241293" role="none"><a aria-label="FAQ &amp; Downloads in mehreren Sprachen" href="faq_downloads_in_mehreren_sprachen.html" id="page-1241293-link" role="menuitem">FAQ &amp; Downloads in mehreren Sprachen</a><span class="submenutoggle"></span></li></ul></li><li class="menuitem" id="page-1241194" role="none"><a aria-label="Deutsche im Ausland" href="deutsche_im_ausland.html" id="page-1241194-link" onclick="return false" role="menuitem">Deutsche im Ausland</a><span class="submenutoggle"></span><ul aria-labelledby="page-1241194-link" role="menu"><li class="menusubitem firstitem" id="page-1288836" role="none"><a aria-label="Internationale Krankenversicherung" href="internationale_krankenversicherung.html" id="page-1288836-link" role="menuitem">Internationale Kranken­ver­si­che­rung</a><span class="submenutoggle"></span><ul aria-labelledby="page-1288836-link" role="menu"><li class="menusubitem firstitem" id="page-1288837" role="none"><a aria-label="Care Concept" href="dia_care_concept.html" id="page-1288837-link" role="menuitem">Care Concept</a><span class="submenutoggle"></span></li><li class="menusubitem" id="page-1288838" role="none"><a aria-label="Cigna" href="dia_cigna.html" id="page-1288838-link" role="menuitem">Cigna</a><span class="submenutoggle"></span></li><li class="menusubitem" id="page-1288839" role="none"><a aria-label="HDI" href="dia_hdi.html" id="page-1288839-link" role="menuitem">HDI</a><span class="submenutoggle"></span></li><li class="menusubitem" id="page-1288840" role="none"><a aria-label="Passport" href="dia_passport.html" id="page-1288840-link" role="menuitem">Passport</a><span class="submenutoggle"></span></li><li class="menusubitem" id="page-1288841" role="none"><a aria-label="Foyer" href="dia_foyer.html" id="page-1288841-link" role="menuitem">Foyer</a><span class="submenutoggle"></span></li><li class="menusubitem" id="page-1288842" role="none"><a aria-label="April" href="dia_april.html" id="page-1288842-link" role="menuitem">April</a><span class="submenutoggle"></span></li><li class="menusubitem lastitem" id="page-1288843" role="none"><a aria-label="BDAE" href="dia_bdae.html" id="page-1288843-link" role="menuitem">BDAE</a><span class="submenutoggle"></span></li></ul></li><li class="menusubitem" id="page-1290001" role="none"><a aria-label="Deine Situation" href="versicherungen_fuer_deine_situation.html" id="page-1290001-link" role="menuitem">Deine Situation</a><span class="submenutoggle"></span><ul aria-labelledby="page-1290001-link" role="menu"><li class="menusubitem firstitem" id="page-1290002" role="none"><a aria-label="Krankenversicherung für Freelancer im Ausland" href="krankenversicherung_fuer_freelancer_im_ausland.html" id="page-1290002-link" role="menuitem">Krankenversicherung für Freelancer im Ausland</a><span class="submenutoggle"></span></li><li class="menusubitem" id="page-1290003" role="none"><a aria-label="Krankenversicherungen für digitale Nomaden" href="krankenversicherung_fuer_digitale_nomaden.html" id="page-1290003-link" role="menuitem">Kranken­ver­si­che­rungen für digitale Nomaden</a><span class="submenutoggle"></span></li><li class="menusubitem" id="page-1290004" role="none"><a aria-label="Krankenversicherungen für Expats" href="krankenversicherung_fuer_expats.html" id="page-1290004-link" role="menuitem">Kranken­ver­si­che­rungen für Expats</a><span class="submenutoggle"></span></li><li class="menusubitem lastitem" id="page-1290005" role="none"><a aria-label="Krankenversicherungen im Ausland" href="krankenversicherungen_im_ausland.html" id="page-1290005-link" role="menuitem">Kranken­ver­si­che­rungen im Ausland</a><span class="submenutoggle"></span></li></ul></li><li class="menusubitem" id="page-1241298" role="none"><a aria-label="Haftpflichtversicherung" href="haftpflicht.html" id="page-1241298-link" role="menuitem">Haft­pflichtversicherung</a><span class="submenutoggle"></span></li><li class="menusubitem" id="page-1241299" role="none"><a aria-label="Unfallversicherung" href="dia_unfallversicherung.html" id="page-1241299-link" role="menuitem">Unfall­ver­si­che­rung</a><span class="submenutoggle"></span></li><li class="menusubitem" id="page-1241300" role="none"><a aria-label="Reiseversicherungen" href="dia_reiseversicherungen.html" id="page-1241300-link" role="menuitem">Reiseversicherungen</a><span class="submenutoggle"></span></li><li class="menusubitem" id="page-1241301" role="none"><a aria-label="Versicherungsschutz für Familienmitglieder" href="versicherungsschutz_fuer_familienmitglieder.html" id="page-1241301-link" role="menuitem">Versicherungsschutz für Familienmitglieder</a><span class="submenutoggle"></span></li><li class="menusubitem" id="page-1241302" role="none"><a aria-label="Altersvorsorge im Ausland" href="dia_altersvorsorge_im_ausland.html" id="page-1241302-link" role="menuitem">Alters­vorsorge im Ausland</a><span class="submenutoggle"></span></li><li class="menusubitem lastitem" id="page-1241303" role="none"><a aria-label="Checkliste Auswanderung &amp; FAQ" href="dia_checkliste_auswanderung_faq.html" id="page-1241303-link" role="menuitem">Checkliste Auswanderung &amp; FAQ</a><span class="submenutoggle"></span></li></ul></li><li class="menuitem" id="page-1241195" role="none"><a aria-label="Wir &amp; Sustainable" href="wer_wir_sind.html" id="page-1241195-link" onclick="return false" role="menuitem">Wir &amp; Sustainable</a><span class="submenutoggle"></span><ul aria-labelledby="page-1241195-link" role="menu"><li class="menusubitem firstitem" id="page-1241316" role="none"><a aria-label="Mission &amp; Vision / Code of Conduct" href="mission.html" id="page-1241316-link" role="menuitem">Mission &amp; Vision / Code of Conduct</a><span class="submenutoggle"></span></li><li class="menusubitem" id="page-1241317" role="none"><a aria-label="Nachhaltigkeitspräferenzen" href="nachhaltigkeitspraeferenzen.html" id="page-1241317-link" role="menuitem">Nachhaltigkeitspräferenzen</a><span class="submenutoggle"></span></li><li class="menusubitem" id="page-1241318" role="none"><a aria-label="Wer wir sind" href="wer_wir_sind.html" id="page-1241318-link" role="menuitem">Wer wir sind</a><span class="submenutoggle"></span></li><li class="menusubitem" id="page-1241319" role="none"><a aria-label="Partner und Netzwerke" href="partner_und_netzwerke.html" id="page-1241319-link" role="menuitem">Partner und Netzwerke</a><span class="submenutoggle"></span></li><li class="menusubitem lastitem" id="page-1241320" role="none"><a aria-label="Warum spreeFinanz?" href="warum_spreefinanz.html" id="page-1241320-link" role="menuitem">Warum spreeFinanz?</a><span class="submenutoggle"></span></li></ul></li><li class="menuitem subactive" id="page-1241196" role="none"><a aria-label="Service" href="online-beratung_buchen.html" id="page-1241196-link" onclick="return false" role="menuitem">Service</a><span class="submenutoggle"></span><ul aria-labelledby="page-1241196-link" role="menu"><li class="menusubitem firstitem" id="page-1241321" role="none"><a aria-label="Online-Beratung buchen" href="https://calendly.com/sebastian-spreefinanz/30min?month=2026-04" id="page-1241321-link" role="menuitem" target="_blank">Online-Beratung buchen</a><span class="submenutoggle"></span></li><li class="menusubitem" id="page-1241322" role="none"><a aria-label="Videoberatung mit Sprachauswahl (DE, EN)" href="https://zoom.us/j/7319679053__q_pwd_UqY5Pj768DoBySC60bK8t6njgTayZG.1" id="page-1241322-link" role="menuitem" target="_blank">Videoberatung mit Sprachauswahl (DE, EN)</a><span class="submenutoggle"></span></li><li class="menusubitem" id="page-1241323" role="none"><a aria-label="Notfallkontakte / Erste Hilfe bei Problemen im Ausland" href="notfallkontakte.html" id="page-1241323-link" role="menuitem">Notfallkontakte / Erste Hilfe bei Problemen im Ausland</a><span class="submenutoggle"></span></li><li class="menusubitem" id="page-1241324" role="none"><a aria-label="Schadenmeldung" href="schadenmeldung.html" id="page-1241324-link" role="menuitem">Schadenmeldung</a><span class="submenutoggle"></span></li><li class="menusubitem" id="page-1241325" role="none"><a aria-label="Kontaktformular" href="kontaktformular.html" id="page-1241325-link" role="menuitem">Kontaktformular</a><span class="submenutoggle"></span></li><li class="menusubitemactive" id="page-versicherungs-check" role="none"><a aria-label="Versicherungs-Check" href="versicherungs-check.html" id="page-versicherungs-check-link" role="menuitem">Versicherungs-Check</a><span class="submenutoggle"></span></li><li class="menusubitem lastitem" id="page-1241326" role="none"><a aria-label="Impressum" href="impressum.html" id="page-1241326-link" role="menuitem">Impressum</a><span class="submenutoggle"></span></li></ul></li><li class="menuitem lastitem" id="page-1257017" role="none"><a aria-label="EN / DE" href="ENG/index.html" id="page-1257017-link" role="menuitem">EN / DE</a><span class="submenutoggle"></span></li></ul></nav></header><header><div id="titleback"><div id="titlecontainer"><div class="sitetitle_img"><div class="indistyle logodrag_disabled" data-margin-left="80" data-margin-left-percent="6" data-margin-stored="true" data-margin-top="10" data-right-aligned="0" style="top: 10px; left: 80px; right: auto;"><a href="index.html"><img alt="Logo von Havel Spree Finanz - Sebastian Krüger - Ihr Versicherungsmakler in Berlin" src="../assets/local-cdn/storage/f26f73ba7f/logo__q_v_4f79e22e.svg" style="height: 80px;"/></a></div></div><div class="pagetitle">Versicherungs-Check</div></div></div></header></div>
+<div class="element_wrapper wrap_header"><div id="menutoggle"></div><header class="element_wrapper wrap_menu"><nav class="new_menu"><ul class="menutype4 responsive_dontslide" id="menu" role="menubar" class="margin-left: 309px"><li class="menuitem firstitem" id="page-1241193" role="none"><a aria-label="Ausländer in Deutschland" href="krankenversicherungen.html" id="page-1241193-link" onclick="return false" role="menuitem">Ausländer in Deutschland</a><span class="submenutoggle"></span><ul aria-labelledby="page-1241193-link" role="menu"><li class="menusubitem firstitem" id="page-1288743" role="none"><a aria-label="Krankenversicherung" href="krankenversicherungen.html" id="page-1288743-link" role="menuitem">Kranken­ver­si­che­rung</a><span class="submenutoggle"></span><ul aria-labelledby="page-1288743-link" role="menu"><li class="menusubitem firstitem" id="page-1288744" role="none"><a aria-label="April" href="april.html" id="page-1288744-link" role="menuitem">April</a><span class="submenutoggle"></span></li><li class="menusubitem" id="page-1288745" role="none"><a aria-label="BDAE" href="bdae.html" id="page-1288745-link" role="menuitem">BDAE</a><span class="submenutoggle"></span></li><li class="menusubitem" id="page-1288746" role="none"><a aria-label="Care Concept" href="care_concept.html" id="page-1288746-link" role="menuitem">Care Concept</a><span class="submenutoggle"></span></li><li class="menusubitem" id="page-1288747" role="none"><a aria-label="Cigna" href="cigna.html" id="page-1288747-link" role="menuitem">Cigna</a><span class="submenutoggle"></span></li><li class="menusubitem" id="page-1288748" role="none"><a aria-label="Passport" href="passport.html" id="page-1288748-link" role="menuitem">Passport</a><span class="submenutoggle"></span></li><li class="menusubitem" id="page-1288749" role="none"><a aria-label="Foyer" href="foyer.html" id="page-1288749-link" role="menuitem">Foyer</a><span class="submenutoggle"></span></li><li class="menusubitem lastitem" id="page-1290300" role="none"><a aria-label="Hallesche / ALH Group" href="higermany_pkv_voll_visum.html" id="page-1290300-link" onclick="return false" role="menuitem">Hallesche / ALH Group</a><span class="submenutoggle"></span><ul aria-labelledby="page-1290300-link" role="menu"><li class="menusubitem firstitem" id="page-1290301" role="none"><a aria-label="HiGermany PKV Voll Visum" href="higermany_pkv_voll_visum.html" id="page-1290301-link" role="menuitem">HiGermany PKV Voll Visum</a><span class="submenutoggle"></span></li><li class="menusubitem lastitem" id="page-1290302" role="none"><a aria-label="Zusatzversicherungen zur GKV" href="hallesche_zusatzversicherungen_gkv.html" id="page-1290302-link" role="menuitem">Zusatzversicherungen zur GKV</a><span class="submenutoggle"></span></li></ul></li></ul></li><li class="menusubitem" id="page-1241289" role="none"><a aria-label="Privathaftpflichtversicherung" href="privathaftpflichtversicherung.html" id="page-1241289-link" role="menuitem">Privathaftpflichtversicherung</a><span class="submenutoggle"></span></li><li class="menusubitem" id="page-1241290" role="none"><a aria-label="Unfallversicherung" href="unfallversicherung.html" id="page-1241290-link" role="menuitem">Unfall­ver­si­che­rung</a><span class="submenutoggle"></span></li><li class="menusubitem" id="page-1241291" role="none"><a aria-label="Reiseversicherung" href="reiseversicherung.html" id="page-1241291-link" role="menuitem">Reiseversicherung</a><span class="submenutoggle"></span></li><li class="menusubitem" id="page-1241292" role="none"><a aria-label="Altersvorsorge &amp; Rücklagenbildung" href="altersvorsorge_ruecklagenbildung.html" id="page-1241292-link" role="menuitem">Alters­vorsorge &amp; Rücklagenbildung</a><span class="submenutoggle"></span></li><li class="menusubitem lastitem" id="page-1241293" role="none"><a aria-label="FAQ &amp; Downloads in mehreren Sprachen" href="faq_downloads_in_mehreren_sprachen.html" id="page-1241293-link" role="menuitem">FAQ &amp; Downloads in mehreren Sprachen</a><span class="submenutoggle"></span></li></ul></li><li class="menuitem" id="page-1241194" role="none"><a aria-label="Deutsche im Ausland" href="deutsche_im_ausland.html" id="page-1241194-link" onclick="return false" role="menuitem">Deutsche im Ausland</a><span class="submenutoggle"></span><ul aria-labelledby="page-1241194-link" role="menu"><li class="menusubitem firstitem" id="page-1288836" role="none"><a aria-label="Internationale Krankenversicherung" href="internationale_krankenversicherung.html" id="page-1288836-link" role="menuitem">Internationale Kranken­ver­si­che­rung</a><span class="submenutoggle"></span><ul aria-labelledby="page-1288836-link" role="menu"><li class="menusubitem firstitem" id="page-1288837" role="none"><a aria-label="Care Concept" href="dia_care_concept.html" id="page-1288837-link" role="menuitem">Care Concept</a><span class="submenutoggle"></span></li><li class="menusubitem" id="page-1288838" role="none"><a aria-label="Cigna" href="dia_cigna.html" id="page-1288838-link" role="menuitem">Cigna</a><span class="submenutoggle"></span></li><li class="menusubitem" id="page-1288839" role="none"><a aria-label="HDI" href="dia_hdi.html" id="page-1288839-link" role="menuitem">HDI</a><span class="submenutoggle"></span></li><li class="menusubitem" id="page-1288840" role="none"><a aria-label="Passport" href="dia_passport.html" id="page-1288840-link" role="menuitem">Passport</a><span class="submenutoggle"></span></li><li class="menusubitem" id="page-1288841" role="none"><a aria-label="Foyer" href="dia_foyer.html" id="page-1288841-link" role="menuitem">Foyer</a><span class="submenutoggle"></span></li><li class="menusubitem" id="page-1288842" role="none"><a aria-label="April" href="dia_april.html" id="page-1288842-link" role="menuitem">April</a><span class="submenutoggle"></span></li><li class="menusubitem lastitem" id="page-1288843" role="none"><a aria-label="BDAE" href="dia_bdae.html" id="page-1288843-link" role="menuitem">BDAE</a><span class="submenutoggle"></span></li></ul></li><li class="menusubitem" id="page-1290001" role="none"><a aria-label="Deine Situation" href="versicherungen_fuer_deine_situation.html" id="page-1290001-link" role="menuitem">Deine Situation</a><span class="submenutoggle"></span><ul aria-labelledby="page-1290001-link" role="menu"><li class="menusubitem firstitem" id="page-1290002" role="none"><a aria-label="Krankenversicherung für Freelancer im Ausland" href="krankenversicherung_fuer_freelancer_im_ausland.html" id="page-1290002-link" role="menuitem">Krankenversicherung für Freelancer im Ausland</a><span class="submenutoggle"></span></li><li class="menusubitem" id="page-1290003" role="none"><a aria-label="Krankenversicherungen für digitale Nomaden" href="krankenversicherung_fuer_digitale_nomaden.html" id="page-1290003-link" role="menuitem">Kranken­ver­si­che­rungen für digitale Nomaden</a><span class="submenutoggle"></span></li><li class="menusubitem" id="page-1290004" role="none"><a aria-label="Krankenversicherungen für Expats" href="krankenversicherung_fuer_expats.html" id="page-1290004-link" role="menuitem">Kranken­ver­si­che­rungen für Expats</a><span class="submenutoggle"></span></li><li class="menusubitem lastitem" id="page-1290005" role="none"><a aria-label="Krankenversicherungen im Ausland" href="krankenversicherungen_im_ausland.html" id="page-1290005-link" role="menuitem">Kranken­ver­si­che­rungen im Ausland</a><span class="submenutoggle"></span></li></ul></li><li class="menusubitem" id="page-1241298" role="none"><a aria-label="Haftpflichtversicherung" href="haftpflicht.html" id="page-1241298-link" role="menuitem">Haft­pflichtversicherung</a><span class="submenutoggle"></span></li><li class="menusubitem" id="page-1290200" role="none"><a aria-label="Rechtsschutz Expats" href="rechtsschutz_expats.html" id="page-1290200-link" role="menuitem">Rechtsschutz Expats</a><span class="submenutoggle"></span></li><li class="menusubitem" id="page-1241299" role="none"><a aria-label="Unfallversicherung" href="dia_unfallversicherung.html" id="page-1241299-link" role="menuitem">Unfall­ver­si­che­rung</a><span class="submenutoggle"></span></li><li class="menusubitem" id="page-1241300" role="none"><a aria-label="Reiseversicherungen" href="dia_reiseversicherungen.html" id="page-1241300-link" role="menuitem">Reiseversicherungen</a><span class="submenutoggle"></span></li><li class="menusubitem" id="page-1241301" role="none"><a aria-label="Versicherungsschutz für Familienmitglieder" href="versicherungsschutz_fuer_familienmitglieder.html" id="page-1241301-link" role="menuitem">Versicherungsschutz für Familienmitglieder</a><span class="submenutoggle"></span></li><li class="menusubitem" id="page-1241302" role="none"><a aria-label="Altersvorsorge im Ausland" href="dia_altersvorsorge_im_ausland.html" id="page-1241302-link" role="menuitem">Alters­vorsorge im Ausland</a><span class="submenutoggle"></span></li><li class="menusubitem lastitem" id="page-1241303" role="none"><a aria-label="Checkliste Auswanderung &amp; FAQ" href="dia_checkliste_auswanderung_faq.html" id="page-1241303-link" role="menuitem">Checkliste Auswanderung &amp; FAQ</a><span class="submenutoggle"></span></li></ul></li><li class="menuitem" id="page-1290100" role="none"><a aria-label="Internationale Mitarbeiterversicherung" href="internationale_mitarbeiterversicherung.html" id="page-1290100-link" role="menuitem">Internationale Mitarbeiterversicherung</a><span class="submenutoggle"></span></li><li class="menuitem" id="page-1241195" role="none"><a aria-label="Wir &amp; Sustainable" href="wer_wir_sind.html" id="page-1241195-link" onclick="return false" role="menuitem">Wir &amp; Sustainable</a><span class="submenutoggle"></span><ul aria-labelledby="page-1241195-link" role="menu"><li class="menusubitem firstitem" id="page-1241316" role="none"><a aria-label="Mission &amp; Vision / Code of Conduct" href="mission.html" id="page-1241316-link" role="menuitem">Mission &amp; Vision / Code of Conduct</a><span class="submenutoggle"></span></li><li class="menusubitem" id="page-1241317" role="none"><a aria-label="Nachhaltigkeitspräferenzen" href="nachhaltigkeitspraeferenzen.html" id="page-1241317-link" role="menuitem">Nachhaltigkeitspräferenzen</a><span class="submenutoggle"></span></li><li class="menusubitem" id="page-1241318" role="none"><a aria-label="Wer wir sind" href="wer_wir_sind.html" id="page-1241318-link" role="menuitem">Wer wir sind</a><span class="submenutoggle"></span></li><li class="menusubitem" id="page-1241319" role="none"><a aria-label="Partner und Netzwerke" href="partner_und_netzwerke.html" id="page-1241319-link" role="menuitem">Partner und Netzwerke</a><span class="submenutoggle"></span></li><li class="menusubitem lastitem" id="page-1241320" role="none"><a aria-label="Warum Spreefinanz?" href="warum_spreefinanz.html" id="page-1241320-link" role="menuitem">Warum Spreefinanz?</a><span class="submenutoggle"></span></li></ul></li><li class="menuitem subactive" id="page-1241196" role="none"><a aria-label="Service" href="online-beratung_buchen.html" id="page-1241196-link" onclick="return false" role="menuitem">Service</a><span class="submenutoggle"></span><ul aria-labelledby="page-1241196-link" role="menu"><li class="menusubitem firstitem" id="page-1241321" role="none"><a aria-label="Online-Beratung buchen" href="https://calendly.com/sebastian-spreefinanz/30min?month=2026-04" id="page-1241321-link" role="menuitem" target="_blank">Online-Beratung buchen</a><span class="submenutoggle"></span></li><li class="menusubitem" id="page-1241322" role="none"><a aria-label="Videoberatung mit Sprachauswahl (DE, EN)" href="https://zoom.us/j/7319679053__q_pwd_UqY5Pj768DoBySC60bK8t6njgTayZG.1" id="page-1241322-link" role="menuitem" target="_blank">Videoberatung mit Sprachauswahl (DE, EN)</a><span class="submenutoggle"></span></li><li class="menusubitem" id="page-1241323" role="none"><a aria-label="Notfallkontakte / Erste Hilfe bei Problemen im Ausland" href="notfallkontakte.html" id="page-1241323-link" role="menuitem">Notfallkontakte / Erste Hilfe bei Problemen im Ausland</a><span class="submenutoggle"></span></li><li class="menusubitem" id="page-1241324" role="none"><a aria-label="Schadenmeldung" href="schadenmeldung.html" id="page-1241324-link" role="menuitem">Schadenmeldung</a><span class="submenutoggle"></span></li><li class="menusubitem" id="page-1241325" role="none"><a aria-label="Kontaktformular" href="kontaktformular.html" id="page-1241325-link" role="menuitem">Kontaktformular</a><span class="submenutoggle"></span></li><li class="menusubitemactive" id="page-versicherungs-check" role="none"><a aria-label="Versicherungs-Check" href="versicherungs-check.html" id="page-versicherungs-check-link" role="menuitem">Versicherungs-Check</a><span class="submenutoggle"></span></li><li class="menusubitem lastitem" id="page-1241326" role="none"><a aria-label="Impressum" href="impressum.html" id="page-1241326-link" role="menuitem">Impressum</a><span class="submenutoggle"></span></li></ul></li><li class="menuitem lastitem" id="page-1257017" role="none"><a aria-label="EN / DE" href="ENG/insurance-check.html" id="page-1257017-link" role="menuitem">EN / DE</a><span class="submenutoggle"></span></li></ul></nav></header><header><div id="titleback"><div id="titlecontainer"><div class="sitetitle_img"><div class="indistyle logodrag_disabled" data-margin-left="80" data-margin-left-percent="6" data-margin-stored="true" data-margin-top="10" data-right-aligned="0" style="top: 10px; left: 80px; right: auto;"><a href="index.html"><img alt="Logo von Havel Spree Finanz - Sebastian Krüger - Ihr Versicherungsmakler in Berlin" src="../assets/local-cdn/storage/f26f73ba7f/logo__q_v_4f79e22e.svg" style="height: 80px;"/></a></div></div><div class="pagetitle">Versicherungs-Check</div></div></div></header></div>
 
-<script data-ehcookieblocker="other" data-ehcookieblocker-src="https://widget.superchat.de/snippet.js?applicationKey=WCNK7nqXPQlrVlQ0E5A2obLRVa" referrerpolicy="no-referrer-when-downgrade" src="_assets/internal/eh-content/empty.html" type="text/plaintext"></script>
+<a id="whatsapp-widget" href="https://wa.me/4915128937141?text=Hey%20Sebastian%21%20Ich%20h%C3%A4tte%20ein%20paar%20Fragen%20zu%20meiner%20Situation%2C%20k%C3%B6nntest%20du%20mir%20weiterhelfen%3F" target="_blank" rel="noopener" aria-label="Kontakt via WhatsApp" title="WhatsApp schreiben"><img src="assets/whatsapplogo.png" alt="WhatsApp" width="56" height="56"/></a>
 
 <div class="new-pages">
-<main id="seo-landing-content" aria-label="Versicherungs-Check Fragebogen">
+<main class="versicherungs-check-main" aria-label="Versicherungs-Check">
 
-
-        <!-- Intro header -->
-        <div style="max-width:860px;margin:0 auto 32px;text-align:center; justify-items: center;">
-            <h1>Dein persönlicher Versicherungs-Check</h1>
-            <p style="font-size:1rem;color:#6b7280;max-width:540px;margin:0;text-align:center;">4 kurze Fragen – wir zeigen dir, welche Versicherung wirklich zu dir passt.</p>
-        </div>
-
+        <div class="wizard-viewport">
         <div class="wizard-page-wrap">
         <div class="wizard-container">
 
@@ -526,7 +66,7 @@ h1,
                 <!-- ===== Step 1 ===== -->
                 <section class="wizard-step active" id="step-1" aria-labelledby="q1-heading">
                     <p class="step-label">Schritt 1 von 4</p>
-                    <h2 id="q1-heading" class="step-question">Wo bist du aktuell / wo willst du hin?</h2>
+                    <p id="q1-heading" class="step-question">Wo bist du aktuell / wo willst du hin?</p>
                     <p class="step-desc">Die wichtigste Einstiegsfrage – sie entscheidet 70&nbsp;% der Versicherungslogik.</p>
                     <div class="cards-grid" role="group" aria-labelledby="q1-heading">
                         <button class="option-card" data-value="de-to-abroad" data-label="Deutschland → Ausland" type="button" aria-pressed="false">
@@ -560,7 +100,7 @@ h1,
                 <!-- ===== Step 2 ===== -->
                 <section class="wizard-step" id="step-2" aria-labelledby="q2-heading">
                     <p class="step-label">Schritt 2 von 4</p>
-                    <h2 id="q2-heading" class="step-question">Was beschreibt deine Situation am besten?</h2>
+                    <p id="q2-heading" class="step-question">Was beschreibt deine Situation am besten?</p>
                     <p class="step-desc">Beeinflusst Krankenversicherung, Absicherung und Beratungstiefe.</p>
                     <div class="cards-grid" role="group" aria-labelledby="q2-heading">
                         <button class="option-card" data-value="employed" data-label="Angestellt" type="button" aria-pressed="false">
@@ -600,7 +140,7 @@ h1,
                 <!-- ===== Step 3 ===== -->
                 <section class="wizard-step" id="step-3" aria-labelledby="q3-heading">
                     <p class="step-label">Schritt 3 von 4</p>
-                    <h2 id="q3-heading" class="step-question">Wie lange bleibst du im Ausland / in der Situation?</h2>
+                    <p id="q3-heading" class="step-question">Wie lange bleibst du im Ausland / in der Situation?</p>
                     <p class="step-desc">Absolut entscheidend für die Tarifwahl: Reiseversicherung vs. echte Auslandslösung.</p>
                     <div class="cards-grid" role="group" aria-labelledby="q3-heading">
                         <button class="option-card" data-value="under-6m" data-label="Unter 6 Monate" type="button" aria-pressed="false">
@@ -630,7 +170,7 @@ h1,
                 <!-- ===== Step 4 ===== -->
                 <section class="wizard-step" id="step-4" aria-labelledby="q4-heading">
                     <p class="step-label">Schritt 4 von 4</p>
-                    <h2 id="q4-heading" class="step-question">Was ist dir wichtiger?</h2>
+                    <p id="q4-heading" class="step-question">Was ist dir wichtiger?</p>
                     <p class="step-desc">Deine Priorität entscheidet über unsere Empfehlung.</p>
                     <div class="cards-grid" role="group" aria-labelledby="q4-heading">
                         <button class="option-card" data-value="fast-cheap" data-label="Schnell &amp; günstig" type="button" aria-pressed="false">
@@ -660,6 +200,273 @@ h1,
             </div><!-- /wizard-content -->
         </div><!-- /wizard-container -->
         </div><!-- /wizard-page-wrap -->
+        </div><!-- /wizard-viewport -->
+
+        <section id="seo-landing-content" aria-labelledby="seo-landing-heading">
+
+            <h1 id="seo-landing-heading">Versicherungs-Check: Welche Versicherung passt wirklich zu dir?</h1>
+
+            <p class="seo-intro">Ob Expat, Digital Nomad, Ausländer in Deutschland oder Ausgewanderte – der richtige Versicherungsschutz hängt von deiner konkreten Lebenssituation ab. In 4 kurzen Schritten zeigt dir unser Versicherungs-Check, welcher Tarif zu dir passt.</p>
+
+            <nav class="toc" aria-label="Inhaltsverzeichnis">
+                <div class="toc-header">
+                    <span class="toc-label">Auf dieser Seite</span>
+                    <button class="toc-toggle" type="button" aria-expanded="true" aria-controls="toc-body">
+                        Inhaltsverzeichnis <em class="toc-chevron" aria-hidden="true">∨</em>
+                    </button>
+                </div>
+                <ol class="toc-list" id="toc-body">
+                    <li><a href="#warum-check">Warum ein Versicherungs-Check?</a></li>
+                    <li><a href="#krankenversicherung">Auslandskrankenversicherung</a></li>
+                    <li><a href="#reiseversicherung">Reiseversicherung</a></li>
+                    <li><a href="#haftpflicht">Privathaftpflichtversicherung</a></li>
+                    <li><a href="#unfallversicherung">Unfallversicherung</a></li>
+                    <li><a href="#altersvorsorge">Altersvorsorge im Ausland</a></li>
+                    <li><a href="#anbieter">Unsere Versicherungspartner</a></li>
+                    <li><a href="#hallesche-alh">Hallesche / ALH – Online abschließen</a></li>
+                    <li><a href="#faq">Häufige Fragen</a></li>
+                </ol>
+            </nav>
+
+            <h2 id="warum-check">Warum ein persönlicher Versicherungs-Check?</h2>
+
+            <p>Kein Expat, kein Ausländer in Deutschland und kein digitaler Nomade hat dieselbe Situation. Standardprodukte aus dem deutschen Markt passen oft nicht – weder für Menschen, die Deutschland verlassen, noch für Zugewanderte, die hier vorübergehend leben. Der Versicherungs-Check auf dieser Seite ermittelt anhand von vier gezielten Fragen, welche Art von Absicherung wirklich zu deinem Profil passt.</p>
+
+            <p>Entscheidend sind dabei vor allem drei Faktoren: <strong>dein Wohnort</strong> (Deutschland oder Ausland), <strong>deine berufliche Situation</strong> (angestellt, selbstständig, Student) und <strong>die Dauer deines Aufenthalts</strong>. Wer zum Beispiel unter sechs Monate im Ausland ist, braucht eine andere Lösung als jemand, der dauerhaft auswandert.</p>
+
+            <div class="seo-card-grid">
+                <div class="seo-card">
+                    <div class="label">Schritt 1</div>
+                    <div class="card-title">Wo bist du?</div>
+                    <p>Deutschland → Ausland, bereits im Ausland, Zuzug nach Deutschland oder temporäre Reise – die Ausgangssituation bestimmt 70&nbsp;% der Versicherungslogik.</p>
+                </div>
+                <div class="seo-card">
+                    <div class="label">Schritt 2</div>
+                    <div class="card-title">Wer bist du?</div>
+                    <p>Angestellt, selbstständig, Freelancer, Digital Nomad, Student, Au Pair oder Familie – jede Situation bringt andere Versicherungslücken mit sich.</p>
+                </div>
+                <div class="seo-card">
+                    <div class="label">Schritt 3</div>
+                    <div class="card-title">Wie lange?</div>
+                    <p>Unter 6 Monate, 6–24 Monate oder dauerhaft – der Zeitraum entscheidet zwischen einer Reiseversicherung und einer echten Auslandslösung.</p>
+                </div>
+                <div class="seo-card">
+                    <div class="label">Schritt 4</div>
+                    <div class="card-title">Was ist wichtiger?</div>
+                    <p>Schnell &amp; günstig abschließen, maximale Absicherung oder persönliche Beratung – deine Priorität steuert unsere konkrete Empfehlung.</p>
+                </div>
+            </div>
+
+            <hr>
+
+            <h2 id="krankenversicherung">Auslandskrankenversicherung – der wichtigste Schutz</h2>
+
+            <p>Die <a href="internationale_krankenversicherung.html">internationale Krankenversicherung</a> ist für die meisten Expats und Ausgewanderten die wichtigste Police überhaupt. Im Ausland gibt es in der Regel keinen gesetzlichen Krankenschutz – wer ohne Versicherung behandelt wird, riskiert fünf- bis sechsstellige Rechnungen.</p>
+
+            <blockquote>
+                <p>„Ein Unfall oder eine Krankheit können nicht nur das momentane Urlaubsvergnügen trüben, sondern auch zu erheblichen Folgekosten führen. Davor schützen die richtigen Versicherungen.“</p>
+                <cite>— <a href="https://www.bundderversicherten.de/de/presse/pressemitteilungen/2023-03-01-richtig-versichert-auf-reisen-m2751.html" target="_blank" rel="nofollow">Bianca Boss, Vorständin Bund der Versicherten e.V. (BdV)</a></cite>
+            </blockquote>
+
+            <h3>Für Ausländer in Deutschland</h3>
+            <p>Wer nach Deutschland einreist und hier lebt oder arbeitet, benötigt einen gültigen Krankenversicherungsnachweis. Für Nicht-EU-Bürger ist die gesetzliche Pflichtversicherung oft nicht sofort zugänglich – spezielle <a href="krankenversicherungen.html">Krankenversicherungen für Ausländer in Deutschland</a> überbrücken diese Lücke. Sie werden akzeptiert für Visaanträge, Behörden und Arbeitgeber.</p>
+
+            <h3>Für Deutsche und Expats im Ausland</h3>
+            <p>Wer Deutschland verlässt und dauerhaft oder langfristig im Ausland lebt, sollte sich frühzeitig mit einer <a href="internationale_krankenversicherung.html">internationalen Krankenversicherung</a> absichern. Diese deckt im Gegensatz zu einer normalen Reisekrankenversicherung auch chronische Erkrankungen, Mutterschaft, Zahnarzt und Routinebehandlungen ab – und das weltweit oder in einer definierten Region.</p>
+
+            <h3>Besondere Zielgruppen</h3>
+            <p>Für <a href="krankenversicherung_fuer_freelancer_im_ausland.html">Freelancer im Ausland</a> gelten besondere Anforderungen: Sie haben keinen Arbeitgeber, der Beiträge mitträgt, und müssen sich vollständig selbst versichern. <a href="krankenversicherung_fuer_digitale_nomaden.html">Digitale Nomaden</a> benötigen Tarife, die in mehreren Ländern gleichzeitig gelten und auch bei häufigem Länderwechsel stabil bleiben.</p>
+
+            <blockquote>
+                <p>„Wer länger unterwegs ist, benötigt eine Langzeit-Auslandskrankenversicherung.“</p>
+                <cite>— <a href="https://www.apotheken-umschau.de/familie/freizeit-alltag/recht-finanzen-familie/auslandskrankenversicherung-schutz-fuer-lange-reisen-1530861.html" target="_blank" rel="nofollow">Meike Voß, Teamleiterin Verbraucherberatung, Bund der Versicherten (BdV)</a></cite>
+            </blockquote>
+
+            <hr>
+
+            <h2 id="reiseversicherung">Reiseversicherung – für kurze Aufenthalte und Weltreisen</h2>
+
+            <p>Wer für weniger als sechs Monate ins Ausland reist, kommt oft mit einer <a href="dia_reiseversicherungen.html">Reiseversicherung</a> aus. Diese ist günstiger als eine vollwertige Auslandskrankenversicherung und deckt die häufigsten Risiken ab: Krankheit, Unfall, Gepäckverlust, Reiserücktritt und Reiseabbruch.</p>
+
+            <p>Wichtig zu wissen: Eine klassische deutsche Reisekrankenversicherung ist meist auf 42 bis 56 Tage pro Reise begrenzt. Für Weltreisen oder längere Aufenthalte empfehlen sich spezielle Langzeitreise-Policen. Der Versicherungs-Check zeigt dir auf Basis deiner Aufenthaltsdauer automatisch, welche Lösung für dich geeignet ist.</p>
+
+            <blockquote>
+                <p>„Achten Sie beim Abschluss einer Auslandsreisekrankenversicherung darauf, dass der Versicherer den Rüktransport bereits dann bezahlt, wenn er medizinisch sinnvoll und vertretbar ist – nicht erst, wenn er zwingend notwendig ist.“</p>
+                <cite>— <a href="https://www.bundderversicherten.de/de/gut-beraten/ratgeber/2026-01-21-auslandskrankenversicherung-oder-reisekrankenversicherung-was-ist-was-und-fuer-welche-laender-brauche-ich-sie-m4561.html" target="_blank" rel="nofollow">Bund der Versicherten e.V. (BdV) – Ratgeber Auslandskrankenversicherung</a></cite>
+            </blockquote>
+
+            <hr>
+
+            <h2 id="haftpflicht">Privathaftpflichtversicherung im Ausland</h2>
+
+            <p>Die Privathaftpflichtversicherung ist in Deutschland eine der meistgenutzten Versicherungen – und das aus gutem Grund. Sie schützt, wenn du versehentlich einem anderen Schaden zufügst: ein zerkratztes Auto, ein gebrochenes Handgelenk des Nachbarn, ein beschädigtes Mietobjekt.</p>
+
+            <p>Für <a href="privathaftpflichtversicherung.html">Ausländer in Deutschland</a> ist eine Haftpflichtversicherung zwar nicht gesetzlich vorgeschrieben, aber in der Praxis unverzichtbar – Vermieter fordern sie häufig als Bedingung für den Mietvertrag. Für <a href="haftpflicht.html">Deutsche im Ausland</a> stellt sich die Frage, ob die bestehende deutsche Police im Zielland weiter gilt.</p>
+
+            <blockquote>
+                <p>„Risiken, die im In- und Ausland gleichermaßen drohen – wie Haftpflicht und Arbeitskraftverlust – sollten durch Versicherungen mit weltweitem Versicherungsschutz abgesichert werden.“</p>
+                <cite>— <a href="https://www.bundderversicherten.de/de/presse/pressemitteilungen/2025-03-18-entspannt-verreisen-nicht-jede-versicherung-haelt-was-sie-verspricht-m3677.html" target="_blank" rel="nofollow">Bund der Versicherten e.V. (BdV) – Pressemitteilung 2025</a></cite>
+            </blockquote>
+
+            <hr>
+
+            <h2 id="unfallversicherung">Unfallversicherung – weltweit und rund um die Uhr</h2>
+
+            <p>Die gesetzliche Unfallversicherung in Deutschland deckt nur Arbeitsunfälle und Wegeunfälle ab – Freizeitunfälle sind nicht enthalten. Eine private <a href="unfallversicherung.html">Unfallversicherung</a> schließt diese Lücke und zahlt bei dauerhafter Invalidität als Folge eines Unfalls, unabhängig davon, wo du dich auf der Welt befindest.</p>
+
+            <p>Für Expats und Menschen, die viel reisen oder Sport treiben, ist die weltweite 24-Stunden-Deckung besonders wichtig. Die Leistungen umfassen in der Regel: Invaliditätsentschädigung, Todesfall-Leistung, Unfalltagesgeld und Übernahme von Heilbehandlungskosten.</p>
+
+            <hr>
+
+            <h2 id="altersvorsorge">Altersvorsorge im Ausland – frühzeitig planen</h2>
+
+            <p>Wer als Expat oder Auswanderer dauerhaft im Ausland lebt, verliert häufig Ansprüche in der deutschen gesetzlichen Rentenversicherung. <a href="dia_altersvorsorge_im_ausland.html">Altersvorsorge im Ausland</a> ist deshalb ein Thema, das viele zu spät angehen.</p>
+
+            <p>Je nach Zielland und Aufenthaltsstatus kommen unterschiedliche Instrumente infrage: freiwillige Einzahlungen in die deutsche Rentenversicherung, international anerkannte Fondspolicen oder fondsgebundene Kapitalversicherungen mit flexiblem Zugriff. Unser Versicherungs-Check identifiziert, ob und wann das Thema für dich relevant wird.</p>
+
+            <blockquote>
+                <p>„Auch Privatversicherte sollten ihren Versicherungsschutz prüfen – und sich den vereinbarten Schutz am besten schriftlich bestätigen lassen.“</p>
+                <cite>— <a href="https://www.bundderversicherten.de/presse-und-oeffentlichkeitsarbeit/pressemitteilungen/bdv-warnt-vor-pkv-deckungsluecken-im-aussereuropaeischen-ausland" target="_blank" rel="nofollow">Bianca Boss, BdV-Pressesprecherin, Bund der Versicherten e.V.</a></cite>
+            </blockquote>
+
+            <hr>
+
+            <h2 id="anbieter">Unsere Versicherungspartner im Überblick</h2>
+
+            <p>Als unabhängiger Versicherungsmakler arbeitet <a href="wer_wir_sind.html">Spreefinanz</a> mit mehreren spezialisierten Anbietern zusammen, die für Expats und internationale Versicherungslösungen bekannt sind. Je nach deinem Profil empfehlen wir den passenden Anbieter – kein Einheitsprodukt, sondern individuelle Beratung.</p>
+
+            <h3>Für Ausländer in Deutschland</h3>
+            <div class="insurer-row">
+                <p class="insurer-item"><strong><a href="april.html">April International</a></strong> – spezialisiert auf internationale Expat-Krankenversicherungen mit flexiblen Laufzeiten</p>
+                <p class="insurer-item"><strong><a href="bdae.html">BDAE</a></strong> – Marktführer für Auslandskrankenversicherungen im deutschsprachigen Raum</p>
+                <p class="insurer-item"><strong><a href="care_concept.html">Care Concept</a></strong> – günstige Einsteigerlösungen für Studenten, Au Pairs und Sprachschüler</p>
+                <p class="insurer-item"><strong><a href="cigna.html">Cigna</a></strong> – global operierender Gesundheitsversicherer mit Premium-Netzwerk</p>
+                <p class="insurer-item"><strong><a href="passport.html">Passport</a></strong> – flexible Tarife für Kurzzeit- und Langzeitaufenthalte</p>
+                <p class="insurer-item"><strong><a href="foyer.html">Foyer Global Health</a></strong> – luxemburgischer Spezialversicherer mit starkem Europa-Fokus</p>
+                <p class="insurer-item"><strong><a href="higermany_pkv_voll_visum.html">Hallesche / ALH Group</a></strong> – Hi.Germany PKV für Visum &amp; Zusatzversicherungen zur GKV</p>
+            </div>
+
+            <h3>Für Deutsche und Expats im Ausland</h3>
+            <div class="insurer-row">
+                <p class="insurer-item"><strong><a href="dia_hdi.html">HDI</a></strong> – einer der wenigen deutschen Versicherer mit weltweiter Expat-Krankenversicherung</p>
+                <p class="insurer-item"><strong><a href="dia_care_concept.html">Care Concept (Ausland)</a></strong> – preisgünstige Tarife für Deutsche, die ins Ausland ziehen</p>
+                <p class="insurer-item"><strong><a href="dia_cigna.html">Cigna (Ausland)</a></strong> – internationales Spitzennetz für anspruchsvolle Expats</p>
+                <p class="insurer-item"><strong><a href="dia_april.html">April (Ausland)</a></strong> – bewährt für Digital Nomads und Freelancer weltweit</p>
+                <p class="insurer-item"><strong><a href="dia_bdae.html">BDAE (Ausland)</a></strong> – starke Lösung für Entsandte und dauerhaft Ausgewanderte</p>
+                <p class="insurer-item"><strong><a href="dia_foyer.html">Foyer (Ausland)</a></strong> – besonders für Europa-Expats und Ruheständler im Ausland geeignet</p>
+                <p class="insurer-item"><strong><a href="dia_passport.html">Passport (Ausland)</a></strong> – modular buchbar, ideal für flexible Lebensmodelle</p>
+            </div>
+
+            <blockquote>
+                <p>„Als unabhängiger Makler sind wir keinem Anbieter verpflichtet – wir finden die Lösung, die zu deiner Situation passt, nicht die mit der höchsten Provision.“</p>
+                <cite>— Mission, Spreefinanz / spreefinanz.de</cite>
+            </blockquote>
+
+            <section id="hallesche-alh" class="hallesche-online-section" aria-labelledby="hallesche-heading">
+                <h2 id="hallesche-heading">Hallesche / ALH Group – Direkt online abschließen</h2>
+                <p class="seo-intro">Für Expats in der gesetzlichen Krankenversicherung (GKV) oder mit gezieltem Upgrade-Bedarf: Wähle unten die passende Zusatzversicherung der Hallesche (ALH Konzern). Ein Klick öffnet die digitale Abschlussstrecke – bereits mit Spreefinanz-Zuordnung (VMNR 119215001).</p>
+                <p>Mehr Hintergrund: <a href="hallesche_zusatzversicherungen_gkv.html">Zusatzversicherungen zur GKV</a> · <a href="higermany_pkv_voll_visum.html">Hi.Germany PKV Voll Visum</a></p>
+
+                <div class="hallesche-category">
+                    <div class="hallesche-category-head">
+                        <span class="hallesche-cat-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M8 10c0-2.2 1.8-4 4-4s4 1.8 4 4c0 1.2-.5 2.3-1.4 3.1L14 18H10l-.6-4.9C8.5 12.3 8 11.2 8 10Z" stroke="currentColor" stroke-width="1.8"/><path d="M10 20h4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></span>
+                        <h3>Zahnzusatz (Hi.Dental)</h3>
+                    </div>
+                    <div class="hallesche-links-grid">
+                        <a class="hallesche-link-card" href="https://www.vermittlerportal.de/appserver/b2c/ZahnZusatz/?PID=ZZ_V%2COM_LG%2CZZ_HIDETARIF%2COM_BV%2CZZ_HIDEV&amp;VMNR=119215001&amp;VMMAIL=Buero%40spreeFinanz.de" target="_blank" rel="noopener noreferrer"><span class="hallesche-link-title">Dent Start</span><span class="hallesche-link-desc">Solider Einstieg für Zahnbehandlung &amp; Prophylaxe</span><span class="hallesche-link-cta">Online abschließen →</span></a>
+                        <a class="hallesche-link-card" href="https://www.vermittlerportal.de/appserver/b2c/ZahnZusatz/?PID=ZZ_V%2COM_LG%2COM_BV%2CZZ_HIDEV&amp;VMNR=119215001&amp;VMMAIL=Buero%40spreeFinanz.de" target="_blank" rel="noopener noreferrer"><span class="hallesche-link-title">Dent Profi</span><span class="hallesche-link-desc">Erweiterter Zahnschutz mit höherem Leistungsniveau</span><span class="hallesche-link-cta">Online abschließen →</span></a>
+                        <a class="hallesche-link-card" href="https://www.vermittlerportal.de/appserver/b2c/ZahnZusatz/?PID=ZZ_V%2COM_LG%2CZZ_SMART%2COM_BV%2CZZ_HIDEV&amp;VMNR=119215001&amp;VMMAIL=Buero%40spreeFinanz.de" target="_blank" rel="noopener noreferrer"><span class="hallesche-link-title">Paket SMART.Dent</span><span class="hallesche-link-desc">Kombi-Paket mit smartem Preis-Leistungs-Verhältnis</span><span class="hallesche-link-cta">Online abschließen →</span></a>
+                        <a class="hallesche-link-card" href="https://www.vermittlerportal.de/appserver/b2c/ZahnZusatz/?PID=ZZ_V%2COM_LG%2CZZ_MEGA%2COM_BV%2CZZ_HIDEV&amp;VMNR=119215001&amp;VMMAIL=Buero%40spreeFinanz.de" target="_blank" rel="noopener noreferrer"><span class="hallesche-link-title">Paket MEGA.Dent</span><span class="hallesche-link-desc">Umfangreicher Zahnschutz für höhere Ansprüche</span><span class="hallesche-link-cta">Online abschließen →</span></a>
+                        <a class="hallesche-link-card" href="https://www.vermittlerportal.de/appserver/b2c/ZahnZusatz/?PID=ZZ_V%2COM_LG%2CZZ_GIGA%2COM_BV%2CZZ_HIDEV&amp;VMNR=119215001&amp;VMMAIL=Buero%40spreeFinanz.de" target="_blank" rel="noopener noreferrer"><span class="hallesche-link-title">Paket GIGA.Dent</span><span class="hallesche-link-desc">Premium-Paket mit sehr hoher Erstattung</span><span class="hallesche-link-cta">Online abschließen →</span></a>
+                        <a class="hallesche-link-card" href="https://www.vermittlerportal.de/appserver/b2c/ZahnZusatz/?PID=ZZ_V%2COM_LG%2CZZ_PLUSZ%2COM_BV%2CZZ_HIDEV&amp;VMNR=119215001&amp;VMMAIL=Buero%40spreeFinanz.de" target="_blank" rel="noopener noreferrer"><span class="hallesche-link-title">EASY.Dent</span><span class="hallesche-link-desc">Einfacher Online-Abschluss mit PLUSZ-Komponente</span><span class="hallesche-link-cta">Online abschließen →</span></a>
+                    </div>
+                </div>
+
+                <div class="hallesche-category">
+                    <div class="hallesche-category-head">
+                        <span class="hallesche-cat-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M4 10h16v9a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1v-9Z" stroke="currentColor" stroke-width="1.8"/><path d="M8 10V7a4 4 0 0 1 8 0v3M12 14v3" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></span>
+                        <h3>Krankenhaus-Zusatz</h3>
+                    </div>
+                    <div class="hallesche-links-grid">
+                        <a class="hallesche-link-card" href="https://www.vermittlerportal.de/appserver/b2c/Clinic/?PID=CL_V%2COM_LG%2COM_BV%2CCL_HIDEV&amp;VMNR=119215001&amp;VMMAIL=Buero%40spreeFinanz.de" target="_blank" rel="noopener noreferrer"><span class="hallesche-link-title">Clinic</span><span class="hallesche-link-desc">Ein-/Zweibettzimmer &amp; Chefarzt im Krankenhaus</span><span class="hallesche-link-cta">Online abschließen →</span></a>
+                        <a class="hallesche-link-card" href="https://www.vermittlerportal.de/appserver/b2c/Clinic/?PID=CL_V%2COM_LG%2CCL_EASY%2COM_BV%2CCL_HIDEV&amp;VMNR=119215001&amp;VMMAIL=Buero%40spreeFinanz.de" target="_blank" rel="noopener noreferrer"><span class="hallesche-link-title">EasyClinic</span><span class="hallesche-link-desc">Vereinfachter Krankenhaus-Zusatz zum schnellen Start</span><span class="hallesche-link-cta">Online abschließen →</span></a>
+                    </div>
+                </div>
+
+                <div class="hallesche-category">
+                    <div class="hallesche-category-head">
+                        <span class="hallesche-cat-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M12 3v18M7 8h10M7 12h7" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.8"/></svg></span>
+                        <h3>Ambulantes Upgrade</h3>
+                    </div>
+                    <div class="hallesche-links-grid">
+                        <a class="hallesche-link-card" href="https://www.vermittlerportal.de/appserver/b2c/Olgaflex/?PID=OF_V%2COM_LG%2COM_BV%2COF_HIDEV&amp;VMNR=119215001&amp;VMMAIL=Buero%40spreeFinanz.de" target="_blank" rel="noopener noreferrer"><span class="hallesche-link-title">OLGAflex</span><span class="hallesche-link-desc">Flexible ambulante Zusatzleistungen zur GKV</span><span class="hallesche-link-cta">Online abschließen →</span></a>
+                        <a class="hallesche-link-card" href="https://www.vermittlerportal.de/appserver/b2c/Foerderbar/?PID=FOEBA_V%2COM_LG%2COM_BV%2CFOEBA_HIDEV&amp;VMNR=119215001&amp;VMMAIL=Buero%40spreeFinanz.de" target="_blank" rel="noopener noreferrer"><span class="hallesche-link-title">FÖRDERbar</span><span class="hallesche-link-desc">Zuschüsse für Vorsorge &amp; Gesundheitsförderung</span><span class="hallesche-link-cta">Online abschließen →</span></a>
+                        <a class="hallesche-link-card" href="https://www.vermittlerportal.de/appserver/b2c/Kolumbus/?PID=KO_V%2COM_LG%2COM_BV%2CKO_HIDEV&amp;VMNR=119215001&amp;VMMAIL=Buero%40spreeFinanz.de" target="_blank" rel="noopener noreferrer"><span class="hallesche-link-title">HALLESCHE.Kolumbus</span><span class="hallesche-link-desc">Ambulantes Upgrade mit breitem Leistungsspektrum</span><span class="hallesche-link-cta">Online abschließen →</span></a>
+                        <a class="hallesche-link-card" href="https://www.vermittlerportal.de/appserver/b2c/Optifree/?PID=OM_LG%2COM_BV%2COP_HIDEV&amp;VMNR=119215001&amp;VMMAIL=Buero%40spreeFinanz.de" target="_blank" rel="noopener noreferrer"><span class="hallesche-link-title">OPTI.free</span><span class="hallesche-link-desc">Brillen, Kontaktlinsen &amp; Sehhilfen-Zuschuss</span><span class="hallesche-link-cta">Online abschließen →</span></a>
+                    </div>
+                </div>
+
+                <div class="hallesche-category">
+                    <div class="hallesche-category-head">
+                        <span class="hallesche-cat-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M12 3v18M8 17h8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><path d="M7 7h10l-1 4H8L7 7Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg></span>
+                        <h3>Krankengeld.plus / Einkommensschutz</h3>
+                    </div>
+                    <div class="hallesche-links-grid">
+                        <a class="hallesche-link-card" href="https://www.vermittlerportal.de/appserver/b2c/Krankentagegeld/?PID=KT_V%2COM_LG%2COM_BV%2CKT_HIDEV&amp;VMNR=119215001&amp;VMMAIL=Buero%40spreeFinanz.de" target="_blank" rel="noopener noreferrer"><span class="hallesche-link-title">Krankentagegeld</span><span class="hallesche-link-desc">Lohnlücke nach 6 Wochen Krankheit absichern</span><span class="hallesche-link-cta">Online abschließen →</span></a>
+                    </div>
+                </div>
+
+                <div class="hallesche-category">
+                    <div class="hallesche-category-head">
+                        <span class="hallesche-cat-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="m2.5 9.5 9.5-5 9.5 5-9.5 5-9.5-5Z" stroke="currentColor" stroke-width="1.8"/><path d="M6 11.5v4.2c0 .5.3.9.7 1.1 3.6 1.8 7 1.8 10.6 0 .4-.2.7-.6.7-1.1v-4.2" stroke="currentColor" stroke-width="1.8"/></svg></span>
+                        <h3>Studenten &amp; Spezialtarife</h3>
+                    </div>
+                    <div class="hallesche-links-grid">
+                        <a class="hallesche-link-card" href="https://www.vermittlerportal.de/appserver/b2c/Studimed/?PID=OM_LG%2COM_BV%2CSM_HIDEV&amp;VMNR=119215001&amp;VMMAIL=Buero%40spreeFinanz.de" target="_blank" rel="noopener noreferrer"><span class="hallesche-link-title">STUDI.med</span><span class="hallesche-link-desc">Ambulantes Upgrade speziell für Studierende</span><span class="hallesche-link-cta">Online abschließen →</span></a>
+                    </div>
+                </div>
+            </section>
+
+            <section class="faq" id="faq" aria-labelledby="faq-heading">
+                <h2 id="faq-heading">Häufige Fragen zum Versicherungs-Check</h2>
+                <p class="intro">Kurz und verständlich: die wichtigsten Antworten zu Kosten, Zielgruppen und nächsten Schritten nach dem Check.</p>
+                <div class="faq-list">
+                    <details>
+                        <summary>Ist der Versicherungs-Check kostenlos und unverbindlich?</summary>
+                        <p>Ja, vollständig. Der Check dient der Orientierung und verpflichtet dich zu nichts. Im Anschluss kannst du eine kostenlose <a href="https://calendly.com/sebastian-spreefinanz/30min" target="_blank" rel="noopener">Online-Beratung buchen</a> oder direkt eine <a href="kontaktformular.html">Anfrage stellen</a>.</p>
+                    </details>
+                    <details>
+                        <summary>Welche Versicherung brauche ich als Ausländer, der nach Deutschland kommt?</summary>
+                        <p>In der Regel eine Krankenversicherung, die für Visaanträge und Behörden in Deutschland anerkannt wird. Wir empfehlen je nach Aufenthaltszweck und -dauer Tarife von <a href="care_concept.html">Care Concept</a>, <a href="april.html">April</a> oder <a href="bdae.html">BDAE</a>. Ergänzend ist eine <a href="privathaftpflichtversicherung.html">Privathaftpflichtversicherung</a> für den Alltag sinnvoll.</p>
+                    </details>
+                    <details>
+                        <summary>Ich bin selbstständig und lebe im Ausland – was brauche ich?</summary>
+                        <p>Als <a href="krankenversicherung_fuer_freelancer_im_ausland.html">Freelancer im Ausland</a> musst du dich vollständig selbst versichern. Eine internationale Krankenversicherung ist Pflicht – zusätzlich empfehlen sich Haftpflicht, ggf. eine Berufsunfähigkeitsversicherung und ein Plan für die Altersvorsorge.</p>
+                    </details>
+                    <details>
+                        <summary>Gilt meine deutsche Krankenversicherung noch, wenn ich auswandere?</summary>
+                        <p>Nein. Wer sich dauerhaft aus Deutschland abmeldet und keinen Wohnsitz mehr in Deutschland hat, verliert den Anspruch auf gesetzliche Krankenversicherung. Auch private Krankenversicherungen sind häufig an den deutschen Wohnsitz geknüpft. Eine <a href="internationale_krankenversicherung.html">internationale Krankenversicherung</a> muss rechtzeitig vor der Abmeldung abgeschlossen werden.</p>
+                    </details>
+                    <details>
+                        <summary>Was bedeutet „Familie absichern“ im internationalen Kontext?</summary>
+                        <p>Für <a href="versicherungsschutz_fuer_familienmitglieder.html">Familienmitglieder im Ausland</a> gibt es spezielle Policen, die Eltern, Partner und Kinder gemeinsam absichern – oft zu günstigeren Konditionen als mehrere Einzeltarife. Der Check erkennt automatisch, wenn Familienschutz für dich relevant ist.</p>
+                    </details>
+                    <details>
+                        <summary>Kann ich auch auf Deutsch und Englisch beraten werden?</summary>
+                        <p>Ja. Die Beratung bei Spreefinanz ist auf Deutsch und Englisch möglich – die <a href="https://zoom.us/j/7319679053" target="_blank" rel="noopener">Videoberatung mit Sprachauswahl</a> ist direkt buchbar. Außerdem gibt es <a href="faq_downloads_in_mehreren_sprachen.html">FAQ und Downloads in mehreren Sprachen</a>.</p>
+                    </details>
+                </div>
+            </section>
+
+            <section class="cta">
+                <div class="cta-box">
+                    <h2>Noch unsicher? Lass dich kostenlos beraten.</h2>
+                    <p>Sebastian Krüger von Spreefinanz berät dich auf Deutsch oder Englisch – per Video, Telefon oder Chat.</p>
+                    <a class="btn-cta" href="https://calendly.com/sebastian-spreefinanz/30min" target="_blank" rel="noopener">Termin buchen</a>
+                </div>
+            </section>
+
+        </section>
 
 </main>
 </div><!-- /new-pages -->
@@ -669,27 +476,13 @@ h1,
     <div class="wizard-modal-box">
         <button class="modal-close-btn" id="modal-close" aria-label="Schließen" type="button">×</button>
 
-        <h2 class="modal-heading" id="modal-heading">Top Match</h2>
+        <h2 class="modal-heading" id="modal-heading">Deine Empfehlung</h2>
         <p class="modal-subtext">Das passt am besten zu deinen Angaben.</p>
 
-        <!-- Direkte Empfehlung (shown for "fast-cheap" or "best-coverage") -->
-        <div class="provider-grid" id="provider-grid">
-            <div class="provider-card">
-                <a class="provider-hero provider-hero-link" href="https://mytempocover.april-international.com/de-de/profile/travel-reason?intermediary_reference=I670123" target="_blank" rel="noopener">
-                    <img src="https://cdn.digidor.de/storage/f26f73ba7f/catcher/63b116bb4920f.png" alt="April International" loading="lazy">
-                </a>
-                <p class="provider-name">April International</p>
-                <div class="modal-answer-summary" id="modal-answer-summary" aria-label="Deine Antworten"></div>
-                <a class="btn-wizard-next provider-cta" href="https://mytempocover.april-international.com/de-de/profile/travel-reason?intermediary_reference=I670123" target="_blank" rel="noopener">
-                    Direkt zur Versicherung <span aria-hidden="true">→</span>
-                </a>
-                <a class="provider-cta-secondary" href="https://mytempocover.april-international.com/de-de/profile/travel-reason?intermediary_reference=I670123" target="_blank" rel="noopener">
-                    Mehr Informationen
-                </a>
-            </div>
-        </div>
-        <p style="margin-top:8px;font-size:0.78rem;color:#7d8596;text-align:center;">
-            Bei weiteren Fragen gerne <a href="kontaktformular.html" style="color:#3b68ed;text-decoration:none;">Anfrage senden</a>.
+        <div class="provider-grid" id="provider-grid"></div>
+        <div class="modal-answer-summary" id="modal-answer-summary" aria-label="Deine Antworten"></div>
+        <p class="wizard-modal-footnote">
+            Bei weiteren Fragen gerne <a href="kontaktformular.html">Anfrage senden</a>.
         </p>
     </div>
 </div>
@@ -722,7 +515,7 @@ h1,
 <div class="cookie_warning_optin" data-cookieblocker-relevant-categories="other|calc" id="cookie_warning">
 <div class="cookie_warning_inner">
 <div class="cookie_warning_text">
-Diese Website verwendet Cookies. Einige Cookies sind für den Betrieb der Website unbedingt erforderlich. Andere Cookies sind optional und erweitern den Funktionsumfang. Sie können Ihre Einwilligung jederzeit widerrufen. Nähere Informationen finden Sie in der <a class="dselink" href="datenschutz-0-p11.html#dse_cookies">Datenschutzerklärung</a>.
+Diese Website verwendet Cookies. Einige Cookies sind für den Betrieb der Website unbedingt erforderlich. Andere Cookies sind optional und erweitern den Funktionsumfang (u. a. Google Analytics und LinkedIn Insight Tag für Statistik und Marketing). Sie können Ihre Einwilligung jederzeit widerrufen. Nähere Informationen finden Sie in der <a class="dselink" href="datenschutz-0-p11.html#dse_cookies">Datenschutzerklärung</a>.
 </div>
 <a class="bt_cookie_warning_optin" href="#" onclick="digidor.cookieblocker.activateCookiesWithCategoryOrDependend( 'all' ); digidor.cookieblocker.storeCookiesWithCategoryAndValidity( 'all', 365 ); return digidor.cookieblocker.maybeRefreshAfterCookieChange();" role="button">alle Cookies erlauben</a>
 <a class="bt_cookie_warning_obligatory" href="#" onclick="digidor.cookieblocker.activateCookiesWithCategoryOrDependend( 'none' ); return digidor.cookieblocker.storeCookiesWithCategoryAndValidity( 'none', 1 );" role="button">nur notwendige Cookies</a>
@@ -744,8 +537,7 @@ Diese Website verwendet Cookies. Einige Cookies sind für den Betrieb der Websit
 
 </div></div></div>
 
-<script src="digidor-local-bridge.js"></script>
-<script src="main.js"></script>
+<script defer src="main.9777b6a01601.js"></script>
 
 <script>
 (function () {
@@ -755,6 +547,63 @@ Diese Website verwendet Cookies. Einige Cookies sind für den Betrieb der Websit
     var answerLabels = {};
     var currentStep = 1;
     var TOTAL_STEPS = 4;
+    var CALENDLY_URL = 'https://calendly.com/sebastian-spreefinanz/30min';
+    var PROVIDERS = {
+        april: {
+            name: 'April International',
+            logo: '../assets/local-cdn/storage/f26f73ba7f/catcher/63b11465f6a9e.png',
+            infoLink: 'april.html',
+            affiliateDE: 'https://mytempocover.april-international.com/de-de/profile/travel-reason?intermediary_reference=I670123',
+            affiliateAbroadLong: 'https://myhealthinternational.april-international.com/de-de/profile/travel-details?intermediary_reference=I670123',
+            affiliateAbroadShort: 'https://mytempocover.april-international.com/de-de/profile/travel-reason?intermediary_reference=I670123'
+        },
+        bdae: {
+            name: 'BDAE',
+            logo: '../assets/local-cdn/storage/f26f73ba7f/catcher/63b116bb4920f.png',
+            infoLink: 'bdae.html',
+            infoLinkAbroad: 'dia_bdae.html',
+            affiliateDE: 'https://oapp.bdae.com/de/expat-germany-preisermittlung?m=1&mid=M244843',
+            affiliateAbroad: 'https://oapp.bdae.com/de/expat-infinity-basispreisermittlung?m=1&mid=M244843'
+        },
+        care: {
+            name: 'Care Concept',
+            logo: '../assets/local-cdn/storage/f26f73ba7f/catcher/63b117bbc1aca.png',
+            infoLink: 'care_concept.html',
+            infoLinkAbroad: 'dia_care_concept.html',
+            affiliateDE: 'https://www.care-concept.de/krankenversicherung/vergleich/auslandsversicherung.php?vmnr=9016730061&mail=Buero@spreefinanz.de',
+            affiliateAbroad: 'https://www.care-concept.de/krankenversicherung/vergleich/auslandsversicherung.php?vmnr=9016730061&mail=Buero@spreefinanz.de'
+        },
+        cigna: {
+            name: 'Cigna Global',
+            logo: '../assets/local-cdn/storage/f26f73ba7f/catcher/64b18d9b97f6f.jpg',
+            infoLink: 'cigna.html',
+            infoLinkAbroad: 'dia_cigna.html',
+            affiliateDE: 'https://www.cignaglobal.com/quote/pages/quote/PersonalInformationLiteV3.html?AffinityPartner=6855a0f9d0aa0a085b5ebbb543a6d7df&utm_source=broker&utm_medium=tlink&utm_campaign=EU10504613',
+            affiliateAbroad: 'https://www.cignaglobal.com/quote/pages/quote/PersonalInformationLiteV3.html?AffinityPartner=6855a0f9d0aa0a085b5ebbb543a6d7df&utm_source=broker&utm_medium=tlink&utm_campaign=EU10504613'
+        },
+        passport: {
+            name: 'PassportCard',
+            logo: '../assets/local-cdn/storage/f26f73ba7f/catcher/63b1167d5e9e5.png',
+            infoLink: 'passport.html',
+            infoLinkAbroad: 'dia_passport.html',
+            affiliateDE: 'https://angebote.passportcard.de/de/welcome?AffiliateId=jkabEwfM1Fo6Q1ucRe7gGg%3D%3D&AffiliateAgentId=k8skPwlHusnLHUYztakHYg%3D%3D',
+            affiliateAbroad: 'https://angebote.passportcard.de/de/welcome?AffiliateId=jkabEwfM1Fo6Q1ucRe7gGg%3D%3D&AffiliateAgentId=k8skPwlHusnLHUYztakHYg%3D%3D'
+        },
+        foyer: {
+            name: 'Foyer Global Health',
+            logo: '../assets/local-cdn/storage/f26f73ba7f/catcher/63b11643bc10e.png',
+            infoLink: 'foyer.html',
+            infoLinkAbroad: 'dia_foyer.html',
+            affiliateDE: 'https://application.foyerglobalhealth.com/client-courtier?broker=8458',
+            affiliateAbroad: 'https://application.foyerglobalhealth.com/client-courtier/140ee782-41de-41bc-bf1f-ff4ff14734a7?step=informations'
+        },
+        hdi: {
+            name: 'HDI Corporate Travel',
+            logo: '../assets/local-cdn/storage/f26f73ba7f/catcher/64b18fd4cd31a.png',
+            infoLinkAbroad: 'dia_hdi.html',
+            affiliateAbroad: 'hdi_anfrage-1288847.html'
+        }
+    };
 
     /* ---- stepper update ---- */
     function updateStepper(active) {
@@ -776,6 +625,13 @@ Diese Website verwendet Cookies. Einige Cookies sind für den Betrieb der Websit
         }
     }
 
+    function goToCalendly(source) {
+        if (window.gtag) {
+            gtag('event', 'quiz_consulting', { source: source || 'consulting' });
+        }
+        window.location.href = CALENDLY_URL;
+    }
+
     /* ---- navigate to step ---- */
     function goToStep(step) {
         var fromEl = document.getElementById('step-' + currentStep);
@@ -785,7 +641,12 @@ Diese Website verwendet Cookies. Einige Cookies sind für den Betrieb der Websit
         currentStep = step;
         toEl.classList.add('active');
         updateStepper(step);
-        window.scrollTo({ top: 0, behavior: 'smooth' });
+        var wizardEl = document.querySelector('.wizard-viewport') || document.querySelector('.wizard-page-wrap');
+        if (wizardEl) {
+            wizardEl.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        } else {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
     }
 
     /* ---- card selection ---- */
@@ -809,6 +670,10 @@ Diese Website verwendet Cookies. Einige Cookies sind für den Betrieb der Websit
                 nextBtn.disabled = false;
                 nextBtn.setAttribute('aria-disabled', 'false');
             }
+
+            if (stepNum === 4 && answers.step4 === 'consulting') {
+                goToCalendly('step4_card');
+            }
         });
 
         /* keyboard: space/enter already triggers click on <button> */
@@ -828,6 +693,14 @@ Diese Website verwendet Cookies. Einige Cookies sind für den Betrieb der Websit
                 }
                 if (step < TOTAL_STEPS) {
                     goToStep(step + 1);
+                } else if (answers.step4 === 'consulting') {
+                    if (window.gtag) {
+                        gtag('event', 'quiz_complete', {
+                            answers: JSON.stringify(answers),
+                            outcome: 'consulting'
+                        });
+                    }
+                    goToCalendly('step4_next');
                 } else {
                     openResultModal();
                 }
@@ -845,6 +718,129 @@ Diese Website verwendet Cookies. Einige Cookies sind für den Betrieb der Websit
     }
 
     /* ---- result modal ---- */
+    function getPath(step1Value) {
+        if (step1Value === 'coming-to-de') return 'de';
+        return 'abroad';
+    }
+
+    function getAffiliateLink(providerId, path, duration) {
+        if (path === 'de') return PROVIDERS[providerId].affiliateDE;
+        if (providerId === 'april' && duration === 'under-6m') return PROVIDERS.april.affiliateAbroadShort;
+        if (providerId === 'april') return PROVIDERS.april.affiliateAbroadLong;
+        return PROVIDERS[providerId].affiliateAbroad;
+    }
+
+    function getInfoLink(providerId, path) {
+        if (path === 'abroad' && PROVIDERS[providerId].infoLinkAbroad) return PROVIDERS[providerId].infoLinkAbroad;
+        return PROVIDERS[providerId].infoLink;
+    }
+
+    function getWinner(selectedAnswers) {
+        var step1 = selectedAnswers.step1;
+        var step2 = selectedAnswers.step2;
+        var step3 = selectedAnswers.step3;
+        var step4 = selectedAnswers.step4;
+        var path = getPath(step1);
+        var candidates = path === 'de'
+            ? ['april', 'bdae', 'care', 'cigna', 'passport', 'foyer']
+            : ['care', 'cigna', 'hdi', 'passport', 'foyer', 'april', 'bdae'];
+
+        if (step4 === 'consulting') {
+            return {
+                type: 'consulting',
+                name: 'Persoenliche Beratung',
+                affiliateLink: CALENDLY_URL,
+                infoLink: CALENDLY_URL
+            };
+        }
+
+        function remove(id) {
+            candidates = candidates.filter(function (candidate) { return candidate !== id; });
+        }
+
+        function moveToEnd(id) {
+            if (candidates.indexOf(id) === -1) return;
+            remove(id);
+            candidates.push(id);
+        }
+
+        if (path === 'de') {
+            if (step2 === 'student') remove('cigna');
+            if (step2 === 'family') remove('care');
+            if (step3 === 'under-6m') remove('cigna');
+            if (step3 === 'permanent') {
+                remove('care');
+                if (step2 !== 'student') moveToEnd('april');
+            }
+            if (step1 === 'temporary') {
+                moveToEnd('cigna');
+                moveToEnd('bdae');
+            }
+            if (step1 === 'coming-to-de' && step1 !== 'temporary') {
+                moveToEnd('cigna');
+            }
+        } else {
+            if (step2 !== 'employed') remove('hdi');
+            if (step2 === 'family') remove('care');
+            if (step3 === 'under-6m') {
+                remove('hdi');
+                moveToEnd('bdae');
+            }
+            if (step3 === 'permanent') remove('care');
+            if (step1 === 'temporary') {
+                remove('hdi');
+                moveToEnd('bdae');
+            }
+        }
+
+        var rank;
+        if (path === 'de' && step4 === 'fast-cheap') {
+            rank = ['care', 'april', 'passport', 'bdae', 'foyer', 'cigna'];
+        } else if (path === 'de' && step4 === 'best-coverage') {
+            rank = ['foyer', 'cigna', 'passport', 'bdae', 'april', 'care'];
+        } else if (path === 'de') {
+            rank = ['april', 'passport', 'bdae', 'foyer', 'care', 'cigna'];
+        } else if (step4 === 'fast-cheap') {
+            rank = ['care', 'april', 'passport', 'bdae', 'foyer', 'cigna', 'hdi'];
+        } else if (step4 === 'best-coverage') {
+            rank = ['cigna', 'foyer', 'bdae', 'passport', 'april', 'hdi', 'care'];
+        } else {
+            rank = ['april', 'passport', 'bdae', 'cigna', 'foyer', 'care', 'hdi'];
+        }
+
+        var winnerId = rank.find(function (id) { return candidates.indexOf(id) !== -1; }) || candidates[0] || 'april';
+        return {
+            type: 'insurance',
+            id: winnerId,
+            name: PROVIDERS[winnerId].name,
+            affiliateLink: getAffiliateLink(winnerId, path, step3),
+            infoLink: getInfoLink(winnerId, path),
+            logo: PROVIDERS[winnerId].logo
+        };
+    }
+
+    function renderWinner(result) {
+        var grid = document.getElementById('provider-grid');
+        var heroContent = result.logo
+            ? '<img src="' + result.logo + '" alt="' + result.name + '" loading="lazy">'
+            : '<p class="provider-name">' + result.name + '</p>';
+        var ctaText = result.type === 'consulting' ? 'Beratung buchen' : 'Direkt zur Versicherung';
+        var secondaryText = result.type === 'consulting' ? 'Zum Kalender' : 'Mehr Informationen';
+
+        grid.innerHTML = ''
+            + '<div class="provider-card">'
+            +   '<a class="provider-hero provider-hero-link" href="' + result.affiliateLink + '" target="_blank" rel="noopener">'
+            +     heroContent
+            +   '</a>'
+            +   '<p class="provider-name">' + result.name + '</p>'
+            +   '<a class="btn-wizard-next provider-cta" href="' + result.affiliateLink + '" target="_blank" rel="noopener">'
+            +      ctaText + ' <span aria-hidden="true">→</span>'
+            +   '</a>'
+            +   '<a class="provider-cta-secondary" href="' + result.infoLink + '"'
+            +      (result.type === 'consulting' ? ' target="_blank" rel="noopener"' : '')
+            +   '>' + secondaryText + '</a>'
+            + '</div>';
+    }
 
     function openResultModal() {
         var modal = document.getElementById('result-modal');
@@ -866,8 +862,7 @@ Diese Website verwendet Cookies. Einige Cookies sind für den Betrieb der Websit
             summaryEl.appendChild(chip);
         });
 
-        /* show recommendation section */
-        document.getElementById('provider-grid').style.display = 'flex';
+        renderWinner(getWinner(answers));
 
         modal.classList.add('open');
         document.body.style.overflow = 'hidden';
@@ -904,6 +899,20 @@ Diese Website verwendet Cookies. Einige Cookies sind für den Betrieb der Websit
             if (modal.classList.contains('open')) closeResultModal();
         }
     });
+
+    /* ---- TOC toggle ---- */
+    (function () {
+        var btn = document.querySelector('.toc-toggle');
+        var body = document.getElementById('toc-body');
+        var chevron = document.querySelector('.toc-chevron');
+        if (!btn || !body) return;
+        btn.addEventListener('click', function () {
+            var expanded = btn.getAttribute('aria-expanded') === 'true';
+            btn.setAttribute('aria-expanded', String(!expanded));
+            body.style.display = expanded ? 'none' : '';
+            chevron.textContent = expanded ? '∧' : '∨';
+        });
+    })();
 
 })();
 </script>
