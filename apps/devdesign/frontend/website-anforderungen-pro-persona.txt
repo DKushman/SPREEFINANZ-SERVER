@@ -1,0 +1,218 @@
+DEVDESIGN – WAS BEI DER WEBSITE PRO PERSONA BEACHTET WERDEN MUSS
+Je 4 Punkte pro Persona (Mix aus technisch, rechtlich, content-strategisch)
+==================================================================
+
+
+BRANCHE: GESUNDHEIT-PRAXEN
+==================================================================
+
+ARZTPRAXEN
+------------------------------------------------------------------
+- HWG (Heilmittelwerbegesetz) beachten: keine reißerische Werbung,
+  keine unzulässigen Vorher/Nachher-Bilder bei bestimmten Eingriffen
+- E-E-A-T/YMYL-Anforderungen erfüllen: Autorenzeilen mit Qualifikation,
+  "medizinisch geprüft am..."-Vermerke, Quellenangaben bei Gesundheitstexten
+- Ärztliches Schweigegebot gilt auch online: keine Patientendaten oder
+  -fälle in Referenzen, Bewertungsantworten oder Case Studies nennen
+- DSGVO-konforme Terminformulare: keine Gesundheitsdaten ungesichert
+  übertragen, SSL-Verschlüsselung und Datenschutzhinweis Pflicht
+
+KLINIKEN & GESUNDHEITSZENTREN
+------------------------------------------------------------------
+- Konsistenz mit Bundes-Klinik-Atlas-Daten: Qualitätsangaben auf der
+  Website dürfen den offiziellen Transparenzdaten nicht widersprechen
+- Klare Trennung von Einweiser-Bereich (zuweisende Ärzte) und
+  Patienten-Bereich mit jeweils eigenem Kontaktweg
+- Barrierefreiheit (BFSG, seit Juni 2025 gesetzlich Pflicht) besonders
+  kritisch, da Patienten häufig eingeschränkt sind
+- Mehrsprachigkeit und Notfallinformationen (Adresse, Erreichbarkeit,
+  Aufnahmeprozess) müssen auf der Startseite leicht auffindbar sein
+
+PHYSIO- & THERAPIEPRAXEN
+------------------------------------------------------------------
+- Heilmittelverordnung korrekt darstellen: Hinweise zu Rezeptgültigkeit
+  und Genehmigungspflichten (Heilmittel-Richtlinie) sachlich halten
+- Online-Terminbuchung DSGVO-konform gestalten, keine Gesundheitsdaten
+  im öffentlich zugänglichen Buchungsformular abfragen
+- Selbstzahlerleistungen (IGeL, Privatbehandlungen) preislich klar von
+  Kassenleistungen trennen, um keine Intransparenz zu erzeugen
+- Barrierefreie Bedienung (große Schrift, klare Kontraste, einfache
+  Navigation) wegen körperlich eingeschränkter Patientengruppe
+
+
+BRANCHE: RECHT-BERATUNG
+==================================================================
+
+NOTARIATE
+------------------------------------------------------------------
+- BNotO verlangt strikt sachliche Information: keine anpreisende oder
+  vergleichende Werbung, keine "Bester Notar"-Formulierungen
+- Keine Erfolgsversprechen oder Schnelligkeits-Garantien bei
+  Beurkundungen kommunizieren – das verstößt gegen das Berufsrecht
+- Kostentransparenz nur mit Bezug auf die gesetzliche GNotKG-Gebühren-
+  ordnung, keine eigenen "Pauschalpreise" suggerieren
+- Spezialisierungsangaben zurückhaltend formulieren: Notare dürfen
+  Tätigkeitsschwerpunkte nennen, aber keine geschützten Titel erfinden
+
+RECHTSANWALTSKANZLEIEN
+------------------------------------------------------------------
+- BRAO/BORA beachten: sachliche, informierende Werbung ja – Erfolgs-
+  garantien, Vergleiche mit anderen Kanzleien oder reißerische Slogans nein
+- Impressumspflicht vollständig: Kammerzugehörigkeit, Berufsbezeichnung
+  und zuständige Aufsichtsbehörde (Rechtsanwaltskammer) angeben
+- Honorartransparenz mit Bezug auf RVG oder Honorarvereinbarung, aber
+  ohne unzulässige "Lockangebote" für die Erstberatung
+- Anwaltliche Verschwiegenheitspflicht: keine Mandantennamen oder
+  konkrete Fälle ohne ausdrückliche Einwilligung in Referenzen nutzen
+
+STEUERKANZLEIEN
+------------------------------------------------------------------
+- BOStB erlaubt sachliche Werbung, aber keine reißerischen Erfolgs-
+  versprechen ("Garantiert Steuern sparen") oder Vergleiche
+- Bei Spezialisierung auf E-Commerce-Mandanten: DATEV-Schnittstellen
+  und Marktplatz-Kompatibilität (Amazon, Shopify) konkret benennen
+- Impressumspflicht mit Kammerzugehörigkeit (Steuerberaterkammer) und
+  Hinweis auf bestehende Berufshaftpflichtversicherung
+- Mandantensegmentierung ("Für Handwerker", "Für Selbstständige") klar
+  kommunizieren, ohne andere Zielgruppen abwertend auszuschließen
+
+
+BRANCHE: MARKEN-SHOPS
+==================================================================
+
+MODEMARKEN
+------------------------------------------------------------------
+- Widerrufsrecht und Rückgabebedingungen gesetzeskonform (14-Tage-Frist,
+  klare Kostenregelung für Rücksendungen) prominent darstellen
+- Rechnungskauf (Klarna, PayPal Plus) anbieten – ohne diese Zahlart
+  brechen deutsche Kunden den Checkout überdurchschnittlich häufig ab
+- Größentabellen, Passformhinweise und Materialangaben vor dem
+  Bildmaterial platzieren, um Retourenquote zu senken
+- Barrierefreiheit (BFSG) seit Juni 2025 gesetzlich vorgeschrieben –
+  Kontraste, Screenreader-Tauglichkeit, Tastaturnavigation prüfen
+
+LIFESTYLE- & INTERIOR-MARKEN
+------------------------------------------------------------------
+- Versandkosten bei sperriger/schwerer Ware (Möbel) vor dem Checkout
+  transparent ausweisen, nicht erst im letzten Schritt
+- Lieferzeiten realistisch und kanalspezifisch kommunizieren
+  (Spedition mit Terminankündigung vs. klassischer Paketdienst)
+- Material- und Pflegehinweise vollständig angeben – verbraucher-
+  schutzrechtlich relevant bei Möbeln und Textilien
+- Rückgaberecht bei Sonderanfertigungen/Maßmöbeln gesondert und
+  rechtssicher regeln (Ausschluss vom Widerrufsrecht möglich)
+
+FOOD- & GETRÄNKEMARKEN
+------------------------------------------------------------------
+- Altersverifikation bei Alkohol (Jugendschutzgesetz) technisch korrekt
+  umsetzen – ein schlechtes Age-Gate kostet Conversion oder ist rechtswidrig
+- Lebensmittelkennzeichnung (LMIV) vollständig: Zutaten, Allergene und
+  Nährwertangaben pro Produkt verpflichtend darstellen
+- Mindesthaltbarkeit und Kühlkettenlogistik klar erklären, um
+  Kaufunsicherheit bei verderblicher Ware zu vermeiden
+- Widerrufsrecht bei schnell verderblicher Ware ist eingeschränkt –
+  diese gesetzliche Ausnahme korrekt und sichtbar ausweisen
+
+JUWELIERE
+------------------------------------------------------------------
+- Echtheitszertifikate, Karat- und Materialangaben rechtssicher und
+  nachvollziehbar darstellen (Herkunftsnachweise bei Edelsteinen)
+- Versicherung und Transportsicherheit bei hochwertigen Sendungen
+  explizit kommunizieren, um Kaufangst bei Premiumpreisen zu senken
+- Kostenlosen Maßband-Versand oder digitale Größenermittlung anbieten,
+  um die hohe Retourenquote bei Ringgrößen zu reduzieren
+- Trusted-Shops-Siegel oder vergleichbare Gütesiegel sichtbar
+  platzieren – bei hohen Kaufsummen ist Vertrauensbeweis kritisch
+
+
+BRANCHE: BUERO-PROJEKTE
+==================================================================
+
+ARCHITEKTURBÜROS
+------------------------------------------------------------------
+- HOAI-Leistungsphasen verständlich für Laien erklären, ohne falsche
+  Honorarversprechen oder unzulässige Pauschalzusagen zu machen
+- Berufshaftpflichtversicherung sichtbar erwähnen – schafft Vertrauen
+  und ist für viele Bauherren ein Entscheidungskriterium
+- Unentgeltliche Akquise-Leistungen (laut Rechtsprechung zulässig) klar
+  von vergütungspflichtigen Planungsleistungen abgrenzen
+- Bildrechte bei Projektfotos klären: Einwilligung der Bauherren und
+  Nutzungsrechte der Fotografen vor Veröffentlichung sicherstellen
+
+INGENIEURBÜROS
+------------------------------------------------------------------
+- HOAI-Leistungsphasen bei Fachplanung (Statik, TGA, Bauphysik) klar
+  und nachvollziehbar für Bauherren/Architekten darstellen
+- Relevante Normen und Zertifizierungen (DIN-Normen, Prüfingenieur-
+  Status) konkret benennen, um Fachkompetenz zu belegen
+- Berufshaftpflichtversicherung und Verantwortungsbereich transparent
+  kommunizieren – besonders bei sicherheitsrelevanter Statik
+- Referenzprojekte nur mit ausdrücklicher Einwilligung des Bauherrn
+  veröffentlichen, besonders bei gewerblichen oder sensiblen Projekten
+
+INNENARCHITEKTURBÜROS
+------------------------------------------------------------------
+- Bildrechte bei Projektfotos in privaten Wohnräumen besonders
+  sensibel klären – Einwilligung der Eigentümer zwingend erforderlich
+- Leistungsabgrenzung zwischen Innenarchitektur (HOAI-Leistung) und
+  reiner Möbelberatung auf der Website transparent kommunizieren
+- Datenschutz bei Grundriss- und Foto-Daten von Privatkunden besonders
+  ernst nehmen (sensible Information über Wohnsituation)
+- Preistransparenz bei Beratungsleistungen (Stundensatz vs. Pauschal-
+  paket) schaffen, um Unsicherheit vor dem Erstkontakt zu reduzieren
+
+KREATIVAGENTUREN & VIDEOPRODUKTION
+------------------------------------------------------------------
+- Urheberrecht und Nutzungsrechte an Bild-/Videomaterial vertraglich
+  klären und auf der Website klar kommunizieren (Lizenzumfang)
+- Persönlichkeitsrechte bei Personen in Showreels beachten – gültige
+  Modelverträge/Einwilligungen sind Voraussetzung für Veröffentlichung
+- Markenrechte Dritter bei Kundenlogos in Referenzen nur mit
+  ausdrücklicher Erlaubnis des jeweiligen Kunden nutzen
+- Preistransparenz schaffen ("ab"-Preise statt "Preis auf Anfrage") –
+  Unklarheit bei Budgets wirkt im B2B-Bereich unseriös
+
+
+BRANCHE: TECH-FINANZ
+==================================================================
+
+SAAS- & SOFTWARE-UNTERNEHMEN
+------------------------------------------------------------------
+- DSGVO-Konformität und Serverstandort (EU vs. außerhalb) transparent
+  kommunizieren – besonders kritisch für europäische B2B-Kunden
+- AGB, Datenschutzerklärung und SLA leicht auffindbar verlinken, nicht
+  nur im Footer verstecken – Compliance-Teams prüfen das aktiv
+- Barrierefreiheit (BFSG) bei B2C-nahen oder öffentlich zugänglichen
+  SaaS-Produkten beachten, nicht nur bei reinen B2B-Tools optional
+- Sicherheitszertifizierungen (SOC 2, ISO 27001, DSGVO-Auftrags-
+  verarbeitung) sichtbar mit Nachweis darstellen, nicht nur behaupten
+
+FINANZDIENSTLEISTER
+------------------------------------------------------------------
+- Erforderliche Erlaubnis nach §34d/f/i GewO sichtbar und korrekt mit
+  Registernummer angeben (Pflichtangabe, kein optionales Detail)
+- Werbeaussagen dürfen keine Rendite- oder Erfolgsversprechen
+  suggerieren – das verstößt gegen WpHG- und BaFin-Vorgaben
+- Risikohinweise bei Anlage- oder Versicherungsprodukten verpflichtend
+  und gut lesbar einbinden, nicht nur im Kleingedruckten
+- Datenschutz bei Finanz- und Einkommensangaben in Kontakt- oder
+  Berechnungsformularen besonders streng umsetzen (sensible Daten)
+
+VERMÖGENS- & ANLAGEBERATER
+------------------------------------------------------------------
+- §34f/h GewO-Lizenz sichtbar ausweisen und Honorarmodell transparent
+  machen (Provisionsbasiert, Honorarbasiert oder Hybrid klar benennen)
+- Verschärftes Kaltakquise-Verbot (UWG) beachten – Website-Formulierungen
+  dürfen ausschließlich auf Inbound-Anfragen ausgelegt sein
+- Risikohinweise und Haftungsausschlüsse bei Beispielrechnungen oder
+  Renditedarstellungen verpflichtend und nicht verschleiert einbinden
+- Premium-Zielgruppe erwartet Datenschutz-Höchststandard bei der
+  Kontaktaufnahme (verschlüsselte Formulare, keine Drittanbieter-Tracker)
+
+
+==================================================================
+Quellenbasis: HWG, BRAO/BORA, BNotO, BOStB, GewO §34, WpHG, UWG,
+JuSchG, LMIV, BFSG (Barrierefreiheitsstärkungsgesetz, seit Juni 2025),
+DSGVO, sowie die in der vorherigen Recherche gesammelten Branchen-
+quellen (BrightLocal, Bundes-Klinik-Atlas, Bundesarchitektenkammer,
+EHI-Studie Online-Payment, Trusted Shops, First Page Sage u.a.)

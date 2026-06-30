@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /leistungsunterpunkte/
+
+Sitemap: https://devdesignstudio.de/sitemap.xml

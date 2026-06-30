@@ -1,0 +1,223 @@
+DEVDESIGN – ONLINE-KUNDENGEWINNUNG ÜBER DIE WEBSITE PRO PERSONA
+Je 4 Punkte pro Persona (SEO + konkrete Akquise-Taktiken, ohne Ads)
+==================================================================
+
+
+BRANCHE: GESUNDHEIT-PRAXEN
+==================================================================
+
+ARZTPRAXEN
+------------------------------------------------------------------
+- Local SEO über Google Business Profil aufbauen: vollständiges Profil,
+  aktuelle Öffnungszeiten, Fotos – das Local Pack erhält rund die
+  Hälfte aller Klicks bei lokalen Suchanfragen
+- Aktiv um Google-Bewertungen bitten (idealerweise 24-48h nach dem
+  Termin, wenn die Bewertungsbereitschaft am höchsten ist) – Praxen
+  mit 200+ Bewertungen ranken deutlich häufiger in den Top-3
+- Online-Terminbuchung 24/7 als zentrale Conversion-Aktion einbauen,
+  um Anrufe außerhalb der Sprechzeiten nicht zu verlieren
+- Spezialisierungs-Landingpages für konkrete Symptom- und Behandlungs-
+  Suchanfragen ("Akupunktur Rückenschmerzen Berlin") statt nur "Arzt + Stadt"
+
+KLINIKEN & GESUNDHEITSZENTREN
+------------------------------------------------------------------
+- Eigene Landingpages pro Fachabteilung mit klarem Leistungsspektrum,
+  damit jede Abteilung für ihre eigenen Suchbegriffe rankt
+- Separater Kontaktweg für Einweiser (zuweisende Ärzte) mit Fax/
+  Online-Formular für schnelle Zuweisungen, getrennt vom Patientenweg
+- Patientengeschichten und Behandlungserfolge als Content-Format
+  nutzen – schafft Vertrauen, das reine Sterne-Bewertungen nicht bieten
+- Strukturierte Online-Aufnahmevorbereitung (Formulare, Checklisten
+  vorab ausfüllbar) als Lead-Capture- und Service-Tool kombinieren
+
+PHYSIO- & THERAPIEPRAXEN
+------------------------------------------------------------------
+- Online-Buchungssystem als Hauptkanal positionieren – die meisten
+  Buchungen erfolgen abends zwischen 20 und 22 Uhr, wenn Praxen
+  telefonisch nicht erreichbar sind
+- Therapeut:innen-Profile mit Bild, Spezialisierung und Methoden
+  anlegen – Patienten wählen lieber eine bekannte Person als "irgendeine Praxis"
+- Eigene Selbstzahler-Sektion mit klaren Preisen für Privatleistungen
+  (Massage, manuelle Therapie) als zusätzlichen Akquise-Kanal aufbauen
+- Lokales SEO mit Stadtteil-Bezug ("Physiotherapie Charlottenburg")
+  nutzen – auf dieser Ebene ist die Konkurrenz noch dünn besiedelt
+
+
+BRANCHE: RECHT-BERATUNG
+==================================================================
+
+NOTARIATE
+------------------------------------------------------------------
+- Themen-Hubs nach Rechtsgebiet (Immobilienrecht, Erbrecht, Gesell-
+  schaftsrecht) aufbauen, damit Klienten bei ihrem konkreten Anlass landen
+- Vorbereitungs-Checklisten als Download anbieten ("Welche Dokumente
+  brauche ich für die Beurkundung des Immobilienkaufs?") gegen E-Mail-Adresse
+- Strukturierte Vorab-Anfrageformulare einsetzen, die Standard-
+  Beurkundungen schon vor dem Termin vorqualifizieren
+- Englischsprachige Seiten-Variante für internationale Mandanten
+  (GmbH-Gründungen, Auslandsimmobilien) als eigenen Suchkanal erschließen
+
+RECHTSANWALTSKANZLEIEN
+------------------------------------------------------------------
+- Eigene Landingpage pro Rechtsgebiet (Arbeitsrecht, Familienrecht,
+  IT-Recht) statt einer generischen "Wir beraten in allen Bereichen"-Seite
+- Fachartikel und Checklisten zu konkreten Mandanten-Problemen
+  ("Was tun bei Kündigung?") veröffentlichen, um organischen Traffic zu gewinnen
+- Lead-Magnet mit Download-Checkliste pro Rechtsgebiet einsetzen, um
+  E-Mail-Kontakte vor dem Erstgespräch zu sammeln
+- Klare Kostenkommunikation zur Erstberatung (Festpreis nennen) auf der
+  Landingpage platzieren, um die Kontaktaufnahme-Hemmschwelle zu senken
+
+STEUERKANZLEIEN
+------------------------------------------------------------------
+- Mandanten-Segmentierung auf der Website sichtbar machen ("Für
+  Selbstständige", "Für E-Commerce-Händler", "Für GmbHs") zur Vorqualifizierung
+- Hochspezifische Suchbegriffe bedienen ("Steuerberater Amazon FBA",
+  "DATEV-Schnittstelle Shopify") statt nur "Steuerberater + Stadt"
+- Online-Terminbuchung mit kurzer Vorqualifikations-Frage (Privat oder
+  Unternehmen? Welcher Bereich?) einsetzen, um Erstgespräche effizienter zu machen
+- Lokales SEO mit Stadtteil-Bezug betreiben – über 60 Prozent der
+  Mandanten zwischen 30 und 55 googeln eine Kanzlei vor dem ersten Anruf
+
+
+BRANCHE: MARKEN-SHOPS
+==================================================================
+
+MODEMARKEN
+------------------------------------------------------------------
+- Produktseiten für Style- und Anlass-Suchbegriffe optimieren
+  ("Leinenhemd Sommer Herren") statt nur Markenname und Artikelnummer
+- Editorial-/Styleguide-Content im Blog veröffentlichen – über 60 Prozent
+  der Online-Käufer treffen Kaufentscheidungen auch aufgrund von Blog-Inhalten
+- Größentabellen und Passformhinweise direkt über dem Bildmaterial
+  platzieren, um Kaufzweifel und damit Abbrüche zu reduzieren
+- Rechnungskauf/Klarna als Zahlart aktiv kommunizieren – ohne diese
+  Option brechen deutsche Kunden den Checkout überdurchschnittlich oft ab
+
+LIFESTYLE- & INTERIOR-MARKEN
+------------------------------------------------------------------
+- Lifestyle-Editorial-Content erstellen ("Wie integriere ich Boucle ins
+  Wohnzimmer?") – rankt langfristig organisch und positioniert als Inspirationsquelle
+- User-Generated-Content (Kundenfotos in echten Räumen) aktiv einholen
+  und auf Produktseiten einbinden, wirkt glaubwürdiger als Studiofotos
+- Materialmuster-Versand (Stoff-, Holz-, Farbproben) als kostenloses
+  Vorab-Angebot bewerben, senkt Kaufschwelle bei hochpreisigen Möbeln
+- Story-getriebene Produktseiten (Designer-Hintergrund, Material-
+  herkunft) nutzen, um Premium-Preise gegenüber Discount-Konkurrenz zu rechtfertigen
+
+FOOD- & GETRÄNKEMARKEN
+------------------------------------------------------------------
+- Verkostungs-Sets/Mini-Sample-Packs als Einstiegsangebot anbieten –
+  senkt das Kaufrisiko und führt häufig direkt zum Vollkauf
+- Abo-Modell mit personalisierter Auswahl einführen, um Customer
+  Lifetime Value gegenüber Einmalkäufen deutlich zu erhöhen
+- Storytelling-Content zu Herstellung/Herkunft (Brennerei-Geschichte,
+  Bohnen-Anbau) veröffentlichen, um Premium-Preise zu rechtfertigen
+- Online-Tastings oder Live-Events mit begleitendem Verkauf anbieten –
+  Conversion-Raten bei Live-Verkaufsformaten liegen oft deutlich höher
+
+JUWELIERE
+------------------------------------------------------------------
+- Online-Ring-Konfigurator (Material-, Stein- und Größenwahl) anbieten,
+  um Brautpaare schon in der Online-Recherchephase abzuholen
+- Kostenlosen Maßband-Versand oder digitale Größenermittlung aktiv
+  bewerben, um Vertrauensaufbau vor dem Kauf zu erleichtern
+- Story-getriebene Produktseiten (Goldschmied-Atelier, Handarbeits-
+  Dauer, Materialherkunft) nutzen, um sich von Amazon/Etsy-Massenware abzugrenzen
+- Hybrid-Strategie fahren: Online-Konfigurator mit Terminvereinbarung
+  im Laden kombinieren, um beide Kundenpräferenzen gleichzeitig zu bedienen
+
+
+BRANCHE: BUERO-PROJEKTE
+==================================================================
+
+ARCHITEKTURBÜROS
+------------------------------------------------------------------
+- Spezialisierungs-Keywords besetzen ("Architekt Holzbau Berlin",
+  "Architekt Bauantrag München") statt mit generischem "Architekt + Stadt" zu konkurrieren
+- Projekt-Hubs nach Bauaufgabe strukturieren (Sanierung, Neubau,
+  Gewerbe, Schule), damit Bauherren direkt bei ihrem Anliegen landen
+- Download-Checklisten anbieten ("Sanierungs-Checkliste", "HOAI
+  verstehen") als Lead-Magnet gegen E-Mail-Adresse
+- Persönliche Architektenprofile mit Werdegang und Projekt-Philosophie
+  einbauen – Bauherren wählen Menschen, nicht Logos
+
+INGENIEURBÜROS
+------------------------------------------------------------------
+- Spezialisierungs-Keywords gezielt besetzen ("Statiker Holzbau
+  Bayern", "TGA-Planung Krankenhaus") statt generischer Suchbegriffe
+- Eigene Architekten-Sektion auf der Website einrichten ("Für unsere
+  Kollegen aus dem Architekturbereich"), um B2B-Empfehlungsnetzwerke zu öffnen
+- Projekt-Referenzen mit konkreten Zahlen (Quadratmeter, Stockwerke,
+  Gebäudetyp) veröffentlichen, um passende Anfragen vorzuqualifizieren
+- Schnelle Online-Erreichbarkeit (Kontaktformular mit Rückrufgarantie)
+  betonen, da Fachplaner oft kurzfristig gesucht werden
+
+INNENARCHITEKTURBÜROS
+------------------------------------------------------------------
+- Portfolio nach Stil-Welten strukturieren (Skandinavisch, Mid-Century,
+  Japandi), um Kunden direkt bei ihrem Geschmacksprofil abzuholen
+- Hochwertige 3D-Renderings und professionelle Projektfotografie
+  einsetzen – schwache Visualisierung verhindert die Gewinnung von Premium-Kunden
+- Service-Pakete mit klaren Preisen (Beratungsstunde, Mood-Board,
+  volle Projektplanung) anbieten, um Hemmschwellen zu senken
+- Behind-the-Scenes-Content (Materialauswahl, Vor-Ort-Begleitung)
+  veröffentlichen, um Vertrauen für hochpreisige Aufträge zu schaffen
+
+KREATIVAGENTUREN & VIDEOPRODUKTION
+------------------------------------------------------------------
+- Case Studies mit konkretem Outcome (Reichweite, Conversion-Lift)
+  statt bloßer Showreels veröffentlichen – konvertiert B2B-Entscheider deutlich besser
+- Branchen-Spezialisierung kommunizieren ("Videos für SaaS-Unter-
+  nehmen", "Imagefilme für Hotels") statt genereller Kreativ-Dienstleistung
+- Service-Pakete mit Preis-Ranges nennen ("Image-Film ab 8.000 EUR")
+  statt "Preis auf Anfrage", um seriöser und transparenter zu wirken
+- Briefing-Formular mit konkreten Fragen (Projekttyp, Ziel, Budget,
+  Zeitschiene) als ersten Funnel-Schritt einbauen, um Anfragen vorzuqualifizieren
+
+
+BRANCHE: TECH-FINANZ
+==================================================================
+
+SAAS- & SOFTWARE-UNTERNEHMEN
+------------------------------------------------------------------
+- Pro Suchintention eine eigene Landingpage bauen (Problem-Page,
+  Feature-Page, Industry-Page) statt einer Allzweck-Demo-Seite
+- Formulare auf 3-5 Felder begrenzen (Name, geschäftliche E-Mail,
+  Firmengröße) – mehr Felder senken die Conversion drastisch
+- Trust-Signale (Kundenlogos, Case Studies, Zertifizierungen wie
+  SOC2/ISO27001) direkt auf der Landingpage zeigen, um das Compliance-Risiko zu senken
+- Onboarding mit Time-to-First-Value unter 5 Minuten gestalten, um
+  Trial-Nutzer schnell zu aktivieren und Drop-off zu vermeiden
+
+FINANZDIENSTLEISTER
+------------------------------------------------------------------
+- Spezialisierungs-Landingpages bauen ("Altersvorsorge für Selbst-
+  ständige", "Berufsunfähigkeit für Ärzte") statt genereller Finanzberatung
+- eBook/Whitepaper als Lead-Magnet anbieten ("Die 7 häufigsten Fehler
+  beim Vermögensaufbau") gegen E-Mail-Adresse vor dem ersten Gespräch
+- Storytelling-Content mit echten, anonymisierten Kundengeschichten
+  veröffentlichen statt abstrakter Statistiken und Tabellen
+- On-Site-Fragebogen zur Lead-Qualifizierung einbauen, um nur
+  kaufbereite Anfragen an die Beratung weiterzuleiten und Zeit zu sparen
+
+VERMÖGENS- & ANLAGEBERATER
+------------------------------------------------------------------
+- Authentische Positionierung mit klaren Werten ("Wofür ich nicht
+  stehe") kommunizieren, um die richtigen Premium-Kunden vorzufiltern
+- LinkedIn-Content als Zubringer-Kanal zur Website nutzen – im
+  Vermögensberater-Segment bislang stark unterausgeschöpft
+- eBook plus mehrstufige E-Mail-Sequenz ("Relationship Builder
+  Sequence") einsetzen, um Vertrauen vor dem Erstgespräch aufzubauen
+- Kostenloses oder kostenpflichtiges Webinar/Strategiegespräch als
+  klaren nächsten Schritt nach dem Lead-Magnet anbieten
+
+
+==================================================================
+Quellenbasis: BrightLocal, Moz/Whitespark Local SEO Studies, First
+Page Sage, Bertelsmann Stiftung, Bundes-Klinik-Atlas, anwalt.de/
+Deubner Recht, Bergstrasse Digital, stateinteractive, Shopify
+E-Commerce-Studien, Ecommerce Fastlane D2C-Content-Studie, Trusted
+Shops, Architektur-websites.de, GrowthSpree/Pixelswithin/Leadanic
+B2B-SaaS-Benchmarks, sowie die in der vorherigen Recherche
+gesammelten Branchenquellen.

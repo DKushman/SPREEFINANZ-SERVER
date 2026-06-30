@@ -1,0 +1,1029 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="view-transition" content="same-origin">
+    <meta name="description" content="Website Agentur Berlin: DEVDESIGN entwickelt individuelle Websites für Unternehmen – technisch sauber, suchmaschinenoptimiert, auf deine Marke zugeschnitten. Für Kanzleien, Praxen & Beratungen. → Jetzt beraten lassen.">
+    <meta name="robots" content="index, follow">
+    <link rel="icon" href="/images/favicondd.ico" type="image/x-icon" sizes="any">
+    <link rel="shortcut icon" href="/images/favicondd.ico" type="image/x-icon">
+    <link rel="canonical" href="https://devdesignstudio.de/Bereiche/websites">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Website Agentur Berlin – Professionelle Websites für Unternehmen | DEVDESIGN">
+    <meta property="og:description" content="Website Agentur Berlin: DEVDESIGN entwickelt individuelle Websites für Unternehmen – technisch sauber, suchmaschinenoptimiert, auf deine Marke zugeschnitten. Für Kanzleien, Praxen & Beratungen. → Jetzt beraten lassen.">
+    <meta property="og:url" content="https://devdesignstudio.de/Bereiche/websites">
+    <meta property="og:image" content="https://res.cloudinary.com/dqcdbdt4v/image/upload/w_1200,h_630,c_pad,b_rgb:ffffff,q_auto,f_png/DD._fjnryj">
+    <meta property="og:image:alt" content="DEVDESIGN – Website Agentur Berlin für professionelle Websites & Webdesign">
+    <meta property="og:site_name" content="DEVDESIGN">
+    <meta property="og:locale" content="de_DE">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Website Agentur Berlin – Professionelle Websites für Unternehmen | DEVDESIGN">
+    <meta name="twitter:description" content="Website Agentur Berlin: DEVDESIGN entwickelt individuelle Websites – technisch sauber, suchmaschinenoptimiert, auf deine Marke zugeschnitten. Jetzt beraten lassen.">
+    <meta name="twitter:image" content="https://res.cloudinary.com/dqcdbdt4v/image/upload/w_1200,h_630,c_pad,b_rgb:ffffff,q_auto,f_png/DD._fjnryj">
+    <meta name="twitter:site" content="@devdesignstudio">
+    <title>Website Agentur Berlin – Professionelle Websites für Unternehmen | DEVDESIGN</title>
+    <link rel="preconnect" href="https://cdn.jsdelivr.net">
+    <link rel="stylesheet" href="../style.css">
+
+    <style>
+        :root {
+            --color-black: #000000;
+            --color-gray: #919191;
+        }
+        body {
+            margin: 0;
+            font-family: 'Switzer-Variable', sans-serif;
+        }
+        /* FOUC vermeiden: Menü und Dropdowns sofort verstecken bis style.css geladen ist */
+        .mobile-nav,
+        .leistungen-dropdown,
+        .fakten-dropdown,
+        .kategorien-dropdown,
+        .nav-dropdown-panel {
+            opacity: 0;
+            visibility: hidden;
+            pointer-events: none;
+        }
+    </style>
+    
+    <!-- Page Transition - Set state early to prevent flicker -->
+    <script>
+        (function() {
+            if (sessionStorage.getItem('transition')) {
+                document.documentElement.classList.add('transitioning');
+            }
+        })();
+    </script>
+
+    <!-- Structured Data for Google -->
+    <script type="application/ld+json">
+    [
+        {
+            "@context": "https://schema.org",
+            "@type": "WebPage",
+            "@id": "https://devdesignstudio.de/Bereiche/websites#websites",
+            "name": "Website Agentur Berlin – Professionelle Websites für Unternehmen | DEVDESIGN",
+            "description": "Website Agentur Berlin: DEVDESIGN entwickelt individuelle Websites für Unternehmen – technisch sauber, suchmaschinenoptimiert, auf deine Marke zugeschnitten.",
+            "url": "https://devdesignstudio.de/Bereiche/websites",
+            "dateModified": "2026-05-11",
+            "inLanguage": "de-DE",
+            "isPartOf": { "@id": "https://devdesignstudio.de/#website" },
+            "breadcrumb": {
+                "@type": "BreadcrumbList",
+                "itemListElement": [
+                    { "@type": "ListItem", "position": 1, "name": "Startseite", "item": "https://devdesignstudio.de" },
+                    { "@type": "ListItem", "position": 2, "name": "Bereiche", "item": "https://devdesignstudio.de/Bereiche/Bereiche" },
+                    { "@type": "ListItem", "position": 3, "name": "Websites", "item": "https://devdesignstudio.de/Bereiche/websites" }
+                ]
+            }
+        },
+        {
+            "@context": "https://schema.org",
+            "@type": "LocalBusiness",
+            "name": "DEVDESIGN",
+            "@id": "https://devdesignstudio.de/#organization",
+            "description": "Webagentur Berlin für Websites, Webapps und Integrationen – eindrucksvolle Online-Auftritte für eindrucksvolle Unternehmen.",
+            "url": "https://devdesignstudio.de",
+            "logo": "https://res.cloudinary.com/dqcdbdt4v/image/upload/f_svg/DEVDESIGN_risffk.svg",
+            "image": "https://res.cloudinary.com/dqcdbdt4v/image/upload/w_1200,h_630,c_pad,b_rgb:ffffff,q_auto,f_png/DD._fjnryj",
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "Charlottenburger Straße 110A",
+                "addressLocality": "Berlin",
+                "postalCode": "13086",
+                "addressCountry": "DE"
+            },
+            "geo": {
+                "@type": "GeoCoordinates",
+                "latitude": 52.5557,
+                "longitude": 13.4590
+            },
+            "telephone": "+491743992254",
+            "email": "info@devdesignstudio.de",
+            "openingHours": "Mo-Fr 11:00-18:00",
+            "priceRange": "€€",
+            "areaServed": [
+                { "@type": "City", "name": "Berlin" },
+                { "@type": "Country", "name": "Deutschland" }
+            ],
+            "sameAs": ["https://www.linkedin.com/company/122473914/"]
+        },
+        {
+            "@context": "https://schema.org",
+            "@type": "Service",
+            "name": "Webdesign Berlin – Website Agentur",
+            "alternateName": ["Webagentur Berlin", "Website Agentur Berlin", "Website erstellen lassen Berlin"],
+            "description": "DEVDESIGN entwickelt als Webagentur Berlin individuelle Websites: klar strukturiert, technisch sauber, suchmaschinenoptimiert und auf dein Unternehmen zugeschnitten.",
+            "provider": {
+                "@id": "https://devdesignstudio.de/#organization"
+            },
+            "areaServed": [
+                { "@type": "City", "name": "Berlin" },
+                { "@type": "Country", "name": "Deutschland" }
+            ],
+            "serviceType": "Webdesign",
+            "offers": {
+                "@type": "Offer",
+                "priceCurrency": "EUR",
+                "priceRange": "€€–€€€",
+                "description": "Individuelle Website-Erstellung: von der schlanken Unternehmenswebsite bis zur komplexen Web-Anwendung.",
+                "seller": { "@id": "https://devdesignstudio.de/#organization" }
+            },
+            "hasOfferCatalog": {
+                "@type": "OfferCatalog",
+                "name": "Website-Leistungen",
+                "itemListElement": [
+                    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Website-Konzeption & Webdesign Berlin" } },
+                    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Responsive Webentwicklung" } },
+                    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "SEO & Performance-Optimierung" } },
+                    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Unternehmenswebsite Berlin" } },
+                    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Homepage erstellen lassen Berlin" } }
+                ]
+            }
+        },
+        {
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+                {
+                    "@type": "Question",
+                    "name": "Wie läuft ein Website-Projekt mit DEVDESIGN ab?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Wir starten mit einem kostenlosen Erstgespräch, in dem wir deine Ziele, Zielgruppen und den Status deiner bestehenden Website klären. Auf dieser Basis entwickeln wir Struktur und erste Konzepte, stimmen sie mit dir ab und setzen das Design technisch um. Vor dem Launch testen wir gründlich und begleiten dich beim Go-live."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Könnt ihr bestehende Inhalte und Strukturen übernehmen?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Ja. Wir sichten deine bestehenden Seiten, Texte und Medien, ordnen sie neu und ergänzen sie dort, wo es für Nutzerführung und Suchmaschinen sinnvoll ist. So nutzen wir vorhandenes Material und heben gleichzeitig die Qualität deines Auftritts."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Welche Technologien setzt ihr für Websites ein?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Im Frontend arbeiten wir vor allem mit React und Next.js. Im Backend setzen wir moderne serverseitige Technologien ein, um Inhalte, Formulare und Integrationen stabil und performant bereitzustellen. Wir wählen den Stack so, dass er zu deinen Anforderungen und zukünftigen Plänen passt."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Wie berücksichtigt ihr SEO und Performance?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Wir achten auf eine saubere technische Grundlage mit klarer Struktur, schnellen Ladezeiten und sinnvollen Meta-Informationen. Gleichzeitig gestalten wir Inhalte und Navigation so, dass Nutzer schnell finden, was sie suchen. Das unterstützt sowohl die Sichtbarkeit in Suchmaschinen als auch die Conversion."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Was passiert nach dem Launch meiner Website?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Nach dem Go-live unterstützen wir dich bei Bedarf weiter – etwa mit inhaltlichen Anpassungen, Funktionsupdates oder gezielten SEO-Optimierungen. So kann deine Website Schritt für Schritt mit deinem Unternehmen mitwachsen."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Arbeitet ihr als Webagentur Berlin auch mit Unternehmen außerhalb Berlins?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Ja. Obwohl wir als Webagentur in Berlin verwurzelt sind und viele unserer Kunden aus der Hauptstadtregion kommen, arbeiten wir remote mit Unternehmen aus ganz Deutschland. Entscheidend ist nicht der Standort, sondern der Anspruch."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Was kostet eine Website bei einer Berliner Webagentur?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Die Kosten hängen vom Umfang ab – von der Unternehmenswebsite bis zur komplexen Web-Anwendung. Als transparente Website Agentur Berlin geben wir dir nach dem ersten Gespräch eine klare Einschätzung ohne versteckte Kosten."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Wie lange dauert die Erstellung einer Website?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Eine typische Unternehmenswebsite dauert bei uns 4 bis 8 Wochen – von der ersten Konzeptabstimmung bis zum Launch. Komplexere Projekte mit vielen Seiten, Integrationen oder individuellen Funktionen können länger dauern. Im Erstgespräch klären wir gemeinsam den realistischen Zeitrahmen für dein Projekt."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Was ist der Unterschied zwischen einer Website Agentur und einem Baukasten wie Wix oder Squarespace?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Baukästen wie Wix, Squarespace oder IONOS bieten vorgefertigte Templates, die schnell zu einer generischen Website führen – ohne individuelle Positionierung, ohne technische Tiefe und oft mit Einschränkungen bei Performance und SEO. Eine professionelle Website Agentur Berlin wie DEVDESIGN entwickelt deinen Auftritt von Grund auf: mit klarer Struktur, markengerechtem Design, sauberem Code und einer Basis, die echte Suchmaschinen-Sichtbarkeit ermöglicht."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Wie professionell sollte eine Website für kleine Unternehmen in Berlin sein?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Gerade für kleine Unternehmen ist eine professionelle Website entscheidend: Sie ist oft der erste Eindruck, den potenzielle Kunden von deinem Unternehmen gewinnen. Eine klar strukturierte, schnelle und vertrauenswürdige Website – auch ohne hundert Unterseiten – macht den Unterschied zwischen einer Anfrage und einem Klick zurück zur Konkurrenz. Als Website Agentur Berlin entwickeln wir kompakte, wirkungsvolle Auftritte speziell für Kanzleien, Praxen, Immobilienmakler und Beratungsunternehmen."
+                    }
+                }
+            ]
+        }
+    ]
+    </script>
+
+</head>
+<body class="preload">
+    <div class="page-transition">
+        <span></span>
+        <span></span>
+    </div>
+    <div class="scroll-progress"></div>
+    <!-- Mobile Navigation -->
+    <nav class="mobile-nav" aria-label="Menü" aria-hidden="true">
+        <ul class="mobile-nav-list">
+            <li class="mobile-nav-main-item">
+                <div class="mobile-nav-item-inner">
+                    <a href="/Bereiche/Bereiche" class="mobile-nav-link"><span class="nav-dot"></span> Bereiche</a>
+                </div>
+            </li>
+            <li class="mobile-nav-main-item">
+                <div class="mobile-nav-item-inner">
+                    <a href="/fakten/Fakten" class="mobile-nav-link"><span class="nav-dot"></span> Fakten</a>
+                </div>
+            </li>
+            <li class="mobile-nav-main-item"><div class="mobile-nav-item-inner"><a href="/blog" class="mobile-nav-link">Blog</a></div></li>
+            <li class="mobile-nav-main-item"><div class="mobile-nav-item-inner"><a href="/portfolio" class="mobile-nav-link">Projekte</a></div></li>
+            <li class="mobile-nav-main-item"><div class="mobile-nav-item-inner"><a href="/team" class="mobile-nav-link">Team</a></div></li>
+            <li class="mobile-nav-main-item"><div class="mobile-nav-item-inner"><a href="/preisrechner" class="mobile-nav-link">Rechner</a></div></li>
+            <li class="mobile-nav-main-item"><div class="mobile-nav-item-inner"><a href="/kontakt" class="mobile-nav-link">Kontakt</a></div></li>
+            <!-- Back Button -->
+<!-- Leistungen: Websites, Webapps, Integrationen -->
+<li class="mobile-nav-sub-item"><div class="mobile-nav-item-inner"><a href="/Bereiche/webapps" class="mobile-nav-link">Webapps</a></div></li>
+                    <li class="mobile-nav-sub-item"><div class="mobile-nav-item-inner"><a href="/Bereiche/integrationen" class="mobile-nav-link">Integrationen</a></div></li>
+                </ul>
+            </li>
+            <!-- Container for Fakten Sub-Links -->
+<li class="mobile-nav-sub-item"><div class="mobile-nav-item-inner"><a href="../fakten/was-kostet-website-agentur" class="mobile-nav-link">Was kostet eine Website?</a></div></li>
+                    <li class="mobile-nav-sub-item"><div class="mobile-nav-item-inner"><a href="../fakten/versteckte-kosten-webdesign" class="mobile-nav-link">Versteckte Kosten beim Webdesign</a></div></li>
+                    <li class="mobile-nav-sub-item"><div class="mobile-nav-item-inner"><a href="../fakten/webagentur-beauftragen-tipps" class="mobile-nav-link">Webagentur beauftragen</a></div></li>
+                    <li class="mobile-nav-sub-item"><div class="mobile-nav-item-inner"><a href="../fakten/agentur-vs-freelancer" class="mobile-nav-link">Agentur vs. Freelancer</a></div></li>
+                    <li class="mobile-nav-sub-item"><div class="mobile-nav-item-inner"><a href="../fakten/fragen-an-agentur" class="mobile-nav-link">Fragen an die Agentur</a></div></li>
+                    <li class="mobile-nav-sub-item"><div class="mobile-nav-item-inner"><a href="../fakten/website-wichtig-wie-mitarbeiter" class="mobile-nav-link">Website als Mitarbeiter</a></div></li>
+                    <li class="mobile-nav-sub-item"><div class="mobile-nav-item-inner"><a href="../fakten/website-relaunch-wann-lohnt" class="mobile-nav-link">Website Relaunch</a></div></li>
+                    <li class="mobile-nav-sub-item"><div class="mobile-nav-item-inner"><a href="../fakten/kosten-schlechte-website" class="mobile-nav-link">Kosten schlechter Websites</a></div></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    <header>
+        <a href="../index" class="logo-test">DEVDESIGN.STUDIO</a>
+        <button class="burger-btn" aria-label="Menü öffnen" aria-expanded="false"><span>☰</span><span class="burger-btn-close">✕</span></button>
+        <nav aria-label="Hauptnavigation">
+            <div class="nav-menu-wrapper">
+                <div class="nav-row nav-row-top">
+                    <ul>
+                        <li>
+                            <a href="/Bereiche/Bereiche" class="nav-leistungen-link nav-dropdown-link" aria-describedby="leistungen-dropdown">Bereiche,</a>
+                        </li>
+                        <li>
+                            <a href="/fakten/Fakten" class="nav-fakten-link nav-dropdown-link" aria-describedby="fakten-dropdown">Fakten,</a>
+                        </li>
+                        <li>
+                            <a href="/leistungen/gesundheit-praxen" class="nav-kategorien-link nav-dropdown-link" aria-describedby="kategorien-dropdown">Kategorien,</a>
+                        </li>
+                        <li><a href="/blog">Blog,</a></li>
+                    </ul>
+                </div>
+                <div class="nav-row nav-row-bottom">
+                    <ul>
+                        <li><a href="/portfolio">Projekte,</a></li>
+                        <li><a href="/team">Team,</a></li>
+                        <li><a href="/preisrechner">Rechner</a></li>
+                    </ul>
+                </div>
+            </div>
+            <a href="/kontakt" class="button-kontakt">KONTAKT</a>
+        </nav>
+    </header>
+    <!-- Leistungen Dropdown (Desktop) -->
+    <nav class="leistungen-dropdown nav-dropdown-panel" id="leistungen-dropdown" aria-label="Leistungen" aria-hidden="true">
+        <ul class="leistungen-dropdown-list">
+            <li class="leistungen-dropdown-main-item"><div class="leistungen-dropdown-inner"><a href="/Bereiche/websites" class="leistungen-dropdown-link">Websites</a></div></li>
+            <li class="leistungen-dropdown-main-item"><div class="leistungen-dropdown-inner"><a href="/Bereiche/webapps" class="leistungen-dropdown-link">Webapps</a></div></li>
+            <li class="leistungen-dropdown-main-item"><div class="leistungen-dropdown-inner"><a href="/Bereiche/integrationen" class="leistungen-dropdown-link">Integrationen</a></div></li>
+        </ul>
+    </nav>
+    <!-- Fakten Dropdown (Desktop) -->
+    <nav class="fakten-dropdown nav-dropdown-panel" id="fakten-dropdown" aria-label="Fakten" aria-hidden="true">
+        <ul class="fakten-dropdown-list">
+            <li><div class="fakten-dropdown-inner"><a href="../fakten/agentur-preis-enthalten" class="fakten-dropdown-link">Was ist im Agentur-Preis enthalten?</a></div></li>
+            <li><div class="fakten-dropdown-inner"><a href="../fakten/was-kostet-website-agentur" class="fakten-dropdown-link">Was kostet eine Website?</a></div></li>
+            <li><div class="fakten-dropdown-inner"><a href="../fakten/versteckte-kosten-webdesign" class="fakten-dropdown-link">Versteckte Kosten beim Webdesign</a></div></li>
+            <li><div class="fakten-dropdown-inner"><a href="../fakten/webagentur-beauftragen-tipps" class="fakten-dropdown-link">Webagentur beauftragen</a></div></li>
+            <li><div class="fakten-dropdown-inner"><a href="../fakten/agentur-vs-freelancer" class="fakten-dropdown-link">Agentur vs. Freelancer</a></div></li>
+            <li><div class="fakten-dropdown-inner"><a href="../fakten/fragen-an-agentur" class="fakten-dropdown-link">Fragen an die Agentur</a></div></li>
+            <li><div class="fakten-dropdown-inner"><a href="../fakten/website-wichtig-wie-mitarbeiter" class="fakten-dropdown-link">Website als Mitarbeiter</a></div></li>
+            <li><div class="fakten-dropdown-inner"><a href="../fakten/website-relaunch-wann-lohnt" class="fakten-dropdown-link">Website Relaunch</a></div></li>
+            <li><div class="fakten-dropdown-inner"><a href="../fakten/kosten-schlechte-website" class="fakten-dropdown-link">Kosten schlechter Websites</a></div></li>
+        </ul>
+    </nav>
+    <nav class="fakten-dropdown kategorien-dropdown nav-dropdown-panel" id="kategorien-dropdown" aria-label="Kategorien" aria-hidden="true">
+        <ul class="fakten-dropdown-list">
+            <li><div class="fakten-dropdown-inner"><a href="/leistungen/gesundheit-praxen" class="fakten-dropdown-link">Gesundheits- &amp; Praxis&shy;unternehmen</a></div></li>
+            <li><div class="fakten-dropdown-inner"><a href="/leistungen/recht-beratung" class="fakten-dropdown-link">Recht &amp; Beratungs&shy;dienstleister</a></div></li>
+            <li><div class="fakten-dropdown-inner"><a href="/leistungen/marken-shops" class="fakten-dropdown-link">Marken-, Produkt- &amp; Shop&shy;unternehmen</a></div></li>
+            <li><div class="fakten-dropdown-inner"><a href="/leistungen/buero-projekte" class="fakten-dropdown-link">Büros &amp; Projekt&shy;unternehmen</a></div></li>
+            <li><div class="fakten-dropdown-inner"><a href="/leistungen/tech-finanz" class="fakten-dropdown-link">Technologie-, IT- &amp; Finanz&shy;unternehmen</a></div></li>
+        </ul>
+    </nav>
+    <main>
+        <div class="main-content">
+            <section class="websites-grid-hero" aria-labelledby="websites-grid-hero-heading">
+                <div class="websites-grid-hero__inner">
+                    <h1 id="websites-grid-hero-heading" class="int-hero__eyebrow">Agentur für Websites in Berlin</h1>
+                    <span class="websites-grid-hero__title">
+                        Ihre Expertise verdient eine Website, die sie widerspiegelt.
+                    </span>
+                    <div class="websites-grid-hero__row">
+                        <div class="websites-grid-hero__buttons">
+                        <a href="/kontakt" class="button" aria-label="Mehr erfahren – zur Kontaktseite"><span>Mehr erfahren</span></a>
+                    </div>
+                        <p class="websites-grid-hero__lead">
+                            Wir kombinieren modernes Webdesign mit einer intuitiven User Experience, damit Ihr Unternehmen digital überzeugt. Von der ersten Konzeption bis zur technischen Umsetzung erstellen wir Webauftritte, die Ihre Einzigartigkeit widerspiegeln und Sie klar vom Wettbewerb abheben.
+                        </p>
+                    </div>
+                </div>
+                <span class="websites-grid-hero__index" aria-hidden="true">01</span>
+            </section>
+            <div class="websites-grid-hero__image">
+                <video
+                    class="websites-grid-hero__video"
+                    src="https://res.cloudinary.com/dqcdbdt4v/video/upload/f_auto,q_auto/YNDYGOindexcompressedreal_vy0t6s.mp4"
+                    width="1200"
+                    height="630"
+                    autoplay
+                    muted
+                    playsinline
+                    loop
+                    preload="metadata"
+                    aria-label="Hintergrundvideo zur Website-Leistung"
+                ></video>
+            </div>
+            <section class="websites-whys" aria-labelledby="websites-whys-heading">
+                <div class="websites-whys__inner">
+                    <div class="websites-whys__head">
+                        <p class="websites-whys__badge">Einordnung</p>
+                        <h2 id="websites-whys-heading" class="websites-whys__title">
+                            <span class="websites-whys__title-soft">Warum eine</span>
+                            Standard-Website
+                            <span class="websites-whys__title-soft">heute nicht mehr</span>
+                            ausreicht
+                        </h2>
+                    </div>
+                    <ul class="websites-whys__grid" role="list">
+                        <li>
+                            <article class="websites-whys__card">
+                                <div class="websites-whys__icon-wrap" aria-hidden="true">
+                                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+                                        <path d="M12 3v3M12 18v3M4.22 4.22l2.12 2.12M17.66 17.66l2.12 2.12M3 12h3M18 12h3M4.22 19.78l2.12-2.12M17.66 6.34l2.12-2.12" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/>
+                                        <circle cx="12" cy="12" r="3.25" stroke="currentColor" stroke-width="1.4"/>
+                                    </svg>
+                                </div>
+                                <h3 class="websites-whys__card-title">Nutzererwartungen: interaktiv, persönlich, ästhetisch</h3>
+                                <p class="websites-whys__card-text">Nutzer erwarten heute interaktive, personalisierte und ästhetisch überzeugende Erlebnisse. Es geht längst nicht mehr nur um Funktion, sondern um Gefühl. Design, Animationen und visuelle Klarheit entscheiden, ob jemand bleibt. Gleichzeitig erwarten Nutzer Inhalte, die zu ihnen passen – eine rein statische Seite wirkt schnell generisch und austauschbar.</p>
+                            </article>
+                        </li>
+                        <li>
+                            <article class="websites-whys__card">
+                                <div class="websites-whys__icon-wrap" aria-hidden="true">
+                                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+                                        <rect x="6" y="3" width="12" height="18" rx="2.25" stroke="currentColor" stroke-width="1.4"/>
+                                        <path d="M9 6.75h6M10.5 19.125h3" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/>
+                                        <path d="M12 16.25v1.75" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/>
+                                        <path d="M9 11h6M9 14h4" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" opacity=".85"/>
+                                    </svg>
+                                </div>
+                                <h3 class="websites-whys__card-title">Mobile Optimierung und schnelle Ladezeiten</h3>
+                                <p class="websites-whys__card-text">Die meisten Zugriffe kommen mobil. Wenn eine Seite nicht sofort lädt oder sich holprig bedienen lässt, ist der Nutzer weg, bevor er überhaupt dein Angebot versteht. Performance ist kein Detail mehr, sondern ein zentraler Erfolgsfaktor.</p>
+                            </article>
+                        </li>
+                        <li>
+                            <article class="websites-whys__card">
+                                <div class="websites-whys__icon-wrap" aria-hidden="true">
+                                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+                                        <circle cx="10" cy="10" r="5" stroke="currentColor" stroke-width="1.4"/>
+                                        <path d="M14.05 13.95L18 17.9" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/>
+                                        <path d="M4 19h6" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/>
+                                        <path d="M8 17v2M13 17v2" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" opacity=".8"/>
+                                    </svg>
+                                </div>
+                                <h3 class="websites-whys__card-title">Moderne SEO- und Domain-Strategie</h3>
+                                <p class="websites-whys__card-text">Ohne moderne SEO- und Domain-Strategie bleibt deine Seite bei Google unsichtbar. Heute zählen nicht nur Inhalte, sondern auch Struktur und klare thematische Ausrichtung. Domain-getriebene Konzepte (z.&nbsp;B. spezifische Landingpages oder fokussierte „Content-Hubs“) helfen dabei, gezielt Sichtbarkeit aufzubauen und Nutzer besser abzuholen.</p>
+                            </article>
+                        </li>
+                        <li>
+                            <article class="websites-whys__card">
+                                <div class="websites-whys__icon-wrap" aria-hidden="true">
+                                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+                                        <circle cx="12" cy="6.5" r="2" stroke="currentColor" stroke-width="1.4"/>
+                                        <circle cx="6.5" cy="17" r="2" stroke="currentColor" stroke-width="1.4"/>
+                                        <circle cx="17.5" cy="17" r="2" stroke="currentColor" stroke-width="1.4"/>
+                                        <circle cx="12" cy="12" r="1.85" stroke="currentColor" stroke-width="1.4"/>
+                                        <path d="M11.05 12.9l-3.1 3.4M12.95 12.9l3.1 3.4M12 10.64V8.5" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/>
+                                    </svg>
+                                </div>
+                                <h3 class="websites-whys__card-title">Markenauftritt über die Website hinaus</h3>
+                                <p class="websites-whys__card-text">Markenauftritt entsteht im Zusammenspiel aus Website, Ads und digitalen Systemen. Deine Website ist nur ein Teil des Ganzen. Bezahlte Werbung, Social Media und datengetriebene Kampagnen sind oft der Haupttreiber für Reichweite und Wahrnehmung. Erst durch die Integration dieser Kanäle wird aus einer Website ein funktionierender Markenauftritt mit messbarem Wachstum.</p>
+                            </article>
+                        </li>
+                    </ul>
+                    <a href="/kontakt" class="button websites-whys__cta"><span>Kontakt aufnehmen</span></a>
+                </div>
+            </section>
+
+            <section class="websites-leistungs-stack" id="leistungs-details" aria-labelledby="websites-leistungs-stack-heading">
+                <div class="websites-leistungs-stack__intro">
+                    <p class="websites-leistungs-stack__eyebrow">Leistungs-Details</p>
+                    <h2 id="websites-leistungs-stack-heading" class="websites-leistungs-stack__h2">Unsere Leistungen für Ihren digitalen Erfolg</h2>
+                </div>
+                <ol class="websites-leistungs-stack__list">
+                    <li class="websites-leistungs-stack__slot">
+                        <article class="websites-leistungs-stack__card" tabindex="0">
+                            <span class="websites-leistungs-stack__num" aria-hidden="true"></span>
+                            <h3 class="websites-leistungs-stack__h3">Webdesign – Interaktivität &amp; Ästhetik</h3>
+                            <p class="websites-leistungs-stack__p">Wir gestalten Websites, die nicht nur gut aussehen, sondern sich auch gut anfühlen. Durch moderne Ästhetik und gezielte Interaktionen entsteht eine digitale Identität, die Ihr Unternehmen klar positioniert und nachhaltig im Kopf bleibt.</p>
+                            <button class="websites-leistungs-stack__toggle" aria-expanded="false" aria-controls="ls-details-1" aria-label="Details anzeigen">
+                                <span class="websites-leistungs-stack__toggle-icon" aria-hidden="true"></span>
+                            </button>
+                            <ul class="websites-leistungs-stack__details" id="ls-details-1">
+                                <li>Individuelle Animationen &amp; Micro-Interactions</li>
+                                <li>Visuelle Konzeption &amp; Moodboards</li>
+                                <li>Typografie, Farbwelt &amp; Bildsprache</li>
+                                <li>Responsives Layout für alle Endgeräte</li>
+                                <li>UX-optimierte Seitenarchitektur</li>
+                            </ul>
+                        </article>
+                    </li>
+                    <li class="websites-leistungs-stack__slot">
+                        <article class="websites-leistungs-stack__card" tabindex="0">
+                            <span class="websites-leistungs-stack__num" aria-hidden="true"></span>
+                            <h3 class="websites-leistungs-stack__h3">SEO-Grundoptimierung – Sichtbarkeit von Anfang an</h3>
+                            <p class="websites-leistungs-stack__p">Mit Fokus auf Performance, Core Web Vitals und sauberer On-Page-Struktur schaffen wir die technische Grundlage für nachhaltige Rankings bei Google – damit Ihre Website nicht nur existiert, sondern auch gefunden wird.</p>
+                            <button class="websites-leistungs-stack__toggle" aria-expanded="false" aria-controls="ls-details-2" aria-label="Details anzeigen">
+                                <span class="websites-leistungs-stack__toggle-icon" aria-hidden="true"></span>
+                            </button>
+                            <ul class="websites-leistungs-stack__details" id="ls-details-2">
+                                <li>Core Web Vitals &amp; Ladezeit-Optimierung</li>
+                                <li>Saubere HTML-Semantik &amp; Meta-Tags</li>
+                                <li>Schema.org Structured Data</li>
+                                <li>Keyword-orientierte Inhaltsstruktur</li>
+                                <li>Technische On-Page-Analyse</li>
+                            </ul>
+                        </article>
+                    </li>
+                    <li class="websites-leistungs-stack__slot">
+                        <article class="websites-leistungs-stack__card" tabindex="0">
+                            <span class="websites-leistungs-stack__num" aria-hidden="true"></span>
+                            <h3 class="websites-leistungs-stack__h3">Entwicklung – Individuell &amp; skalierbar</h3>
+                            <p class="websites-leistungs-stack__p">Durch eigene Entwicklung und Hosting auf unserer Infrastruktur ermöglichen wir maximale Flexibilität. Ob komplexe Integrationen oder individuelle Systeme – Ihre Website wächst technisch genau so mit, wie es Ihr Unternehmen erfordert.</p>
+                            <button class="websites-leistungs-stack__toggle" aria-expanded="false" aria-controls="ls-details-3" aria-label="Details anzeigen">
+                                <span class="websites-leistungs-stack__toggle-icon" aria-hidden="true"></span>
+                            </button>
+                            <ul class="websites-leistungs-stack__details" id="ls-details-3">
+                                <li>React &amp; Next.js Frontend-Entwicklung</li>
+                                <li>Backend-Integrationen &amp; API-Anbindungen</li>
+                                <li>Hosting auf eigener Infrastruktur</li>
+                                <li>CMS-Anbindung auf Wunsch</li>
+                                <li>Skalierbare Architektur ab Tag 1</li>
+                            </ul>
+                        </article>
+                    </li>
+                </ol>
+            </section>
+                      <!-- Gründe -->
+                      <section class="service-gruende" aria-labelledby="gruende-heading">
+                        <div class="gruende-header">
+                            <h2 id="gruende-heading" class="gruende-title">
+                                <span class="gruende-number">5</span>
+                                <span class="gruende-title-text">Schritte, die Ihre Website zu einem wirklichen Markenauftritt machen</span>
+                            </h2>
+                        </div>
+                        <div class="gruende-content">
+                            <aside class="gruende-titles-sticky">
+                                <ul class="gruende-titles-list" role="list" aria-label="Gründe Übersicht">
+                                    <li><h3 class="gruende-item-title" data-index="0">Erstgespräch &amp; Konzept</h3></li>
+                                    <li><h3 class="gruende-item-title" data-index="1">24/7 Sichtbarkeit</h3></li>
+                                    <li><h3 class="gruende-item-title" data-index="2">Design &amp; Entwicklung</h3></li>
+                                    <li><h3 class="gruende-item-title" data-index="3">SEO-Optimierung</h3></li>
+                                    <li><h3 class="gruende-item-title" data-index="4">Launch &amp; Support</h3></li>
+                                </ul>
+                            </aside>
+                            <ol class="gruende-descs-list" role="list">
+                                <li class="gruende-desc-item" data-index="0">
+                                    <h3 class="gruende-item-title-mobile">Erstgespräch &amp; Konzept</h3>
+                                    <p class="gruende-item-desc">Wir sprechen über Ihre Ziele, Ihre Zielgruppe und Ihre Website. Wir erstellen ein Konzept und eine Timeline für die Umsetzung.</p>
+                                </li>
+                                <li class="gruende-desc-item" data-index="1">
+                                    <h3 class="gruende-item-title-mobile">Technische Grundlagen</h3>
+                                    <p class="gruende-item-desc">Wir implementieren die technischen Grundlagen für eine saubere SEO-Basis und optimierte Core Web Vitals.</p>
+                                </li>
+                                <li class="gruende-desc-item" data-index="2">
+                                    <h3 class="gruende-item-title-mobile">Design &amp; Entwicklung</h3>
+                                    <p class="gruende-item-desc">Wir entwickeln ein modernes Design und eine intuitive User Experience für Ihre Website.</p>
+                                </li>
+                                <li class="gruende-desc-item" data-index="3">
+                                    <h3 class="gruende-item-title-mobile">SEO-Optimierung</h3>
+                                    <p class="gruende-item-desc">Wir optimieren Ihre Website für die Suchmaschinen und sorgen für eine hohe Sichtbarkeit in den Suchergebnissen.</p>
+                                </li>
+                                <li class="gruende-desc-item" data-index="4">
+                                    <h3 class="gruende-item-title-mobile">Launch &amp; Support</h3>
+                                    <p class="gruende-item-desc">Wir bringen Ihre Website live und sorgen für den Betrieb und die Wartung.</p>
+                                </li>
+                            </ol>
+                        </div>
+                    </section>
+                     <!-- Vergleich: Website Agentur vs. Baukasten -->
+                     <section id="agentur-vs-baukasten" aria-labelledby="vergleich-heading">
+                        <h2 id="vergleich-heading" class="warum-h2">Website Agentur  vs. Baukasten: Was ist der richtige Weg?</h2>
+                        <div class="vergleich-wrapper">
+                            <div class="vergleich-grid" role="region" aria-label="Vergleich Website Agentur vs. Baukasten">
+                                <div class="vergleich-column vergleich-column--agentur">
+                                    <h3 class="vergleich-col-header vergleich-col-header--agentur">Mit DEVDESIGN</h3>
+                                    <ul class="vergleich-list">
+                                        <li class="vergleich-cell vergleich-cell--agentur">Individuelles Design, das deine Marke wirklich widerspiegelt</li>
+                                        <li class="vergleich-cell vergleich-cell--agentur">Technisch sauber: schnelle Ladezeiten, optimierte Core Web Vitals</li>
+                                        <li class="vergleich-cell vergleich-cell--agentur">SEO-Basis von Anfang an: saubere Struktur, Meta-Tags, Schema.org</li>
+                                        <li class="vergleich-cell vergleich-cell--agentur">Volle Kontrolle und Ownership – kein Anbieter-Lock-in</li>
+                                        <li class="vergleich-cell vergleich-cell--agentur">Beliebig skalierbar: neue Seiten, Funktionen, Integrationen jederzeit</li>
+                                    </ul>
+                                </div>
+                                <div class="vergleich-column vergleich-column--baukasten">
+                                    <h3 class="vergleich-col-header vergleich-col-header--baukasten">Mit Baukastensystem (Wordpress, Wix etc.)</h3>
+                                    <ul class="vergleich-list">
+                                        <li class="vergleich-cell vergleich-cell--baukasten">Generische Templates – erkennbar als Baukasten-Website</li>
+                                        <li class="vergleich-cell vergleich-cell--baukasten">Aufgeblähter Code durch Plattform-Overhead – schlechte Performance</li>
+                                        <li class="vergleich-cell vergleich-cell--baukasten">Eingeschränkte SEO-Möglichkeiten, abhängig vom Plattform-Editor</li>
+                                        <li class="vergleich-cell vergleich-cell--baukasten">Abhängig vom Anbieter: Preiserhöhungen, Plattformwechsel teuer</li>
+                                        <li class="vergleich-cell vergleich-cell--baukasten">Plattform-limitiert: komplexe Wünsche nicht oder teuer umsetzbar</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+        
+                    <!-- Warum DEVDESIGN – Zahlen -->
+                    <section class="dd-warum-zahlen" id="warum-devdesign" aria-labelledby="warum-zahlen-heading">
+                        <div class="dd-warum-zahlen__head">
+                            <p class="dd-warum-zahlen__eyebrow">Warum DEVDESIGN</p>
+                            <h2 id="warum-zahlen-heading" class="dd-warum-zahlen__h2">Die Zahlen hinter<br>unserem Anspruch.</h2>
+                        </div>
+                        <ol class="dd-warum-zahlen__list" role="list">
+                            <li class="dd-warum-zahlen__item">
+                                <div class="dd-warum-zahlen__metric">
+                                    <span class="dd-warum-zahlen__num" data-target="47" data-prefix="Ø +" data-suffix=" %" aria-label="Durchschnittlich plus 47 Prozent">Ø +47 %</span>
+                                </div>
+                                <div class="dd-warum-zahlen__body">
+                                    <h3 class="dd-warum-zahlen__title">Mehr organische Sichtbarkeit</h3>
+                                    <p class="dd-warum-zahlen__desc">Saubere Struktur, technische SEO-Basis und klare Inhaltsarchitektur sorgen dafür, dass Kunden unserer Kunden sie auch finden.</p>
+                                </div>
+                            </li>
+                            <li class="dd-warum-zahlen__item">
+                                <div class="dd-warum-zahlen__metric">
+                                    <span class="dd-warum-zahlen__num dd-warum-zahlen__num--fixed" aria-label="95 bis 100 von 100 Core Web Vitals Score">95–100<span class="dd-warum-zahlen__num-small">&thinsp;/ 100</span></span>
+                                </div>
+                                <div class="dd-warum-zahlen__body">
+                                    <h3 class="dd-warum-zahlen__title">Core Web Vitals als Standard</h3>
+                                    <p class="dd-warum-zahlen__desc">Performance steht an erster Stelle. Jede Website wird auf echte Lighthouse-Werte optimiert: LCP, CLS und INP sind keine Metriken, die wir ignorieren.</p>
+                                </div>
+                            </li>
+                            <li class="dd-warum-zahlen__item">
+                                <div class="dd-warum-zahlen__metric">
+                                    <span class="dd-warum-zahlen__num dd-warum-zahlen__num--fixed" aria-label="3 mal mehr qualifizierte Anfragen">3×</span>
+                                </div>
+                                <div class="dd-warum-zahlen__body">
+                                    <h3 class="dd-warum-zahlen__title">Mehr qualifizierte Anfragen</h3>
+                                    <p class="dd-warum-zahlen__desc">Klare Positionierung, gezielte Funnels und Botschaften, die deine Zielgruppe wirklich abholen, erzeugen Anfragen mit echtem Abschluss-Potenzial.</p>
+                                </div>
+                            </li>
+                            <li class="dd-warum-zahlen__item">
+                                <div class="dd-warum-zahlen__metric">
+                                    <span class="dd-warum-zahlen__num" data-target="32" data-prefix="Ø +" data-suffix=" %" aria-label="Durchschnittlich plus 32 Prozent mehr Conversions">Ø +32 %</span>
+                                </div>
+                                <div class="dd-warum-zahlen__body">
+                                    <h3 class="dd-warum-zahlen__title">Mehr Conversions</h3>
+                                    <p class="dd-warum-zahlen__desc">Bessere User Experience, klarere Calls-to-Action und eine Website, die aktiv für dich arbeitet, verwandeln Besucher in Kunden.</p>
+                                </div>
+                            </li>
+                        </ol>
+                        <a href="../menu/portfolio.html" class="button website"><span>Unsere Arbeiten</span></a>
+
+                    </section>
+
+                    <!-- Stimme · Kunde -->
+                    <section class="dd-pull" aria-labelledby="websites-pull-heading">
+                        <div class="dd-pull__inner">
+                            <div class="dd-pull__head">
+                                <p id="websites-pull-heading" class="dd-pull__eyebrow">Stimme · Kunde</p>
+                                <p class="dd-pull__index">Referenz · StaffConnect</p>
+                            </div>
+                            <figure class="dd-pull__figure">
+                                <span class="dd-pull__mark" aria-hidden="true">&ldquo;</span>
+                                <blockquote class="dd-pull__quote" cite="https://www.staffconnect.agency">
+                                    <p>Die Jungs haben unser SEO so angetrieben, dass wir von ChatGPT als Nummer&nbsp;1 Personaldienstleister vorgeschlagen werden.</p>
+                                </blockquote>
+                                <figcaption class="dd-pull__caption">
+                                    <span class="dd-pull__avatar">
+                                        <img
+                                            src="https://www.staffconnect.agency/wp-content/uploads/2025/09/25-08-28-13-58-47-na-S.jpg"
+                                            alt="Selina Turing, Shift Management bei StaffConnect"
+                                            width="80"
+                                            height="80"
+                                            loading="lazy"
+                                            decoding="async"
+                                            referrerpolicy="no-referrer"
+                                        />
+                                    </span>
+                                    <span class="dd-pull__attribution">
+                                        <span class="dd-pull__name">Selina Turing</span>
+                                        <span class="dd-pull__role">
+                                            <span>Shift Management</span>,
+                                            <span class="dd-pull__role-company">StaffConnect</span>
+                                        </span>
+                                    </span>
+                                    <span class="dd-pull__brand" aria-label="StaffConnect Logo">
+                                        <img
+                                            src="../images/stafflogo.png"
+                                            alt="StaffConnect"
+                                            width="120"
+                                            height="32"
+                                            loading="lazy"
+                                            decoding="async"
+                                        />
+                                    </span>
+                                </figcaption>
+                            </figure>
+                        </div>
+                    </section>
+
+                    <!-- Branchen-Überblicke (Themenwelten) -->
+                    <section class="dd-leistungen-bereiche" aria-labelledby="dd-leistungen-bereiche-heading">
+                        <div class="dd-leistungen-bereiche__layout">
+                            <div class="dd-leistungen-bereiche__head">
+                                <p class="dd-leistungen-bereiche__eyebrow">Themenwelten</p>
+                                <h2 id="dd-leistungen-bereiche-heading" class="dd-leistungen-bereiche__h2">Wir sind für jeden Bereich vorbereitet!</h2>
+                                <p class="dd-leistungen-bereiche__lead">Wähle eine Branche, um die Übersicht mit allen passenden Unterseiten zu öffnen.</p>
+                            </div>
+                            <div class="dd-leistungen-bereiche__nav" aria-label="Branchen und Themenwelten">
+                                <ul class="dd-leistungen-bereiche__list" role="list">
+                                    <li>
+                                            <a class="dd-leistungen-bereiche__row" href="/leistungen/gesundheit-praxen">
+                                                <span class="dd-leistungen-bereiche__row-text">
+                                                    <span class="dd-leistungen-bereiche__row-title">Gesundheit &amp; Wellness</span>
+                                                    <span class="dd-leistungen-bereiche__row-desc">Praxen, Kliniken und Angebote, die Ruhe, Vertrauen und klare Orientierung brauchen.</span>
+                                                </span>
+                                                <span class="dd-leistungen-bereiche__row-action" aria-hidden="true">
+                                                    <span class="dd-leistungen-bereiche__row-icon" aria-hidden="true">
+                                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4 10h12M11.5 6.5 16 10l-4.5 3.5" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                                    </span>
+                                                </span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="dd-leistungen-bereiche__row" href="/leistungen/buero-projekte">
+                                                <span class="dd-leistungen-bereiche__row-text">
+                                                    <span class="dd-leistungen-bereiche__row-title">Planung &amp; Design</span>
+                                                    <span class="dd-leistungen-bereiche__row-desc">Architektur, Engineering und kreative Disziplinen mit starker Projekt- und Portfolio-Präsenz.</span>
+                                                </span>
+                                                <span class="dd-leistungen-bereiche__row-action" aria-hidden="true">
+                                                    <span class="dd-leistungen-bereiche__row-icon" aria-hidden="true">
+                                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4 10h12M11.5 6.5 16 10l-4.5 3.5" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                                    </span>
+                                                </span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="dd-leistungen-bereiche__row" href="/leistungen/marken-shops">
+                                                <span class="dd-leistungen-bereiche__row-text">
+                                                    <span class="dd-leistungen-bereiche__row-title">Produkte &amp; Lifestyle</span>
+                                                    <span class="dd-leistungen-bereiche__row-desc">Marken, Shops und Angebote, bei denen Story, Tempo und Conversion zusammenspielen.</span>
+                                                </span>
+                                                <span class="dd-leistungen-bereiche__row-action" aria-hidden="true">
+                                                    <span class="dd-leistungen-bereiche__row-icon" aria-hidden="true">
+                                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4 10h12M11.5 6.5 16 10l-4.5 3.5" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                                    </span>
+                                                </span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="dd-leistungen-bereiche__row" href="/leistungen/tech-finanz">
+                                                <span class="dd-leistungen-bereiche__row-text">
+                                                    <span class="dd-leistungen-bereiche__row-title">Technologie &amp; Finanz</span>
+                                                    <span class="dd-leistungen-bereiche__row-desc">SaaS, IT und Finanz: Oberflächen, die Vertrauen schaffen und komplexe Inhalte zugänglich machen.</span>
+                                                </span>
+                                                <span class="dd-leistungen-bereiche__row-action" aria-hidden="true">
+                                                    <span class="dd-leistungen-bereiche__row-icon" aria-hidden="true">
+                                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4 10h12M11.5 6.5 16 10l-4.5 3.5" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                                    </span>
+                                                </span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="dd-leistungen-bereiche__row" href="/leistungen/recht-beratung">
+                                                <span class="dd-leistungen-bereiche__row-text">
+                                                    <span class="dd-leistungen-bereiche__row-title">Kanzleien &amp; Berater</span>
+                                                    <span class="dd-leistungen-bereiche__row-desc">Kanzleien und Beratung: seriöse Expertise, fundierte Texte und Formulare, die Vertrauen tragen.</span>
+                                                </span>
+                                                <span class="dd-leistungen-bereiche__row-action" aria-hidden="true">
+                                                    <span class="dd-leistungen-bereiche__row-icon" aria-hidden="true">
+                                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4 10h12M11.5 6.5 16 10l-4.5 3.5" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                                    </span>
+                                                </span>
+                                            </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Kontakt-Teaser -->
+                    <section class="service-contact" id="kontakt">
+                        <h2 class="service-contact-h2"><span class="service-contact-h2-part1">Sag Hallo! </span>und erzähl uns von deinem Projekt</h2>
+                        <p class="service-contact-p">Du planst einen neuen Auftritt oder möchtest deine bestehende Website auf ein neues Level bringen? Lass uns darüber reden – als deine Webagentur Berlin begleiten wir dich von der ersten Idee bis zum Launch.</p>
+                        <a href="/anderes a hrefs/fragebogen" class="contact-circle-btn" aria-label="Zum Projekt-Fragebogen">
+                            <svg class="contact-circle-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                    </section>
+        
+                    <!-- Ähnliche Leistungen -->
+                    <section class="blog-related">
+                        <h2 class="blog-related-headline">ÄHNLICHE LEISTUNGEN FÜR EUREN DIGITALEN AUFTRITT</h2>
+                        <div class="blog-related-grid">
+                    <article class="related-item">
+                        <a href="/Bereiche/Bereiche" class="related-item-link">
+                            <h3>Übersicht</h3>
+                            <p>Alle drei Disziplinen auf einen Blick: Websites, Webapps und Integrationen.</p>
+                        </a>
+                    </article>
+                            <article class="related-item">
+                                <a href="/Bereiche/webapps" class="related-item-link">
+                                    <h3>Webapps</h3>
+                                    <p>Individuelle interne Tools, Dashboards und Webapps für KMU – damit dein Team mit dem Werkzeug arbeitet, statt sich daran abzuarbeiten.</p>
+                                </a>
+                            </article>
+                            <article class="related-item">
+                                <a href="/Bereiche/integrationen" class="related-item-link">
+                                    <h3>Integrationen</h3>
+                                    <p>Schnittstellen, APIs und Prozessautomation – damit eure Systeme miteinander arbeiten statt nebeneinander.</p>
+                                </a>
+                            </article>
+                        </div>
+                    </section>
+        
+                    <!-- FAQ -->
+                    <section class="section FAQ">
+                        <h2 class="h2">Häufige Fragen an deine Website Agentur Berlin</h2>
+                        <p class="p">Antworten auf typische Fragen rund um Planung, Webdesign, Technik und Weiterentwicklung einer professionellen Website.</p>
+                        <div class="faq-container">
+                            <details class="faq-item">
+                                <summary class="faq-item-title">Wie läuft ein Website-Projekt mit DEVDESIGN ab?</summary>
+                                <p class="faq-item-description">Wir starten mit einem kostenlosen Erstgespräch, in dem wir deine Ziele, Zielgruppen und den Status deiner bestehenden Website klären. Auf dieser Basis entwickeln wir Struktur und erste Konzepte, stimmen sie mit dir ab und setzen das Design technisch um. Vor dem Launch testen wir gründlich und begleiten dich beim Go-live.</p>
+                            </details>
+                            <details class="faq-item">
+                                <summary class="faq-item-title">Könnt ihr bestehende Inhalte und Strukturen übernehmen?</summary>
+                                <p class="faq-item-description">Ja. Wir sichten deine bestehenden Seiten, Texte und Medien, ordnen sie neu und ergänzen sie dort, wo es für Nutzerführung und Suchmaschinen sinnvoll ist. So nutzen wir vorhandenes Material und heben gleichzeitig die Qualität deines Auftritts.</p>
+                            </details>
+                            <details class="faq-item">
+                                <summary class="faq-item-title">Welche Technologien setzt ihr für Websites ein?</summary>
+                                <p class="faq-item-description">Im Frontend arbeiten wir vor allem mit React und Next.js. Im Backend setzen wir moderne serverseitige Technologien ein, um Inhalte, Formulare und Integrationen stabil und performant bereitzustellen. Wir wählen den Stack so, dass er zu deinen Anforderungen und zukünftigen Plänen passt.</p>
+                            </details>
+                            <details class="faq-item">
+                                <summary class="faq-item-title">Wie berücksichtigt ihr SEO und Performance?</summary>
+                                <p class="faq-item-description">Wir achten auf eine saubere technische Grundlage mit klarer Struktur, schnellen Ladezeiten und sinnvollen Meta-Informationen. Gleichzeitig gestalten wir Inhalte und Navigation so, dass Nutzer schnell finden, was sie suchen. Das unterstützt sowohl Sichtbarkeit in Suchmaschinen als auch Conversion.</p>
+                            </details>
+                            <details class="faq-item">
+                                <summary class="faq-item-title">Was passiert nach dem Launch meiner Website?</summary>
+                                <p class="faq-item-description">Nach dem Go-live unterstützen wir dich bei Bedarf weiter – etwa mit inhaltlichen Anpassungen, Funktionsupdates oder gezielten SEO-Optimierungen. So kann deine Website Schritt für Schritt mit deinem Unternehmen mitwachsen.</p>
+                            </details>
+                            <details class="faq-item">
+                                <summary class="faq-item-title">Arbeitet ihr als Webagentur Berlin auch mit Unternehmen außerhalb Berlins?</summary>
+                                <p class="faq-item-description">Ja. Obwohl wir als Webagentur in Berlin verwurzelt sind und viele unserer Kunden aus der Hauptstadtregion kommen, arbeiten wir remote mit Unternehmen aus ganz Deutschland. Entscheidend ist nicht der Standort, sondern der Anspruch.</p>
+                            </details>
+                            <details class="faq-item">
+                                <summary class="faq-item-title">Was kostet eine Website bei einer Berliner Webagentur?</summary>
+                                <p class="faq-item-description">Die Kosten hängen vom Umfang ab – von der schlanken Unternehmenswebsite bis zur komplexen Web-Anwendung. Als transparente Website Agentur Berlin geben wir dir nach dem ersten Gespräch eine klare Einschätzung ohne versteckte Kosten. Mehr dazu findest du auf unserer Seite zu <a href="../fakten/was-kostet-website-agentur">Website-Kosten</a>.</p>
+                            </details>
+                            <details class="faq-item">
+                                <summary class="faq-item-title">Wie lange dauert die Erstellung einer Website?</summary>
+                                <p class="faq-item-description">Eine typische Unternehmenswebsite dauert bei uns 4 bis 8 Wochen – von der ersten Konzeptabstimmung bis zum Launch. Komplexere Projekte mit vielen Seiten, Integrationen oder individuellen Funktionen können länger dauern. Im Erstgespräch klären wir gemeinsam den realistischen Zeitrahmen für dein Projekt.</p>
+                            </details>
+                            <details class="faq-item">
+                                <summary class="faq-item-title">Was ist der Unterschied zwischen einer Website Agentur und einem Baukasten wie Wix oder Squarespace?</summary>
+                                <p class="faq-item-description">Baukästen bieten schnelle Templates – aber ohne individuelle Positionierung, ohne technische Tiefe und oft mit Einschränkungen bei Performance und SEO. Eine professionelle Website Agentur Berlin wie DEVDESIGN entwickelt deinen Auftritt von Grund auf: mit klarer Struktur, markengerechtem Design und einer Basis, die echte Suchmaschinen-Sichtbarkeit ermöglicht. Mehr zum Vergleich findest du weiter oben auf dieser Seite.</p>
+                            </details>
+                            <details class="faq-item">
+                                <summary class="faq-item-title">Wie professionell sollte eine Website für kleine Unternehmen in Berlin sein?</summary>
+                                <p class="faq-item-description">Gerade für kleine Unternehmen ist eine professionelle Website entscheidend: Sie ist oft der erste Eindruck, den potenzielle Kunden gewinnen. Eine klar strukturierte, schnelle und vertrauenswürdige Website macht den Unterschied zwischen einer Anfrage und einem Klick zurück zur Konkurrenz. Als Website Agentur Berlin entwickeln wir kompakte, wirkungsvolle Auftritte speziell für Kanzleien, Praxen, Immobilienmakler und Beratungsunternehmen.</p>
+                            </details>
+                        </div>
+                    </section>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="footer-logo">
+            <img src="https://res.cloudinary.com/dqcdbdt4v/image/upload/f_svg/DEVDESIGN_risffk.svg" alt="DEVDESIGN – Webagentur Berlin" class="footer-logo-img" loading="lazy" width="400" height="100" crossorigin="anonymous">
+        </div>
+        <div class="footer-content">
+            <div class="footer-column footer-column--whatsapp page-home-footer-wa-desktop">
+                <h2 class="footer-heading">WHATSAPP</h2>
+                <a
+                    href="https://wa.me/491743992254"
+                    class="footer-whatsapp-btn"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    title="WhatsApp · 0174 399 2254"
+                    aria-label="WhatsApp-Chat starten, Mobilnummer 0174 399 2254"
+                >
+                    <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.372a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.435 9.884-9.881 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L0 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                    </svg>
+                </a>
+            </div>
+            <div class="footer-column footer-links">
+                <div class="page-home-footer-links-head">
+                    <h2 class="footer-heading">SCHNELLZUGRIFF</h2>
+                    <div class="page-home-footer-wa-mobile-stack">
+                        <a
+                            href="https://wa.me/491743992254"
+                            class="footer-whatsapp-btn page-home-footer-wa-mobile"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            title="WhatsApp · 0174 399 2254"
+                            aria-label="WhatsApp-Chat starten, Mobilnummer 0174 399 2254"
+                        >
+                            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.372a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.435 9.884-9.881 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L0 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="page-home-footer-links-row">
+                    <ul class="footer-nav">
+                        <li><a href="/team">TEAM</a></li>
+                        <li><a href="/kontakt">KONTAKT</a></li>
+                        <li><a href="/portfolio">PORTFOLIO</a></li>
+                        <li><a href="/impressum">IMPRESSUM</a></li>
+                        <li><a href="/datenschutz">DATENSCHUTZ</a></li>
+                        <li><a href="#cookies" class="dd-footer-open-cookies">COOKIES</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-column footer-address">
+                <h2 class="footer-heading">ADDRESSE</h2>
+                <p class="footer-address-text">Charlottenburger Straße 110A,<br>Berlin 13086</p>
+            </div>
+        </div>
+        <div class="footer-cta">
+            <div class="footer-cta-text">
+                <span class="footer-cta-small">IHR HABT EINE IDEE?</span>
+                <a href="/kontakt" class="footer-cta-link">
+                    <span class="footer-cta-big">LET'S TALK</span>
+                    <span class="footer-arrow">
+                        <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M15 45L45 15M45 15H20M45 15V40" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </span>
+                </a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <span class="footer-copyright">alle Rechte vorbehalten</span>
+            <span class="footer-by">by DEVDESIGN</span>
+        </div>
+    </footer>
+
+    <script>
+        (function () {
+            var OPEN_DUR  = 500;
+            var CLOSE_DUR = 360;
+            var OPEN_EASE  = 'cubic-bezier(0.22, 1, 0.36, 1)';
+            var CLOSE_EASE = 'cubic-bezier(0.4, 0, 1, 1)';
+            var reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+            function refreshOpenDetails() {
+                document.querySelectorAll('.websites-leistungs-stack__toggle.is-open').forEach(function (btn) {
+                    var details = document.getElementById(btn.getAttribute('aria-controls'));
+                    var slot = btn.closest('.websites-leistungs-stack__slot');
+                    if (!details || !slot) return;
+                    var h = details.scrollHeight;
+                    details.style.height = h + 'px';
+                    slot.style.marginBottom = h + 'px';
+                });
+            }
+
+            document.querySelectorAll('.websites-leistungs-stack__toggle').forEach(function (btn) {
+                var details = document.getElementById(btn.getAttribute('aria-controls'));
+                var slot    = btn.closest('.websites-leistungs-stack__slot');
+                if (!details || !slot) return;
+
+                details.style.height   = '0px';
+                details.style.overflow = 'hidden';
+
+                var detailsAnim = null;
+                var slotAnim    = null;
+
+                btn.addEventListener('click', function (e) {
+                    e.stopPropagation();
+
+                    var opening = btn.getAttribute('aria-expanded') !== 'true';
+
+                    /* Capture current visual height before cancelling in-flight anims */
+                    var fromH = parseFloat(getComputedStyle(details).height) || 0;
+                    var fromM = parseFloat(slot.style.marginBottom) || 0;
+
+                    if (detailsAnim) { try { detailsAnim.cancel(); } catch (_) {} detailsAnim = null; }
+                    if (slotAnim)    { try { slotAnim.cancel();    } catch (_) {} slotAnim    = null; }
+
+                    btn.setAttribute('aria-expanded', String(opening));
+                    btn.classList.toggle('is-open', opening);
+                    btn.setAttribute('aria-label', opening ? 'Details ausblenden' : 'Details anzeigen');
+
+                    var targetH = details.scrollHeight;
+                    var toH = opening ? targetH : 0;
+                    var toM = opening ? targetH : 0;
+                    var dur  = reduced ? 0 : (opening ? OPEN_DUR : CLOSE_DUR);
+                    var ease = opening ? OPEN_EASE : CLOSE_EASE;
+
+                    if (!opening) details.style.overflow = 'hidden';
+                    details.style.height = fromH + 'px';
+
+                    detailsAnim = details.animate(
+                        [{ height: fromH + 'px' }, { height: toH + 'px' }],
+                        { duration: dur, easing: ease, fill: 'forwards' }
+                    );
+                    detailsAnim.finished.then(function () {
+                        details.style.height   = opening ? 'auto' : '0px';
+                        details.style.overflow = opening ? ''      : 'hidden';
+                        detailsAnim = null;
+                    }).catch(function () {});
+
+                    slot.style.marginBottom = fromM + 'px';
+                    slotAnim = slot.animate(
+                        [{ marginBottom: fromM + 'px' }, { marginBottom: toM + 'px' }],
+                        { duration: dur, easing: ease, fill: 'forwards' }
+                    );
+                    slotAnim.finished.then(function () {
+                        slot.style.marginBottom = opening ? toM + 'px' : '';
+                        slotAnim = null;
+                    }).catch(function () {});
+                });
+            });
+
+            window.addEventListener('resize', refreshOpenDetails);
+        })();
+    </script>
+    <script>
+        (function () {
+            var items = document.querySelectorAll('.dd-warum-zahlen__item');
+            if (!items.length || !('IntersectionObserver' in window)) {
+                items.forEach(function (el) { el.classList.add('is-visible'); });
+                return;
+            }
+
+            function animateCounter(el) {
+                var target = parseInt(el.getAttribute('data-target'), 10);
+                if (isNaN(target)) return;
+                var prefix = el.getAttribute('data-prefix') || '';
+                var suffix = el.getAttribute('data-suffix') || '';
+                var duration = 1100;
+                var startTime = null;
+
+                function step(ts) {
+                    if (!startTime) startTime = ts;
+                    var progress = Math.min((ts - startTime) / duration, 1);
+                    var eased = 1 - Math.pow(1 - progress, 4);
+                    el.textContent = prefix + Math.round(eased * target) + suffix;
+                    if (progress < 1) requestAnimationFrame(step);
+                }
+                requestAnimationFrame(step);
+            }
+
+            var observer = new IntersectionObserver(function (entries) {
+                entries.forEach(function (entry) {
+                    if (!entry.isIntersecting) return;
+                    entry.target.classList.add('is-visible');
+                    entry.target.querySelectorAll('[data-target]').forEach(animateCounter);
+                    observer.unobserve(entry.target);
+                });
+            }, { threshold: 0.12 });
+
+            items.forEach(function (item) { observer.observe(item); });
+        }());
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.29/bundled/lenis.min.js" defer></script>
+    <script type="module" src="../main.js"></script>
+</body>
+</html>

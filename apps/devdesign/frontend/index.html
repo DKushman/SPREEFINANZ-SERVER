@@ -1,0 +1,1118 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="view-transition" content="same-origin">
+    <meta name="description" content="Webagentur Berlin: Websites, Webapps und System-Integration aus einer Hand. DEVDESIGN verbindet UX, Entwicklung und Performance – jetzt unverbindlich beraten lassen.">
+    <meta name="robots" content="index, follow">        <link rel="icon" href="/images/favicondd.png" type="image/png" sizes="150x150">
+    <link rel="shortcut icon" href="/images/favicondd.png" type="image/png">
+    <link rel="canonical" href="https://devdesignstudio.de/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Webagentur Berlin – Websites, Webapps &amp; Integration | DEVDESIGN">
+    <meta property="og:description" content="Webagentur Berlin: Websites, Webapps und System-Integration aus einer Hand. DEVDESIGN verbindet UX, Entwicklung und Performance – jetzt unverbindlich beraten lassen.">
+    <meta property="og:url" content="https://devdesignstudio.de/">
+    <meta property="og:image" content="https://res.cloudinary.com/dqcdbdt4v/image/upload/w_1200,h_630,c_pad,b_rgb:ffffff,q_auto,f_png/DD._fjnryj">
+    <meta property="og:image:alt" content="DEVDESIGN – Webagentur Berlin">
+    <meta property="og:site_name" content="DEVDESIGN">
+    <meta property="og:locale" content="de_DE">
+    <title>Webagentur Berlin – Websites, Webapps &amp; Integration | DEVDESIGN</title>
+    <link rel="preconnect" href="https://cdn.jsdelivr.net">
+    <link rel="preconnect" href="https://res.cloudinary.com" crossorigin>
+    <!-- Font-Loading optimiert -->
+    <link rel="preload" href="Switzer_Complete/Fonts/WEB/fonts/Switzer-Variable.woff2" as="font" type="font/woff2" crossorigin>
+    <!-- LCP: Hero-Logo -->
+    <link rel="preload" href="https://res.cloudinary.com/dqcdbdt4v/image/upload/v1778756342/DD._black_ktxgvh.svg" as="image" fetchpriority="high" width="560" height="140" crossorigin="anonymous">
+    <!-- Critical CSS inline - nur für Hero: SVG Logo, h1, p, line -->
+  <!---->  <style>
+        @font-face {
+            font-family: 'Switzer-Variable';
+            src: url('Switzer_Complete/Fonts/WEB/fonts/Switzer-Variable.woff2') format('woff2');
+            font-weight: 100 900;
+            font-display: swap;
+            font-style: normal;
+        }
+        :root {
+            --color-black: #000000;
+            --color-gray: #919191;
+        }
+        body {
+            margin: 0;
+            padding-left: clamp(1rem, 2vw, 2vw);
+            padding-right: clamp(1rem, 2vw, 2vw);
+            font-family: 'Switzer-Variable', sans-serif;
+            color: #000000;
+        }
+        /* FOUC vermeiden: Menü und Dropdowns sofort verstecken bis style.css geladen ist */
+        .mobile-nav,
+        .leistungen-dropdown,
+        .fakten-dropdown,
+        .kategorien-dropdown,
+        .nav-dropdown-panel {
+            opacity: 0;
+            visibility: hidden;
+            pointer-events: none;
+        }
+        /* Hero = voller Viewport vor async style.css (scrollY=0 zeigt keine #leistungen) */
+        section.hero.hero-minimal {
+            box-sizing: border-box;
+            height: 100svh;
+            max-height: 100svh;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-start;
+            padding-top: clamp(3.5rem, 10vh, 6rem);
+            padding-bottom: clamp(0.75rem, 2svh, 1.5rem);
+        }
+        .hero-minimal-inner {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            width: 100%;
+            flex: 1 1 auto;
+            min-height: 0;
+            max-height: 100%;
+            gap: clamp(1.5rem, min(5vw, 5svh), 4rem);
+            overflow: hidden;
+        }
+        .hero-minimal-content {
+            flex: 1 1 auto;
+            min-height: 0;
+            max-height: 100%;
+            width: 100%;
+            overflow: hidden;
+        }
+        .hero-minimal-logo {
+            width: clamp(20rem, 40vw, 35rem);
+            max-width: 100%;
+            height: auto;
+            aspect-ratio: 560 / 140;
+            display: block;
+            flex-shrink: 0;
+            mix-blend-mode: normal;
+            object-fit: contain;
+            object-position: left top;
+            opacity: 1;
+            transform: none;
+            animation: none;
+            transition: none;
+        }
+        @media (min-width: 769px) {
+            .hero-minimal-logo {
+                width: clamp(38rem, 68vw, 64rem);
+            }
+        }
+        .hero-minimal-headline,
+        .hero-minimal-text {
+            padding-bottom: 0;
+        }
+        .hero-minimal-headline {
+            font-size: clamp(1.75rem, min(6.5vw, calc(3.25vw + 2.25svh)), 5rem);
+            font-weight: 500;
+            color: var(--color-black);
+            line-height: 1;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 0;
+            letter-spacing: -0.05rem;
+        }
+        .hero-headline-row {
+            display: block;
+            line-height: 1;
+        }
+        .hero-headline-row + .hero-headline-row {
+            margin-top: -0.06em;
+        }
+        .hero-minimal-headline .hero-split {
+            line-height: 1;
+            vertical-align: top;
+        }
+        .hero-minimal-headline .hero-split__inner {
+            display: block;
+            line-height: 1;
+        }
+        .hero-minimal-text {
+            font-size: clamp(1.5rem, min(5.75vw, calc(2.75vw + 2svh)), 4.5rem);
+            font-weight: 400;
+            color: var(--color-gray);
+            line-height: 1.15;
+            margin: 0;
+            letter-spacing: -0.05em;
+        }
+        @media (max-width: 768px) {
+            section.hero.hero-minimal {
+                height: auto;
+                max-height: none;
+                overflow: visible;
+            }
+            .hero-minimal-inner,
+            .hero-minimal-content {
+                flex: none;
+                max-height: none;
+                overflow: visible;
+            }
+            .hero-minimal-inner {
+                gap: clamp(1rem, min(3vw, 3.5svh), 2rem);
+            }
+            .hero-minimal-logo {
+                width: clamp(12rem, 88vw, 22rem);
+                height: auto;
+            }
+            .hero-minimal-headline {
+                font-size: clamp(1.25rem, min(7vw, calc(4vw + 3.5svh)), 2.75rem);
+            }
+            .hero-minimal-text {
+                font-size: clamp(1.125rem, min(6.5vw, calc(3.5vw + 3svh)), 2.5rem);
+            }
+        }
+        .hero-split {
+            display: inline-block;
+            overflow: hidden;
+            overflow-clip-margin: 0.12em;
+            vertical-align: bottom;
+        }
+        .hero-split__inner {
+            display: inline-block;
+            line-height: inherit;
+        }
+        @keyframes heroWordRise {
+            from { transform: translate3d(0, 108%, 0); }
+            to { transform: translate3d(0, 0, 0); }
+        }
+        @media (prefers-reduced-motion: no-preference) {
+            body.page-home .hero-minimal-headline .hero-split__inner {
+                animation: heroWordRise 0.52s cubic-bezier(0.33, 1, 0.68, 1) both;
+                animation-delay: calc(0.06s + var(--hero-word-i, 0) * 0.035s);
+            }
+            body.page-home .hero-minimal-text .hero-split__inner {
+                animation: heroWordRise 0.48s cubic-bezier(0.33, 1, 0.68, 1) both;
+                animation-delay: calc(0.44s + var(--hero-word-i, 0) * 0.018s);
+            }
+        }
+        body.page-home .hero-minimal-logo,
+        body.page-home .hero-minimal-logo.hero-split,
+        body.page-home .hero-minimal-logo .hero-split__inner {
+            animation: none !important;
+            transform: none !important;
+            transition: none !important;
+            opacity: 1 !important;
+        }
+    </style>
+    <!-- Startseite: CSS blocking (LCP/CLS); Build lässt index.html synchron -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Page Transition - Set state early to prevent flicker -->
+    <script>
+        (function() {
+            if ('scrollRestoration' in history) {
+                history.scrollRestoration = 'manual';
+            }
+            if (!location.hash || location.hash.length < 2) {
+                window.scrollTo(0, 0);
+            }
+            if (sessionStorage.getItem('transition')) {
+                document.documentElement.classList.add('transitioning');
+            }
+        })();
+    </script>
+    
+    <!-- Structured Data for Google -->
+    <script type="application/ld+json">
+    [
+        {
+            "@context": "https://schema.org",
+            "@type": "WebSite",
+            "@id": "https://devdesignstudio.de/#website",
+            "name": "DEVDESIGN",
+            "url": "https://devdesignstudio.de",
+            "inLanguage": "de-DE",
+            "potentialAction": {
+                "@type": "SearchAction",
+                "target": {
+                    "@type": "EntryPoint",
+                    "urlTemplate": "https://devdesignstudio.de/?s={search_term_string}"
+                },
+                "query-input": "required name=search_term_string"
+            }
+        },
+        {
+            "@context": "https://schema.org",
+            "@type": "WebPage",
+            "@id": "https://devdesignstudio.de/#webpage",
+            "name": "Webagentur Berlin – Websites, Webapps & Integration | DEVDESIGN",
+            "description": "Webagentur Berlin: Websites, Webapps und System-Integration aus einer Hand. DEVDESIGN verbindet UX, Entwicklung und Performance – jetzt unverbindlich beraten lassen.",
+            "url": "https://devdesignstudio.de",
+            "dateModified": "2026-05-18",
+            "inLanguage": "de-DE",
+            "isPartOf": {
+                "@type": "WebSite",
+                "@id": "https://devdesignstudio.de/#website"
+            },
+            "breadcrumb": {
+                "@type": "BreadcrumbList",
+                "itemListElement": [
+                    { "@type": "ListItem", "position": 1, "name": "Startseite", "item": "https://devdesignstudio.de" }
+                ]
+            }
+        },
+        {
+            "@context": "https://schema.org",
+            "@type": "LocalBusiness",
+            "@id": "https://devdesignstudio.de/#organization",
+            "name": "DEVDESIGN",
+            "url": "https://devdesignstudio.de",
+            "logo": "https://res.cloudinary.com/dqcdbdt4v/image/upload/f_svg/DEVDESIGN_risffk.svg",
+            "image": "https://res.cloudinary.com/dqcdbdt4v/image/upload/w_1200,h_630,c_pad,b_rgb:ffffff,q_auto,f_png/DD._fjnryj",
+            "description": "Webagentur Berlin für Websites, Webapps und Integrationen",
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "Charlottenburger Straße 110A",
+                "addressLocality": "Berlin",
+                "postalCode": "13086",
+                "addressCountry": "DE"
+            },
+            "geo": {
+                "@type": "GeoCoordinates",
+                "latitude": 52.5557,
+                "longitude": 13.459
+            },
+            "telephone": "+491743992254",
+            "email": "info@devdesignstudio.de",
+            "openingHours": "Mo-Fr 11:00-18:00",
+            "priceRange": "€€",
+            "areaServed": [
+                { "@type": "City", "name": "Berlin" },
+                { "@type": "Country", "name": "Deutschland" }
+            ],
+            "sameAs": [
+                "https://www.linkedin.com/company/122473914/"
+            ],
+            "hasOfferCatalog": {
+                "@type": "OfferCatalog",
+                "name": "Webagentur-Leistungen",
+                "itemListElement": [
+                    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Webdesign & Websites" } },
+                    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Webapps & Webanwendungen" } },
+                    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "System-Integration & API-Anbindung" } }
+                ]
+            }
+        }
+    ]
+    </script>
+</head>
+<body class="preload page-home">
+    <div class="page-transition">
+        <span></span>
+        <span></span>
+    </div>
+    <div class="scroll-progress"></div>
+    <!-- Mobile Navigation -->
+    <nav class="mobile-nav" aria-label="Menü" aria-hidden="true">
+        <ul class="mobile-nav-list">
+            <li class="mobile-nav-main-item">
+                <div class="mobile-nav-item-inner">
+                    <button type="button" class="mobile-nav-link mobile-nav-trigger mobile-nav-trigger-leistungen" aria-expanded="false"><span class="nav-dot"></span> Leistungen</button>
+                </div>
+            </li>
+            <li class="mobile-nav-main-item">
+                <div class="mobile-nav-item-inner">
+                    <button type="button" class="mobile-nav-link mobile-nav-trigger mobile-nav-trigger-fakten" aria-expanded="false"><span class="nav-dot"></span> Fakten</button>
+                </div>
+            </li>
+            <li class="mobile-nav-main-item">
+                <div class="mobile-nav-item-inner">
+                    <button type="button" class="mobile-nav-link mobile-nav-trigger mobile-nav-trigger-kategorien" aria-expanded="false"><span class="nav-dot"></span> Kategorien</button>
+                </div>
+            </li>
+            <li class="mobile-nav-main-item"><div class="mobile-nav-item-inner"><a href="/blog" class="mobile-nav-link">Blog</a></div></li>
+            <li class="mobile-nav-main-item"><div class="mobile-nav-item-inner"><a href="/portfolio" class="mobile-nav-link">Projekte</a></div></li>
+            <li class="mobile-nav-main-item"><div class="mobile-nav-item-inner"><a href="/team" class="mobile-nav-link">Team</a></div></li>
+            <li class="mobile-nav-main-item"><div class="mobile-nav-item-inner"><a href="/preisrechner" class="mobile-nav-link">Rechner</a></div></li>
+            <li class="mobile-nav-main-item"><div class="mobile-nav-item-inner"><a href="/kontakt" class="mobile-nav-link">Kontakt</a></div></li>
+            <li class="mobile-nav-back-item">
+                <div class="mobile-nav-item-inner">
+                    <div class="mobile-nav-back-btn-wrapper">
+                        <button type="button" class="mobile-nav-back-btn" aria-label="Zurück zum Hauptmenü">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 18l-6-6 6-6"/></svg>
+                        </button>
+                    </div>
+                </div>
+            </li>
+            <li class="mobile-nav-sub-group mobile-nav-sub-group-leistungen">
+                <ul class="mobile-nav-sub-list">
+                    <li class="mobile-nav-sub-item"><div class="mobile-nav-item-inner"><a href="/Bereiche/websites" class="mobile-nav-link">Websites</a></div></li>
+                    <li class="mobile-nav-sub-item"><div class="mobile-nav-item-inner"><a href="/Bereiche/webapps" class="mobile-nav-link">Webapps</a></div></li>
+                    <li class="mobile-nav-sub-item"><div class="mobile-nav-item-inner"><a href="/Bereiche/integrationen" class="mobile-nav-link">Integrationen</a></div></li>
+                </ul>
+            </li>
+            <li class="mobile-nav-sub-group mobile-nav-sub-group-fakten">
+                <ul class="mobile-nav-sub-list">
+                    <li class="mobile-nav-sub-item"><div class="mobile-nav-item-inner"><a href="/fakten/agentur-preis-enthalten" class="mobile-nav-link">Was ist im Agentur-Preis enthalten?</a></div></li>
+                    <li class="mobile-nav-sub-item"><div class="mobile-nav-item-inner"><a href="/fakten/was-kostet-website-agentur" class="mobile-nav-link">Was kostet eine Website?</a></div></li>
+                    <li class="mobile-nav-sub-item"><div class="mobile-nav-item-inner"><a href="/fakten/versteckte-kosten-webdesign" class="mobile-nav-link">Versteckte Kosten beim Webdesign</a></div></li>
+                    <li class="mobile-nav-sub-item"><div class="mobile-nav-item-inner"><a href="/fakten/webagentur-beauftragen-tipps" class="mobile-nav-link">Webagentur beauftragen</a></div></li>
+                    <li class="mobile-nav-sub-item"><div class="mobile-nav-item-inner"><a href="/fakten/agentur-vs-freelancer" class="mobile-nav-link">Agentur vs. Freelancer</a></div></li>
+                    <li class="mobile-nav-sub-item"><div class="mobile-nav-item-inner"><a href="/fakten/fragen-an-agentur" class="mobile-nav-link">Fragen an die Agentur</a></div></li>
+                    <li class="mobile-nav-sub-item"><div class="mobile-nav-item-inner"><a href="/fakten/website-wichtig-wie-mitarbeiter" class="mobile-nav-link">Website als Mitarbeiter</a></div></li>
+                    <li class="mobile-nav-sub-item"><div class="mobile-nav-item-inner"><a href="/fakten/website-relaunch-wann-lohnt" class="mobile-nav-link">Website Relaunch</a></div></li>
+                    <li class="mobile-nav-sub-item"><div class="mobile-nav-item-inner"><a href="/fakten/kosten-schlechte-website" class="mobile-nav-link">Kosten schlechter Websites</a></div></li>
+                </ul>
+            </li>
+            <li class="mobile-nav-sub-group mobile-nav-sub-group-kategorien">
+                <ul class="mobile-nav-sub-list">
+                    <li class="mobile-nav-sub-item"><div class="mobile-nav-item-inner"><a href="/leistungen/gesundheit-praxen" class="mobile-nav-link">Gesundheits- &amp; Praxis&shy;unternehmen</a></div></li>
+                    <li class="mobile-nav-sub-item"><div class="mobile-nav-item-inner"><a href="/leistungen/recht-beratung" class="mobile-nav-link">Recht &amp; Beratungs&shy;dienstleister</a></div></li>
+                    <li class="mobile-nav-sub-item"><div class="mobile-nav-item-inner"><a href="/leistungen/marken-shops" class="mobile-nav-link">Marken-, Produkt- &amp; Shop&shy;unternehmen</a></div></li>
+                    <li class="mobile-nav-sub-item"><div class="mobile-nav-item-inner"><a href="/leistungen/buero-projekte" class="mobile-nav-link">Büros &amp; Projekt&shy;unternehmen</a></div></li>
+                    <li class="mobile-nav-sub-item"><div class="mobile-nav-item-inner"><a href="/leistungen/tech-finanz" class="mobile-nav-link">Technologie-, IT- &amp; Finanz&shy;unternehmen</a></div></li>
+                </ul>
+            </li>
+                    <li class="mobile-nav-sub-item"><div class="mobile-nav-item-inner"><a href="/leistungen/recht-beratung" class="mobile-nav-link">Recht &amp; Beratungs&shy;dienstleister</a></div></li>
+                    <li class="mobile-nav-sub-item"><div class="mobile-nav-item-inner"><a href="/leistungen/marken-shops" class="mobile-nav-link">Marken-, Produkt- &amp; Shop&shy;unternehmen</a></div></li>
+                    <li class="mobile-nav-sub-item"><div class="mobile-nav-item-inner"><a href="/leistungen/buero-projekte" class="mobile-nav-link">Büros &amp; Projekt&shy;unternehmen</a></div></li>
+                    <li class="mobile-nav-sub-item"><div class="mobile-nav-item-inner"><a href="/leistungen/tech-finanz" class="mobile-nav-link">Technologie-, IT- &amp; Finanz&shy;unternehmen</a></div></li>
+                </ul>
+            </li>
+                    <li class="mobile-nav-sub-item"><div class="mobile-nav-item-inner"><a href="/leistungen/recht-beratung" class="mobile-nav-link">Recht &amp; Beratungs&shy;dienstleister</a></div></li>
+                    <li class="mobile-nav-sub-item"><div class="mobile-nav-item-inner"><a href="/leistungen/buero-projekte" class="mobile-nav-link">Büros &amp; Projekt&shy;unternehmen</a></div></li>
+                    <li class="mobile-nav-sub-item"><div class="mobile-nav-item-inner"><a href="/leistungen/marken-shops" class="mobile-nav-link">Marken-, Produkt- &amp; Shop&shy;unternehmen</a></div></li>
+                    <li class="mobile-nav-sub-item"><div class="mobile-nav-item-inner"><a href="/leistungen/tech-finanz" class="mobile-nav-link">Technologie-, IT- &amp; Finanz&shy;unternehmen</a></div></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    <header>
+        <a href="index" class="logo-test">DEVDESIGN.STUDIO</a>
+        <button class="burger-btn" aria-label="Menü öffnen" aria-expanded="false"><span>☰</span><span class="burger-btn-close">✕</span></button>
+        <nav aria-label="Hauptnavigation">
+            <div class="nav-menu-wrapper">
+                <div class="nav-row nav-row-top">
+                    <ul>
+                        <li>
+                            <a href="/Bereiche/Bereiche" class="nav-leistungen-link nav-dropdown-link" aria-describedby="leistungen-dropdown">Bereiche,</a>
+                        </li>
+                        <li>
+                            <a href="/fakten/Fakten" class="nav-fakten-link nav-dropdown-link" aria-describedby="fakten-dropdown">Fakten,</a>
+                        </li>
+                        <li>
+                            <a href="/leistungen/gesundheit-praxen" class="nav-kategorien-link nav-dropdown-link" aria-describedby="kategorien-dropdown">Kategorien,</a>
+                        </li>
+                        <li><a href="/blog">Blog,</a></li>
+                    </ul>
+                </div>
+                <div class="nav-row nav-row-bottom">
+                    <ul>
+                        <li><a href="/portfolio">Projekte,</a></li>
+                        <li><a href="/team">Team,</a></li>
+                        <li><a href="/preisrechner">Rechner</a></li>
+                    </ul>
+                </div>
+            </div>
+            <a href="/kontakt" class="button-kontakt">KONTAKT</a>
+        </nav>
+    </header>
+    <!-- Leistungen Dropdown (Desktop) -->
+    <nav class="leistungen-dropdown nav-dropdown-panel" id="leistungen-dropdown" aria-label="Leistungen" aria-hidden="true">
+        <ul class="leistungen-dropdown-list">
+            <li class="leistungen-dropdown-main-item"><div class="leistungen-dropdown-inner"><a href="/Bereiche/websites" class="leistungen-dropdown-link">Websites</a></div></li>
+            <li class="leistungen-dropdown-main-item"><div class="leistungen-dropdown-inner"><a href="/Bereiche/webapps" class="leistungen-dropdown-link">Webapps</a></div></li>
+            <li class="leistungen-dropdown-main-item"><div class="leistungen-dropdown-inner"><a href="/Bereiche/integrationen" class="leistungen-dropdown-link">Integrationen</a></div></li>
+        </ul>
+    </nav>
+    <!-- Fakten Dropdown (Desktop) -->
+    <nav class="fakten-dropdown nav-dropdown-panel" id="fakten-dropdown" aria-label="Fakten" aria-hidden="true">
+        <ul class="fakten-dropdown-list">
+
+            <li><div class="fakten-dropdown-inner"><a href="fakten/agentur-preis-enthalten" class="fakten-dropdown-link">Was ist im Agentur-Preis enthalten?</a></div></li>
+
+            <li><div class="fakten-dropdown-inner"><a href="fakten/was-kostet-website-agentur" class="fakten-dropdown-link">Was kostet eine Website?</a></div></li>
+
+            <li><div class="fakten-dropdown-inner"><a href="fakten/versteckte-kosten-webdesign" class="fakten-dropdown-link">Versteckte Kosten beim Webdesign</a></div></li>
+
+            <li><div class="fakten-dropdown-inner"><a href="fakten/webagentur-beauftragen-tipps" class="fakten-dropdown-link">Webagentur beauftragen</a></div></li>
+
+            <li><div class="fakten-dropdown-inner"><a href="fakten/agentur-vs-freelancer" class="fakten-dropdown-link">Agentur vs. Freelancer</a></div></li>
+
+            <li><div class="fakten-dropdown-inner"><a href="fakten/fragen-an-agentur" class="fakten-dropdown-link">Fragen an die Agentur</a></div></li>
+
+            <li><div class="fakten-dropdown-inner"><a href="fakten/website-wichtig-wie-mitarbeiter" class="fakten-dropdown-link">Website als Mitarbeiter</a></div></li>
+
+            <li><div class="fakten-dropdown-inner"><a href="fakten/website-relaunch-wann-lohnt" class="fakten-dropdown-link">Website Relaunch</a></div></li>
+
+            <li><div class="fakten-dropdown-inner"><a href="fakten/kosten-schlechte-website" class="fakten-dropdown-link">Kosten schlechter Websites</a></div></li>
+
+        </ul>
+    </nav>
+    <nav class="fakten-dropdown kategorien-dropdown nav-dropdown-panel" id="kategorien-dropdown" aria-label="Kategorien" aria-hidden="true">
+        <ul class="fakten-dropdown-list">
+            <li><div class="fakten-dropdown-inner"><a href="/leistungen/gesundheit-praxen" class="fakten-dropdown-link">Gesundheits- &amp; Praxis&shy;unternehmen</a></div></li>
+            <li><div class="fakten-dropdown-inner"><a href="/leistungen/recht-beratung" class="fakten-dropdown-link">Recht &amp; Beratungs&shy;dienstleister</a></div></li>
+            <li><div class="fakten-dropdown-inner"><a href="/leistungen/marken-shops" class="fakten-dropdown-link">Marken-, Produkt- &amp; Shop&shy;unternehmen</a></div></li>
+            <li><div class="fakten-dropdown-inner"><a href="/leistungen/buero-projekte" class="fakten-dropdown-link">Büros &amp; Projekt&shy;unternehmen</a></div></li>
+            <li><div class="fakten-dropdown-inner"><a href="/leistungen/tech-finanz" class="fakten-dropdown-link">Technologie-, IT- &amp; Finanz&shy;unternehmen</a></div></li>
+        </ul>
+    </nav>
+    <main>
+        <div class="main-content">
+        <section class="hero hero-minimal" aria-labelledby="hero-heading">
+            <div class="hero-minimal-inner">
+                <img src="https://res.cloudinary.com/dqcdbdt4v/image/upload/v1778756342/DD._black_ktxgvh.svg" alt="DEVDESIGN Logo" class="hero-minimal-logo" width="560" height="140" sizes="(max-width: 768px) 88vw, 64rem" loading="eager" fetchpriority="high" decoding="async" elementtiming="hero-logo">
+                <div class="hero-minimal-content">
+                    <h1 id="hero-heading" class="hero-minimal-headline">
+                        <span class="hero-headline-row"><span class="hero-split" style="--hero-word-i:0"><span class="hero-split__inner">Webagentur</span></span> <span class="hero-split" style="--hero-word-i:1"><span class="hero-split__inner">für</span></span> <span class="hero-split" style="--hero-word-i:2"><span class="hero-split__inner">Webdesign,</span></span> <span class="hero-split" style="--hero-word-i:3"><span class="hero-split__inner">Webentwicklung</span></span></span>
+                        <span class="hero-headline-row"><span class="hero-split" style="--hero-word-i:4"><span class="hero-split__inner">und</span></span> <span class="hero-split" style="--hero-word-i:5"><span class="hero-split__inner">SEO</span></span></span>
+                    </h1>
+                    <p class="hero-minimal-text"><span class="hero-split" style="--hero-word-i:0"><span class="hero-split__inner">Wir</span></span> <span class="hero-split" style="--hero-word-i:1"><span class="hero-split__inner">helfen</span></span> <span class="hero-split" style="--hero-word-i:2"><span class="hero-split__inner">bei</span></span> <span class="hero-split" style="--hero-word-i:3"><span class="hero-split__inner">allen</span></span> <span class="hero-split" style="--hero-word-i:4"><span class="hero-split__inner">Themen</span></span> <span class="hero-split" style="--hero-word-i:5"><span class="hero-split__inner">rundum</span></span> <span class="hero-split" style="--hero-word-i:6"><span class="hero-split__inner">professionell</span></span> <span class="hero-split" style="--hero-word-i:7"><span class="hero-split__inner">aussehende</span></span> <span class="hero-split" style="--hero-word-i:8"><span class="hero-split__inner">Websiten,</span></span> <span class="hero-split" style="--hero-word-i:9"><span class="hero-split__inner">Formularen</span></span> <span class="hero-split" style="--hero-word-i:10"><span class="hero-split__inner">die</span></span> <span class="hero-split" style="--hero-word-i:11"><span class="hero-split__inner">Conversions</span></span> <span class="hero-split" style="--hero-word-i:12"><span class="hero-split__inner">erzielen,</span></span> <span class="hero-split" style="--hero-word-i:13"><span class="hero-split__inner">hohes</span></span> <span class="hero-split" style="--hero-word-i:14"><span class="hero-split__inner">Ranking</span></span> <span class="hero-split" style="--hero-word-i:15"><span class="hero-split__inner">auf</span></span> <span class="hero-split" style="--hero-word-i:16"><span class="hero-split__inner">Google,</span></span> <span class="hero-split" style="--hero-word-i:17"><span class="hero-split__inner">verkaufsoptimierte</span></span> <span class="hero-split" style="--hero-word-i:18"><span class="hero-split__inner">Online</span></span> <span class="hero-split" style="--hero-word-i:19"><span class="hero-split__inner">Präsenz</span></span> <span class="hero-split" style="--hero-word-i:20"><span class="hero-split__inner">und</span></span> <span class="hero-split" style="--hero-word-i:21"><span class="hero-split__inner">vieles</span></span> <span class="hero-split" style="--hero-word-i:22"><span class="hero-split__inner">mehr.</span></span></p>
+                </div>
+            </div>
+        </section>
+<section class="leistungen" id="leistungen">            <h2 class="h2-unterhero">Unsere letzten Projekte</h2>
+            <div class="leistungen-grid">
+            <article class="leistungen-item">
+                <a href="portfolio/yndygo" class="leistungen-item-link" aria-label="Website für die Modemarke YNDYGO ansehen">
+                <video
+                class="leistungen-item-img"
+                src="https://res.cloudinary.com/dqcdbdt4v/video/upload/f_auto,q_auto/YNDYGOindexcompressedreal_vy0t6s.mp4"
+                poster="https://res.cloudinary.com/dqcdbdt4v/image/upload/w_800,c_scale,f_auto,q_auto:eco/yy4_bvwcq8.png"
+                muted
+                playsinline
+                autoplay
+                loop
+                preload="none"
+                loading="lazy"
+                crossorigin="anonymous"
+              ></video>
+               <div class="leistungen-item-content">
+                <p class="leistungen-item-h3">Website für die Modemarke YNDYGO</p>
+                <span class="projekt-span">2025</span>
+            </div>
+                <h3 class="leistungen-item-text">Website</h3>
+                </a>
+            </article>
+            <article class="leistungen-item">
+                <a href="portfolio/staffconnect" class="leistungen-item-link" aria-label="Konversionsoptimierte Website für Kreativ Agentur ansehen">
+                <video
+                class="leistungen-item-img"
+                src="https://res.cloudinary.com/dqcdbdt4v/video/upload/f_auto,q_auto/v1772287754/720_w43tw5.mp4"
+                poster="https://res.cloudinary.com/dqcdbdt4v/image/upload/w_800,c_scale,f_auto,q_auto:eco/v1772290255/leonstaff_na7eh8.png"
+                muted
+                playsinline
+                autoplay
+                loop
+                preload="none"
+                loading="lazy"
+                crossorigin="anonymous"
+              ></video>
+              <div class="leistungen-item-content">
+                <p class="leistungen-item-h3">Konversionsoptimierte Website für Kreativ Agentur</p>
+                <span class="projekt-span">2026</span>
+            </div>
+                <h3 class="leistungen-item-text">Website</h3>
+                </a>
+            </article>
+
+            <article class="leistungen-item">
+                <a href="portfolio/behindbars" class="leistungen-item-link" aria-label="Kalender für Youtube-Format BehindBars ansehen">
+                <video
+                class="leistungen-item-img"
+                src="https://res.cloudinary.com/dqcdbdt4v/video/upload/f_auto,q_auto/BehindBarscompressedindex_mnr8wk.mp4"
+                poster="https://res.cloudinary.com/dqcdbdt4v/image/upload/w_800,c_scale,f_auto,q_auto:eco/behindbars1_worpq2.png"
+                muted
+                playsinline
+                autoplay
+                loop
+                preload="none"
+                loading="lazy"
+                crossorigin="anonymous"
+              ></video>
+              <div class="leistungen-item-content">
+                <p class="leistungen-item-h3">Kalender für Youtube-Format BehindBars</p>
+                <span class="projekt-span">2024</span>
+            </div>
+                <h3 class="leistungen-item-text">Webapp/Integration</h3>
+                </a>
+            </article>
+            <article class="leistungen-item">
+                <a href="portfolio/blume" class="leistungen-item-link" aria-label="To-Do App für Blume ansehen">
+                <video
+                class="leistungen-item-img"
+                src="https://res.cloudinary.com/dqcdbdt4v/video/upload/f_auto,q_auto/v1772286128/BLUME_qgkrui.mp4"
+                poster="https://res.cloudinary.com/dqcdbdt4v/image/upload/w_800,c_scale,f_auto,q_auto:eco/v1772289368/blume_p196eu.png"
+                muted
+                playsinline
+                autoplay
+                loop
+                preload="none"
+                loading="lazy"
+                crossorigin="anonymous"
+              ></video>
+              <div class="leistungen-item-content">
+                <p class="leistungen-item-h3">To-Do App für Blume.</p>
+                <span class="projekt-span">2026</span>
+            </div>
+                <h3 class="leistungen-item-text">Webapp</h3>
+                </a>
+            </article>
+        </div>
+        </section>
+        <section class="text">
+            <h2 class="text">unsere Philosophie</h2>
+            <p class="text-p">DEVDESIGN besteht aus 2 Experten in ihrem Feld. DEV ist verantwortlich für SEO, Backend und Conversions. DESIGN ist verantwortlich für Ästhethik, User Experience, Layout und System. Zusammen sind wir dazu in der Lage immer das perfekte Ergebnis zu erzielen um maximale Conversions zu erzielen.
+            </p>
+        </section>
+        <section class="services" >
+            <h2 class="services-h2">Unsere Webdesign- & Entwicklungs-Leistungen</h2>
+            <p class="services-p">Unser Leistungsportfolio. Maßgeschneiderte Dienstleistungen, hohe Effizienz und Maximal erfolgreiche Systeme und Konzepte.
+                .</p>
+            <ul class="services-grid" role="list">
+                <li class="service-item">
+                    <a href="Leistungen/websites" class="service-item-link">
+                        <span class="service-number">01</span>
+                        <h3 class="service-title">Websites</h3>
+                        <p class="service-desc">Proffessionelle Websites für Unternehmen, die ihre Onlinepräsenz stärken und ihre Zielgruppe erreichen wollen.</p>
+                    </a>
+                </li>
+                <li class="service-item">
+                    <a href="Leistungen/webapps" class="service-item-link">
+                        <span class="service-number">02</span>
+                        <h3 class="service-title">Webapps</h3>
+                        <p class="service-desc">Anwendungen für Unternehmen, die Unternehmensprozesse visualisieren möchten und Tools für ihre Mitarbeiter entwickeln wollen.</p>
+                    </a>
+                </li>
+                <li class="service-item long">
+                    <a href="Leistungen/integrationen" class="service-item-link">
+                        <span class="service-number">03</span>
+                        <h3 class="service-title">Integrationen</h3>
+                        <p class="service-desc">Integrationen für Unternehmen, die ihre Daten mit anderen Systemen synchronisieren möchten und Automatisierungen für ihre Mitarbeiter entwickeln wollen.</p>
+                    </a>
+                </li>
+            </ul>
+        </section>
+        <section class="dd-voices" aria-labelledby="voices-heading">
+            <div class="dd-voices__inner">
+                <div class="dd-voices__head">
+                    <p class="dd-voices__eyebrow">Das sagen unsere Kunden über unsere Webprojekte</p>
+                    <h2 id="voices-heading" class="dd-voices__h2">
+                        Was unsere <span class="dd-voices__h2-soft">Kunden</span> sagen.
+                    </h2>
+                </div>
+                <ul class="dd-voices__grid" role="list">
+                    <li>
+                        <figure class="dd-voices__card">
+                            <div class="dd-voices__top">
+                                <span class="dd-voices__avatar">
+                                    <img
+                                        src="https://www.staffconnect.agency/wp-content/uploads/2025/09/25-08-28-13-58-47-na-S.jpg"
+                                        alt="Selina Turing, Shift Management bei StaffConnect"
+                                        width="80"
+                                        height="80"
+                                        loading="lazy"
+                                        decoding="async"
+                                        referrerpolicy="no-referrer"
+                                    />
+                                </span>
+                                <span class="dd-voices__brand" aria-label="StaffConnect Logo">
+                                    <img
+                                        src="images/stafflogo.png"
+                                        alt="StaffConnect"
+                                        width="120"
+                                        height="32"
+                                        loading="lazy"
+                                        decoding="async"
+                                    />
+                                </span>
+                            </div>
+                            <blockquote class="dd-voices__quote" cite="https://www.staffconnect.agency">
+                                <span class="dd-voices__mark" aria-hidden="true">&ldquo;</span>
+                                <p class="dd-voices__text">Die Jungs haben unser SEO so angetrieben, dass wir von ChatGPT als Nummer&nbsp;1 Personaldienstleister vorgeschlagen werden.</p>
+                            </blockquote>
+                            <figcaption class="dd-voices__caption">
+                                <span class="dd-voices__name">Selina Turing</span>
+                                <span class="dd-voices__role">
+                                    <span>Shift Management</span>,
+                                    <span class="dd-voices__role-company">StaffConnect</span>
+                                </span>
+                            </figcaption>
+                        </figure>
+                    </li>
+                    <li>
+                        <figure class="dd-voices__card">
+                            <div class="dd-voices__top">
+                                <span class="dd-voices__avatar">
+                                    <img
+                                        src="https://res.cloudinary.com/dqcdbdt4v/image/upload/v1778753282/WhatsApp_Image_2026-05-14_at_12.04.40_bnddwy.webp"
+                                        alt="Joel Mai-Rosu, CEO YNDYGO"
+                                        width="80"
+                                        height="80"
+                                        loading="lazy"
+                                        decoding="async"
+                                        crossorigin="anonymous"
+                                    />
+                                </span>
+                                <span class="dd-voices__brand" aria-label="YNDYGO Logo">
+                                    <img
+                                        src="https://res.cloudinary.com/dqcdbdt4v/image/upload/f_auto,q_auto/Logo-red_n6vdlf.png"
+                                        alt="YNDYGO"
+                                        width="120"
+                                        height="32"
+                                        loading="lazy"
+                                        decoding="async"
+                                        crossorigin="anonymous"
+                                    />
+                                </span>
+                            </div>
+                            <blockquote class="dd-voices__quote" cite="https://yndygo.com">
+                                <span class="dd-voices__mark" aria-hidden="true">&ldquo;</span>
+                                <p class="dd-voices__text">Ich brauchte eine App für meine To-Dos mit einer Funktion, die es nirgendwo gab, und die Jungs haben das toll hinbekommen.</p>
+                            </blockquote>
+                            <figcaption class="dd-voices__caption">
+                                <span class="dd-voices__name">Joel Mai-Rosu</span>
+                                <span class="dd-voices__role">
+                                    <span>CEO</span>,
+                                    <span class="dd-voices__role-company">YNDYGO</span>
+                                </span>
+                            </figcaption>
+                        </figure>
+                    </li>
+                    <li>
+                        <figure class="dd-voices__card">
+                            <div class="dd-voices__top">
+                                <span class="dd-voices__avatar dd-voices__avatar--mono" aria-hidden="true">CK</span>
+                                <span class="dd-voices__brand" aria-label="BehindBars Logo">
+                                    <img
+                                        src="https://res.cloudinary.com/dqcdbdt4v/image/upload/f_auto,q_auto/logo.logopng_h8zrbb.png"
+                                        alt="BehindBars"
+                                        width="120"
+                                        height="32"
+                                        loading="lazy"
+                                        decoding="async"
+                                        crossorigin="anonymous"
+                                    />
+                                </span>
+                            </div>
+                            <blockquote class="dd-voices__quote">
+                                <span class="dd-voices__mark" aria-hidden="true">&ldquo;</span>
+                                <p class="dd-voices__text">Uns fehlte ein gemeinsamer Kalender zwischen den Managements und uns. Mit ihrer Hilfe haben wir jetzt einen, der mit unserer Infrastruktur zusammenarbeitet und uns viel Zeit spart, danke Jungs.</p>
+                            </blockquote>
+                            <figcaption class="dd-voices__caption">
+                                <span class="dd-voices__name">Chris Kolev</span>
+                                <span class="dd-voices__role">
+                                    <span>CEO</span>,
+                                    <span class="dd-voices__role-company">BehindBars</span>
+                                </span>
+                            </figcaption>
+                        </figure>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!-- Branchen-Überblicke (Themenwelten) -->
+        <section class="dd-leistungen-bereiche" aria-labelledby="dd-leistungen-bereiche-heading">
+            <div class="dd-leistungen-bereiche__layout">
+                <div class="dd-leistungen-bereiche__head">
+                    <p class="dd-leistungen-bereiche__eyebrow">Themenwelten</p>
+                    <h2 id="dd-leistungen-bereiche-heading" class="dd-leistungen-bereiche__h2">Wir sind für jeden Bereich vorbereitet!</h2>
+                    <p class="dd-leistungen-bereiche__lead">Wähle eine Branche, um die Übersicht mit allen passenden Unterseiten zu öffnen.</p>
+                </div>
+                <div class="dd-leistungen-bereiche__nav" aria-label="Branchen und Themenwelten">
+                    <ul class="dd-leistungen-bereiche__list" role="list">
+                        <li>
+                            <a class="dd-leistungen-bereiche__row" href="/leistungen/gesundheit-praxen">
+                                <span class="dd-leistungen-bereiche__row-text">
+                                    <span class="dd-leistungen-bereiche__row-title">Gesundheits- &amp; Praxis&shy;unternehmen</span>
+                                    <span class="dd-leistungen-bereiche__row-desc">Praxen, Kliniken und Angebote, die Ruhe, Vertrauen und klare Orientierung brauchen.</span>
+                                </span>
+                                <span class="dd-leistungen-bereiche__row-action" aria-hidden="true">
+                                    <span class="dd-leistungen-bereiche__row-icon" aria-hidden="true">
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4 10h12M11.5 6.5 16 10l-4.5 3.5" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                    </span>
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dd-leistungen-bereiche__row" href="/leistungen/buero-projekte">
+                                <span class="dd-leistungen-bereiche__row-text">
+                                    <span class="dd-leistungen-bereiche__row-title">Büros &amp; Projekt&shy;unternehmen</span>
+                                    <span class="dd-leistungen-bereiche__row-desc">Architektur, Engineering und kreative Disziplinen mit starker Projekt- und Portfolio-Präsenz.</span>
+                                </span>
+                                <span class="dd-leistungen-bereiche__row-action" aria-hidden="true">
+                                    <span class="dd-leistungen-bereiche__row-icon" aria-hidden="true">
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4 10h12M11.5 6.5 16 10l-4.5 3.5" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                    </span>
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dd-leistungen-bereiche__row" href="/leistungen/marken-shops">
+                                <span class="dd-leistungen-bereiche__row-text">
+                                    <span class="dd-leistungen-bereiche__row-title">Marken-, Produkt- &amp; Shop&shy;unternehmen</span>
+                                    <span class="dd-leistungen-bereiche__row-desc">Marken, Shops und Angebote, bei denen Story, Tempo und Conversion zusammenspielen.</span>
+                                </span>
+                                <span class="dd-leistungen-bereiche__row-action" aria-hidden="true">
+                                    <span class="dd-leistungen-bereiche__row-icon" aria-hidden="true">
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4 10h12M11.5 6.5 16 10l-4.5 3.5" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                    </span>
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dd-leistungen-bereiche__row" href="/leistungen/tech-finanz">
+                                <span class="dd-leistungen-bereiche__row-text">
+                                    <span class="dd-leistungen-bereiche__row-title">Technologie-, IT- &amp; Finanz&shy;unternehmen</span>
+                                    <span class="dd-leistungen-bereiche__row-desc">SaaS, IT und Finanz: Oberflächen, die Vertrauen schaffen und komplexe Inhalte zugänglich machen.</span>
+                                </span>
+                                <span class="dd-leistungen-bereiche__row-action" aria-hidden="true">
+                                    <span class="dd-leistungen-bereiche__row-icon" aria-hidden="true">
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4 10h12M11.5 6.5 16 10l-4.5 3.5" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                    </span>
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dd-leistungen-bereiche__row" href="/leistungen/recht-beratung">
+                                <span class="dd-leistungen-bereiche__row-text">
+                                    <span class="dd-leistungen-bereiche__row-title">Recht &amp; Beratungs&shy;dienstleister</span>
+                                    <span class="dd-leistungen-bereiche__row-desc">Kanzleien und Beratung: seriöse Expertise, fundierte Texte und Formulare, die Vertrauen tragen.</span>
+                                </span>
+                                <span class="dd-leistungen-bereiche__row-action" aria-hidden="true">
+                                    <span class="dd-leistungen-bereiche__row-icon" aria-hidden="true">
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4 10h12M11.5 6.5 16 10l-4.5 3.5" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                    </span>
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="timeline" id="timeline">
+            <div class="timeline-intro">
+                <h2 class="timeline-intro-h2">Wie arbeitet DEVDESIGN?
+                </h2>
+                <p class="timeline-intro-p">⁠Konzeption, Beratung, Prototypen, Umsetzung, Analyse und Auswertung deines Projekts.
+                </p>
+            </div>
+            <div class="timeline-container">
+                <div class="timeline-item">
+                    <span class="timeline-number">01</span>
+                    <h3 class="timeline-title">Erstberatung & Zieldefinition</h3>
+                    <div class="timeline-divider"></div>
+                    <div class="timeline-content-wrapper">
+                        <div>
+                            <p class="timeline-desc">⁠In einem kostenlosen ersten Call, finden wir heraus, wie sich ihre Onlinepräsenz verstärken lässt, welche Hebel es gibt und wie ein langfristiger Plan aussehen kann. Dabei erklären wir auch SEO und SEA.
+                            </p>
+                            <ul class="timeline-badges">
+                                <li>Unverbindlich</li>
+                                <li>effizient</li>
+                                <li>Strategische Empfehlung</li>
+                                <li>lösungsorientiert</li>
+                                <li>SEO & Außenauftritt</li>
+                            </ul>
+                        </div>
+                        <a href="/kontakt" class="timeline-link">
+                            <span>Mehr erfahren</span>
+                            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 11L11 1M11 1H3M11 1V9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <span class="timeline-number">02</span>
+                    <h3 class="timeline-title">Konzept & Planung</h3>
+                    <div class="timeline-divider"></div>
+                    <div class="timeline-content-wrapper">
+                        <div>
+                            <p class="timeline-desc">Wir entwickeln eine maßgeschneiderte Strategie für Ihre digitale Präsenz. Von der Informationsarchitektur bis zum Content-Konzept – jeder Schritt wird sorgfältig geplant, um maximale Wirkung zu erzielen.</p>
+                            <ul class="timeline-badges">
+                                <li>Klare Struktur</li>
+                                <li>Strategische Planung</li>
+                                <li>Zielorientiert</li>
+                                <li>Kommunikativ</li>
+                                <li>Langfristig gedacht</li>
+                            </ul>
+                        </div>
+                        <a href="/kontakt" class="timeline-link">
+                            <span>Mehr erfahren</span>
+                            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 11L11 1M11 1H3M11 1V9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <span class="timeline-number">03</span>
+                    <h3 class="timeline-title">Design & Prototyp</h3>
+                    <div class="timeline-divider"></div>
+                    <div class="timeline-content-wrapper">
+                        <div>
+                            <p class="timeline-desc">Basierend auf dem Konzept gestalten wir ein individuelles Design, das Ihr Unternehmen optimal repräsentiert. Sie erhalten interaktive Prototypen zur Abstimmung, bevor die Entwicklung beginnt.</p>
+                            <ul class="timeline-badges">
+                                <li>Individuelles Design</li>
+                                <li>Seriöse Außenwirkung</li>
+                                <li>Interaktive Prototypen</li>
+                                <li>Abstimmung vor Umsetzung</li>
+                                <li>Transparenter Prozess</li>
+                            </ul>
+                        </div>
+                        <a href="/kontakt" class="timeline-link">
+                            <span>Mehr erfahren</span>
+                            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 11L11 1M11 1H3M11 1V9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <span class="timeline-number">04</span>
+                    <h3 class="timeline-title">Entwicklung & Umsetzung</h3>
+                    <div class="timeline-divider"></div>
+                    <div class="timeline-content-wrapper">
+                        <div>
+                            <p class="timeline-desc">Unser Entwicklerteam setzt das freigegebene Design pixelgenau um. Responsive Darstellung, schnelle Ladezeiten und barrierefreie Zugänglichkeit sind dabei selbstverständlich.</p>
+                            <ul class="timeline-badges">
+                                <li>Pixelgenaue Umsetzung</li>
+                                <li>Responsive Darstellung</li>
+                                <li>Schnelle Ladezeiten</li>
+                                <li>Barrierefrei</li>
+                                <li>Technisch sauber</li>
+                            </ul>
+                        </div>
+                        <a href="/kontakt" class="timeline-link">
+                            <span>Mehr erfahren</span>
+                            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 11L11 1M11 1H3M11 1V9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <span class="timeline-number">05</span>
+                    <h3 class="timeline-title">Launch & Support</h3>
+                    <div class="timeline-divider"></div>
+                    <div class="timeline-content-wrapper">
+                        <div>
+                            <p class="timeline-desc">Nach umfassenden Tests geht Ihre Website live. Wir begleiten Sie auch danach – mit regelmäßigen Updates, technischem Support und optionaler Weiterentwicklung Ihrer digitalen Präsenz.</p>
+                            <ul class="timeline-badges">
+                                <li>Sorgfältig getestet</li>
+                                <li>Begleiteter Livegang</li>
+                                <li>Regelmäßige Updates</li>
+                                <li>Persönlicher Support</li>
+                                <li>Optional erweiterbar</li>
+                            </ul>
+                        </div>
+                        <a href="/kontakt" class="timeline-link">
+                            <span>Mehr erfahren</span>
+                            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 11L11 1M11 1H3M11 1V9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="jaodernein">
+            <h2 class="jaodernein-h2">Brauchst du eine Website?</h2>
+            <div class="jaodernein-options">
+            <a href="/anderes a hrefs/fragebogen" class="jaodernein-ja" aria-label="Ja, zum Fragebogen"></a>
+            <a href="/anderes a hrefs/nein" class="jaodernein-nein" aria-label="Nein, zu nein.html"></a>
+        </div>
+        </section>
+        <section class="kundenkommen">
+            <div class="kundenkommen-container">
+                <div class="kundenkommen-content">
+                    <div class="team-list">
+                        <h2 class="kundenkommen-h2">Kontaktiere uns!</h2>
+
+                        <p class="kundenkommen-p">
+                            <span class="kundenkommen-p-part2">Kunden kommen zu uns für das was wir machen</span><span class="kundenkommen-p-part1">, sie bleiben für wie wir es machen</span>
+                        </p>
+                        <div class="team-member">
+                            <figure>
+                                <img
+                                    src="https://res.cloudinary.com/dqcdbdt4v/image/upload/v1772028127/joey_me8ade.jpg"
+                                    alt="David Chiosea – Frontend Developer"
+                                    loading="lazy"
+                                    width="300"
+                                    height="300"
+                                    class="team-member-img"
+                                    crossorigin="anonymous"
+                                />
+                                <figcaption>
+                                    <h3 class="h3 team-member-name">David Chiosea</h3>
+                                    <p class="p team-member-role">Frontend Developer</p>
+                                </figcaption>
+                            </figure>
+                        </div>
+                        <div class="team-member">
+                            <figure>
+                                <img
+                                    src="https://res.cloudinary.com/dqcdbdt4v/image/upload/v1773142106/leon_rbinpu.jpg"
+                                    alt="Leon Chiosea – Backend Developer"
+                                    loading="lazy"
+                                    width="300"
+                                    height="300"
+                                    class="team-member-img"
+                                    crossorigin="anonymous"
+                                />
+                                <figcaption>
+                                    <h3 class="h3 team-member-name">Leon Chiosea</h3>
+                                    <p class="p team-member-role">Backend Developer</p>
+                                </figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section FAQ">
+            <h2 class="h2">Häufige Fragen an DEVDESIGN!</h2>
+
+            <p class="p">
+                DEVDESIGN ist eine Webagentur für professionelles Webdesign, moderne Webentwicklung und nachhaltige Suchmaschinenoptimierung (SEO). Hier beantworten wir die wichtigsten Fragen zu unseren Leistungen und unserer Arbeitsweise.
+            </p>
+
+            <div class="faq-container">
+                <details class="faq-item">
+                    <summary class="faq-item-title">Was macht DEVDESIGN als Webagentur genau?</summary>
+                    <p class="faq-item-description">
+                        DEVDESIGN entwickelt individuelle Websites, Webanwendungen und SEO-Strategien für Unternehmen. Wir kombinieren hochwertiges Webdesign mit technischer Webentwicklung und sorgen dafür, dass Websites nicht nur gut aussehen, sondern auch schnell, sicher und suchmaschinenoptimiert funktionieren.
+                    </p>
+                </details>
+
+                <details class="faq-item">
+                    <summary class="faq-item-title">Was ist der Unterschied zwischen Webdesign und Webentwicklung?</summary>
+                    <p class="faq-item-description">
+                        Webdesign betrifft die visuelle Gestaltung, Benutzerführung (UX/UI) und Markenpräsentation einer Website. Webentwicklung umfasst die technische Umsetzung im Frontend und Backend, also Programmierung, Datenbanken, Schnittstellen und Performance-Optimierung. Bei DEVDESIGN arbeiten Frontend- und Backend-Entwicklung eng zusammen, um Design und Technik optimal zu verbinden.
+                    </p>
+                </details>
+
+                <details class="faq-item">
+                    <summary class="faq-item-title">Für welche Unternehmen ist DEVDESIGN die richtige Webagentur?</summary>
+                    <p class="faq-item-description">
+                        Wir arbeiten mit Unternehmen, die Wert auf professionelle Online-Präsenz, saubere technische Umsetzung und nachhaltige SEO legen. Besonders geeignet sind beratende Unternehmen, Gesundheitsdienstleister, Architekten, Technologieunternehmen sowie Marken mit hohem Designanspruch.
+                    </p>
+                </details>
+
+                <details class="faq-item">
+                    <summary class="faq-item-title">Wie wichtig ist SEO bei einer neuen Website?</summary>
+                    <p class="faq-item-description">
+                        Suchmaschinenoptimierung ist entscheidend, damit eine Website bei Google gefunden wird. Deshalb berücksichtigen wir technische SEO, Seitenstruktur, Ladezeiten, Keyword-Strategie und Content-Optimierung bereits bei der Entwicklung. SEO wird bei DEVDESIGN nicht nachträglich ergänzt, sondern von Anfang an integriert.
+                    </p>
+                </details>
+
+                <details class="faq-item">
+                    <summary class="faq-item-title">Entwickelt DEVDESIGN auch individuelle Webanwendungen?</summary>
+                    <p class="faq-item-description">
+                        Ja. Neben klassischen Unternehmenswebsites entwickeln wir individuelle Webanwendungen, Kundenportale, Terminbuchungssysteme und digitale Prozesslösungen. Durch unsere Backend-Expertise können wir maßgeschneiderte Lösungen umsetzen, die exakt auf die Anforderungen eines Unternehmens abgestimmt sind.
+                    </p>
+                </details>
+
+                <details class="faq-item">
+                    <summary class="faq-item-title">Was unterscheidet DEVDESIGN von anderen Webagenturen?</summary>
+                    <p class="faq-item-description">
+                        DEVDESIGN besteht aus zwei spezialisierten Köpfen: einem Experten für Frontend und Design sowie einem Backend-Entwickler für technische Architektur und Systemlogik. Diese klare Aufteilung sorgt für hohe Qualität, schnelle Kommunikation und technisch saubere Lösungen ohne unnötige Komplexität.
+                    </p>
+                </details>
+
+                <details class="faq-item">
+                    <summary class="faq-item-title">Wie läuft ein Webdesign- oder Webentwicklungsprojekt bei DEVDESIGN ab?</summary>
+                    <p class="faq-item-description">
+                        Ein Projekt beginnt mit einer strategischen Analyse der Ziele, Zielgruppe und Wettbewerbsumgebung. Anschließend folgen Konzeption, Design, technische Entwicklung, SEO-Optimierung und abschließende Tests. Nach dem Launch begleiten wir unsere Kunden bei Weiterentwicklung, Performance-Optimierung und Wachstum.
+                    </p>
+                </details>
+
+                <details class="faq-item">
+                    <summary class="faq-item-title">Bietet DEVDESIGN auch langfristige Betreuung und Weiterentwicklung an?</summary>
+                    <p class="faq-item-description">
+                        Ja. Wir unterstützen Unternehmen langfristig bei technischer Wartung, Sicherheitsupdates, Performance-Optimierung und SEO-Weiterentwicklung. Eine Website ist kein einmaliges Projekt, sondern ein digitales Wachstumstool, das kontinuierlich optimiert werden sollte.
+                    </p>
+                </details>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer-logo">
+            <img src="https://res.cloudinary.com/dqcdbdt4v/image/upload/f_svg/DEVDESIGN_risffk.svg" alt="DEVDESIGN" class="footer-logo-img" loading="lazy" width="400" height="100" crossorigin="anonymous">
+        </div>
+        <div class="footer-content">
+            <div class="footer-column footer-column--whatsapp page-home-footer-wa-desktop">
+                <h2 class="footer-heading">WHATSAPP</h2>
+                <a
+                    href="https://wa.me/491743992254"
+                    class="footer-whatsapp-btn"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    title="WhatsApp · 0174 399 2254"
+                    aria-label="WhatsApp-Chat starten, Mobilnummer 0174 399 2254"
+                >
+                    <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.372a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.435 9.884-9.881 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L0 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                    </svg>
+                </a>
+            </div>
+            <div class="footer-column footer-links">
+                <div class="page-home-footer-links-head">
+                    <h2 class="footer-heading">SCHNELLZUGRIFF</h2>
+                    <div class="page-home-footer-wa-mobile-stack">
+                        <a
+                            href="https://wa.me/491743992254"
+                            class="footer-whatsapp-btn page-home-footer-wa-mobile"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            title="WhatsApp · 0174 399 2254"
+                            aria-label="WhatsApp-Chat starten, Mobilnummer 0174 399 2254"
+                        >
+                            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.372a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.435 9.884-9.881 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L0 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="page-home-footer-links-row">
+                    <ul class="footer-nav">
+                        <li><a href="/team">TEAM</a></li>
+                        <li><a href="/kontakt">KONTAKT</a></li>
+                        <li><a href="/portfolio">PORTFOLIO</a></li>
+                        <li><a href="/impressum">IMPRESSUM</a></li>
+                        <li><a href="/datenschutz">DATENSCHUTZ</a></li>
+                        <li><a href="#cookies" class="dd-footer-open-cookies">COOKIES</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-column footer-address">
+                <h2 class="footer-heading">ADDRESSE</h2>
+                <p class="footer-address-text">Charlottenburger Straße 110A,<br>Berlin 13086</p>
+            </div>
+        </div>
+        <div class="footer-cta">
+            <div class="footer-cta-text">
+                <span class="footer-cta-small">IHR HABT EINE IDEE?</span>
+                <a href="/kontakt" class="footer-cta-link">
+                    <span class="footer-cta-big">LET'S TALK</span>
+                    <span class="footer-arrow">
+                        <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M15 45L45 15M45 15H20M45 15V40" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </span>
+                </a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <span class="footer-copyright">alle Rechte vorbehalten</span>
+            <span class="footer-by">by DEVDESIGN</span>
+        </div>
+    </footer>
+    </div>
+
+    <!-- Libraries werden dynamisch nach LCP geladen für bessere Performance -->
+    <script type="module" src="main.js"></script>
+
+
+
+</body>
+</html>
