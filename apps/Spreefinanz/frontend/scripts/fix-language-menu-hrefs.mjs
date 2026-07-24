@@ -53,15 +53,28 @@ function absoluteUrlToFrontendFile(absUrl) {
   if (!p || p === '/') {
     return path.join(FRONTEND, 'index.html');
   }
+  if (p === '/ENG') {
+    return path.join(FRONTEND, 'ENG', 'index.html');
+  }
   const segments = p.split('/').filter(Boolean);
   const last = segments[segments.length - 1];
   if (!last.includes('.')) {
-    return path.join(FRONTEND, ...segments, 'index.html');
+    return path.join(FRONTEND, ...segments, `${last}.html`);
   }
   return path.join(FRONTEND, ...segments);
 }
 
 function hrefFromSourceToTarget(sourceFileAbs, targetFileAbs) {
+  const relFile = path.relative(FRONTEND, targetFileAbs).split(path.sep).join('/');
+  if (relFile === 'index.html') return '/';
+  if (relFile === 'ENG/index.html') return '/ENG/';
+  if (relFile.endsWith('.html')) {
+    const withoutExt = relFile.slice(0, -5);
+    const sourceDir = path.dirname(sourceFileAbs);
+    let rel = path.relative(sourceDir, path.join(FRONTEND, withoutExt));
+    rel = rel.split(path.sep).join('/');
+    return rel;
+  }
   let rel = path.relative(path.dirname(sourceFileAbs), targetFileAbs);
   rel = rel.split(path.sep).join('/');
   if (rel === '') rel = '.';

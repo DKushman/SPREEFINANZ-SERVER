@@ -46,16 +46,16 @@ html = html.replace(
   'content="Find the right international health insurance in 4 steps: our Insurance Check identifies your profile and shows you the best options." name="description"/>'
 );
 html = html.replace(
-  /<link href="https:\/\/www\.spreefinanz\.de\/versicherungs-check\.html" rel="canonical"\/>/,
-  '<link href="https://www.spreefinanz.de/ENG/insurance-check.html" rel="canonical"/>'
+  /<link href="https:\/\/www\.spreefinanz\.de\/versicherungs-check" rel="canonical"\/>/,
+  '<link href="https://www.spreefinanz.de/ENG/insurance-check" rel="canonical"/>'
 );
 html = html.replace(
-  /hreflang="de" href="https:\/\/www\.spreefinanz\.de\/versicherungs-check\.html"/,
-  'hreflang="de" href="https://www.spreefinanz.de/versicherungs-check.html"'
+  /hreflang="de" href="https:\/\/www\.spreefinanz\.de\/versicherungs-check"/,
+  'hreflang="de" href="https://www.spreefinanz.de/versicherungs-check"'
 );
 html = html.replace(
-  /hreflang="en" href="https:\/\/www\.spreefinanz\.de\/ENG\/insurance-check\.html"/,
-  'hreflang="en" href="https://www.spreefinanz.de/ENG/insurance-check.html"'
+  /hreflang="en" href="https:\/\/www\.spreefinanz\.de\/ENG\/insurance-check"/,
+  'hreflang="en" href="https://www.spreefinanz.de/ENG/insurance-check"'
 );
 html = html.replace(/content="de_DE"/, 'content="en_US"');
 html = html.replace(
@@ -67,8 +67,8 @@ html = html.replace(
   'property="og:description" content="Find the right international health insurance in 4 steps: our Insurance Check identifies your profile and shows you the best options."'
 );
 html = html.replace(
-  /property="og:url" content="https:\/\/www\.spreefinanz\.de\/versicherungs-check\.html"/,
-  'property="og:url" content="https://www.spreefinanz.de/ENG/insurance-check.html"'
+  /property="og:url" content="https:\/\/www\.spreefinanz\.de\/versicherungs-check"/,
+  'property="og:url" content="https://www.spreefinanz.de/ENG/insurance-check"'
 );
 
 html = html.replace(
@@ -100,30 +100,30 @@ html = html.replace(
 
 // Relative paths for ENG folder
 const linkMap = {
-  'internationale_krankenversicherung.html': 'international_health_insurances.html',
-  'krankenversicherungen.html': 'health_insurance.html',
-  'krankenversicherung_fuer_freelancer_im_ausland.html':
-    'health_insurance_for_freelancers_abroad.html',
-  'krankenversicherung_fuer_digitale_nomaden.html':
-    'health_insurance_for_digital_nomads.html',
-  'dia_reiseversicherungen.html': 'expat_travel_insurance.html',
-  'privathaftpflichtversicherung.html': 'private_liability_insurance.html',
-  'haftpflicht.html': 'liability_insurances.html',
-  'unfallversicherung.html': 'private_accident_insurance.html',
-  'dia_altersvorsorge_im_ausland.html': 'retirement_planning_in_other_countries.html',
-  'wer_wir_sind.html': 'who_we_are.html',
-  'kontaktformular.html': 'contact_form.html',
-  'versicherungsschutz_fuer_familienmitglieder.html':
-    'family_protection_for_family_members.html',
-  'faq_downloads_in_mehreren_sprachen.html': 'faq_downloads.html',
-  'impressum-1241326.html': 'impressum.html',
-  'datenschutz-0-p11.html': 'privacy.html',
-  'beschwerden-1241326-p4.html': 'complaints.html',
-  'index.html': 'index.html',
+  'internationale_krankenversicherung': 'international_health_insurances',
+  'krankenversicherungen': 'health_insurance',
+  'krankenversicherung_fuer_freelancer_im_ausland':
+    'health_insurance_for_freelancers_abroad',
+  'krankenversicherung_fuer_digitale_nomaden':
+    'health_insurance_for_digital_nomads',
+  'dia_reiseversicherungen': 'expat_travel_insurance',
+  'privathaftpflichtversicherung': 'private_liability_insurance',
+  'haftpflicht': 'liability_insurances',
+  'unfallversicherung': 'private_accident_insurance',
+  'dia_altersvorsorge_im_ausland': 'retirement_planning_in_other_countries',
+  'wer_wir_sind': 'who_we_are',
+  'kontaktformular': 'contact_form',
+  'versicherungsschutz_fuer_familienmitglieder':
+    'family_protection_for_family_members',
+  'faq_downloads_in_mehreren_sprachen': 'faq_downloads',
+  'impressum-1241326': 'impressum',
+  'datenschutz-0-p11': 'privacy',
+  'beschwerden-1241326-p4': 'complaints',
+  'index.html': '/ENG/',
   'assets/whatsapplogo.png': '../assets/whatsapplogo.png',
   'main.7a280948f1e2.js': '../main.js',
-  'ENG/insurance-check.html': 'insurance-check.html',
-  'versicherungs-check.html': '../versicherungs-check.html',
+  'ENG/insurance-check': 'insurance-check',
+  'versicherungs-check': '../versicherungs-check',
 };
 
 // Wizard + UI strings
@@ -233,18 +233,18 @@ const tr = [
     'International health insurance – the most important cover',
   ],
   [
-    'Die <a href="international_health_insurances.html">internationale Krankenversicherung</a> ist für die meisten Expats und Ausgewanderten die wichtigste Police überhaupt. Im Ausland gibt es in der Regel keinen gesetzlichen Krankenschutz – wer ohne Versicherung behandelt wird, riskiert fünf- bis sechsstellige Rechnungen.',
-    'The <a href="international_health_insurances.html">international health insurance</a> is the most important policy for most expats and emigrants. Abroad there is usually no statutory health cover – treatment without insurance can mean five- or six-figure bills.',
+    'Die <a href="international_health_insurances">internationale Krankenversicherung</a> ist für die meisten Expats und Ausgewanderten die wichtigste Police überhaupt. Im Ausland gibt es in der Regel keinen gesetzlichen Krankenschutz – wer ohne Versicherung behandelt wird, riskiert fünf- bis sechsstellige Rechnungen.',
+    'The <a href="international_health_insurances">international health insurance</a> is the most important policy for most expats and emigrants. Abroad there is usually no statutory health cover – treatment without insurance can mean five- or six-figure bills.',
   ],
   ['Für Ausländer in Deutschland', 'For foreigners in Germany'],
   [
-    'Wer nach Deutschland einreist und hier lebt oder arbeitet, benötigt einen gültigen Krankenversicherungsnachweis. Für Nicht-EU-Bürger ist die gesetzliche Pflichtversicherung oft nicht sofort zugänglich – spezielle <a href="krankenversicherungen.html">Krankenversicherungen für Ausländer in Deutschland</a> überbrücken diese Lücke. Sie werden akzeptiert für Visaanträge, Behörden und Arbeitgeber.',
-    'Anyone moving to Germany to live or work needs valid health insurance proof. For non-EU citizens, statutory cover is often not immediately available – special <a href="health_insurance.html">health insurance for foreigners in Germany</a> bridges that gap. They are accepted for visa applications, authorities and employers.',
+    'Wer nach Deutschland einreist und hier lebt oder arbeitet, benötigt einen gültigen Krankenversicherungsnachweis. Für Nicht-EU-Bürger ist die gesetzliche Pflichtversicherung oft nicht sofort zugänglich – spezielle <a href="krankenversicherungen">Krankenversicherungen für Ausländer in Deutschland</a> überbrücken diese Lücke. Sie werden akzeptiert für Visaanträge, Behörden und Arbeitgeber.',
+    'Anyone moving to Germany to live or work needs valid health insurance proof. For non-EU citizens, statutory cover is often not immediately available – special <a href="health_insurance">health insurance for foreigners in Germany</a> bridges that gap. They are accepted for visa applications, authorities and employers.',
   ],
   ['Für Deutsche und Expats im Ausland', 'For Germans and expats abroad'],
   [
-    'Wer Deutschland verlässt und dauerhaft oder langfristig im Ausland lebt, sollte sich frühzeitig mit einer <a href="internationale_krankenversicherung.html">internationalen Krankenversicherung</a> absichern. Diese deckt im Gegensatz zu einer normalen Reisekrankenversicherung auch chronische Erkrankungen, Mutterschaft, Zahnarzt und Routinebehandlungen ab – und das weltweit oder in einer definierten Region.',
-    'Anyone leaving Germany to live abroad long term should secure <a href="international_health_insurances.html">international health insurance</a> early. Unlike travel health insurance, it also covers chronic conditions, maternity, dental and routine care – worldwide or in a defined region.',
+    'Wer Deutschland verlässt und dauerhaft oder langfristig im Ausland lebt, sollte sich frühzeitig mit einer <a href="internationale_krankenversicherung">internationalen Krankenversicherung</a> absichern. Diese deckt im Gegensatz zu einer normalen Reisekrankenversicherung auch chronische Erkrankungen, Mutterschaft, Zahnarzt und Routinebehandlungen ab – und das weltweit oder in einer definierten Region.',
+    'Anyone leaving Germany to live abroad long term should secure <a href="international_health_insurances">international health insurance</a> early. Unlike travel health insurance, it also covers chronic conditions, maternity, dental and routine care – worldwide or in a defined region.',
   ],
   [
     '„Wer länger unterwegs ist, benötigt eine Langzeit-Auslandskrankenversicherung.“',
@@ -252,16 +252,16 @@ const tr = [
   ],
   ['Besondere Zielgruppen', 'Specific target groups'],
   [
-    'Für <a href="krankenversicherung_fuer_freelancer_im_ausland.html">Freelancer im Ausland</a> gelten besondere Anforderungen: Sie haben keinen Arbeitgeber, der Beiträge mitträgt, und müssen sich vollständig selbst versichern. <a href="krankenversicherung_fuer_digitale_nomaden.html">Digitale Nomaden</a> benötigen Tarife, die in mehreren Ländern gleichzeitig gelten und auch bei häufigem Länderwechsel stabil bleiben.',
-    '<a href="health_insurance_for_freelancers_abroad.html">Freelancers abroad</a> face special requirements: no employer shares contributions, so you must insure yourself fully. <a href="health_insurance_for_digital_nomads.html">Digital nomads</a> need plans valid in several countries and stable when changing countries often.',
+    'Für <a href="krankenversicherung_fuer_freelancer_im_ausland">Freelancer im Ausland</a> gelten besondere Anforderungen: Sie haben keinen Arbeitgeber, der Beiträge mitträgt, und müssen sich vollständig selbst versichern. <a href="krankenversicherung_fuer_digitale_nomaden">Digitale Nomaden</a> benötigen Tarife, die in mehreren Ländern gleichzeitig gelten und auch bei häufigem Länderwechsel stabil bleiben.',
+    '<a href="health_insurance_for_freelancers_abroad">Freelancers abroad</a> face special requirements: no employer shares contributions, so you must insure yourself fully. <a href="health_insurance_for_digital_nomads">Digital nomads</a> need plans valid in several countries and stable when changing countries often.',
   ],
   [
     'Reiseversicherung – für kurze Aufenthalte und Weltreisen',
     'Travel insurance – for short stays and round-the-world trips',
   ],
   [
-    'Wer für weniger als sechs Monate ins Ausland reist, kommt oft mit einer <a href="expat_travel_insurance.html">Reiseversicherung</a> aus. Diese ist günstiger als eine vollwertige Auslandskrankenversicherung und deckt die häufigsten Risiken ab: Krankheit, Unfall, Gepäckverlust, Reiserücktritt und Reiseabbruch.',
-    'If you travel abroad for less than six months, a <a href="expat_travel_insurance.html">travel insurance</a> policy is often enough. It is cheaper than full international health insurance and covers common risks: illness, accident, lost luggage, trip cancellation and interruption.',
+    'Wer für weniger als sechs Monate ins Ausland reist, kommt oft mit einer <a href="expat_travel_insurance">Reiseversicherung</a> aus. Diese ist günstiger als eine vollwertige Auslandskrankenversicherung und deckt die häufigsten Risiken ab: Krankheit, Unfall, Gepäckverlust, Reiserücktritt und Reiseabbruch.',
+    'If you travel abroad for less than six months, a <a href="expat_travel_insurance">travel insurance</a> policy is often enough. It is cheaper than full international health insurance and covers common risks: illness, accident, lost luggage, trip cancellation and interruption.',
   ],
   [
     'Wichtig zu wissen: Eine klassische deutsche Reisekrankenversicherung ist meist auf 42 bis 56 Tage pro Reise begrenzt. Für Weltreisen oder längere Aufenthalte empfehlen sich spezielle Langzeitreise-Policen. Der Versicherungs-Check zeigt dir auf Basis deiner Aufenthaltsdauer automatisch, welche Lösung für dich geeignet ist.',
@@ -276,16 +276,16 @@ const tr = [
     'Private liability insurance is one of the most common policies in Germany – for good reason. It covers accidental harm to others: a scratched car, a neighbour’s injury, damage to a rental property.',
   ],
   [
-    'Für <a href="private_liability_insurance.html">Ausländer in Deutschland</a> ist eine Haftpflichtversicherung zwar nicht gesetzlich vorgeschrieben, aber in der Praxis unverzichtbar – Vermieter fordern sie häufig als Bedingung für den Mietvertrag. Für <a href="liability_insurances.html">Deutsche im Ausland</a> stellt sich die Frage, ob die bestehende deutsche Police im Zielland weiter gilt.',
-    'For <a href="private_liability_insurance.html">foreigners in Germany</a>, liability insurance is not legally required but practically essential – landlords often require it. For <a href="liability_insurances.html">Germans abroad</a>, the question is whether your German policy still applies in the destination country.',
+    'Für <a href="private_liability_insurance">Ausländer in Deutschland</a> ist eine Haftpflichtversicherung zwar nicht gesetzlich vorgeschrieben, aber in der Praxis unverzichtbar – Vermieter fordern sie häufig als Bedingung für den Mietvertrag. Für <a href="liability_insurances">Deutsche im Ausland</a> stellt sich die Frage, ob die bestehende deutsche Police im Zielland weiter gilt.',
+    'For <a href="private_liability_insurance">foreigners in Germany</a>, liability insurance is not legally required but practically essential – landlords often require it. For <a href="liability_insurances">Germans abroad</a>, the question is whether your German policy still applies in the destination country.',
   ],
   [
     'Unfallversicherung – weltweit und rund um die Uhr',
     'Accident insurance – worldwide, 24/7',
   ],
   [
-    'Die gesetzliche Unfallversicherung in Deutschland deckt nur Arbeitsunfälle und Wegeunfälle ab – Freizeitunfälle sind nicht enthalten. Eine private <a href="private_accident_insurance.html">Unfallversicherung</a> schließt diese Lücke und zahlt bei dauerhafter Invalidität als Folge eines Unfalls, unabhängig davon, wo du dich auf der Welt befindest.',
-    'Statutory accident insurance in Germany only covers work and commuting accidents – not leisure. Private <a href="private_accident_insurance.html">accident insurance</a> fills that gap and pays for permanent disability after an accident, wherever you are in the world.',
+    'Die gesetzliche Unfallversicherung in Deutschland deckt nur Arbeitsunfälle und Wegeunfälle ab – Freizeitunfälle sind nicht enthalten. Eine private <a href="private_accident_insurance">Unfallversicherung</a> schließt diese Lücke und zahlt bei dauerhafter Invalidität als Folge eines Unfalls, unabhängig davon, wo du dich auf der Welt befindest.',
+    'Statutory accident insurance in Germany only covers work and commuting accidents – not leisure. Private <a href="private_accident_insurance">accident insurance</a> fills that gap and pays for permanent disability after an accident, wherever you are in the world.',
   ],
   [
     'Für Expats und Menschen, die viel reisen oder Sport treiben, ist die weltweite 24-Stunden-Deckung besonders wichtig. Die Leistungen umfassen in der Regel: Invaliditätsentschädigung, Todesfall-Leistung, Unfalltagesgeld und Übernahme von Heilbehandlungskosten.',
@@ -296,8 +296,8 @@ const tr = [
     'Retirement planning abroad – plan early',
   ],
   [
-    'Wer als Expat oder Auswanderer dauerhaft im Ausland lebt, verliert häufig Ansprüche in der deutschen gesetzlichen Rentenversicherung. <a href="retirement_planning_in_other_countries.html">Altersvorsorge im Ausland</a> ist deshalb ein Thema, das viele zu spät angehen.',
-    'Expats and emigrants living abroad permanently often lose entitlements in German statutory pension insurance. <a href="retirement_planning_in_other_countries.html">Retirement planning abroad</a> is something many address too late.',
+    'Wer als Expat oder Auswanderer dauerhaft im Ausland lebt, verliert häufig Ansprüche in der deutschen gesetzlichen Rentenversicherung. <a href="retirement_planning_in_other_countries">Altersvorsorge im Ausland</a> ist deshalb ein Thema, das viele zu spät angehen.',
+    'Expats and emigrants living abroad permanently often lose entitlements in German statutory pension insurance. <a href="retirement_planning_in_other_countries">Retirement planning abroad</a> is something many address too late.',
   ],
   [
     'Je nach Zielland und Aufenthaltsstatus kommen unterschiedliche Instrumente infrage: freiwillige Einzahlungen in die deutsche Rentenversicherung, international anerkannte Fondspolicen oder fondsgebundene Kapitalversicherungen mit flexiblem Zugriff. Unser Versicherungs-Check identifiziert, ob und wann das Thema für dich relevant wird.',
@@ -305,8 +305,8 @@ const tr = [
   ],
   ['Unsere Versicherungspartner im Überblick', 'Our insurance partners at a glance'],
   [
-    'Als unabhängiger Versicherungsmakler arbeitet <a href="who_we_are.html">Spreefinanz</a> mit mehreren spezialisierten Anbietern zusammen, die für Expats und internationale Versicherungslösungen bekannt sind. Je nach deinem Profil empfehlen wir den passenden Anbieter – kein Einheitsprodukt, sondern individuelle Beratung.',
-    'As an independent broker, <a href="who_we_are.html">Spreefinanz</a> works with several specialists known for expat and international insurance. We recommend the right provider for your profile – not a one-size-fits-all product, but individual advice.',
+    'Als unabhängiger Versicherungsmakler arbeitet <a href="who_we_are">Spreefinanz</a> mit mehreren spezialisierten Anbietern zusammen, die für Expats und internationale Versicherungslösungen bekannt sind. Je nach deinem Profil empfehlen wir den passenden Anbieter – kein Einheitsprodukt, sondern individuelle Beratung.',
+    'As an independent broker, <a href="who_we_are">Spreefinanz</a> works with several specialists known for expat and international insurance. We recommend the right provider for your profile – not a one-size-fits-all product, but individual advice.',
   ],
   ['Für Ausländer in Deutschland', 'For foreigners in Germany'],
   [
@@ -368,48 +368,48 @@ const tr = [
   ],
   ['Ist der Versicherungs-Check kostenlos und unverbindlich?', 'Is the Insurance Check free and non-binding?'],
   [
-    'Ja, vollständig. Der Check dient der Orientierung und verpflichtet dich zu nichts. Im Anschluss kannst du eine kostenlose <a href="https://calendly.com/sebastian-spreefinanz/30min" target="_blank" rel="noopener">Online-Beratung buchen</a> oder direkt eine <a href="contact_form.html">Anfrage stellen</a>.',
-    'Yes, completely. The check is for orientation only. Afterwards you can book a free <a href="https://calendly.com/sebastian-spreefinanz/30min" target="_blank" rel="noopener">online consultation</a> or <a href="contact_form.html">send an enquiry</a>.',
+    'Ja, vollständig. Der Check dient der Orientierung und verpflichtet dich zu nichts. Im Anschluss kannst du eine kostenlose <a href="https://calendly.com/sebastian-spreefinanz/30min" target="_blank" rel="noopener">Online-Beratung buchen</a> oder direkt eine <a href="contact_form">Anfrage stellen</a>.',
+    'Yes, completely. The check is for orientation only. Afterwards you can book a free <a href="https://calendly.com/sebastian-spreefinanz/30min" target="_blank" rel="noopener">online consultation</a> or <a href="contact_form">send an enquiry</a>.',
   ],
   [
     'Welche Versicherung brauche ich als Ausländer, der nach Deutschland kommt?',
     'What insurance do I need as a foreigner coming to Germany?',
   ],
   [
-    'In der Regel eine Krankenversicherung, die für Visaanträge und Behörden in Deutschland anerkannt wird. Wir empfehlen je nach Aufenthaltszweck und -dauer Tarife von <a href="care_concept.html">Care Concept</a>, <a href="april.html">April</a> oder <a href="bdae.html">BDAE</a>. Ergänzend ist eine <a href="private_liability_insurance.html">Privathaftpflichtversicherung</a> für den Alltag sinnvoll.',
-    'Usually health insurance recognised for visa applications and authorities in Germany. We recommend plans from <a href="care_concept.html">Care Concept</a>, <a href="april.html">April</a> or <a href="bdae.html">BDAE</a> depending on purpose and duration. <a href="private_liability_insurance.html">Private liability insurance</a> is also sensible for daily life.',
+    'In der Regel eine Krankenversicherung, die für Visaanträge und Behörden in Deutschland anerkannt wird. Wir empfehlen je nach Aufenthaltszweck und -dauer Tarife von <a href="care_concept">Care Concept</a>, <a href="april">April</a> oder <a href="bdae">BDAE</a>. Ergänzend ist eine <a href="private_liability_insurance">Privathaftpflichtversicherung</a> für den Alltag sinnvoll.',
+    'Usually health insurance recognised for visa applications and authorities in Germany. We recommend plans from <a href="care_concept">Care Concept</a>, <a href="april">April</a> or <a href="bdae">BDAE</a> depending on purpose and duration. <a href="private_liability_insurance">Private liability insurance</a> is also sensible for daily life.',
   ],
   [
     'Ich bin selbstständig und lebe im Ausland – was brauche ich?',
     'I am self-employed and live abroad – what do I need?',
   ],
   [
-    'Als <a href="krankenversicherung_fuer_freelancer_im_ausland.html">Freelancer im Ausland</a> musst du dich vollständig selbst versichern. Eine internationale Krankenversicherung ist Pflicht – zusätzlich empfehlen sich Haftpflicht, ggf. eine Berufsunfähigkeitsversicherung und ein Plan für die Altersvorsorge.',
-    'As a <a href="health_insurance_for_freelancers_abroad.html">freelancer abroad</a> you must insure yourself fully. International health insurance is essential – we also recommend liability, possibly occupational disability cover and retirement planning.',
+    'Als <a href="krankenversicherung_fuer_freelancer_im_ausland">Freelancer im Ausland</a> musst du dich vollständig selbst versichern. Eine internationale Krankenversicherung ist Pflicht – zusätzlich empfehlen sich Haftpflicht, ggf. eine Berufsunfähigkeitsversicherung und ein Plan für die Altersvorsorge.',
+    'As a <a href="health_insurance_for_freelancers_abroad">freelancer abroad</a> you must insure yourself fully. International health insurance is essential – we also recommend liability, possibly occupational disability cover and retirement planning.',
   ],
   [
     'Gilt meine deutsche Krankenversicherung noch, wenn ich auswandere?',
     'Does my German health insurance still apply if I emigrate?',
   ],
   [
-    'Nein. Wer sich dauerhaft aus Deutschland abmeldet und keinen Wohnsitz mehr in Deutschland hat, verliert den Anspruch auf gesetzliche Krankenversicherung. Auch private Krankenversicherungen sind häufig an den deutschen Wohnsitz geknüpft. Eine <a href="international_health_insurances.html">internationale Krankenversicherung</a> muss rechtzeitig vor der Abmeldung abgeschlossen werden.',
-    'No. If you deregister permanently and no longer reside in Germany, you lose statutory health insurance. Private German policies are often tied to residence in Germany. <a href="international_health_insurances.html">International health insurance</a> should be arranged before deregistration.',
+    'Nein. Wer sich dauerhaft aus Deutschland abmeldet und keinen Wohnsitz mehr in Deutschland hat, verliert den Anspruch auf gesetzliche Krankenversicherung. Auch private Krankenversicherungen sind häufig an den deutschen Wohnsitz geknüpft. Eine <a href="international_health_insurances">internationale Krankenversicherung</a> muss rechtzeitig vor der Abmeldung abgeschlossen werden.',
+    'No. If you deregister permanently and no longer reside in Germany, you lose statutory health insurance. Private German policies are often tied to residence in Germany. <a href="international_health_insurances">International health insurance</a> should be arranged before deregistration.',
   ],
   [
     'Was bedeutet „Familie absichern“ im internationalen Kontext?',
     'What does “protecting family” mean in an international context?',
   ],
   [
-    'Für <a href="family_protection_for_family_members.html">Familienmitglieder im Ausland</a> gibt es spezielle Policen, die Eltern, Partner und Kinder gemeinsam absichern – oft zu günstigeren Konditionen als mehrere Einzeltarife. Der Check erkennt automatisch, wenn Familienschutz für dich relevant ist.',
-    'For <a href="family_protection_for_family_members.html">family members abroad</a> there are policies covering parents, partners and children together – often cheaper than several individual plans. The check flags when family cover is relevant for you.',
+    'Für <a href="family_protection_for_family_members">Familienmitglieder im Ausland</a> gibt es spezielle Policen, die Eltern, Partner und Kinder gemeinsam absichern – oft zu günstigeren Konditionen als mehrere Einzeltarife. Der Check erkennt automatisch, wenn Familienschutz für dich relevant ist.',
+    'For <a href="family_protection_for_family_members">family members abroad</a> there are policies covering parents, partners and children together – often cheaper than several individual plans. The check flags when family cover is relevant for you.',
   ],
   [
     'Kann ich auch auf Deutsch und Englisch beraten werden?',
     'Can I get advice in German and English?',
   ],
   [
-    'Ja. Die Beratung bei Spreefinanz ist auf Deutsch und Englisch möglich – die <a href="https://zoom.us/j/7319679053" target="_blank" rel="noopener">Videoberatung mit Sprachauswahl</a> ist direkt buchbar. Außerdem gibt es <a href="faq_downloads.html">FAQ und Downloads in mehreren Sprachen</a>.',
-    'Yes. Spreefinanz advice is available in German and English – <a href="https://zoom.us/j/7319679053" target="_blank" rel="noopener">video consultation with language choice</a> can be booked directly. There are also <a href="faq_downloads.html">FAQs and downloads in several languages</a>.',
+    'Ja. Die Beratung bei Spreefinanz ist auf Deutsch und Englisch möglich – die <a href="https://zoom.us/j/7319679053" target="_blank" rel="noopener">Videoberatung mit Sprachauswahl</a> ist direkt buchbar. Außerdem gibt es <a href="faq_downloads">FAQ und Downloads in mehreren Sprachen</a>.',
+    'Yes. Spreefinanz advice is available in German and English – <a href="https://zoom.us/j/7319679053" target="_blank" rel="noopener">video consultation with language choice</a> can be booked directly. There are also <a href="faq_downloads">FAQs and downloads in several languages</a>.',
   ],
   ['Noch unsicher? Lass dich kostenlos beraten.', 'Still unsure? Get free advice.'],
   [
@@ -422,8 +422,8 @@ const tr = [
   ['Das passt am besten zu deinen Angaben.', 'This best matches your answers.'],
   ['Deine Antworten', 'Your answers'],
   [
-    'Bei weiteren Fragen gerne <a href="contact_form.html">Anfrage senden</a>.',
-    'For further questions, please <a href="contact_form.html">send an enquiry</a>.',
+    'Bei weiteren Fragen gerne <a href="contact_form">Anfrage senden</a>.',
+    'For further questions, please <a href="contact_form">send an enquiry</a>.',
   ],
   ['Zum LinkedIn-Profil', 'LinkedIn profile'],
   ['Zum Youtube-Profil', 'YouTube profile'],

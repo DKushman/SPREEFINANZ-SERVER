@@ -19,8 +19,8 @@ const PAGE_CONFIG = {
   rechtsschutz: {
     deFile: 'rechtsschutz_expats.html',
     enFile: 'ENG/expat_legal_protection.html',
-    deUrl: `${SITE}/rechtsschutz_expats.html`,
-    enUrl: `${SITE}/ENG/expat_legal_protection.html`,
+    deUrl: `${SITE}/rechtsschutz_expats`,
+    enUrl: `${SITE}/ENG/expat_legal_protection`,
     deTitle: 'Rechtsschutz Expats – Internationaler Rechtsschutz im Ausland | spreefinanz.de',
     enTitle: 'Expat Legal Protection – International Legal Cover Abroad | spreefinanz.de',
     deDesc:
@@ -36,15 +36,15 @@ const PAGE_CONFIG = {
     enPageClass: 'page-1290200-en mainparent-page-1311303 parent-page-1311303',
     dePagetitle: 'Rechtsschutz Expats',
     enPagetitle: 'Expat Legal Protection',
-    deEnToggle: 'ENG/expat_legal_protection.html',
-    enDeToggle: '../rechtsschutz_expats.html',
+    deEnToggle: 'ENG/expat_legal_protection',
+    enDeToggle: '../rechtsschutz_expats',
     menuSection: 'abroad',
   },
   higermany: {
     deFile: 'higermany_pkv_voll_visum.html',
     enFile: 'ENG/higermany_pkv_full_visa.html',
-    deUrl: `${SITE}/higermany_pkv_voll_visum.html`,
-    enUrl: `${SITE}/ENG/higermany_pkv_full_visa.html`,
+    deUrl: `${SITE}/higermany_pkv_voll_visum`,
+    enUrl: `${SITE}/ENG/higermany_pkv_full_visa`,
     deTitle: 'Hi.Germany PKV Voll Visum | Hallesche / ALH Group | spreefinanz.de',
     enTitle: 'Hi.Germany Full Private Health Insurance | Hallesche / ALH Group | spreefinanz.de',
     deDesc:
@@ -61,15 +61,15 @@ const PAGE_CONFIG = {
     enPageClass: 'page-1290301-en mainparent-page-1311286 parent-page-1311287',
     dePagetitle: 'HiGermany PKV Voll Visum',
     enPagetitle: 'Hi.Germany Full Visa PKV',
-    deEnToggle: 'ENG/higermany_pkv_full_visa.html',
-    enDeToggle: '../higermany_pkv_voll_visum.html',
+    deEnToggle: 'ENG/higermany_pkv_full_visa',
+    enDeToggle: '../higermany_pkv_voll_visum',
     menuSection: 'health',
   },
   hallesche: {
     deFile: 'hallesche_zusatzversicherungen_gkv.html',
     enFile: 'ENG/hallesche_supplementary_gkv.html',
-    deUrl: `${SITE}/hallesche_zusatzversicherungen_gkv.html`,
-    enUrl: `${SITE}/ENG/hallesche_supplementary_gkv.html`,
+    deUrl: `${SITE}/hallesche_zusatzversicherungen_gkv`,
+    enUrl: `${SITE}/ENG/hallesche_supplementary_gkv`,
     deTitle: 'Hallesche Zusatzversicherungen zur GKV | spreefinanz.de',
     enTitle: 'Hallesche Supplementary Insurance for Statutory Health (GKV) | spreefinanz.de',
     deDesc:
@@ -80,13 +80,13 @@ const PAGE_CONFIG = {
     enServiceType: 'Supplementary health insurance',
     deServiceName: 'Hallesche Zusatzversicherungen zur GKV',
     enServiceName: 'Hallesche Supplementary GKV Insurance',
-    channelUrl: `${SITE}/versicherungs-check.html#hallesche-alh`,
+    channelUrl: `${SITE}/versicherungs-check#hallesche-alh`,
     dePageClass: 'page-1290302 mainparent-page-1241193 parent-page-1288743',
     enPageClass: 'page-1290302-en mainparent-page-1311286 parent-page-1311287',
     dePagetitle: 'Zusatzversicherungen zur GKV',
     enPagetitle: 'Supplementary GKV Insurance',
-    deEnToggle: 'ENG/hallesche_supplementary_gkv.html',
-    enDeToggle: '../hallesche_zusatzversicherungen_gkv.html',
+    deEnToggle: 'ENG/hallesche_supplementary_gkv',
+    enDeToggle: '../hallesche_zusatzversicherungen_gkv',
     menuSection: 'health',
   },
 };
@@ -147,8 +147,8 @@ function translateMainContent(html, lang, cfg) {
     ['direkt zum Seiteninhalt', 'Skip to main content'],
     ['Kontakt via WhatsApp', 'Contact via WhatsApp'],
     ['WhatsApp schreiben', 'Message on WhatsApp'],
-    ['href="kontaktformular.html"', 'href="contact_form.html"'],
-    ['href="versicherungs-check.html', 'href="insurance-check.html'],
+    ['href="kontaktformular"', 'href="contact_form"'],
+    ['href="versicherungs-check', 'href="insurance-check'],
     ['assets/whatsapplogo.png', '../assets/whatsapplogo.png'],
     ['Impressum', 'Imprint'],
     ['Datenschutz', 'Privacy'],
@@ -228,7 +228,7 @@ function translateMainContent(html, lang, cfg) {
     ['Wir sind nicht die verstaubte Versicherungsecke von nebenan. Wir prüfen dein Herkunftsland, deinen Aufenthaltsstatus und deine echten Pläne in Deutschland, um das perfekte Setup für dich zu bauen. Komplett digital, unkompliziert und auf Augenhöhe.', 'We are not a dusty insurance corner shop. We review your country of origin, residence status and real plans in Germany to build the right setup – fully digital, straightforward and on equal terms.'],
     ['Lücken schließen – Jetzt Beratung anfragen', 'Close the gaps – request advice now'],
     ['Direkt online berechnen und beantragen', 'Calculate and apply online'],
-    ['Wähle die passende Zusatzversicherung – ein Klick öffnet die digitale Abschlussstrecke der Hallesche (ALH Group) mit Spreefinanz-Zuordnung. Alle Tarife auch übersichtlich auf der Seite <a href="insurance-check.html#hallesche-alh">Versicherungs-Check</a>.', 'Choose the right supplementary plan – one click opens the Hallesche (ALH Group) digital application with Spreefinanz attribution. All plans are also listed on <a href="insurance-check.html#hallesche-alh">Insurance Check</a>.'],
+    ['Wähle die passende Zusatzversicherung – ein Klick öffnet die digitale Abschlussstrecke der Hallesche (ALH Group) mit Spreefinanz-Zuordnung. Alle Tarife auch übersichtlich auf der Seite <a href="insurance-check#hallesche-alh">Versicherungs-Check</a>.', 'Choose the right supplementary plan – one click opens the Hallesche (ALH Group) digital application with Spreefinanz attribution. All plans are also listed on <a href="insurance-check#hallesche-alh">Insurance Check</a>.'],
     ['Zahnzusatz (Hi.Dental)', 'Dental (Hi.Dental)'],
     ['Krankenhaus-Zusatz', 'Hospital supplementary'],
     ['Ambulantes Upgrade', 'Outpatient upgrade'],
@@ -265,18 +265,18 @@ function extractEngShell(section) {
 
 function buildEngMenu(shell, cfg) {
   let menu = shell;
-  const hallescheBlock = `<li class="menusubitem lastitem" id="page-1290300-en" role="none"><a aria-label="Hallesche / ALH Group" href="higermany_pkv_full_visa.html" id="page-1290300-en-link" onclick="return false" role="menuitem">Hallesche / ALH Group</a><span class="submenutoggle"></span><ul aria-labelledby="page-1290300-en-link" role="menu"><li class="menusubitem firstitem" id="page-1290301-en" role="none"><a aria-label="Hi.Germany Full Visa PKV" href="higermany_pkv_full_visa.html" id="page-1290301-en-link" role="menuitem">Hi.Germany Full Visa PKV</a><span class="submenutoggle"></span></li><li class="menusubitem lastitem" id="page-1290302-en" role="none"><a aria-label="Supplementary GKV Insurance" href="hallesche_supplementary_gkv.html" id="page-1290302-en-link" role="menuitem">Supplementary GKV Insurance</a><span class="submenutoggle"></span></li></ul></li>`;
-  const expatLegalItem = `<li class="menusubitem" id="page-1290200-en" role="none"><a aria-label="Expat Legal Protection" href="expat_legal_protection.html" id="page-1290200-en-link" role="menuitem">Expat Legal Protection</a><span class="submenutoggle"></span></li>`;
+  const hallescheBlock = `<li class="menusubitem lastitem" id="page-1290300-en" role="none"><a aria-label="Hallesche / ALH Group" href="higermany_pkv_full_visa" id="page-1290300-en-link" onclick="return false" role="menuitem">Hallesche / ALH Group</a><span class="submenutoggle"></span><ul aria-labelledby="page-1290300-en-link" role="menu"><li class="menusubitem firstitem" id="page-1290301-en" role="none"><a aria-label="Hi.Germany Full Visa PKV" href="higermany_pkv_full_visa" id="page-1290301-en-link" role="menuitem">Hi.Germany Full Visa PKV</a><span class="submenutoggle"></span></li><li class="menusubitem lastitem" id="page-1290302-en" role="none"><a aria-label="Supplementary GKV Insurance" href="hallesche_supplementary_gkv" id="page-1290302-en-link" role="menuitem">Supplementary GKV Insurance</a><span class="submenutoggle"></span></li></ul></li>`;
+  const expatLegalItem = `<li class="menusubitem" id="page-1290200-en" role="none"><a aria-label="Expat Legal Protection" href="expat_legal_protection" id="page-1290200-en-link" role="menuitem">Expat Legal Protection</a><span class="submenutoggle"></span></li>`;
 
   if (!menu.includes('page-1290300-en')) {
     menu = menu.replace(
-      /<li class="menusubitem lastitem" id="page-1311293" role="none"><a aria-label="Foyer" href="foyer.html" id="page-1311293-link" role="menuitem">Foyer<\/a><span class="submenutoggle"><\/span><\/li>/,
-      `<li class="menusubitem" id="page-1311293" role="none"><a aria-label="Foyer" href="foyer.html" id="page-1311293-link" role="menuitem">Foyer</a><span class="submenutoggle"></span></li>${hallescheBlock}`
+      /<li class="menusubitem lastitem" id="page-1311293" role="none"><a aria-label="Foyer" href="foyer" id="page-1311293-link" role="menuitem">Foyer<\/a><span class="submenutoggle"><\/span><\/li>/,
+      `<li class="menusubitem" id="page-1311293" role="none"><a aria-label="Foyer" href="foyer" id="page-1311293-link" role="menuitem">Foyer</a><span class="submenutoggle"></span></li>${hallescheBlock}`
     );
   }
   if (!menu.includes('page-1290200-en')) {
     menu = menu.replace(
-      /(<li class="menusubitem" id="page-1311316" role="none"><a aria-label="Liability Insurance" href="liability_insurances.html" id="page-1311316-link" role="menuitem">Liability Insurance<\/a><span class="submenutoggle"><\/span><\/li>)/,
+      /(<li class="menusubitem" id="page-1311316" role="none"><a aria-label="Liability Insurance" href="liability_insurances" id="page-1311316-link" role="menuitem">Liability Insurance<\/a><span class="submenutoggle"><\/span><\/li>)/,
       `$1${expatLegalItem}`
     );
   }
@@ -401,7 +401,7 @@ function patchInsuranceCheck(fileRel, lang, title, desc, url, deUrl, enUrl) {
       `<meta content="${desc}" property="og:description"/>`
     );
     html = html.replace(
-      /<meta content="https:\/\/www\.spreefinanz\.de\/versicherungs-check\.html" property="og:url"\/>/,
+      /<meta content="https:\/\/www\.spreefinanz\.de\/versicherungs-check" property="og:url"\/>/,
       `<meta content="${url}" property="og:url"/>`
     );
   }
@@ -435,9 +435,9 @@ patchInsuranceCheck(
   'de',
   'Versicherungs-Check – Finde deine passende Versicherung | spreefinanz.de',
   'In 4 Schritten zur passenden Auslandskrankenversicherung: Unser Versicherungs-Check ermittelt dein Profil und zeigt dir die besten Optionen.',
-  `${SITE}/versicherungs-check.html`,
-  `${SITE}/versicherungs-check.html`,
-  `${SITE}/ENG/insurance-check.html`
+  `${SITE}/versicherungs-check`,
+  `${SITE}/versicherungs-check`,
+  `${SITE}/ENG/insurance-check`
 );
 
 patchInsuranceCheck(
@@ -445,9 +445,9 @@ patchInsuranceCheck(
   'en',
   'Insurance Check – Find the Right Coverage for You | spreefinanz.de',
   'Find the right international health insurance in 4 steps: our Insurance Check identifies your profile and shows you the best options.',
-  `${SITE}/ENG/insurance-check.html`,
-  `${SITE}/versicherungs-check.html`,
-  `${SITE}/ENG/insurance-check.html`
+  `${SITE}/ENG/insurance-check`,
+  `${SITE}/versicherungs-check`,
+  `${SITE}/ENG/insurance-check`
 );
 
 patchEngMenusGlobally();

@@ -11,10 +11,10 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const FRONTEND = path.resolve(__dirname, '..');
 
 const HALLESCHE_GROUP =
-  '<li class="menusubitem lastitem" id="page-1290300" role="none"><a aria-label="Hallesche / ALH Group" href="higermany_pkv_voll_visum.html" id="page-1290300-link" onclick="return false" role="menuitem">Hallesche / ALH Group</a><span class="submenutoggle"></span><ul aria-labelledby="page-1290300-link" role="menu"><li class="menusubitem firstitem" id="page-1290301" role="none"><a aria-label="HiGermany PKV Voll Visum" href="higermany_pkv_voll_visum.html" id="page-1290301-link" role="menuitem">HiGermany PKV Voll Visum</a><span class="submenutoggle"></span></li><li class="menusubitem lastitem" id="page-1290302" role="none"><a aria-label="Zusatzversicherungen zur GKV" href="hallesche_zusatzversicherungen_gkv.html" id="page-1290302-link" role="menuitem">Zusatzversicherungen zur GKV</a><span class="submenutoggle"></span></li></ul></li>';
+  '<li class="menusubitem lastitem" id="page-1290300" role="none"><a aria-label="Hallesche / ALH Group" href="higermany_pkv_voll_visum" id="page-1290300-link" onclick="return false" role="menuitem">Hallesche / ALH Group</a><span class="submenutoggle"></span><ul aria-labelledby="page-1290300-link" role="menu"><li class="menusubitem firstitem" id="page-1290301" role="none"><a aria-label="HiGermany PKV Voll Visum" href="higermany_pkv_voll_visum" id="page-1290301-link" role="menuitem">HiGermany PKV Voll Visum</a><span class="submenutoggle"></span></li><li class="menusubitem lastitem" id="page-1290302" role="none"><a aria-label="Zusatzversicherungen zur GKV" href="hallesche_zusatzversicherungen_gkv" id="page-1290302-link" role="menuitem">Zusatzversicherungen zur GKV</a><span class="submenutoggle"></span></li></ul></li>';
 
 const INSERT_RE = new RegExp(
-  '(<li class="menusubitem) lastitem(" id="page-1288749" role="none"><a aria-label="Foyer" href="foyer\\.html" id="page-1288749-link" role="menuitem">Foyer</a><span class="submenutoggle"></span></li>)' +
+  '(<li class="menusubitem) lastitem(" id="page-1288749" role="none"><a aria-label="Foyer" href="foyer" id="page-1288749-link" role="menuitem">Foyer</a><span class="submenutoggle"></span></li>)' +
     '(</ul></li><li class="menusubitem[^"]*" id="page-1241289")',
   'g'
 );

@@ -5,7 +5,8 @@
   "scripts": {
     "build:custom": "VITE_ENTRY=marketing-consent vite build && VITE_ENTRY=ga-bootstrap vite build && VITE_ENTRY=linkedin-insight vite build && VITE_ENTRY=elfsight-lazy vite build",
     "purge:css": "node scripts/purge-main-css.mjs",
-    "fix:language-menu": "node scripts/fix-language-menu-hrefs.mjs"
+    "fix:language-menu": "node scripts/fix-language-menu-hrefs.mjs",
+    "normalize:urls": "node scripts/normalize-extensionless-urls.mjs"
   },
   "devDependencies": {
     "purgecss": "^6.0.0",

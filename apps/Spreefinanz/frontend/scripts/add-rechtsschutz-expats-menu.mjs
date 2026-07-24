@@ -11,7 +11,7 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const FRONTEND = path.resolve(__dirname, '..');
 
 const NEW_ITEM =
-  '<li class="menusubitem" id="page-1290200" role="none"><a aria-label="Rechtsschutz Expats" href="rechtsschutz_expats.html" id="page-1290200-link" role="menuitem">Rechtsschutz Expats</a><span class="submenutoggle"></span></li>';
+  '<li class="menusubitem" id="page-1290200" role="none"><a aria-label="Rechtsschutz Expats" href="rechtsschutz_expats" id="page-1290200-link" role="menuitem">Rechtsschutz Expats</a><span class="submenutoggle"></span></li>';
 
 const INSERT_RE = new RegExp(
   '(id="page-1241298-link"[^>]*>Haft[­\\s]*pflichtversicherung</a><span class="submenutoggle"></span></li>)' +
